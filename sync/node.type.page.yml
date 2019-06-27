@@ -1,6 +1,9 @@
+uuid: e3c29a33-496c-4e95-9f31-89fa98457a86
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
 name: 'Basic page'
 type: page
 description: 'Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
