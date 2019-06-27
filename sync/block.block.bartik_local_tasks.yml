@@ -6,7 +6,7 @@ dependencies:
 id: bartik_local_tasks
 theme: bartik
 region: content
-weight: -20
+weight: -40
 provider: null
 plugin: local_tasks_block
 settings:
