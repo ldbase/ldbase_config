@@ -1,0 +1,10 @@
+uuid: d7cac075-3a10-4fb9-bf22-58d63618c5ff
+langcode: en
+status: true
+dependencies: {  }
+id: private_files
+label: 'Private Files Directory'
+type: DrupalFiles
+config:
+  name: 'Private Files Directory'
+  directory: 'private://'

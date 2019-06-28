@@ -1,4 +1,4 @@
-uuid: 48fbb392-f656-419f-9c19-39e68aa2a287
+uuid: f5a2ed5a-5128-4dc7-a845-ec39cc04571a
 langcode: en
 status: true
 dependencies:
@@ -7,8 +7,6 @@ dependencies:
     - node.type.article
   module:
     - comment
-_core:
-  default_config_hash: r-hrxwbKKXBKQnBefGjXNSdU00u2fPvMWEykGRHqd10
 id: node.article.comment
 field_name: comment
 entity_type: node

@@ -1,4 +1,4 @@
-uuid: 655480ff-e067-4ad0-a708-77945bca8039
+uuid: 2605bc87-0a4d-425b-bd2b-be6abbff72f9
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_tags
     - node.type.article
     - taxonomy.vocabulary.tags
-_core:
-  default_config_hash: QdUgf_beeoaPiyKorFv0q1fcJpWH_uZTqe_xoVJacrw
 id: node.article.field_tags
 field_name: field_tags
 entity_type: node

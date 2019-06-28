@@ -1,0 +1,10 @@
+uuid: 50498748-ede8-4fdf-bb1e-9ccd8b83ecb6
+langcode: en
+status: true
+dependencies: {  }
+id: public_files
+label: 'Public Files Directory'
+type: DrupalFiles
+config:
+  name: 'Public Files Directory'
+  directory: 'public://'

@@ -1,0 +1,12 @@
+uuid: 1f344c85-80f4-4f73-9490-644a6f679b2d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+id: likert_satisfaction
+label: 'Likert: Satisfaction'
+category: Likert
+likert: true
+options: "1: Very Unsatisfied\n2: Unsatisfied\n3: Neutral\n4: Satisfied\n5: Very Satisfied\n"

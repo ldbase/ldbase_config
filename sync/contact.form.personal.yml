@@ -1,9 +1,7 @@
-uuid: 588893a0-fde8-46a3-84ac-de81a68c33f7
+uuid: 9e1a4368-0db3-464b-8f84-11073095457e
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
 id: personal
 label: 'Personal contact form'
 recipients: {  }

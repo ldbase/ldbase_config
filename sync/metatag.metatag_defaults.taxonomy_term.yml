@@ -1,0 +1,10 @@
+uuid: fecaefdc-30bd-4fda-939b-aac30471956f
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_term
+label: 'Taxonomy term'
+tags:
+  canonical_url: '[term:url]'
+  description: '[term:description]'
+  title: '[term:name] | [site:name]'

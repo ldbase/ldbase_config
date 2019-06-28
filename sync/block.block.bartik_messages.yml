@@ -1,4 +1,4 @@
-uuid: ff0f5221-deaa-4a54-9c8c-2d7e2f1e70da
+uuid: 65ce2c5d-5fa1-46f5-8acf-18b3d7522f7e
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - system
   theme:
     - bartik
-_core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
 id: bartik_messages
 theme: bartik
 region: highlighted
