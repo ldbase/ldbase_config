@@ -12,7 +12,6 @@ module:
   color: 0
   comment: 0
   config: 0
-  config_update: 0
   contact: 0
   context: 0
   context_ui: 0
@@ -20,7 +19,6 @@ module:
   datetime: 0
   datetime_range: 0
   dblog: 0
-  default_content: 0
   devel: 0
   devel_generate: 0
   devel_php: 0
