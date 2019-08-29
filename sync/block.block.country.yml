@@ -1,0 +1,33 @@
+uuid: e34742b9-db55-4de7-97d0-baf4b3d735b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.country
+  module:
+    - collapsiblock
+    - facets
+    - system
+  theme:
+    - bartik
+third_party_settings:
+  collapsiblock:
+    collapse_action: '4'
+id: country
+theme: bartik
+region: sidebar_first
+weight: -2
+provider: null
+plugin: 'facet_block:country'
+settings:
+  id: 'facet_block:country'
+  label: Country
+  provider: facets
+  label_display: visible
+  block_id: country
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

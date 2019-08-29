@@ -1,0 +1,8 @@
+uuid: aac01864-30eb-4ac6-bda0-275be69c3a0f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Data Collection Locations'
+vid: data_collection_locations
+description: ''
+weight: 0

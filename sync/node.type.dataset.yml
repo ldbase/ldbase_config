@@ -1,0 +1,17 @@
+uuid: 64e381cd-4548-4498-8cc8-1c9c4751106a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Dataset
+type: dataset
+description: 'LDbase entity for datasets.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,19 @@
+uuid: 622489de-2bca-4dcc-bda9-239e1e78809c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_format_version
+    - paragraphs.paragraphs_type.file_metadata
+id: paragraph.file_metadata.field_format_version
+field_name: field_format_version
+entity_type: paragraph
+bundle: file_metadata
+label: 'Format Version'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

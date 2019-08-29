@@ -1,0 +1,23 @@
+uuid: 3f698108-5b51-479d-ab8b-18aff98177fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_publication_source
+    - paragraphs.paragraphs_type.publication_metadata
+  module:
+    - link
+id: paragraph.publication_metadata.field_publication_source
+field_name: field_publication_source
+entity_type: paragraph
+bundle: publication_metadata
+label: 'Publication Source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

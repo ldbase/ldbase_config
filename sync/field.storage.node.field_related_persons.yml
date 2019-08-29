@@ -1,0 +1,19 @@
+uuid: beee2343-4dc4-4afc-83f5-8fe7dff10c87
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_related_persons
+field_name: field_related_persons
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

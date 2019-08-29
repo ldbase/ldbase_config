@@ -1,0 +1,29 @@
+uuid: 556a59d2-e6b6-4ad7-b9ec-35ad117245b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file_format
+    - paragraphs.paragraphs_type.file_metadata
+    - taxonomy.vocabulary.code_or_data_format
+id: paragraph.file_metadata.field_file_format
+field_name: field_file_format
+entity_type: paragraph
+bundle: file_metadata
+label: 'File Format'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      code_or_data_format: code_or_data_format
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

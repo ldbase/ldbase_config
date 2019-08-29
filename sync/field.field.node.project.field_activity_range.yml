@@ -1,0 +1,21 @@
+uuid: c97dfe6b-6176-4a17-88a7-bb8e84a2309e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_range
+    - node.type.project
+  module:
+    - datetime_range
+id: node.project.field_activity_range
+field_name: field_activity_range
+entity_type: node
+bundle: project
+label: 'Project Active From'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

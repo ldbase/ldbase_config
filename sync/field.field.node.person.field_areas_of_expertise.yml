@@ -1,0 +1,29 @@
+uuid: 1d918d35-da91-46bc-adb1-02336355450e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_areas_of_expertise
+    - node.type.person
+    - taxonomy.vocabulary.areas_of_expertise
+id: node.person.field_areas_of_expertise
+field_name: field_areas_of_expertise
+entity_type: node
+bundle: person
+label: 'Areas of Expertise'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      areas_of_expertise: areas_of_expertise
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: fac9f610-a796-42b9-8cc9-e62b2a4db50d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assessment_name
+    - node.type.dataset
+    - taxonomy.vocabulary.assessments
+id: node.dataset.field_assessment_name
+field_name: field_assessment_name
+entity_type: node
+bundle: dataset
+label: 'Assessment Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      assessments: assessments
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

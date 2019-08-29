@@ -1,0 +1,8 @@
+uuid: 1204baeb-ed72-4807-8ca3-27b97fed10b8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Code or Data Format'
+vid: code_or_data_format
+description: ''
+weight: 0

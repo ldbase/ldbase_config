@@ -1,0 +1,40 @@
+uuid: fc7369f8-7a9b-4eef-8a7e-a93a1aa1f8f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.code
+    - paragraphs.paragraphs_type.file_metadata
+  module:
+    - entity_reference_revisions
+id: node.code.field_file
+field_name: field_file
+entity_type: node
+bundle: code
+label: File
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      file_metadata: file_metadata
+    target_bundles_drag_drop:
+      demographics:
+        weight: 5
+        enabled: false
+      file_access_restrictions:
+        weight: 6
+        enabled: false
+      file_metadata:
+        enabled: true
+        weight: 7
+      grant_information:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

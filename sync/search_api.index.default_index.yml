@@ -1,0 +1,654 @@
+uuid: 8aabf5a8-1859-4625-83a5-644f7707d575
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_affiliated_code
+    - field.storage.node.field_affiliated_datasets
+    - field.storage.node.field_affiliated_documents
+    - field.storage.node.field_areas_of_expertise
+    - field.storage.node.field_assessment_name
+    - field.storage.node.field_related_persons
+    - field.storage.node.field_code_type
+    - field.storage.node.field_component_skills
+    - field.storage.node.field_curricula
+    - field.storage.node.field_data_collection_locations
+    - field.storage.node.field_data_collection_period
+    - field.storage.node.body
+    - field.storage.node.field_document_type
+    - field.storage.node.field_doi
+    - field.storage.node.field_email
+    - field.storage.node.field_external_resource
+    - field.storage.node.field_file
+    - field.storage.node.field_file_access_restrictions
+    - field.storage.paragraph.field_file_embargoed
+    - field.storage.node.field_first_name
+    - field.storage.node.field_format_information
+    - field.storage.node.field_grant_information
+    - field.storage.node.field_related_organizations
+    - field.storage.node.field_last_name
+    - field.storage.node.field_license
+    - field.storage.node.field_location
+    - field.storage.node.field_middle_name
+    - field.storage.node.field_orcid
+    - field.storage.node.field_parent_organization
+    - field.storage.node.field_demographics_information
+    - field.storage.paragraph.field_participant_type
+    - field.storage.node.field_professional_titles
+    - field.storage.node.field_activity_range
+    - field.storage.node.field_project_type
+    - field.storage.node.field_publication_info
+    - field.storage.node.field_schooling
+    - field.storage.node.field_special_populations
+    - field.storage.node.field_time_method
+    - field.storage.node.field_time_points
+    - field.storage.node.field_unaffiliated_citation
+    - field.storage.node.field_variable_types_in_dataset
+    - field.storage.node.field_web_presence
+    - field.storage.node.field_website
+    - search_api.server.default_server
+    - core.entity_view_mode.node.search_index
+  module:
+    - node
+    - user
+    - paragraphs
+    - taxonomy
+    - search_api
+id: default_index
+name: 'Default content index'
+description: 'Default content index created by the Database Search Defaults module'
+read_only: false
+field_settings:
+  author:
+    label: 'Author name'
+    datasource_id: 'entity:node'
+    property_path: 'uid:entity:name'
+    type: string
+    dependencies:
+      module:
+        - node
+        - user
+        - user
+  body:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  changed:
+    label: Changed
+    datasource_id: 'entity:node'
+    property_path: changed
+    type: date
+    dependencies:
+      module:
+        - node
+  country_code:
+    label: 'Location » The two-letter country code.'
+    datasource_id: 'entity:node'
+    property_path: 'field_location:country_code'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_location
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_activity_range:
+    label: 'Project Active From'
+    datasource_id: 'entity:node'
+    property_path: field_activity_range
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_activity_range
+  field_affiliated_code:
+    label: 'Affiliated Code'
+    datasource_id: 'entity:node'
+    property_path: field_affiliated_code
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_affiliated_code
+  field_affiliated_datasets:
+    label: 'Affiliated Datasets'
+    datasource_id: 'entity:node'
+    property_path: field_affiliated_datasets
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_affiliated_datasets
+  field_affiliated_documents:
+    label: 'Affiliated Documents'
+    datasource_id: 'entity:node'
+    property_path: field_affiliated_documents
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_affiliated_documents
+  field_areas_of_expertise:
+    label: 'Areas of Expertise'
+    datasource_id: 'entity:node'
+    property_path: field_areas_of_expertise
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_areas_of_expertise
+  field_assessment_name:
+    label: 'Assessment Name'
+    datasource_id: 'entity:node'
+    property_path: field_assessment_name
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_assessment_name
+  field_code_type:
+    label: 'Code Type'
+    datasource_id: 'entity:node'
+    property_path: field_code_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_code_type
+  field_component_skills:
+    label: Constructs
+    datasource_id: 'entity:node'
+    property_path: field_component_skills
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_component_skills
+  field_curricula:
+    label: Curricula
+    datasource_id: 'entity:node'
+    property_path: field_curricula
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_curricula
+  field_data_collection_locations:
+    label: 'Data Collection Locations'
+    datasource_id: 'entity:node'
+    property_path: field_data_collection_locations
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_data_collection_locations
+  field_data_collection_period:
+    label: 'Data Collection Period'
+    datasource_id: 'entity:node'
+    property_path: field_data_collection_period
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_data_collection_period
+  field_demographics_information:
+    label: Participants
+    datasource_id: 'entity:node'
+    property_path: field_demographics_information
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_demographics_information
+  field_document_type:
+    label: 'Document Type'
+    datasource_id: 'entity:node'
+    property_path: field_document_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_document_type
+  field_doi:
+    label: DOI
+    datasource_id: 'entity:node'
+    property_path: field_doi
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_doi
+  field_email:
+    label: Email
+    datasource_id: 'entity:node'
+    property_path: field_email
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_email
+  field_external_resource:
+    label: 'External Resource'
+    datasource_id: 'entity:node'
+    property_path: field_external_resource
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_external_resource
+  field_file:
+    label: File
+    datasource_id: 'entity:node'
+    property_path: field_file
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_file
+  field_file_access_restrictions:
+    label: 'File Access Restrictions'
+    datasource_id: 'entity:node'
+    property_path: field_file_access_restrictions
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_file_access_restrictions
+  field_file_embargoed:
+    label: 'File Access Restrictions » Paragraph » Disallow public download of file?'
+    datasource_id: 'entity:node'
+    property_path: 'field_file_access_restrictions:entity:field_file_embargoed'
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_file_access_restrictions
+        - field.storage.paragraph.field_file_embargoed
+      module:
+        - paragraphs
+  field_first_name:
+    label: 'First Name'
+    datasource_id: 'entity:node'
+    property_path: field_first_name
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_first_name
+  field_format_information:
+    label: 'Format Information'
+    datasource_id: 'entity:node'
+    property_path: field_format_information
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_format_information
+  field_grant_information:
+    label: 'Funding Agency & Grant Number'
+    datasource_id: 'entity:node'
+    property_path: field_grant_information
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_grant_information
+  field_last_name:
+    label: 'Last Name'
+    datasource_id: 'entity:node'
+    property_path: field_last_name
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_last_name
+  field_license:
+    label: License
+    datasource_id: 'entity:node'
+    property_path: field_license
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_license
+  field_middle_name:
+    label: 'Middle Name'
+    datasource_id: 'entity:node'
+    property_path: field_middle_name
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_middle_name
+  field_orcid:
+    label: ORCID
+    datasource_id: 'entity:node'
+    property_path: field_orcid
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_orcid
+  field_parent_organization:
+    label: 'Parent Organization'
+    datasource_id: 'entity:node'
+    property_path: field_parent_organization
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_parent_organization
+  field_participant_type:
+    label: 'Participants » Paragraph » Participant Type'
+    datasource_id: 'entity:node'
+    property_path: 'field_demographics_information:entity:field_participant_type'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_demographics_information
+        - field.storage.paragraph.field_participant_type
+      module:
+        - paragraphs
+  field_professional_titles:
+    label: 'Professional Titles'
+    datasource_id: 'entity:node'
+    property_path: field_professional_titles
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_professional_titles
+  field_project_type:
+    label: 'Project Type'
+    datasource_id: 'entity:node'
+    property_path: field_project_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_project_type
+  field_publication_info:
+    label: 'Publication Information'
+    datasource_id: 'entity:node'
+    property_path: field_publication_info
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_publication_info
+  field_related_organizations:
+    label: 'Host Organizations'
+    datasource_id: 'entity:node'
+    property_path: field_related_organizations
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_related_organizations
+  field_related_persons_1:
+    label: Authors
+    datasource_id: 'entity:node'
+    property_path: field_related_persons
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_related_persons
+  field_schooling:
+    label: Schooling
+    datasource_id: 'entity:node'
+    property_path: field_schooling
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_schooling
+  field_special_populations:
+    label: 'Special Populations'
+    datasource_id: 'entity:node'
+    property_path: field_special_populations
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_special_populations
+  field_time_method:
+    label: 'Time Method'
+    datasource_id: 'entity:node'
+    property_path: field_time_method
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_time_method
+  field_time_points:
+    label: 'Time Points'
+    datasource_id: 'entity:node'
+    property_path: field_time_points
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_time_points
+  field_unaffiliated_citation:
+    label: 'Unaffiliated Citation'
+    datasource_id: 'entity:node'
+    property_path: field_unaffiliated_citation
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_unaffiliated_citation
+  field_variable_types_in_dataset:
+    label: 'Variable Types in Dataset'
+    datasource_id: 'entity:node'
+    property_path: field_variable_types_in_dataset
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_variable_types_in_dataset
+  field_web_presence:
+    label: 'Web Presence'
+    datasource_id: 'entity:node'
+    property_path: field_web_presence
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_web_presence
+  field_website:
+    label: Website
+    datasource_id: 'entity:node'
+    property_path: field_website
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_website
+  langcode:
+    label: Language
+    datasource_id: 'entity:node'
+    property_path: langcode
+    type: string
+    dependencies:
+      module:
+        - node
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  rendered_item:
+    label: 'Rendered item'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: search_index
+          page: search_index
+  status:
+    label: 'Publishing status'
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  sticky:
+    label: 'Sticky at top of lists'
+    datasource_id: 'entity:node'
+    property_path: sticky
+    type: boolean
+    dependencies:
+      module:
+        - node
+  tid:
+    label: 'Participants » Paragraph » Participant Type » Taxonomy term » Term ID'
+    datasource_id: 'entity:node'
+    property_path: 'field_demographics_information:entity:field_participant_type:entity:tid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_demographics_information
+        - field.storage.paragraph.field_participant_type
+      module:
+        - paragraphs
+        - taxonomy
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 8
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: 'Author ID'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - node
+  uid_1:
+    label: 'Authored by'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - code
+        - dataset
+        - document
+        - organization
+        - person
+        - project
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url:
+    weights:
+      preprocess_index: -30
+  aggregated_field:
+    weights:
+      add_properties: 20
+  content_access:
+    weights:
+      preprocess_index: -6
+      preprocess_query: -4
+  entity_status:
+    weights:
+      preprocess_index: -10
+  html_filter:
+    weights:
+      preprocess_index: -3
+      preprocess_query: -6
+    fields:
+      - rendered_item
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      string: 2
+    all_fields: false
+  ignorecase:
+    weights:
+      preprocess_index: -5
+      preprocess_query: -8
+    fields:
+      - rendered_item
+      - title
+    all_fields: false
+  rendered_item:
+    weights:
+      add_properties: 0
+      pre_index_save: -10
+  stopwords:
+    weights:
+      postprocess_query: -10
+      preprocess_query: -10
+    fields:
+      - rendered_item
+      - title
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+    all_fields: false
+  tokenizer:
+    weights:
+      preprocess_index: -2
+      preprocess_query: -5
+    fields:
+      - rendered_item
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    all_fields: false
+  transliteration:
+    weights:
+      preprocess_index: -4
+      preprocess_query: -7
+    fields:
+      - rendered_item
+      - title
+    all_fields: false
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: default_server

@@ -1,0 +1,29 @@
+uuid: 8a1e82ef-3a24-4232-88f2-ea3ca3a4a0f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_curricula
+    - node.type.project
+    - taxonomy.vocabulary.curricula
+id: node.project.field_curricula
+field_name: field_curricula
+entity_type: node
+bundle: project
+label: Curricula
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      curricula: curricula
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

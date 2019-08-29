@@ -1,0 +1,41 @@
+uuid: e45d84c2-7b32-4ef3-a7c3-0ccde7f83907
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.demographics.field_age_range
+    - field.field.paragraph.demographics.field_number_of_participants
+    - field.field.paragraph.demographics.field_participant_type
+    - paragraphs.paragraphs_type.demographics
+  module:
+    - range
+id: paragraph.demographics.default
+targetEntityType: paragraph
+bundle: demographics
+mode: default
+content:
+  field_age_range:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: range
+    region: content
+  field_number_of_participants:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_participant_type:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

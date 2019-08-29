@@ -1,0 +1,21 @@
+uuid: 61d604ed-0309-4419-aaa4-d6df10c102ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_points
+    - node.type.dataset
+  module:
+    - options
+id: node.dataset.field_time_points
+field_name: field_time_points
+entity_type: node
+bundle: dataset
+label: 'Time Points'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

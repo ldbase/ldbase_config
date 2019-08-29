@@ -1,0 +1,29 @@
+uuid: f7ac7a2d-5557-46f8-9946-c6362bd91769
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_funding_agency
+    - paragraphs.paragraphs_type.grant_information
+    - taxonomy.vocabulary.funding_agencies
+id: paragraph.grant_information.field_funding_agency
+field_name: field_funding_agency
+entity_type: paragraph
+bundle: grant_information
+label: 'Funding Agency'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      funding_agencies: funding_agencies
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

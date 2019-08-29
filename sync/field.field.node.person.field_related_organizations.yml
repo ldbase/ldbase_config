@@ -1,0 +1,28 @@
+uuid: 98911fda-e559-4de9-a2dc-5e4c7b6e3ea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_organizations
+    - node.type.organization
+    - node.type.person
+id: node.person.field_related_organizations
+field_name: field_related_organizations
+entity_type: node
+bundle: person
+label: 'Organizational Affiliations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      organization: organization
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

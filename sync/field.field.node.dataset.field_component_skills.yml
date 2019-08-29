@@ -1,0 +1,29 @@
+uuid: 17ef33d1-a6f7-4ae1-954f-ae0c424ef6d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_component_skills
+    - node.type.dataset
+    - taxonomy.vocabulary.constructs
+id: node.dataset.field_component_skills
+field_name: field_component_skills
+entity_type: node
+bundle: dataset
+label: Constructs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      constructs: constructs
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

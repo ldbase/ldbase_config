@@ -1,0 +1,52 @@
+uuid: ab6d5292-3311-4794-89ee-4096b7679a98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.file_metadata.field_file_format
+    - field.field.paragraph.file_metadata.field_file_upload
+    - field.field.paragraph.file_metadata.field_file_version_description
+    - field.field.paragraph.file_metadata.field_format_version
+    - paragraphs.paragraphs_type.file_metadata
+  module:
+    - file
+id: paragraph.file_metadata.default
+targetEntityType: paragraph
+bundle: file_metadata
+mode: default
+content:
+  field_file_format:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_file_upload:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_file_version_description:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_format_version:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+uuid: b843a02d-cd01-4b17-9302-bf650cf49d51
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: code_paths
+label: 'Code Paths'
+type: 'canonical_entities:node'
+pattern: '/code/[node:uuid]'
+selection_criteria:
+  e9c3cd12-d4c9-4af0-b3eb-d06571532140:
+    id: node_type
+    bundles:
+      code: code
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e9c3cd12-d4c9-4af0-b3eb-d06571532140
+selection_logic: and
+weight: -5
+relationships: {  }

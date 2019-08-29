@@ -1,0 +1,20 @@
+uuid: b28be7be-a6fd-41fd-ba77-5cc92af5f380
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_curricula
+field_name: field_curricula
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

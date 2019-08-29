@@ -1,0 +1,29 @@
+uuid: 28e987f3-974d-486b-a1bb-d275500f9a3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_variable_types_in_dataset
+    - node.type.dataset
+    - taxonomy.vocabulary.dataset_variables
+id: node.dataset.field_variable_types_in_dataset
+field_name: field_variable_types_in_dataset
+entity_type: node
+bundle: dataset
+label: 'Variable Types in Dataset'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dataset_variables: dataset_variables
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

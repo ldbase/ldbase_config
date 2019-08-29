@@ -1,0 +1,9 @@
+uuid: cf336e1a-b9da-44a9-9a33-a0c4bb145046
+langcode: en
+status: true
+dependencies: {  }
+id: demographics
+label: Demographics
+icon_uuid: null
+description: 'The types and ages of participants.'
+behavior_plugins: {  }

@@ -1,0 +1,9 @@
+uuid: bce798f3-b709-4ebf-8499-a10503eb41e0
+langcode: en
+status: true
+dependencies: {  }
+id: publication_metadata
+label: 'Publication Metadata'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,28 @@
+uuid: 5d247974-8f38-4e76-bf88-2b2699b79c32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_affiliated_datasets
+    - node.type.dataset
+    - node.type.project
+id: node.project.field_affiliated_datasets
+field_name: field_affiliated_datasets
+entity_type: node
+bundle: project
+label: 'Affiliated Datasets'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      dataset: dataset
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

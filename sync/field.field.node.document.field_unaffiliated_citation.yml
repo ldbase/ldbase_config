@@ -1,0 +1,37 @@
+uuid: 65ce047b-24bb-4470-84f8-0f31ac76fb05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unaffiliated_citation
+    - node.type.code
+    - node.type.dataset
+    - node.type.document
+    - node.type.organization
+    - node.type.person
+    - node.type.project
+id: node.document.field_unaffiliated_citation
+field_name: field_unaffiliated_citation
+entity_type: node
+bundle: document
+label: 'Unaffiliated Citation'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      code: code
+      dataset: dataset
+      document: document
+      organization: organization
+      person: person
+      project: project
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: code
+field_type: entity_reference

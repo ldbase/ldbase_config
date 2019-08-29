@@ -1,0 +1,28 @@
+uuid: 0daa35c7-454e-4bb8-a132-8d363bbbaa8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_organizations
+    - node.type.organization
+    - node.type.project
+id: node.project.field_related_organizations
+field_name: field_related_organizations
+entity_type: node
+bundle: project
+label: 'Host Organizations'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      organization: organization
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

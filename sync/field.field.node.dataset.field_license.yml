@@ -1,0 +1,29 @@
+uuid: f39404e1-0bf2-496d-8aa7-5ad5cf87ded7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_license
+    - node.type.dataset
+    - taxonomy.vocabulary.licenses
+id: node.dataset.field_license
+field_name: field_license
+entity_type: node
+bundle: dataset
+label: License
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      licenses: licenses
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

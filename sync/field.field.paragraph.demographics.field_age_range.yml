@@ -1,0 +1,29 @@
+uuid: 78148179-7ecb-4547-91bf-ba007188ecf3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_age_range
+    - paragraphs.paragraphs_type.demographics
+  module:
+    - range
+id: paragraph.demographics.field_age_range
+field_name: field_age_range
+entity_type: paragraph
+bundle: demographics
+label: 'Age Range'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  from:
+    prefix: ''
+    suffix: ''
+  to:
+    prefix: ''
+    suffix: ''
+field_type: range_integer

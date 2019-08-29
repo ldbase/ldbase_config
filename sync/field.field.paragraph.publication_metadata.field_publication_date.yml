@@ -1,0 +1,21 @@
+uuid: cb09e196-dc52-45e6-8248-9bb9879e5fd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_publication_date
+    - paragraphs.paragraphs_type.publication_metadata
+  module:
+    - datetime
+id: paragraph.publication_metadata.field_publication_date
+field_name: field_publication_date
+entity_type: paragraph
+bundle: publication_metadata
+label: 'Publication Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

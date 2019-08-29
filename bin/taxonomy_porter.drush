@@ -1,0 +1,46 @@
+<?php
+
+use Drupal\taxonomy\Entity\Term;
+
+$given_command = $_SERVER['argv'][3];
+$allowable_commands = array('import', 'export', 'help');
+if (!in_array($given_command, $allowable_commands, TRUE)) {
+  @exit("'{$given_command}' is not a recognized command.\nUse the 'help' command for a list of valid options.\n");
+}
+
+$file_location = $_SERVER['argv'][4];
+
+$given_command($file_location);
+
+function export($file_location) {
+  echo "Exporting taxonomy terms to {$file_location}...\n";
+  $file = fopen($file_location, 'w');
+   
+  $taxonomies = taxonomy_vocabulary_get_names();
+  foreach ($taxonomies as $taxonomy) {
+    $terms =\Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($taxonomy);
+    foreach ($terms as $term) {
+      $line = "{$term->vid},{$term->name}";
+      fwrite($file, $line.PHP_EOL);
+    }
+  }
+  fclose($file);
+}
+
+function import($file_location) {
+  echo "Importing taxonomy terms from {$file_location}...\n";
+  $file = fopen($file_location, 'r');
+  while(!feof($file)) {
+    $line = fgets($file);
+    $line = trim($line);
+    if ($line != '') {
+      list($vocabulary, $term) = explode(',', $line);
+      $term = Term::create(array(
+        'parent' => array(),
+        'vid' => $vocabulary,
+        'name' => $term,
+      ))->save();
+    }
+  }
+  fclose($file);
+}

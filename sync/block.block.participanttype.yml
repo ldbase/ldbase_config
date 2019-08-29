@@ -1,0 +1,33 @@
+uuid: 53a1dc96-f2cf-4483-ac8a-20b952adf050
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.participant_type
+  module:
+    - collapsiblock
+    - facets
+    - system
+  theme:
+    - bartik
+third_party_settings:
+  collapsiblock:
+    collapse_action: '4'
+id: participanttype
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'facet_block:participant_type'
+settings:
+  id: 'facet_block:participant_type'
+  label: 'Participant Type'
+  provider: facets
+  label_display: visible
+  block_id: participanttype
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

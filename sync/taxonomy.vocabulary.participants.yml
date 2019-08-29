@@ -1,0 +1,8 @@
+uuid: 6a542c98-9a71-450b-883d-c7869158f4dd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Participant Types'
+vid: participants
+description: ''
+weight: 0

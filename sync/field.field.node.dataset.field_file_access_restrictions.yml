@@ -1,0 +1,37 @@
+uuid: a0150e81-5493-45bd-888a-36ae255a3e7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_access_restrictions
+    - node.type.dataset
+    - paragraphs.paragraphs_type.file_access_restrictions
+  module:
+    - entity_reference_revisions
+id: node.dataset.field_file_access_restrictions
+field_name: field_file_access_restrictions
+entity_type: node
+bundle: dataset
+label: 'File Access Restrictions'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      file_access_restrictions: file_access_restrictions
+    target_bundles_drag_drop:
+      code_or_data_format:
+        weight: 4
+        enabled: false
+      file_access_restrictions:
+        enabled: true
+        weight: 5
+      grant_information:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

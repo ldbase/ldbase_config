@@ -1,0 +1,32 @@
+uuid: 5d376cbd-b576-48da-972e-9f374e9d8b17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format_information
+    - node.type.code
+  module:
+    - entity_reference_revisions
+id: node.code.field_format_information
+field_name: field_format_information
+entity_type: node
+bundle: code
+label: 'Format Information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: {  }
+    target_bundles_drag_drop:
+      code_or_data_format:
+        enabled: true
+        weight: 3
+      grant_information:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

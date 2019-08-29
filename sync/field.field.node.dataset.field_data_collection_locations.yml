@@ -1,0 +1,29 @@
+uuid: bd325ecc-6ed5-49a7-963d-3e0ca994e75b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_collection_locations
+    - node.type.dataset
+    - taxonomy.vocabulary.data_collection_locations
+id: node.dataset.field_data_collection_locations
+field_name: field_data_collection_locations
+entity_type: node
+bundle: dataset
+label: 'Data Collection Locations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      data_collection_locations: data_collection_locations
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

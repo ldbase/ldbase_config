@@ -1,0 +1,33 @@
+uuid: b257ad1a-ad81-472d-b69c-223f27d0d9b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.publication_metadata.field_publication_date
+    - field.field.paragraph.publication_metadata.field_publication_source
+    - paragraphs.paragraphs_type.publication_metadata
+  module:
+    - datetime
+    - link
+id: paragraph.publication_metadata.default
+targetEntityType: paragraph
+bundle: publication_metadata
+mode: default
+content:
+  field_publication_date:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_publication_source:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

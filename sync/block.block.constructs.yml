@@ -1,0 +1,33 @@
+uuid: 5b19895f-a003-4dfa-99e8-43f5a8fb0efc
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.constructs
+  module:
+    - collapsiblock
+    - facets
+    - system
+  theme:
+    - bartik
+third_party_settings:
+  collapsiblock:
+    collapse_action: '4'
+id: constructs
+theme: bartik
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'facet_block:constructs'
+settings:
+  id: 'facet_block:constructs'
+  label: Constructs
+  provider: facets
+  label_display: visible
+  block_id: constructs
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

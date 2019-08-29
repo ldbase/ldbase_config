@@ -1,0 +1,128 @@
+uuid: d53a046e-f57d-4641-ab51-7bf88033324a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.code.body
+    - field.field.node.code.field_affiliated_documents
+    - field.field.node.code.field_code_type
+    - field.field.node.code.field_doi
+    - field.field.node.code.field_external_resource
+    - field.field.node.code.field_file
+    - field.field.node.code.field_format_information
+    - field.field.node.code.field_license
+    - field.field.node.code.field_publication_info
+    - field.field.node.code.field_related_persons
+    - field.field.node.code.field_unaffiliated_citation
+    - node.type.code
+  module:
+    - entity_reference_revisions
+    - link
+    - text
+    - user
+id: node.code.default
+targetEntityType: node
+bundle: code
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_affiliated_documents:
+    weight: 14
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_code_type:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_doi:
+    weight: 15
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_external_resource:
+    weight: 9
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_file:
+    weight: 12
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_format_information:
+    type: entity_reference_revisions_entity_view
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_license:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_publication_info:
+    weight: 13
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_related_persons:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_unaffiliated_citation:
+    weight: 16
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

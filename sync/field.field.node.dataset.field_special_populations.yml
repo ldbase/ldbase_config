@@ -1,0 +1,29 @@
+uuid: 3d084ecd-ebf0-40b5-8d2a-04ab3a12d1f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_special_populations
+    - node.type.dataset
+    - taxonomy.vocabulary.special_populations
+id: node.dataset.field_special_populations
+field_name: field_special_populations
+entity_type: node
+bundle: dataset
+label: 'Special Populations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      special_populations: special_populations
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

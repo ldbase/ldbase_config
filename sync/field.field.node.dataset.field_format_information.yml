@@ -1,0 +1,32 @@
+uuid: ab55839b-5ecc-4366-9aa5-09bd6310b13b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_format_information
+    - node.type.dataset
+  module:
+    - entity_reference_revisions
+id: node.dataset.field_format_information
+field_name: field_format_information
+entity_type: node
+bundle: dataset
+label: 'Format Information'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: {  }
+    target_bundles_drag_drop:
+      code_or_data_format:
+        enabled: true
+        weight: 3
+      grant_information:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

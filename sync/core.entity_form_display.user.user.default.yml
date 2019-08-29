@@ -22,6 +22,11 @@ content:
   language:
     weight: 0
     region: content
+  matomo:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   timezone:
     weight: 6
     region: content

@@ -1,0 +1,9 @@
+uuid: 9433d611-8a21-4e1b-84fb-d7e7dcae68cc
+langcode: en
+status: true
+dependencies: {  }
+id: file_metadata
+label: 'FIle Metadata'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

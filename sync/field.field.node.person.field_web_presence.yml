@@ -1,0 +1,23 @@
+uuid: 9e569441-546e-43a0-bdc4-eb75145f5253
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_presence
+    - node.type.person
+  module:
+    - link
+id: node.person.field_web_presence
+field_name: field_web_presence
+entity_type: node
+bundle: person
+label: 'Web Presence'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

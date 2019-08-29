@@ -1,0 +1,21 @@
+uuid: 3db88783-6693-477e-b69d-a41b2b6a25d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_collection_period
+    - node.type.dataset
+  module:
+    - datetime_range
+id: node.dataset.field_data_collection_period
+field_name: field_data_collection_period
+entity_type: node
+bundle: dataset
+label: 'Data Collection Period'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

@@ -1,0 +1,23 @@
+uuid: 27f63e1a-c120-4dfc-9060-0990436f23c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external_resource
+    - node.type.dataset
+  module:
+    - link
+id: node.dataset.field_external_resource
+field_name: field_external_resource
+entity_type: node
+bundle: dataset
+label: 'External Resource'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

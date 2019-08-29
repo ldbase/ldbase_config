@@ -1,0 +1,28 @@
+uuid: 5887420f-3e80-41e2-8dbc-7f12fb147b7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_persons
+    - node.type.dataset
+    - node.type.person
+id: node.dataset.field_related_persons
+field_name: field_related_persons
+entity_type: node
+bundle: dataset
+label: Contributors
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

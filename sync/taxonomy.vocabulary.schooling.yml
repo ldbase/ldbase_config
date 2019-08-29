@@ -1,0 +1,8 @@
+uuid: 8265e153-6d8a-4b3d-a686-fb05d7e9e63a
+langcode: en
+status: true
+dependencies: {  }
+name: Schooling
+vid: schooling
+description: null
+weight: 0

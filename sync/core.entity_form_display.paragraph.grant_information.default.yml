@@ -1,0 +1,33 @@
+uuid: 715cf37d-eba6-4352-bd58-250f78c5da68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grant_information.field_funding_agency
+    - field.field.paragraph.grant_information.field_grant_number
+    - paragraphs.paragraphs_type.grant_information
+id: paragraph.grant_information.default
+targetEntityType: paragraph
+bundle: grant_information
+mode: default
+content:
+  field_funding_agency:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_grant_number:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
