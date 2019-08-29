@@ -5,22 +5,25 @@ use Drupal\taxonomy\Entity\Term;
 $given_command = $_SERVER['argv'][3];
 $allowable_commands = array('import', 'export', 'help');
 if (!in_array($given_command, $allowable_commands, TRUE)) {
-  @exit("'{$given_command}' is not a recognized command.\nUse the 'help' command for a list of valid options.\n");
+  @exit("'{$given_command}' is not a recognized command.\nChoose 'import' or 'export'.\n");
 }
 
 $file_location = $_SERVER['argv'][4];
+$file_location_first_character = substr($file_location, 0, 1);
+if ($file_location_first_character != '/') {
+  @exit("'{$file_location}' is not an absolute path.\nPlease use an absolute path to file.\n");
+}
 
 $given_command($file_location);
 
 function export($file_location) {
   echo "Exporting taxonomy terms to {$file_location}...\n";
   $file = fopen($file_location, 'w');
-   
   $taxonomies = taxonomy_vocabulary_get_names();
   foreach ($taxonomies as $taxonomy) {
     $terms =\Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($taxonomy);
     foreach ($terms as $term) {
-      $line = "{$term->vid},{$term->name}";
+      $line = "{$term->vid}|{$term->name}";
       fwrite($file, $line.PHP_EOL);
     }
   }
@@ -34,7 +37,7 @@ function import($file_location) {
     $line = fgets($file);
     $line = trim($line);
     if ($line != '') {
-      list($vocabulary, $term) = explode(',', $line);
+      list($vocabulary, $term) = explode('|', $line);
       $term = Term::create(array(
         'parent' => array(),
         'vid' => $vocabulary,
