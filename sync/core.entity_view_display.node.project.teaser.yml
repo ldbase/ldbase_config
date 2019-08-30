@@ -28,4 +28,17 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_activity_range: true
+  field_affiliated_datasets: true
+  field_affiliated_documents: true
+  field_curricula: true
+  field_doi: true
+  field_grant_information: true
+  field_project_type: true
+  field_related_organizations: true
+  field_related_persons: true
+  field_schooling: true
+  field_time_method: true
+  field_unaffiliated_citation: true
+  field_website: true
   search_api_excerpt: true

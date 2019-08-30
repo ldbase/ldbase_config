@@ -28,4 +28,12 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_document_type: true
+  field_doi: true
+  field_external_resource: true
+  field_file: true
+  field_license: true
+  field_publication_info: true
+  field_related_persons: true
+  field_unaffiliated_citation: true
   search_api_excerpt: true

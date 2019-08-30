@@ -28,4 +28,25 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_affiliated_code: true
+  field_affiliated_documents: true
+  field_assessment_name: true
+  field_component_skills: true
+  field_data_collection_locations: true
+  field_data_collection_period: true
+  field_demographics_information: true
+  field_doi: true
+  field_external_resource: true
+  field_file: true
+  field_file_access_restrictions: true
+  field_format_information: true
+  field_license: true
+  field_location: true
+  field_publication_info: true
+  field_related_organizations: true
+  field_related_persons: true
+  field_special_populations: true
+  field_time_points: true
+  field_unaffiliated_citation: true
+  field_variable_types_in_dataset: true
   search_api_excerpt: true

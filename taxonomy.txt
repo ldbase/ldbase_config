@@ -2888,39 +2888,39 @@ participants|Preschooler
 participants|Seniors
 participants|Teachers
 participants|Undergrads
-project_types|Other
-project_types|Treatment study
-project_types|Randomized control trial
-project_types|Quasi-experimental
-project_types|Single-case design
-project_types|Regression discontinuity design
-project_types|Case-control
-project_types|Text analysis
-project_types|Survey
-project_types|Reading-age method
-project_types|Qualitative
-project_types|Psychophysiological
-project_types|Psychometrics
-project_types|Protocol analysis
 project_types|Bilingual
+project_types|Case-control
 project_types|Clinical case study
-project_types|Neuroimaging
-project_types|Meta-analysis
-project_types|Interview
-project_types|Individual difference
-project_types|Group design
-project_types|Genetically-sensitive
-project_types|Eyetracking
-project_types|Experimental study
-project_types|Existing records data
-project_types|Ethnographic
-project_types|Dyadic
-project_types|Discourse analysis
 project_types|Cognitive neuroscience
+project_types|Discourse analysis
+project_types|Dyadic
+project_types|Ethnographic
+project_types|Existing records data
+project_types|Experimental study
+project_types|Eyetracking
+project_types|Genetically-sensitive
+project_types|Group design
+project_types|Individual difference
+project_types|Interview
+project_types|Meta-analysis
+project_types|Neuroimaging
 project_types|Neuroscience
+project_types|Other
+project_types|Protocol analysis
+project_types|Psychometrics
+project_types|Psychophysiological
+project_types|Qualitative
+project_types|Quasi-experimental
+project_types|Randomized control trial
+project_types|Reading-age method
+project_types|Regression discontinuity design
+project_types|Single-case design
+project_types|Survey
+project_types|Text analysis
+project_types|Treatment study
 schooling|Ancillary school services
 schooling|Charter schools
-schooling|Child caregivers 
+schooling|Child caregivers
 schooling|Childcare
 schooling|Day care centers
 schooling|Day care effects
@@ -2944,7 +2944,7 @@ schooling|Preschool experience
 schooling|Preschool programs
 schooling|Preschool teachers
 schooling|Special education
-schooling|Tutoring 
+schooling|Tutoring
 special_populations|Attention Deficit/Hyperactivity Disorder
 special_populations|Autism Spectrum Disorder
 special_populations|Behavioral Impairment
