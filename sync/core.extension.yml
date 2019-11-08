@@ -41,6 +41,7 @@ module:
   honeypot: 0
   image: 0
   kint: 0
+  ldbase_handlers: 0
   link: 0
   matomo: 0
   menu_ui: 0

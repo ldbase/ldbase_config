@@ -4,6 +4,7 @@ status: open
 dependencies:
   module:
     - honeypot
+    - ldbase_handlers
 third_party_settings:
   honeypot:
     honeypot: true
@@ -18,7 +19,7 @@ id: create_update_organization
 title: 'Create/Update Organization'
 description: 'A form for creating or updating LDbase Organization objects.'
 category: 'LDbase Create/Update Forms'
-elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#description': 'Enter the name of your organization, department, research center (or anything else!) here.'\n  '#required': true\n  '#required_error': 'You forgot to enter a name for this organization!'\ndescription:\n  '#type': textarea\n  '#title': Description\n  '#description': 'Enter a brief but helpful description of the organization here.'\n  '#required': true\n  '#required_error': 'You forgot to enter a description for this organization!'\nwebsite:\n  '#type': url\n  '#title': Website\n  '#description': 'Enter a URL for the organization here.'\n  '#required': true\n  '#required_error': 'You forgot to enter a website for this organization!'\nlocation:\n  '#type': webform_address\n  '#title': Location\n  '#description': 'Please tell us where this organization is.'\n  '#required': true\n  '#address__access': false\n  '#address_2__access': false\n  '#city__required': true\n  '#state_province__required': true\n  '#postal_code__access': false\n  '#country__required': true\n  '#select2': true\nimage:\n  '#type': webform_image_file\n  '#title': Image\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Save"
+elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#description': 'Enter the name of your organization, department, research center (or anything else!) here.'\n  '#required': true\n  '#required_error': 'You forgot to enter a name for this organization!'\ndescription:\n  '#type': textarea\n  '#title': Description\n  '#description': 'Enter a brief but helpful description of the organization here.'\n  '#required': true\n  '#required_error': 'You forgot to enter a description for this organization!'\nwebsite:\n  '#type': url\n  '#title': Website\n  '#description': 'Enter a URL for the organization here.'\n  '#required': true\n  '#required_error': 'You forgot to enter a website for this organization!'\nlocation:\n  '#type': address\n  '#title': Location\n  '#description': 'Please tell us where this organization is.'\n  '#required': true\n  '#field_overrides':\n    givenName: hidden\n    additionalName: hidden\n    familyName: hidden\n    organization: hidden\n    addressLine1: hidden\n    addressLine2: hidden\n    postalCode: hidden\n    sortingCode: hidden\n    dependentLocality: hidden\n    locality: required\n    administrativeArea: required\nimage:\n  '#type': webform_image_file\n  '#title': Image\nnode_id:\n  '#type': hidden\n  '#title': 'Node ID'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Save"
 css: ''
 javascript: ''
 settings:
@@ -31,8 +32,8 @@ settings:
   page_submit_path: /forms/organizations
   page_confirm_path: /forms/organizations/success
   page_admin_theme: false
-  form_title: both
-  form_submit_once: false
+  form_title: source_entity_webform
+  form_submit_once: true
   form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
@@ -129,7 +130,7 @@ settings:
   entity_limit_user_interval: null
   purge: none
   purge_days: null
-  results_disabled: false
+  results_disabled: true
   results_disabled_ignore: false
   token_update: false
 access:
@@ -179,4 +180,20 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  debug:
+    id: debug
+    label: Debug
+    handler_id: debug
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
+  ldbase_organization:
+    id: org_from_webform
+    label: 'LDbase Organization'
+    handler_id: ldbase_organization
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
