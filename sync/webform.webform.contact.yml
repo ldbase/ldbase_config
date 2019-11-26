@@ -1,3 +1,4 @@
+uuid: 0f8ec0a2-3eb7-42a6-88d5-cacab5dfbdea
 langcode: en
 status: open
 dependencies:
@@ -210,6 +211,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+      parameters: {  }
   email_notification:
     id: email
     label: 'Email notification'
@@ -244,4 +246,4 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-uuid: 0f8ec0a2-3eb7-42a6-88d5-cacab5dfbdea
+      parameters: {  }
