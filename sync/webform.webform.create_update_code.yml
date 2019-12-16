@@ -1,39 +1,34 @@
-uuid: cdbc6503-6d4f-4e99-9726-638ddb99d022
+uuid: 9016f189-f789-4cd5-8158-cf30ae7f048e
 langcode: en
 status: open
 dependencies:
   module:
-    - honeypot
     - ldbase_handlers
-third_party_settings:
-  honeypot:
-    honeypot: true
-    time_restriction: true
 open: null
 close: null
 weight: 0
 uid: 1
 template: false
 archive: false
-id: create_update_organization
-title: 'Create/Update Organization'
-description: 'A form for creating or updating LDbase Organization objects.'
+id: create_update_code
+title: 'Create/Update Code'
+description: 'A form for creating or updating LDbase Code objects.....'
 category: 'LDbase Create/Update Forms'
-elements: "name:\n  '#type': textfield\n  '#title': Name\n  '#description': 'Enter the name of your organization, department, research center (or anything else!) here.'\n  '#required': true\n  '#required_error': 'You forgot to enter a name for this organization!'\ndescription:\n  '#type': textarea\n  '#title': Description\n  '#description': 'Enter a brief but helpful description of the organization here.'\n  '#required': true\n  '#required_error': 'You forgot to enter a description for this organization!'\nwebsite:\n  '#type': url\n  '#title': Website\n  '#multiple': true\n  '#description': 'Enter a URL for the organization here.'\n  '#required': true\n  '#required_error': 'You forgot to enter a website for this organization!'\n  '#multiple__sorting': false\nlocation_label:\n  '#type': label\n  '#title': Location\nlocation:\n  '#type': address\n  '#title': Location\n  '#multiple': true\n  '#description': 'Please tell us where this organization is.'\n  '#required': true\n  '#multiple__sorting': false\n  '#field_overrides':\n    givenName: hidden\n    additionalName: hidden\n    familyName: hidden\n    organization: hidden\n    addressLine1: hidden\n    addressLine2: hidden\n    postalCode: hidden\n    sortingCode: hidden\n    dependentLocality: hidden\n    locality: required\n    administrativeArea: required\nimage:\n  '#type': webform_image_file\n  '#title': Image\nnode_id:\n  '#type': hidden\n  '#title': 'Node ID'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Save"
+elements: "title:\n  '#type': textfield\n  '#title': Title\n  '#required': true\naffiliated_documents:\n  '#type': entity_autocomplete\n  '#title': 'Affiliated Documents'\n  '#multiple': true\n  '#multiple__sorting': false\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      document: document\nauthors:\n  '#type': entity_autocomplete\n  '#title': Authors\n  '#multiple': true\n  '#multiple__sorting': false\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      person: person\ncode_type:\n  '#type': webform_entity_select\n  '#title': 'Code Type'\n  '#target_type': taxonomy_term\n  '#selection_handler': 'default:taxonomy_term'\n  '#selection_settings':\n    target_bundles:\n      code_type: code_type\n    sort:\n      field: name\n      direction: ASC\ndescription:\n  '#type': textarea\n  '#title': Description\ndoi:\n  '#type': textfield\n  '#title': DOI\n  '#multiple': true\n  '#multiple__sorting': false\nexternal_resource:\n  '#type': url\n  '#title': 'External Resource'\nfile:\n  '#type': webform_custom_composite\n  '#title': File\n  '#multiple__sorting': false\n  '#element':\n    file_format:\n      '#type': webform_entity_select\n      '#title': 'File Format'\n      '#target_type': taxonomy_term\n      '#selection_handler': 'default:taxonomy_term'\n      '#selection_settings':\n        target_bundles:\n          code_or_data_format: code_or_data_format\n        sort:\n          field: name\n          direction: ASC\n    file_upload:\n      '#type': managed_file\n      '#title': 'File Upload'\n    file_version_description:\n      '#type': textfield\n      '#title': 'File Version Description'\n    format_version:\n      '#type': textfield\n      '#title': 'Format Version'\nlicense:\n  '#type': webform_entity_select\n  '#title': License\n  '#target_type': taxonomy_term\n  '#selection_handler': 'default:taxonomy_term'\n  '#selection_settings':\n    target_bundles:\n      licenses: licenses\n    sort:\n      field: name\n      direction: ASC\npublication_info:\n  '#type': webform_custom_composite\n  '#title': 'Publication Information'\n  '#multiple__sorting': false\n  '#element':\n    publication_date:\n      '#type': date\n      '#title': 'Publication Date'\n    publication_source:\n      '#type': url\n      '#title': 'Publication Source'\nunaffiliated_citation:\n  '#type': entity_autocomplete\n  '#title': 'Unaffiliated Citation'\n  '#multiple': true\n  '#multiple__sorting': false\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      code: code\n      dataset: dataset\n      document: document\n      organization: organization\n      person: person\n      project: project\nnode_id:\n  '#type': hidden\n  '#title': node_id"
 css: ''
 javascript: ''
 settings:
-  ajax: true
+  ajax: false
   ajax_scroll_top: ''
-  ajax_progress_type: throbber
-  ajax_effect: fade
-  ajax_speed: 1500
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
   page: true
-  page_submit_path: /forms/organization
-  page_confirm_path: /forms/organization/success
+  page_submit_path: /forms/code
+  page_confirm_path: /forms/code/success
   page_admin_theme: false
-  form_title: source_entity_webform
-  form_submit_once: true
+  form_title: both
+  form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
@@ -85,6 +80,7 @@ settings:
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
+  wizard_progress_states: false
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
@@ -132,9 +128,8 @@ settings:
   purge_days: null
   results_disabled: true
   results_disabled_ignore: true
-  token_update: false
-  wizard_progress_states: false
   token_view: false
+  token_update: false
 access:
   create:
     roles:
@@ -183,19 +178,19 @@ access:
     users: {  }
     permissions: {  }
 handlers:
+  ldbase_code:
+    id: code_from_webform
+    label: 'LDbase Code'
+    handler_id: ldbase_code
+    status: true
+    conditions: {  }
+    weight: -49
+    settings: {  }
   debug:
     id: debug
     label: Debug
     handler_id: debug
     status: false
     conditions: {  }
-    weight: 0
-    settings: {  }
-  ldbase_organization:
-    id: org_from_webform
-    label: 'LDbase Organization'
-    handler_id: ldbase_organization
-    status: true
-    conditions: {  }
-    weight: 0
+    weight: -50
     settings: {  }

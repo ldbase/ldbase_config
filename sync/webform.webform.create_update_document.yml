@@ -24,8 +24,8 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
-  page_confirm_path: ''
+  page_submit_path: /forms/document
+  page_confirm_path: /forms/document/success
   page_admin_theme: false
   form_title: both
   form_submit_once: false
@@ -127,8 +127,9 @@ settings:
   purge: none
   purge_days: null
   results_disabled: true
-  results_disabled_ignore: false
+  results_disabled_ignore: true
   token_update: false
+  token_view: false
 access:
   create:
     roles:
