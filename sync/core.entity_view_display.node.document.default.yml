@@ -15,9 +15,406 @@ dependencies:
     - node.type.document
   module:
     - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - ldbase_handlers
     - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Title section'
+          column_widths: 50-50
+        components:
+          0da316fc-892f-4ca7-bc31-7978c55c76d7:
+            uuid: 0da316fc-892f-4ca7-bc31-7978c55c76d7
+            region: first
+            configuration:
+              id: 'field_block:node:document:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          f588b910-0402-42a2-8653-da5b287b735b:
+            uuid: f588b910-0402-42a2-8653-da5b287b735b
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'DOI Section'
+          column_widths: 50-50
+        components:
+          861d8cd2-ecae-4fdd-a31d-1cc2aa25d333:
+            uuid: 861d8cd2-ecae-4fdd-a31d-1cc2aa25d333
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+          0bd7dfa6-8299-400e-bbf6-6597e1c22d7b:
+            uuid: 0bd7dfa6-8299-400e-bbf6-6597e1c22d7b
+            region: first
+            configuration:
+              id: 'field_block:node:document:field_doi'
+              label: DOI
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'File Section'
+          column_widths: 50-50
+        components:
+          834a4532-8b96-4e46-b586-3a0f6e74fb1c:
+            uuid: 834a4532-8b96-4e46-b586-3a0f6e74fb1c
+            region: first
+            configuration:
+              id: 'field_block:node:document:field_file'
+              label: File
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          387df1fc-3657-4311-b23b-98c022d4ea0f:
+            uuid: 387df1fc-3657-4311-b23b-98c022d4ea0f
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'External Resource'
+          column_widths: 50-50
+        components:
+          f23b4103-5154-45e5-9f43-df532be7d191:
+            uuid: f23b4103-5154-45e5-9f43-df532be7d191
+            region: first
+            configuration:
+              id: 'field_block:node:document:field_external_resource'
+              label: 'External Resource'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: _blank
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          ae53480f-8a44-4843-913d-7428851237b0:
+            uuid: ae53480f-8a44-4843-913d-7428851237b0
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Authors Section'
+          column_widths: 50-50
+        components:
+          d8975e82-cd8b-4955-a7c0-ca972a191585:
+            uuid: d8975e82-cd8b-4955-a7c0-ca972a191585
+            region: first
+            configuration:
+              id: 'field_block:node:document:field_related_persons'
+              label: Authors
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          2a6d04e5-1269-4d09-832c-452e9b112857:
+            uuid: 2a6d04e5-1269-4d09-832c-452e9b112857
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Publication Section'
+          column_widths: 50-50
+        components:
+          0976f0ea-e224-4e76-9fc4-988bcd87b817:
+            uuid: 0976f0ea-e224-4e76-9fc4-988bcd87b817
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:document:field_publication_info'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          ce184384-7a88-46c7-8707-07586ce1821c:
+            uuid: ce184384-7a88-46c7-8707-07586ce1821c
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Description Section'
+          column_widths: 50-50
+        components:
+          aae33336-0d25-4e48-a13d-c2ed68cc371e:
+            uuid: aae33336-0d25-4e48-a13d-c2ed68cc371e
+            region: first
+            configuration:
+              id: 'field_block:node:document:body'
+              label: Description
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_trimmed
+                settings:
+                  trim_length: 1000
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          ef76acb2-b50f-42b6-9c70-288ff0dda12b:
+            uuid: ef76acb2-b50f-42b6-9c70-288ff0dda12b
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Document Type Section'
+          column_widths: 50-50
+        components:
+          bfda03c4-f27e-424d-9bdc-53fa542a297c:
+            uuid: bfda03c4-f27e-424d-9bdc-53fa542a297c
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:document:field_document_type'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          100048d7-dee6-4889-81cb-f8800358a333:
+            uuid: 100048d7-dee6-4889-81cb-f8800358a333
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'License Section'
+          column_widths: 50-50
+        components:
+          9f669597-20fe-4427-872c-35c7ced8bda8:
+            uuid: 9f669597-20fe-4427-872c-35c7ced8bda8
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:document:field_license'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          c7232ae1-64a4-44dd-a756-2ff629de19d3:
+            uuid: c7232ae1-64a4-44dd-a756-2ff629de19d3
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Unaffiliated Citation Section'
+          column_widths: 50-50
+        components:
+          235dfa16-e582-4e39-94f2-a0bed3ace27d:
+            uuid: 235dfa16-e582-4e39-94f2-a0bed3ace27d
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:document:field_unaffiliated_citation'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          3b295281-166c-46f3-ae22-a8dd09430d01:
+            uuid: 3b295281-166c-46f3-ae22-a8dd09430d01
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          468b86c9-b8de-4fee-a2af-8a55d33f7a28:
+            uuid: 468b86c9-b8de-4fee-a2af-8a55d33f7a28
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:document:links'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: node.document.default
 targetEntityType: node
 bundle: document

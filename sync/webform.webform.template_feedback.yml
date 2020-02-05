@@ -212,6 +212,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       parameters: {  }
+      exclude_attachments: false
   email_notification:
     id: email
     label: 'Email notification'
@@ -262,3 +263,5 @@ handlers:
       sender_mail: ''
       sender_name: ''
       parameters: {  }
+      exclude_attachments: false
+variants: {  }

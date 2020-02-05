@@ -15,6 +15,7 @@ module:
   contact: 0
   context: 0
   context_ui: 0
+  contextual: 0
   ctools: 0
   datetime: 0
   datetime_range: 0
@@ -38,6 +39,8 @@ module:
   honeypot: 0
   image: 0
   kint: 0
+  layout_builder: 0
+  layout_discovery: 0
   ldbase_handlers: 0
   link: 0
   matomo: 0
