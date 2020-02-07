@@ -21,9 +21,583 @@ dependencies:
   module:
     - datetime_range
     - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - ldbase_handlers
     - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Title Section'
+          column_widths: 50-50
+        components:
+          7cda4a0a-d199-4431-ad53-317698b3be8b:
+            uuid: 7cda4a0a-d199-4431-ad53-317698b3be8b
+            region: first
+            configuration:
+              id: 'field_block:node:project:title'
+              label: Title
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          6cb3beca-ae6e-42f4-a83a-a857bdae3575:
+            uuid: 6cb3beca-ae6e-42f4-a83a-a857bdae3575
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'DOI Section'
+          column_widths: 50-50
+        components:
+          529beb84-9095-457a-b788-8e546c3110f9:
+            uuid: 529beb84-9095-457a-b788-8e546c3110f9
+            region: first
+            configuration:
+              id: 'field_block:node:project:field_doi'
+              label: DOI
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: string
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          db12da3c-2b96-4f75-bfa1-4c044412ee0b:
+            uuid: db12da3c-2b96-4f75-bfa1-4c044412ee0b
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Description Section'
+          column_widths: 50-50
+        components:
+          79612793-9d6a-43b0-857c-ba8726d0cc16:
+            uuid: 79612793-9d6a-43b0-857c-ba8726d0cc16
+            region: first
+            configuration:
+              id: 'field_block:node:project:body'
+              label: Description
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          8ed3b7db-7549-418e-8906-31d46e3cd5e6:
+            uuid: 8ed3b7db-7549-418e-8906-31d46e3cd5e6
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Investigator Section'
+          column_widths: 50-50
+        components:
+          3f785fe0-0c3f-4c04-9046-a9e723edcffc:
+            uuid: 3f785fe0-0c3f-4c04-9046-a9e723edcffc
+            region: first
+            configuration:
+              id: 'field_block:node:project:field_related_persons'
+              label: Investigators
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          c818f9a3-c64e-45d2-b3af-f8d7dc9af97c:
+            uuid: c818f9a3-c64e-45d2-b3af-f8d7dc9af97c
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Dates Active Section'
+          column_widths: 50-50
+        components:
+          80e7a9f6-85e7-4f2e-a454-cacbfeaaa2b1:
+            uuid: 80e7a9f6-85e7-4f2e-a454-cacbfeaaa2b1
+            region: first
+            configuration:
+              id: 'field_block:node:project:field_activity_range'
+              label: 'Project Active From'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: daterange_default
+                settings:
+                  timezone_override: ''
+                  format_type: html_date
+                  separator: '-'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          aaf168b8-7746-47e4-8438-796f4f875aea:
+            uuid: aaf168b8-7746-47e4-8438-796f4f875aea
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Host Organizations Section'
+          column_widths: 50-50
+        components:
+          8e0f6503-a4c3-4412-bfdd-12a52c7568be:
+            uuid: 8e0f6503-a4c3-4412-bfdd-12a52c7568be
+            region: first
+            configuration:
+              id: 'field_block:node:project:field_related_organizations'
+              label: 'Host Organizations'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          7e57acb2-688d-4e1c-b6a4-5caf72b69e35:
+            uuid: 7e57acb2-688d-4e1c-b6a4-5caf72b69e35
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Website Section'
+          column_widths: 50-50
+        components:
+          5eb86b7b-91b6-4d5b-ba1d-ad5837d441b8:
+            uuid: 5eb86b7b-91b6-4d5b-ba1d-ad5837d441b8
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project:field_website'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 0
+          4e87d154-6f3f-4135-9175-b8f3bcb0b94b:
+            uuid: 4e87d154-6f3f-4135-9175-b8f3bcb0b94b
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Project Type Section'
+          column_widths: 50-50
+        components:
+          c2cce49a-278d-47c9-b875-5df7ddc82bf8:
+            uuid: c2cce49a-278d-47c9-b875-5df7ddc82bf8
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project:field_project_type'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          b296c333-d8e7-495e-9306-8e08da631079:
+            uuid: b296c333-d8e7-495e-9306-8e08da631079
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Time Method Section'
+          column_widths: 50-50
+        components:
+          b0bb3257-55c3-419c-94e7-caf4143baeb8:
+            uuid: b0bb3257-55c3-419c-94e7-caf4143baeb8
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project:field_time_method'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          72e14b31-c49f-4cd3-b5d9-4154c4073ce3:
+            uuid: 72e14b31-c49f-4cd3-b5d9-4154c4073ce3
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Schooling Section'
+          column_widths: 50-50
+        components:
+          c79295e4-8a6f-4c2e-b786-57723fa04f94:
+            uuid: c79295e4-8a6f-4c2e-b786-57723fa04f94
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project:field_schooling'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          a71de9da-b139-4408-aee7-ebba175a6443:
+            uuid: a71de9da-b139-4408-aee7-ebba175a6443
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Curricula Section'
+          column_widths: 50-50
+        components:
+          bea1b68e-a38e-4f91-9610-e994e6bcab93:
+            uuid: bea1b68e-a38e-4f91-9610-e994e6bcab93
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project:field_curricula'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          c722e2da-399d-43ac-8db6-f8c21ef1a6c1:
+            uuid: c722e2da-399d-43ac-8db6-f8c21ef1a6c1
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Funding Agency Section'
+          column_widths: 50-50
+        components:
+          f82f0136-0904-4bdb-833f-690cd77d0c37:
+            uuid: f82f0136-0904-4bdb-833f-690cd77d0c37
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project:field_grant_information'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          184dccca-b845-434b-b3e7-f69a2bf90e51:
+            uuid: 184dccca-b845-434b-b3e7-f69a2bf90e51
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Datasets Section'
+          column_widths: 50-50
+        components:
+          418a1c48-06ff-496b-a34c-0c15d943132e:
+            uuid: 418a1c48-06ff-496b-a34c-0c15d943132e
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project:field_affiliated_datasets'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          3a035c43-faa5-4cb7-a0de-276cc243c935:
+            uuid: 3a035c43-faa5-4cb7-a0de-276cc243c935
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Documents Section'
+          column_widths: 50-50
+        components:
+          f1b63151-9eaf-4373-beef-57b4440129e4:
+            uuid: f1b63151-9eaf-4373-beef-57b4440129e4
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project:field_affiliated_documents'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          22eeb331-2b42-4181-ad34-8d57c4a5cba7:
+            uuid: 22eeb331-2b42-4181-ad34-8d57c4a5cba7
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Unaffiliated Citation Section'
+          column_widths: 50-50
+        components:
+          a272ca4b-2d1a-4b5d-8123-f51a3806484c:
+            uuid: a272ca4b-2d1a-4b5d-8123-f51a3806484c
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project:field_unaffiliated_citation'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          ccfc48de-d0f0-4e13-ad89-a37cbfa0d347:
+            uuid: ccfc48de-d0f0-4e13-ad89-a37cbfa0d347
+            region: second
+            configuration:
+              id: content_edit_link
+              label: 'LDBase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9781a624-7e50-4201-bc28-4a5c4dd9a550:
+            uuid: 9781a624-7e50-4201-bc28-4a5c4dd9a550
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:project:links'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: node.project.default
 targetEntityType: node
 bundle: project

@@ -16,7 +16,7 @@ third_party_settings:
 id: projecttype
 theme: bartik
 region: sidebar_first
-weight: -8
+weight: -9
 provider: null
 plugin: 'facet_block:project_type'
 settings:

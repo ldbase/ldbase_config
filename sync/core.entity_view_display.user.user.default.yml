@@ -5,9 +5,73 @@ dependencies:
   config:
     - field.field.user.user.user_picture
     - image.style.thumbnail
+  content:
+    - 'block_content:basic:20bd307a-7dbf-4f87-ac41-77a71c85080f'
   module:
+    - block_content
     - image
+    - layout_builder
+    - layout_discovery
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Your Projects Section'
+          column_widths: 50-50
+        components:
+          399bf060-4c6b-4ad8-b62d-b4db72b926f9:
+            uuid: 399bf060-4c6b-4ad8-b62d-b4db72b926f9
+            region: second
+            configuration:
+              id: 'block_content:20bd307a-7dbf-4f87-ac41-77a71c85080f'
+              label: 'Add Project Link Button'
+              provider: block_content
+              label_display: '0'
+              status: true
+              info: ''
+              view_mode: full
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          1047211e-a01f-47ea-8fee-ea1fa4ff642a:
+            uuid: 1047211e-a01f-47ea-8fee-ea1fa4ff642a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:user:user:user_picture'
+              formatter:
+                type: image
+                settings:
+                  image_style: thumbnail
+                  image_link: content
+                third_party_settings: {  }
+                label: hidden
+            additional: {  }
+            weight: 0
+          62ec25ba-8d0d-4bc7-a669-139e47928ca2:
+            uuid: 62ec25ba-8d0d-4bc7-a669-139e47928ca2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:user:user:member_for'
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -16,6 +80,8 @@ content:
   member_for:
     weight: 5
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image
     weight: 0

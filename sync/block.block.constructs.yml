@@ -16,7 +16,7 @@ third_party_settings:
 id: constructs
 theme: bartik
 region: sidebar_first
-weight: -10
+weight: -11
 provider: null
 plugin: 'facet_block:constructs'
 settings:

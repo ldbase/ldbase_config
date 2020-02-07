@@ -16,7 +16,7 @@ third_party_settings:
 id: type
 theme: bartik
 region: sidebar_first
-weight: -9
+weight: -10
 provider: null
 plugin: 'facet_block:type'
 settings:

@@ -17,7 +17,7 @@ third_party_settings:
 id: projecttasks
 theme: bartik
 region: sidebar_first
-weight: 0
+weight: -1
 provider: null
 plugin: 'system_menu_block:project-tasks'
 settings:
@@ -29,13 +29,6 @@ settings:
   depth: 0
   expand_all_items: false
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      project: project
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
   user_role:
     id: user_role
     roles:
@@ -43,3 +36,10 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      project: project
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
