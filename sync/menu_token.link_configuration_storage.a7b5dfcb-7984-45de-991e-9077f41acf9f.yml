@@ -1,0 +1,8 @@
+uuid: e40b1954-8237-4bdb-96ea-fe06d5df1000
+langcode: en
+status: true
+dependencies: {  }
+id: a7b5dfcb-7984-45de-991e-9077f41acf9f
+label: 'Menu token link configuration'
+linkid: 'internal:/forms/document/[node:nid]?document-type=Codebook'
+configurationSerialized: 'a:15:{s:18:"menu_token_enabled";i:1;s:36:"remove_if_replacement_is_not_present";i:0;s:4:"node";a:2:{i:0;s:7:"context";i:1;i:0;}s:4:"user";a:2:{i:0;s:4:"none";i:1;i:0;}s:5:"asset";a:2:{i:0;s:4:"none";i:1;i:0;}s:13:"block_content";a:2:{i:0;s:4:"none";i:1;i:0;}s:7:"comment";a:2:{i:0;s:4:"none";i:1;i:0;}s:15:"contact_message";a:2:{i:0;s:4:"none";i:1;i:0;}s:4:"file";a:2:{i:0;s:4:"none";i:1;i:0;}s:8:"flagging";a:2:{i:0;s:4:"none";i:1;i:0;}s:5:"media";a:2:{i:0;s:4:"none";i:1;i:0;}s:8:"shortcut";a:2:{i:0;s:4:"none";i:1;i:0;}s:13:"taxonomy_term";a:2:{i:0;s:4:"none";i:1;i:0;}s:17:"menu_link_content";a:2:{i:0;s:4:"none";i:1;i:0;}s:9:"paragraph";a:2:{i:0;s:4:"none";i:1;i:0;}}'

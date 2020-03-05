@@ -1,0 +1,32 @@
+uuid: 9dd3e3c2-d8cc-46cf-a840-a2655f3a710b
+langcode: en
+status: true
+dependencies:
+  module:
+    - collapsiblock
+    - ldbase_handlers
+    - system
+  theme:
+    - bartik
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
+id: ldbaseprojecttasksmenu
+theme: bartik
+region: featured_bottom_first
+weight: -11
+provider: null
+plugin: project_tasks_menu
+settings:
+  id: project_tasks_menu
+  label: 'LDbase Project Tasks Menu'
+  provider: ldbase_handlers
+  label_display: visible
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/forms/*'
+    negate: false
+    context_mapping: {  }

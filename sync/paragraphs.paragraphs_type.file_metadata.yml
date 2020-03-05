@@ -5,5 +5,6 @@ dependencies: {  }
 id: file_metadata
 label: 'FIle Metadata'
 icon_uuid: null
+icon_default: null
 description: ''
 behavior_plugins: {  }

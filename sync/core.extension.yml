@@ -44,6 +44,7 @@ module:
   ldbase_handlers: 0
   link: 0
   matomo: 0
+  menu_token: 0
   menu_ui: 0
   metatag: 0
   metatag_dc: 0

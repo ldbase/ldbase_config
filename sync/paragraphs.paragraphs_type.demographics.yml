@@ -5,5 +5,6 @@ dependencies: {  }
 id: demographics
 label: Demographics
 icon_uuid: null
+icon_default: null
 description: 'The types and ages of participants.'
 behavior_plugins: {  }

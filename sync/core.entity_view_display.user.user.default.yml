@@ -5,14 +5,19 @@ dependencies:
   config:
     - field.field.user.user.user_picture
     - image.style.thumbnail
+    - views.view.my_code
+    - views.view.my_datasets
+    - views.view.my_documents
+    - views.view.my_projects
   content:
-    - 'block_content:basic:20bd307a-7dbf-4f87-ac41-77a71c85080f'
+    - 'block_content:basic:792837f9-77e4-4e1c-ab7d-9ed545b95524'
   module:
     - block_content
     - image
     - layout_builder
     - layout_discovery
     - user
+    - views
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -24,11 +29,11 @@ third_party_settings:
           label: 'Your Projects Section'
           column_widths: 50-50
         components:
-          399bf060-4c6b-4ad8-b62d-b4db72b926f9:
-            uuid: 399bf060-4c6b-4ad8-b62d-b4db72b926f9
+          a30d2300-16b7-452a-9428-98c20859d8d1:
+            uuid: a30d2300-16b7-452a-9428-98c20859d8d1
             region: second
             configuration:
-              id: 'block_content:20bd307a-7dbf-4f87-ac41-77a71c85080f'
+              id: 'block_content:792837f9-77e4-4e1c-ab7d-9ed545b95524'
               label: 'Add Project Link Button'
               provider: block_content
               label_display: '0'
@@ -38,6 +43,64 @@ third_party_settings:
               context_mapping: {  }
             additional: {  }
             weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'My Projects'
+        components:
+          9e3a4829-3555-41df-84c0-23f56505806e:
+            uuid: 9e3a4829-3555-41df-84c0-23f56505806e
+            region: content
+            configuration:
+              id: 'views_block:my_projects-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          1209e160-fcc4-478d-9fbf-8896a3b54170:
+            uuid: 1209e160-fcc4-478d-9fbf-8896a3b54170
+            region: content
+            configuration:
+              id: 'views_block:my_datasets-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+          6aecdca8-368b-4d39-8cd6-7b9518cf9bf1:
+            uuid: 6aecdca8-368b-4d39-8cd6-7b9518cf9bf1
+            region: content
+            configuration:
+              id: 'views_block:my_documents-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 2
+          68bbe810-413e-4110-a594-3dad895f54c3:
+            uuid: 68bbe810-413e-4110-a594-3dad895f54c3
+            region: content
+            configuration:
+              id: 'views_block:my_code-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
       -
         layout_id: layout_onecol
