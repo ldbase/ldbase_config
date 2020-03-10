@@ -41,6 +41,7 @@ module:
   kint: 0
   layout_builder: 0
   layout_discovery: 0
+  ldbase_content: 0
   ldbase_handlers: 0
   link: 0
   matomo: 0
