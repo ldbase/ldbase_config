@@ -1,0 +1,25 @@
+{
+  "name": "ldbase/ldbase_config",
+  "description": "Configuration data for the LDbase project",
+  "type": "drupal-library",
+  "keywords": ["Drupal", "LDbase"],
+  "homepage": "https://github.com/ldbase/ldbase_config",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Bryan J. Brown",
+      "email": "bjbrown@fsu.edu",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Brian Arsenault",
+      "email": "barsenault@fsu.edu",
+      "role": "Maintainer"
+    },
+    {
+      "name": "Favenzio Calvo",
+      "email": "fcalvo@fsu.edu",
+      "role": "Maintainer"
+    }
+  ]
+}
