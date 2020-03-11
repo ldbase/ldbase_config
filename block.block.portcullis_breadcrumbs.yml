@@ -1,0 +1,27 @@
+uuid: 893418ef-056c-4794-8108-19a8c4948445
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - portcullis
+_core:
+  default_config_hash: AHr4UTc4Ptmy19Lz5eF6fhOnIiUFaJ0cJfQF4OjhhuM
+id: portcullis_breadcrumbs
+theme: portcullis
+region: system_messages
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

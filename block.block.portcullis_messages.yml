@@ -1,0 +1,22 @@
+uuid: 5afcaf73-db74-4dd3-b248-8fe0b732700e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - portcullis
+_core:
+  default_config_hash: tcWxNwzsMLO9gfrCPwQs83v7h6LKRU8BQHwYgG5uAIA
+id: portcullis_messages
+theme: portcullis
+region: system_messages
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

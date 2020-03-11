@@ -1,0 +1,27 @@
+uuid: b1dd17d5-7940-4dae-ae97-e6b61e6cb211
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - portcullis
+_core:
+  default_config_hash: ds24-OPMdVkBOqgu2Yb-CdjxuPZSN0OBuxm9Ez572lc
+id: portcullis_main_menu
+theme: portcullis
+region: header
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

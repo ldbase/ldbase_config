@@ -1,0 +1,27 @@
+uuid: 672c80f5-a5ea-4f7b-b91d-1a6b6936b026
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - portcullis
+_core:
+  default_config_hash: 8KEsO_wn23siATc18Tk-5IM5NKmBCBQ2K62ksvBYeiM
+id: portcullis_tools
+theme: portcullis
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

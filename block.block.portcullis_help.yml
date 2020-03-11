@@ -1,0 +1,22 @@
+uuid: 52067f89-9c35-4dc2-8875-f2753acfc48c
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - portcullis
+_core:
+  default_config_hash: Bq21OsgLoqPPFfe7GvsR8QzTvRtwN4I6uR2M_8gF1cQ
+id: portcullis_help
+theme: portcullis
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

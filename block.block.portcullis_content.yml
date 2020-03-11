@@ -1,0 +1,22 @@
+uuid: 7d708316-833d-4084-8eb0-88ea70cee24d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - portcullis_content
+_core:
+  default_config_hash: cydC5npcZ6-72QN02F4s0jR1xL2E2NpO13NbpTJMTNw
+id: portcullis_content
+theme: portcullis_content
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

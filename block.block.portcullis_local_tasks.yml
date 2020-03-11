@@ -1,0 +1,22 @@
+uuid: 07af1bf0-db19-46f7-ba18-114b80415d5f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - portcullis
+_core:
+  default_config_hash: jq94pqjfjcDrRIMIYwHDqn2IAL0s5TFyuPA2gftTsAg
+id: portcullis_local_tasks
+theme: portcullis
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

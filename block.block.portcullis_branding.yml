@@ -1,0 +1,25 @@
+uuid: b71110ad-5530-4de8-aff7-598ee42add90
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - portcullis
+_core:
+  default_config_hash: y-THinnI6QaMB5SznuXHyEtoCueS_mIeYi4cBkLUI0g
+id: portcullis_branding
+theme: portcullis
+region: header_first
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

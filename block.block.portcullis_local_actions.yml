@@ -1,0 +1,20 @@
+uuid: 53dac549-2969-49aa-809a-937c4f93690b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - portcullis
+_core:
+  default_config_hash: EK7DUyOhdJJVsay_jIlK6aP6iSZWMA-BsdjKKvc6_tA
+id: portcullis_local_actions
+theme: portcullis
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
