@@ -3,9 +3,9 @@ name: LDbase
 mail: bjbrown@fsu.edu
 slogan: 'A Repository for Sharing Learning Disabilities Data'
 page:
-  403: ''
-  404: ''
-  front: /search
+  403: /access-denied
+  404: /not-found
+  front: /about
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
