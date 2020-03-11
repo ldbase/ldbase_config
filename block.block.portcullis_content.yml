@@ -1,16 +1,16 @@
-uuid: 7d708316-833d-4084-8eb0-88ea70cee24d
+uuid: e7db74b3-f5f1-4d80-88cc-1dec7760fbc6
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
   theme:
-    - portcullis_content
+    - portcullis
 _core:
-  default_config_hash: cydC5npcZ6-72QN02F4s0jR1xL2E2NpO13NbpTJMTNw
+  default_config_hash: gPojapNhH6YhaT2vgfrCUP6cjeZARI3aaU8Iest5y9M
 id: portcullis_content
-theme: portcullis_content
-region: ''
+theme: portcullis
+region: content
 weight: 0
 provider: null
 plugin: system_main_block
