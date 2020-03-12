@@ -7,7 +7,7 @@ banner_layout_container: container-fluid
 banner_region_paddings: 1
 bootstrap_remote_type: local
 breadcrumb_separator: fa-angle-right
-color_scheme: turquoise
+color_scheme: gray
 content_bottom_animation_effect: fadeIn
 content_bottom_background_color: 'region--dark-typography region--white-background'
 content_bottom_blocks_paddings: 0
@@ -108,7 +108,7 @@ in_page_slider_effect: slide
 inverted_header_state: 0
 isotope_filters_text: All
 isotope_layout_mode: masonry
-layout_mode: wide
+layout_mode: boxed
 main_content_animation_effect: fadeIn
 main_content_blocks_paddings: 0
 main_content_id: main-content
