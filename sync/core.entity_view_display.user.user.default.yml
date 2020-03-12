@@ -9,13 +9,11 @@ dependencies:
     - views.view.my_datasets
     - views.view.my_documents
     - views.view.my_projects
-  content:
-    - 'block_content:basic:792837f9-77e4-4e1c-ab7d-9ed545b95524'
   module:
-    - block_content
     - image
     - layout_builder
     - layout_discovery
+    - ldbase_content
     - user
     - views
 third_party_settings:
@@ -29,17 +27,14 @@ third_party_settings:
           label: 'Your Projects Section'
           column_widths: 50-50
         components:
-          a30d2300-16b7-452a-9428-98c20859d8d1:
-            uuid: a30d2300-16b7-452a-9428-98c20859d8d1
+          0f1468b8-6b63-40a8-b663-9d212675b006:
+            uuid: 0f1468b8-6b63-40a8-b663-9d212675b006
             region: second
             configuration:
-              id: 'block_content:792837f9-77e4-4e1c-ab7d-9ed545b95524'
-              label: 'Add Project Link Button'
-              provider: block_content
+              id: add_project_button
+              label: 'Add Project Button'
+              provider: ldbase_content
               label_display: '0'
-              status: true
-              info: ''
-              view_mode: full
               context_mapping: {  }
             additional: {  }
             weight: 0
