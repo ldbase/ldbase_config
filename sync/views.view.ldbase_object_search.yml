@@ -138,13 +138,6 @@ display:
     position: 1
     display_options:
       display_extenders:
-        simple_sitemap_display_extender:
-          index: false
-          variant: null
-          priority: '0.5'
-          changefreq: ''
-          arguments: {  }
-          max_links: 100
         metatag_display_extender: {  }
       path: search
       cache:
