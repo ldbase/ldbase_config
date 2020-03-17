@@ -5,9 +5,13 @@ dependencies:
   config:
     - system.menu.tools
   module:
+    - collapsiblock
     - system
   theme:
     - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
 _core:
   default_config_hash: 8KEsO_wn23siATc18Tk-5IM5NKmBCBQ2K62ksvBYeiM
 id: portcullis_tools
@@ -24,4 +28,9 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/admin/*'
+    negate: true
+    context_mapping: {  }
