@@ -16,8 +16,8 @@ _core:
   default_config_hash: 8KEsO_wn23siATc18Tk-5IM5NKmBCBQ2K62ksvBYeiM
 id: portcullis_tools
 theme: portcullis
-region: sidebar_first
-weight: 0
+region: hidden_blocks_collection
+weight: -6
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
