@@ -1,0 +1,20 @@
+uuid: 13075ab4-f292-4b31-b228-489342c9e4e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: user.field_ldbase_person_id
+field_name: field_ldbase_person_id
+entity_type: user
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
