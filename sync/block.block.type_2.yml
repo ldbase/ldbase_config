@@ -1,0 +1,33 @@
+uuid: 698dd545-be22-45ce-bf69-de225be85f23
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type
+  module:
+    - collapsiblock
+    - facets
+    - system
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '4'
+id: type_2
+theme: portcullis
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:type'
+settings:
+  id: 'facet_block:type'
+  label: Type
+  provider: facets
+  label_display: visible
+  block_id: type_2
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

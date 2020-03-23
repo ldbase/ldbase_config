@@ -1,0 +1,33 @@
+uuid: a015b90e-44b8-4795-9d33-df30eac84f49
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.time_method
+  module:
+    - collapsiblock
+    - facets
+    - system
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '4'
+id: timemethod_2
+theme: portcullis
+region: sidebar_first
+weight: -4
+provider: null
+plugin: 'facet_block:time_method'
+settings:
+  id: 'facet_block:time_method'
+  label: 'Time Method'
+  provider: facets
+  label_display: visible
+  block_id: timemethod_2
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

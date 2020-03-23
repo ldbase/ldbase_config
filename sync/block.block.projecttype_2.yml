@@ -1,0 +1,33 @@
+uuid: 67745ac4-2552-4380-8869-8e929d3bb56d
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.project_type
+  module:
+    - collapsiblock
+    - facets
+    - system
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '4'
+id: projecttype_2
+theme: portcullis
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:project_type'
+settings:
+  id: 'facet_block:project_type'
+  label: 'Project Type'
+  provider: facets
+  label_display: visible
+  block_id: projecttype_2
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

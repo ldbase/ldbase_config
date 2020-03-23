@@ -1,0 +1,33 @@
+uuid: 2f70927b-f93d-438c-bbfd-b86ae1eae5bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.schooling
+  module:
+    - collapsiblock
+    - facets
+    - system
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '4'
+id: schooling_2
+theme: portcullis
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'facet_block:schooling'
+settings:
+  id: 'facet_block:schooling'
+  label: Schooling
+  provider: facets
+  label_display: visible
+  block_id: schooling_2
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }
