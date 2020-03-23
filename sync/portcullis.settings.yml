@@ -131,7 +131,7 @@ owl_team_members_effect_time: '5'
 owl_testimonials_autoplay: true
 owl_testimonials_effect_time: '5'
 page_container_border: 0
-paragraph_font_family: pff-51
+paragraph_font_family: pff-32
 paragraph_responsive_typography: 1
 post_progress: 1
 print_button: 1

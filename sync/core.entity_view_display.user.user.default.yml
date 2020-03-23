@@ -23,14 +23,13 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_twocol_section
+        layout_id: layout_onecol
         layout_settings:
-          label: 'Your Projects Section'
-          column_widths: 50-50
+          label: 'Tasks Section'
         components:
-          0f1468b8-6b63-40a8-b663-9d212675b006:
-            uuid: 0f1468b8-6b63-40a8-b663-9d212675b006
-            region: second
+          0909bd87-208b-4e12-9dc0-20672713ff85:
+            uuid: 0909bd87-208b-4e12-9dc0-20672713ff85
+            region: content
             configuration:
               id: add_project_button
               label: 'Add Project Button'
@@ -39,6 +38,13 @@ third_party_settings:
               context_mapping: {  }
             additional: {  }
             weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'Your Projects Section'
+          column_widths: 50-50
+        components:
           6280e195-1e86-4bb0-82fe-7f226f0fb012:
             uuid: 6280e195-1e86-4bb0-82fe-7f226f0fb012
             region: first
