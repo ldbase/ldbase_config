@@ -35,6 +35,24 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
+          label: 'Edit Project Section'
+        components:
+          74003b97-1b35-47d4-b853-4a88dab9cc24:
+            uuid: 74003b97-1b35-47d4-b853-4a88dab9cc24
+            region: content
+            configuration:
+              id: content_edit_link
+              label: 'LDbase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
           label: 'DOI/APA Citation Section'
         components:
           22d50671-6e70-4aaf-92a2-b2033e161f8b:
@@ -56,18 +74,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
-          1045639b-bea6-4373-bcf2-0babecf25cce:
-            uuid: 1045639b-bea6-4373-bcf2-0babecf25cce
-            region: content
-            configuration:
-              id: content_edit_link
-              label: 'LDbase Content Edit Link'
-              provider: ldbase_handlers
-              label_display: '0'
-              context_mapping:
-                node: layout_builder.entity
-            additional: {  }
-            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
