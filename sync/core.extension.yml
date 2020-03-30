@@ -25,6 +25,7 @@ module:
   devel_php: 0
   dynamic_page_cache: 0
   editor: 0
+  embargoes: 0
   entity_reference_revisions: 0
   entity_usage: 0
   facets: 0
@@ -44,6 +45,7 @@ module:
   ldbase_content: 0
   ldbase_handlers: 0
   link: 0
+  masquerade: 0
   matomo: 0
   menu_token: 0
   menu_ui: 0

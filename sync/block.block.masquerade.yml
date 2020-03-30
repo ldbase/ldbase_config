@@ -1,0 +1,24 @@
+uuid: 2f10f406-0ab5-424b-8d62-485af013b2e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - collapsiblock
+    - masquerade
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
+id: masquerade
+theme: portcullis
+region: footer
+weight: -12
+provider: null
+plugin: masquerade
+settings:
+  id: masquerade
+  label: Masquerade
+  provider: masquerade
+  label_display: visible
+visibility: {  }
