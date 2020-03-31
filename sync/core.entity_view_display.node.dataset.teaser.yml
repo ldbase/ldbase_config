@@ -5,6 +5,27 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.dataset.body
+    - field.field.node.dataset.field_affiliated_code
+    - field.field.node.dataset.field_affiliated_datasets
+    - field.field.node.dataset.field_affiliated_documents
+    - field.field.node.dataset.field_assessment_name
+    - field.field.node.dataset.field_component_skills
+    - field.field.node.dataset.field_data_collection_locations
+    - field.field.node.dataset.field_data_collection_period
+    - field.field.node.dataset.field_demographics_information
+    - field.field.node.dataset.field_doi
+    - field.field.node.dataset.field_external_resource
+    - field.field.node.dataset.field_file
+    - field.field.node.dataset.field_file_access_restrictions
+    - field.field.node.dataset.field_license
+    - field.field.node.dataset.field_location
+    - field.field.node.dataset.field_publication_info
+    - field.field.node.dataset.field_related_organizations
+    - field.field.node.dataset.field_related_persons
+    - field.field.node.dataset.field_special_populations
+    - field.field.node.dataset.field_time_points
+    - field.field.node.dataset.field_unaffiliated_citation
+    - field.field.node.dataset.field_variable_types_in_dataset
     - node.type.dataset
   module:
     - text
@@ -29,6 +50,7 @@ content:
     region: content
 hidden:
   field_affiliated_code: true
+  field_affiliated_datasets: true
   field_affiliated_documents: true
   field_assessment_name: true
   field_component_skills: true

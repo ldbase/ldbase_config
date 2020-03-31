@@ -5,6 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.code.body
+    - field.field.node.code.field_affiliated_code
+    - field.field.node.code.field_affiliated_documents
+    - field.field.node.code.field_code_type
+    - field.field.node.code.field_doi
+    - field.field.node.code.field_external_resource
+    - field.field.node.code.field_file
+    - field.field.node.code.field_license
+    - field.field.node.code.field_publication_info
+    - field.field.node.code.field_related_persons
+    - field.field.node.code.field_unaffiliated_citation
     - node.type.code
   module:
     - text
@@ -28,6 +38,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_affiliated_code: true
   field_affiliated_documents: true
   field_code_type: true
   field_doi: true

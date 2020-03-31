@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.dataset.body
     - field.field.node.dataset.field_affiliated_code
+    - field.field.node.dataset.field_affiliated_datasets
     - field.field.node.dataset.field_affiliated_documents
     - field.field.node.dataset.field_assessment_name
     - field.field.node.dataset.field_component_skills
@@ -58,6 +59,22 @@ third_party_settings:
                 node: layout_builder.entity
             additional: {  }
             weight: 0
+          444dea07-c455-4660-b950-87aabeb83fa8:
+            uuid: 444dea07-c455-4660-b950-87aabeb83fa8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_affiliated_datasets'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -501,6 +518,14 @@ content:
     region: content
   field_affiliated_code:
     weight: 25
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_affiliated_datasets:
+    weight: 28
     label: above
     settings:
       link: true

@@ -16,7 +16,7 @@ third_party_settings:
 id: schooling_2
 theme: portcullis
 region: sidebar_first
-weight: -5
+weight: -3
 provider: null
 plugin: 'facet_block:schooling'
 settings:

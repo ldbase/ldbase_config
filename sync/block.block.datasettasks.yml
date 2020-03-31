@@ -1,9 +1,9 @@
-uuid: eeaabc85-7bb0-44e4-83fe-34b34533fc26
+uuid: b638413e-891d-4b69-a23a-69b8abf17e36
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.project-tasks
+    - system.menu.dataset-tasks
   module:
     - collapsiblock
     - ctools
@@ -13,15 +13,15 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: projecttasks_2
+id: datasettasks
 theme: portcullis
 region: sidebar_first
-weight: -12
+weight: -11
 provider: null
-plugin: 'system_menu_block:project-tasks'
+plugin: 'system_menu_block:dataset-tasks'
 settings:
-  id: 'system_menu_block:project-tasks'
-  label: 'Project Tasks'
+  id: 'system_menu_block:dataset-tasks'
+  label: 'Dataset Tasks'
   provider: system
   label_display: visible
   level: 1
@@ -31,7 +31,7 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
-      project: project
+      dataset: dataset
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

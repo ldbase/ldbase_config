@@ -1,0 +1,21 @@
+uuid: 01a323f9-32b3-4888-a888-20a112b6efe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_affiliated_code
+    - node.type.code
+id: node.code.field_affiliated_code
+field_name: field_affiliated_code
+entity_type: node
+bundle: code
+label: 'Affiliated Code'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

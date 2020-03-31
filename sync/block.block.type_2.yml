@@ -16,7 +16,7 @@ third_party_settings:
 id: type_2
 theme: portcullis
 region: sidebar_first
-weight: -9
+weight: -7
 provider: null
 plugin: 'facet_block:type'
 settings:

@@ -16,7 +16,7 @@ third_party_settings:
 id: constructs_2
 theme: portcullis
 region: sidebar_first
-weight: -10
+weight: -8
 provider: null
 plugin: 'facet_block:constructs'
 settings:
