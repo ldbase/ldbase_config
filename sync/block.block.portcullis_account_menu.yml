@@ -12,8 +12,8 @@ _core:
   default_config_hash: VrYtE5JOH3QywMTQD8AQ-Cw6AoCsUgCAdHcA7mNcOEo
 id: portcullis_account_menu
 theme: portcullis
-region: header
-weight: -4
+region: header_top_highlighted_second
+weight: -13
 provider: null
 plugin: 'system_menu_block:account'
 settings:
