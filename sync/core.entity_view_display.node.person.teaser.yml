@@ -5,6 +5,19 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.person.body
+    - field.field.node.person.field_areas_of_expertise
+    - field.field.node.person.field_drupal_account_id
+    - field.field.node.person.field_email
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_last_name
+    - field.field.node.person.field_location
+    - field.field.node.person.field_middle_name
+    - field.field.node.person.field_orcid
+    - field.field.node.person.field_professional_titles
+    - field.field.node.person.field_related_organizations
+    - field.field.node.person.field_thumbnail
+    - field.field.node.person.field_web_presence
+    - field.field.node.person.field_website
     - node.type.person
   module:
     - text
@@ -29,6 +42,7 @@ content:
     region: content
 hidden:
   field_areas_of_expertise: true
+  field_drupal_account_id: true
   field_email: true
   field_first_name: true
   field_last_name: true
