@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.document.body
     - field.field.node.document.field_affiliated_documents
+    - field.field.node.document.field_affiliated_parents
     - field.field.node.document.field_document_type
     - field.field.node.document.field_doi
     - field.field.node.document.field_external_resource
@@ -13,6 +14,7 @@ dependencies:
     - field.field.node.document.field_publication_info
     - field.field.node.document.field_related_persons
     - field.field.node.document.field_unaffiliated_citation
+    - field.field.node.document.field_unaffiliated_parents
     - node.type.document
   module:
     - link
@@ -42,6 +44,16 @@ content:
     third_party_settings: {  }
   field_affiliated_documents:
     weight: 16
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_affiliated_parents:
+    weight: 26
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -127,6 +139,16 @@ content:
       size: 60
       placeholder: ''
       match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_unaffiliated_parents:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content

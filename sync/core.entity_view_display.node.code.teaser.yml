@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.code.body
     - field.field.node.code.field_affiliated_code
     - field.field.node.code.field_affiliated_documents
+    - field.field.node.code.field_affiliated_parents
     - field.field.node.code.field_code_type
     - field.field.node.code.field_doi
     - field.field.node.code.field_external_resource
@@ -15,6 +16,7 @@ dependencies:
     - field.field.node.code.field_publication_info
     - field.field.node.code.field_related_persons
     - field.field.node.code.field_unaffiliated_citation
+    - field.field.node.code.field_unaffiliated_parents
     - node.type.code
   module:
     - text
@@ -40,6 +42,7 @@ content:
 hidden:
   field_affiliated_code: true
   field_affiliated_documents: true
+  field_affiliated_parents: true
   field_code_type: true
   field_doi: true
   field_external_resource: true
@@ -49,4 +52,5 @@ hidden:
   field_publication_info: true
   field_related_persons: true
   field_unaffiliated_citation: true
+  field_unaffiliated_parents: true
   search_api_excerpt: true

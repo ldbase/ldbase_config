@@ -1,0 +1,37 @@
+uuid: 93de8066-d4ec-49cb-9de8-c0eca88e2c95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_unaffiliated_parents
+    - node.type.code
+    - node.type.dataset
+    - node.type.document
+    - node.type.organization
+    - node.type.person
+    - node.type.project
+id: node.dataset.field_unaffiliated_parents
+field_name: field_unaffiliated_parents
+entity_type: node
+bundle: dataset
+label: 'Unaffiliated Parents'
+description: 'Unofficially related objects'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      code: code
+      dataset: dataset
+      document: document
+      organization: organization
+      person: person
+      project: project
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: code
+field_type: entity_reference

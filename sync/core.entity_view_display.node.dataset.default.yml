@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.dataset.field_affiliated_code
     - field.field.node.dataset.field_affiliated_datasets
     - field.field.node.dataset.field_affiliated_documents
+    - field.field.node.dataset.field_affiliated_parents
     - field.field.node.dataset.field_assessment_name
     - field.field.node.dataset.field_component_skills
     - field.field.node.dataset.field_data_collection_locations
@@ -24,6 +25,7 @@ dependencies:
     - field.field.node.dataset.field_special_populations
     - field.field.node.dataset.field_time_points
     - field.field.node.dataset.field_unaffiliated_citation
+    - field.field.node.dataset.field_unaffiliated_parents
     - field.field.node.dataset.field_variable_types_in_dataset
     - node.type.dataset
   module:
@@ -75,6 +77,38 @@ third_party_settings:
                 type: entity_reference_label
             additional: {  }
             weight: 1
+          bb08c335-729d-4637-baff-52d50cadc154:
+            uuid: bb08c335-729d-4637-baff-52d50cadc154
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_affiliated_parents'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 2
+          5bda3b68-5329-4fc0-9d9f-e5284087dfef:
+            uuid: 5bda3b68-5329-4fc0-9d9f-e5284087dfef
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_unaffiliated_parents'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -540,6 +574,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_affiliated_parents:
+    weight: 29
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_assessment_name:
     weight: 14
     label: above
@@ -678,6 +720,14 @@ content:
     region: content
   field_unaffiliated_citation:
     weight: 27
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_unaffiliated_parents:
+    weight: 30
     label: above
     settings:
       link: true
