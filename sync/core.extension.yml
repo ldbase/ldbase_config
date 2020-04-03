@@ -28,6 +28,7 @@ module:
   embargoes: 0
   entity_reference_revisions: 0
   entity_usage: 0
+  eva: 0
   facets: 0
   facets_range_widget: 0
   field: 0

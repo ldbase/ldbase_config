@@ -1,16 +1,16 @@
-uuid: 13075ab4-f292-4b31-b228-489342c9e4e9
+uuid: 862741e5-9260-49fa-aa69-930d40c16d90
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - user
-id: user.field_ldbase_person_id
-field_name: field_ldbase_person_id
-entity_type: user
+id: node.field_drupal_account_id
+field_name: field_drupal_account_id
+entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: user
 module: core
 locked: false
 cardinality: 1
