@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.code.body
-    - field.field.node.code.field_affiliated_code
-    - field.field.node.code.field_affiliated_documents
     - field.field.node.code.field_affiliated_parents
     - field.field.node.code.field_code_type
     - field.field.node.code.field_doi
@@ -14,7 +12,6 @@ dependencies:
     - field.field.node.code.field_license
     - field.field.node.code.field_publication_info
     - field.field.node.code.field_related_persons
-    - field.field.node.code.field_unaffiliated_citation
     - field.field.node.code.field_unaffiliated_parents
     - node.type.code
   module:
@@ -43,26 +40,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_affiliated_code:
-    weight: 16
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_affiliated_documents:
-    weight: 15
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_affiliated_parents:
     weight: 26
     settings:
@@ -135,16 +112,6 @@ content:
     region: content
   field_related_persons:
     weight: 9
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_unaffiliated_citation:
-    weight: 18
     settings:
       match_operator: CONTAINS
       size: 60

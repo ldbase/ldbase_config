@@ -5,9 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.dataset.body
-    - field.field.node.dataset.field_affiliated_code
-    - field.field.node.dataset.field_affiliated_datasets
-    - field.field.node.dataset.field_affiliated_documents
     - field.field.node.dataset.field_affiliated_parents
     - field.field.node.dataset.field_assessment_name
     - field.field.node.dataset.field_component_skills
@@ -25,7 +22,6 @@ dependencies:
     - field.field.node.dataset.field_related_persons
     - field.field.node.dataset.field_special_populations
     - field.field.node.dataset.field_time_points
-    - field.field.node.dataset.field_unaffiliated_citation
     - field.field.node.dataset.field_unaffiliated_parents
     - field.field.node.dataset.field_variable_types_in_dataset
     - node.type.dataset
@@ -51,9 +47,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_affiliated_code: true
-  field_affiliated_datasets: true
-  field_affiliated_documents: true
   field_affiliated_parents: true
   field_assessment_name: true
   field_component_skills: true
@@ -72,7 +65,6 @@ hidden:
   field_related_persons: true
   field_special_populations: true
   field_time_points: true
-  field_unaffiliated_citation: true
   field_unaffiliated_parents: true
   field_variable_types_in_dataset: true
   search_api_excerpt: true

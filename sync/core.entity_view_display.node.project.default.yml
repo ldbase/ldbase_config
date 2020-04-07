@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.field.node.project.body
     - field.field.node.project.field_activity_range
-    - field.field.node.project.field_affiliated_datasets
-    - field.field.node.project.field_affiliated_documents
     - field.field.node.project.field_curricula
     - field.field.node.project.field_doi
     - field.field.node.project.field_grant_information
@@ -15,7 +13,6 @@ dependencies:
     - field.field.node.project.field_related_persons
     - field.field.node.project.field_schooling
     - field.field.node.project.field_time_method
-    - field.field.node.project.field_unaffiliated_citation
     - field.field.node.project.field_website
     - node.type.project
   module:
@@ -334,76 +331,19 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: 'Datasets Section'
-        components:
-          431998e4-fb57-4941-bc11-6049a12d5ed7:
-            uuid: 431998e4-fb57-4941-bc11-6049a12d5ed7
-            region: content
-            configuration:
-              id: 'field_block:node:project:field_affiliated_datasets'
-              label: 'Affiliated Datasets'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
+        components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Documents Section'
-        components:
-          38f73a06-b90f-4198-8850-44507ea08616:
-            uuid: 38f73a06-b90f-4198-8850-44507ea08616
-            region: content
-            configuration:
-              id: 'field_block:node:project:field_affiliated_documents'
-              label: 'Affiliated Documents'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
+        components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Citations Section'
-        components:
-          c5e5bd4c-bd20-46a7-b2a1-acb017d14707:
-            uuid: c5e5bd4c-bd20-46a7-b2a1-acb017d14707
-            region: content
-            configuration:
-              id: 'field_block:node:project:field_unaffiliated_citation'
-              label: 'Unaffiliated Citation'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
+        components: {  }
         third_party_settings: {  }
 id: node.project.default
 targetEntityType: node
@@ -426,22 +366,6 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: daterange_default
-    region: content
-  field_affiliated_datasets:
-    weight: 16
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_affiliated_documents:
-    weight: 17
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   field_curricula:
     weight: 13
@@ -502,14 +426,6 @@ content:
     region: content
   field_time_method:
     weight: 14
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_unaffiliated_citation:
-    weight: 18
     label: above
     settings:
       link: true

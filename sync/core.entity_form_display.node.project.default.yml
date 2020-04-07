@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.field.node.project.body
     - field.field.node.project.field_activity_range
-    - field.field.node.project.field_affiliated_datasets
-    - field.field.node.project.field_affiliated_documents
     - field.field.node.project.field_curricula
     - field.field.node.project.field_doi
     - field.field.node.project.field_grant_information
@@ -15,7 +13,6 @@ dependencies:
     - field.field.node.project.field_related_persons
     - field.field.node.project.field_schooling
     - field.field.node.project.field_time_method
-    - field.field.node.project.field_unaffiliated_citation
     - field.field.node.project.field_website
     - node.type.project
   module:
@@ -49,26 +46,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
-    region: content
-  field_affiliated_datasets:
-    weight: 136
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_affiliated_documents:
-    weight: 137
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   field_curricula:
     weight: 133
@@ -142,16 +119,6 @@ content:
     region: content
   field_time_method:
     weight: 134
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_unaffiliated_citation:
-    weight: 138
     settings:
       match_operator: CONTAINS
       size: 60

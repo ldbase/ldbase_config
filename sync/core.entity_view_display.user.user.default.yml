@@ -118,18 +118,23 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          af814f5b-be12-4cab-be0f-d00770ed1b66:
-            uuid: af814f5b-be12-4cab-be0f-d00770ed1b66
+          1047211e-a01f-47ea-8fee-ea1fa4ff642a:
+            uuid: 1047211e-a01f-47ea-8fee-ea1fa4ff642a
             region: content
             configuration:
-              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_1'
-              label: 'EVA: Person Information for User Profile - EVA'
-              provider: layout_builder
               label_display: '0'
               context_mapping:
-                entity: '@user.current_user_context:current_user'
+                entity: layout_builder.entity
+              id: 'field_block:user:user:user_picture'
+              formatter:
+                type: image
+                settings:
+                  image_style: thumbnail
+                  image_link: content
+                third_party_settings: {  }
+                label: hidden
             additional: {  }
-            weight: 2
+            weight: 0
           62ec25ba-8d0d-4bc7-a669-139e47928ca2:
             uuid: 62ec25ba-8d0d-4bc7-a669-139e47928ca2
             region: content
@@ -139,7 +144,7 @@ third_party_settings:
                 entity: layout_builder.entity
               id: 'extra_field_block:user:user:member_for'
             additional: {  }
-            weight: 3
+            weight: 1
         third_party_settings: {  }
 id: user.user.default
 targetEntityType: user
@@ -156,11 +161,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  person_information_for_user_profile_entity_view_1:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   user_picture:
     type: image
     weight: 0

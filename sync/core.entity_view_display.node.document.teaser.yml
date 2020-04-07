@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.document.body
-    - field.field.node.document.field_affiliated_documents
     - field.field.node.document.field_affiliated_parents
     - field.field.node.document.field_document_type
     - field.field.node.document.field_doi
@@ -14,7 +13,6 @@ dependencies:
     - field.field.node.document.field_license
     - field.field.node.document.field_publication_info
     - field.field.node.document.field_related_persons
-    - field.field.node.document.field_unaffiliated_citation
     - field.field.node.document.field_unaffiliated_parents
     - node.type.document
   module:
@@ -39,7 +37,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_affiliated_documents: true
   field_affiliated_parents: true
   field_document_type: true
   field_doi: true
@@ -48,6 +45,5 @@ hidden:
   field_license: true
   field_publication_info: true
   field_related_persons: true
-  field_unaffiliated_citation: true
   field_unaffiliated_parents: true
   search_api_excerpt: true

@@ -12,9 +12,6 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_location
     - field.storage.node.field_activity_range
-    - field.storage.node.field_affiliated_code
-    - field.storage.node.field_affiliated_datasets
-    - field.storage.node.field_affiliated_documents
     - field.storage.node.field_areas_of_expertise
     - field.storage.node.field_assessment_name
     - field.storage.node.field_code_type
@@ -47,7 +44,6 @@ dependencies:
     - field.storage.node.field_special_populations
     - field.storage.node.field_time_method
     - field.storage.node.field_time_points
-    - field.storage.node.field_unaffiliated_citation
     - field.storage.node.field_variable_types_in_dataset
     - field.storage.node.field_web_presence
     - field.storage.node.field_website
@@ -108,30 +104,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_activity_range
-  field_affiliated_code:
-    label: 'Affiliated Code'
-    datasource_id: 'entity:node'
-    property_path: field_affiliated_code
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_affiliated_code
-  field_affiliated_datasets:
-    label: 'Affiliated Datasets'
-    datasource_id: 'entity:node'
-    property_path: field_affiliated_datasets
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_affiliated_datasets
-  field_affiliated_documents:
-    label: 'Affiliated Documents'
-    datasource_id: 'entity:node'
-    property_path: field_affiliated_documents
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_affiliated_documents
   field_areas_of_expertise:
     label: 'Areas of Expertise'
     datasource_id: 'entity:node'
@@ -394,14 +366,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_time_points
-  field_unaffiliated_citation:
-    label: 'Unaffiliated Citation'
-    datasource_id: 'entity:node'
-    property_path: field_unaffiliated_citation
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_unaffiliated_citation
   field_variable_types_in_dataset:
     label: 'Variable Types in Dataset'
     datasource_id: 'entity:node'
