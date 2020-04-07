@@ -17,7 +17,7 @@ dependencies:
 id: person_information_for_user_profile
 label: 'Person Information for User Profile'
 module: views
-description: ''
+description: 'A view that displays the person information in the user profile'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -94,7 +94,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -157,7 +157,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -222,8 +222,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<strong>{{ field_first_name }} {{ field_middle_name }} {{ field_last_name }}</strong>'
             make_link: false
             path: ''
             absolute: false
@@ -505,7 +505,20 @@ display:
           expose:
             label: ''
           granularity: second
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h4>Your Profile</h4>'
+            format: basic_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -545,6 +558,7 @@ display:
           not: false
           plugin_id: numeric
       display_extenders: {  }
+      css_class: eva-person-user-profile
     cache_metadata:
       max-age: -1
       contexts:
@@ -573,7 +587,7 @@ display:
       entity_type: user
       bundles:
         - user
-      show_title: true
+      show_title: false
       title: 'Your Profile'
     cache_metadata:
       max-age: -1
