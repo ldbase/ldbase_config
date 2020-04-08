@@ -27,7 +27,7 @@ settings:
   page_submit_path: /forms/dataset
   page_confirm_path: /forms/dataset/success
   page_admin_theme: false
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -46,7 +46,7 @@ settings:
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
+  form_unsaved: true
   form_disable_back: false
   form_submit_back: false
   form_autofocus: false
@@ -130,6 +130,7 @@ settings:
   results_disabled_ignore: true
   token_view: false
   token_update: false
+  results_customize: false
 access:
   create:
     roles:

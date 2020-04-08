@@ -46,7 +46,7 @@ settings:
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
+  form_unsaved: true
   form_disable_back: false
   form_submit_back: false
   form_autofocus: false
