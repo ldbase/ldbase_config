@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.person.field_middle_name
     - field.field.node.person.field_orcid
     - field.field.node.person.field_professional_titles
+    - field.field.node.person.field_publishing_names
     - field.field.node.person.field_related_organizations
     - field.field.node.person.field_thumbnail
     - field.field.node.person.field_web_presence
@@ -113,6 +114,14 @@ content:
     region: content
   field_professional_titles:
     weight: 131
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_publishing_names:
+    weight: 136
     settings:
       size: 60
       placeholder: ''

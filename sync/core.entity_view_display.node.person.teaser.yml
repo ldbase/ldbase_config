@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.person.field_middle_name
     - field.field.node.person.field_orcid
     - field.field.node.person.field_professional_titles
+    - field.field.node.person.field_publishing_names
     - field.field.node.person.field_related_organizations
     - field.field.node.person.field_thumbnail
     - field.field.node.person.field_web_presence
@@ -50,6 +51,7 @@ hidden:
   field_middle_name: true
   field_orcid: true
   field_professional_titles: true
+  field_publishing_names: true
   field_related_organizations: true
   field_thumbnail: true
   field_web_presence: true

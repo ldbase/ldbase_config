@@ -1,0 +1,21 @@
+uuid: b12a7dff-b892-4162-b419-dfbba42fe5f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_publishing_names
+field_name: field_publishing_names
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 3ad4fbc8-83bd-42d2-9f47-2b7d31f9524b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publishing_names
+    - node.type.person
+id: node.person.field_publishing_names
+field_name: field_publishing_names
+entity_type: node
+bundle: person
+label: 'Publishing Names'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
