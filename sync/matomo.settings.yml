@@ -31,9 +31,9 @@ custom:
       scope: page
       slot: 2
     3:
-      name: ''
-      value: ''
-      scope: visit
+      name: ctype
+      value: '[node:content-type]'
+      scope: page
       slot: 3
     4:
       name: ''
