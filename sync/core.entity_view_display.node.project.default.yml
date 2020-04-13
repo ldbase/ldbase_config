@@ -108,7 +108,7 @@ third_party_settings:
               id: 'field_block:node:project:field_related_persons'
               label: Investigators
               provider: layout_builder
-              label_display: visible
+              label_display: '0'
               formatter:
                 label: above
                 type: entity_reference_label

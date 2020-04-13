@@ -57,38 +57,6 @@ third_party_settings:
                 node: layout_builder.entity
             additional: {  }
             weight: 0
-          bb08c335-729d-4637-baff-52d50cadc154:
-            uuid: bb08c335-729d-4637-baff-52d50cadc154
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_affiliated_parents'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 2
-          5bda3b68-5329-4fc0-9d9f-e5284087dfef:
-            uuid: 5bda3b68-5329-4fc0-9d9f-e5284087dfef
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_unaffiliated_parents'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 3
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -232,7 +200,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: hidden
                 type: entity_reference_revisions_entity_view
                 settings:
                   view_mode: default
