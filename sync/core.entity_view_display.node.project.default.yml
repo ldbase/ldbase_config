@@ -331,13 +331,37 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: 'Datasets Section'
-        components: {  }
+        components:
+          9787cba4-89f7-46a7-aa3e-f7683a6b44fb:
+            uuid: 9787cba4-89f7-46a7-aa3e-f7683a6b44fb
+            region: content
+            configuration:
+              id: 'extra_field_block:node:project:project_latest_datasets_entity_view_1'
+              label: 'EVA: Project Latest Datasets - EVA'
+              provider: layout_builder
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Documents Section'
-        components: {  }
+        components:
+          18a253e4-4efb-4764-a1d4-87e261352e12:
+            uuid: 18a253e4-4efb-4764-a1d4-87e261352e12
+            region: content
+            configuration:
+              id: 'extra_field_block:node:project:project_latest_documents_entity_view_1'
+              label: 'EVA: Project Latest Documents - EVA'
+              provider: layout_builder
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -449,5 +473,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  project_latest_datasets_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  project_latest_documents_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   search_api_excerpt: true
