@@ -16,7 +16,7 @@ third_party_settings:
 id: specialpopulations_2
 theme: portcullis
 region: sidebar_first
-weight: -4
+weight: -6
 provider: null
 plugin: 'facet_block:special_populations'
 settings:

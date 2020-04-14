@@ -1,37 +1,46 @@
-uuid: 0763439d-f0ef-4b95-ac22-0ff891e55b36
+uuid: 6887d6f2-2777-4f3b-8d35-4b3200d00c9f
 langcode: en
 status: true
 dependencies:
-  config:
-    - system.menu.document-tasks
   module:
     - collapsiblock
     - ctools
+    - embargoes
     - system
   theme:
     - portcullis
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: documenttasks
+id: embargopolicies
 theme: portcullis
 region: sidebar_first
-weight: -11
+weight: 0
 provider: null
-plugin: 'system_menu_block:document-tasks'
+plugin: embargoes_embargo_policies_block
 settings:
-  id: 'system_menu_block:document-tasks'
-  label: 'Document Tasks'
-  provider: system
+  id: embargoes_embargo_policies_block
+  label: 'Access Restrictions'
+  provider: embargoes
   label_display: visible
-  level: 1
-  depth: 0
-  expand_all_items: false
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
+      article: article
+      code: code
+      dataset: dataset
       document: document
+      organization: organization
+      page: page
+      person: person
+      project: project
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  embargoes_embargoed_condition:
+    id: embargoes_embargoed_condition
+    filter: current
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
