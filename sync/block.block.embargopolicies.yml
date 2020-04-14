@@ -40,7 +40,7 @@ visibility:
       node: '@node.node_route_context:node'
   embargoes_embargoed_condition:
     id: embargoes_embargoed_condition
-    filter: current
+    filter: 2
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
