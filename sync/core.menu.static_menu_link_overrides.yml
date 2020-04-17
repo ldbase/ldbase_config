@@ -11,3 +11,15 @@ definitions:
     parent: ''
     expanded: false
     enabled: true
+  ldbase__about_ldbase:
+    menu_name: main
+    parent: ldbase.about
+    weight: -50
+    expanded: true
+    enabled: true
+  ldbase__about:
+    menu_name: main
+    parent: ''
+    weight: 0
+    expanded: true
+    enabled: true
