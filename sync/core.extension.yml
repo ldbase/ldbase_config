@@ -24,7 +24,6 @@ module:
   devel_generate: 0
   devel_php: 0
   doi_crossref: 0
-  doi_datacite: 0
   dynamic_page_cache: 0
   editor: 0
   embargoes: 0
@@ -38,7 +37,6 @@ module:
   file: 0
   filter: 0
   hal: 0
-  hdl: 0
   help: 0
   history: 0
   honeypot: 0
@@ -75,7 +73,6 @@ module:
   rdf: 0
   redirect: 0
   rules: 0
-  sample_minter: 0
   search_api: 0
   search_api_autocomplete: 0
   search_api_db: 0
