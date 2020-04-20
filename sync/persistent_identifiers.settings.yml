@@ -1,0 +1,15 @@
+persistent_identifiers_target_field: field_identifier
+persistent_identifiers_persister: persistent_identifiers.persister.generic
+persistent_identifiers_minter: doi_crossref.minter.crossrefdois
+persistent_identifiers_bundles:
+  - page
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+_core:
+  default_config_hash: gTwkLLTvbCoHjhR4NCURLNX91KEqhlNSlCT-YWtOD2E
