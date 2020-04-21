@@ -8,7 +8,7 @@ dependencies:
     - views.view.my_code
     - views.view.my_datasets
     - views.view.my_documents
-    - views.view.my_projects
+    - views.view.projects_in_my_groups
   module:
     - image
     - layout_builder
@@ -47,6 +47,16 @@ third_party_settings:
               id: 'extra_field_block:user:user:masquerade'
             additional: {  }
             weight: 1
+          01a22848-0ec5-44ed-9c53-44c6f093bcd2:
+            uuid: 01a22848-0ec5-44ed-9c53-44c6f093bcd2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_1'
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_twocol_section
@@ -60,19 +70,6 @@ third_party_settings:
         layout_settings:
           label: 'My Projects'
         components:
-          9e3a4829-3555-41df-84c0-23f56505806e:
-            uuid: 9e3a4829-3555-41df-84c0-23f56505806e
-            region: content
-            configuration:
-              id: 'views_block:my_projects-block_1'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 0
           1209e160-fcc4-478d-9fbf-8896a3b54170:
             uuid: 1209e160-fcc4-478d-9fbf-8896a3b54170
             region: content
@@ -85,7 +82,7 @@ third_party_settings:
               items_per_page: none
               context_mapping: {  }
             additional: {  }
-            weight: 1
+            weight: 2
           6aecdca8-368b-4d39-8cd6-7b9518cf9bf1:
             uuid: 6aecdca8-368b-4d39-8cd6-7b9518cf9bf1
             region: content
@@ -98,7 +95,7 @@ third_party_settings:
               items_per_page: none
               context_mapping: {  }
             additional: {  }
-            weight: 2
+            weight: 3
           68bbe810-413e-4110-a594-3dad895f54c3:
             uuid: 68bbe810-413e-4110-a594-3dad895f54c3
             region: content
@@ -111,7 +108,20 @@ third_party_settings:
               items_per_page: none
               context_mapping: {  }
             additional: {  }
-            weight: 3
+            weight: 4
+          c2fa62b5-0b68-4e7d-be4f-ed0f0fe98df0:
+            uuid: c2fa62b5-0b68-4e7d-be4f-ed0f0fe98df0
+            region: content
+            configuration:
+              id: 'views_block:projects_in_my_groups-block_1'
+              label: ''
+              provider: views
+              label_display: visible
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -161,6 +171,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  person_information_for_user_profile_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   user_picture:
     type: image
     weight: 0
