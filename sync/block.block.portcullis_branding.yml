@@ -10,8 +10,8 @@ _core:
   default_config_hash: y-THinnI6QaMB5SznuXHyEtoCueS_mIeYi4cBkLUI0g
 id: portcullis_branding
 theme: portcullis
-region: header_first
-weight: -6
+region: header_top_first
+weight: -14
 provider: null
 plugin: system_branding_block
 settings:
