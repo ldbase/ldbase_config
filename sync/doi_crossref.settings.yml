@@ -5,3 +5,4 @@ doi_crossref_username: myuser
 doi_crossref_password: mypassword
 _core:
   default_config_hash: NY5ChiN89AStyt0-IPAiS6aTLnUEl3C2mAXrvF4ADOs
+doi_crossref_suffix_prefix: ldbase-
