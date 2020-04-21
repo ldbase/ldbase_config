@@ -23,6 +23,7 @@ module:
   devel: 0
   devel_generate: 0
   devel_php: 0
+  doi_crossref: 0
   dynamic_page_cache: 0
   editor: 0
   embargoes: 0
@@ -70,6 +71,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  persistent_identifiers: 0
   range: 0
   rdf: 0
   redirect: 0
