@@ -1,0 +1,27 @@
+uuid: 90b55c7a-9bef-4f09-afa5-429adaeb6fe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.project_group
+id: project_group-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: project_group
+permissions_ui: true
+permissions:
+  - 'access group_node overview'
+  - 'view group_node:code content'
+  - 'view group_node:code entity'
+  - 'view group_node:dataset content'
+  - 'view group_node:dataset entity'
+  - 'view group_node:document content'
+  - 'view group_node:document entity'
+  - 'view group_node:organization content'
+  - 'view group_node:organization entity'
+  - 'view group_node:person content'
+  - 'view group_node:person entity'
+  - 'view group_node:project content'
+  - 'view group_node:project entity'

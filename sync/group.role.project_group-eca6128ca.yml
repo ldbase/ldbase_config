@@ -1,0 +1,17 @@
+uuid: e896087a-52dc-4570-b4df-9121c7f7c4b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.project_group
+  enforced:
+    config:
+      - user.role.content_administrator
+id: project_group-eca6128ca
+label: 'Content Administrator'
+weight: -8
+internal: true
+audience: outsider
+group_type: project_group
+permissions_ui: false
+permissions: {  }

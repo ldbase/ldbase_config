@@ -26,6 +26,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   embargoes: 0
+  entity: 0
   entity_reference_revisions: 0
   entity_usage: 0
   eva: 0
@@ -35,6 +36,8 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  gnode: 0
+  group: 0
   hal: 0
   help: 0
   history: 0

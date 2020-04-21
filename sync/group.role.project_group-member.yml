@@ -1,0 +1,28 @@
+uuid: a909205e-0144-4d6e-8e05-d97cf31e9aa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.project_group
+id: project_group-member
+label: Member
+weight: -100
+internal: true
+audience: member
+group_type: project_group
+permissions_ui: true
+permissions:
+  - 'access group_node overview'
+  - 'view group'
+  - 'view group_node:code content'
+  - 'view group_node:code entity'
+  - 'view group_node:dataset content'
+  - 'view group_node:dataset entity'
+  - 'view group_node:document content'
+  - 'view group_node:document entity'
+  - 'view group_node:organization content'
+  - 'view group_node:organization entity'
+  - 'view group_node:person content'
+  - 'view group_node:person entity'
+  - 'view group_node:project content'
+  - 'view group_node:project entity'

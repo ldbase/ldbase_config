@@ -1,0 +1,19 @@
+uuid: c629df09-905f-4615-9832-70d90b588cc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.project_group
+    - node.type.document
+  module:
+    - gnode
+    - node
+id: group_content_type_f81bcc2347c11
+label: 'Project Group: Group node (Document)'
+description: 'Adds <em class="placeholder">Document</em> content to groups both publicly and privately.'
+group_type: project_group
+content_plugin: 'group_node:document'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

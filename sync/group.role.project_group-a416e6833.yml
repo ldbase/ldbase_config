@@ -1,0 +1,17 @@
+uuid: 60589ebf-fb3d-43ed-b4e8-e4e4b5094e5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.project_group
+  enforced:
+    config:
+      - user.role.administrator
+id: project_group-a416e6833
+label: 'System Administrator'
+weight: -7
+internal: true
+audience: outsider
+group_type: project_group
+permissions_ui: false
+permissions: {  }

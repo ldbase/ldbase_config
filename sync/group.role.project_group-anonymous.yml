@@ -1,0 +1,27 @@
+uuid: c4731b51-4bc0-4d27-aa8f-6cbe136dd85d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.project_group
+id: project_group-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: project_group
+permissions_ui: true
+permissions:
+  - 'access group_node overview'
+  - 'view group_node:code content'
+  - 'view group_node:code entity'
+  - 'view group_node:dataset content'
+  - 'view group_node:dataset entity'
+  - 'view group_node:document content'
+  - 'view group_node:document entity'
+  - 'view group_node:organization content'
+  - 'view group_node:organization entity'
+  - 'view group_node:person content'
+  - 'view group_node:person entity'
+  - 'view group_node:project content'
+  - 'view group_node:project entity'
