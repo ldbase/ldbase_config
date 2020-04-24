@@ -14,8 +14,8 @@ third_party_settings:
     collapse_action: '0'
 id: mainnavigation
 theme: portcullis
-region: header_first
-weight: 0
+region: header
+weight: -14
 provider: null
 plugin: 'superfish:main'
 settings:

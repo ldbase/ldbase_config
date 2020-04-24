@@ -1,5 +1,5 @@
 site_id: '1'
-url_http: 'http://localhost:9999/matomo/'
+url_http: 'http://localhost9999:/matomo/'
 url_https: ''
 domain_mode: 0
 visibility:
@@ -11,7 +11,7 @@ visibility:
 track:
   mailto: true
   files: true
-  files_extensions: '7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip'
+  files_extensions: '7z|aac|arc|arj|asf|asx|avi|bin|csv|dat|do|doc(x|m)?|dot(x|m)?|dta|exe|flv|gif|gz|gzip|hqx|inp|jar|jnp|jpe?g|js|json|m|mat|mp(2|3|4|e?g)|mov(ie)?|msi|msp|mtj|mtw|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|py|pzf|pzfx|sld(x|m)?|thmx|qtm?|r|ra(m|r)?|rda|rdata|rmd|sas|sas7bdat|sav|sea|sit|sps|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip'
   colorbox: true
   userid: false
   messages: {  }
