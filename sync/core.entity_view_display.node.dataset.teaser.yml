@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.dataset.field_component_skills
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_period
+    - field.field.node.dataset.field_dataset_upload_or_external
     - field.field.node.dataset.field_demographics_information
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
@@ -46,12 +47,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  project_latest_documents_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   field_affiliated_parents: true
   field_assessment_name: true
   field_component_skills: true
   field_data_collection_locations: true
   field_data_collection_period: true
+  field_dataset_upload_or_external: true
   field_demographics_information: true
   field_doi: true
   field_external_resource: true

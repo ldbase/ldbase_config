@@ -1,0 +1,21 @@
+uuid: 3b44f111-6b3c-43b5-bb0e-1350228753b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dataset_upload_or_external
+    - node.type.dataset
+  module:
+    - options
+id: node.dataset.field_dataset_upload_or_external
+field_name: field_dataset_upload_or_external
+entity_type: node
+bundle: dataset
+label: 'Dataset Upload or External Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

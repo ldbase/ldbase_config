@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.dataset.field_component_skills
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_period
+    - field.field.node.dataset.field_dataset_upload_or_external
     - field.field.node.dataset.field_demographics_information
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
@@ -67,6 +68,21 @@ third_party_settings:
               id: 'extra_field_block:node:dataset:project_latest_documents_entity_view_1'
             additional: {  }
             weight: 1
+          4fab1b82-d764-49e4-8ceb-1a210ce2c26f:
+            uuid: 4fab1b82-d764-49e4-8ceb-1a210ce2c26f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_dataset_upload_or_external'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -549,6 +565,13 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: daterange_default
+    region: content
+  field_dataset_upload_or_external:
+    weight: 31
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_demographics_information:
     type: entity_reference_revisions_entity_view
