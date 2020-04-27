@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.file_metadata.field_file_format
     - field.field.paragraph.file_metadata.field_file_upload
     - field.field.paragraph.file_metadata.field_file_version_description
-    - field.field.paragraph.file_metadata.field_format_version
     - paragraphs.paragraphs_type.file_metadata
   module:
     - file
@@ -34,14 +33,6 @@ content:
     region: content
   field_file_version_description:
     weight: 4
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_format_version:
-    weight: 3
     settings:
       size: 60
       placeholder: ''
