@@ -9,7 +9,7 @@ _core:
 id: portcullis_local_tasks
 theme: portcullis
 region: content
-weight: -7
+weight: -12
 provider: null
 plugin: local_tasks_block
 settings:

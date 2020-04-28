@@ -128,9 +128,30 @@ display:
       contexts:
         - 'languages:language_interface'
         - url
+        - 'user.node_grants:view'
       cacheable: false
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:search_api.index.default_index'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      use_ajax: true
+      defaults:
+        use_ajax: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.default_index'
   page_1:
     display_plugin: page
     id: page_1
@@ -148,6 +169,8 @@ display:
       contexts:
         - 'languages:language_interface'
         - url
+        - 'user.node_grants:view'
       cacheable: false
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:search_api.index.default_index'
