@@ -5,16 +5,18 @@ dependencies:
   config:
     - field.field.node.document.body
     - field.field.node.document.field_affiliated_parents
+    - field.field.node.document.field_document_file
     - field.field.node.document.field_document_type
     - field.field.node.document.field_doi
     - field.field.node.document.field_external_resource
-    - field.field.node.document.field_file
+    - field.field.node.document.field_file_access_restrictions
     - field.field.node.document.field_license
     - field.field.node.document.field_publication_info
     - field.field.node.document.field_related_persons
     - field.field.node.document.field_unaffiliated_parents
     - node.type.document
   module:
+    - file
     - link
     - paragraphs
     - path
@@ -41,7 +43,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_affiliated_parents:
-    weight: 26
+    weight: 17
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -50,8 +52,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_document_file:
+    weight: 13
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
   field_document_type:
-    weight: 14
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
@@ -76,8 +85,8 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_file:
-    weight: 13
+  field_file_access_restrictions:
+    weight: 14
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -100,7 +109,7 @@ content:
     region: content
   field_publication_info:
     type: entity_reference_paragraphs
-    weight: 15
+    weight: 16
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -121,7 +130,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_unaffiliated_parents:
-    weight: 27
+    weight: 18
     settings:
       match_operator: CONTAINS
       match_limit: 10

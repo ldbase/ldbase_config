@@ -1,18 +1,18 @@
-uuid: faac3a0c-33da-4291-83f5-0ad1b1f49dfc
+uuid: f221f27e-7d24-43cc-b640-339bbc452276
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_file
+    - field.storage.node.field_file_access_restrictions
     - node.type.document
-    - paragraphs.paragraphs_type.file_metadata
+    - paragraphs.paragraphs_type.file_access_restrictions
   module:
     - entity_reference_revisions
-id: node.document.field_file
-field_name: field_file
+id: node.document.field_file_access_restrictions
+field_name: field_file_access_restrictions
 entity_type: node
 bundle: document
-label: File
+label: 'File Access Restrictions'
 description: ''
 required: false
 translatable: true
@@ -23,18 +23,21 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      file_metadata: file_metadata
+      file_access_restrictions: file_access_restrictions
     target_bundles_drag_drop:
       demographics:
-        weight: 5
-        enabled: false
-      file_access_restrictions:
         weight: 6
         enabled: false
-      file_metadata:
+      file_access_restrictions:
         enabled: true
         weight: 7
-      grant_information:
+      file_metadata:
         weight: 8
+        enabled: false
+      grant_information:
+        weight: 9
+        enabled: false
+      publication_metadata:
+        weight: 10
         enabled: false
 field_type: entity_reference_revisions
