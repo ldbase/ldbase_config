@@ -48,7 +48,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 1
+            weight: 2
           2affba31-8e56-4440-8c96-61ce12e7e600:
             uuid: 2affba31-8e56-4440-8c96-61ce12e7e600
             region: first
@@ -63,7 +63,7 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             additional: {  }
-            weight: 2
+            weight: 3
           86c0e2c3-30c2-44af-905d-98766c58f989:
             uuid: 86c0e2c3-30c2-44af-905d-98766c58f989
             region: first
@@ -83,7 +83,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: link
             additional: {  }
-            weight: 3
+            weight: 4
           14f88bd5-df95-4d29-8b85-b1289bc021b1:
             uuid: 14f88bd5-df95-4d29-8b85-b1289bc021b1
             region: first
@@ -98,7 +98,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: address_default
             additional: {  }
-            weight: 4
+            weight: 5
           4033f051-880a-4fdc-9d0a-ba0328df9ec8:
             uuid: 4033f051-880a-4fdc-9d0a-ba0328df9ec8
             region: first
@@ -114,7 +114,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 5
+            weight: 6
           2c486b0e-d9bc-47a7-b87f-9c66f57edfa0:
             uuid: 2c486b0e-d9bc-47a7-b87f-9c66f57edfa0
             region: second
@@ -135,18 +135,6 @@ third_party_settings:
           042e56e7-1f97-4236-8a90-5744cc393bac:
             uuid: 042e56e7-1f97-4236-8a90-5744cc393bac
             region: first
-            configuration:
-              id: content_edit_link
-              label: 'LDBase Content Edit Link'
-              provider: ldbase_handlers
-              label_display: '0'
-              context_mapping:
-                node: layout_builder.entity
-            additional: {  }
-            weight: 6
-          cf895f70-06af-4731-8f59-066dcb826ccd:
-            uuid: cf895f70-06af-4731-8f59-066dcb826ccd
-            region: second
             configuration:
               id: content_edit_link
               label: 'LDBase Content Edit Link'
