@@ -1,0 +1,27 @@
+uuid: 973ef889-79d9-4df0-9f1a-91e8e47c8e90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_file
+    - node.type.code
+  module:
+    - file
+id: node.code.field_document_file
+field_name: field_document_file
+entity_type: node
+bundle: code
+label: File
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

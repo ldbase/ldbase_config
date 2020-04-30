@@ -7,9 +7,10 @@ dependencies:
     - field.field.node.code.body
     - field.field.node.code.field_affiliated_parents
     - field.field.node.code.field_code_type
+    - field.field.node.code.field_document_file
     - field.field.node.code.field_doi
     - field.field.node.code.field_external_resource
-    - field.field.node.code.field_file
+    - field.field.node.code.field_file_access_restrictions
     - field.field.node.code.field_license
     - field.field.node.code.field_publication_info
     - field.field.node.code.field_related_persons
@@ -39,9 +40,10 @@ content:
 hidden:
   field_affiliated_parents: true
   field_code_type: true
+  field_document_file: true
   field_doi: true
   field_external_resource: true
-  field_file: true
+  field_file_access_restrictions: true
   field_format_information: true
   field_license: true
   field_publication_info: true

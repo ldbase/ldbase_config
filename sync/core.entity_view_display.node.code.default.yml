@@ -6,9 +6,10 @@ dependencies:
     - field.field.node.code.body
     - field.field.node.code.field_affiliated_parents
     - field.field.node.code.field_code_type
+    - field.field.node.code.field_document_file
     - field.field.node.code.field_doi
     - field.field.node.code.field_external_resource
-    - field.field.node.code.field_file
+    - field.field.node.code.field_file_access_restrictions
     - field.field.node.code.field_license
     - field.field.node.code.field_publication_info
     - field.field.node.code.field_related_persons
@@ -16,6 +17,7 @@ dependencies:
     - node.type.code
   module:
     - entity_reference_revisions
+    - file
     - layout_builder
     - layout_discovery
     - ldbase_handlers
@@ -76,6 +78,39 @@ third_party_settings:
                 type: entity_reference_label
             additional: {  }
             weight: 3
+          dfa5bc5e-c38a-4af5-be25-a70845b59ba5:
+            uuid: dfa5bc5e-c38a-4af5-be25-a70845b59ba5
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:code:field_document_file'
+              formatter:
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+                type: file_default
+            additional: {  }
+            weight: 4
+          321061c3-5b07-4ef1-9128-57d399369ce8:
+            uuid: 321061c3-5b07-4ef1-9128-57d399369ce8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:code:field_file_access_restrictions'
+              formatter:
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+                type: entity_reference_revisions_entity_view
+            additional: {  }
+            weight: 5
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -106,26 +141,7 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: 'File Section'
-        components:
-          c95ceb46-afa4-418a-8af7-c3470ff769d8:
-            uuid: c95ceb46-afa4-418a-8af7-c3470ff769d8
-            region: content
-            configuration:
-              id: 'field_block:node:code:field_file'
-              label: File
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: entity_reference_revisions_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
+        components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -308,6 +324,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_document_file:
+    weight: 20
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
   field_doi:
     weight: 15
     label: above
@@ -328,8 +352,8 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_file:
-    weight: 12
+  field_file_access_restrictions:
+    weight: 21
     label: above
     settings:
       view_mode: default
