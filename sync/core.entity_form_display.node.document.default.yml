@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.document.body
     - field.field.node.document.field_affiliated_parents
+    - field.field.node.document.field_doc_upload_or_external
     - field.field.node.document.field_document_file
     - field.field.node.document.field_document_type
     - field.field.node.document.field_doi
@@ -51,6 +52,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_doc_upload_or_external:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_document_file:
     weight: 13

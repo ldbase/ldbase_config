@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.code.body
     - field.field.node.code.field_affiliated_parents
     - field.field.node.code.field_code_type
+    - field.field.node.code.field_code_upload_or_external
     - field.field.node.code.field_document_file
     - field.field.node.code.field_doi
     - field.field.node.code.field_external_resource
@@ -40,6 +41,7 @@ content:
 hidden:
   field_affiliated_parents: true
   field_code_type: true
+  field_code_upload_or_external: true
   field_document_file: true
   field_doi: true
   field_external_resource: true

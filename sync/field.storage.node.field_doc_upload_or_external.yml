@@ -1,0 +1,27 @@
+uuid: 5d94d8bc-3a4d-49b1-8231-75c73c148366
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_doc_upload_or_external
+field_name: field_doc_upload_or_external
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: external
+      label: External
+    -
+      value: upload
+      label: Uploaded
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

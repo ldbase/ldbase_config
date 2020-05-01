@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.code.body
     - field.field.node.code.field_affiliated_parents
     - field.field.node.code.field_code_type
+    - field.field.node.code.field_code_upload_or_external
     - field.field.node.code.field_document_file
     - field.field.node.code.field_doi
     - field.field.node.code.field_external_resource
@@ -61,6 +62,12 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_code_upload_or_external:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_document_file:
     weight: 13

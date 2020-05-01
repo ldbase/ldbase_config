@@ -1,0 +1,21 @@
+uuid: b38a11e0-4e41-462c-b1cf-5e64af4d7341
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doc_upload_or_external
+    - node.type.document
+  module:
+    - options
+id: node.document.field_doc_upload_or_external
+field_name: field_doc_upload_or_external
+entity_type: node
+bundle: document
+label: 'Document Upload or External Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

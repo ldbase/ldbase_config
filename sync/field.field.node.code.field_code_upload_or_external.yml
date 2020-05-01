@@ -1,0 +1,21 @@
+uuid: 65f54296-e325-4fc0-b7b0-5dd5f2959f42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_code_upload_or_external
+    - node.type.code
+  module:
+    - options
+id: node.code.field_code_upload_or_external
+field_name: field_code_upload_or_external
+entity_type: node
+bundle: code
+label: 'Code Upload or External Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
