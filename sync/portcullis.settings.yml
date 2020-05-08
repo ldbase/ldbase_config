@@ -221,7 +221,7 @@ features:
   favicon: true
 logo:
   use_default: false
-  path: ''
+  path: modules/custom/ldbase_content/images/ldbase_logo_horizontal_color.png
 favicon:
   use_default: true
 font_title: ''

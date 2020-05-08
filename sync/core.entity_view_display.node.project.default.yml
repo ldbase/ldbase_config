@@ -216,7 +216,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -241,7 +241,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -266,7 +266,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -291,7 +291,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
