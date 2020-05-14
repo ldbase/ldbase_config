@@ -1,25 +1,25 @@
-uuid: 973ef889-79d9-4df0-9f1a-91e8e47c8e90
+uuid: ae928e51-0d64-4a3a-a566-dd39dcad8268
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_document_file
+    - field.storage.node.field_code_file
     - node.type.code
   module:
     - file
-id: node.code.field_document_file
-field_name: field_document_file
+id: node.code.field_code_file
+field_name: field_code_file
 entity_type: node
 bundle: code
 label: File
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt pdf doc docx'
+  file_extensions: 'rmd do inp r sas txt sps py m'
   max_filesize: ''
   description_field: false
   handler: 'default:file'

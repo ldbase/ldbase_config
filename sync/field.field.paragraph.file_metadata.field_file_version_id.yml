@@ -1,0 +1,25 @@
+uuid: a7179d4f-b4ea-4dee-939f-659c432f31ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file_version_id
+    - paragraphs.paragraphs_type.file_metadata
+id: paragraph.file_metadata.field_file_version_id
+field_name: field_file_version_id
+entity_type: paragraph
+bundle: file_metadata
+label: 'File Version ID'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

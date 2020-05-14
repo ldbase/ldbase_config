@@ -1,18 +1,18 @@
-uuid: fa0f58b0-e41a-4173-8201-296dc18d4244
+uuid: 2d6d3144-3dd7-4e37-be73-fd4693055336
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_file
+    - field.storage.node.field_dataset_version
     - node.type.dataset
     - paragraphs.paragraphs_type.file_metadata
   module:
     - entity_reference_revisions
-id: node.dataset.field_file
-field_name: field_file
+id: node.dataset.field_dataset_version
+field_name: field_dataset_version
 entity_type: node
 bundle: dataset
-label: File
+label: 'Dataset Version'
 description: ''
 required: false
 translatable: false
@@ -26,15 +26,18 @@ settings:
       file_metadata: file_metadata
     target_bundles_drag_drop:
       demographics:
-        weight: 5
+        weight: 6
         enabled: false
       file_access_restrictions:
-        weight: 6
+        weight: 7
         enabled: false
       file_metadata:
         enabled: true
-        weight: 7
-      grant_information:
         weight: 8
+      grant_information:
+        weight: 9
+        enabled: false
+      publication_metadata:
+        weight: 10
         enabled: false
 field_type: entity_reference_revisions

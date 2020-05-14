@@ -10,10 +10,10 @@ dependencies:
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_period
     - field.field.node.dataset.field_dataset_upload_or_external
+    - field.field.node.dataset.field_dataset_version
     - field.field.node.dataset.field_demographics_information
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
-    - field.field.node.dataset.field_file
     - field.field.node.dataset.field_file_access_restrictions
     - field.field.node.dataset.field_license
     - field.field.node.dataset.field_location
@@ -105,6 +105,18 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_dataset_version:
+    type: entity_reference_paragraphs
+    weight: 33
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
   field_demographics_information:
     type: entity_reference_paragraphs
     weight: 17
@@ -132,18 +144,6 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
-    region: content
-  field_file:
-    type: entity_reference_paragraphs
-    weight: 24
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
     region: content
   field_file_access_restrictions:
     type: entity_reference_paragraphs

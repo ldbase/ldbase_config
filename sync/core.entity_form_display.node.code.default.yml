@@ -5,9 +5,9 @@ dependencies:
   config:
     - field.field.node.code.body
     - field.field.node.code.field_affiliated_parents
+    - field.field.node.code.field_code_file
     - field.field.node.code.field_code_type
     - field.field.node.code.field_code_upload_or_external
-    - field.field.node.code.field_document_file
     - field.field.node.code.field_doi
     - field.field.node.code.field_external_resource
     - field.field.node.code.field_file_access_restrictions
@@ -53,6 +53,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_code_file:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
   field_code_type:
     weight: 10
     settings:
@@ -68,13 +75,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_document_file:
-    weight: 13
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
     region: content
   field_doi:
     weight: 16
