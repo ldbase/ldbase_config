@@ -1,0 +1,34 @@
+uuid: 04b8cb80-2537-415d-9b86-c36e872f6526
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_datasets
+  module:
+    - collapsiblock
+    - system
+    - views
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
+id: views_block__latest_datasets_block_1
+theme: portcullis
+region: content_bottom_second
+weight: 0
+provider: null
+plugin: 'views_block:latest_datasets-block_1'
+settings:
+  id: 'views_block:latest_datasets-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
