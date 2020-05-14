@@ -6,9 +6,12 @@ dependencies:
     - field.field.paragraph.file_metadata.field_file_format
     - field.field.paragraph.file_metadata.field_file_upload
     - field.field.paragraph.file_metadata.field_file_version_description
+    - field.field.paragraph.file_metadata.field_file_version_id
+    - field.field.paragraph.file_metadata.field_file_version_label
     - paragraphs.paragraphs_type.file_metadata
   module:
     - file
+    - options
 id: paragraph.file_metadata.default
 targetEntityType: paragraph
 bundle: file_metadata
@@ -37,6 +40,22 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_file_version_id:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_file_version_label:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
 hidden:
   search_api_excerpt: true
