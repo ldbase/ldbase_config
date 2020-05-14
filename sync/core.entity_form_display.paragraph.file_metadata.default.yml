@@ -49,10 +49,12 @@ content:
     type: number
     region: content
   field_file_version_label:
-    weight: 5
-    settings: {  }
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: string_textfield
     region: content
 hidden:
   created: true

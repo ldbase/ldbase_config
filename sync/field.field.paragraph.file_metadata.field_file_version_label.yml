@@ -1,12 +1,10 @@
-uuid: 57cb877e-18a2-455c-8604-6e300b8ec70d
+uuid: 13f635d6-ec04-488e-b1cc-e9074a9e016a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_file_version_label
     - paragraphs.paragraphs_type.file_metadata
-  module:
-    - options
 id: paragraph.file_metadata.field_file_version_label
 field_name: field_file_version_label
 entity_type: paragraph
@@ -18,4 +16,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string
