@@ -10,10 +10,10 @@ dependencies:
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_period
     - field.field.node.dataset.field_dataset_upload_or_external
+    - field.field.node.dataset.field_dataset_version
     - field.field.node.dataset.field_demographics_information
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
-    - field.field.node.dataset.field_file
     - field.field.node.dataset.field_file_access_restrictions
     - field.field.node.dataset.field_license
     - field.field.node.dataset.field_location
@@ -83,6 +83,23 @@ third_party_settings:
                 type: list_default
             additional: {  }
             weight: 2
+          d391c2f7-2532-4e73-85ba-9ae57762582d:
+            uuid: d391c2f7-2532-4e73-85ba-9ae57762582d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_dataset_version'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -113,26 +130,7 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: 'File Section'
-        components:
-          90168f72-2838-4181-8475-a604842d92c2:
-            uuid: 90168f72-2838-4181-8475-a604842d92c2
-            region: content
-            configuration:
-              id: 'field_block:node:dataset:field_file'
-              label: File
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: entity_reference_revisions_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 0
+        components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -573,6 +571,15 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
+  field_dataset_version:
+    type: entity_reference_revisions_entity_view
+    weight: 32
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_demographics_information:
     type: entity_reference_revisions_entity_view
     weight: 9
@@ -601,15 +608,6 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
-  field_file:
-    type: entity_reference_revisions_entity_view
-    weight: 23
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
     region: content
   field_file_access_restrictions:
     type: entity_reference_revisions_entity_view

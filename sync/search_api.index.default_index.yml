@@ -24,7 +24,6 @@ dependencies:
     - field.storage.node.field_doi
     - field.storage.node.field_email
     - field.storage.node.field_external_resource
-    - field.storage.node.field_file
     - field.storage.node.field_file_access_restrictions
     - field.storage.paragraph.field_file_embargoed
     - field.storage.node.field_first_name
@@ -62,7 +61,6 @@ field_settings:
     dependencies:
       module:
         - node
-        - user
         - user
   body:
     label: Description
@@ -200,14 +198,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_external_resource
-  field_file:
-    label: File
-    datasource_id: 'entity:node'
-    property_path: field_file
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_file
   field_file_access_restrictions:
     label: 'File Access Restrictions'
     datasource_id: 'entity:node'
@@ -445,7 +435,6 @@ field_settings:
         - field.storage.paragraph.field_participant_type
       module:
         - paragraphs
-        - taxonomy
         - taxonomy
   title:
     label: Title
