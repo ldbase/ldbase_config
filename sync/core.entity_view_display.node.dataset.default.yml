@@ -58,48 +58,6 @@ third_party_settings:
                 node: layout_builder.entity
             additional: {  }
             weight: 0
-          46d62da9-5d91-4945-ad74-b59efdcea6e9:
-            uuid: 46d62da9-5d91-4945-ad74-b59efdcea6e9
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:dataset:project_latest_documents_entity_view_1'
-            additional: {  }
-            weight: 1
-          4fab1b82-d764-49e4-8ceb-1a210ce2c26f:
-            uuid: 4fab1b82-d764-49e4-8ceb-1a210ce2c26f
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_dataset_upload_or_external'
-              formatter:
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-                type: list_default
-            additional: {  }
-            weight: 2
-          d391c2f7-2532-4e73-85ba-9ae57762582d:
-            uuid: d391c2f7-2532-4e73-85ba-9ae57762582d
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_dataset_version'
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: above
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-            additional: {  }
-            weight: 3
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -130,7 +88,42 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: 'File Section'
-        components: {  }
+        components:
+          d391c2f7-2532-4e73-85ba-9ae57762582d:
+            uuid: d391c2f7-2532-4e73-85ba-9ae57762582d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_dataset_version'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          4fab1b82-d764-49e4-8ceb-1a210ce2c26f:
+            uuid: 4fab1b82-d764-49e4-8ceb-1a210ce2c26f
+            region: content
+            configuration:
+              id: 'field_block:node:dataset:field_dataset_upload_or_external'
+              label: 'Dataset Upload or External Link'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: list_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -233,7 +226,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -274,7 +267,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -299,7 +292,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -332,7 +325,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -373,7 +366,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -398,7 +391,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -423,7 +416,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: list_default
                 settings: {  }
                 third_party_settings: {  }
@@ -447,7 +440,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -483,7 +476,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -499,7 +492,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -507,6 +500,22 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Latest Documents'
+        components:
+          46d62da9-5d91-4945-ad74-b59efdcea6e9:
+            uuid: 46d62da9-5d91-4945-ad74-b59efdcea6e9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:dataset:project_latest_documents_entity_view_1'
             additional: {  }
             weight: 0
         third_party_settings: {  }
