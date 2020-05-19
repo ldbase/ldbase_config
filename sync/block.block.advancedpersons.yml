@@ -1,9 +1,9 @@
-uuid: a7975949-783d-4238-8231-5ab8e63283ed
+uuid: bdc14cc7-5011-470a-9acd-ee92a6f2454e
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.country
+    - facets.facet.advanced_persons
   module:
     - collapsiblock
     - facets
@@ -13,21 +13,21 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: country_2
+id: advancedpersons
 theme: portcullis
 region: sidebar_first
-weight: -1
+weight: -2
 provider: null
-plugin: 'facet_block:country'
+plugin: 'facet_block:advanced_persons'
 settings:
-  id: 'facet_block:country'
-  label: Country
+  id: 'facet_block:advanced_persons'
+  label: 'Advanced Persons'
   provider: facets
   label_display: visible
-  block_id: country_2
+  block_id: advancedpersons
 visibility:
   request_path:
     id: request_path
-    pages: /search
+    pages: /advanced-search
     negate: false
     context_mapping: {  }

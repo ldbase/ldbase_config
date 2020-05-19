@@ -16,7 +16,7 @@ third_party_settings:
 id: documenttasks
 theme: portcullis
 region: sidebar_first
-weight: -11
+weight: -18
 provider: null
 plugin: 'system_menu_block:document-tasks'
 settings:

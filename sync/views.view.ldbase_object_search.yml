@@ -119,6 +119,19 @@ display:
           empty: false
           content: 'Displaying results @start - @end of @total'
           plugin_id: result
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<a href="/advanced-search">Go to Advanced Boolean Search</a>'
+            format: full_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }

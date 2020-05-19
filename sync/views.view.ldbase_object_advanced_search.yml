@@ -108,7 +108,7 @@ display:
           fields: {  }
           plugin_id: search_api_fulltext
       sorts: {  }
-      title: 'LDbase Advanced Search'
+      title: 'LDbase Advanced Boolean Search'
       header:
         result:
           id: result
@@ -182,8 +182,8 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: ''
-            description: 'Search for all of these words (Boolean AND)'
+            label: AND
+            description: 'Search for all of these words'
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
@@ -243,8 +243,8 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_1_op
-            label: ''
-            description: 'Search for any of these words (Boolean OR)'
+            label: OR
+            description: 'Search for any of these words'
             use_operator: false
             operator: search_api_fulltext_1_op
             operator_limit_selection: false
@@ -288,8 +288,8 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_2_op
-            label: ''
-            description: 'Exclude all of these words from search (Boolean NOT)'
+            label: NOT
+            description: 'Exclude all of these words from search'
             use_operator: false
             operator: search_api_fulltext_2_op
             operator_limit_selection: false

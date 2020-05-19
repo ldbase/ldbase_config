@@ -1,9 +1,9 @@
-uuid: a7975949-783d-4238-8231-5ab8e63283ed
+uuid: 49b527fe-c4e7-44a7-a6b9-974e7a3768f0
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.country
+    - facets.facet.advanced_type
   module:
     - collapsiblock
     - facets
@@ -13,21 +13,21 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: country_2
+id: advancedtype
 theme: portcullis
 region: sidebar_first
-weight: -1
+weight: -14
 provider: null
-plugin: 'facet_block:country'
+plugin: 'facet_block:advanced_type'
 settings:
-  id: 'facet_block:country'
-  label: Country
+  id: 'facet_block:advanced_type'
+  label: 'Advanced Type'
   provider: facets
   label_display: visible
-  block_id: country_2
+  block_id: advancedtype
 visibility:
   request_path:
     id: request_path
-    pages: /search
+    pages: /advanced-type
     negate: false
     context_mapping: {  }

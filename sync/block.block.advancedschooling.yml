@@ -1,9 +1,9 @@
-uuid: a7975949-783d-4238-8231-5ab8e63283ed
+uuid: 883fda4d-9b31-4eed-91e4-67ce560bf922
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.country
+    - facets.facet.advanced_schooling
   module:
     - collapsiblock
     - facets
@@ -13,21 +13,21 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: country_2
+id: advancedschooling
 theme: portcullis
 region: sidebar_first
-weight: -1
+weight: -6
 provider: null
-plugin: 'facet_block:country'
+plugin: 'facet_block:advanced_schooling'
 settings:
-  id: 'facet_block:country'
-  label: Country
+  id: 'facet_block:advanced_schooling'
+  label: 'Advanced Schooling'
   provider: facets
   label_display: visible
-  block_id: country_2
+  block_id: advancedschooling
 visibility:
   request_path:
     id: request_path
-    pages: /search
+    pages: /advanced-search
     negate: false
     context_mapping: {  }

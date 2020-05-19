@@ -1,0 +1,9 @@
+uuid: b1dc4d75-c504-4e5a-8f23-d81a6aeda318
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__ldbase_object_advanced_search__page_1
+name: 'search_api:views_page__ldbase_object_advanced_search__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }
