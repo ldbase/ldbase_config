@@ -48,91 +48,11 @@ third_party_settings:
                 node: layout_builder.entity
             additional: {  }
             weight: 0
-          31a27cbe-9139-4e54-84e9-6574b0ec1744:
-            uuid: 31a27cbe-9139-4e54-84e9-6574b0ec1744
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:document:field_affiliated_parents'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 2
-          bf12f7fd-7025-4c3e-b514-f6e7f0e23bf6:
-            uuid: bf12f7fd-7025-4c3e-b514-f6e7f0e23bf6
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:document:field_unaffiliated_parents'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 3
-          9847de09-84cd-44d7-b1a6-47cf45bd4e58:
-            uuid: 9847de09-84cd-44d7-b1a6-47cf45bd4e58
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:document:field_document_file'
-              formatter:
-                label: above
-                settings:
-                  use_description_as_link_text: true
-                third_party_settings: {  }
-                type: file_default
-            additional: {  }
-            weight: 4
-          f8ac8705-7746-41f1-882c-5e4782a674d9:
-            uuid: f8ac8705-7746-41f1-882c-5e4782a674d9
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:document:field_file_access_restrictions'
-              formatter:
-                label: above
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-                type: entity_reference_revisions_entity_view
-            additional: {  }
-            weight: 5
-          94f41e85-9835-4185-ad14-696ac7080993:
-            uuid: 94f41e85-9835-4185-ad14-696ac7080993
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:document:field_doc_upload_or_external'
-              formatter:
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-                type: list_default
-            additional: {  }
-            weight: 6
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
-          label: 'DOI/APA Citation Section'
+          label: 'DOI Section'
         components:
           5184d550-42b4-4dbc-b3e2-f279cfb6b688:
             uuid: 5184d550-42b4-4dbc-b3e2-f279cfb6b688
@@ -153,6 +73,46 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'File Section'
+        components:
+          9847de09-84cd-44d7-b1a6-47cf45bd4e58:
+            uuid: 9847de09-84cd-44d7-b1a6-47cf45bd4e58
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:document:field_document_file'
+              formatter:
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+                type: file_default
+            additional: {  }
+            weight: 2
+          94f41e85-9835-4185-ad14-696ac7080993:
+            uuid: 94f41e85-9835-4185-ad14-696ac7080993
+            region: content
+            configuration:
+              id: 'field_block:node:document:field_doc_upload_or_external'
+              label: 'Document Upload or External Link'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: list_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -252,7 +212,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: hidden
                 type: entity_reference_revisions_entity_view
                 settings:
                   view_mode: default
@@ -277,7 +237,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -302,7 +262,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
