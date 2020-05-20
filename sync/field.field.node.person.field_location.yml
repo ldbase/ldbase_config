@@ -39,5 +39,9 @@ settings:
       override: hidden
     dependentLocality:
       override: hidden
+    locality:
+      override: optional
+    administrativeArea:
+      override: optional
   fields: {  }
 field_type: address
