@@ -21,7 +21,7 @@ provider: null
 plugin: 'facet_block:advanced_special_populations'
 settings:
   id: 'facet_block:advanced_special_populations'
-  label: 'Advanced Special Populations'
+  label: 'Special Populations'
   provider: facets
   label_display: visible
   block_id: advancedspecialpopulations

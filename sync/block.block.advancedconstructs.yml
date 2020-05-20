@@ -21,7 +21,7 @@ provider: null
 plugin: 'facet_block:advanced_constructs'
 settings:
   id: 'facet_block:advanced_constructs'
-  label: 'Advanced Constructs'
+  label: Constructs
   provider: facets
   label_display: visible
   block_id: advancedconstructs

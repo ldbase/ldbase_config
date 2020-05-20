@@ -21,7 +21,7 @@ provider: null
 plugin: 'facet_block:advanced_time_method'
 settings:
   id: 'facet_block:advanced_time_method'
-  label: 'Advanced Time Method'
+  label: 'Time Method'
   provider: facets
   label_display: visible
   block_id: advancedtimemethod

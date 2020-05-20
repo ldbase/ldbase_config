@@ -21,7 +21,7 @@ provider: null
 plugin: 'facet_block:advanced_persons'
 settings:
   id: 'facet_block:advanced_persons'
-  label: 'Advanced Persons'
+  label: Persons
   provider: facets
   label_display: visible
   block_id: advancedpersons

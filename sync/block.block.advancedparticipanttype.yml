@@ -21,7 +21,7 @@ provider: null
 plugin: 'facet_block:advanced_participant_type'
 settings:
   id: 'facet_block:advanced_participant_type'
-  label: 'Advanced Participant Type'
+  label: 'Participant Type'
   provider: facets
   label_display: visible
   block_id: advancedparticipanttype
