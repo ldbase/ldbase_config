@@ -16,7 +16,7 @@ third_party_settings:
 id: persons_2
 theme: portcullis
 region: sidebar_first
-weight: -3
+weight: -2
 provider: null
 plugin: 'facet_block:persons'
 settings:

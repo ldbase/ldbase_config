@@ -1,42 +1,37 @@
-uuid: 0763439d-f0ef-4b95-ac22-0ff891e55b36
+uuid: 557d11bd-ce58-41d2-bd61-7bfb4d66a9e1
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.document-tasks
+    - system.menu.project-navigation
   module:
     - collapsiblock
-    - ctools
+    - node
     - system
   theme:
     - portcullis
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: documenttasks
+id: projectnavigation
 theme: portcullis
 region: sidebar_first
-weight: -17
+weight: -21
 provider: null
-plugin: 'system_menu_block:document-tasks'
+plugin: 'system_menu_block:project-navigation'
 settings:
-  id: 'system_menu_block:document-tasks'
-  label: 'Document Tasks'
+  id: 'system_menu_block:project-navigation'
+  label: 'Project Navigation'
   provider: system
   label_display: visible
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
+  node_type:
+    id: node_type
     bundles:
-      document: document
+      project: project
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: '/forms/*'
-    negate: true
-    context_mapping: {  }

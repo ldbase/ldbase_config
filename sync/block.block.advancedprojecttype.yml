@@ -16,7 +16,7 @@ third_party_settings:
 id: advancedprojecttype
 theme: portcullis
 region: sidebar_first
-weight: -12
+weight: -11
 provider: null
 plugin: 'facet_block:duplicate_of_project_type'
 settings:

@@ -16,7 +16,7 @@ third_party_settings:
 id: advancedconstructs
 theme: portcullis
 region: sidebar_first
-weight: -16
+weight: -15
 provider: null
 plugin: 'facet_block:advanced_constructs'
 settings:

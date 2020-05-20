@@ -16,7 +16,7 @@ third_party_settings:
 id: advancedcountry
 theme: portcullis
 region: sidebar_first
-weight: 0
+weight: 1
 provider: null
 plugin: 'facet_block:advanced_country'
 settings:

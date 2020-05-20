@@ -16,7 +16,7 @@ third_party_settings:
 id: advancedparticipanttype
 theme: portcullis
 region: sidebar_first
-weight: -10
+weight: -9
 provider: null
 plugin: 'facet_block:advanced_participant_type'
 settings:

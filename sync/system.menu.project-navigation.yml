@@ -1,0 +1,8 @@
+uuid: f2d19124-6ecd-4d98-8de2-86dd4030d52b
+langcode: en
+status: true
+dependencies: {  }
+id: project-navigation
+label: 'Project Navigation'
+description: 'LDbase Project navigational links'
+locked: false

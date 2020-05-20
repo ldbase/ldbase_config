@@ -16,7 +16,7 @@ third_party_settings:
 id: advancedschooling
 theme: portcullis
 region: sidebar_first
-weight: -6
+weight: -5
 provider: null
 plugin: 'facet_block:advanced_schooling'
 settings:

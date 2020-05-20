@@ -16,7 +16,7 @@ third_party_settings:
 id: projecttype_2
 theme: portcullis
 region: sidebar_first
-weight: -13
+weight: -12
 provider: null
 plugin: 'facet_block:project_type'
 settings:
