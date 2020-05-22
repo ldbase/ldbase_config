@@ -6,7 +6,6 @@ dependencies:
     - system.menu.project-navigation
   module:
     - collapsiblock
-    - node
     - system
   theme:
     - portcullis
@@ -28,10 +27,8 @@ settings:
   depth: 0
   expand_all_items: false
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      project: project
+  request_path:
+    id: request_path
+    pages: "/projects/*\r\n/datasets/*\r\n/code/*\r\n/documents/*"
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    context_mapping: {  }
