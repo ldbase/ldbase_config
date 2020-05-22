@@ -1,0 +1,53 @@
+uuid: 089dc02b-3668-4e9d-9278-57addf3888ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.date_range_selection.field_from_month
+    - field.field.paragraph.date_range_selection.field_from_year
+    - field.field.paragraph.date_range_selection.field_to_month
+    - field.field.paragraph.date_range_selection.field_to_year
+    - paragraphs.paragraphs_type.date_range_selection
+id: paragraph.date_range_selection.default
+targetEntityType: paragraph
+bundle: date_range_selection
+mode: default
+content:
+  field_from_month:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_from_year:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_to_month:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_to_year:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  search_api_excerpt: true

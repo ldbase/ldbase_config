@@ -1,0 +1,23 @@
+uuid: 1a8af9bf-f53e-4228-bdeb-d8326d359f11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_year
+    - paragraphs.paragraphs_type.date_selection
+id: paragraph.date_selection.field_year
+field_name: field_year
+entity_type: paragraph
+bundle: date_selection
+label: Year
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1900
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

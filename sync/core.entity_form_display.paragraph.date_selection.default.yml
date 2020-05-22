@@ -1,0 +1,30 @@
+uuid: c2e52396-09fd-46d2-b2e3-4ff2451e9544
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.date_selection.field_month
+    - field.field.paragraph.date_selection.field_year
+    - paragraphs.paragraphs_type.date_selection
+id: paragraph.date_selection.default
+targetEntityType: paragraph
+bundle: date_selection
+mode: default
+content:
+  field_month:
+    weight: 0
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_year:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true

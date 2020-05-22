@@ -18,7 +18,6 @@ dependencies:
     - field.storage.node.field_component_skills
     - field.storage.node.field_curricula
     - field.storage.node.field_data_collection_locations
-    - field.storage.node.field_data_collection_period
     - field.storage.node.field_demographics_information
     - field.storage.node.field_document_type
     - field.storage.node.field_doi
@@ -150,14 +149,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_data_collection_locations
-  field_data_collection_period:
-    label: 'Data Collection Period'
-    datasource_id: 'entity:node'
-    property_path: field_data_collection_period
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_data_collection_period
   field_demographics_information:
     label: Participants
     datasource_id: 'entity:node'

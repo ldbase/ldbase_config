@@ -5,6 +5,17 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.project.body
+    - field.field.node.project.field_activity_range
+    - field.field.node.project.field_activity_range_select
+    - field.field.node.project.field_curricula
+    - field.field.node.project.field_doi
+    - field.field.node.project.field_grant_information
+    - field.field.node.project.field_project_type
+    - field.field.node.project.field_related_organizations
+    - field.field.node.project.field_related_persons
+    - field.field.node.project.field_schooling
+    - field.field.node.project.field_time_method
+    - field.field.node.project.field_website
     - node.type.project
   module:
     - text
@@ -27,8 +38,19 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  project_latest_datasets_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  project_latest_documents_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   field_activity_range: true
+  field_activity_range_select: true
   field_affiliated_datasets: true
   field_affiliated_documents: true
   field_curricula: true

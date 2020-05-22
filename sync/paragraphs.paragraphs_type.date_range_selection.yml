@@ -1,0 +1,10 @@
+uuid: 7ab57cd4-e557-484f-b9ee-679264b082e9
+langcode: en
+status: true
+dependencies: {  }
+id: date_range_selection
+label: 'Date Range Selection'
+icon_uuid: null
+icon_default: null
+description: 'A way to select date ranges as Month - Year to Month - Year'
+behavior_plugins: {  }

@@ -1,0 +1,33 @@
+uuid: 176cda6a-515e-44b5-aa50-13aaf269f4a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.date_selection.field_month
+    - field.field.paragraph.date_selection.field_year
+    - paragraphs.paragraphs_type.date_selection
+id: paragraph.date_selection.default
+targetEntityType: paragraph
+bundle: date_selection
+mode: default
+content:
+  field_month:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_year:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden:
+  search_api_excerpt: true

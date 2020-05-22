@@ -3,28 +3,28 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.publication_metadata.field_publication_date
+    - field.field.paragraph.publication_metadata.field_publication_month
     - field.field.paragraph.publication_metadata.field_publication_source
+    - field.field.paragraph.publication_metadata.field_publication_year
     - paragraphs.paragraphs_type.publication_metadata
   module:
-    - datetime
     - link
 id: paragraph.publication_metadata.default
 targetEntityType: paragraph
 bundle: publication_metadata
 mode: default
 content:
-  field_publication_date:
+  field_publication_month:
     weight: 0
     label: above
     settings:
-      format_type: medium
-      timezone_override: ''
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    type: datetime_default
+    type: number_integer
     region: content
   field_publication_source:
-    weight: 1
+    weight: 3
     label: above
     settings:
       trim_length: 80
@@ -34,6 +34,15 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_publication_year:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
     region: content
 hidden:
   search_api_excerpt: true

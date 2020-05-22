@@ -1,0 +1,23 @@
+uuid: 801e55e1-c3df-474e-be95-20d53609a5a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_publication_month
+    - paragraphs.paragraphs_type.publication_metadata
+id: paragraph.publication_metadata.field_publication_month
+field_name: field_publication_month
+entity_type: paragraph
+bundle: publication_metadata
+label: Month
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 12
+  prefix: ''
+  suffix: ''
+field_type: integer

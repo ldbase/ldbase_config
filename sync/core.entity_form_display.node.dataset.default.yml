@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.dataset.field_assessment_name
     - field.field.node.dataset.field_component_skills
     - field.field.node.dataset.field_data_collection_locations
-    - field.field.node.dataset.field_data_collection_period
+    - field.field.node.dataset.field_data_collection_range
     - field.field.node.dataset.field_dataset_upload_or_external
     - field.field.node.dataset.field_dataset_version
     - field.field.node.dataset.field_demographics_information
@@ -27,7 +27,6 @@ dependencies:
     - node.type.dataset
   module:
     - address
-    - datetime_range
     - link
     - paragraphs
     - path
@@ -54,7 +53,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_affiliated_parents:
-    weight: 30
+    weight: 25
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -93,21 +92,27 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_data_collection_period:
+  field_data_collection_range:
+    type: entity_reference_paragraphs
     weight: 14
-    settings: {  }
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: daterange_default
     region: content
   field_dataset_upload_or_external:
-    weight: 32
+    weight: 27
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dataset_version:
     type: entity_reference_paragraphs
-    weight: 33
+    weight: 28
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -174,7 +179,7 @@ content:
     type: address_default
     region: content
   field_publication_info:
-    weight: 25
+    weight: 24
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -222,7 +227,7 @@ content:
     type: options_select
     region: content
   field_unaffiliated_parents:
-    weight: 31
+    weight: 26
     settings:
       match_operator: CONTAINS
       match_limit: 10

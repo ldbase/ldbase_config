@@ -1,0 +1,10 @@
+uuid: 1bbfb73f-c481-47d5-9293-64cd34d7f8f3
+langcode: en
+status: true
+dependencies: {  }
+id: date_selection
+label: 'Date Selection'
+icon_uuid: null
+icon_default: null
+description: 'A way to select a date as Month - Year'
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: 745758be-1f30-42c6-b2c8-7d1f2dd4200f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_to_month
+    - paragraphs.paragraphs_type.date_range_selection
+id: paragraph.date_range_selection.field_to_month
+field_name: field_to_month
+entity_type: paragraph
+bundle: date_range_selection
+label: 'To Month'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 12
+  prefix: ''
+  suffix: ''
+field_type: integer

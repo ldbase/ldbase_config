@@ -1,0 +1,49 @@
+uuid: c3d5dd94-c3d6-4de6-a917-f7601ee060e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_range_select
+    - node.type.project
+    - paragraphs.paragraphs_type.date_range_selection
+  module:
+    - entity_reference_revisions
+id: node.project.field_activity_range_select
+field_name: field_activity_range_select
+entity_type: node
+bundle: project
+label: 'Project Active From'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      date_range_selection: date_range_selection
+    target_bundles_drag_drop:
+      date_range_selection:
+        enabled: true
+        weight: 8
+      date_selection:
+        weight: 9
+        enabled: false
+      demographics:
+        weight: 10
+        enabled: false
+      file_access_restrictions:
+        weight: 11
+        enabled: false
+      file_metadata:
+        weight: 12
+        enabled: false
+      grant_information:
+        weight: 13
+        enabled: false
+      publication_metadata:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions
