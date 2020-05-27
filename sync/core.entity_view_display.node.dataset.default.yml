@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.dataset.field_unaffiliated_parents
     - field.field.node.dataset.field_variable_types_in_dataset
     - node.type.dataset
+    - views.view.dataset_versions
   module:
     - address
     - entity_reference_revisions
@@ -35,6 +36,7 @@ dependencies:
     - options
     - text
     - user
+    - views
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -105,23 +107,6 @@ third_party_settings:
         layout_settings:
           label: 'File Section'
         components:
-          d391c2f7-2532-4e73-85ba-9ae57762582d:
-            uuid: d391c2f7-2532-4e73-85ba-9ae57762582d
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_dataset_version'
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: above
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-            additional: {  }
-            weight: 1
           4fab1b82-d764-49e4-8ceb-1a210ce2c26f:
             uuid: 4fab1b82-d764-49e4-8ceb-1a210ce2c26f
             region: content
@@ -140,6 +125,31 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          1a748687-ea55-4d13-9e05-a429746dad55:
+            uuid: 1a748687-ea55-4d13-9e05-a429746dad55
+            region: content
+            configuration:
+              id: 'views_block:dataset_versions-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 2
+          37adea87-24db-41cc-a3c6-fe87ba6a99b1:
+            uuid: 37adea87-24db-41cc-a3c6-fe87ba6a99b1
+            region: content
+            configuration:
+              id: dataset_versions_view_link
+              label: 'LDbase Dataset Versions View Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
       -
         layout_id: layout_onecol
