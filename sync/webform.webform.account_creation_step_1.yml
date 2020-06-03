@@ -1,18 +1,20 @@
-uuid: c0ff6696-2001-44ba-94f6-920f6d19d4bf
+uuid: 9db85d66-5bd4-492e-9718-c7cd1a6c9b7a
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - ldbase_new_account
 open: null
 close: null
 weight: 0
 uid: 1
 template: false
 archive: false
-id: new_user_creation_precursor_sear
-title: 'New User Creation: Step 1'
-description: 'A form that gathers input from the user in order to ascertain if there are records in the database already belonging to the new user.'
+id: account_creation_step_1
+title: 'Account Creation: Step 1'
+description: 'A form to gather information regarding the new user and ascertain if there are existing records.'
 category: 'LDbase Create/Update Forms'
-elements: "primary_name:\n  '#type': webform_name\n  '#title': 'Primary Name'\n  '#description': 'Before we create an account, let&#39;s search for existing documents where you might have been listed as a collaborator. Please enter your first, middle and last name as they are most often used in publications and other research related documents:'\n  '#description_display': before\n  '#title__access': false\n  '#first__title': 'First Name'\n  '#middle__title': 'Middle Name'\n  '#last__title': 'Last Name'\n  '#suffix__access': false\n  '#degree__access': false\nadditional_names:\n  '#type': webform_name\n  '#title': 'Additional Names'\n  '#multiple': true\n  '#description': 'If you publish under additional aliases, please enter this information in the fields below. Create as many rows as necessary.'\n  '#description_display': before\n  '#title__access': false\n  '#first__title': 'First Name'\n  '#middle__title': 'Middle Name'\n  '#last__title': 'Last Name'\n  '#suffix__access': false\n  '#degree__access': false\nemail_address:\n  '#type': email\n  '#title': 'Email Address'\n  '#description': 'Please enter your email address:'\n  '#description_display': before"
+elements: "initial_message:\n  '#type': webform_markup\n  '#markup': 'Before we create a new account, let&#39;s find any records where you might have been named a collaborator. Please fill out the following fields:'\nldbase_primary_name:\n  '#type': webform_custom_composite\n  '#title': 'Publishing Name'\n  '#multiple': false\n  '#description': 'Please enter your name as it is most likely to have been used in publications and other research related documents'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#multiple__operations': false\n  '#multiple__add_more': false\n  '#element':\n    primary_first_name:\n      '#type': textfield\n      '#title': 'First Name'\n    primary_middle_name:\n      '#type': textfield\n      '#title': 'Middle Name'\n    primary_last_name:\n      '#type': textfield\n      '#title': 'Last name'\nldbase_additional_names:\n  '#type': webform_custom_composite\n  '#title': 'LDBase Additional Names'\n  '#description': 'If you have used other names to publish or distribute research related documents, please enter them in this field. Add as many lines as needed:'\n  '#description_display': before\n  '#element':\n    additional_first_name:\n      '#type': textfield\n      '#title': 'First Name'\n    additional_middle_name:\n      '#type': textfield\n      '#title': 'Middle Name'\n    additional_last_name:\n      '#type': textfield\n      '#title': 'Last Name'\nprimary_email:\n  '#type': email\n  '#title': 'Email Address'\n  '#description_display': before"
 css: ''
 javascript: ''
 settings:
@@ -25,7 +27,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_admin_theme: false
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -54,6 +56,11 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
   submission_log: false
   submission_views: {  }
@@ -124,8 +131,8 @@ settings:
   entity_limit_user_interval: null
   purge: none
   purge_days: null
-  results_disabled: false
-  results_disabled_ignore: false
+  results_disabled: true
+  results_disabled_ignore: true
   results_customize: false
   token_view: false
   token_update: false
@@ -176,5 +183,13 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  ldbase_new_account_step_one:
+    id: new_account_step_one_webform
+    label: 'LDbase New Account Step One'
+    handler_id: ldbase_new_account_step_one
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
 variants: {  }

@@ -49,6 +49,7 @@ module:
   layout_discovery: 0
   ldbase_content: 0
   ldbase_handlers: 0
+  ldbase_new_account: 0
   link: 0
   masquerade: 0
   matomo: 0
