@@ -15,7 +15,7 @@ third_party_settings:
 id: embargopolicies
 theme: portcullis
 region: sidebar_first
-weight: 3
+weight: 2
 provider: null
 plugin: embargoes_embargo_policies_block
 settings:

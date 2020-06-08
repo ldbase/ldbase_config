@@ -1,31 +1,27 @@
-uuid: 557d11bd-ce58-41d2-bd61-7bfb4d66a9e1
+uuid: 5b7f31fd-a951-4ab5-968b-7d91008e47cb
 langcode: en
 status: true
 dependencies:
-  config:
-    - system.menu.project-navigation
   module:
     - collapsiblock
+    - ldbase_content
     - system
   theme:
     - portcullis
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: projectnavigation
+id: projecttreeblock
 theme: portcullis
 region: sidebar_first
-weight: -22
+weight: -21
 provider: null
-plugin: 'system_menu_block:project-navigation'
+plugin: project_tree_block
 settings:
-  id: 'system_menu_block:project-navigation'
-  label: 'Project Navigation'
-  provider: system
+  id: project_tree_block
+  label: 'Project Tree View'
+  provider: ldbase_content
   label_display: visible
-  level: 1
-  depth: 0
-  expand_all_items: false
 visibility:
   request_path:
     id: request_path
