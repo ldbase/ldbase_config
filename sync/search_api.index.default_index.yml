@@ -23,8 +23,6 @@ dependencies:
     - field.storage.node.field_doi
     - field.storage.node.field_email
     - field.storage.node.field_external_resource
-    - field.storage.node.field_file_access_restrictions
-    - field.storage.paragraph.field_file_embargoed
     - field.storage.node.field_first_name
     - field.storage.node.field_grant_information
     - field.storage.node.field_last_name
@@ -189,25 +187,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_external_resource
-  field_file_access_restrictions:
-    label: 'File Access Restrictions'
-    datasource_id: 'entity:node'
-    property_path: field_file_access_restrictions
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_file_access_restrictions
-  field_file_embargoed:
-    label: 'File Access Restrictions » Paragraph » Disallow public download of file?'
-    datasource_id: 'entity:node'
-    property_path: 'field_file_access_restrictions:entity:field_file_embargoed'
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.node.field_file_access_restrictions
-        - field.storage.paragraph.field_file_embargoed
-      module:
-        - paragraphs
   field_first_name:
     label: 'First Name'
     datasource_id: 'entity:node'

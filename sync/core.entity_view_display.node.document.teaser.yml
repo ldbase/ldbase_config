@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.document.field_document_type
     - field.field.node.document.field_doi
     - field.field.node.document.field_external_resource
-    - field.field.node.document.field_file_access_restrictions
     - field.field.node.document.field_license
     - field.field.node.document.field_publication_info
     - field.field.node.document.field_related_persons
@@ -45,7 +44,6 @@ hidden:
   field_document_type: true
   field_doi: true
   field_external_resource: true
-  field_file_access_restrictions: true
   field_license: true
   field_publication_info: true
   field_related_persons: true

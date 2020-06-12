@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.dataset.field_demographics_information
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
-    - field.field.node.dataset.field_file_access_restrictions
     - field.field.node.dataset.field_license
     - field.field.node.dataset.field_location
     - field.field.node.dataset.field_publication_info
@@ -621,15 +620,6 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
-  field_file_access_restrictions:
-    type: entity_reference_revisions_entity_view
-    weight: 16
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
     region: content
   field_license:
     weight: 15

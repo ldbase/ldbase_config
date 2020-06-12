@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.code.field_code_upload_or_external
     - field.field.node.code.field_doi
     - field.field.node.code.field_external_resource
-    - field.field.node.code.field_file_access_restrictions
     - field.field.node.code.field_license
     - field.field.node.code.field_publication_info
     - field.field.node.code.field_related_persons
@@ -45,7 +44,6 @@ hidden:
   field_code_upload_or_external: true
   field_doi: true
   field_external_resource: true
-  field_file_access_restrictions: true
   field_format_information: true
   field_license: true
   field_publication_info: true

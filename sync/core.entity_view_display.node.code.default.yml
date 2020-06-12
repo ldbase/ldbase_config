@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.code.field_code_upload_or_external
     - field.field.node.code.field_doi
     - field.field.node.code.field_external_resource
-    - field.field.node.code.field_file_access_restrictions
     - field.field.node.code.field_license
     - field.field.node.code.field_publication_info
     - field.field.node.code.field_related_persons
@@ -80,23 +79,6 @@ third_party_settings:
                 type: entity_reference_label
             additional: {  }
             weight: 3
-          321061c3-5b07-4ef1-9128-57d399369ce8:
-            uuid: 321061c3-5b07-4ef1-9128-57d399369ce8
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:code:field_file_access_restrictions'
-              formatter:
-                label: above
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-                type: entity_reference_revisions_entity_view
-            additional: {  }
-            weight: 5
           59450c93-9e84-4478-9989-6b2f05f3e9e6:
             uuid: 59450c93-9e84-4478-9989-6b2f05f3e9e6
             region: content
@@ -375,15 +357,6 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-    region: content
-  field_file_access_restrictions:
-    weight: 21
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
     region: content
   field_license:
     weight: 6
