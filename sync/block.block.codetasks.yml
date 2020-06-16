@@ -37,6 +37,6 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: '/forms/*'
+    pages: "/doi/*/confirm\r\n*/edit\r\n*/add-*"
     negate: true
     context_mapping: {  }

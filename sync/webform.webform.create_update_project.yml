@@ -24,8 +24,8 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /forms/project
-  page_confirm_path: /forms/project/success
+  page_submit_path: /add-project
+  page_confirm_path: ''
   page_admin_theme: false
   form_title: source_entity_webform
   form_submit_once: false
@@ -131,6 +131,11 @@ settings:
   token_view: false
   token_update: false
   results_customize: false
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
 access:
   create:
     roles:
