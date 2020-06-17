@@ -1,0 +1,12 @@
+tombstones_paused: 0
+tombstones_use_hooks: 1
+tombstones_ctypes:
+  code: code
+  dataset: dataset
+  document: document
+  organization: organization
+  person: person
+  project: project
+  article: 0
+  page: 0
+  webform: 0
