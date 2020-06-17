@@ -1,0 +1,21 @@
+uuid: cd977579-cdd0-49e8-8e6b-ff7623d79028
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: gHQ7Ng8a1-gTtH6ryJS9KD8GCwv0q9KLWE2U-P3nciY
+id: node.field_tombstone_title
+field_name: field_tombstone_title
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

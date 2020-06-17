@@ -1,0 +1,23 @@
+uuid: e87e64bc-35da-45e9-b98e-4d3f8bbc365f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ONahW_-_UBjiUGgmSK13WzYZafY0EHSLmph-brU-_Ks
+id: node.field_tombstone_path
+field_name: field_tombstone_path
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

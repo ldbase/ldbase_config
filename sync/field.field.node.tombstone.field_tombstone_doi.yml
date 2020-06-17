@@ -1,0 +1,21 @@
+uuid: f7fdbdb0-d7b4-4cee-9fdf-ce640cefa82a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tombstone_doi
+    - node.type.tombstone
+_core:
+  default_config_hash: gIyzARuf_Hnsg-nMFFJp9nzvpJasNGIh3N_ytsvC8zY
+id: node.tombstone.field_tombstone_doi
+field_name: field_tombstone_doi
+entity_type: node
+bundle: tombstone
+label: DOI
+description: 'The DOI(s) that pointed to the deleted resource this Tombstone represents.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

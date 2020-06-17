@@ -91,6 +91,7 @@ module:
   text: 0
   token: 0
   tokenuuid: 0
+  tombstones: 0
   toolbar: 0
   tour: 0
   typed_data: 0

@@ -1,6 +1,6 @@
 uuid: 557d11bd-ce58-41d2-bd61-7bfb4d66a9e1
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.project-navigation

@@ -1,0 +1,21 @@
+uuid: ff1d6414-59da-4f6d-b025-a40a1a73d1da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tombstone_title
+    - node.type.tombstone
+_core:
+  default_config_hash: lB83N_ThycG3epi-qhB9V1d-qoLlb1RIUFiWj1cuRj0
+id: node.tombstone.field_tombstone_title
+field_name: field_tombstone_title
+entity_type: node
+bundle: tombstone
+label: Title
+description: 'The title(s) of the deleted resource this Tombstone represents.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

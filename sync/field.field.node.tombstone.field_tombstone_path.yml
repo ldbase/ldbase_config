@@ -1,0 +1,21 @@
+uuid: b06e0fe1-f39a-45e7-b76a-6582ae6bd6e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tombstone_path
+    - node.type.tombstone
+_core:
+  default_config_hash: acsa5NkN5-MDc0a_-UhKVlCW6cd4wh7ztxrF0iEdf1M
+id: node.tombstone.field_tombstone_path
+field_name: field_tombstone_path
+entity_type: node
+bundle: tombstone
+label: Path
+description: 'The original relative path of the deleted resource this Tombstone represents.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

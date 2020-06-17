@@ -1,0 +1,31 @@
+uuid: c7a06b75-2cf3-4063-bd00-a10c84511277
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tombstone.field_tombstone_doi
+    - field.field.node.tombstone.field_tombstone_path
+    - field.field.node.tombstone.field_tombstone_reason
+    - field.field.node.tombstone.field_tombstone_title
+    - node.type.tombstone
+  module:
+    - user
+_core:
+  default_config_hash: _sB-xQzgQQltzCznUCpSNvcJh8YCeYPz-loC5RglQWs
+id: node.tombstone.teaser
+targetEntityType: node
+bundle: tombstone
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_tombstone_doi: true
+  field_tombstone_path: true
+  field_tombstone_reason: true
+  field_tombstone_title: true
+  search_api_excerpt: true
