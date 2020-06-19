@@ -96,6 +96,7 @@ module:
   tour: 0
   typed_data: 0
   update: 0
+  upgrade_status: 0
   user: 0
   views_ui: 0
   webform: 0

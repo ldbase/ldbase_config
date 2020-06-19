@@ -1,18 +1,18 @@
-uuid: f3f7684a-34b4-46c0-b027-3db3d86e9f31
+uuid: 980c6c0a-c9b4-4e0f-a0be-a78811030dfa
 langcode: en
 status: true
 dependencies:
   module:
-    - link
     - node
-id: node.field_tombstone_addl_links
-field_name: field_tombstone_addl_links
+    - text
+id: node.field_tombstone_citation
+field_name: field_tombstone_citation
 entity_type: node
-type: link
+type: text_long
 settings: {  }
-module: link
+module: text
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
