@@ -124,19 +124,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
-          1a748687-ea55-4d13-9e05-a429746dad55:
-            uuid: 1a748687-ea55-4d13-9e05-a429746dad55
-            region: content
-            configuration:
-              id: 'views_block:dataset_versions-block_1'
-              label: ''
-              provider: views
-              label_display: '0'
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 2
           37adea87-24db-41cc-a3c6-fe87ba6a99b1:
             uuid: 37adea87-24db-41cc-a3c6-fe87ba6a99b1
             region: content
@@ -147,6 +134,19 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 node: layout_builder.entity
+            additional: {  }
+            weight: 4
+          deabb4cf-23eb-41b5-a4a6-6e6cd1ed96fb:
+            uuid: deabb4cf-23eb-41b5-a4a6-6e6cd1ed96fb
+            region: content
+            configuration:
+              id: 'views_block:dataset_versions-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
             additional: {  }
             weight: 3
         third_party_settings: {  }
