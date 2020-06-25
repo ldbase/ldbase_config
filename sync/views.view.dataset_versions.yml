@@ -978,7 +978,20 @@ display:
           destination: true
           plugin_id: dropbutton
       display_description: 'Page that lists all versions in descending version order'
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: true
+          content:
+            value: "<p>There are no uploaded dataset versions.</p>\r\n<p><a href=\"/datasets/{{ raw_arguments.null }}\">Return to the dataset</a> and edit to upload a dataset version.</p>"
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
