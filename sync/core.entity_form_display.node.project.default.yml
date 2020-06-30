@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.project.field_doi
     - field.field.node.project.field_grant_information
     - field.field.node.project.field_project_type
+    - field.field.node.project.field_project_type_other
     - field.field.node.project.field_related_organizations
     - field.field.node.project.field_related_persons
     - field.field.node.project.field_schooling
@@ -62,7 +63,7 @@ content:
     third_party_settings: {  }
     region: content
   field_curricula:
-    weight: 18
+    weight: 19
     settings:
       match_operator: CONTAINS
       size: 60
@@ -101,6 +102,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_project_type_other:
+    weight: 17
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_related_organizations:
     weight: 10
     settings:
@@ -122,7 +131,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_schooling:
-    weight: 17
+    weight: 18
     settings:
       match_operator: CONTAINS
       size: 60
@@ -132,7 +141,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_time_method:
-    weight: 19
+    weight: 20
     settings:
       match_operator: CONTAINS
       size: 60

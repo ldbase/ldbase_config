@@ -7,9 +7,11 @@ dependencies:
     - field.field.node.dataset.body
     - field.field.node.dataset.field_affiliated_parents
     - field.field.node.dataset.field_assessment_name
+    - field.field.node.dataset.field_assessment_names_other
     - field.field.node.dataset.field_component_skills
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_range
+    - field.field.node.dataset.field_data_locations_other
     - field.field.node.dataset.field_dataset_upload_or_external
     - field.field.node.dataset.field_dataset_version
     - field.field.node.dataset.field_demographics_information
@@ -54,9 +56,11 @@ content:
 hidden:
   field_affiliated_parents: true
   field_assessment_name: true
+  field_assessment_names_other: true
   field_component_skills: true
   field_data_collection_locations: true
   field_data_collection_range: true
+  field_data_locations_other: true
   field_dataset_upload_or_external: true
   field_dataset_version: true
   field_demographics_information: true

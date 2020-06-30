@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.project.field_doi
     - field.field.node.project.field_grant_information
     - field.field.node.project.field_project_type
+    - field.field.node.project.field_project_type_other
     - field.field.node.project.field_related_organizations
     - field.field.node.project.field_related_persons
     - field.field.node.project.field_schooling
@@ -241,7 +242,23 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
+          81ee7390-3925-47ec-bc27-f6db94f7dd5d:
+            uuid: 81ee7390-3925-47ec-bc27-f6db94f7dd5d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project:field_project_type_other'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -448,6 +465,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_project_type_other:
+    weight: 16
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_related_organizations:
     weight: 4

@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.project.field_doi
     - field.field.node.project.field_grant_information
     - field.field.node.project.field_project_type
+    - field.field.node.project.field_project_type_other
     - field.field.node.project.field_related_organizations
     - field.field.node.project.field_related_persons
     - field.field.node.project.field_schooling
@@ -57,6 +58,7 @@ hidden:
   field_doi: true
   field_grant_information: true
   field_project_type: true
+  field_project_type_other: true
   field_related_organizations: true
   field_related_persons: true
   field_schooling: true

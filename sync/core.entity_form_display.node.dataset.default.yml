@@ -6,9 +6,11 @@ dependencies:
     - field.field.node.dataset.body
     - field.field.node.dataset.field_affiliated_parents
     - field.field.node.dataset.field_assessment_name
+    - field.field.node.dataset.field_assessment_names_other
     - field.field.node.dataset.field_component_skills
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_range
+    - field.field.node.dataset.field_data_locations_other
     - field.field.node.dataset.field_dataset_upload_or_external
     - field.field.node.dataset.field_dataset_version
     - field.field.node.dataset.field_demographics_information
@@ -52,7 +54,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_affiliated_parents:
-    weight: 25
+    weight: 26
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -62,7 +64,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_assessment_name:
-    weight: 16
+    weight: 17
     settings:
       match_operator: CONTAINS
       size: 60
@@ -70,6 +72,14 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_assessment_names_other:
+    weight: 18
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_component_skills:
     weight: 12
@@ -103,15 +113,23 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  field_data_locations_other:
+    weight: 16
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_dataset_upload_or_external:
-    weight: 27
+    weight: 28
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dataset_version:
     type: entity_reference_paragraphs
-    weight: 28
+    weight: 29
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -123,7 +141,7 @@ content:
     region: content
   field_demographics_information:
     type: entity_reference_paragraphs
-    weight: 17
+    weight: 19
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -142,7 +160,7 @@ content:
     type: string_textfield
     region: content
   field_external_resource:
-    weight: 22
+    weight: 23
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -150,7 +168,7 @@ content:
     type: link_default
     region: content
   field_license:
-    weight: 20
+    weight: 22
     settings:
       match_operator: CONTAINS
       size: 60
@@ -166,7 +184,7 @@ content:
     type: address_default
     region: content
   field_publication_info:
-    weight: 24
+    weight: 25
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -198,7 +216,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_special_populations:
-    weight: 18
+    weight: 20
     settings:
       match_operator: CONTAINS
       size: 60
@@ -214,7 +232,7 @@ content:
     type: options_select
     region: content
   field_unaffiliated_parents:
-    weight: 26
+    weight: 27
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -224,7 +242,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_variable_types_in_dataset:
-    weight: 19
+    weight: 21
     settings:
       match_operator: CONTAINS
       size: 60
@@ -279,7 +297,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 23
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }

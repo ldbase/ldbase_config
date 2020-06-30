@@ -6,9 +6,11 @@ dependencies:
     - field.field.node.dataset.body
     - field.field.node.dataset.field_affiliated_parents
     - field.field.node.dataset.field_assessment_name
+    - field.field.node.dataset.field_assessment_names_other
     - field.field.node.dataset.field_component_skills
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_range
+    - field.field.node.dataset.field_data_locations_other
     - field.field.node.dataset.field_dataset_upload_or_external
     - field.field.node.dataset.field_dataset_version
     - field.field.node.dataset.field_demographics_information
@@ -327,6 +329,22 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          ec21508f-36ae-46ea-a21f-3afffe1a40c7:
+            uuid: ec21508f-36ae-46ea-a21f-3afffe1a40c7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_assessment_names_other'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -475,6 +493,22 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          0c9f02af-5c11-45b4-b652-3f329d0dfc21:
+            uuid: 0c9f02af-5c11-45b4-b652-3f329d0dfc21
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_data_locations_other'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -551,6 +585,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_assessment_names_other:
+    weight: 34
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_component_skills:
     weight: 11
     label: above
@@ -575,6 +617,14 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_data_locations_other:
+    weight: 35
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_dataset_upload_or_external:
     weight: 31

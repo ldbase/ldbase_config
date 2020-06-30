@@ -1,0 +1,19 @@
+uuid: 00f99d75-7544-477b-9512-c479e1d396eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_assessment_names_other
+    - node.type.dataset
+id: node.dataset.field_assessment_names_other
+field_name: field_assessment_names_other
+entity_type: node
+bundle: dataset
+label: 'Assessment Names Other'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

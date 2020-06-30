@@ -1,0 +1,19 @@
+uuid: 583ba4e2-d4fc-4b26-a074-cf85e7714b9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_type_other
+    - node.type.project
+id: node.project.field_project_type_other
+field_name: field_project_type_other
+entity_type: node
+bundle: project
+label: 'Project Type Other'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
