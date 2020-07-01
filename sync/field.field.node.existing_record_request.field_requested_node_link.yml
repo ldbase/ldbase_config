@@ -1,0 +1,34 @@
+uuid: e5df3f1d-2289-43ba-9e5c-2766085fe952
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requested_node_link
+    - node.type.code
+    - node.type.dataset
+    - node.type.document
+    - node.type.existing_record_request
+    - node.type.project
+id: node.existing_record_request.field_requested_node_link
+field_name: field_requested_node_link
+entity_type: node
+bundle: existing_record_request
+label: 'Requested Node Link'
+description: 'Requested node to be linked to user.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      code: code
+      dataset: dataset
+      document: document
+      project: project
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: code
+field_type: entity_reference

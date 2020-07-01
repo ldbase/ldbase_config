@@ -1,0 +1,19 @@
+uuid: 984ef590-cab5-400a-bede-e0583bc99621
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_requested_node_link
+field_name: field_requested_node_link
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

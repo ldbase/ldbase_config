@@ -1,0 +1,18 @@
+uuid: 05993cca-0352-4118-988c-9b27940ae6d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.existing_record_request
+id: node.existing_record_request.title
+field_name: title
+entity_type: node
+bundle: existing_record_request
+label: 'Request ID'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

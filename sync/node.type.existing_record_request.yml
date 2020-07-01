@@ -1,0 +1,17 @@
+uuid: f597a90c-f4d6-4b37-8020-bdc83c591412
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Existing Record Request'
+type: existing_record_request
+description: 'This content type store data when a new user requests a record to be affiliated with his user account '
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

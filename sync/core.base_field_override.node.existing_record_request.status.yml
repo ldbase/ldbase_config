@@ -1,0 +1,22 @@
+uuid: 50227d29-0d1e-4719-bb97-acb84af88001
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.existing_record_request
+id: node.existing_record_request.status
+field_name: status
+entity_type: node
+bundle: existing_record_request
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

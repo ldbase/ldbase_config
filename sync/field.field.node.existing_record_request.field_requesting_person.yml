@@ -1,0 +1,28 @@
+uuid: 8911186c-5013-441d-b35e-9755f25a2512
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requesting_person
+    - node.type.existing_record_request
+    - node.type.person
+id: node.existing_record_request.field_requesting_person
+field_name: field_requesting_person
+entity_type: node
+bundle: existing_record_request
+label: 'Requesting Person'
+description: 'The person requesting the content link.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

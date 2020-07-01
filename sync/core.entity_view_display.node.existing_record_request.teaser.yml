@@ -1,0 +1,31 @@
+uuid: c326ab06-efe9-44b8-8fb6-50ebf92a7f5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.existing_record_request.field_node_owner
+    - field.field.node.existing_record_request.field_previous_person
+    - field.field.node.existing_record_request.field_request_status
+    - field.field.node.existing_record_request.field_requested_node_link
+    - field.field.node.existing_record_request.field_requesting_person
+    - node.type.existing_record_request
+  module:
+    - user
+id: node.existing_record_request.teaser
+targetEntityType: node
+bundle: existing_record_request
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_node_owner: true
+  field_previous_person: true
+  field_request_status: true
+  field_requested_node_link: true
+  field_requesting_person: true
+  search_api_excerpt: true

@@ -1,0 +1,28 @@
+uuid: 0c2abed9-45c2-4d38-b4cb-900fcd29e26c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_previous_person
+    - node.type.existing_record_request
+    - node.type.person
+id: node.existing_record_request.field_previous_person
+field_name: field_previous_person
+entity_type: node
+bundle: existing_record_request
+label: 'Previous Person'
+description: 'The previous person record to be de-referenced.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
