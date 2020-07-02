@@ -1,0 +1,67 @@
+uuid: 0476fe1f-c448-41f5-8fd6-ad19e13be3bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.existing_record_request.field_node_owner
+    - field.field.node.existing_record_request.field_previous_person
+    - field.field.node.existing_record_request.field_request_status
+    - field.field.node.existing_record_request.field_requested_node_link
+    - field.field.node.existing_record_request.field_requesting_person
+    - node.type.existing_record_request
+  module:
+    - user
+id: node.existing_record_request.default
+targetEntityType: node
+bundle: existing_record_request
+mode: default
+content:
+  field_node_owner:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_previous_person:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_request_status:
+    weight: 104
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_requested_node_link:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_requesting_person:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

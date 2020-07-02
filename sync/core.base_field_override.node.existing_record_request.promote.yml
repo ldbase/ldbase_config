@@ -1,0 +1,22 @@
+uuid: f0347bfd-7eb5-4b00-b5d1-4780b9107fe9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.existing_record_request
+id: node.existing_record_request.promote
+field_name: promote
+entity_type: node
+bundle: existing_record_request
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
