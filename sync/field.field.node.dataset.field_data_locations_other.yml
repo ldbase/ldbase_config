@@ -9,7 +9,7 @@ id: node.dataset.field_data_locations_other
 field_name: field_data_locations_other
 entity_type: node
 bundle: dataset
-label: 'Data Collection Locations Other'
+label: 'Other Data Collection Locations'
 description: ''
 required: false
 translatable: false

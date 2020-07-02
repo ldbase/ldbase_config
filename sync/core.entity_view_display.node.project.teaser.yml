@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.project.field_activity_range
     - field.field.node.project.field_activity_range_select
     - field.field.node.project.field_curricula
+    - field.field.node.project.field_curricula_other
     - field.field.node.project.field_doi
     - field.field.node.project.field_grant_information
     - field.field.node.project.field_project_type
@@ -15,7 +16,9 @@ dependencies:
     - field.field.node.project.field_related_organizations
     - field.field.node.project.field_related_persons
     - field.field.node.project.field_schooling
+    - field.field.node.project.field_schooling_other
     - field.field.node.project.field_time_method
+    - field.field.node.project.field_time_method_other
     - field.field.node.project.field_website
     - node.type.project
   module:
@@ -55,6 +58,7 @@ hidden:
   field_affiliated_datasets: true
   field_affiliated_documents: true
   field_curricula: true
+  field_curricula_other: true
   field_doi: true
   field_grant_information: true
   field_project_type: true
@@ -62,7 +66,9 @@ hidden:
   field_related_organizations: true
   field_related_persons: true
   field_schooling: true
+  field_schooling_other: true
   field_time_method: true
+  field_time_method_other: true
   field_unaffiliated_citation: true
   field_website: true
   search_api_excerpt: true

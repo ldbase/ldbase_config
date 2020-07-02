@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.dataset.field_assessment_name
     - field.field.node.dataset.field_assessment_names_other
     - field.field.node.dataset.field_component_skills
+    - field.field.node.dataset.field_component_skills_other
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_range
     - field.field.node.dataset.field_data_locations_other
@@ -22,9 +23,11 @@ dependencies:
     - field.field.node.dataset.field_related_organizations
     - field.field.node.dataset.field_related_persons
     - field.field.node.dataset.field_special_populations
+    - field.field.node.dataset.field_special_populations_other
     - field.field.node.dataset.field_time_points
     - field.field.node.dataset.field_unaffiliated_parents
     - field.field.node.dataset.field_variable_types_in_dataset
+    - field.field.node.dataset.field_variable_types_other
     - node.type.dataset
   module:
     - address
@@ -90,6 +93,14 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_component_skills_other:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_data_collection_locations:
     weight: 15
@@ -225,6 +236,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_special_populations_other:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_time_points:
     weight: 13
     settings: {  }
@@ -250,6 +269,14 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_variable_types_other:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   path:
     type: path

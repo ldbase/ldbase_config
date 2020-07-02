@@ -1,15 +1,15 @@
-uuid: 00f99d75-7544-477b-9512-c479e1d396eb
+uuid: f60558be-13e3-4295-a4f9-b54549b006c7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_assessment_names_other
+    - field.storage.node.field_variable_types_other
     - node.type.dataset
-id: node.dataset.field_assessment_names_other
-field_name: field_assessment_names_other
+id: node.dataset.field_variable_types_other
+field_name: field_variable_types_other
 entity_type: node
 bundle: dataset
-label: 'Other Assessment Names'
+label: 'Other Variable Types in Dataset'
 description: ''
 required: false
 translatable: false

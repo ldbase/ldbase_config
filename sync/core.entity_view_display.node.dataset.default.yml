@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.dataset.field_assessment_name
     - field.field.node.dataset.field_assessment_names_other
     - field.field.node.dataset.field_component_skills
+    - field.field.node.dataset.field_component_skills_other
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_range
     - field.field.node.dataset.field_data_locations_other
@@ -22,9 +23,11 @@ dependencies:
     - field.field.node.dataset.field_related_organizations
     - field.field.node.dataset.field_related_persons
     - field.field.node.dataset.field_special_populations
+    - field.field.node.dataset.field_special_populations_other
     - field.field.node.dataset.field_time_points
     - field.field.node.dataset.field_unaffiliated_parents
     - field.field.node.dataset.field_variable_types_in_dataset
+    - field.field.node.dataset.field_variable_types_other
     - node.type.dataset
     - views.view.dataset_versions
   module:
@@ -304,6 +307,22 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          6ae9d0bb-c2e4-46c1-9560-036ba10a6756:
+            uuid: 6ae9d0bb-c2e4-46c1-9560-036ba10a6756
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_component_skills_other'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -419,6 +438,22 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          4cc41eec-9226-4cb6-a798-472404514cab:
+            uuid: 4cc41eec-9226-4cb6-a798-472404514cab
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_special_populations_other'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -444,6 +479,22 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          096bcb58-540d-47ad-aa20-dd449bbdaa8f:
+            uuid: 096bcb58-540d-47ad-aa20-dd449bbdaa8f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_variable_types_other'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -601,6 +652,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_component_skills_other:
+    weight: 38
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_data_collection_locations:
     weight: 7
     label: above
@@ -719,6 +778,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_special_populations_other:
+    weight: 36
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_time_points:
     weight: 13
     label: above
@@ -741,6 +808,14 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_variable_types_other:
+    weight: 37
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   links:
     weight: 0

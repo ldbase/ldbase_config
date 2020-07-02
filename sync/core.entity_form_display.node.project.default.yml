@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.project.field_activity_range
     - field.field.node.project.field_activity_range_select
     - field.field.node.project.field_curricula
+    - field.field.node.project.field_curricula_other
     - field.field.node.project.field_doi
     - field.field.node.project.field_grant_information
     - field.field.node.project.field_project_type
@@ -14,7 +15,9 @@ dependencies:
     - field.field.node.project.field_related_organizations
     - field.field.node.project.field_related_persons
     - field.field.node.project.field_schooling
+    - field.field.node.project.field_schooling_other
     - field.field.node.project.field_time_method
+    - field.field.node.project.field_time_method_other
     - field.field.node.project.field_website
     - node.type.project
   module:
@@ -71,6 +74,14 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_curricula_other:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_doi:
     weight: 11
@@ -140,6 +151,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_schooling_other:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_time_method:
     weight: 20
     settings:
@@ -149,6 +168,14 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_time_method_other:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_website:
     weight: 14
