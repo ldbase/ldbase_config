@@ -11,6 +11,7 @@ dependencies:
     - paragraphs.paragraphs_type.file_metadata
   module:
     - file
+    - ldbase_handlers
     - paragraphs
 id: dataset_versions
 label: 'Dataset Versions'
@@ -334,6 +335,7 @@ display:
         row: false
         fields: false
         empty: false
+        access: false
       style:
         type: table
         options:
@@ -1059,6 +1061,9 @@ display:
             value: "<p>There are no uploaded dataset versions.</p>\r\n<p><a href=\"/datasets/{{ raw_arguments.null }}\">Return to the dataset</a> and edit to upload a dataset version.</p>"
             format: basic_html
           plugin_id: text
+      access:
+        type: LDbaseViewsCustomAccess
+        options: {  }
     cache_metadata:
       max-age: -1
       contexts:
