@@ -51,23 +51,6 @@ third_party_settings:
                 node: layout_builder.entity
             additional: {  }
             weight: 0
-          fb82f1f0-dcbd-4bff-8bae-70988143d44f:
-            uuid: fb82f1f0-dcbd-4bff-8bae-70988143d44f
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:project:field_activity_range_select'
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: above
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-            additional: {  }
-            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
