@@ -11,7 +11,6 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_location
-    - field.storage.node.field_activity_range
     - field.storage.node.field_areas_of_expertise
     - field.storage.node.field_assessment_name
     - field.storage.node.field_code_type
@@ -91,14 +90,6 @@ field_settings:
     dependencies:
       module:
         - node
-  field_activity_range:
-    label: 'Project Active From'
-    datasource_id: 'entity:node'
-    property_path: field_activity_range
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_activity_range
   field_areas_of_expertise:
     label: 'Areas of Expertise'
     datasource_id: 'entity:node'

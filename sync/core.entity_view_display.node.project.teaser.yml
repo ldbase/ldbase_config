@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.project.body
-    - field.field.node.project.field_activity_range
     - field.field.node.project.field_activity_range_select
     - field.field.node.project.field_curricula
     - field.field.node.project.field_curricula_other
@@ -53,7 +52,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_activity_range: true
   field_activity_range_select: true
   field_affiliated_datasets: true
   field_affiliated_documents: true
