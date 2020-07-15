@@ -553,17 +553,19 @@ third_party_settings:
             uuid: fff73b88-27c5-42dd-94cc-aedb5a99751a
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:dataset:field_data_collection_range'
+              label: 'Data Collection Period'
+              provider: layout_builder
+              label_display: '0'
               formatter:
+                label: inline
                 type: entity_reference_revisions_entity_view
-                label: above
                 settings:
                   view_mode: default
-                  link: ''
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 0
         third_party_settings: {  }
