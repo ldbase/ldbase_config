@@ -47,38 +47,6 @@ third_party_settings:
                 node: layout_builder.entity
             additional: {  }
             weight: 0
-          67e2baeb-dc71-4455-bf83-0c3b372da44b:
-            uuid: 67e2baeb-dc71-4455-bf83-0c3b372da44b
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:code:field_affiliated_parents'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 2
-          30dfa1cf-9348-4552-b5a3-80c290342419:
-            uuid: 30dfa1cf-9348-4552-b5a3-80c290342419
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:code:field_unaffiliated_parents'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 3
           59450c93-9e84-4478-9989-6b2f05f3e9e6:
             uuid: 59450c93-9e84-4478-9989-6b2f05f3e9e6
             region: content
@@ -180,7 +148,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -205,7 +173,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: hidden
                 type: entity_reference_revisions_entity_view
                 settings:
                   view_mode: default
@@ -230,7 +198,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: link
                 settings:
                   trim_length: 80
@@ -259,7 +227,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -284,7 +252,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true

@@ -205,7 +205,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_label
                 settings:
                   link: true
@@ -230,7 +230,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: hidden
+                label: inline
                 type: entity_reference_revisions_entity_view
                 settings:
                   view_mode: default
@@ -386,7 +386,7 @@ third_party_settings:
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: above
+                label: inline
                 type: entity_reference_revisions_entity_view
                 settings:
                   view_mode: default
