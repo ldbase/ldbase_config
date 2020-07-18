@@ -323,3 +323,43 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h3>All Datasets</h3>'
+            format: basic_html
+          plugin_id: text
+      defaults:
+        header: false
+        pager: false
+      pager:
+        type: none
+        options:
+          offset: 0
+      path: all-datasets-for-project/%nid
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
