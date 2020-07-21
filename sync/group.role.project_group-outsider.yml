@@ -12,7 +12,6 @@ audience: outsider
 group_type: project_group
 permissions_ui: true
 permissions:
-  - 'access group_node overview'
   - 'view group'
   - 'view group_node:code content'
   - 'view group_node:code entity'
