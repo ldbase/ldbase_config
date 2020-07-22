@@ -29,6 +29,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/projects/*\r\n/datasets/*\r\n/code/*\r\n/documents/*"
+    pages: "/projects/*\r\n/datasets/*\r\n/code/*\r\n/documents/*\r\n/all-datasets-for-project/*"
     negate: false
     context_mapping: {  }
