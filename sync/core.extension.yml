@@ -46,6 +46,7 @@ module:
   kint: 0
   layout_builder: 0
   layout_discovery: 0
+  ldbase_citations: 0
   ldbase_content: 0
   ldbase_handlers: 0
   ldbase_new_account: 0
