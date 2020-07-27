@@ -35,6 +35,7 @@ dependencies:
     - entity_reference_revisions
     - layout_builder
     - layout_discovery
+    - ldbase_citations
     - ldbase_handlers
     - link
     - options
@@ -46,6 +47,23 @@ third_party_settings:
     allow_custom: false
     enabled: true
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'APA Citation'
+        components:
+          7db16eb6-f89a-4be5-9c58-f5a82d08d61f:
+            uuid: 7db16eb6-f89a-4be5-9c58-f5a82d08d61f
+            region: content
+            configuration:
+              id: ldbase_citation_display_block
+              label: 'Ldbase citation display block'
+              provider: ldbase_citations
+              label_display: visible
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
