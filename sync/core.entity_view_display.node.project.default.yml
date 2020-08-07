@@ -51,16 +51,29 @@ third_party_settings:
             weight: 0
         third_party_settings: {  }
       -
-        layout_id: layout_onecol
+        layout_id: layout_twocol_section
         layout_settings:
-          label: 'Edit Project Section'
+          label: 'Edit and Delete Project Section'
+          column_widths: 50-50
         components:
-          74003b97-1b35-47d4-b853-4a88dab9cc24:
-            uuid: 74003b97-1b35-47d4-b853-4a88dab9cc24
-            region: content
+          4fa8d010-b7bb-4671-8009-00b15921398e:
+            uuid: 4fa8d010-b7bb-4671-8009-00b15921398e
+            region: first
             configuration:
               id: content_edit_link
               label: 'LDbase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+          a524ff76-e490-41a6-8671-dd43ad51da8f:
+            uuid: a524ff76-e490-41a6-8671-dd43ad51da8f
+            region: second
+            configuration:
+              id: content_delete_link
+              label: 'LDbase Delete Content Link'
               provider: ldbase_handlers
               label_display: '0'
               context_mapping:

@@ -49,13 +49,14 @@ third_party_settings:
             weight: 0
         third_party_settings: {  }
       -
-        layout_id: layout_onecol
+        layout_id: layout_twocol_section
         layout_settings:
-          label: 'Tasks Section'
+          label: 'Edit and Delete Code Section'
+          column_widths: 50-50
         components:
           7c0fa7eb-77e4-4481-bde9-fc7deb02f06b:
             uuid: 7c0fa7eb-77e4-4481-bde9-fc7deb02f06b
-            region: content
+            region: first
             configuration:
               id: content_edit_link
               label: 'LDbase Content Edit Link'
@@ -65,6 +66,24 @@ third_party_settings:
                 node: layout_builder.entity
             additional: {  }
             weight: 0
+          a7d561c3-77f0-436c-81ea-3a2bdde58e51:
+            uuid: a7d561c3-77f0-436c-81ea-3a2bdde58e51
+            region: second
+            configuration:
+              id: content_delete_link
+              label: 'LDbase Delete Content Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Tasks Section'
+        components:
           59450c93-9e84-4478-9989-6b2f05f3e9e6:
             uuid: 59450c93-9e84-4478-9989-6b2f05f3e9e6
             region: content

@@ -65,16 +65,29 @@ third_party_settings:
             weight: 0
         third_party_settings: {  }
       -
-        layout_id: layout_onecol
+        layout_id: layout_twocol_section
         layout_settings:
-          label: 'Tasks Section'
+          label: 'Edit and Delete Dataset Section'
+          column_widths: 50-50
         components:
-          bab0055b-0109-410f-9acd-1f2f9a011f4c:
-            uuid: bab0055b-0109-410f-9acd-1f2f9a011f4c
-            region: content
+          9e345c7f-7a27-4f81-bc72-91796b1fb472:
+            uuid: 9e345c7f-7a27-4f81-bc72-91796b1fb472
+            region: first
             configuration:
               id: content_edit_link
               label: 'LDbase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+          09655dfa-a31b-423e-a9fe-67f62014a637:
+            uuid: 09655dfa-a31b-423e-a9fe-67f62014a637
+            region: second
+            configuration:
+              id: content_delete_link
+              label: 'LDbase Delete Content Link'
               provider: ldbase_handlers
               label_display: '0'
               context_mapping:

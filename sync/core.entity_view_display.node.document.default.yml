@@ -49,16 +49,29 @@ third_party_settings:
             weight: 0
         third_party_settings: {  }
       -
-        layout_id: layout_onecol
+        layout_id: layout_twocol_section
         layout_settings:
-          label: 'Tasks Section'
+          label: 'Edit and Delete Document Section'
+          column_widths: 50-50
         components:
-          d2ff6d2b-793a-4cef-bc75-1d8dae426bbd:
-            uuid: d2ff6d2b-793a-4cef-bc75-1d8dae426bbd
-            region: content
+          f033043b-c6e3-4cea-afc5-c273b3b7f047:
+            uuid: f033043b-c6e3-4cea-afc5-c273b3b7f047
+            region: first
             configuration:
               id: content_edit_link
               label: 'LDbase Content Edit Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 0
+          66bbede4-afb4-433c-ab49-40d037755baf:
+            uuid: 66bbede4-afb4-433c-ab49-40d037755baf
+            region: second
+            configuration:
+              id: content_delete_link
+              label: 'LDbase Delete Content Link'
               provider: ldbase_handlers
               label_display: '0'
               context_mapping:
