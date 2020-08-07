@@ -1,6 +1,6 @@
 uuid: 7c1b1cbe-8329-4e57-92fb-c50c191be23b
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - collapsiblock
