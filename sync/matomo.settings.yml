@@ -1,5 +1,5 @@
 site_id: '1'
-url_http: 'http://localhost9999:/matomo/'
+url_http: 'http://localhost:9999/matomo/'
 url_https: ''
 domain_mode: 0
 visibility:
@@ -21,19 +21,19 @@ privacy:
 custom:
   variable:
     1:
-      name: nid
-      value: '[node:nid]'
-      scope: page
+      name: ''
+      value: ''
+      scope: visit
       slot: 1
     2:
-      name: uuid
-      value: '[node:uuid]'
-      scope: page
+      name: ''
+      value: ''
+      scope: visit
       slot: 2
     3:
-      name: ctype
-      value: '[node:content-type]'
-      scope: page
+      name: ''
+      value: ''
+      scope: visit
       slot: 3
     4:
       name: ''
