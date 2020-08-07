@@ -6,6 +6,7 @@ dependencies:
     - system.menu.project-navigation
   module:
     - collapsiblock
+    - node
     - system
   theme:
     - portcullis
@@ -32,3 +33,13 @@ visibility:
     pages: "/projects/*\r\n/datasets/*\r\n/code/*\r\n/documents/*\r\n/all-datasets-for-project/*"
     negate: false
     context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      code: code
+      dataset: dataset
+      document: document
+      project: project
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
