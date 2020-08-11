@@ -103,6 +103,17 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          9e52e055-eb09-4079-a289-0b3af517809a:
+            uuid: 9e52e055-eb09-4079-a289-0b3af517809a
+            region: content
+            configuration:
+              id: ldbase_citation_link_block
+              label: 'Ldbase citation link block'
+              provider: ldbase_citations
+              label_display: '0'
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol

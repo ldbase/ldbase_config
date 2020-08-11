@@ -119,6 +119,17 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+          1cc5773c-1cca-4537-95af-0d462422c120:
+            uuid: 1cc5773c-1cca-4537-95af-0d462422c120
+            region: content
+            configuration:
+              id: ldbase_citation_link_block
+              label: 'Ldbase citation link block'
+              provider: ldbase_citations
+              label_display: '0'
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
