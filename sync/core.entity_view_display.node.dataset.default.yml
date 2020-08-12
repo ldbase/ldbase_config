@@ -62,17 +62,16 @@ third_party_settings:
               label_display: visible
               context_mapping: {  }
             additional: {  }
-            weight: 0
+            weight: 1
         third_party_settings: {  }
       -
-        layout_id: layout_twocol_section
+        layout_id: layout_onecol
         layout_settings:
-          label: 'Edit and Delete Dataset Section'
-          column_widths: 50-50
+          label: 'Content Tasks Section'
         components:
-          9e345c7f-7a27-4f81-bc72-91796b1fb472:
-            uuid: 9e345c7f-7a27-4f81-bc72-91796b1fb472
-            region: first
+          77d1b874-0a77-4472-ad49-e092019874b2:
+            uuid: 77d1b874-0a77-4472-ad49-e092019874b2
+            region: content
             configuration:
               id: content_edit_link
               label: 'LDbase Content Edit Link'
@@ -82,9 +81,9 @@ third_party_settings:
                 node: layout_builder.entity
             additional: {  }
             weight: 0
-          09655dfa-a31b-423e-a9fe-67f62014a637:
-            uuid: 09655dfa-a31b-423e-a9fe-67f62014a637
-            region: second
+          92ecabfe-a230-496a-8df6-bf43db3aa6fd:
+            uuid: 92ecabfe-a230-496a-8df6-bf43db3aa6fd
+            region: content
             configuration:
               id: content_delete_link
               label: 'LDbase Delete Content Link'
@@ -93,7 +92,7 @@ third_party_settings:
               context_mapping:
                 node: layout_builder.entity
             additional: {  }
-            weight: 0
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
