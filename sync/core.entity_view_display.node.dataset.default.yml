@@ -67,36 +67,6 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
-          label: 'Content Tasks Section'
-        components:
-          77d1b874-0a77-4472-ad49-e092019874b2:
-            uuid: 77d1b874-0a77-4472-ad49-e092019874b2
-            region: content
-            configuration:
-              id: content_edit_link
-              label: 'LDbase Content Edit Link'
-              provider: ldbase_handlers
-              label_display: '0'
-              context_mapping:
-                node: layout_builder.entity
-            additional: {  }
-            weight: 0
-          92ecabfe-a230-496a-8df6-bf43db3aa6fd:
-            uuid: 92ecabfe-a230-496a-8df6-bf43db3aa6fd
-            region: content
-            configuration:
-              id: content_delete_link
-              label: 'LDbase Delete Content Link'
-              provider: ldbase_handlers
-              label_display: '0'
-              context_mapping:
-                node: layout_builder.entity
-            additional: {  }
-            weight: 1
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
           label: 'DOI Section'
         components:
           68b243cc-f484-4ae6-a2d3-08a00c03a314:

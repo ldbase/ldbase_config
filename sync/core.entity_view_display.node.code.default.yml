@@ -21,7 +21,6 @@ dependencies:
     - layout_builder
     - layout_discovery
     - ldbase_citations
-    - ldbase_handlers
     - link
     - options
     - text
@@ -45,36 +44,6 @@ third_party_settings:
               provider: ldbase_citations
               label_display: visible
               context_mapping: {  }
-            additional: {  }
-            weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: 'Content Tasks Section'
-        components:
-          a7d561c3-77f0-436c-81ea-3a2bdde58e51:
-            uuid: a7d561c3-77f0-436c-81ea-3a2bdde58e51
-            region: content
-            configuration:
-              id: content_delete_link
-              label: 'LDbase Delete Content Link'
-              provider: ldbase_handlers
-              label_display: '0'
-              context_mapping:
-                node: layout_builder.entity
-            additional: {  }
-            weight: 1
-          7c0fa7eb-77e4-4481-bde9-fc7deb02f06b:
-            uuid: 7c0fa7eb-77e4-4481-bde9-fc7deb02f06b
-            region: content
-            configuration:
-              id: content_edit_link
-              label: 'LDbase Content Edit Link'
-              provider: ldbase_handlers
-              label_display: '0'
-              context_mapping:
-                node: layout_builder.entity
             additional: {  }
             weight: 0
         third_party_settings: {  }
