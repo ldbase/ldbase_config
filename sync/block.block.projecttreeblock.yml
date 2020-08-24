@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - collapsiblock
+    - ctools
     - ldbase_content
     - system
   theme:
@@ -19,12 +20,22 @@ provider: null
 plugin: project_tree_block
 settings:
   id: project_tree_block
-  label: 'Project Tree View'
+  label: 'Project Navigation'
   provider: ldbase_content
   label_display: visible
 visibility:
   request_path:
     id: request_path
-    pages: "/projects/*\r\n/datasets/*\r\n/code/*\r\n/documents/*"
-    negate: false
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm"
+    negate: true
     context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      code: code
+      dataset: dataset
+      document: document
+      project: project
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

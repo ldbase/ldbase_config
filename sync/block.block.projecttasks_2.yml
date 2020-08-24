@@ -7,6 +7,7 @@ dependencies:
   module:
     - collapsiblock
     - ctools
+    - node
     - system
   theme:
     - portcullis
@@ -37,6 +38,13 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "*/edit\r\n*/add-*\r\n/doi/*/confirm"
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm"
     negate: true
     context_mapping: {  }
+  node_type:
+    id: node_type
+    bundles:
+      project: project
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

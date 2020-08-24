@@ -1,11 +1,12 @@
 uuid: 557d11bd-ce58-41d2-bd61-7bfb4d66a9e1
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.project-navigation
   module:
     - collapsiblock
+    - ctools
     - node
     - system
   theme:
@@ -30,11 +31,21 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/projects/*\r\n/datasets/*\r\n/code/*\r\n/documents/*\r\n/all-datasets-for-project/*"
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm"
     negate: false
     context_mapping: {  }
   node_type:
     id: node_type
+    bundles:
+      code: code
+      dataset: dataset
+      document: document
+      project: project
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     bundles:
       code: code
       dataset: dataset
