@@ -9,7 +9,6 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access shortcuts'
-  - 'edit own person content'
   - 'opt-in or out of matomo tracking'
   - 'search content'
   - 'use text format basic_html'
