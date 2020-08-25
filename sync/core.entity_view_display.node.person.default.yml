@@ -25,7 +25,6 @@ dependencies:
     - image
     - layout_builder
     - layout_discovery
-    - ldbase_handlers
     - link
     - text
     - user
@@ -305,18 +304,6 @@ third_party_settings:
                 type: string
             additional: {  }
             weight: 19
-          f81cf321-5803-4d7e-bc43-68469ebeac89:
-            uuid: f81cf321-5803-4d7e-bc43-68469ebeac89
-            region: first
-            configuration:
-              id: content_edit_link
-              label: 'LDBase Content Edit Link'
-              provider: ldbase_handlers
-              label_display: '0'
-              context_mapping:
-                node: layout_builder.entity
-            additional: {  }
-            weight: 4
         third_party_settings: {  }
       -
         layout_id: layout_onecol
