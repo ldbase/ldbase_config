@@ -5,9 +5,6 @@ dependencies:
   config:
     - field.field.user.user.user_picture
     - image.style.thumbnail
-    - views.view.my_code
-    - views.view.my_datasets
-    - views.view.my_documents
     - views.view.projects_in_my_groups
   module:
     - image
@@ -70,45 +67,6 @@ third_party_settings:
         layout_settings:
           label: 'My Projects'
         components:
-          1209e160-fcc4-478d-9fbf-8896a3b54170:
-            uuid: 1209e160-fcc4-478d-9fbf-8896a3b54170
-            region: content
-            configuration:
-              id: 'views_block:my_datasets-block_1'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 2
-          6aecdca8-368b-4d39-8cd6-7b9518cf9bf1:
-            uuid: 6aecdca8-368b-4d39-8cd6-7b9518cf9bf1
-            region: content
-            configuration:
-              id: 'views_block:my_documents-block_1'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 3
-          68bbe810-413e-4110-a594-3dad895f54c3:
-            uuid: 68bbe810-413e-4110-a594-3dad895f54c3
-            region: content
-            configuration:
-              id: 'views_block:my_code-block_1'
-              label: ''
-              provider: views
-              label_display: visible
-              views_label: ''
-              items_per_page: none
-              context_mapping: {  }
-            additional: {  }
-            weight: 4
           c2fa62b5-0b68-4e7d-be4f-ed0f0fe98df0:
             uuid: c2fa62b5-0b68-4e7d-be4f-ed0f0fe98df0
             region: content
