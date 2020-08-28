@@ -20,7 +20,7 @@ provider: null
 plugin: node_analytics_block
 settings:
   id: node_analytics_block
-  label: 'Resource Usage'
+  label: 'Usage Metrics'
   provider: ldbase_content
   label_display: visible
 visibility:
