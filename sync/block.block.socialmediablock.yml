@@ -1,4 +1,4 @@
-uuid: 7c1b1cbe-8329-4e57-92fb-c50c191be23b
+uuid: fa1ff5bd-2365-47ba-8150-27857b5901ba
 langcode: en
 status: true
 dependencies:
@@ -12,17 +12,17 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: nodeanalyticsblock
+id: socialmediablock
 theme: portcullis
 region: sidebar_first
-weight: 2
+weight: -22
 provider: null
-plugin: node_analytics_block
+plugin: social_media_block
 settings:
-  id: node_analytics_block
-  label: 'Usage Metrics'
+  id: social_media_block
+  label: 'Social Media Block'
   provider: ldbase_content
-  label_display: visible
+  label_display: '0'
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
