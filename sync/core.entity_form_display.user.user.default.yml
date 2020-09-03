@@ -2,11 +2,7 @@ uuid: c8b6cde7-f8fb-4800-a334-2d0f0f032410
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - image
     - path
     - user
 id: user.user.default
@@ -36,13 +32,5 @@ content:
     third_party_settings: {  }
   timezone:
     weight: 6
-    region: content
-  user_picture:
-    type: image_image
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    weight: -1
     region: content
 hidden: {  }

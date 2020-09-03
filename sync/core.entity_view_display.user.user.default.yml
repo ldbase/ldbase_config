@@ -3,11 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
     - views.view.projects_in_my_groups
   module:
-    - image
     - layout_builder
     - layout_discovery
     - ldbase_content
@@ -18,6 +15,12 @@ third_party_settings:
     allow_custom: false
     enabled: true
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Title Section'
+        components: {  }
+        third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
@@ -34,33 +37,6 @@ third_party_settings:
               context_mapping: {  }
             additional: {  }
             weight: 0
-          98cea06c-331c-44f9-92af-7042aa3ead50:
-            uuid: 98cea06c-331c-44f9-92af-7042aa3ead50
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:user:user:masquerade'
-            additional: {  }
-            weight: 1
-          01a22848-0ec5-44ed-9c53-44c6f093bcd2:
-            uuid: 01a22848-0ec5-44ed-9c53-44c6f093bcd2
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_1'
-            additional: {  }
-            weight: 2
-        third_party_settings: {  }
-      -
-        layout_id: layout_twocol_section
-        layout_settings:
-          label: 'Your Projects Section'
-          column_widths: 50-50
-        components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -84,25 +60,8 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
-          label: ''
+          label: 'My Profile Section'
         components:
-          1047211e-a01f-47ea-8fee-ea1fa4ff642a:
-            uuid: 1047211e-a01f-47ea-8fee-ea1fa4ff642a
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:user:user:user_picture'
-              formatter:
-                type: image
-                settings:
-                  image_style: thumbnail
-                  image_link: content
-                third_party_settings: {  }
-                label: hidden
-            additional: {  }
-            weight: 0
           62ec25ba-8d0d-4bc7-a669-139e47928ca2:
             uuid: 62ec25ba-8d0d-4bc7-a669-139e47928ca2
             region: content
@@ -111,6 +70,16 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
               id: 'extra_field_block:user:user:member_for'
+            additional: {  }
+            weight: 2
+          01a22848-0ec5-44ed-9c53-44c6f093bcd2:
+            uuid: 01a22848-0ec5-44ed-9c53-44c6f093bcd2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_1'
             additional: {  }
             weight: 1
         third_party_settings: {  }
@@ -134,14 +103,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  user_picture:
-    type: image
-    weight: 0
-    region: content
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
 hidden:
   search_api_excerpt: true

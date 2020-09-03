@@ -4,10 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
-    - field.field.user.user.user_picture
-    - image.style.thumbnail
   module:
-    - image
     - user
 id: user.user.compact
 targetEntityType: user
@@ -19,15 +16,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  user_picture:
-    type: image
-    weight: 0
-    region: content
-    settings:
-      image_style: thumbnail
-      image_link: content
+  person_information_for_user_profile_entity_view_1:
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
-    label: hidden
+    region: content
 hidden:
   member_for: true
   search_api_excerpt: true
