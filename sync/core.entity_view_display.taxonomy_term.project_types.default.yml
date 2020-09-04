@@ -1,0 +1,33 @@
+uuid: e8f99445-58f5-423d-af2c-a8d52faf490a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.project_types.field_needs_review
+    - taxonomy.vocabulary.project_types
+  module:
+    - text
+id: taxonomy_term.project_types.default
+targetEntityType: taxonomy_term
+bundle: project_types
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_needs_review:
+    weight: 0
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden:
+  search_api_excerpt: true

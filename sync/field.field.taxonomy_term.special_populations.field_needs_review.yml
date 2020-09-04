@@ -1,0 +1,23 @@
+uuid: 233f82d8-a165-4e15-96b1-09dabf12a60b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_needs_review
+    - taxonomy.vocabulary.special_populations
+id: taxonomy_term.special_populations.field_needs_review
+field_name: field_needs_review
+entity_type: taxonomy_term
+bundle: special_populations
+label: 'Needs Review'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

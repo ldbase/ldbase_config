@@ -1,0 +1,23 @@
+uuid: 9f92ed15-2ab9-4952-88d2-074ad2c68498
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_needs_review
+    - taxonomy.vocabulary.dataset_variables
+id: taxonomy_term.dataset_variables.field_needs_review
+field_name: field_needs_review
+entity_type: taxonomy_term
+bundle: dataset_variables
+label: 'Needs Review'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

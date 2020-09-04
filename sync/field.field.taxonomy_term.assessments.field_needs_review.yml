@@ -1,0 +1,23 @@
+uuid: 46b57780-a24b-4185-95c7-dfe07d0b28b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_needs_review
+    - taxonomy.vocabulary.assessments
+id: taxonomy_term.assessments.field_needs_review
+field_name: field_needs_review
+entity_type: taxonomy_term
+bundle: assessments
+label: 'Needs Review'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

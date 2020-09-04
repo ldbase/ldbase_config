@@ -1,0 +1,33 @@
+uuid: ebdf9f10-aa0d-4a6b-ad45-43ce61dd34c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.time_methods.field_needs_review
+    - taxonomy.vocabulary.time_methods
+  module:
+    - text
+id: taxonomy_term.time_methods.default
+targetEntityType: taxonomy_term
+bundle: time_methods
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_needs_review:
+    weight: 0
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden:
+  search_api_excerpt: true
