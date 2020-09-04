@@ -17,7 +17,7 @@ third_party_settings:
 id: projectnavigation
 theme: portcullis
 region: sidebar_first
-weight: 3
+weight: -1
 provider: null
 plugin: 'system_menu_block:project-navigation'
 settings:

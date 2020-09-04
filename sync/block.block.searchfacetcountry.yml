@@ -1,9 +1,9 @@
-uuid: 67745ac4-2552-4380-8869-8e929d3bb56d
+uuid: f1401cfc-8fa0-4fff-9605-899e9f9d2ec8
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.project_type
+    - facets.facet.search_facet_country
   module:
     - collapsiblock
     - facets
@@ -13,18 +13,18 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: projecttype_2
+id: searchfacetcountry
 theme: portcullis
 region: sidebar_first
-weight: -12
+weight: -8
 provider: null
-plugin: 'facet_block:project_type'
+plugin: 'facet_block:search_facet_country'
 settings:
-  id: 'facet_block:project_type'
-  label: 'Project Type'
+  id: 'facet_block:search_facet_country'
+  label: Country
   provider: facets
   label_display: visible
-  block_id: projecttype_2
+  block_id: searchfacetcountry
 visibility:
   request_path:
     id: request_path

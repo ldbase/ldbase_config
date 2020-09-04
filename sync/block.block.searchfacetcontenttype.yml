@@ -1,9 +1,9 @@
-uuid: 2f70927b-f93d-438c-bbfd-b86ae1eae5bb
+uuid: 208ad7ef-eb85-4f1d-964e-a760b58a50ea
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.schooling
+    - facets.facet.search_facet_content_type
   module:
     - collapsiblock
     - facets
@@ -13,18 +13,18 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: schooling_2
+id: searchfacetcontenttype
 theme: portcullis
 region: sidebar_first
-weight: -6
+weight: -11
 provider: null
-plugin: 'facet_block:schooling'
+plugin: 'facet_block:search_facet_content_type'
 settings:
-  id: 'facet_block:schooling'
-  label: Schooling
+  id: 'facet_block:search_facet_content_type'
+  label: 'Content Type'
   provider: facets
   label_display: visible
-  block_id: schooling_2
+  block_id: searchfacetcontenttype
 visibility:
   request_path:
     id: request_path

@@ -15,7 +15,7 @@ third_party_settings:
 id: projecttreeblock
 theme: portcullis
 region: sidebar_first
-weight: -21
+weight: -17
 provider: null
 plugin: project_tree_block
 settings:

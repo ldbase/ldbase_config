@@ -1,20 +1,20 @@
-uuid: 883a88ac-eb00-43ad-bda2-bd49566b0478
+uuid: 0d8171e4-6a5c-4896-85c1-c726fcb3ed35
 langcode: en
 status: true
 dependencies:
   config:
     - search_api.index.default_index
-    - views.view.ldbase_object_advanced_search
+    - views.view.search
   module:
     - search_api
-id: advanced_special_populations
-name: 'Advanced Special Populations'
-url_alias: special_populations
+id: search_facet_special_populations
+name: 'Search Facet: Special Populations'
+url_alias: search_facets_special_populations
 weight: 0
 min_count: 1
 show_only_one_result: false
 field_identifier: field_special_populations
-facet_source_id: 'search_api:views_page__ldbase_object_advanced_search__page_1'
+facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: links
   config:

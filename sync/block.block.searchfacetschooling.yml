@@ -1,30 +1,30 @@
-uuid: 5b19895f-a003-4dfa-99e8-43f5a8fb0efc
+uuid: 65cb4b63-407c-4581-9040-28f3e98b7a2d
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.constructs
+    - facets.facet.search_facet_schooling
   module:
     - collapsiblock
     - facets
     - system
   theme:
-    - bartik
+    - portcullis
 third_party_settings:
   collapsiblock:
-    collapse_action: '4'
-id: constructs
-theme: bartik
+    collapse_action: '0'
+id: searchfacetschooling
+theme: portcullis
 region: sidebar_first
-weight: -11
+weight: -4
 provider: null
-plugin: 'facet_block:constructs'
+plugin: 'facet_block:search_facet_schooling'
 settings:
-  id: 'facet_block:constructs'
-  label: Constructs
+  id: 'facet_block:search_facet_schooling'
+  label: Schooling
   provider: facets
   label_display: visible
-  block_id: constructs
+  block_id: searchfacetschooling
 visibility:
   request_path:
     id: request_path

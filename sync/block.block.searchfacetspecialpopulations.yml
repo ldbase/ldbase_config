@@ -1,9 +1,9 @@
-uuid: 698dd545-be22-45ce-bf69-de225be85f23
+uuid: 2e4edfb3-9bed-48e9-bd12-afb05ab1ba18
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.type
+    - facets.facet.search_facet_special_populations
   module:
     - collapsiblock
     - facets
@@ -13,18 +13,18 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: type_2
+id: searchfacetspecialpopulations
 theme: portcullis
 region: sidebar_first
-weight: -14
+weight: -3
 provider: null
-plugin: 'facet_block:type'
+plugin: 'facet_block:search_facet_special_populations'
 settings:
-  id: 'facet_block:type'
-  label: Type
+  id: 'facet_block:search_facet_special_populations'
+  label: 'Special Populations'
   provider: facets
   label_display: visible
-  block_id: type_2
+  block_id: searchfacetspecialpopulations
 visibility:
   request_path:
     id: request_path

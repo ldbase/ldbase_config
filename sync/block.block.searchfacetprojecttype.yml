@@ -1,9 +1,9 @@
-uuid: 49b527fe-c4e7-44a7-a6b9-974e7a3768f0
+uuid: 85ade8e2-46b1-4106-b453-1e3e6796021d
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.advanced_type
+    - facets.facet.search_facet_project_type
   module:
     - collapsiblock
     - facets
@@ -13,21 +13,21 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: advancedtype
+id: searchfacetprojecttype
 theme: portcullis
 region: sidebar_first
-weight: -13
+weight: -7
 provider: null
-plugin: 'facet_block:advanced_type'
+plugin: 'facet_block:search_facet_project_type'
 settings:
-  id: 'facet_block:advanced_type'
-  label: 'Advanced Type'
+  id: 'facet_block:search_facet_project_type'
+  label: 'Project Type'
   provider: facets
   label_display: visible
-  block_id: advancedtype
+  block_id: searchfacetprojecttype
 visibility:
   request_path:
     id: request_path
-    pages: /advanced-type
+    pages: /search
     negate: false
     context_mapping: {  }

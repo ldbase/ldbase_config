@@ -1,4 +1,4 @@
-uuid: f09786aa-4330-4857-a714-48c5ed984184
+uuid: b92914c8-e2aa-4f54-891e-1b6b78ffea10
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - search_api.index.default_index
   module:
     - search_api
-id: ldbase_object_advanced_search
-label: 'LDbase Object Advanced Search'
+id: search
+label: Search
 module: views
 description: 'A search page preconfigured to search through the content of your site'
 tag: ''
@@ -108,7 +108,7 @@ display:
           fields: {  }
           plugin_id: search_api_fulltext
       sorts: {  }
-      title: 'LDbase Advanced Boolean Search'
+      title: Search
       header:
         result:
           id: result
@@ -161,7 +161,7 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      path: advanced-search
+      path: search
       cache:
         type: none
       defaults:

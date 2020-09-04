@@ -1,30 +1,30 @@
-uuid: e9fa34be-d520-4b2e-b8a9-34c933e81538
+uuid: 5ea4f1eb-3634-4694-9e9b-ff62f444befe
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.schooling
+    - facets.facet.search_facet_time_method
   module:
     - collapsiblock
     - facets
     - system
   theme:
-    - bartik
+    - portcullis
 third_party_settings:
   collapsiblock:
-    collapse_action: '4'
-id: schooling
-theme: bartik
+    collapse_action: '0'
+id: searchfacettimemethod
+theme: portcullis
 region: sidebar_first
-weight: -6
+weight: -2
 provider: null
-plugin: 'facet_block:schooling'
+plugin: 'facet_block:search_facet_time_method'
 settings:
-  id: 'facet_block:schooling'
-  label: Schooling
+  id: 'facet_block:search_facet_time_method'
+  label: 'Time Method'
   provider: facets
   label_display: visible
-  block_id: schooling
+  block_id: searchfacettimemethod
 visibility:
   request_path:
     id: request_path

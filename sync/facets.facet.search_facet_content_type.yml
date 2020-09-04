@@ -1,20 +1,20 @@
-uuid: d2ced675-6047-4b56-95e2-4095c6992707
+uuid: 74a529ad-bad9-4d33-a3f7-53eabae80960
 langcode: en
 status: true
 dependencies:
   config:
     - search_api.index.default_index
-    - views.view.ldbase_object_advanced_search
+    - views.view.search
   module:
     - search_api
-id: advanced_country
-name: 'Advanced Country'
-url_alias: country
+id: search_facet_content_type
+name: 'Search Facet: Content Type'
+url_alias: search_facet_content_type
 weight: 0
 min_count: 1
 show_only_one_result: false
-field_identifier: country_code
-facet_source_id: 'search_api:views_page__ldbase_object_advanced_search__page_1'
+field_identifier: type
+facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: links
   config:
@@ -40,13 +40,6 @@ processor_configs:
       sort: 20
     settings:
       sort: DESC
-  count_limit:
-    processor_id: count_limit
-    weights:
-      build: 50
-    settings:
-      minimum_items: 1
-      maximum_items: null
   count_widget_order:
     processor_id: count_widget_order
     weights:
@@ -59,6 +52,11 @@ processor_configs:
       sort: 40
     settings:
       sort: ASC
+  translate_entity:
+    processor_id: translate_entity
+    weights:
+      build: 5
+    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

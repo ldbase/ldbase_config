@@ -1,20 +1,20 @@
-uuid: 85323cdf-b347-42a0-a283-9828d38d6ed9
+uuid: 94baabb4-6159-46fa-adb4-18eb26c94fd6
 langcode: en
 status: true
 dependencies:
   config:
     - search_api.index.default_index
-    - views.view.ldbase_object_advanced_search
+    - views.view.search
   module:
     - search_api
-id: advanced_constructs
-name: 'Advanced Constructs'
-url_alias: constructs
+id: search_facet_time_method
+name: 'Search Facet: Time Method'
+url_alias: search_facets_time_method
 weight: 0
 min_count: 1
 show_only_one_result: false
-field_identifier: field_component_skills
-facet_source_id: 'search_api:views_page__ldbase_object_advanced_search__page_1'
+field_identifier: field_time_method
+facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: links
   config:

@@ -1,20 +1,20 @@
-uuid: d7537d64-968d-4295-abae-cb26f2b48519
+uuid: abc32a4e-7377-4438-a4e7-77d5cfb70a5b
 langcode: en
 status: true
 dependencies:
   config:
     - search_api.index.default_index
-    - views.view.ldbase_object_advanced_search
+    - views.view.search
   module:
     - search_api
-id: advanced_participant_type
-name: 'Advanced Participant Type'
-url_alias: participant_type
+id: search_facet_schooling
+name: 'Search Facet: Schooling'
+url_alias: search_facets_schooling
 weight: 0
 min_count: 1
 show_only_one_result: false
-field_identifier: field_participant_type
-facet_source_id: 'search_api:views_page__ldbase_object_advanced_search__page_1'
+field_identifier: field_schooling
+facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: links
   config:

@@ -1,20 +1,20 @@
-uuid: 643c8972-1e97-42e0-9236-b6b088e6a2fe
+uuid: b32fbb90-0541-4ccd-89bd-d3715d498fe7
 langcode: en
 status: true
 dependencies:
   config:
     - search_api.index.default_index
-    - views.view.ldbase_object_search
+    - views.view.search
   module:
     - search_api
-id: type
-name: Type
-url_alias: type
+id: search_facet_persons
+name: 'Search Facet: Persons'
+url_alias: search_facet_persons
 weight: 0
 min_count: 1
 show_only_one_result: false
-field_identifier: type
-facet_source_id: 'search_api:views_page__ldbase_object_search__page_1'
+field_identifier: field_related_persons_1
+facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: links
   config:

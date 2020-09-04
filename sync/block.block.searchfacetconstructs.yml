@@ -1,30 +1,30 @@
-uuid: f724a827-2ece-46e9-b796-b06a3ba67ea6
+uuid: b502ef39-d327-462e-8769-770559d1deed
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.persons
+    - facets.facet.search_facet_constructs
   module:
     - collapsiblock
     - facets
     - system
   theme:
-    - bartik
+    - portcullis
 third_party_settings:
   collapsiblock:
-    collapse_action: '4'
-id: persons
-theme: bartik
+    collapse_action: '0'
+id: searchfacetconstructs
+theme: portcullis
 region: sidebar_first
-weight: -4
+weight: -6
 provider: null
-plugin: 'facet_block:persons'
+plugin: 'facet_block:search_facet_constructs'
 settings:
-  id: 'facet_block:persons'
-  label: Persons
+  id: 'facet_block:search_facet_constructs'
+  label: Constructs
   provider: facets
   label_display: visible
-  block_id: persons
+  block_id: searchfacetconstructs
 visibility:
   request_path:
     id: request_path

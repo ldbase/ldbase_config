@@ -1,20 +1,20 @@
-uuid: ac2b8219-77eb-4542-89cc-9e7513fac09c
+uuid: 2df3aec8-4577-48ea-a683-410482330a18
 langcode: en
 status: true
 dependencies:
   config:
     - search_api.index.default_index
-    - views.view.ldbase_object_search
+    - views.view.search
   module:
     - search_api
-id: special_populations
-name: 'Special Populations'
-url_alias: special_populations
+id: search_facet_country
+name: 'Search Facet: Country'
+url_alias: search_facet_country
 weight: 0
 min_count: 1
 show_only_one_result: false
-field_identifier: field_special_populations
-facet_source_id: 'search_api:views_page__ldbase_object_search__page_1'
+field_identifier: country_code
+facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: links
   config:
@@ -59,11 +59,6 @@ processor_configs:
       sort: 40
     settings:
       sort: ASC
-  translate_entity:
-    processor_id: translate_entity
-    weights:
-      build: 5
-    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:
