@@ -6,12 +6,9 @@ dependencies:
     - field.field.node.dataset.body
     - field.field.node.dataset.field_affiliated_parents
     - field.field.node.dataset.field_assessment_name
-    - field.field.node.dataset.field_assessment_names_other
     - field.field.node.dataset.field_component_skills
-    - field.field.node.dataset.field_component_skills_other
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_range
-    - field.field.node.dataset.field_data_locations_other
     - field.field.node.dataset.field_dataset_upload_or_external
     - field.field.node.dataset.field_dataset_version
     - field.field.node.dataset.field_demographics_information
@@ -23,11 +20,9 @@ dependencies:
     - field.field.node.dataset.field_related_organizations
     - field.field.node.dataset.field_related_persons
     - field.field.node.dataset.field_special_populations
-    - field.field.node.dataset.field_special_populations_other
     - field.field.node.dataset.field_time_points
     - field.field.node.dataset.field_unaffiliated_parents
     - field.field.node.dataset.field_variable_types_in_dataset
-    - field.field.node.dataset.field_variable_types_other
     - node.type.dataset
     - views.view.dataset_versions
   module:
@@ -301,22 +296,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
-          6ae9d0bb-c2e4-46c1-9560-036ba10a6756:
-            uuid: 6ae9d0bb-c2e4-46c1-9560-036ba10a6756
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_component_skills_other'
-              formatter:
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-                type: string
-            additional: {  }
-            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -342,22 +321,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
-          ec21508f-36ae-46ea-a21f-3afffe1a40c7:
-            uuid: ec21508f-36ae-46ea-a21f-3afffe1a40c7
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_assessment_names_other'
-              formatter:
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-                type: string
-            additional: {  }
-            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -432,22 +395,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
-          4cc41eec-9226-4cb6-a798-472404514cab:
-            uuid: 4cc41eec-9226-4cb6-a798-472404514cab
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_special_populations_other'
-              formatter:
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-                type: string
-            additional: {  }
-            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -473,22 +420,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
-          096bcb58-540d-47ad-aa20-dd449bbdaa8f:
-            uuid: 096bcb58-540d-47ad-aa20-dd449bbdaa8f
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_variable_types_other'
-              formatter:
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-                type: string
-            additional: {  }
-            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -538,22 +469,6 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
-          0c9f02af-5c11-45b4-b652-3f329d0dfc21:
-            uuid: 0c9f02af-5c11-45b4-b652-3f329d0dfc21
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_data_locations_other'
-              formatter:
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-                type: string
-            additional: {  }
-            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -649,14 +564,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_assessment_names_other:
-    weight: 34
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_component_skills:
     weight: 11
     label: above
@@ -664,14 +571,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_component_skills_other:
-    weight: 38
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_data_collection_locations:
     weight: 7
@@ -689,14 +588,6 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    region: content
-  field_data_locations_other:
-    weight: 35
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_dataset_upload_or_external:
     weight: 31
@@ -791,14 +682,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_special_populations_other:
-    weight: 36
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_time_points:
     weight: 13
     label: above
@@ -821,14 +704,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_variable_types_other:
-    weight: 37
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   links:
     weight: 0
