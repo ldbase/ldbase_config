@@ -40,6 +40,13 @@ processor_configs:
       sort: 20
     settings:
       sort: DESC
+  count_limit:
+    processor_id: count_limit
+    weights:
+      build: 50
+    settings:
+      minimum_items: 1
+      maximum_items: null
   count_widget_order:
     processor_id: count_widget_order
     weights:
