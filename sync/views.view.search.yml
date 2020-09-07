@@ -2998,8 +2998,8 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: ''
-            description: 'Search for <strong>ALL</strong> of these words <strong>(Boolean AND)</strong>'
+            label: 'Boolean AND'
+            description: 'Search for <strong>ALL</strong> of these words'
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
@@ -3059,8 +3059,8 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_1_op
-            label: ''
-            description: 'Search for <strong>ANY</strong> of these words <strong>(Boolean OR)</strong>'
+            label: 'Boolean OR'
+            description: 'Search for <strong>ANY</strong> of these words'
             use_operator: false
             operator: search_api_fulltext_1_op
             operator_limit_selection: false
@@ -3104,8 +3104,8 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_2_op
-            label: ''
-            description: '<strong>EXCLUDE</strong> all of these words from search <strong>(Boolean NOT)</strong>'
+            label: 'Boolean NOT'
+            description: '<strong>EXCLUDE</strong> all of these words from search'
             use_operator: false
             operator: search_api_fulltext_2_op
             operator_limit_selection: false
