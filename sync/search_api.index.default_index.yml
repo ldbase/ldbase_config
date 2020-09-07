@@ -3,14 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_location
+    - field.storage.node.body
     - field.storage.node.field_areas_of_expertise
     - field.storage.node.field_assessment_name
-    - field.storage.node.field_related_persons
     - field.storage.node.field_code_type
     - field.storage.node.field_component_skills
     - field.storage.node.field_curricula
     - field.storage.node.field_data_collection_locations
-    - field.storage.node.body
+    - field.storage.node.field_demographics_information
     - field.storage.node.field_document_type
     - field.storage.node.field_doi
     - field.storage.node.field_email
@@ -19,19 +20,17 @@ dependencies:
     - field.storage.node.field_grant_information
     - field.storage.paragraph.field_funding_agency
     - field.storage.paragraph.field_grant_number
-    - field.storage.node.field_related_organizations
     - field.storage.node.field_last_name
     - field.storage.node.field_license
-    - field.storage.node.field_location
     - field.storage.node.field_middle_name
     - field.storage.node.field_orcid
     - field.storage.node.field_parent_organization
-    - field.storage.node.field_demographics_information
-    - field.storage.paragraph.field_age_range
     - field.storage.paragraph.field_participant_type
     - field.storage.node.field_professional_titles
     - field.storage.node.field_project_type
     - field.storage.node.field_publication_info
+    - field.storage.node.field_related_organizations
+    - field.storage.node.field_related_persons
     - field.storage.node.field_schooling
     - field.storage.node.field_special_populations
     - field.storage.node.field_time_method
@@ -39,12 +38,13 @@ dependencies:
     - field.storage.node.field_variable_types_in_dataset
     - field.storage.node.field_web_presence
     - field.storage.node.field_website
+    - field.storage.paragraph.field_age_range
     - search_api.server.default_server
     - core.entity_view_mode.node.search_index
   module:
-    - taxonomy
     - node
     - user
+    - taxonomy
     - paragraphs
     - search_api
 id: default_index
@@ -734,6 +734,8 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
+    indexed_locked: true
+    type_locked: true
     dependencies:
       module:
         - node
@@ -742,8 +744,6 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
-    indexed_locked: true
-    type_locked: true
     dependencies:
       module:
         - node
@@ -847,6 +847,46 @@ processor_settings:
     weights:
       add_properties: 0
       pre_index_save: -10
+  stemmer:
+    all_fields: false
+    fields:
+      - administrative_area_fulltext
+      - body
+      - country_code_fulltext
+      - field_areas_of_expertise_fulltext
+      - field_assessment_name_fulltext
+      - field_code_type_fulltext
+      - field_component_skills_fulltext
+      - field_curricula_fulltext
+      - field_data_collection_locations_fulltext
+      - field_document_type_fulltext
+      - field_first_name_fulltext
+      - field_grant_information_funder_fulltext
+      - field_grant_information_grantnum_fulltext
+      - field_last_name_fulltext
+      - field_license_fulltext
+      - field_middle_name_fulltext
+      - field_participant_type_fulltext
+      - field_professional_titles_fulltext
+      - field_project_type_fulltext
+      - field_related_organizations_fulltext
+      - field_related_persons_1_fulltext
+      - field_schooling_fulltext
+      - field_special_populations_fulltext
+      - field_time_method_fulltext
+      - field_time_points_fulltext
+      - field_variable_types_in_dataset_fulltext
+      - locality_fulltext
+      - person_name_fields_united
+      - rendered_item
+      - title
+      - type_fulltext
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
   stopwords:
     all_fields: false
     fields:
