@@ -2,39 +2,36 @@ uuid: 8aabf5a8-1859-4625-83a5-644f7707d575
 langcode: en
 status: true
 dependencies:
-  module:
-    - node
-    - user
-    - paragraphs
-    - taxonomy
-    - search_api
   config:
-    - field.storage.node.body
-    - field.storage.node.field_location
     - field.storage.node.field_areas_of_expertise
     - field.storage.node.field_assessment_name
+    - field.storage.node.field_related_persons
     - field.storage.node.field_code_type
     - field.storage.node.field_component_skills
     - field.storage.node.field_curricula
     - field.storage.node.field_data_collection_locations
-    - field.storage.node.field_demographics_information
+    - field.storage.node.body
     - field.storage.node.field_document_type
     - field.storage.node.field_doi
     - field.storage.node.field_email
     - field.storage.node.field_external_resource
     - field.storage.node.field_first_name
     - field.storage.node.field_grant_information
+    - field.storage.paragraph.field_funding_agency
+    - field.storage.paragraph.field_grant_number
+    - field.storage.node.field_related_organizations
     - field.storage.node.field_last_name
     - field.storage.node.field_license
+    - field.storage.node.field_location
     - field.storage.node.field_middle_name
     - field.storage.node.field_orcid
     - field.storage.node.field_parent_organization
+    - field.storage.node.field_demographics_information
+    - field.storage.paragraph.field_age_range
     - field.storage.paragraph.field_participant_type
     - field.storage.node.field_professional_titles
     - field.storage.node.field_project_type
     - field.storage.node.field_publication_info
-    - field.storage.node.field_related_organizations
-    - field.storage.node.field_related_persons
     - field.storage.node.field_schooling
     - field.storage.node.field_special_populations
     - field.storage.node.field_time_method
@@ -44,11 +41,26 @@ dependencies:
     - field.storage.node.field_website
     - search_api.server.default_server
     - core.entity_view_mode.node.search_index
+  module:
+    - taxonomy
+    - node
+    - user
+    - paragraphs
+    - search_api
 id: default_index
 name: 'Default content index'
 description: 'Default content index created by the Database Search Defaults module'
 read_only: false
 field_settings:
+  administrative_area_fulltext:
+    label: 'Location » The top-level administrative subdivision of the country.'
+    datasource_id: 'entity:node'
+    property_path: 'field_location:administrative_area'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_location
   author:
     label: 'Author name'
     datasource_id: 'entity:node'
@@ -82,6 +94,15 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_location
+  country_code_fulltext:
+    label: 'Location » The two-letter country code.'
+    datasource_id: 'entity:node'
+    property_path: 'field_location:country_code'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_location
   created:
     label: 'Authored on'
     datasource_id: 'entity:node'
@@ -98,6 +119,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_areas_of_expertise
+  field_areas_of_expertise_fulltext:
+    label: 'Areas of Expertise » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_areas_of_expertise:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_areas_of_expertise
+      module:
+        - taxonomy
   field_assessment_name:
     label: 'Assessment Name'
     datasource_id: 'entity:node'
@@ -106,6 +138,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_assessment_name
+  field_assessment_name_fulltext:
+    label: 'Assessment Name » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_assessment_name:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_assessment_name
+      module:
+        - taxonomy
   field_code_type:
     label: 'Code Type'
     datasource_id: 'entity:node'
@@ -114,6 +157,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_code_type
+  field_code_type_fulltext:
+    label: 'Code Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_code_type:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_code_type
+      module:
+        - taxonomy
   field_component_skills:
     label: Constructs
     datasource_id: 'entity:node'
@@ -122,6 +176,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_component_skills
+  field_component_skills_fulltext:
+    label: 'Constructs » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_component_skills:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_component_skills
+      module:
+        - taxonomy
   field_curricula:
     label: Curricula
     datasource_id: 'entity:node'
@@ -130,6 +195,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_curricula
+  field_curricula_fulltext:
+    label: 'Curricula » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_curricula:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_curricula
+      module:
+        - taxonomy
   field_data_collection_locations:
     label: 'Data Collection Locations'
     datasource_id: 'entity:node'
@@ -138,6 +214,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_data_collection_locations
+  field_data_collection_locations_fulltext:
+    label: 'Data Collection Locations » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_data_collection_locations:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_data_collection_locations
+      module:
+        - taxonomy
   field_demographics_information:
     label: Participants
     datasource_id: 'entity:node'
@@ -154,6 +241,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_document_type
+  field_document_type_fulltext:
+    label: 'Document Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_document_type:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_document_type
+      module:
+        - taxonomy
   field_doi:
     label: DOI
     datasource_id: 'entity:node'
@@ -186,6 +284,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_first_name
+  field_first_name_fulltext:
+    label: 'First Name'
+    datasource_id: 'entity:node'
+    property_path: field_first_name
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_first_name
   field_grant_information:
     label: 'Funding Agency & Grant Number'
     datasource_id: 'entity:node'
@@ -194,11 +300,44 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_grant_information
+  field_grant_information_funder_fulltext:
+    label: 'Funding Agency & Grant Number » Paragraph » Funding Agency » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_grant_information:entity:field_funding_agency:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_grant_information
+        - field.storage.paragraph.field_funding_agency
+      module:
+        - paragraphs
+        - taxonomy
+  field_grant_information_grantnum_fulltext:
+    label: 'Funding Agency & Grant Number » Paragraph » Grant Number'
+    datasource_id: 'entity:node'
+    property_path: 'field_grant_information:entity:field_grant_number'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_grant_information
+        - field.storage.paragraph.field_grant_number
+      module:
+        - paragraphs
   field_last_name:
     label: 'Last Name'
     datasource_id: 'entity:node'
     property_path: field_last_name
     type: string
+    dependencies:
+      config:
+        - field.storage.node.field_last_name
+  field_last_name_fulltext:
+    label: 'Last Name'
+    datasource_id: 'entity:node'
+    property_path: field_last_name
+    type: text
     dependencies:
       config:
         - field.storage.node.field_last_name
@@ -210,11 +349,31 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_license
+  field_license_fulltext:
+    label: 'License » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_license:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_license
+      module:
+        - taxonomy
   field_middle_name:
     label: 'Middle Name'
     datasource_id: 'entity:node'
     property_path: field_middle_name
     type: string
+    dependencies:
+      config:
+        - field.storage.node.field_middle_name
+  field_middle_name_fulltext:
+    label: 'Middle Name'
+    datasource_id: 'entity:node'
+    property_path: field_middle_name
+    type: text
+    boost: 0.5
     dependencies:
       config:
         - field.storage.node.field_middle_name
@@ -239,17 +398,39 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: 'field_demographics_information:entity:field_participant_type'
     type: integer
+    boost: 0.5
     dependencies:
       config:
         - field.storage.node.field_demographics_information
         - field.storage.paragraph.field_participant_type
       module:
         - paragraphs
+  field_participant_type_fulltext:
+    label: 'Participants » Paragraph » Participant Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_demographics_information:entity:field_participant_type:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_demographics_information
+        - field.storage.paragraph.field_participant_type
+      module:
+        - paragraphs
+        - taxonomy
   field_professional_titles:
     label: 'Professional Titles'
     datasource_id: 'entity:node'
     property_path: field_professional_titles
     type: string
+    dependencies:
+      config:
+        - field.storage.node.field_professional_titles
+  field_professional_titles_fulltext:
+    label: 'Professional Titles'
+    datasource_id: 'entity:node'
+    property_path: field_professional_titles
+    type: text
+    boost: 0.5
     dependencies:
       config:
         - field.storage.node.field_professional_titles
@@ -261,6 +442,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_project_type
+  field_project_type_fulltext:
+    label: 'Project Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_project_type:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_project_type
+      module:
+        - taxonomy
   field_publication_info:
     label: 'Publication Information'
     datasource_id: 'entity:node'
@@ -277,6 +469,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_related_organizations
+  field_related_organizations_fulltext:
+    label: 'Host Organizations » Content » Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_related_organizations:entity:title'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_related_organizations
+      module:
+        - node
   field_related_persons_1:
     label: Authors
     datasource_id: 'entity:node'
@@ -285,6 +488,16 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_related_persons
+  field_related_persons_1_fulltext:
+    label: 'Authors » Content » Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_related_persons:entity:title'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_related_persons
+      module:
+        - node
   field_schooling:
     label: Schooling
     datasource_id: 'entity:node'
@@ -293,6 +506,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_schooling
+  field_schooling_fulltext:
+    label: 'Schooling » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_schooling:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_schooling
+      module:
+        - taxonomy
   field_special_populations:
     label: 'Special Populations'
     datasource_id: 'entity:node'
@@ -301,6 +525,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_special_populations
+  field_special_populations_fulltext:
+    label: 'Special Populations » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_special_populations:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_special_populations
+      module:
+        - taxonomy
   field_time_method:
     label: 'Time Method'
     datasource_id: 'entity:node'
@@ -309,11 +544,31 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_time_method
+  field_time_method_fulltext:
+    label: 'Time Method » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_time_method:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_time_method
+      module:
+        - taxonomy
   field_time_points:
     label: 'Time Points'
     datasource_id: 'entity:node'
     property_path: field_time_points
     type: string
+    dependencies:
+      config:
+        - field.storage.node.field_time_points
+  field_time_points_fulltext:
+    label: 'Time Points'
+    datasource_id: 'entity:node'
+    property_path: field_time_points
+    type: text
+    boost: 0.5
     dependencies:
       config:
         - field.storage.node.field_time_points
@@ -325,6 +580,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_variable_types_in_dataset
+  field_variable_types_in_dataset_fulltext:
+    label: 'Variable Types in Dataset » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_variable_types_in_dataset:entity:name'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_variable_types_in_dataset
+      module:
+        - taxonomy
   field_web_presence:
     label: 'Web Presence'
     datasource_id: 'entity:node'
@@ -349,6 +615,15 @@ field_settings:
     dependencies:
       module:
         - node
+  locality_fulltext:
+    label: 'Location » The locality (i.e. city).'
+    datasource_id: 'entity:node'
+    property_path: 'field_location:locality'
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_location
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -356,6 +631,28 @@ field_settings:
     indexed_locked: true
     type_locked: true
     hidden: true
+  participants_age_from:
+    label: 'Participants » Paragraph » Age Range » From value'
+    datasource_id: 'entity:node'
+    property_path: 'field_demographics_information:entity:field_age_range:from'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_demographics_information
+        - field.storage.paragraph.field_age_range
+      module:
+        - paragraphs
+  participants_age_to:
+    label: 'Participants » Paragraph » Age Range » To value'
+    datasource_id: 'entity:node'
+    property_path: 'field_demographics_information:entity:field_age_range:to'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_demographics_information
+        - field.storage.paragraph.field_age_range
+      module:
+        - paragraphs
   person_name_fields_united:
     label: 'Person Name Fields United'
     property_path: aggregated_field
@@ -424,13 +721,19 @@ field_settings:
     dependencies:
       module:
         - node
+  type_fulltext:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: text
+    dependencies:
+      module:
+        - node
   uid:
     label: 'Author ID'
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
-    indexed_locked: true
-    type_locked: true
     dependencies:
       module:
         - node
@@ -439,6 +742,8 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
+    indexed_locked: true
+    type_locked: true
     dependencies:
       module:
         - node
@@ -488,25 +793,52 @@ processor_settings:
   ignorecase:
     all_fields: true
     fields:
+      - administrative_area_fulltext
       - author
       - body
       - country_code
+      - country_code_fulltext
+      - field_areas_of_expertise_fulltext
+      - field_assessment_name_fulltext
+      - field_code_type_fulltext
+      - field_component_skills_fulltext
+      - field_curricula_fulltext
+      - field_data_collection_locations_fulltext
+      - field_document_type_fulltext
       - field_doi
       - field_email
       - field_external_resource
       - field_first_name
+      - field_first_name_fulltext
+      - field_grant_information_funder_fulltext
+      - field_grant_information_grantnum_fulltext
       - field_last_name
+      - field_last_name_fulltext
+      - field_license_fulltext
       - field_middle_name
+      - field_middle_name_fulltext
       - field_orcid
+      - field_participant_type_fulltext
       - field_professional_titles
+      - field_professional_titles_fulltext
+      - field_project_type_fulltext
+      - field_related_organizations_fulltext
+      - field_related_persons_1_fulltext
+      - field_schooling_fulltext
+      - field_special_populations_fulltext
+      - field_time_method_fulltext
       - field_time_points
+      - field_time_points_fulltext
+      - field_variable_types_in_dataset_fulltext
       - field_web_presence
       - field_website
       - langcode
+      - locality_fulltext
       - person_name_fields_united
       - rendered_item
       - title
       - type
+      - type_fulltext
     weights:
       preprocess_index: -5
       preprocess_query: -8
