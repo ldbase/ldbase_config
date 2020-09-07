@@ -2828,6 +2828,9 @@ display:
       use_ajax: true
       defaults:
         use_ajax: false
+        cache: false
+      cache:
+        type: none
     cache_metadata:
       max-age: -1
       contexts:

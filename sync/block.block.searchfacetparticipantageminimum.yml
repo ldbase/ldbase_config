@@ -1,9 +1,9 @@
-uuid: 5ea4f1eb-3634-4694-9e9b-ff62f444befe
+uuid: 71c617b6-e3c5-486e-907d-438f85170b40
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.search_facet_time_method
+    - facets.facet.search_facet_participant_age_minimum
   module:
     - collapsiblock
     - facets
@@ -13,18 +13,18 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: searchfacettimemethod
+id: searchfacetparticipantageminimum
 theme: portcullis
 region: sidebar_first
-weight: -1
+weight: -5
 provider: null
-plugin: 'facet_block:search_facet_time_method'
+plugin: 'facet_block:search_facet_participant_age_minimum'
 settings:
-  id: 'facet_block:search_facet_time_method'
-  label: 'Time Method'
+  id: 'facet_block:search_facet_participant_age_minimum'
+  label: 'Participant Age Minimum'
   provider: facets
   label_display: visible
-  block_id: searchfacettimemethod
+  block_id: searchfacetparticipantageminimum
 visibility:
   request_path:
     id: request_path

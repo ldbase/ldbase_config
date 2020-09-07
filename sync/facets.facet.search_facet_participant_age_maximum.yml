@@ -1,0 +1,70 @@
+uuid: f8688e7d-fa9b-49ef-b039-261e05e10186
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.default_index
+    - views.view.search
+  module:
+    - search_api
+id: search_facet_participant_age_maximum
+name: 'Search Facet: Participant Age Maximum'
+url_alias: search_facet_participant_age_maximum
+weight: 0
+min_count: 1
+show_only_one_result: true
+field_identifier: participants_age_to
+facet_source_id: 'search_api:views_page__search__page_1'
+widget:
+  type: range_slider
+  config:
+    show_numbers: true
+    prefix: ''
+    suffix: ''
+    min_type: fixed
+    min_value: !!float 0
+    max_type: fixed
+    max_value: !!float 20
+    step: !!float 1
+query_operator: or
+use_hierarchy: false
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+hard_limit: 0
+exclude: false
+only_visible_when_facet_source_is_visible: true
+processor_configs:
+  active_widget_order:
+    processor_id: active_widget_order
+    weights:
+      sort: 20
+    settings:
+      sort: DESC
+  count_widget_order:
+    processor_id: count_widget_order
+    weights:
+      sort: 30
+    settings:
+      sort: DESC
+  display_value_widget_order:
+    processor_id: display_value_widget_order
+    weights:
+      sort: 40
+    settings:
+      sort: ASC
+  range_slider:
+    processor_id: range_slider
+    weights:
+      pre_query: 60
+      post_query: 60
+      build: 20
+    settings: {  }
+  url_processor_handler:
+    processor_id: url_processor_handler
+    weights:
+      pre_query: 50
+      build: 15
+    settings: {  }
+empty_behavior:
+  behavior: none
+show_title: false
