@@ -1,0 +1,33 @@
+uuid: 23a7b318-896d-416b-aef7-1b29a8ab9b1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.data_collection_locations.field_needs_review
+    - taxonomy.vocabulary.data_collection_locations
+  module:
+    - text
+id: taxonomy_term.data_collection_locations.default
+targetEntityType: taxonomy_term
+bundle: data_collection_locations
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_needs_review:
+    weight: 0
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden:
+  search_api_excerpt: true

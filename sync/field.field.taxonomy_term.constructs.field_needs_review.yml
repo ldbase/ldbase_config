@@ -1,0 +1,23 @@
+uuid: c451de29-9927-4610-a0f0-8d4685352f2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_needs_review
+    - taxonomy.vocabulary.constructs
+id: taxonomy_term.constructs.field_needs_review
+field_name: field_needs_review
+entity_type: taxonomy_term
+bundle: constructs
+label: 'Needs Review'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

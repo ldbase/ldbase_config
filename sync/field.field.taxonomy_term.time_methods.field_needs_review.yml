@@ -1,0 +1,23 @@
+uuid: 5202953f-87aa-4b0b-9c61-447b1ce865c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_needs_review
+    - taxonomy.vocabulary.time_methods
+id: taxonomy_term.time_methods.field_needs_review
+field_name: field_needs_review
+entity_type: taxonomy_term
+bundle: time_methods
+label: 'Needs Review'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

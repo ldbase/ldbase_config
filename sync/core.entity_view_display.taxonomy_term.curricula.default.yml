@@ -1,0 +1,33 @@
+uuid: 8b008e0a-6470-4c96-8b3a-6b520be8c9ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.curricula.field_needs_review
+    - taxonomy.vocabulary.curricula
+  module:
+    - text
+id: taxonomy_term.curricula.default
+targetEntityType: taxonomy_term
+bundle: curricula
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_needs_review:
+    weight: 0
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden:
+  search_api_excerpt: true

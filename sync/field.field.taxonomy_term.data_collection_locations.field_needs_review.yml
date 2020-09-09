@@ -1,0 +1,23 @@
+uuid: a6017f27-f734-4429-bebd-afbc5ff43fc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_needs_review
+    - taxonomy.vocabulary.data_collection_locations
+id: taxonomy_term.data_collection_locations.field_needs_review
+field_name: field_needs_review
+entity_type: taxonomy_term
+bundle: data_collection_locations
+label: 'Needs Review'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

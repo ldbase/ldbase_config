@@ -6,12 +6,9 @@ dependencies:
     - field.field.node.dataset.body
     - field.field.node.dataset.field_affiliated_parents
     - field.field.node.dataset.field_assessment_name
-    - field.field.node.dataset.field_assessment_names_other
     - field.field.node.dataset.field_component_skills
-    - field.field.node.dataset.field_component_skills_other
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_range
-    - field.field.node.dataset.field_data_locations_other
     - field.field.node.dataset.field_dataset_upload_or_external
     - field.field.node.dataset.field_dataset_version
     - field.field.node.dataset.field_demographics_information
@@ -23,11 +20,9 @@ dependencies:
     - field.field.node.dataset.field_related_organizations
     - field.field.node.dataset.field_related_persons
     - field.field.node.dataset.field_special_populations
-    - field.field.node.dataset.field_special_populations_other
     - field.field.node.dataset.field_time_points
     - field.field.node.dataset.field_unaffiliated_parents
     - field.field.node.dataset.field_variable_types_in_dataset
-    - field.field.node.dataset.field_variable_types_other
     - node.type.dataset
   module:
     - address
@@ -76,14 +71,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_assessment_names_other:
-    weight: 18
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_component_skills:
     weight: 12
     settings:
@@ -93,14 +80,6 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_component_skills_other:
-    weight: 32
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_data_collection_locations:
     weight: 15
@@ -123,14 +102,6 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
-  field_data_locations_other:
-    weight: 16
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_dataset_upload_or_external:
     weight: 28
@@ -236,14 +207,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_special_populations_other:
-    weight: 30
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_time_points:
     weight: 13
     settings: {  }
@@ -269,14 +232,6 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_variable_types_other:
-    weight: 31
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   path:
     type: path
