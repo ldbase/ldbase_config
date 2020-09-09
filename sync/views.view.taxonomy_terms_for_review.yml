@@ -543,7 +543,7 @@ display:
             group_items: {  }
           plugin_id: boolean
       sorts: {  }
-      title: 'Taxonomy Terms for Review'
+      title: 'LDbase Taxonomy Terms for Review'
       header: {  }
       footer: {  }
       empty: {  }
