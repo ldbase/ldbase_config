@@ -186,7 +186,9 @@ handlers:
     status: false
     conditions: {  }
     weight: 0
-    settings: {  }
+    settings:
+      format: yaml
+      submission: false
   ldbase_dataset:
     id: dataset_from_webform
     label: 'LDbase Dataset'

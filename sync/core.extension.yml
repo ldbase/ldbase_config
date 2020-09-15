@@ -56,6 +56,8 @@ module:
   matomo: 0
   menu_token: 0
   menu_ui: 0
+  message: 0
+  message_notify: 0
   metatag: 0
   metatag_dc: 0
   metatag_dc_advanced: 0

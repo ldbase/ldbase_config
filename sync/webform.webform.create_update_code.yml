@@ -194,5 +194,7 @@ handlers:
     status: false
     conditions: {  }
     weight: -50
-    settings: {  }
+    settings:
+      format: yaml
+      submission: false
 variants: {  }

@@ -191,7 +191,9 @@ handlers:
     status: false
     conditions: {  }
     weight: 0
-    settings: {  }
+    settings:
+      format: yaml
+      submission: false
   ldbase_project:
     id: project_from_webform
     label: 'LDbase Project'
