@@ -1,0 +1,19 @@
+uuid: 750623bc-5c6c-43bf-b50e-1416061d7b6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - message.template.ldbase_taxonomy_term_added
+id: message.ldbase_taxonomy_term_added.default
+targetEntityType: message
+bundle: ldbase_taxonomy_term_added
+mode: default
+content:
+  partial_1:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  partial_0: true
+  search_api_excerpt: true

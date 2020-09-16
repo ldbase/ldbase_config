@@ -1,0 +1,26 @@
+uuid: 20a7cfc6-50a7-48c3-b187-d5442a8a9343
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_subject
+    - message.template.ldbase_taxonomy_term_added
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.ldbase_taxonomy_term_added.mail_subject
+targetEntityType: message
+bundle: ldbase_taxonomy_term_added
+mode: mail_subject
+content:
+  partial_0:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  partial_1: true
+  search_api_excerpt: true
