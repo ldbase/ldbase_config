@@ -1,0 +1,28 @@
+uuid: e32ae886-16f5-4b14-81a1-802785bc2315
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_added_user
+    - message.template.ldbase_user_added_to_project
+id: message.ldbase_user_added_to_project.field_added_user
+field_name: field_added_user
+entity_type: message
+bundle: ldbase_user_added_to_project
+label: 'Added User'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

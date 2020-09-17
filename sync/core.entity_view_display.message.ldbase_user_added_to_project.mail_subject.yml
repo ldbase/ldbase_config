@@ -1,0 +1,28 @@
+uuid: cae03ec7-50ae-4036-b36d-7cac94221ce0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_subject
+    - field.field.message.ldbase_user_added_to_project.field_added_user
+    - field.field.message.ldbase_user_added_to_project.field_group
+    - message.template.ldbase_user_added_to_project
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.ldbase_user_added_to_project.mail_subject
+targetEntityType: message
+bundle: ldbase_user_added_to_project
+mode: mail_subject
+content:
+  partial_0:
+    weight: 0
+    region: content
+hidden:
+  field_added_user: true
+  field_group: true
+  partial_1: true
+  search_api_excerpt: true
