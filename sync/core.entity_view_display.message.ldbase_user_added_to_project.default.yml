@@ -6,6 +6,13 @@ dependencies:
     - field.field.message.ldbase_user_added_to_project.field_added_user
     - field.field.message.ldbase_user_added_to_project.field_group
     - message.template.ldbase_user_added_to_project
+  module:
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 id: message.ldbase_user_added_to_project.default
 targetEntityType: message
 bundle: ldbase_user_added_to_project

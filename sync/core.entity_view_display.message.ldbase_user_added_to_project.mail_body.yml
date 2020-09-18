@@ -18,11 +18,15 @@ targetEntityType: message
 bundle: ldbase_user_added_to_project
 mode: mail_body
 content:
+  partial_0:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   partial_1:
     weight: 0
     region: content
 hidden:
   field_added_user: true
   field_group: true
-  partial_0: true
   search_api_excerpt: true

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - views.view.my_messages
     - views.view.projects_in_my_groups
   module:
     - layout_builder
@@ -92,6 +93,19 @@ third_party_settings:
               id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_1'
             additional: {  }
             weight: 1
+          b7e28b10-b5ab-4ee6-9600-8eaa1b52bf69:
+            uuid: b7e28b10-b5ab-4ee6-9600-8eaa1b52bf69
+            region: content
+            configuration:
+              id: 'views_block:my_messages-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 3
         third_party_settings: {  }
 id: user.user.default
 targetEntityType: user
