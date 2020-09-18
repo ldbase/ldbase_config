@@ -1,4 +1,4 @@
-uuid: 750623bc-5c6c-43bf-b50e-1416061d7b6d
+uuid: a4043c77-387f-4f4c-8feb-4ed96ef2ae3a
 langcode: en
 status: true
 dependencies:
@@ -11,20 +11,10 @@ bundle: ldbase_taxonomy_term_added
 mode: default
 content:
   field_message_read:
-    weight: 1
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  partial_1:
     weight: 0
-    region: content
-    settings: {  }
+    settings:
+      display_label: true
     third_party_settings: {  }
-hidden:
-  partial_0: true
-  search_api_excerpt: true
+    type: boolean_checkbox
+    region: content
+hidden: {  }

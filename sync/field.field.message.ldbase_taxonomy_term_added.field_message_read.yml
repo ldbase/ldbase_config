@@ -1,0 +1,23 @@
+uuid: a267cd32-2bb5-40fc-9c20-de453323a921
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_read
+    - message.template.ldbase_taxonomy_term_added
+id: message.ldbase_taxonomy_term_added.field_message_read
+field_name: field_message_read
+entity_type: message
+bundle: ldbase_taxonomy_term_added
+label: 'Message Read'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

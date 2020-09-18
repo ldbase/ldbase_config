@@ -1,16 +1,14 @@
-uuid: 3e3ff622-d40e-4e61-b976-41f6d8558f7c
+uuid: 2dc3b211-4fa1-4fec-8646-d6c5f9301878
 langcode: en
 status: true
 dependencies:
   module:
     - message
-    - user
-id: message.field_added_user
-field_name: field_added_user
+id: message.field_message_read
+field_name: field_message_read
 entity_type: message
-type: entity_reference
-settings:
-  target_type: user
+type: boolean
+settings: {  }
 module: core
 locked: false
 cardinality: 1

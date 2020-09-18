@@ -1,15 +1,15 @@
-uuid: e32ae886-16f5-4b14-81a1-802785bc2315
+uuid: 4d74e7ec-d6f3-4d6c-aaf1-230ddeebf6d9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.message.field_added_user
+    - field.storage.message.field_to_user
     - message.template.ldbase_user_added_to_project
-id: message.ldbase_user_added_to_project.field_added_user
-field_name: field_added_user
+id: message.ldbase_user_added_to_project.field_to_user
+field_name: field_to_user
 entity_type: message
 bundle: ldbase_user_added_to_project
-label: 'Added User'
+label: 'To User'
 description: ''
 required: false
 translatable: false
