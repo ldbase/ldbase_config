@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_needs_review
+    - system.menu.admin
     - user.role.administrator
   module:
     - taxonomy
@@ -183,7 +184,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -312,7 +313,7 @@ display:
           group_type: group
           admin_label: ''
           label: 'Needs Review'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -418,9 +419,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_label
+          type: entity_reference_entity_view
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -546,7 +547,20 @@ display:
       title: 'LDbase Taxonomy Terms for Review'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'No taxonomy terms have been added by LDbase users.'
+            format: basic_html
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
@@ -567,7 +581,21 @@ display:
     display_options:
       display_extenders:
         metatag_display_extender: {  }
-      path: admin/taxonomy-terms-for-review
+      path: admin/structure/taxonomy/taxonomy-terms-for-review
+      menu:
+        type: normal
+        title: 'Taxonomy Review'
+        description: 'Review terms added by LDbase users'
+        expanded: false
+        parent: system.admin_structure
+        weight: 0
+        context: '0'
+        menu_name: admin
+      tab_options:
+        type: tab
+        title: Taxonomy
+        description: ''
+        weight: 0
     cache_metadata:
       max-age: -1
       contexts:
