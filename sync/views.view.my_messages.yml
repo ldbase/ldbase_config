@@ -2,6 +2,8 @@ uuid: 68685e12-d1e9-4118-8571-e27b54ef9bcf
 langcode: en
 status: true
 dependencies:
+  config:
+    - user.role.authenticated
   module:
     - message
     - options
@@ -425,11 +427,17 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: false
+          specify_validation: true
           validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
+            type: 'entity:user'
+            fail: 'access denied'
+          validate_options:
+            access: true
+            operation: update
+            multiple: 0
+            restrict_roles: true
+            roles:
+              authenticated: authenticated
           break_phrase: false
           not: false
           plugin_id: numeric
