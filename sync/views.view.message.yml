@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - message
+    - options
     - user
 _core:
   default_config_hash: 2Up5NUvwF4aBVoO6eFTPeBXtnpUw_yiexv9I5u6ZD-g
@@ -180,9 +181,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           action_title: 'With selection'
-          include_exclude: include
-          selected_actions:
-            - message_delete_action
+          include_exclude: exclude
+          selected_actions: {  }
           entity_type: message
           plugin_id: bulk_form
         mid:
@@ -529,6 +529,49 @@ display:
           entity_type: message
           entity_field: template
           plugin_id: bundle
+        field_message_status_value:
+          id: field_message_status_value
+          table: message__field_message_status
+          field: field_message_status_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_message_status_value_op
+            label: 'Message Status'
+            description: ''
+            use_operator: false
+            operator: field_message_status_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_message_status_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_administrator: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
       sorts: {  }
       title: Message
       header: {  }

@@ -1,0 +1,23 @@
+uuid: cd308dd5-09aa-4938-b115-7b4a9ad34ab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_status
+    - message.template.ldbase_user_added_to_project
+  module:
+    - options
+id: message.ldbase_user_added_to_project.field_message_status
+field_name: field_message_status
+entity_type: message
+bundle: ldbase_user_added_to_project
+label: 'Message Status'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Unread
+default_value_callback: ''
+settings: {  }
+field_type: list_string

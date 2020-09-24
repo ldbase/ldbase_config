@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.message.ldbase_user_added_to_project.field_group
-    - field.field.message.ldbase_user_added_to_project.field_message_read
+    - field.field.message.ldbase_user_added_to_project.field_message_status
     - field.field.message.ldbase_user_added_to_project.field_to_user
     - message.template.ldbase_user_added_to_project
 id: message.ldbase_user_added_to_project.default
@@ -22,12 +22,11 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_message_read:
-    weight: 2
-    settings:
-      display_label: true
+  field_message_status:
+    weight: 3
+    settings: {  }
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: options_select
     region: content
   field_to_user:
     weight: 0

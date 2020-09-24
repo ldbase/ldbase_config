@@ -1,0 +1,11 @@
+uuid: 3322c064-d57e-4b7c-a25b-8332da8fd784
+langcode: en
+status: true
+dependencies:
+  module:
+    - message
+id: message_mark_unread
+label: 'Mark message as Unread'
+type: message
+plugin: message_mark_unread
+configuration: {  }

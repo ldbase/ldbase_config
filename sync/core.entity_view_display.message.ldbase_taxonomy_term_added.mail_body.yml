@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.message.mail_body
-    - field.field.message.ldbase_taxonomy_term_added.field_message_read
+    - field.field.message.ldbase_taxonomy_term_added.field_message_status
     - message.template.ldbase_taxonomy_term_added
   module:
     - layout_builder
@@ -23,6 +23,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_message_read: true
+  field_message_status: true
   partial_0: true
   search_api_excerpt: true

@@ -2,10 +2,9 @@ uuid: 68685e12-d1e9-4118-8571-e27b54ef9bcf
 langcode: en
 status: true
 dependencies:
-  config:
-    - message.template.ldbase_user_added_to_project
   module:
     - message
+    - options
     - user
 id: my_messages
 label: 'My Messages'
@@ -77,7 +76,8 @@ display:
           columns:
             mid: mid
             created: created
-            field_added_user: field_added_user
+            field_message_read: created
+            uid: uid
             get_text: get_text
           info:
             mid:
@@ -91,10 +91,17 @@ display:
               sortable: false
               default_sort_order: asc
               align: ''
+              separator: '<br>'
+              empty_column: false
+              responsive: ''
+            field_message_read:
+              sortable: false
+              default_sort_order: asc
+              align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            field_added_user:
+            uid:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -305,41 +312,36 @@ display:
           entity_field: uid
           plugin_id: field
       filters:
-        template:
-          id: template
-          table: message_field_data
-          field: template
+        field_message_read_value:
+          id: field_message_read_value
+          table: message__field_message_read
+          field: field_message_read_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
-          value:
-            ldbase_user_added_to_project: ldbase_user_added_to_project
+          operator: '='
+          value: ''
           group: 1
-          exposed: false
+          exposed: true
           expose:
-            operator_id: template_op
-            label: 'Message Type'
-            description: ''
+            operator_id: ''
+            label: 'Message Read (field_message_read)'
+            description: null
             use_operator: false
-            operator: template_op
+            operator: field_message_read_value_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: template
-            required: false
+            identifier: field_message_read_value
+            required: true
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              content_administrator: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
+          is_grouped: true
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: 'Message Read (field_message_read)'
+            description: null
+            identifier: field_message_read_value
             optional: true
             widget: select
             multiple: false
@@ -347,9 +349,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: message
-          entity_field: template
-          plugin_id: bundle
+          plugin_id: boolean
       sorts:
         created:
           id: created
@@ -367,7 +367,12 @@ display:
           entity_field: created
           plugin_id: date
       title: 'My Messages'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          plugin_id: text
       footer: {  }
       empty:
         area:
@@ -512,7 +517,7 @@ display:
       row:
         type: fields
       pager:
-        type: full
+        type: mini
         options:
           items_per_page: 5
           offset: 0
@@ -521,8 +526,6 @@ display:
           tags:
             previous: '‹ Previous'
             next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -531,12 +534,11 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
       link_display: '0'
       link_url: ''
-      use_more: false
+      use_more: true
       use_more_always: true
-      use_more_text: more
+      use_more_text: 'View All Messages'
       display_description: ''
       fields:
         mid:
@@ -799,19 +801,20 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<h4>My Messages</h4>'
+            value: '<h4>My Unread Messages</h4>'
             format: basic_html
           plugin_id: text
       filters:
-        field_message_read_value:
-          id: field_message_read_value
-          table: message__field_message_read
-          field: field_message_read_value
+        field_message_status_value:
+          id: field_message_status_value
+          table: message__field_message_status
+          field: field_message_status_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value: '0'
+          operator: or
+          value:
+            Unread: Unread
           group: 1
           exposed: false
           expose:
@@ -828,6 +831,7 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -840,13 +844,405 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: boolean
+          reduce_duplicates: false
+          plugin_id: list_field
       filter_groups:
         operator: AND
         groups:
           1: AND
     cache_metadata:
       max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+      tags: {  }
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      path: user/%user/messages
+      filters:
+        field_message_status_value:
+          id: field_message_status_value
+          table: message__field_message_status
+          field: field_message_status_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_message_status_value_op
+            label: 'Message Status'
+            description: ''
+            use_operator: false
+            operator: field_message_status_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_message_status_value
+            required: false
+            remember: true
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_administrator: '0'
+              administrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      defaults:
+        filters: false
+        filter_groups: false
+        header: false
+        fields: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h2>My Messages</h2>'
+            format: basic_html
+          plugin_id: text
+      fields:
+        mid:
+          id: mid
+          table: message_field_data
+          field: mid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: null
+          entity_field: mid
+          plugin_id: field
+        message_bulk_form:
+          id: message_bulk_form
+          table: message
+          field: message_bulk_form
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Bulk update'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          action_title: Action
+          include_exclude: include
+          selected_actions:
+            - message_mark_archived
+            - message_mark_read
+            - message_mark_unread
+          entity_type: message
+          plugin_id: bulk_form
+        created:
+          id: created
+          table: message_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Sent
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: timestamp
+          settings:
+            date_format: short
+            custom_date_format: ''
+            timezone: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: message
+          entity_field: created
+          plugin_id: field
+        uid:
+          id: uid
+          table: message_field_data
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: From
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: message
+          entity_field: uid
+          plugin_id: field
+        get_text:
+          id: get_text
+          table: message
+          field: get_text
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Message
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          delta: ''
+          entity_type: message
+          plugin_id: get_text
+    cache_metadata:
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

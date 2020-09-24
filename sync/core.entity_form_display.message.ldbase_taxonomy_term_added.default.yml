@@ -3,18 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.message.ldbase_taxonomy_term_added.field_message_read
+    - field.field.message.ldbase_taxonomy_term_added.field_message_status
     - message.template.ldbase_taxonomy_term_added
 id: message.ldbase_taxonomy_term_added.default
 targetEntityType: message
 bundle: ldbase_taxonomy_term_added
 mode: default
 content:
-  field_message_read:
+  field_message_status:
     weight: 0
-    settings:
-      display_label: true
+    settings: {  }
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: options_select
     region: content
 hidden: {  }

@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.message.mail_subject
     - field.field.message.ldbase_user_added_to_project.field_group
-    - field.field.message.ldbase_user_added_to_project.field_message_read
+    - field.field.message.ldbase_user_added_to_project.field_message_status
     - field.field.message.ldbase_user_added_to_project.field_to_user
     - message.template.ldbase_user_added_to_project
   module:
@@ -24,7 +24,7 @@ content:
     region: content
 hidden:
   field_group: true
-  field_message_read: true
+  field_message_status: true
   field_to_user: true
   partial_1: true
   search_api_excerpt: true

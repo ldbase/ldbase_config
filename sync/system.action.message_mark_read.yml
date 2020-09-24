@@ -1,0 +1,11 @@
+uuid: 08a782d9-7d2e-45c9-9e53-8ba0b9bb2dbe
+langcode: en
+status: true
+dependencies:
+  module:
+    - message
+id: message_mark_read
+label: 'Mark message as Read'
+type: message
+plugin: message_mark_read
+configuration: {  }

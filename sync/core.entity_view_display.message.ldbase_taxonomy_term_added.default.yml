@@ -3,22 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.message.ldbase_taxonomy_term_added.field_message_read
+    - field.field.message.ldbase_taxonomy_term_added.field_message_status
     - message.template.ldbase_taxonomy_term_added
+  module:
+    - options
 id: message.ldbase_taxonomy_term_added.default
 targetEntityType: message
 bundle: ldbase_taxonomy_term_added
 mode: default
 content:
-  field_message_read:
+  field_message_status:
     weight: 1
     label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
+    settings: {  }
     third_party_settings: {  }
-    type: boolean
+    type: list_default
     region: content
   partial_1:
     weight: 0
