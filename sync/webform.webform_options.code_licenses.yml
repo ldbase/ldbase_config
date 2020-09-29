@@ -1,0 +1,9 @@
+uuid: 1654ec39-e7cf-4fb4-855b-46c03a08c153
+langcode: en
+status: true
+dependencies: {  }
+id: code_licenses
+label: 'Code Licenses'
+category: 'LDbase Licenses'
+likert: false
+options: ''

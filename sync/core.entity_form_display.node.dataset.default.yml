@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
     - field.field.node.dataset.field_license
+    - field.field.node.dataset.field_license_other
     - field.field.node.dataset.field_location
     - field.field.node.dataset.field_publication_info
     - field.field.node.dataset.field_related_organizations
@@ -52,7 +53,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_affiliated_parents:
-    weight: 26
+    weight: 25
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -62,7 +63,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_assessment_name:
-    weight: 17
+    weight: 16
     settings:
       match_operator: CONTAINS
       size: 60
@@ -104,14 +105,14 @@ content:
     third_party_settings: {  }
     region: content
   field_dataset_upload_or_external:
-    weight: 28
+    weight: 27
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dataset_version:
     type: entity_reference_paragraphs
-    weight: 29
+    weight: 28
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -123,7 +124,7 @@ content:
     region: content
   field_demographics_information:
     type: entity_reference_paragraphs
-    weight: 19
+    weight: 17
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -142,7 +143,7 @@ content:
     type: string_textfield
     region: content
   field_external_resource:
-    weight: 23
+    weight: 22
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -150,7 +151,7 @@ content:
     type: link_default
     region: content
   field_license:
-    weight: 22
+    weight: 20
     settings:
       match_operator: CONTAINS
       size: 60
@@ -159,6 +160,14 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_license_other:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_location:
     weight: 11
     settings: {  }
@@ -166,7 +175,7 @@ content:
     type: address_default
     region: content
   field_publication_info:
-    weight: 25
+    weight: 24
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -198,7 +207,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_special_populations:
-    weight: 20
+    weight: 18
     settings:
       match_operator: CONTAINS
       size: 60
@@ -214,7 +223,7 @@ content:
     type: options_select
     region: content
   field_unaffiliated_parents:
-    weight: 27
+    weight: 26
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -224,7 +233,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_variable_types_in_dataset:
-    weight: 21
+    weight: 19
     settings:
       match_operator: CONTAINS
       size: 60
@@ -279,7 +288,7 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 24
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }

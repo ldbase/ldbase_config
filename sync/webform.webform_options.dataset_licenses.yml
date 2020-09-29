@@ -1,0 +1,9 @@
+uuid: 7ceeccad-a57d-457a-af00-291f2c2e6576
+langcode: en
+status: true
+dependencies: {  }
+id: dataset_licenses
+label: 'Dataset Licenses'
+category: 'LDbase Licenses'
+likert: false
+options: ''

@@ -1,0 +1,31 @@
+uuid: f212fb2b-e00a-4789-a28c-c017fb231178
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.licenses.field_valid_for
+    - taxonomy.vocabulary.licenses
+  module:
+    - text
+id: taxonomy_term.licenses.default
+targetEntityType: taxonomy_term
+bundle: licenses
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_valid_for:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.code.field_doi
     - field.field.node.code.field_external_resource
     - field.field.node.code.field_license
+    - field.field.node.code.field_license_other
     - field.field.node.code.field_publication_info
     - field.field.node.code.field_related_persons
     - field.field.node.code.field_unaffiliated_parents
@@ -43,7 +44,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_affiliated_parents:
-    weight: 17
+    weight: 16
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -53,7 +54,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_code_file:
-    weight: 27
+    weight: 19
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -70,13 +71,13 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_code_upload_or_external:
-    weight: 26
+    weight: 18
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_doi:
-    weight: 16
+    weight: 15
     settings:
       size: 60
       placeholder: ''
@@ -84,7 +85,7 @@ content:
     type: string_textfield
     region: content
   field_external_resource:
-    weight: 12
+    weight: 13
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -101,8 +102,16 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_license_other:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_publication_info:
-    weight: 15
+    weight: 14
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -124,7 +133,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_unaffiliated_parents:
-    weight: 18
+    weight: 17
     settings:
       match_operator: CONTAINS
       match_limit: 10

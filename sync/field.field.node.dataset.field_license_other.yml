@@ -1,0 +1,19 @@
+uuid: 8162d671-f702-404b-a3f4-535700e7cdf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_license_other
+    - node.type.dataset
+id: node.dataset.field_license_other
+field_name: field_license_other
+entity_type: node
+bundle: dataset
+label: 'License Other'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

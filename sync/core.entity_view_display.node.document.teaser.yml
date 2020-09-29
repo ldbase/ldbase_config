@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.document.field_doi
     - field.field.node.document.field_external_resource
     - field.field.node.document.field_license
+    - field.field.node.document.field_license_other
     - field.field.node.document.field_publication_info
     - field.field.node.document.field_related_persons
     - field.field.node.document.field_unaffiliated_parents
@@ -45,6 +46,7 @@ hidden:
   field_doi: true
   field_external_resource: true
   field_license: true
+  field_license_other: true
   field_publication_info: true
   field_related_persons: true
   field_unaffiliated_parents: true

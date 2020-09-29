@@ -1,0 +1,9 @@
+uuid: 372294c3-1968-42b2-9d38-d94d1c89672f
+langcode: en
+status: true
+dependencies: {  }
+id: document_licenses
+label: 'Document Licenses'
+category: 'LDbase Licenses'
+likert: false
+options: ''

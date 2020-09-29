@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
     - field.field.node.dataset.field_license
+    - field.field.node.dataset.field_license_other
     - field.field.node.dataset.field_location
     - field.field.node.dataset.field_publication_info
     - field.field.node.dataset.field_related_organizations
@@ -64,6 +65,7 @@ hidden:
   field_external_resource: true
   field_format_information: true
   field_license: true
+  field_license_other: true
   field_location: true
   field_publication_info: true
   field_related_organizations: true

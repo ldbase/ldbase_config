@@ -1,0 +1,23 @@
+uuid: a0c2c0c7-e285-484d-b07a-30caee35f7c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_valid_for
+    - taxonomy.vocabulary.licenses
+id: taxonomy_term.licenses.field_valid_for
+field_name: field_valid_for
+entity_type: taxonomy_term
+bundle: licenses
+label: 'Valid For'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node_type'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference
