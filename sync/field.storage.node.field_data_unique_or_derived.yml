@@ -1,0 +1,27 @@
+uuid: e5f662cb-4e1d-4c10-b85f-c29424225b0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_data_unique_or_derived
+field_name: field_data_unique_or_derived
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: unique
+      label: Unique
+    -
+      value: derived
+      label: Derived
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

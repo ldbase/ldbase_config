@@ -9,9 +9,11 @@ dependencies:
     - field.field.node.dataset.field_component_skills
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_range
+    - field.field.node.dataset.field_data_unique_or_derived
     - field.field.node.dataset.field_dataset_upload_or_external
     - field.field.node.dataset.field_dataset_version
     - field.field.node.dataset.field_demographics_information
+    - field.field.node.dataset.field_derivation_source
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
     - field.field.node.dataset.field_license
@@ -540,6 +542,47 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
+          label: 'Data Unique or Derived'
+        components:
+          d9571eac-520d-479e-ace9-07c430c69bb4:
+            uuid: d9571eac-520d-479e-ace9-07c430c69bb4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_data_unique_or_derived'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 0
+          4d3caac5-c1bb-4d2e-ae54-c2f7dd97a6c6:
+            uuid: 4d3caac5-c1bb-4d2e-ae54-c2f7dd97a6c6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dataset:field_derivation_source'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
           label: 'Latest Documents'
         components:
           46d62da9-5d91-4945-ad74-b59efdcea6e9:
@@ -606,6 +649,13 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
+  field_data_unique_or_derived:
+    weight: 35
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
   field_dataset_upload_or_external:
     weight: 31
     label: above
@@ -630,6 +680,18 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_derivation_source:
+    weight: 36
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_doi:
     weight: 1

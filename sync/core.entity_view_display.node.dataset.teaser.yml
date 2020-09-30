@@ -10,9 +10,11 @@ dependencies:
     - field.field.node.dataset.field_component_skills
     - field.field.node.dataset.field_data_collection_locations
     - field.field.node.dataset.field_data_collection_range
+    - field.field.node.dataset.field_data_unique_or_derived
     - field.field.node.dataset.field_dataset_upload_or_external
     - field.field.node.dataset.field_dataset_version
     - field.field.node.dataset.field_demographics_information
+    - field.field.node.dataset.field_derivation_source
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
     - field.field.node.dataset.field_license
@@ -58,9 +60,11 @@ hidden:
   field_component_skills: true
   field_data_collection_locations: true
   field_data_collection_range: true
+  field_data_unique_or_derived: true
   field_dataset_upload_or_external: true
   field_dataset_version: true
   field_demographics_information: true
+  field_derivation_source: true
   field_doi: true
   field_external_resource: true
   field_format_information: true

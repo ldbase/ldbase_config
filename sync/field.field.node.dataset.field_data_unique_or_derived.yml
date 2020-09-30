@@ -1,0 +1,21 @@
+uuid: 66b47120-52f9-44e1-86b1-168b4fc9de0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_unique_or_derived
+    - node.type.dataset
+  module:
+    - options
+id: node.dataset.field_data_unique_or_derived
+field_name: field_data_unique_or_derived
+entity_type: node
+bundle: dataset
+label: 'Data Unique or Derived'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

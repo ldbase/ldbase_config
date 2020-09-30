@@ -1,0 +1,23 @@
+uuid: 9df677a7-f631-40b2-ade7-69af2bf4a133
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_derivation_source
+    - node.type.dataset
+  module:
+    - link
+id: node.dataset.field_derivation_source
+field_name: field_derivation_source
+entity_type: node
+bundle: dataset
+label: 'Derivation Source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
