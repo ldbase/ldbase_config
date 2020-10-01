@@ -11,7 +11,7 @@ id: node.dataset.field_data_unique_or_derived
 field_name: field_data_unique_or_derived
 entity_type: node
 bundle: dataset
-label: 'Data Unique or Derived'
+label: 'Are these data unique or dervived?'
 description: ''
 required: false
 translatable: false

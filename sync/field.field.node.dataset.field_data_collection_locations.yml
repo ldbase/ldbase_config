@@ -10,7 +10,7 @@ id: node.dataset.field_data_collection_locations
 field_name: field_data_collection_locations
 entity_type: node
 bundle: dataset
-label: 'Data Collection Locations'
+label: 'Data Collection Location(s)'
 description: ''
 required: false
 translatable: false

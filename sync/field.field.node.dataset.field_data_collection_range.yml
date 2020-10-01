@@ -12,7 +12,7 @@ id: node.dataset.field_data_collection_range
 field_name: field_data_collection_range
 entity_type: node
 bundle: dataset
-label: 'Data Collection Period'
+label: 'When were the data in this dataset collected?'
 description: ''
 required: false
 translatable: false
@@ -33,9 +33,6 @@ settings:
         enabled: false
       demographics:
         weight: 10
-        enabled: false
-      file_access_restrictions:
-        weight: 11
         enabled: false
       file_metadata:
         weight: 12

@@ -10,7 +10,7 @@ id: node.dataset.field_assessment_name
 field_name: field_assessment_name
 entity_type: node
 bundle: dataset
-label: 'Assessment Name'
+label: 'Assessment(s) Used'
 description: ''
 required: false
 translatable: false

@@ -10,7 +10,7 @@ id: node.dataset.field_related_persons
 field_name: field_related_persons
 entity_type: node
 bundle: dataset
-label: Contributors
+label: 'Dataset Contributor(s)'
 description: ''
 required: false
 translatable: true

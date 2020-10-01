@@ -10,7 +10,7 @@ id: node.project.field_related_persons
 field_name: field_related_persons
 entity_type: node
 bundle: project
-label: Investigators
+label: 'Project Investigator(s)'
 description: ''
 required: false
 translatable: false
