@@ -10,7 +10,7 @@ id: node.code.field_related_persons
 field_name: field_related_persons
 entity_type: node
 bundle: code
-label: Authors
+label: 'Code Contributor(s)'
 description: ''
 required: false
 translatable: true
