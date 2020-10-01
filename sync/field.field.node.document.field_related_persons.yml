@@ -10,7 +10,7 @@ id: node.document.field_related_persons
 field_name: field_related_persons
 entity_type: node
 bundle: document
-label: Authors
+label: Author(s)
 description: ''
 required: false
 translatable: true
