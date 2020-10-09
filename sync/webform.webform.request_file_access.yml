@@ -187,6 +187,7 @@ handlers:
   ldbase_request_file_access_handler:
     id: request_file_access_handler
     label: 'LDbase Request File Access Handler'
+    notes: ''
     handler_id: ldbase_request_file_access_handler
     status: true
     conditions: {  }

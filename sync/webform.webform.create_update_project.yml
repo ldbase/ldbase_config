@@ -187,6 +187,7 @@ handlers:
   debug:
     id: debug
     label: Debug
+    notes: ''
     handler_id: debug
     status: false
     conditions: {  }
@@ -197,6 +198,7 @@ handlers:
   ldbase_project:
     id: project_from_webform
     label: 'LDbase Project'
+    notes: ''
     handler_id: ldbase_project
     status: true
     conditions: {  }

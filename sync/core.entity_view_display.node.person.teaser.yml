@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.person.field_drupal_account_id
     - field.field.node.person.field_email
     - field.field.node.person.field_first_name
+    - field.field.node.person.field_google_scholar_id
     - field.field.node.person.field_last_name
     - field.field.node.person.field_location
     - field.field.node.person.field_middle_name
@@ -41,11 +42,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  person_project_contributions_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   field_areas_of_expertise: true
   field_drupal_account_id: true
   field_email: true
   field_first_name: true
+  field_google_scholar_id: true
   field_last_name: true
   field_location: true
   field_middle_name: true

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.person.field_drupal_account_id
     - field.field.node.person.field_email
     - field.field.node.person.field_first_name
+    - field.field.node.person.field_google_scholar_id
     - field.field.node.person.field_last_name
     - field.field.node.person.field_location
     - field.field.node.person.field_middle_name
@@ -85,7 +86,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_label
             additional: {  }
-            weight: 12
+            weight: 13
           1b052651-116a-4282-9718-37d198ba014f:
             uuid: 1b052651-116a-4282-9718-37d198ba014f
             region: first
@@ -192,7 +193,33 @@ third_party_settings:
                 third_party_settings: {  }
                 type: string
             additional: {  }
+            weight: 18
+          3f1ef465-1e8d-48cf-a95a-867340976aef:
+            uuid: 3f1ef465-1e8d-48cf-a95a-867340976aef
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:person:person_project_contributions_entity_view_1'
+            additional: {  }
             weight: 19
+          4622c012-7e42-40cb-b3d9-99fdf22859b5:
+            uuid: 4622c012-7e42-40cb-b3d9-99fdf22859b5
+            region: first
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:person:field_google_scholar_id'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 12
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -253,6 +280,14 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_google_scholar_id:
+    weight: 16
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: first
   field_last_name:
     weight: 6
     label: above
@@ -346,5 +381,10 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  person_project_contributions_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: first
 hidden:
   search_api_excerpt: true

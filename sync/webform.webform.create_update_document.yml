@@ -182,6 +182,7 @@ handlers:
   debug:
     id: debug
     label: Debug
+    notes: ''
     handler_id: debug
     status: false
     conditions: {  }
@@ -192,6 +193,7 @@ handlers:
   ldbase_document:
     id: document_from_webform
     label: 'LDbase Document'
+    notes: ''
     handler_id: ldbase_document
     status: true
     conditions: {  }
