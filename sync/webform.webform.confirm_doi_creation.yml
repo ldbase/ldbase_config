@@ -182,6 +182,7 @@ handlers:
   ldbase_doi_confirmation:
     id: attach_doi
     label: 'LDbase DOI Confirmation'
+    notes: ''
     handler_id: ldbase_doi_confirmation
     status: true
     conditions: {  }

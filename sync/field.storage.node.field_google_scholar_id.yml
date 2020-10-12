@@ -1,0 +1,21 @@
+uuid: a38172d0-1036-4ffb-93e0-1ae7acd848f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_google_scholar_id
+field_name: field_google_scholar_id
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

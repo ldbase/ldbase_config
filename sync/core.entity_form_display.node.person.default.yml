@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.person.field_drupal_account_id
     - field.field.node.person.field_email
     - field.field.node.person.field_first_name
+    - field.field.node.person.field_google_scholar_id
     - field.field.node.person.field_last_name
     - field.field.node.person.field_location
     - field.field.node.person.field_middle_name
@@ -33,21 +34,22 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 121
+    weight: 8
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_areas_of_expertise:
-    weight: 133
+    weight: 20
     settings:
       match_operator: CONTAINS
       size: 60
@@ -57,7 +59,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_drupal_account_id:
-    weight: 135
+    weight: 22
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -67,7 +69,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_email:
-    weight: 127
+    weight: 14
     settings:
       size: 60
       placeholder: ''
@@ -75,7 +77,15 @@ content:
     type: email_default
     region: content
   field_first_name:
-    weight: 124
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_google_scholar_id:
+    weight: 16
     settings:
       size: 60
       placeholder: ''
@@ -83,7 +93,7 @@ content:
     type: string_textfield
     region: content
   field_last_name:
-    weight: 126
+    weight: 13
     settings:
       size: 60
       placeholder: ''
@@ -91,13 +101,13 @@ content:
     type: string_textfield
     region: content
   field_location:
-    weight: 122
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: address_default
     region: content
   field_middle_name:
-    weight: 125
+    weight: 12
     settings:
       size: 60
       placeholder: ''
@@ -105,7 +115,7 @@ content:
     type: string_textfield
     region: content
   field_orcid:
-    weight: 128
+    weight: 15
     settings:
       size: 60
       placeholder: ''
@@ -113,7 +123,7 @@ content:
     type: string_textfield
     region: content
   field_professional_titles:
-    weight: 131
+    weight: 18
     settings:
       size: 60
       placeholder: ''
@@ -121,7 +131,7 @@ content:
     type: string_textfield
     region: content
   field_publishing_names:
-    weight: 136
+    weight: 23
     settings:
       size: 60
       placeholder: ''
@@ -129,7 +139,7 @@ content:
     type: string_textfield
     region: content
   field_related_organizations:
-    weight: 132
+    weight: 19
     settings:
       match_operator: CONTAINS
       size: 60
@@ -139,7 +149,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_thumbnail:
-    weight: 134
+    weight: 21
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -147,7 +157,7 @@ content:
     type: image_image
     region: content
   field_web_presence:
-    weight: 129
+    weight: 17
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -155,7 +165,7 @@ content:
     type: link_default
     region: content
   field_website:
-    weight: 123
+    weight: 10
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -164,7 +174,7 @@ content:
     region: content
   path:
     type: path
-    weight: 30
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -172,26 +182,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 3
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 7
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 4
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -199,7 +209,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     settings:
       match_operator: CONTAINS
       size: 60
@@ -208,8 +218,8 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

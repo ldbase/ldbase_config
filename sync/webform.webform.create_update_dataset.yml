@@ -182,6 +182,7 @@ handlers:
   debug:
     id: debug
     label: Debug
+    notes: ''
     handler_id: debug
     status: false
     conditions: {  }
@@ -192,6 +193,7 @@ handlers:
   ldbase_dataset:
     id: dataset_from_webform
     label: 'LDbase Dataset'
+    notes: ''
     handler_id: ldbase_dataset
     status: true
     conditions: {  }

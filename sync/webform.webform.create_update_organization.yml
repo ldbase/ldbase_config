@@ -187,6 +187,7 @@ handlers:
   debug:
     id: debug
     label: Debug
+    notes: ''
     handler_id: debug
     status: false
     conditions: {  }
@@ -197,6 +198,7 @@ handlers:
   ldbase_organization:
     id: org_from_webform
     label: 'LDbase Organization'
+    notes: ''
     handler_id: ldbase_organization
     status: true
     conditions: {  }

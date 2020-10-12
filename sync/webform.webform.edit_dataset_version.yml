@@ -187,6 +187,7 @@ handlers:
   ldbase_edit_dataset_version:
     id: edit_dataset_version_handler
     label: 'LDbase Edit Dataset Version'
+    notes: ''
     handler_id: ldbase_edit_dataset_version
     status: true
     conditions: {  }
