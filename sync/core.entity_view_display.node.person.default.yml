@@ -74,16 +74,19 @@ third_party_settings:
             uuid: 22ec4a78-c6ac-4e6d-a262-870e5869e11d
             region: first
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:person:field_related_organizations'
+              label: 'Organizational Affiliations'
+              provider: layout_builder
+              label_display: '0'
               formatter:
-                label: above
+                label: inline
+                type: entity_reference_label
                 settings:
                   link: true
                 third_party_settings: {  }
-                type: entity_reference_label
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 12
           1b052651-116a-4282-9718-37d198ba014f:
@@ -193,6 +196,22 @@ third_party_settings:
                 type: string
             additional: {  }
             weight: 19
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Contributions Section'
+        components:
+          3563b447-c695-46ed-af1f-85aff05f9cd6:
+            uuid: 3563b447-c695-46ed-af1f-85aff05f9cd6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:person:person_project_contributions_entity_view_1'
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -346,5 +365,10 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  person_project_contributions_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: first
 hidden:
   search_api_excerpt: true
