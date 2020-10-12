@@ -197,16 +197,6 @@ third_party_settings:
                 type: string
             additional: {  }
             weight: 18
-          3f1ef465-1e8d-48cf-a95a-867340976aef:
-            uuid: 3f1ef465-1e8d-48cf-a95a-867340976aef
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:person:person_project_contributions_entity_view_1'
-            additional: {  }
-            weight: 19
           4622c012-7e42-40cb-b3d9-99fdf22859b5:
             uuid: 4622c012-7e42-40cb-b3d9-99fdf22859b5
             region: first
