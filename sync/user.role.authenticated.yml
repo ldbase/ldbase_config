@@ -11,5 +11,6 @@ permissions:
   - 'access shortcuts'
   - 'opt-in or out of matomo tracking'
   - 'search content'
+  - 'use search_api_autocomplete for search'
   - 'use text format basic_html'
   - 'use text format restricted_html'
