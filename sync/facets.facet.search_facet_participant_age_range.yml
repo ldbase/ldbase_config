@@ -1,4 +1,4 @@
-uuid: e3decd51-f9e9-4c8f-8bd4-49174a8ab942
+uuid: 69f9d638-ba86-45c8-ad23-f47b943832c4
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
     - views.view.search
   module:
     - search_api
-id: search_facet_participant_age_minimum
-name: 'Search Facet: Participant Age Minimum'
-url_alias: search_facet_participant_age_minimum
+id: search_facet_participant_age_range
+name: 'Search Facet: Participant Age Range'
+url_alias: search_facet_participant_age_range
 weight: 0
 min_count: 1
 show_only_one_result: true
-field_identifier: participants_age_from
+field_identifier: ldbase_age_range
 facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: range_slider
@@ -21,10 +21,10 @@ widget:
     show_numbers: false
     prefix: ''
     suffix: ''
-    min_type: fixed
+    min_type: search_result
     min_value: !!float 0
-    max_type: fixed
-    max_value: !!float 20
+    max_type: search_result
+    max_value: !!float 10
     step: !!float 1
 query_operator: or
 use_hierarchy: false
