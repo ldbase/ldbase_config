@@ -654,7 +654,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: AND
+            label: ''
             description: 'Search for <strong>ALL</strong> of these words <strong>(Boolean AND)</strong>'
             use_operator: false
             operator: search_api_fulltext_op
@@ -715,7 +715,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_1_op
-            label: OR
+            label: ''
             description: 'Search for <strong>ANY</strong> of these words <strong>(Boolean OR)</strong>'
             use_operator: false
             operator: search_api_fulltext_1_op
@@ -760,7 +760,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_2_op
-            label: NOT
+            label: ''
             description: '<strong>EXCLUDE</strong> all of these words from search <strong>(Boolean NOT)</strong>'
             use_operator: false
             operator: search_api_fulltext_2_op
