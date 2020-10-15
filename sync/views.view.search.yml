@@ -135,7 +135,7 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: 'Displaying results @start - @end of @total (<a href="#" id="display-advanced-search">Advanced Search</a>)'
+          content: 'Displaying results @start - @end of @total (<a href="#" class="display-advanced-search">Go to Advanced Search</a>)'
           plugin_id: result
       footer: {  }
       empty:
@@ -149,8 +149,8 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<p>No results found.</p>'
-            format: basic_html
+            value: '<p>No results found. <a href="#" class="display-advanced-search">Go to Advanced Search</a>.</p>'
+            format: full_html
           plugin_id: text
       relationships: {  }
       arguments: {  }
