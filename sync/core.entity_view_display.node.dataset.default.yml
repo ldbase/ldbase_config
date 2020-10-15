@@ -548,15 +548,18 @@ third_party_settings:
             uuid: d9571eac-520d-479e-ace9-07c430c69bb4
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:dataset:field_data_unique_or_derived'
+              label: 'Are these data unique or dervived?'
+              provider: layout_builder
+              label_display: '0'
               formatter:
-                label: above
+                label: inline
+                type: list_default
                 settings: {  }
                 third_party_settings: {  }
-                type: list_default
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 0
           4d3caac5-c1bb-4d2e-ae54-c2f7dd97a6c6:

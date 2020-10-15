@@ -259,7 +259,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<p>No datasets have been added yet.</p>'
+            value: "<h3>Most Recent Datasets</h3>\r\n<p>No datasets have been added yet.</p>"
             format: basic_html
           plugin_id: text
       relationships: {  }
