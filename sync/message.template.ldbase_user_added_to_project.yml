@@ -1,11 +1,16 @@
 uuid: 768101c8-eee0-45ba-a08c-e9c4bccc71e2
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
 template: ldbase_user_added_to_project
 label: 'LDbase - User Added to Project Group'
 description: 'Message sent when a user is added to a project group'
 text:
+  -
+    value: "<p>LDbase Notification: Added to Project Group</p>\r\n"
+    format: basic_html
   -
     value: "<p>You have been added to the&nbsp;<strong>Project: @project_name</strong>&nbsp;in the role&nbsp;<strong>@group_role</strong>.</p>\r\n"
     format: basic_html

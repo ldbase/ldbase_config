@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.message.ldbase_taxonomy_term_added.field_from_user
     - field.field.message.ldbase_taxonomy_term_added.field_message_status
+    - field.field.message.ldbase_taxonomy_term_added.field_to_user
     - message.template.ldbase_taxonomy_term_added
   module:
     - options
@@ -12,12 +14,28 @@ targetEntityType: message
 bundle: ldbase_taxonomy_term_added
 mode: default
 content:
+  field_from_user:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_message_status:
     weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_to_user:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   partial_1:
     weight: 0

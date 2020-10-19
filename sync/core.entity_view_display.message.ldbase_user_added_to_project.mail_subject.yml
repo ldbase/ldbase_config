@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.message.mail_subject
+    - field.field.message.ldbase_user_added_to_project.field_from_user
     - field.field.message.ldbase_user_added_to_project.field_group
     - field.field.message.ldbase_user_added_to_project.field_message_status
     - field.field.message.ldbase_user_added_to_project.field_to_user
@@ -23,6 +24,7 @@ content:
     weight: 0
     region: content
 hidden:
+  field_from_user: true
   field_group: true
   field_message_status: true
   field_to_user: true

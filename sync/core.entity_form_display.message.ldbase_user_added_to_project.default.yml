@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.message.ldbase_user_added_to_project.field_from_user
     - field.field.message.ldbase_user_added_to_project.field_group
     - field.field.message.ldbase_user_added_to_project.field_message_status
     - field.field.message.ldbase_user_added_to_project.field_to_user
@@ -12,8 +13,18 @@ targetEntityType: message
 bundle: ldbase_user_added_to_project
 mode: default
 content:
+  field_from_user:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_group:
-    weight: 1
+    weight: 2
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -29,7 +40,7 @@ content:
     type: options_select
     region: content
   field_to_user:
-    weight: 0
+    weight: 1
     settings:
       match_operator: CONTAINS
       match_limit: 10

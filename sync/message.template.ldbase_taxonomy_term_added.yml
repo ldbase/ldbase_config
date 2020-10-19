@@ -1,13 +1,15 @@
 uuid: 8466dc0d-bcb6-40fd-bd24-5f72ee39f5e2
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
 template: ldbase_taxonomy_term_added
 label: 'LDbase - Taxonomy Term Added'
 description: 'Message sent when a new term is added to a taxonomy through a Webform by a user'
 text:
   -
-    value: "<p>LDbase: New Taxonomy Term added</p>\r\n"
+    value: "<p>LDbase Administrator: New Taxonomy Term added</p>\r\n"
     format: basic_html
   -
     value: "<p>The term <strong>@taxonomy_term</strong> was added to the <strong>@vocabulary</strong> list.</p>\r\n"
