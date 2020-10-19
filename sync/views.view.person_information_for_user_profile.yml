@@ -1364,7 +1364,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<a href="/persons/{{ uuid }}/edit">Edit your profile</a>'
+            text: '<a href="/persons/{{ uuid }}/edit">Edit your profile or change your password</a>'
             make_link: false
             path: ''
             absolute: false
