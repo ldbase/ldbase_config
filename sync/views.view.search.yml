@@ -149,7 +149,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<p>No results found. <a href="#" class="display-advanced-search">Go to Advanced Search</a>.</p>'
+            value: '<p><strong>No results found.</strong> <a href="#" class="display-advanced-search">Go to Advanced Search</a>.</p>'
             format: full_html
           plugin_id: text
       relationships: {  }
