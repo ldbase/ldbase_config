@@ -1,4 +1,5 @@
 module:
+  active_facet_pills: 0
   address: 0
   asset_injector: 0
   automated_cron: 0
