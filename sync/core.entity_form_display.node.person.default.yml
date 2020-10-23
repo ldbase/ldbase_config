@@ -69,7 +69,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_email:
-    weight: 14
+    weight: 26
     settings:
       size: 60
       placeholder: ''

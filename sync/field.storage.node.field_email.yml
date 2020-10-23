@@ -1,4 +1,4 @@
-uuid: 64025fc0-cd71-40e5-b981-94020e12146c
+uuid: 9791fb1d-b972-4312-94a0-af8240d1f464
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ type: email
 settings: {  }
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
