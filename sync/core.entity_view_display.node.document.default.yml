@@ -93,16 +93,19 @@ third_party_settings:
             uuid: 9847de09-84cd-44d7-b1a6-47cf45bd4e58
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:document:field_document_file'
+              label: File
+              provider: layout_builder
+              label_display: '0'
               formatter:
-                label: above
+                label: inline
+                type: file_default
                 settings:
                   use_description_as_link_text: true
                 third_party_settings: {  }
-                type: file_default
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 2
           94f41e85-9835-4185-ad14-696ac7080993:

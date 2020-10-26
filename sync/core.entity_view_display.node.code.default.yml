@@ -52,38 +52,7 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: 'Tasks Section'
-        components:
-          59450c93-9e84-4478-9989-6b2f05f3e9e6:
-            uuid: 59450c93-9e84-4478-9989-6b2f05f3e9e6
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:code:field_code_upload_or_external'
-              formatter:
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-                type: list_default
-            additional: {  }
-            weight: 6
-          d8c4bd41-3f72-4ba5-ad76-e96b0fe84bb2:
-            uuid: d8c4bd41-3f72-4ba5-ad76-e96b0fe84bb2
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:code:field_code_file'
-              formatter:
-                label: above
-                settings:
-                  use_description_as_link_text: true
-                third_party_settings: {  }
-                type: file_default
-            additional: {  }
-            weight: 7
+        components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -125,7 +94,44 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: 'File Section'
-        components: {  }
+        components:
+          d8c4bd41-3f72-4ba5-ad76-e96b0fe84bb2:
+            uuid: d8c4bd41-3f72-4ba5-ad76-e96b0fe84bb2
+            region: content
+            configuration:
+              id: 'field_block:node:code:field_code_file'
+              label: File
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: file_default
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          59450c93-9e84-4478-9989-6b2f05f3e9e6:
+            uuid: 59450c93-9e84-4478-9989-6b2f05f3e9e6
+            region: content
+            configuration:
+              id: 'field_block:node:code:field_code_upload_or_external'
+              label: 'Code Upload or External Link'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: list_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
