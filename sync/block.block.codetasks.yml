@@ -15,8 +15,8 @@ third_party_settings:
     collapse_action: '0'
 id: codetasks
 theme: portcullis
-region: sidebar_first
-weight: -14
+region: content
+weight: -18
 provider: null
 plugin: 'system_menu_block:code-tasks'
 settings:

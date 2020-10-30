@@ -15,8 +15,8 @@ third_party_settings:
     collapse_action: '0'
 id: documenttasks
 theme: portcullis
-region: sidebar_first
-weight: -13
+region: content
+weight: -19
 provider: null
 plugin: 'system_menu_block:document-tasks'
 settings:
