@@ -1,0 +1,41 @@
+uuid: ebf3ee93-4317-4a5d-91a3-8a5cddbb4338
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.ldbase_user_added_as_contributor.field_from_user
+    - field.field.message.ldbase_user_added_as_contributor.field_message_status
+    - field.field.message.ldbase_user_added_as_contributor.field_to_user
+    - message.template.ldbase_user_added_as_contributor
+id: message.ldbase_user_added_as_contributor.default
+targetEntityType: message
+bundle: ldbase_user_added_as_contributor
+mode: default
+content:
+  field_from_user:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_message_status:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_to_user:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

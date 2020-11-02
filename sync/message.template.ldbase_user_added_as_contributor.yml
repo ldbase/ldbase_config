@@ -1,0 +1,22 @@
+uuid: df4d0e58-4341-4d42-9522-d2f780b4f6b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+template: ldbase_user_added_as_contributor
+label: 'LDbase - User Added as Contributor'
+description: 'Message sent when a user''s associated Person node is selected as a contributor'
+text:
+  -
+    value: "<p>LDBase Notification: Added as Contributor</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>You were added to <strong>@object_type: @object_title</strong> by @user</p>\r\n"
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

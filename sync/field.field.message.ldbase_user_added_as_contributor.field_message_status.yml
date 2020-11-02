@@ -1,0 +1,23 @@
+uuid: 1fab5fb2-4c04-4a11-8172-33e79219802d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_status
+    - message.template.ldbase_user_added_as_contributor
+  module:
+    - options
+id: message.ldbase_user_added_as_contributor.field_message_status
+field_name: field_message_status
+entity_type: message
+bundle: ldbase_user_added_as_contributor
+label: 'Message Status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: Unread
+default_value_callback: ''
+settings: {  }
+field_type: list_string

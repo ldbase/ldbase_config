@@ -1,0 +1,28 @@
+uuid: 7d2614af-822e-4734-82b6-96c70e2e3561
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_to_user
+    - message.template.ldbase_user_added_as_contributor
+id: message.ldbase_user_added_as_contributor.field_to_user
+field_name: field_to_user
+entity_type: message
+bundle: ldbase_user_added_as_contributor
+label: 'To User'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
