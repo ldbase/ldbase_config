@@ -11,10 +11,10 @@ uid: 1
 template: false
 archive: false
 id: account_creation_step_1
-title: 'Account Creation: Step 1'
+title: 'Create New Account'
 description: 'A form to gather information regarding the new user and ascertain if there are existing records.'
 category: 'LDbase Create/Update Forms'
-elements: "initial_message:\n  '#type': webform_markup\n  '#markup': 'Before we create a new account, let&#39;s find any records where you might have been named a collaborator. Please fill out the following fields:'\nldbase_primary_name:\n  '#type': webform_custom_composite\n  '#title': 'Primary Publishing Name'\n  '#multiple': false\n  '#description': 'Please enter your name as it is most likely to have been used in publications and other research related documents'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#multiple__operations': false\n  '#multiple__add_more': false\n  '#element':\n    primary_first_name:\n      '#type': textfield\n      '#title': 'First Name'\n    primary_middle_name:\n      '#type': textfield\n      '#title': 'Middle Name'\n    primary_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n  '#required': true\nldbase_additional_names:\n  '#type': webform_custom_composite\n  '#title': 'Additional Publishing Names'\n  '#description': 'If you have used other names to publish or distribute research related documents, please enter them in this field. Add as many lines as needed:'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#element':\n    additional_first_name:\n      '#type': textfield\n      '#title': 'First Name'\n    additional_middle_name:\n      '#type': textfield\n      '#title': 'Middle Name'\n    additional_last_name:\n      '#type': textfield\n      '#title': 'Last Name'\nprimary_email:\n  '#type': email\n  '#title': 'Email Address'\n  '#description_display': before\n  '#required': true"
+elements: "initial_message:\n  '#type': webform_markup\n  '#markup': 'Let&#39;s get started! Please fill out the following fields:'\npreferred_display_name:\n  '#type': textfield\n  '#title': 'Preferred Display Name'\n  '#description': 'Please enter your name as you would like it to be displayed throughout the site:'\n  '#description_display': before\n  '#placeholder': 'For Example: Dr. Sally Shares'\n  '#required': true\nldbase_primary_name:\n  '#type': webform_custom_composite\n  '#title': 'Primary Publishing Name'\n  '#multiple': false\n  '#description': 'Please enter your name as it is most likely to have been used in publications and other research related documents'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#multiple__operations': false\n  '#multiple__add_more': false\n  '#element':\n    primary_first_name:\n      '#type': textfield\n      '#title': 'First Name'\n    primary_middle_name:\n      '#type': textfield\n      '#title': 'Middle Name'\n    primary_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n  '#required': true\nldbase_additional_names:\n  '#type': webform_custom_composite\n  '#title': 'Additional Publishing Names'\n  '#description': 'If you have used other names to publish or distribute research related documents, please enter them in this field. Add as many lines as needed:'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#element':\n    additional_first_name:\n      '#type': textfield\n      '#title': 'First Name'\n    additional_middle_name:\n      '#type': textfield\n      '#title': 'Middle Name'\n    additional_last_name:\n      '#type': textfield\n      '#title': 'Last Name'\nprimary_email:\n  '#type': email\n  '#title': 'Email Address'\n  '#description_display': before\n  '#required': true\nldbase_password:\n  '#type': password_confirm\n  '#title': 'LDbase Password'\n  '#required': true\n  '#format_items': ul\n  '#format_items_html': ''\n  '#format_items_text': ''"
 css: ''
 javascript: ''
 settings:
@@ -24,7 +24,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: ''
+  page_submit_path: create-new-account
   page_confirm_path: ''
   page_admin_theme: false
   form_title: source_entity_webform
@@ -136,6 +136,16 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  page_theme_name: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  serial_disabled: false
 access:
   create:
     roles:
@@ -193,3 +203,4 @@ handlers:
     weight: 0
     settings: {  }
 variants: {  }
+
