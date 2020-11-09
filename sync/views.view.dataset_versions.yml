@@ -336,6 +336,7 @@ display:
         fields: false
         empty: false
         access: false
+        header: false
       style:
         type: table
         options:
@@ -1064,6 +1065,20 @@ display:
       access:
         type: LDbaseViewsCustomAccess
         options: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: 'Return to Dataset link'
+          empty: false
+          tokenize: true
+          content:
+            value: '<p><a href="/datasets/{{ raw_arguments.null }}" class="ldbase-task-link">Return to Dataset</a></p>'
+            format: full_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
