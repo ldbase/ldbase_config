@@ -936,10 +936,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           tokenize: false
           content:
-            value: '<h2>My Messages</h2>'
+            value: '<h2>My Mailbox</h2>'
             format: basic_html
           plugin_id: text
       fields:
