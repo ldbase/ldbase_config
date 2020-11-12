@@ -53,6 +53,7 @@ module:
   ldbase_handlers: 0
   ldbase_new_account: 0
   link: 0
+  login_destination: 0
   masquerade: 0
   matomo: 0
   menu_token: 0
