@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.base_field_override.node.organization.title
     - field.field.node.organization.body
     - field.field.node.organization.field_location
     - field.field.node.organization.field_parent_organization
@@ -24,33 +23,36 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_twocol_section
+        layout_id: layout_onecol
         layout_settings:
-          label: 'Organization Layout'
-          column_widths: 50-50
+          label: 'Thumbnail Section'
         components:
-          3917ca78-0700-4879-a79b-6c14f4ec26f1:
-            uuid: 3917ca78-0700-4879-a79b-6c14f4ec26f1
-            region: first
+          2c486b0e-d9bc-47a7-b87f-9c66f57edfa0:
+            uuid: 2c486b0e-d9bc-47a7-b87f-9c66f57edfa0
+            region: content
             configuration:
-              id: 'field_block:node:organization:title'
-              label: Name
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: string
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
-                view_mode: view_mode
+              id: 'field_block:node:organization:field_thumbnail'
+              formatter:
+                label: above
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
             additional: {  }
-            weight: 2
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Description Section'
+        components:
           2affba31-8e56-4440-8c96-61ce12e7e600:
             uuid: 2affba31-8e56-4440-8c96-61ce12e7e600
-            region: first
+            region: content
             configuration:
               label_display: '0'
               context_mapping:
@@ -62,10 +64,16 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
             additional: {  }
-            weight: 3
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Website Section'
+        components:
           86c0e2c3-30c2-44af-905d-98766c58f989:
             uuid: 86c0e2c3-30c2-44af-905d-98766c58f989
-            region: first
+            region: content
             configuration:
               label_display: '0'
               context_mapping:
@@ -82,10 +90,16 @@ third_party_settings:
                 third_party_settings: {  }
                 type: link
             additional: {  }
-            weight: 4
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Location Section'
+        components:
           14f88bd5-df95-4d29-8b85-b1289bc021b1:
             uuid: 14f88bd5-df95-4d29-8b85-b1289bc021b1
-            region: first
+            region: content
             configuration:
               label_display: '0'
               context_mapping:
@@ -97,38 +111,21 @@ third_party_settings:
                 third_party_settings: {  }
                 type: address_default
             additional: {  }
-            weight: 5
-          4033f051-880a-4fdc-9d0a-ba0328df9ec8:
-            uuid: 4033f051-880a-4fdc-9d0a-ba0328df9ec8
-            region: first
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Affiliated Persons Section'
+        components:
+          ef05e9f0-462a-4660-bd2a-02168be2be99:
+            uuid: ef05e9f0-462a-4660-bd2a-02168be2be99
+            region: content
             configuration:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:organization:field_parent_organization'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
-            weight: 6
-          2c486b0e-d9bc-47a7-b87f-9c66f57edfa0:
-            uuid: 2c486b0e-d9bc-47a7-b87f-9c66f57edfa0
-            region: second
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:organization:field_thumbnail'
-              formatter:
-                label: above
-                settings:
-                  image_style: ''
-                  image_link: ''
-                third_party_settings: {  }
-                type: image
+              id: 'extra_field_block:node:organization:organizations_affiliated_persons_entity_view_1'
             additional: {  }
             weight: 0
         third_party_settings: {  }
@@ -201,5 +198,10 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  organizations_affiliated_persons_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: first
 hidden:
   search_api_excerpt: true
