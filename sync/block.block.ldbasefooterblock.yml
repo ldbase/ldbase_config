@@ -1,0 +1,35 @@
+uuid: 665870b7-f101-4e0a-9a40-d91645e79d52
+langcode: en
+status: true
+dependencies:
+  module:
+    - collapsiblock
+    - context
+    - ldbase_content
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
+id: ldbasefooterblock
+theme: portcullis
+region: footer_bottom
+weight: 0
+provider: null
+plugin: ldbase_footer_block
+settings:
+  id: ldbase_footer_block
+  label: 'LDbase Footer Block'
+  provider: ldbase_content
+  label_display: '0'
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+    context_mapping: {  }
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+    context_mapping: {  }
