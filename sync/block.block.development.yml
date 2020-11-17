@@ -15,7 +15,7 @@ third_party_settings:
 id: development
 theme: portcullis
 region: sub_footer_first
-weight: -12
+weight: -19
 provider: null
 plugin: 'system_menu_block:devel'
 settings:

@@ -54,7 +54,7 @@ font_resize: 1
 footer_animation_effect: no-animation
 footer_background_color: 'region--dark-typography region--white-background'
 footer_blocks_paddings: 0
-footer_bottom_background_color: 'region--dark-typography region--white-background'
+footer_bottom_background_color: 'region--dark-typography region--gray-background'
 footer_bottom_blocks_paddings: 0
 footer_bottom_id: footer-bottom
 footer_bottom_layout_container: container
@@ -194,7 +194,7 @@ sub_featured_id: sub-featured
 sub_featured_layout_container: container-fluid
 sub_featured_region_paddings: 0
 sub_featured_separator: region--no-separator
-subfooter_background_color: 'region--dark-typography region--white-background'
+subfooter_background_color: 'region--light-typography region--dark-background'
 subfooter_blocks_paddings: 0
 subfooter_bottom_blocks_paddings: false
 subfooter_bottom_region_paddings: false
