@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.dataset.field_special_populations
     - field.field.node.dataset.field_time_points
     - field.field.node.dataset.field_unaffiliated_parents
+    - field.field.node.dataset.field_user_agreement
     - field.field.node.dataset.field_variable_types_in_dataset
     - node.type.dataset
     - views.view.dataset_versions
@@ -786,6 +787,16 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_user_agreement:
+    weight: 37
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_variable_types_in_dataset:
     weight: 12

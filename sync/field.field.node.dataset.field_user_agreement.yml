@@ -1,0 +1,23 @@
+uuid: 707cc134-6ecc-4cf5-94c8-130da967f1f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_agreement
+    - node.type.dataset
+id: node.dataset.field_user_agreement
+field_name: field_user_agreement
+entity_type: node
+bundle: dataset
+label: 'Data Upload User Agreement'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

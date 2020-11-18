@@ -26,6 +26,7 @@ dependencies:
     - field.field.node.dataset.field_special_populations
     - field.field.node.dataset.field_time_points
     - field.field.node.dataset.field_unaffiliated_parents
+    - field.field.node.dataset.field_user_agreement
     - field.field.node.dataset.field_variable_types_in_dataset
     - node.type.dataset
   module:
@@ -77,5 +78,6 @@ hidden:
   field_special_populations: true
   field_time_points: true
   field_unaffiliated_parents: true
+  field_user_agreement: true
   field_variable_types_in_dataset: true
   search_api_excerpt: true
