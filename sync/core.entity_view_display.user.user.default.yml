@@ -30,7 +30,18 @@ third_party_settings:
                 entity: layout_builder.entity
               id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_2'
             additional: {  }
-            weight: 0
+            weight: 2
+          155e9484-9d12-4790-9748-26307770d814:
+            uuid: 155e9484-9d12-4790-9748-26307770d814
+            region: content
+            configuration:
+              id: my_dashboard_title
+              label: 'My Dashboard Title'
+              provider: ldbase_content
+              label_display: '0'
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol

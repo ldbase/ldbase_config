@@ -2046,7 +2046,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<h1>{{ title }}</h1>'
+            text: '<h3>{{ title }}</h3>'
             make_link: false
             path: ''
             absolute: false
