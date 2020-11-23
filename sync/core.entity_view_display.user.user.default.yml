@@ -73,16 +73,6 @@ third_party_settings:
         layout_settings:
           label: 'My Profile Section'
         components:
-          62ec25ba-8d0d-4bc7-a669-139e47928ca2:
-            uuid: 62ec25ba-8d0d-4bc7-a669-139e47928ca2
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:user:user:member_for'
-            additional: {  }
-            weight: 2
           01a22848-0ec5-44ed-9c53-44c6f093bcd2:
             uuid: 01a22848-0ec5-44ed-9c53-44c6f093bcd2
             region: content
