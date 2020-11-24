@@ -195,7 +195,7 @@ sub_featured_layout_container: container-fluid
 sub_featured_region_paddings: 0
 sub_featured_separator: region--no-separator
 subfooter_background_color: 'region--light-typography region--dark-background'
-subfooter_blocks_paddings: 0
+subfooter_blocks_paddings: 1
 subfooter_bottom_blocks_paddings: false
 subfooter_bottom_region_paddings: false
 subfooter_id: subfooter
