@@ -16,7 +16,7 @@ third_party_settings:
 id: searchfacethostorganizations
 theme: portcullis
 region: sidebar_first
-weight: -14
+weight: -8
 provider: null
 plugin: 'facet_block:search_facet_host_organizations'
 settings:
