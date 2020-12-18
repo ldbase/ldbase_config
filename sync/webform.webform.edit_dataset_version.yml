@@ -27,7 +27,7 @@ settings:
   page_submit_path: /forms/edit-dataset-version
   page_confirm_path: ''
   page_admin_theme: false
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''
@@ -43,10 +43,10 @@ settings:
   form_prepopulate_source_entity_type: ''
   form_reset: false
   form_disable_autocomplete: false
-  form_novalidate: false
+  form_novalidate: true
   form_disable_inline_errors: false
-  form_required: false
-  form_unsaved: false
+  form_required: true
+  form_unsaved: true
   form_disable_back: false
   form_submit_back: false
   form_autofocus: false
@@ -136,6 +136,16 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  page_theme_name: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  serial_disabled: false
 access:
   create:
     roles:
