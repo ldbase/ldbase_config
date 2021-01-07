@@ -27,6 +27,7 @@ module:
   doi_crossref: 0
   dynamic_page_cache: 0
   editor: 0
+  embargoes: 0
   entity: 0
   entity_reference_revisions: 0
   entity_usage: 0
