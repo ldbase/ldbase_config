@@ -97,7 +97,7 @@ third_party_settings:
               label_display: '0'
               context_mapping: {  }
             additional: {  }
-            weight: 1
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -175,7 +175,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -199,7 +199,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -224,7 +224,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -274,7 +274,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -299,7 +299,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -348,7 +348,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 1
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -373,7 +373,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -423,7 +423,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -447,7 +447,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -472,7 +472,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -522,7 +522,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 2
           404235f2-2c88-421c-b1dc-74ea65cecc9b:
             uuid: 404235f2-2c88-421c-b1dc-74ea65cecc9b
             region: content
@@ -538,7 +538,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: string
             additional: {  }
-            weight: 1
+            weight: 3
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -597,6 +597,38 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
               id: 'extra_field_block:node:dataset:project_latest_documents_entity_view_1'
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Latest Datasets'
+        components:
+          a88f84c2-1d71-449f-9cd8-3caa61404909:
+            uuid: a88f84c2-1d71-449f-9cd8-3caa61404909
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:dataset:project_latest_datasets_entity_view_1'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Latest Code'
+        components:
+          dcc1e98a-f503-4dc0-b401-7ea603666d25:
+            uuid: dcc1e98a-f503-4dc0-b401-7ea603666d25
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:dataset:project_latest_code_entity_view_1'
             additional: {  }
             weight: 0
         third_party_settings: {  }
@@ -811,6 +843,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  project_latest_code_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  project_latest_datasets_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   project_latest_documents_entity_view_1:
     weight: 10
     settings: {  }
