@@ -1,0 +1,29 @@
+uuid: be53962b-91cb-400c-a8d6-7fbcc3983f28
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: sBpOV1nK1BmawEc-gMVVuhQn8GVbcE9GYeyIyyoKZCg
+id: node.field_embargo_type
+field_name: field_embargo_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: Files
+    -
+      value: '1'
+      label: Node
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 0875676f-6c5f-4060-bde1-37763b1e3a26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exempt_users
+    - node.type.embargo
+_core:
+  default_config_hash: 8aaykjH5Q33lznyBmrPxZupNrTP9nWtALnDiONks5LM
+id: node.embargo.field_exempt_users
+field_name: field_exempt_users
+entity_type: node
+bundle: embargo
+label: 'Exempt users'
+description: 'Users that may bypass this embargo'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

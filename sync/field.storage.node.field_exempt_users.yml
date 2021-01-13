@@ -1,0 +1,22 @@
+uuid: f6961834-75e5-4395-9190-a80b5d850cf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+_core:
+  default_config_hash: j1noYOfsWT44XAF42cLmMQl6cRD0-ZGAITmt2xnq-Hw
+id: node.field_exempt_users
+field_name: field_exempt_users
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

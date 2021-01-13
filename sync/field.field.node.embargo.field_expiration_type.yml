@@ -1,0 +1,23 @@
+uuid: b9d8edd5-b0fe-415b-952e-90f07e391bf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expiration_type
+    - node.type.embargo
+  module:
+    - options
+_core:
+  default_config_hash: YYWYqgB1jmQDANyszyA7O2UaMxL7JzEdOorXb0l730A
+id: node.embargo.field_expiration_type
+field_name: field_expiration_type
+entity_type: node
+bundle: embargo
+label: 'Expiration type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

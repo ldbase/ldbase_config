@@ -1,0 +1,77 @@
+uuid: 53bde961-3ee9-41c8-bbb1-e736e9e0f84b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.embargo.field_embargo_description
+    - field.field.node.embargo.field_embargo_type
+    - field.field.node.embargo.field_embargoed_node
+    - field.field.node.embargo.field_exempt_users
+    - field.field.node.embargo.field_expiration_date
+    - field.field.node.embargo.field_expiration_type
+    - node.type.embargo
+  module:
+    - datetime
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: E_L9zNPG9h7fmIVo_8ollzC8DiWhg58qYV7ll8xYWB4
+id: node.embargo.default
+targetEntityType: node
+bundle: embargo
+mode: default
+content:
+  field_embargo_description:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_embargo_type:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_embargoed_node:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_exempt_users:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_expiration_date:
+    weight: 5
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_expiration_type:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  search_api_excerpt: true

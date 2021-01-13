@@ -1,0 +1,23 @@
+uuid: 20d6221f-07f6-4fed-8918-09a24efbd63f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expiration_date
+    - node.type.embargo
+  module:
+    - datetime
+_core:
+  default_config_hash: pGUXrjy-mRsXYBzGrdc9qjX-1O4VPSU6rogdYR7JU_c
+id: node.embargo.field_expiration_date
+field_name: field_expiration_date
+entity_type: node
+bundle: embargo
+label: 'Expiration date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

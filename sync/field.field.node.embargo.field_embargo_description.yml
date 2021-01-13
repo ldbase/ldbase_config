@@ -1,0 +1,23 @@
+uuid: 9e0d0084-b6dd-40f7-aca9-fe67647999d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embargo_description
+    - node.type.embargo
+  module:
+    - text
+_core:
+  default_config_hash: Rc3yrQsv34lmDZKP0eFJ18j0l2qpaPqhaIKiMttsrlI
+id: node.embargo.field_embargo_description
+field_name: field_embargo_description
+entity_type: node
+bundle: embargo
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 018e81af-3376-4044-873d-d6a5d8e4e955
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: n8BM6wY7r8Rz7Uqexg6oVbYys_BDb8av82oULcJQ8v0
+id: node.field_embargo_description
+field_name: field_embargo_description
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

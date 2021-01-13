@@ -1,0 +1,35 @@
+uuid: 5a540a94-05b2-463c-bca1-9872ec5d273f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.embargo.field_embargo_description
+    - field.field.node.embargo.field_embargo_type
+    - field.field.node.embargo.field_embargoed_node
+    - field.field.node.embargo.field_exempt_users
+    - field.field.node.embargo.field_expiration_date
+    - field.field.node.embargo.field_expiration_type
+    - node.type.embargo
+  module:
+    - user
+_core:
+  default_config_hash: 3Uq4XxKtL-bskDCC1fGVcRd4qiplZKmhhYQNFRuLXz0
+id: node.embargo.teaser
+targetEntityType: node
+bundle: embargo
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_embargo_description: true
+  field_embargo_type: true
+  field_embargoed_node: true
+  field_exempt_users: true
+  field_expiration_date: true
+  field_expiration_type: true
+  search_api_excerpt: true

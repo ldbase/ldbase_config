@@ -848,11 +848,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  project_latest_datasets_entity_view_1:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   project_latest_documents_entity_view_1:
     weight: 10
     settings: {  }
