@@ -1,0 +1,8 @@
+uuid: 3b5d67f4-588f-4771-a473-869df4904b86
+langcode: en
+status: true
+dependencies: {  }
+id: second-project-tasks
+label: 'Second Project Tasks'
+description: 'A second project tasks menu that makes it easier to add files'
+locked: false

@@ -15,12 +15,14 @@ dependencies:
     - field.field.node.project.field_time_method
     - field.field.node.project.field_website
     - node.type.project
+    - system.menu.second-project-tasks
   module:
     - entity_reference_revisions
     - layout_builder
     - layout_discovery
     - ldbase_citations
     - link
+    - system
     - text
     - user
 third_party_settings:
@@ -333,6 +335,26 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Second Project Tasks'
+        components:
+          8e250737-e9b2-498a-8d8f-c73d120a505a:
+            uuid: 8e250737-e9b2-498a-8d8f-c73d120a505a
+            region: content
+            configuration:
+              id: 'system_menu_block:second-project-tasks'
+              label: 'Second Project Tasks'
+              provider: system
+              label_display: '0'
+              level: 1
+              depth: 0
+              expand_all_items: false
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
