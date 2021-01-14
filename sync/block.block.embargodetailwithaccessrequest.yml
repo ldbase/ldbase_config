@@ -1,0 +1,51 @@
+uuid: c591722a-f97b-40c4-82d8-11b41ac0ab2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - collapsiblock
+    - context
+    - ctools
+    - ldbase_embargoes
+    - system
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
+id: embargodetailwithaccessrequest
+theme: portcullis
+region: sidebar_first
+weight: -19
+provider: null
+plugin: ldbase_embargoes_embargo_notification_block
+settings:
+  id: ldbase_embargoes_embargo_notification_block
+  label: 'Embargo Details'
+  provider: ldbase_embargoes
+  label_display: visible
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+    context_mapping: {  }
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      code: code
+      dataset: dataset
+      document: document
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm"
+    negate: true
+    context_mapping: {  }
