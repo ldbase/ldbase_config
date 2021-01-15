@@ -28,6 +28,7 @@ dependencies:
     - field.field.node.dataset.field_user_agreement
     - field.field.node.dataset.field_variable_types_in_dataset
     - node.type.dataset
+    - system.menu.second-dataset-tasks
     - views.view.dataset_versions
   module:
     - address
@@ -38,6 +39,7 @@ dependencies:
     - ldbase_handlers
     - link
     - options
+    - system
     - text
     - user
     - views
@@ -46,23 +48,6 @@ third_party_settings:
     allow_custom: false
     enabled: true
     sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: 'APA Citation'
-        components:
-          7db16eb6-f89a-4be5-9c58-f5a82d08d61f:
-            uuid: 7db16eb6-f89a-4be5-9c58-f5a82d08d61f
-            region: content
-            configuration:
-              id: ldbase_citation_display_block
-              label: 'Ldbase citation display block'
-              provider: ldbase_citations
-              label_display: visible
-              context_mapping: {  }
-            additional: {  }
-            weight: 1
-        third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
@@ -587,6 +572,26 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
+          label: 'Second Dataset Tasks'
+        components:
+          b7d90cc1-af68-4119-9e97-662844c32ea7:
+            uuid: b7d90cc1-af68-4119-9e97-662844c32ea7
+            region: content
+            configuration:
+              id: 'system_menu_block:second-dataset-tasks'
+              label: 'Second Dataset Tasks'
+              provider: system
+              label_display: '0'
+              level: 1
+              depth: 0
+              expand_all_items: false
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
           label: 'Latest Documents'
         components:
           46d62da9-5d91-4945-ad74-b59efdcea6e9:
@@ -844,6 +849,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   project_latest_code_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  project_latest_datasets_entity_view_1:
     weight: 10
     settings: {  }
     third_party_settings: {  }
