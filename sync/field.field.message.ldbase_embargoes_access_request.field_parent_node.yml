@@ -1,0 +1,32 @@
+uuid: e234cbb8-6ed9-474d-9ce8-8fb9d90d4e06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_parent_node
+    - message.template.ldbase_embargoes_access_request
+    - node.type.code
+    - node.type.dataset
+    - node.type.document
+id: message.ldbase_embargoes_access_request.field_parent_node
+field_name: field_parent_node
+entity_type: message
+bundle: ldbase_embargoes_access_request
+label: 'Parent Node'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      code: code
+      dataset: dataset
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: code
+field_type: entity_reference

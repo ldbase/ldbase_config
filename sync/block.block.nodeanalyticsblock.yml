@@ -39,7 +39,7 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/persons/*/change-password"
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/persons/*/change-password\r\n/*/*/request-access"
     negate: true
     context_mapping: {  }
   request_path_exclusion:

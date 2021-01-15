@@ -1,0 +1,32 @@
+uuid: 50df7308-f117-449f-bca9-d6c8c18a029b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.ldbase_embargoes_access_request.field_embargo
+    - field.field.message.ldbase_embargoes_access_request.field_from_user
+    - field.field.message.ldbase_embargoes_access_request.field_parent_node
+    - field.field.message.ldbase_embargoes_access_request.field_to_user
+    - message.template.ldbase_embargoes_access_request
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.ldbase_embargoes_access_request.mail_body
+targetEntityType: message
+bundle: ldbase_embargoes_access_request
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_embargo: true
+  field_from_user: true
+  field_parent_node: true
+  field_to_user: true
+  partial_0: true
+  search_api_excerpt: true

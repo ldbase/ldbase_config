@@ -3,7 +3,7 @@ langcode: en
 status: open
 dependencies:
   module:
-    - ldbase_handlers
+    - ldbase_embargoes
 open: null
 close: null
 weight: 0
@@ -13,8 +13,8 @@ archive: false
 id: request_file_access
 title: 'Request File Access'
 description: 'A form to manage requests to embargoed files.'
-category: ''
-elements: "status:\n  '#type': hidden\n  '#title': Status\n  '#default_value': New\ngroup_id:\n  '#type': hidden\n  '#title': 'Group ID'\nreason_for_access_reqeust:\n  '#type': textarea\n  '#title': 'Reason for Access Reqeust'\n  '#description': 'Why do you need access to this restricted file, and what do you plan to do with it?'"
+category: 'LDbase Create/Update Forms'
+elements: "reason_for_access_request:\n  '#type': textarea\n  '#title': 'Reason for Access Reqeust'\n  '#description': 'Why do you need access to this restricted file, and what do you plan to do with it?'\n  '#description_display': before\n  '#required': true\n  '#required_error': 'You must describe your reason for requesting access to this material'\nnode_id:\n  '#type': hidden\n  '#title': node_id\nembargo_id:\n  '#type': hidden\n  '#title': embargo_id"
 css: ''
 javascript: ''
 settings:
@@ -131,11 +131,22 @@ settings:
   entity_limit_user_interval: null
   purge: none
   purge_days: null
-  results_disabled: false
-  results_disabled_ignore: false
+  results_disabled: true
+  results_disabled_ignore: true
   results_customize: false
   token_view: false
   token_update: false
+  page_theme_name: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  token_delete: false
+  serial_disabled: false
 access:
   create:
     roles:
@@ -184,11 +195,11 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  ldbase_request_file_access_handler:
-    id: request_file_access_handler
-    label: 'LDbase Request File Access Handler'
+  ldbase_embargo_request_file_access:
+    id: request_file_access
+    label: 'LDbase Request File Access'
     notes: ''
-    handler_id: ldbase_request_file_access_handler
+    handler_id: ldbase_embargo_request_file_access
     status: true
     conditions: {  }
     weight: 0

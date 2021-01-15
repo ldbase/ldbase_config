@@ -1,0 +1,56 @@
+uuid: 6dae21e8-0347-48a6-b0c9-4d58db47fbcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.ldbase_embargoes_access_request.field_embargo
+    - field.field.message.ldbase_embargoes_access_request.field_from_user
+    - field.field.message.ldbase_embargoes_access_request.field_parent_node
+    - field.field.message.ldbase_embargoes_access_request.field_to_user
+    - message.template.ldbase_embargoes_access_request
+id: message.ldbase_embargoes_access_request.default
+targetEntityType: message
+bundle: ldbase_embargoes_access_request
+mode: default
+content:
+  field_embargo:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_from_user:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_parent_node:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_to_user:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

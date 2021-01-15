@@ -1,0 +1,28 @@
+uuid: 485ec712-de7c-4f81-8c50-1463383ef009
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_embargo
+    - message.template.ldbase_embargoes_access_request
+    - node.type.embargo
+id: message.ldbase_embargoes_access_request.field_embargo
+field_name: field_embargo
+entity_type: message
+bundle: ldbase_embargoes_access_request
+label: Embargo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      embargo: embargo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
