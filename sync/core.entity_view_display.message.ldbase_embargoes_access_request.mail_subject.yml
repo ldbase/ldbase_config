@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.message.mail_subject
     - field.field.message.ldbase_embargoes_access_request.field_embargo
     - field.field.message.ldbase_embargoes_access_request.field_from_user
+    - field.field.message.ldbase_embargoes_access_request.field_message_status
     - field.field.message.ldbase_embargoes_access_request.field_parent_node
     - field.field.message.ldbase_embargoes_access_request.field_to_user
     - message.template.ldbase_embargoes_access_request
@@ -26,6 +27,7 @@ content:
 hidden:
   field_embargo: true
   field_from_user: true
+  field_message_status: true
   field_parent_node: true
   field_to_user: true
   partial_1: true

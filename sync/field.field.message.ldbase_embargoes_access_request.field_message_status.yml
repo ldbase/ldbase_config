@@ -1,0 +1,23 @@
+uuid: 967a9353-1c72-4da8-a380-9c52659ff0f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_status
+    - message.template.ldbase_embargoes_access_request
+  module:
+    - options
+id: message.ldbase_embargoes_access_request.field_message_status
+field_name: field_message_status
+entity_type: message
+bundle: ldbase_embargoes_access_request
+label: 'Message Status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: Unread
+default_value_callback: ''
+settings: {  }
+field_type: list_string

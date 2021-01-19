@@ -5,9 +5,12 @@ dependencies:
   config:
     - field.field.message.ldbase_embargoes_access_request.field_embargo
     - field.field.message.ldbase_embargoes_access_request.field_from_user
+    - field.field.message.ldbase_embargoes_access_request.field_message_status
     - field.field.message.ldbase_embargoes_access_request.field_parent_node
     - field.field.message.ldbase_embargoes_access_request.field_to_user
     - message.template.ldbase_embargoes_access_request
+  module:
+    - options
 id: message.ldbase_embargoes_access_request.default
 targetEntityType: message
 bundle: ldbase_embargoes_access_request
@@ -28,6 +31,13 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_message_status:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_parent_node:
     weight: 3

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.message.ldbase_embargoes_access_request.field_embargo
     - field.field.message.ldbase_embargoes_access_request.field_from_user
+    - field.field.message.ldbase_embargoes_access_request.field_message_status
     - field.field.message.ldbase_embargoes_access_request.field_parent_node
     - field.field.message.ldbase_embargoes_access_request.field_to_user
     - message.template.ldbase_embargoes_access_request
@@ -32,6 +33,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_message_status:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_parent_node:
     weight: 2
