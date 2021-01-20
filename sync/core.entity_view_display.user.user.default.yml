@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.my_messages
     - views.view.projects_in_my_groups
+    - views.view.user_embargo_exemptions
   module:
     - layout_builder
     - layout_discovery
@@ -99,6 +100,19 @@ third_party_settings:
             region: content
             configuration:
               id: 'views_block:my_messages-block_1'
+              label: ''
+              provider: views
+              label_display: '0'
+              views_label: ''
+              items_per_page: none
+              context_mapping: {  }
+            additional: {  }
+            weight: 4
+          94b12631-091a-4fcb-8275-224fab18362e:
+            uuid: 94b12631-091a-4fcb-8275-224fab18362e
+            region: content
+            configuration:
+              id: 'views_block:user_embargo_exemptions-block_1'
               label: ''
               provider: views
               label_display: '0'
