@@ -16,7 +16,7 @@ third_party_settings:
 id: socialmediablock
 theme: portcullis
 region: sidebar_first
-weight: -21
+weight: 22
 provider: null
 plugin: social_media_block
 settings:

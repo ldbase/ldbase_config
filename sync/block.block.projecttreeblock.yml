@@ -21,7 +21,7 @@ provider: null
 plugin: project_tree_block
 settings:
   id: project_tree_block
-  label: 'Project Navigation'
+  label: 'Project Hierarchy'
   provider: ldbase_content
   label_display: visible
 visibility:
