@@ -1,0 +1,23 @@
+uuid: 42e4ed06-65ad-4d77-a8a6-917db2af13d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_harmonized_dataset
+    - node.type.dataset
+id: node.dataset.field_harmonized_dataset
+field_name: field_harmonized_dataset
+entity_type: node
+bundle: dataset
+label: 'Contribute to Harmonized Dataset?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

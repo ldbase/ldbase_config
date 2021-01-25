@@ -1,0 +1,30 @@
+uuid: 7180fea9-2883-4b8a-9c9e-d3a2555ee8a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.ldbase_harmonized_dataset.field_from_user
+    - field.field.message.ldbase_harmonized_dataset.field_message_status
+    - field.field.message.ldbase_harmonized_dataset.field_to_user
+    - message.template.ldbase_harmonized_dataset
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.ldbase_harmonized_dataset.mail_body
+targetEntityType: message
+bundle: ldbase_harmonized_dataset
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_from_user: true
+  field_message_status: true
+  field_to_user: true
+  partial_0: true
+  search_api_excerpt: true

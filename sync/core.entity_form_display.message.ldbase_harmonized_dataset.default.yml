@@ -1,0 +1,41 @@
+uuid: bc8ade63-761b-491d-b048-1f09cf8a934e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.ldbase_harmonized_dataset.field_from_user
+    - field.field.message.ldbase_harmonized_dataset.field_message_status
+    - field.field.message.ldbase_harmonized_dataset.field_to_user
+    - message.template.ldbase_harmonized_dataset
+id: message.ldbase_harmonized_dataset.default
+targetEntityType: message
+bundle: ldbase_harmonized_dataset
+mode: default
+content:
+  field_from_user:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_message_status:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_to_user:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

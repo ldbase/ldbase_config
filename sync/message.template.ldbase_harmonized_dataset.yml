@@ -1,0 +1,22 @@
+uuid: 9b9b5acc-2dea-4097-8519-6842db47edeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+template: ldbase_harmonized_dataset
+label: 'LDbase - Harmonized Dataset Contributor'
+description: 'Message sent when a user indicates they would like to contribute to the harmonized dataset.'
+text:
+  -
+    value: "<p>LDbase Notification: Contribution to Harmonized Dataset</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>A user is interested in contributing to the Harmonized Dataset.</p>\r\n\r\n<ul>\r\n\t<li>User: @user_name</li>\r\n\t<li>Email: @user_email</li>\r\n\t<li>Dataset: @link_to_dataset_information</li>\r\n</ul>\r\n"
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

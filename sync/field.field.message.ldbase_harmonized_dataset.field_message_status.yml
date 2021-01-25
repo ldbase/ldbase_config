@@ -1,0 +1,23 @@
+uuid: 55688f1a-2872-4f55-8279-9079217ea2ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_status
+    - message.template.ldbase_harmonized_dataset
+  module:
+    - options
+id: message.ldbase_harmonized_dataset.field_message_status
+field_name: field_message_status
+entity_type: message
+bundle: ldbase_harmonized_dataset
+label: 'Message Status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: Unread
+default_value_callback: ''
+settings: {  }
+field_type: list_string

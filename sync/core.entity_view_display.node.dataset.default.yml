@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.dataset.field_derivation_source
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
+    - field.field.node.dataset.field_harmonized_dataset
     - field.field.node.dataset.field_license
     - field.field.node.dataset.field_license_other
     - field.field.node.dataset.field_location
@@ -753,6 +754,16 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_harmonized_dataset:
+    weight: 38
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_license:
     weight: 15

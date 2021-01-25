@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.dataset.field_derivation_source
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
+    - field.field.node.dataset.field_harmonized_dataset
     - field.field.node.dataset.field_license
     - field.field.node.dataset.field_license_other
     - field.field.node.dataset.field_location
@@ -50,6 +51,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  project_latest_code_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  project_latest_datasets_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   project_latest_documents_entity_view_1:
     weight: 10
     settings: {  }
@@ -69,6 +80,7 @@ hidden:
   field_doi: true
   field_external_resource: true
   field_format_information: true
+  field_harmonized_dataset: true
   field_license: true
   field_license_other: true
   field_location: true

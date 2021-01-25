@@ -1,0 +1,28 @@
+uuid: 698a1f62-66f6-40ad-ba1e-3895fa8de92d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_from_user
+    - message.template.ldbase_harmonized_dataset
+id: message.ldbase_harmonized_dataset.field_from_user
+field_name: field_from_user
+entity_type: message
+bundle: ldbase_harmonized_dataset
+label: 'From User'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
