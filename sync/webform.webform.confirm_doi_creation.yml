@@ -14,7 +14,7 @@ id: confirm_doi_creation
 title: 'Confirm DOI Creation'
 description: 'A form that asks if a user would like to DOI to be minted for the node that has been created/updated'
 category: 'LDbase Create/Update Forms'
-elements: "create_doi:\n  '#type': radios\n  '#title': 'Create DOI'\n  '#description': 'You did not provide a DOI. We could create one for you. It will cost us about $1 to do so. Would you like us to create one for you now?'\n  '#title_display': invisible\n  '#description_display': before\n  '#options': yes_no\n  '#required': true\n  '#required_error': 'You must select \"Yes\" or \"No\"'\nnode_id:\n  '#type': hidden\n  '#title': node_id"
+elements: "create_doi:\n  '#type': radios\n  '#title': 'Create DOI'\n  '#description': 'You did not provide a DOI. We could create one for you. It will cost us about $1 to do so. Would you like us to create one for you now?'\n  '#title_display': invisible\n  '#description_display': before\n  '#options': yes_no\n  '#required': true\n  '#required_error': 'You must select \"Yes\" or \"No\"'\nnode_id:\n  '#type': hidden\n  '#title': node_id\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Save"
 css: ''
 javascript: ''
 settings:
