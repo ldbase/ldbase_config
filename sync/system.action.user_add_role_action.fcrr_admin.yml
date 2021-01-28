@@ -1,0 +1,14 @@
+uuid: aee28dd8-5294-4e6b-bfed-b69573785151
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.fcrr_admin
+  module:
+    - user
+id: user_add_role_action.fcrr_admin
+label: 'Add the FCRR Admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: fcrr_admin

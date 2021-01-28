@@ -1,0 +1,14 @@
+uuid: e4a72488-a4ab-46db-83cd-b8cd16761225
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.fcrr_admin
+  module:
+    - user
+id: user_remove_role_action.fcrr_admin
+label: 'Remove the FCRR Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: fcrr_admin
