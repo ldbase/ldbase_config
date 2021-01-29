@@ -43,7 +43,7 @@ settings:
   form_prepopulate_source_entity_type: ''
   form_reset: false
   form_disable_autocomplete: false
-  form_novalidate: false
+  form_novalidate: true
   form_disable_inline_errors: false
   form_required: true
   form_unsaved: false
@@ -142,10 +142,11 @@ settings:
   wizard_keyboard: true
   wizard_prev_button_label: ''
   wizard_next_button_label: ''
-  wizard_toggle: false
+  wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   serial_disabled: false
+  token_delete: false
 access:
   create:
     roles:
