@@ -1,0 +1,28 @@
+uuid: 2c2faa02-0463-47ac-95fc-eda29a30e745
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_to_user
+    - message.template.ldbase_report_a_problem
+id: message.ldbase_report_a_problem.field_to_user
+field_name: field_to_user
+entity_type: message
+bundle: ldbase_report_a_problem
+label: 'To User'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

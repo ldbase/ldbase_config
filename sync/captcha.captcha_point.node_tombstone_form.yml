@@ -1,0 +1,7 @@
+uuid: 39db7ced-4001-4eb8-9913-6eb47e0eba20
+langcode: en
+status: false
+dependencies: {  }
+formId: node_tombstone_form
+captchaType: default
+label: null

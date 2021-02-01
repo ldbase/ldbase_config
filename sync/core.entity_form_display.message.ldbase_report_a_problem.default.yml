@@ -1,0 +1,41 @@
+uuid: af4f8dd5-0df0-4c80-898b-d149b1dd43cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.ldbase_report_a_problem.field_from_user
+    - field.field.message.ldbase_report_a_problem.field_message_status
+    - field.field.message.ldbase_report_a_problem.field_to_user
+    - message.template.ldbase_report_a_problem
+id: message.ldbase_report_a_problem.default
+targetEntityType: message
+bundle: ldbase_report_a_problem
+mode: default
+content:
+  field_from_user:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_message_status:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_to_user:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }
