@@ -655,7 +655,7 @@ display:
           expose:
             operator_id: search_api_fulltext_op
             label: ''
-            description: 'Search for <strong>ALL</strong> of these words <strong>(Boolean AND)</strong>'
+            description: 'Search for <strong>ALL</strong> of these words'
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
@@ -669,7 +669,10 @@ display:
               anonymous: '0'
               content_administrator: '0'
               administrator: '0'
+              fcrr_admin: '0'
             placeholder: ''
+            expose_fields: false
+            searched_fields_id: ''
           is_grouped: false
           group_info:
             label: 'Fulltext search'
@@ -716,7 +719,7 @@ display:
           expose:
             operator_id: search_api_fulltext_1_op
             label: ''
-            description: 'Search for <strong>ANY</strong> of these words <strong>(Boolean OR)</strong>'
+            description: 'Search for <strong>ANY</strong> of these words'
             use_operator: false
             operator: search_api_fulltext_1_op
             operator_limit_selection: false
@@ -730,7 +733,10 @@ display:
               anonymous: '0'
               content_administrator: '0'
               administrator: '0'
+              fcrr_admin: '0'
             placeholder: ''
+            expose_fields: false
+            searched_fields_id: ''
           is_grouped: false
           group_info:
             label: ''
@@ -761,7 +767,7 @@ display:
           expose:
             operator_id: search_api_fulltext_2_op
             label: ''
-            description: '<strong>EXCLUDE</strong> all of these words from search <strong>(Boolean NOT)</strong>'
+            description: '<strong>EXCLUDE</strong> all of these words'
             use_operator: false
             operator: search_api_fulltext_2_op
             operator_limit_selection: false
@@ -775,7 +781,10 @@ display:
               anonymous: '0'
               content_administrator: '0'
               administrator: '0'
+              fcrr_admin: '0'
             placeholder: ''
+            expose_fields: false
+            searched_fields_id: ''
           is_grouped: false
           group_info:
             label: ''
