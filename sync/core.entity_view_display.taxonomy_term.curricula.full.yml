@@ -1,16 +1,22 @@
-uuid: 8b008e0a-6470-4c96-8b3a-6b520be8c9ce
+uuid: bab95323-22ae-478b-8f5f-1c462cdb1bcb
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.full
     - field.field.taxonomy_term.curricula.field_needs_review
     - taxonomy.vocabulary.curricula
   module:
+    - layout_builder
     - text
-id: taxonomy_term.curricula.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.curricula.full
 targetEntityType: taxonomy_term
 bundle: curricula
-mode: default
+mode: full
 content:
   description:
     label: hidden
@@ -19,15 +25,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_needs_review:
-    type: boolean
-    weight: 1
-    region: content
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
 hidden:
+  field_needs_review: true
   search_api_excerpt: true

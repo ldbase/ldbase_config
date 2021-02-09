@@ -1,0 +1,30 @@
+uuid: 00212e03-2357-4630-9cbd-7c589f7f1074
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.time_methods.field_needs_review
+    - taxonomy.vocabulary.time_methods
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.time_methods.full
+targetEntityType: taxonomy_term
+bundle: time_methods
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_needs_review: true
+  search_api_excerpt: true

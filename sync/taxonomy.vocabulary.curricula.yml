@@ -2,7 +2,7 @@ uuid: b22ad672-679d-4e1a-af5b-9c42cdffcd3e
 langcode: en
 status: true
 dependencies: {  }
-name: Curricula
+name: 'Educational Curricula'
 vid: curricula
-description: ''
+description: 'originally called Curricula'
 weight: 0

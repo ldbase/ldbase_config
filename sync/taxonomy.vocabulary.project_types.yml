@@ -2,7 +2,7 @@ uuid: afed7a84-7fd6-4ec2-840f-fb7e4cd9424d
 langcode: en
 status: true
 dependencies: {  }
-name: 'Project Types'
+name: 'Project Descriptors'
 vid: project_types
-description: ''
+description: 'previously called Project Types'
 weight: 0

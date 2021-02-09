@@ -1,33 +1,30 @@
-uuid: c5a7179a-541c-4c41-b02c-67e1f7d8bffc
+uuid: 3baca59b-11c2-4899-9f3d-0e66412d8716
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.full
     - field.field.taxonomy_term.schooling.field_needs_review
     - taxonomy.vocabulary.schooling
   module:
+    - layout_builder
     - text
-id: taxonomy_term.schooling.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.schooling.full
 targetEntityType: taxonomy_term
 bundle: schooling
-mode: default
+mode: full
 content:
   description:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_needs_review:
-    weight: 0
-    label: above
-    settings:
-      format: default
-      format_custom_true: ''
-      format_custom_false: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
 hidden:
+  field_needs_review: true
   search_api_excerpt: true

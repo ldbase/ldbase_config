@@ -6,6 +6,7 @@ dependencies:
     - field.storage.taxonomy_term.field_needs_review
     - system.menu.admin
     - user.role.administrator
+    - user.role.fcrr_admin
   module:
     - taxonomy
     - user
@@ -28,6 +29,7 @@ display:
         options:
           role:
             administrator: administrator
+            fcrr_admin: fcrr_admin
       cache:
         type: tag
         options: {  }

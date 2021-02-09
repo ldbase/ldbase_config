@@ -1,16 +1,22 @@
-uuid: e8f99445-58f5-423d-af2c-a8d52faf490a
+uuid: 1b20ab43-d4fa-46e4-9217-5a7d37eedec3
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.full
     - field.field.taxonomy_term.project_types.field_needs_review
     - taxonomy.vocabulary.project_types
   module:
+    - layout_builder
     - text
-id: taxonomy_term.project_types.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.project_types.full
 targetEntityType: taxonomy_term
 bundle: project_types
-mode: default
+mode: full
 content:
   description:
     label: hidden
@@ -19,15 +25,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_needs_review:
-    type: boolean
-    weight: 1
-    region: content
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
 hidden:
+  field_needs_review: true
   search_api_excerpt: true

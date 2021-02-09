@@ -1,0 +1,30 @@
+uuid: 67409e50-ff29-4cb4-a95c-30bae0fc112b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.full
+    - field.field.taxonomy_term.special_populations.field_needs_review
+    - taxonomy.vocabulary.special_populations
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.special_populations.full
+targetEntityType: taxonomy_term
+bundle: special_populations
+mode: full
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_needs_review: true
+  search_api_excerpt: true

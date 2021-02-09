@@ -2,7 +2,7 @@ uuid: 2b1abcf7-59f6-429e-bd71-4a6dd16a9c8c
 langcode: en
 status: true
 dependencies: {  }
-name: 'Time Methods'
+name: 'Developmental Designs'
 vid: time_methods
-description: ''
+description: 'originally called Time Methods'
 weight: 0

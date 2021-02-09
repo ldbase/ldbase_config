@@ -1,16 +1,22 @@
-uuid: 14ce4107-a871-40ea-87fb-51a73cc402ff
+uuid: 90d874cc-2357-46f4-923d-19278c5ec2d2
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.full
     - field.field.taxonomy_term.dataset_variables.field_needs_review
     - taxonomy.vocabulary.dataset_variables
   module:
+    - layout_builder
     - text
-id: taxonomy_term.dataset_variables.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.dataset_variables.full
 targetEntityType: taxonomy_term
 bundle: dataset_variables
-mode: default
+mode: full
 content:
   description:
     label: hidden
@@ -19,15 +25,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_needs_review:
-    type: boolean
-    weight: 1
-    region: content
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
 hidden:
+  field_needs_review: true
   search_api_excerpt: true
