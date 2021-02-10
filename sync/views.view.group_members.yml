@@ -827,7 +827,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: "<div id=\"manage-members-header-text\"><p>This is where you can add/remove LDbase users who have the ability to edit your project's pages and data. There are two roles available.</p></div>\r\n<div id=\"manage-members-administrator-info\">\r\nA Project Administrator can\r\n<ul id=\"manage-members-administrator-list\">\r\n<li>Add/Edit all project metadata</li>\r\n<li>Upload data to the project (datasets, codebooks, code, and documents)</li>\r\n<li>Approve exempt access to certain users for any data you have embargoed</li>\r\n<li>Access/Edit embargoed data</li>\r\n<li>Add/Remove Project Editors and other Project Administrators</li>\r\n<li>Delete the project completely from LDbase</li>\r\n</ul>\r\n</div>\r\n<div id=\"manage-members-editor-info\">\r\nA Project Editor can\r\n<ul id=\"manage-members-administrator-list\">\r\n<li>Add/Edit all project metadata</li>\r\n<li>Upload data to the project (datasets, codebooks, code, and documents)</li>\r\n<li>Approve exempt access to certain users for any data you have embargoed</li>\r\n<li>Access/Edit embargoed data</li>\r\n</ul>\r\n</div>\r\n"
+            value: '<p>This is where you can add/remove LDbase users who have the ability to edit your project''s pages and data. There are two roles available.</p>'
             format: full_html
           plugin_id: text
       fields:
@@ -1373,7 +1373,20 @@ display:
             view_group_content: '0'
           destination: true
           plugin_id: dropbutton
-      footer: {  }
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div id=\"manage-members-administrator-info\" class=\"col-md\">\r\n      <h4>A Project Administrator can</h4>\r\n      <ul id=\"manage-members-administrator-list\">\r\n        <li>Add/Edit all project metadata</li>\r\n        <li>Upload data to the project (datasets, codebooks, code, and documents)</li>\r\n        <li>Approve exempt access to certain users for any data you have embargoed</li>\r\n        <li>Access/Edit embargoed data</li>\r\n        <li>Add/Remove Project Editors and other Project Administrators</li>\r\n        <li>Delete the project completely from LDbase</li>\r\n      </ul>\r\n    </div>\r\n    <div id=\"manage-members-editor-info\" class=\"col-md\">\r\n      <h4>A Project Editor can</h4>\r\n      <ul id=\"manage-members-administrator-list\">\r\n        <li>Add/Edit all project metadata</li>\r\n        <li>Upload data to the project (datasets, codebooks, code, and documents)</li>\r\n        <li>Approve exempt access to certain users for any data you have embargoed</li>\r\n        <li>Access/Edit embargoed data</li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</div>"
+            format: full_html
+          plugin_id: text
       relationships:
         gc__user:
           id: gc__user
