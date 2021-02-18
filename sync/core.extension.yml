@@ -1,6 +1,7 @@
 module:
   active_facet_pills: 0
   address: 0
+  anonymizer: 0
   asset_injector: 0
   automated_cron: 0
   backup_migrate: 0
@@ -9,6 +10,7 @@ module:
   block_content: 0
   breakpoint: 0
   captcha: 0
+  checklistapi: 0
   ckeditor: 0
   collapsiblock: 0
   color: 0
@@ -38,6 +40,11 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  gdpr: 0
+  gdpr_consent: 0
+  gdpr_dump: 0
+  gdpr_fields: 0
+  gdpr_tasks: 0
   gnode: 0
   group: 0
   hal: 0
@@ -122,6 +129,7 @@ module:
   views: 10
   paragraphs: 11
   standard: 1000
+  eu_cookie_compliance: 1001
 theme:
   stable: 0
   classy: 0

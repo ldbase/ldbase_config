@@ -1,0 +1,23 @@
+uuid: 63b218f7-f1f6-416d-b3e4-65725aaf6412
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.gdpr_task.removal_log
+    - gdpr_tasks.gdpr_task_type.gdpr_remove
+  module:
+    - gdpr_tasks
+_core:
+  default_config_hash: Z_X9g5Vd9lXZYZ5RZP-R97b0YqLX5u3C9hfjZ37_rNw
+id: gdpr_task.gdpr_remove.removal_log
+field_name: removal_log
+entity_type: gdpr_task
+bundle: gdpr_remove
+label: 'Removal Log'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: gdpr_task_item

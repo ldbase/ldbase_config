@@ -1,0 +1,21 @@
+uuid: a6562ec7-6913-4944-9fec-ab9ef0ab2bb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.notes
+    - message.template.consent_agreement_accepted
+_core:
+  default_config_hash: RlJvoowERx8t79OfpmaoN_2drbDpTo6-gtJKdE9yeRA
+id: message.consent_agreement_accepted.notes
+field_name: notes
+entity_type: message
+bundle: consent_agreement_accepted
+label: Notes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

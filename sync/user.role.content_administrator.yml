@@ -87,6 +87,7 @@ permissions:
   - 'delete terms in tags'
   - 'delete terms in time_methods'
   - 'delete webform revisions'
+  - 'display eu cookie compliance popup'
   - 'edit any article content'
   - 'edit any code content'
   - 'edit any dataset content'

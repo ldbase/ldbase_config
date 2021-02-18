@@ -1,0 +1,34 @@
+uuid: bd488edf-66fe-44ae-9cdc-8cbaef46edfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.consent_agreement_accepted.agreed
+    - field.field.message.consent_agreement_accepted.agreement
+    - field.field.message.consent_agreement_accepted.notes
+    - field.field.message.consent_agreement_accepted.user
+    - field.field.message.consent_agreement_accepted.user_accepted
+    - message.template.consent_agreement_accepted
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.consent_agreement_accepted.mail_body
+targetEntityType: message
+bundle: consent_agreement_accepted
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  agreed: true
+  agreement: true
+  notes: true
+  partial_0: true
+  search_api_excerpt: true
+  user: true
+  user_accepted: true

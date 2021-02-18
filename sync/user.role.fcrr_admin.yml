@@ -84,6 +84,7 @@ permissions:
   - 'delete terms in special_populations'
   - 'delete terms in tags'
   - 'delete terms in time_methods'
+  - 'display eu cookie compliance popup'
   - 'edit any code content'
   - 'edit any dataset content'
   - 'edit any document content'

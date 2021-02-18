@@ -9,6 +9,7 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access shortcuts'
+  - 'display eu cookie compliance popup'
   - 'opt-in or out of matomo tracking'
   - 'search content'
   - 'use search_api_autocomplete for search'

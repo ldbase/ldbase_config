@@ -1,0 +1,21 @@
+uuid: 7f1fb9e9-aabd-494b-88c2-a79024c050f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.gdpr_task.manual_data
+    - gdpr_tasks.gdpr_task_type.gdpr_sar
+_core:
+  default_config_hash: qx1Fhde0Zz-DyYmFrTokWewcT0wmGI23oOxQFQGwMao
+id: gdpr_task.gdpr_sar.manual_data
+field_name: manual_data
+entity_type: gdpr_task
+bundle: gdpr_sar
+label: 'Data Override'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
