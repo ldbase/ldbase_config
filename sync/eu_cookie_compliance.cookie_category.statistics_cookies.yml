@@ -1,0 +1,9 @@
+uuid: ff9d6391-70e1-4820-bdbb-03f47e3267d8
+langcode: en
+status: true
+dependencies: {  }
+id: statistics_cookies
+label: 'Statistics Cookies'
+description: 'These cookies collect information about how you use LDbase, like counting page views of data.  '
+checkbox_default_state: unchecked
+weight: -8

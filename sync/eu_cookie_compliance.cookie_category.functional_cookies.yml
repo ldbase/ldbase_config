@@ -1,0 +1,9 @@
+uuid: 296e5678-08e2-4f48-82ff-3dcc286e6e85
+langcode: en
+status: true
+dependencies: {  }
+id: functional_cookies
+label: 'Functional Cookies'
+description: 'These cookies are required to use many features in LDbase such as logging in.  Without them many parts of the site would be inaccessible or not function properly.'
+checkbox_default_state: required
+weight: -9

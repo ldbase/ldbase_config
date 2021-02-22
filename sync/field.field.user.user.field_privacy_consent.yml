@@ -1,0 +1,23 @@
+uuid: 2b81e16f-3ba3-445f-a9af-d5124a8e0211
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_privacy_consent
+  module:
+    - gdpr_consent
+    - user
+id: user.user.field_privacy_consent
+field_name: field_privacy_consent
+entity_type: user
+bundle: user
+label: 'Privacy Consent'
+description: ''
+required: true
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  target_id: '1'
+field_type: gdpr_user_consent

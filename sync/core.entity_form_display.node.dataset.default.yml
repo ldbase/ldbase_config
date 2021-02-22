@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.dataset.field_derivation_source
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
+    - field.field.node.dataset.field_gdpr_data_uplaod_consent
     - field.field.node.dataset.field_harmonized_dataset
     - field.field.node.dataset.field_license
     - field.field.node.dataset.field_license_other
@@ -31,6 +32,7 @@ dependencies:
     - node.type.dataset
   module:
     - address
+    - gdpr_consent
     - link
     - paragraphs
     - path
@@ -167,6 +169,12 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_gdpr_data_uplaod_consent:
+    weight: 33
+    settings: {  }
+    third_party_settings: {  }
+    type: gdpr_consent_widget
     region: content
   field_harmonized_dataset:
     weight: 32

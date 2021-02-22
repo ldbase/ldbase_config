@@ -2,7 +2,10 @@ uuid: c8b6cde7-f8fb-4800-a334-2d0f0f032410
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.user.user.field_privacy_consent
   module:
+    - gdpr_consent
     - path
     - user
 id: user.user.default
@@ -15,6 +18,12 @@ content:
     region: content
   contact:
     weight: 5
+    region: content
+  field_privacy_consent:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: gdpr_consent_widget
     region: content
   language:
     weight: 0
