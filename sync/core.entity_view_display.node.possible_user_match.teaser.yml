@@ -1,0 +1,25 @@
+uuid: 42caa8f9-2d35-45a7-9a2f-26a7b774ca22
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.possible_user_match.field_possible_match_person_id
+    - field.field.node.possible_user_match.field_real_person_id
+    - node.type.possible_user_match
+  module:
+    - user
+id: node.possible_user_match.teaser
+targetEntityType: node
+bundle: possible_user_match
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_possible_match_person_id: true
+  field_real_person_id: true
+  search_api_excerpt: true

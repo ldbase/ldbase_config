@@ -1,0 +1,28 @@
+uuid: 244e14a5-fe55-4e91-9142-0262c66055a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_real_person_id
+    - node.type.person
+    - node.type.possible_user_match
+id: node.possible_user_match.field_real_person_id
+field_name: field_real_person_id
+entity_type: node
+bundle: possible_user_match
+label: real_person_id
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

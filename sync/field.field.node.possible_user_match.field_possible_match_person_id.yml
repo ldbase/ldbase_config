@@ -1,0 +1,28 @@
+uuid: e1cfd2b4-9b76-45dd-a267-6d96d918f2ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_possible_match_person_id
+    - node.type.person
+    - node.type.possible_user_match
+id: node.possible_user_match.field_possible_match_person_id
+field_name: field_possible_match_person_id
+entity_type: node
+bundle: possible_user_match
+label: possible_match_person_id
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

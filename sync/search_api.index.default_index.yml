@@ -32,6 +32,7 @@ dependencies:
     - field.storage.node.field_professional_titles
     - field.storage.node.field_project_type
     - field.storage.node.field_publication_info
+    - field.storage.node.field_publishing_names
     - field.storage.node.field_schooling
     - field.storage.node.field_special_populations
     - field.storage.node.field_time_method
@@ -462,6 +463,15 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_publication_info
+  field_publishing_names:
+    label: 'Publishing Names'
+    datasource_id: 'entity:node'
+    property_path: field_publishing_names
+    type: text
+    boost: 0.5
+    dependencies:
+      config:
+        - field.storage.node.field_publishing_names
   field_related_organizations:
     label: 'Host Organizations'
     datasource_id: 'entity:node'
@@ -827,6 +837,7 @@ processor_settings:
       - field_professional_titles
       - field_professional_titles_fulltext
       - field_project_type_fulltext
+      - field_publishing_names
       - field_related_organizations_fulltext
       - field_related_persons_1_fulltext
       - field_schooling_fulltext
@@ -948,6 +959,7 @@ processor_settings:
     weights:
       preprocess_index: -2
       preprocess_query: -5
+    ignored: ._-
   transliteration:
     all_fields: false
     fields:

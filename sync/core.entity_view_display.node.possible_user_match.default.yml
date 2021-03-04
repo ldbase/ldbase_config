@@ -1,0 +1,38 @@
+uuid: bcd6d15c-4ca5-4bf3-82fd-453053b125d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.possible_user_match.field_possible_match_person_id
+    - field.field.node.possible_user_match.field_real_person_id
+    - node.type.possible_user_match
+  module:
+    - user
+id: node.possible_user_match.default
+targetEntityType: node
+bundle: possible_user_match
+mode: default
+content:
+  field_possible_match_person_id:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_real_person_id:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,17 @@
+uuid: c43822e4-b8b0-4a2c-8e6e-6fd6a0244c77
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Possible User Match'
+type: possible_user_match
+description: 'LDbase content that stores possible matches between Persons'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
