@@ -1,0 +1,32 @@
+uuid: f954f7b1-bff9-4b4e-8c98-dbf88d5df551
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.ldbase_possible_user_match_to_re.field_from_user
+    - field.field.message.ldbase_possible_user_match_to_re.field_group
+    - field.field.message.ldbase_possible_user_match_to_re.field_message_status
+    - field.field.message.ldbase_possible_user_match_to_re.field_to_user
+    - message.template.ldbase_possible_user_match_to_re
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.ldbase_possible_user_match_to_re.mail_body
+targetEntityType: message
+bundle: ldbase_possible_user_match_to_re
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_from_user: true
+  field_group: true
+  field_message_status: true
+  field_to_user: true
+  partial_0: true
+  search_api_excerpt: true

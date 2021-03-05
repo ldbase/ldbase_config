@@ -1,0 +1,22 @@
+uuid: 38265984-ea56-4fe3-907b-a5b15b6adee4
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+template: ldbase_possible_user_match_to_re
+label: 'LDbase - Possible User Match to Review'
+description: 'Message sent when a user indicates a possible match between their account and another contributor record'
+text:
+  -
+    value: "<p>LDbase Notification: Request to Review Contributor Account Duplication</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>The user <strong>@user</strong>&nbsp;has indicated that they believe they were entered as a contributor on <strong>@link_to_object</strong></p>\r\n\r\n<p>As an administrator for this project, you may approve and connect the user to the item or reject it and leave things as they are.</p>\r\n\r\n<p>Go @existing_records_requests_link&nbsp;to view the Existing Record Requests for this Project.</p>\r\n"
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

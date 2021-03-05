@@ -1,0 +1,28 @@
+uuid: 2d201840-7f23-486e-b72a-da28634582e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_group
+    - group.type.project_group
+    - message.template.ldbase_possible_user_match_to_re
+id: message.ldbase_possible_user_match_to_re.field_group
+field_name: field_group
+entity_type: message
+bundle: ldbase_possible_user_match_to_re
+label: 'Group Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      project_group: project_group
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

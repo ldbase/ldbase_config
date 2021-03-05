@@ -1,0 +1,28 @@
+uuid: 21a18633-55a5-4a2f-bf1e-b3af148a909a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_from_user
+    - message.template.ldbase_possible_duplicate_person
+id: message.ldbase_possible_duplicate_person.field_from_user
+field_name: field_from_user
+entity_type: message
+bundle: ldbase_possible_duplicate_person
+label: 'From User'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

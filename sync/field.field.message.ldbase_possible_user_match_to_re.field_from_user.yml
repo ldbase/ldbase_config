@@ -1,0 +1,28 @@
+uuid: 6530b549-f30e-4666-94de-0a62d39c80b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_from_user
+    - message.template.ldbase_possible_user_match_to_re
+id: message.ldbase_possible_user_match_to_re.field_from_user
+field_name: field_from_user
+entity_type: message
+bundle: ldbase_possible_user_match_to_re
+label: 'From User'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

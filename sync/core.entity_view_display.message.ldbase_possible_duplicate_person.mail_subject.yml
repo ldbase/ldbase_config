@@ -1,0 +1,30 @@
+uuid: 09309fa6-9c0b-4e3e-92df-7ca884e70f25
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_subject
+    - field.field.message.ldbase_possible_duplicate_person.field_from_user
+    - field.field.message.ldbase_possible_duplicate_person.field_message_status
+    - field.field.message.ldbase_possible_duplicate_person.field_to_user
+    - message.template.ldbase_possible_duplicate_person
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.ldbase_possible_duplicate_person.mail_subject
+targetEntityType: message
+bundle: ldbase_possible_duplicate_person
+mode: mail_subject
+content:
+  partial_0:
+    weight: 0
+    region: content
+hidden:
+  field_from_user: true
+  field_message_status: true
+  field_to_user: true
+  partial_1: true
+  search_api_excerpt: true

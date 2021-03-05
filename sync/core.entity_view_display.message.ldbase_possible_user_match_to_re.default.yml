@@ -1,0 +1,60 @@
+uuid: 0b898655-b0a2-4aad-8c15-e992352a60e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.ldbase_possible_user_match_to_re.field_from_user
+    - field.field.message.ldbase_possible_user_match_to_re.field_group
+    - field.field.message.ldbase_possible_user_match_to_re.field_message_status
+    - field.field.message.ldbase_possible_user_match_to_re.field_to_user
+    - message.template.ldbase_possible_user_match_to_re
+  module:
+    - options
+id: message.ldbase_possible_user_match_to_re.default
+targetEntityType: message
+bundle: ldbase_possible_user_match_to_re
+mode: default
+content:
+  field_from_user:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_group:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_message_status:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_to_user:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  partial_0:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  partial_1:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

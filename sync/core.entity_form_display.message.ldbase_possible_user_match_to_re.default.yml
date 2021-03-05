@@ -1,0 +1,52 @@
+uuid: de4d9ddc-6c52-45e9-8b26-baa6802d5e2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.ldbase_possible_user_match_to_re.field_from_user
+    - field.field.message.ldbase_possible_user_match_to_re.field_group
+    - field.field.message.ldbase_possible_user_match_to_re.field_message_status
+    - field.field.message.ldbase_possible_user_match_to_re.field_to_user
+    - message.template.ldbase_possible_user_match_to_re
+id: message.ldbase_possible_user_match_to_re.default
+targetEntityType: message
+bundle: ldbase_possible_user_match_to_re
+mode: default
+content:
+  field_from_user:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_group:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_message_status:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_to_user:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

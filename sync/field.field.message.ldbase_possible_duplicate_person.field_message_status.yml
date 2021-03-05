@@ -1,0 +1,23 @@
+uuid: 58446aff-8762-4647-8299-af58b8a621c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_status
+    - message.template.ldbase_possible_duplicate_person
+  module:
+    - options
+id: message.ldbase_possible_duplicate_person.field_message_status
+field_name: field_message_status
+entity_type: message
+bundle: ldbase_possible_duplicate_person
+label: 'Message Status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: Unread
+default_value_callback: ''
+settings: {  }
+field_type: list_string
