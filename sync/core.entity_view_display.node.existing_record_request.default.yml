@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.existing_record_request.field_requesting_person
     - node.type.existing_record_request
   module:
+    - options
     - user
 id: node.existing_record_request.default
 targetEntityType: node
@@ -33,14 +34,11 @@ content:
     type: entity_reference_label
     region: content
   field_request_status:
-    weight: 104
+    weight: 107
     label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
+    settings: {  }
     third_party_settings: {  }
-    type: boolean
+    type: list_default
     region: content
   field_requested_node_link:
     weight: 102

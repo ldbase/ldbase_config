@@ -1,23 +1,23 @@
-uuid: 256aadc1-faac-4cac-a3ca-9e03dbdb27ab
+uuid: ac7a7806-8af4-4e78-afde-553e46402d9f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_request_status
     - node.type.existing_record_request
+  module:
+    - options
 id: node.existing_record_request.field_request_status
 field_name: field_request_status
 entity_type: node
 bundle: existing_record_request
 label: 'Request Status'
-description: 'Has request been processed?'
+description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 0
+    value: New
 default_value_callback: ''
-settings:
-  on_label: Approved
-  off_label: Pending
-field_type: boolean
+settings: {  }
+field_type: list_string

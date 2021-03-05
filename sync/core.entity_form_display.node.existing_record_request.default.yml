@@ -43,11 +43,10 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_request_status:
-    weight: 124
-    settings:
-      display_label: true
+    weight: 127
+    settings: {  }
     third_party_settings: {  }
-    type: boolean_checkbox
+    type: options_select
     region: content
   field_requested_node_link:
     weight: 122
