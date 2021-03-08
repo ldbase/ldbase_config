@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.message.mail_subject
     - field.field.message.consent_agreement_accepted.agreed
-    - field.field.message.consent_agreement_accepted.agreement
     - field.field.message.consent_agreement_accepted.notes
     - field.field.message.consent_agreement_accepted.user
     - field.field.message.consent_agreement_accepted.user_accepted
@@ -26,7 +25,6 @@ content:
     region: content
 hidden:
   agreed: true
-  agreement: true
   notes: true
   partial_1: true
   search_api_excerpt: true

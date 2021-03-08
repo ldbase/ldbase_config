@@ -3,12 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_privacy_consent
     - views.view.my_messages
     - views.view.projects_in_my_groups
     - views.view.user_embargo_exemptions
   module:
-    - gdpr_consent
     - layout_builder
     - layout_discovery
     - ldbase_content
@@ -45,21 +43,6 @@ third_party_settings:
               context_mapping: {  }
             additional: {  }
             weight: 1
-          6a557a05-397d-474e-b0f4-a5f73783c6d0:
-            uuid: 6a557a05-397d-474e-b0f4-a5f73783c6d0
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:user:user:field_privacy_consent'
-              formatter:
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-                type: gdpr_consent_formatter
-            additional: {  }
-            weight: 3
         third_party_settings: {  }
       -
         layout_id: layout_twocol_section
@@ -162,13 +145,6 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_privacy_consent:
-    weight: 51
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: gdpr_consent_formatter
-    region: content
   masquerade:
     weight: 50
     settings: {  }
