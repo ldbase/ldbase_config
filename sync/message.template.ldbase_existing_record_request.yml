@@ -1,12 +1,12 @@
-uuid: 38265984-ea56-4fe3-907b-a5b15b6adee4
+uuid: 17b1cd71-80a7-435f-b886-e8f2010454db
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.basic_html
-template: ldbase_possible_user_match_to_re
-label: 'LDbase - Possible User Match to Review'
-description: 'Message sent when a user indicates a possible match between their account and another contributor record'
+template: ldbase_existing_record_request
+label: 'LDbase - Existing Record Request'
+description: 'Message sent to Group Admin when a user indicates a possible match between their account and another contributor record'
 text:
   -
     value: "<p>LDbase Notification: Request to Review Contributor Account Duplication</p>\r\n"

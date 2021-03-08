@@ -1,15 +1,15 @@
-uuid: 2d201840-7f23-486e-b72a-da28634582e7
+uuid: 6e3fd9e7-739d-42e1-b3b6-49b0bc502cd9
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.message.field_group
     - group.type.project_group
-    - message.template.ldbase_possible_user_match_to_re
-id: message.ldbase_possible_user_match_to_re.field_group
+    - message.template.ldbase_existing_record_request
+id: message.ldbase_existing_record_request.field_group
 field_name: field_group
 entity_type: message
-bundle: ldbase_possible_user_match_to_re
+bundle: ldbase_existing_record_request
 label: 'Group Name'
 description: ''
 required: false

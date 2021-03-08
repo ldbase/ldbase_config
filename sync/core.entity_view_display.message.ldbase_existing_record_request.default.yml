@@ -1,18 +1,18 @@
-uuid: 0b898655-b0a2-4aad-8c15-e992352a60e8
+uuid: 25783ecf-b7c4-4a9f-a516-19f41e89484f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.message.ldbase_possible_user_match_to_re.field_from_user
-    - field.field.message.ldbase_possible_user_match_to_re.field_group
-    - field.field.message.ldbase_possible_user_match_to_re.field_message_status
-    - field.field.message.ldbase_possible_user_match_to_re.field_to_user
-    - message.template.ldbase_possible_user_match_to_re
+    - field.field.message.ldbase_existing_record_request.field_from_user
+    - field.field.message.ldbase_existing_record_request.field_group
+    - field.field.message.ldbase_existing_record_request.field_message_status
+    - field.field.message.ldbase_existing_record_request.field_to_user
+    - message.template.ldbase_existing_record_request
   module:
     - options
-id: message.ldbase_possible_user_match_to_re.default
+id: message.ldbase_existing_record_request.default
 targetEntityType: message
-bundle: ldbase_possible_user_match_to_re
+bundle: ldbase_existing_record_request
 mode: default
 content:
   field_from_user:

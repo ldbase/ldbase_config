@@ -1,15 +1,15 @@
-uuid: 8a8f2873-6259-494a-8eb2-b7e966a4e398
+uuid: bb3819d3-107d-4e23-9514-6f3e6b40040e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.message.field_to_user
-    - message.template.ldbase_possible_user_match_to_re
-id: message.ldbase_possible_user_match_to_re.field_to_user
-field_name: field_to_user
+    - field.storage.message.field_from_user
+    - message.template.ldbase_existing_record_request
+id: message.ldbase_existing_record_request.field_from_user
+field_name: field_from_user
 entity_type: message
-bundle: ldbase_possible_user_match_to_re
-label: 'To User'
+bundle: ldbase_existing_record_request
+label: 'From User'
 description: ''
 required: false
 translatable: true
@@ -18,7 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:user'
   handler_settings:
-    include_anonymous: true
+    include_anonymous: false
     filter:
       type: _none
     target_bundles: null
