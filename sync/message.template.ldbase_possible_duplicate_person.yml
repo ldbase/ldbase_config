@@ -12,7 +12,7 @@ text:
     value: "<p>LDbase Notification: Possible Contributor Match Found</p>\r\n"
     format: basic_html
   -
-    value: "<p>Based on your user information, LDbase has found a contributor&nbsp;in the system that should actually be a reference to your account.</p>\r\n\r\n<p>Go to @possible_matches_link to see the information about the possible match.&nbsp;&nbsp;</p>\r\n\r\n<p>If you agree that the reference should be to your account, you can use the form there to request the fix.</p>\r\n"
+    value: "<p>Based on your user information, LDbase has found a contributor&nbsp;in the system that may actually be a reference to your account.</p>\r\n\r\n<p>Go to @possible_matches_link to see the information about the possible match.&nbsp;&nbsp;</p>\r\n\r\n<p>If you agree that the reference should be to your account, you can use the form there to request the fix.</p>\r\n"
     format: basic_html
 settings:
   'token options':

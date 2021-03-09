@@ -3,16 +3,27 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.possible_user_match.field_content_id
     - field.field.node.possible_user_match.field_possible_match_person_id
     - field.field.node.possible_user_match.field_real_person_id
+    - field.field.node.possible_user_match.field_user_match_status
     - node.type.possible_user_match
   module:
+    - options
     - user
 id: node.possible_user_match.default
 targetEntityType: node
 bundle: possible_user_match
 mode: default
 content:
+  field_content_id:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_possible_match_person_id:
     weight: 102
     label: above
@@ -28,6 +39,13 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_user_match_status:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   links:
     weight: 100

@@ -1,0 +1,13 @@
+uuid: 3ea8d79e-c262-4190-b670-870286526b05
+langcode: en
+status: true
+dependencies:
+  module:
+    - ldbase_new_account
+_core:
+  default_config_hash: Rg8DB9zWXXY-Z1-jH54tyrWhpYIfpe4vISQJzlfr9Hk
+id: reject_possible_account_match
+label: 'LDbase - Reject Possible Account Match'
+type: node
+plugin: reject_possible_account_match
+configuration: {  }

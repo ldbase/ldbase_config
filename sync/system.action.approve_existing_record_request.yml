@@ -5,9 +5,9 @@ dependencies:
   module:
     - ldbase_new_account
 _core:
-  default_config_hash: wHfwa4qjjqANK4kl0v7SWIiAHPbKmJD0Gk8n76Nxnw8
+  default_config_hash: GeiKBlVLK0gRwSgfHz-bNklNKDFNMh_RGIwc9JKnU4g
 id: approve_existing_record_request
-label: 'Approve Existing Record Request'
+label: 'LDbase - Approve Existing Record Request'
 type: node
 plugin: approve_existing_record_request
 configuration: {  }

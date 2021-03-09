@@ -5,9 +5,9 @@ dependencies:
   module:
     - ldbase_new_account
 _core:
-  default_config_hash: 9Pz-TCeCV2WwnJLVljUEonbyp0n5nyAmlM1VVcK_q-M
+  default_config_hash: HZRljo53vnlyyF0TKTUY-muxgnEnXOB7XHKaL73iuNs
 id: reject_existing_record_request
-label: 'Reject Existing Record Request'
+label: 'LDbase - Reject Existing Record Request'
 type: node
 plugin: reject_existing_record_request
 configuration: {  }

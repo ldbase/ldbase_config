@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.possible_user_match.field_content_id
     - field.field.node.possible_user_match.field_possible_match_person_id
     - field.field.node.possible_user_match.field_real_person_id
+    - field.field.node.possible_user_match.field_user_match_status
     - node.type.possible_user_match
   module:
     - path
@@ -19,6 +21,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_content_id:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_possible_match_person_id:
     weight: 122
     settings:
@@ -38,6 +50,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_user_match_status:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   path:
     type: path

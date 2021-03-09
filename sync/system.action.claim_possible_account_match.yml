@@ -1,0 +1,13 @@
+uuid: 4ba77f23-9d2a-4b29-990d-01d0a0ceb553
+langcode: en
+status: true
+dependencies:
+  module:
+    - ldbase_new_account
+_core:
+  default_config_hash: XNMJ2cDCuvodWR7DFZpluk9eInKmn6A2v3hLDGI5Av0
+id: claim_possible_account_match
+label: 'LDbase - Claim Possible Account Match'
+type: node
+plugin: claim_possible_account_match
+configuration: {  }

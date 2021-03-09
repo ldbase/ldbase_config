@@ -1,0 +1,23 @@
+uuid: 5c25af6e-5501-422a-afbb-fc266d6d85a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_match_status
+    - node.type.possible_user_match
+  module:
+    - options
+id: node.possible_user_match.field_user_match_status
+field_name: field_user_match_status
+entity_type: node
+bundle: possible_user_match
+label: Status
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: new
+default_value_callback: ''
+settings: {  }
+field_type: list_string
