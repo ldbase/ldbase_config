@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.person.body
+    - field.field.node.person.field_accepted_terms_of_use
     - field.field.node.person.field_areas_of_expertise
     - field.field.node.person.field_drupal_account_id
     - field.field.node.person.field_email
@@ -23,6 +24,7 @@ dependencies:
     - node.type.person
   module:
     - address
+    - datetime
     - image
     - link
     - path
@@ -48,6 +50,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_accepted_terms_of_use:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   field_areas_of_expertise:
     weight: 20
     settings:

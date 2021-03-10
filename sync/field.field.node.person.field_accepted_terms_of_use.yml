@@ -1,0 +1,21 @@
+uuid: e1e31d12-99f9-424b-a970-6773815b674b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_accepted_terms_of_use
+    - node.type.person
+  module:
+    - datetime
+id: node.person.field_accepted_terms_of_use
+field_name: field_accepted_terms_of_use
+entity_type: node
+bundle: person
+label: 'Accepted Terms of Use'
+description: 'Date time that user accepted LDbase Terms of Use'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
