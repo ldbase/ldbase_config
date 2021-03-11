@@ -12,21 +12,21 @@ langcode: en
 popup_agreed:
   value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
   format: basic_html
-popup_agree_button_message: Accept
+popup_agree_button_message: 'Allow All Cookies'
 popup_agreed_enabled: false
-popup_bg_hex: '671e30'
+popup_bg_hex: '222222'
 popup_clicking_confirmation: false
 popup_scrolling_confirmation: false
 popup_delay: 1000
-show_more_info: true
+show_more_info: false
 popup_more_info_button_message: 'More info'
-popup_enabled: false
+popup_enabled: true
 popup_find_more_button_message: 'More info'
 popup_height: null
 popup_hide_agreed: false
 popup_hide_button_message: Hide
 popup_info:
-  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
+  value: "<p><span>To enhance your experience, we use cookies on this site.</span><br />\r\nOur usage cookies do not store any personally identifiable information (IP addresses are anonymized) however, you may still choose to opt-out. For more information, please refer to our <a href=\"/terms-of-use\">Terms of Use.</a></p>\r\n"
   format: basic_html
 mobile_popup_info:
   value: ''
@@ -46,10 +46,10 @@ cookie_name: ''
 exclude_uid_1: false
 better_support_for_screen_readers: false
 use_mobile_message: false
-method: categories
-disagree_button_label: 'No, thanks'
-disabled_javascripts: "statistics_cookies:modules/contrib/matomo/js/matomo.js\r\nstatistics_cookie:matomo/matomo.js"
-automatic_cookies_removal: true
+method: opt_out
+disagree_button_label: 'Use Necessary Cookies Only'
+disabled_javascripts: ''
+automatic_cookies_removal: false
 allowed_cookies: ''
 consent_storage_method: basic
 withdraw_message:
@@ -57,7 +57,7 @@ withdraw_message:
   format: basic_html
 withdraw_action_button_label: 'Withdraw consent'
 withdraw_tab_button_label: 'Privacy settings'
-withdraw_enabled: true
+withdraw_enabled: false
 enable_save_preferences_button: true
 save_preferences_button_label: 'Save preferences'
 accept_all_categories_button_label: 'Accept all cookies'

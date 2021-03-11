@@ -1,5 +1,5 @@
 site_id: '1'
-url_http: 'http://localhost:9999/matomo/'
+url_http: 'http://localhost/matomo/'
 url_https: ''
 domain_mode: 0
 visibility:
@@ -7,7 +7,7 @@ visibility:
   request_path_pages: "/admin\r\n/admin/*\r\n/batch"
   user_role_mode: 1
   user_role_roles: {  }
-  user_account_mode: 0
+  user_account_mode: 1
 track:
   mailto: true
   files: true
@@ -18,6 +18,7 @@ track:
   site_search: false
 privacy:
   donottrack: true
+  disablecookies: false
 custom:
   variable:
     1:
@@ -46,7 +47,7 @@ custom:
       scope: visit
       slot: 5
 codesnippet:
-  before: ''
+  before: "document.addEventListener('DOMContentLoaded', function(){ \r\n  \r\n  var consentGiven = 0;\r\n  var cookieArray = document.cookie.split(\";\"); \r\n  \r\n  for(var i=0; i < cookieArray.length; i++) {\r\n    var cookiePair = cookieArray[i].split(\"=\");\r\n    \r\n    if('cookie-agreed' == cookiePair[0].trim()) {\r\n    \r\n      if(cookiePair[1].trim() == 2) {\r\n        consentGiven = 1;\r\n      }\r\n    }\r\n  }   \r\n \r\n  if (!consentGiven) {\r\n      _paq.push(['requireConsent']);\r\n      _paq.push(['disableCookies']);\r\n    }\r\n \r\n    if (consentGiven) {\r\n      _paq.push(['setConsentGiven']);\r\n    }\r\n\r\n}, false);"
   after: ''
 translation_set: false
 cache: true
