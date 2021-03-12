@@ -10,7 +10,7 @@ id: node.project.field_curricula
 field_name: field_curricula
 entity_type: node
 bundle: project
-label: Curricula
+label: 'Educational Curricula'
 description: ''
 required: false
 translatable: false

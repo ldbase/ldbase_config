@@ -10,7 +10,7 @@ id: node.project.field_time_method
 field_name: field_time_method
 entity_type: node
 bundle: project
-label: 'Time Method'
+label: 'Developmental Design'
 description: ''
 required: false
 translatable: false
