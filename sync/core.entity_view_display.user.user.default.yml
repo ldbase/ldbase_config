@@ -45,14 +45,13 @@ third_party_settings:
             weight: 1
         third_party_settings: {  }
       -
-        layout_id: layout_twocol_section
+        layout_id: layout_onecol
         layout_settings:
-          label: 'Buttons Section'
-          column_widths: 50-50
+          label: 'User Tasks'
         components:
           0909bd87-208b-4e12-9dc0-20672713ff85:
             uuid: 0909bd87-208b-4e12-9dc0-20672713ff85
-            region: first
+            region: content
             configuration:
               id: add_project_button
               label: 'Add Project Button'
@@ -60,10 +59,10 @@ third_party_settings:
               label_display: '0'
               context_mapping: {  }
             additional: {  }
-            weight: 0
+            weight: 1
           f3afc04c-94cd-433a-9eca-b554b333c26b:
             uuid: f3afc04c-94cd-433a-9eca-b554b333c26b
-            region: second
+            region: content
             configuration:
               id: contributions_link
               label: 'Link to Contributions (Person) Page'
@@ -71,7 +70,7 @@ third_party_settings:
               label_display: '0'
               context_mapping: {  }
             additional: {  }
-            weight: 0
+            weight: 2
         third_party_settings: {  }
       -
         layout_id: layout_onecol

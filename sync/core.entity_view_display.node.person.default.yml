@@ -215,21 +215,6 @@ third_party_settings:
                 type: string
             additional: {  }
             weight: 12
-          cf478f11-2546-41ab-b9ba-0919d8f25b0b:
-            uuid: cf478f11-2546-41ab-b9ba-0919d8f25b0b
-            region: first
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:person:field_email'
-              formatter:
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-                type: basic_string
-            additional: {  }
-            weight: 19
         third_party_settings: {  }
       -
         layout_id: layout_onecol
