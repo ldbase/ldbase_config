@@ -1,5 +1,5 @@
-doi_crossref_api_endpoint: 'https://doi.crossref.org/servlet/deposit'
-doi_crossref_prefix: 10.99999/
+doi_crossref_api_endpoint: 'https://test.crossref.org/servlet/deposit'
+doi_crossref_prefix: 10.33009/
 doi_crossref_suffix_source: timerand
 doi_crossref_username: myuser
 doi_crossref_password: mypassword
