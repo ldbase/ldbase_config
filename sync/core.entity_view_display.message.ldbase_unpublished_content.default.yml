@@ -1,0 +1,51 @@
+uuid: 80a9207f-23b9-43af-80c0-02ac6f20da54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.ldbase_unpublished_content.field_from_user
+    - field.field.message.ldbase_unpublished_content.field_message_status
+    - field.field.message.ldbase_unpublished_content.field_to_user
+    - message.template.ldbase_unpublished_content
+  module:
+    - options
+id: message.ldbase_unpublished_content.default
+targetEntityType: message
+bundle: ldbase_unpublished_content
+mode: default
+content:
+  field_from_user:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_message_status:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_to_user:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  partial_0:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  partial_1:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

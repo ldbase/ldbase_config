@@ -1,0 +1,30 @@
+uuid: 3e240d32-3273-4cbd-b03c-269125e311be
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.ldbase_unpublished_content.field_from_user
+    - field.field.message.ldbase_unpublished_content.field_message_status
+    - field.field.message.ldbase_unpublished_content.field_to_user
+    - message.template.ldbase_unpublished_content
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.ldbase_unpublished_content.mail_body
+targetEntityType: message
+bundle: ldbase_unpublished_content
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_from_user: true
+  field_message_status: true
+  field_to_user: true
+  partial_0: true
+  search_api_excerpt: true
