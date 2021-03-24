@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.project.field_curricula
     - field.field.node.project.field_doi
     - field.field.node.project.field_grant_information
+    - field.field.node.project.field_project_logo
     - field.field.node.project.field_project_type
     - field.field.node.project.field_related_organizations
     - field.field.node.project.field_related_persons
@@ -37,6 +38,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  project_latest_code_entity_view_1:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   project_latest_datasets_entity_view_1:
     weight: 10
     settings: {  }
@@ -54,6 +60,7 @@ hidden:
   field_curricula: true
   field_doi: true
   field_grant_information: true
+  field_project_logo: true
   field_project_type: true
   field_related_organizations: true
   field_related_persons: true
