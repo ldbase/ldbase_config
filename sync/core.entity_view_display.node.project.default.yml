@@ -47,6 +47,26 @@ third_party_settings:
               label_display: visible
               context_mapping: {  }
             additional: {  }
+            weight: 1
+          9610d39f-35a7-4ef9-b770-180f1bd1533e:
+            uuid: 9610d39f-35a7-4ef9-b770-180f1bd1533e
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_project_logo'
+              label: 'Project Logo'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: medium
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
             weight: 0
         third_party_settings: {  }
       -
@@ -72,7 +92,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 1
+            weight: 2
           de4cf69d-ed3e-458f-b40d-fea4366e4d82:
             uuid: de4cf69d-ed3e-458f-b40d-fea4366e4d82
             region: content
@@ -83,7 +103,7 @@ third_party_settings:
               label_display: '0'
               context_mapping: {  }
             additional: {  }
-            weight: 2
+            weight: 3
         third_party_settings: {  }
       -
         layout_id: layout_onecol
