@@ -23,6 +23,7 @@ dependencies:
     - layout_builder
     - layout_discovery
     - ldbase_citations
+    - ldbase_handlers
     - link
     - system
     - text
@@ -104,6 +105,18 @@ third_party_settings:
               context_mapping: {  }
             additional: {  }
             weight: 3
+          383740c8-38ad-41c2-b822-f6cd50dbe39a:
+            uuid: 383740c8-38ad-41c2-b822-f6cd50dbe39a
+            region: content
+            configuration:
+              id: download_all_files_link
+              label: 'LDbase Download All Files Link'
+              provider: ldbase_handlers
+              label_display: '0'
+              context_mapping:
+                node: layout_builder.entity
+            additional: {  }
+            weight: 4
         third_party_settings: {  }
       -
         layout_id: layout_onecol
