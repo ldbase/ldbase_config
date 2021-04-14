@@ -94,6 +94,12 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 2
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Citation and Download Tasks'
+        components:
           de4cf69d-ed3e-458f-b40d-fea4366e4d82:
             uuid: de4cf69d-ed3e-458f-b40d-fea4366e4d82
             region: content
@@ -104,7 +110,7 @@ third_party_settings:
               label_display: '0'
               context_mapping: {  }
             additional: {  }
-            weight: 3
+            weight: 0
           383740c8-38ad-41c2-b822-f6cd50dbe39a:
             uuid: 383740c8-38ad-41c2-b822-f6cd50dbe39a
             region: content
@@ -116,7 +122,7 @@ third_party_settings:
               context_mapping:
                 node: layout_builder.entity
             additional: {  }
-            weight: 4
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
