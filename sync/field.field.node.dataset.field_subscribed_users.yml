@@ -1,0 +1,28 @@
+uuid: 16781615-d6c5-4b7f-a132-1cb05143a43e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subscribed_users
+    - node.type.dataset
+id: node.dataset.field_subscribed_users
+field_name: field_subscribed_users
+entity_type: node
+bundle: dataset
+label: 'Subscribed Users'
+description: 'Users who have asked to be notified when the dataset file changes'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

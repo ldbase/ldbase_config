@@ -1,0 +1,30 @@
+uuid: 956633b8-fc97-4ed6-b0cd-39903845920a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.ldbase_dataset_update_message.field_from_user
+    - field.field.message.ldbase_dataset_update_message.field_message_status
+    - field.field.message.ldbase_dataset_update_message.field_to_user
+    - message.template.ldbase_dataset_update_message
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.ldbase_dataset_update_message.mail_body
+targetEntityType: message
+bundle: ldbase_dataset_update_message
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_from_user: true
+  field_message_status: true
+  field_to_user: true
+  partial_0: true
+  search_api_excerpt: true

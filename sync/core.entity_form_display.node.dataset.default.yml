@@ -24,6 +24,7 @@ dependencies:
     - field.field.node.dataset.field_related_organizations
     - field.field.node.dataset.field_related_persons
     - field.field.node.dataset.field_special_populations
+    - field.field.node.dataset.field_subscribed_users
     - field.field.node.dataset.field_time_points
     - field.field.node.dataset.field_unaffiliated_parents
     - field.field.node.dataset.field_user_agreement
@@ -238,6 +239,16 @@ content:
       size: 60
       placeholder: ''
       match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_subscribed_users:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content

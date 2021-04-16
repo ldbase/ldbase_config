@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.dataset.field_related_organizations
     - field.field.node.dataset.field_related_persons
     - field.field.node.dataset.field_special_populations
+    - field.field.node.dataset.field_subscribed_users
     - field.field.node.dataset.field_time_points
     - field.field.node.dataset.field_unaffiliated_parents
     - field.field.node.dataset.field_user_agreement
@@ -88,6 +89,7 @@ hidden:
   field_related_organizations: true
   field_related_persons: true
   field_special_populations: true
+  field_subscribed_users: true
   field_time_points: true
   field_unaffiliated_parents: true
   field_user_agreement: true

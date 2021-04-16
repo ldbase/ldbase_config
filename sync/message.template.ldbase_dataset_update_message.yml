@@ -1,0 +1,22 @@
+uuid: 3aed3928-5826-4c09-a55e-479373ce4924
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+template: ldbase_dataset_update_message
+label: 'LDbase - Dataset Update Notification'
+description: 'Message sent to subscribers when a dataset file has been updated'
+text:
+  -
+    value: "<p>LDbase Notification: Dataset File Has Been Updated</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>A new version of the file for <strong>@link_to_dataset</strong> has been uploaded to LDbase.</p>\r\n\r\n<p>You received this message because you requested to be notified when this dataset file is updated.&nbsp;</p>\r\n\r\n<p>If you no longer wish to receive these notifications, use the link above to view the dataset and there click the \"Stop Updates\" button.</p>\r\n"
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

@@ -1,0 +1,41 @@
+uuid: ebb08459-9fc2-4c63-8186-40cce001370f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.ldbase_dataset_update_message.field_from_user
+    - field.field.message.ldbase_dataset_update_message.field_message_status
+    - field.field.message.ldbase_dataset_update_message.field_to_user
+    - message.template.ldbase_dataset_update_message
+id: message.ldbase_dataset_update_message.default
+targetEntityType: message
+bundle: ldbase_dataset_update_message
+mode: default
+content:
+  field_from_user:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_message_status:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_to_user:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

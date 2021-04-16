@@ -38,7 +38,7 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/*/view-dataset-versions\r\n/*/*/*/*/*-version\r\n/access-request/*"
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/*/view-dataset-versions\r\n/*/*/*/dataset-subscription\r\n/*/*/*/*/*-version\r\n/access-request/*"
     negate: true
     context_mapping: {  }
   request_path_exclusion:
