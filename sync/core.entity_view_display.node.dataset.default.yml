@@ -74,6 +74,12 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Local Tasks Section'
+        components:
           1cc5773c-1cca-4537-95af-0d462422c120:
             uuid: 1cc5773c-1cca-4537-95af-0d462422c120
             region: content
@@ -84,7 +90,7 @@ third_party_settings:
               label_display: '0'
               context_mapping: {  }
             additional: {  }
-            weight: 2
+            weight: 0
           5ec04bd9-0eb9-4175-9a84-b06d7df0fe86:
             uuid: 5ec04bd9-0eb9-4175-9a84-b06d7df0fe86
             region: content
@@ -96,7 +102,7 @@ third_party_settings:
               context_mapping:
                 node: layout_builder.entity
             additional: {  }
-            weight: 3
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
