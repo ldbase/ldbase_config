@@ -657,6 +657,23 @@ third_party_settings:
             additional: {  }
             weight: 0
         third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Citations Section'
+        components:
+          544f05ed-8460-4bca-b71c-2b42a7a1f45c:
+            uuid: 544f05ed-8460-4bca-b71c-2b42a7a1f45c
+            region: content
+            configuration:
+              id: ldbase_citation_display_block
+              label: 'Ldbase citation display block'
+              provider: ldbase_citations
+              label_display: '0'
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
 id: node.dataset.default
 targetEntityType: node
 bundle: dataset
