@@ -12,7 +12,7 @@ text:
     value: "<p>LDbase Notification: Dataset File Has Been Updated</p>\r\n"
     format: basic_html
   -
-    value: "<p>A new version of the file for <strong>@link_to_dataset</strong> has been uploaded to LDbase.</p>\r\n\r\n<p>You received this message because you requested to be notified when this dataset file is updated.&nbsp;</p>\r\n\r\n<p>If you no longer wish to receive these notifications, use the link above to view the dataset and there click the \"Stop Updates\" button.</p>\r\n"
+    value: "<p>A new version of the file for <strong>@link_to_dataset</strong> has been uploaded to LDbase.</p>\r\n\r\n<p>You received this message because you requested to be notified when this dataset file is updated.&nbsp;</p>\r\n\r\n<p>If you no longer wish to receive these notifications, view the dataset, click the \"Stop Updates\" button, and then click the \"Confirm\" button.</p>\r\n"
     format: basic_html
 settings:
   'token options':
