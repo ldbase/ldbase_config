@@ -824,7 +824,20 @@ display:
             value: '<a href="/projects/{{ raw_arguments.null }}/{{ raw_arguments.gid }}/view-members">Return to {{ arguments.gid }} Members</a>'
             format: basic_html
           plugin_id: text
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'There are no embargo exemptions for this project.'
+            format: basic_html
+          plugin_id: text
       relationships:
         gc__node:
           id: gc__node
