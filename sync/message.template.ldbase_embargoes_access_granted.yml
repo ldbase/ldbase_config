@@ -1,0 +1,25 @@
+uuid: 9235cead-e300-4ee8-a5c8-aaf81fbcba80
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+template: ldbase_embargoes_access_granted
+label: 'LDbase Embargoes Access Granted'
+description: 'Message sent when a user is granted an access exemption to an embargo'
+text:
+  -
+    value: "<p>You have been granted access to the embargoed file for <strong>@link_to_object</strong>.</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>LDbase Notification: Access to embargoed file granted</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>You must be logged in to LDbase to access the embargoed file.</p>\r\n"
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

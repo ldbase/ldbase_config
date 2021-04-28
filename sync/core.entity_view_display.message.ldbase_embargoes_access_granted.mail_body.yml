@@ -1,0 +1,35 @@
+uuid: 85cdcd14-560b-4a61-b286-aa3494853ed8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.ldbase_embargoes_access_granted.field_from_user
+    - field.field.message.ldbase_embargoes_access_granted.field_message_status
+    - field.field.message.ldbase_embargoes_access_granted.field_to_user
+    - message.template.ldbase_embargoes_access_granted
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: message.ldbase_embargoes_access_granted.mail_body
+targetEntityType: message
+bundle: ldbase_embargoes_access_granted
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+  partial_2:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_from_user: true
+  field_message_status: true
+  field_to_user: true
+  partial_0: true
+  search_api_excerpt: true

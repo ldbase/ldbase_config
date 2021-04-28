@@ -1,0 +1,28 @@
+uuid: fef15666-7e69-4a3c-b0e3-c95ab7ffd87b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_from_user
+    - message.template.ldbase_embargoes_access_granted
+id: message.ldbase_embargoes_access_granted.field_from_user
+field_name: field_from_user
+entity_type: message
+bundle: ldbase_embargoes_access_granted
+label: 'From User'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
