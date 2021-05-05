@@ -51,9 +51,9 @@ settings:
   form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
-  form_access_denied: default
+  form_access_denied: login
   form_access_denied_title: ''
-  form_access_denied_message: ''
+  form_access_denied_message: 'Please login or create a new account to access this form.'
   form_access_denied_attributes: {  }
   form_file_limit: ''
   submission_label: ''
@@ -146,10 +146,10 @@ settings:
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   serial_disabled: false
+  token_delete: false
 access:
   create:
     roles:
-      - anonymous
       - authenticated
     users: {  }
     permissions: {  }
