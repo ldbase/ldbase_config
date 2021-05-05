@@ -16,7 +16,7 @@ third_party_settings:
 id: searchfacetconstructs
 theme: portcullis
 region: sidebar_first
-weight: -16
+weight: -19
 provider: null
 plugin: 'facet_block:search_facet_constructs'
 settings:

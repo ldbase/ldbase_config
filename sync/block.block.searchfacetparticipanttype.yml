@@ -16,7 +16,7 @@ third_party_settings:
 id: searchfacetparticipanttype
 theme: portcullis
 region: sidebar_first
-weight: -15
+weight: -18
 provider: null
 plugin: 'facet_block:search_facet_participant_type'
 settings:

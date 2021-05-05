@@ -16,7 +16,7 @@ third_party_settings:
 id: searchfacetpersons
 theme: portcullis
 region: sidebar_first
-weight: -9
+weight: -12
 provider: null
 plugin: 'facet_block:search_facet_persons'
 settings:

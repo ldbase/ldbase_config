@@ -1,31 +1,28 @@
-uuid: 6294534c-e64b-4be1-98c7-27d29bfa570d
+uuid: 8edc0319-c7fa-4054-9f0f-34365847620a
 langcode: en
 status: true
 dependencies:
-  config:
-    - facets.facet.search_facet_participant_age_range
   module:
     - collapsiblock
     - context
-    - facets
+    - ldbase_content
     - system
   theme:
     - portcullis
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: searchfacetparticipantagerange
+id: browsebyvocabularyblock
 theme: portcullis
 region: sidebar_first
-weight: -17
+weight: -9
 provider: null
-plugin: 'facet_block:search_facet_participant_age_range'
+plugin: browse_by_vocabulary_block
 settings:
-  id: 'facet_block:search_facet_participant_age_range'
-  label: 'Participant Age Range'
-  provider: facets
+  id: browse_by_vocabulary_block
+  label: 'Browse by Vocabularies'
+  provider: ldbase_content
   label_display: visible
-  block_id: searchfacetparticipantagerange
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -39,6 +36,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: /search
+    pages: /browse-data
     negate: false
     context_mapping: {  }

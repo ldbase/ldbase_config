@@ -16,7 +16,7 @@ third_party_settings:
 id: nodeanalyticsblock
 theme: portcullis
 region: sidebar_first
-weight: -18
+weight: -21
 provider: null
 plugin: node_analytics_block
 settings:
