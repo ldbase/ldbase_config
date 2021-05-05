@@ -124,6 +124,5 @@ permissions:
   - 'masquerade as authenticated'
   - 'masquerade as fcrr_admin'
   - 'overview messages'
-  - 'use text format full_html'
   - 'view own unpublished content'
   - 'view the administration theme'
