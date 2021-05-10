@@ -1,33 +1,28 @@
-uuid: b2360c24-3966-49fa-b58e-faceeeb9e7d9
+uuid: d4704f47-44c5-4bf7-9415-10313ac70902
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:4f9c16e0-6aa9-45c3-8b63-669db48bdccd'
   module:
-    - block_content
     - collapsiblock
     - context
+    - ldbase_content
     - system
   theme:
     - portcullis
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: exploreldbasetiles
+id: ldbaseexplorelinksrow
 theme: portcullis
 region: content
 weight: 0
 provider: null
-plugin: 'block_content:4f9c16e0-6aa9-45c3-8b63-669db48bdccd'
+plugin: ldbase_explore_row
 settings:
-  id: 'block_content:4f9c16e0-6aa9-45c3-8b63-669db48bdccd'
-  label: 'Explore LDbase tiles'
-  provider: block_content
+  id: ldbase_explore_row
+  label: 'LDbase Explore Links Row'
+  provider: ldbase_content
   label_display: '0'
-  status: true
-  info: ''
-  view_mode: full
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
