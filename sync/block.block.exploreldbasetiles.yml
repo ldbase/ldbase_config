@@ -1,9 +1,11 @@
-uuid: aac89cf5-7e72-4077-aea9-080a9c417156
+uuid: b2360c24-3966-49fa-b58e-faceeeb9e7d9
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:4f9c16e0-6aa9-45c3-8b63-669db48bdccd'
   module:
-    - active_facet_pills
+    - block_content
     - collapsiblock
     - context
     - system
@@ -12,17 +14,20 @@ dependencies:
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: activefacetpillsblock
+id: exploreldbasetiles
 theme: portcullis
 region: content
-weight: -19
+weight: 0
 provider: null
-plugin: active_facet_pills
+plugin: 'block_content:4f9c16e0-6aa9-45c3-8b63-669db48bdccd'
 settings:
-  id: active_facet_pills
-  label: 'Active Facet Pills block'
-  provider: active_facet_pills
+  id: 'block_content:4f9c16e0-6aa9-45c3-8b63-669db48bdccd'
+  label: 'Explore LDbase tiles'
+  provider: block_content
   label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -36,6 +41,6 @@ visibility:
     context_mapping: {  }
   request_path:
     id: request_path
-    pages: /search
+    pages: '<front>'
     negate: false
     context_mapping: {  }

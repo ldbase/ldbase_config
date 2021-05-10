@@ -17,7 +17,7 @@ third_party_settings:
 id: codetasks
 theme: portcullis
 region: content
-weight: -18
+weight: -22
 provider: null
 plugin: 'system_menu_block:code-tasks'
 settings:

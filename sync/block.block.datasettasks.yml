@@ -17,7 +17,7 @@ third_party_settings:
 id: datasettasks
 theme: portcullis
 region: content
-weight: -17
+weight: -21
 provider: null
 plugin: 'system_menu_block:dataset-tasks'
 settings:
