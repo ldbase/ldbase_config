@@ -21,7 +21,7 @@ provider: null
 plugin: 'facet_block:search_facet_time_method'
 settings:
   id: 'facet_block:search_facet_time_method'
-  label: 'Time Method'
+  label: 'Developmental Designs'
   provider: facets
   label_display: visible
   block_id: searchfacettimemethod

@@ -21,7 +21,7 @@ provider: null
 plugin: 'facet_block:search_facet_schooling'
 settings:
   id: 'facet_block:search_facet_schooling'
-  label: Schooling
+  label: 'Educational Environments'
   provider: facets
   label_display: visible
   block_id: searchfacetschooling

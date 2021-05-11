@@ -8,7 +8,7 @@ dependencies:
   module:
     - search_api
 id: search_facet_project_type
-name: 'Search Facet: Project Type'
+name: 'Search Facet: Project Descriptors'
 url_alias: search_facets_project_type
 weight: 0
 min_count: 1

@@ -11,6 +11,7 @@ dependencies:
     - field.storage.node.field_curricula
     - field.storage.node.field_data_collection_locations
     - field.storage.node.body
+    - field.storage.node.field_time_method
     - field.storage.node.field_document_type
     - field.storage.node.field_doi
     - field.storage.node.field_email
@@ -35,7 +36,6 @@ dependencies:
     - field.storage.node.field_publishing_names
     - field.storage.node.field_schooling
     - field.storage.node.field_special_populations
-    - field.storage.node.field_time_method
     - field.storage.node.field_time_points
     - field.storage.node.field_variable_types_in_dataset
     - field.storage.node.field_web_presence
@@ -190,7 +190,7 @@ field_settings:
       module:
         - taxonomy
   field_curricula:
-    label: Curricula
+    label: 'Educational Curricula'
     datasource_id: 'entity:node'
     property_path: field_curricula
     type: integer
@@ -198,7 +198,7 @@ field_settings:
       config:
         - field.storage.node.field_curricula
   field_curricula_fulltext:
-    label: 'Curricula » Taxonomy term » Name'
+    label: 'Educational Curricula » Taxonomy term » Name'
     datasource_id: 'entity:node'
     property_path: 'field_curricula:entity:name'
     type: text
@@ -437,7 +437,7 @@ field_settings:
       config:
         - field.storage.node.field_professional_titles
   field_project_type:
-    label: 'Project Type'
+    label: 'Project Descriptors'
     datasource_id: 'entity:node'
     property_path: field_project_type
     type: integer
@@ -445,7 +445,7 @@ field_settings:
       config:
         - field.storage.node.field_project_type
   field_project_type_fulltext:
-    label: 'Project Type » Taxonomy term » Name'
+    label: 'Project Descriptors » Taxonomy term » Name'
     datasource_id: 'entity:node'
     property_path: 'field_project_type:entity:name'
     type: text
@@ -510,7 +510,7 @@ field_settings:
       module:
         - node
   field_schooling:
-    label: Schooling
+    label: 'Educational Environments'
     datasource_id: 'entity:node'
     property_path: field_schooling
     type: integer
@@ -518,7 +518,7 @@ field_settings:
       config:
         - field.storage.node.field_schooling
   field_schooling_fulltext:
-    label: 'Schooling » Taxonomy term » Name'
+    label: 'Educational Environments » Taxonomy term » Name'
     datasource_id: 'entity:node'
     property_path: 'field_schooling:entity:name'
     type: text
@@ -548,7 +548,7 @@ field_settings:
       module:
         - taxonomy
   field_time_method:
-    label: 'Time Method'
+    label: 'Developmental Designs'
     datasource_id: 'entity:node'
     property_path: field_time_method
     type: integer
@@ -556,7 +556,7 @@ field_settings:
       config:
         - field.storage.node.field_time_method
   field_time_method_fulltext:
-    label: 'Time Method » Taxonomy term » Name'
+    label: 'Developmental Designs » Taxonomy term » Name'
     datasource_id: 'entity:node'
     property_path: 'field_time_method:entity:name'
     type: text

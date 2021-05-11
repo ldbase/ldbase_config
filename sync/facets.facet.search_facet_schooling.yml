@@ -8,7 +8,7 @@ dependencies:
   module:
     - search_api
 id: search_facet_schooling
-name: 'Search Facet: Schooling'
+name: 'Search Facet: Educational Environments'
 url_alias: search_facets_schooling
 weight: 0
 min_count: 1
