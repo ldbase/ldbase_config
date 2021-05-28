@@ -17,7 +17,7 @@ third_party_settings:
 id: documenttasks
 theme: portcullis
 region: content
-weight: -23
+weight: -29
 provider: null
 plugin: 'system_menu_block:document-tasks'
 settings:

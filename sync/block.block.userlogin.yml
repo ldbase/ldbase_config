@@ -14,7 +14,7 @@ third_party_settings:
 id: userlogin
 theme: portcullis
 region: banner
-weight: 0
+weight: -29
 provider: null
 plugin: user_login_block
 settings:

@@ -9,7 +9,7 @@ _core:
 id: portcullis_local_actions
 theme: portcullis
 region: content
-weight: -16
+weight: -22
 provider: null
 plugin: local_actions_block
 settings:

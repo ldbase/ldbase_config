@@ -14,7 +14,7 @@ third_party_settings:
 id: homepageuserloggedinblock
 theme: portcullis
 region: content_top
-weight: 0
+weight: -29
 provider: null
 plugin: home_page_user_block
 settings:

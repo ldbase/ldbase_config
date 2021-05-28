@@ -1,0 +1,23 @@
+uuid: 36853596-87ec-403a-aa4b-88794c9859cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_status
+    - message.template.ldbase_taxonomy_term_changed
+  module:
+    - options
+id: message.ldbase_taxonomy_term_changed.field_message_status
+field_name: field_message_status
+entity_type: message
+bundle: ldbase_taxonomy_term_changed
+label: 'Message Status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: Unread
+default_value_callback: ''
+settings: {  }
+field_type: list_string

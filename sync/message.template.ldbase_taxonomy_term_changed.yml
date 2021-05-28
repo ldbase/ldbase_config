@@ -1,0 +1,22 @@
+uuid: 9322e0fa-c6ee-45c3-8eeb-cf0e899defaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+template: ldbase_taxonomy_term_changed
+label: 'LDbase - Taxonomy Term Changed'
+description: 'Message sent when an admin uses the taxonomy review tools to replace a user-added term with a different term '
+text:
+  -
+    value: "<p>LDbase Notification: Taxonomy Term Changed by Administrator</p>\r\n"
+    format: basic_html
+  -
+    value: "<p>An LDbase administrator has replaced the taxonomy term <strong>@old_term_name</strong> with the term <strong>@new_term_name</strong>.&nbsp;</p>\r\n\r\n<p>Reason given: @reason_for_change</p>\r\n\r\n<p>This change affects your @link_to_object&nbsp;</p>\r\n\r\n<p>If you have any questions you may contact us at&nbsp;LDbase@fcrr.org</p>\r\n"
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

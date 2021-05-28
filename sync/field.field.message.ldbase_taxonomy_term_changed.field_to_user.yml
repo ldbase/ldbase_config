@@ -1,0 +1,28 @@
+uuid: 0452275a-558a-49b8-b74a-5f7f863cd63d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_to_user
+    - message.template.ldbase_taxonomy_term_changed
+id: message.ldbase_taxonomy_term_changed.field_to_user
+field_name: field_to_user
+entity_type: message
+bundle: ldbase_taxonomy_term_changed
+label: 'To User'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

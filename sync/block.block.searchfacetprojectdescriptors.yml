@@ -1,0 +1,42 @@
+uuid: 5ccd27e2-91df-4d66-8f43-571e794c3d2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.search_facet_project_type
+  module:
+    - collapsiblock
+    - facets
+    - system
+    - user
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
+id: searchfacetprojectdescriptors
+theme: portcullis
+region: content
+weight: -16
+provider: null
+plugin: 'facet_block:search_facet_project_type'
+settings:
+  id: 'facet_block:search_facet_project_type'
+  label: 'Search Facet: Project Descriptors'
+  provider: facets
+  label_display: visible
+  block_id: searchfacetprojectdescriptors
+visibility:
+  request_path:
+    id: request_path
+    pages: /taxonomy-terms-for-review
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      fcrr_admin: fcrr_admin
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

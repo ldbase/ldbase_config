@@ -1,0 +1,43 @@
+uuid: a1f24db6-aed4-49b0-a1bb-21a947e7050c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.taxonomy_terms_for_review
+  module:
+    - collapsiblock
+    - system
+    - user
+    - views
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
+id: views_block__taxonomy_terms_for_review_block_1
+theme: portcullis
+region: content
+weight: -12
+provider: null
+plugin: 'views_block:taxonomy_terms_for_review-block_1'
+settings:
+  id: 'views_block:taxonomy_terms_for_review-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /taxonomy-terms-for-review
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      fcrr_admin: fcrr_admin
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
