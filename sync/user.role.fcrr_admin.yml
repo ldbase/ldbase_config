@@ -14,6 +14,7 @@ permissions:
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'
+  - 'administer blocks'
   - 'administer embargoes settings'
   - 'administer matomo'
   - 'administer messages'
