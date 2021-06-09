@@ -3,15 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_location
+    - field.storage.node.body
     - field.storage.node.field_areas_of_expertise
     - field.storage.node.field_assessment_name
-    - field.storage.node.field_related_persons
     - field.storage.node.field_code_type
     - field.storage.node.field_component_skills
     - field.storage.node.field_curricula
     - field.storage.node.field_data_collection_locations
-    - field.storage.node.body
-    - field.storage.node.field_time_method
+    - field.storage.node.field_demographics_information
     - field.storage.node.field_document_type
     - field.storage.node.field_doi
     - field.storage.node.field_email
@@ -20,32 +20,32 @@ dependencies:
     - field.storage.node.field_grant_information
     - field.storage.paragraph.field_funding_agency
     - field.storage.paragraph.field_grant_number
-    - field.storage.node.field_related_organizations
     - field.storage.node.field_last_name
     - field.storage.node.field_license
-    - field.storage.node.field_location
     - field.storage.node.field_middle_name
     - field.storage.node.field_orcid
     - field.storage.node.field_parent_organization
-    - field.storage.node.field_demographics_information
-    - field.storage.paragraph.field_age_range
     - field.storage.paragraph.field_participant_type
     - field.storage.node.field_professional_titles
     - field.storage.node.field_project_type
     - field.storage.node.field_publication_info
     - field.storage.node.field_publishing_names
+    - field.storage.node.field_related_organizations
+    - field.storage.node.field_related_persons
     - field.storage.node.field_schooling
     - field.storage.node.field_special_populations
+    - field.storage.node.field_time_method
     - field.storage.node.field_time_points
     - field.storage.node.field_variable_types_in_dataset
     - field.storage.node.field_web_presence
     - field.storage.node.field_website
+    - field.storage.paragraph.field_age_range
     - search_api.server.default_server
     - core.entity_view_mode.node.search_index
   module:
-    - taxonomy
     - node
     - user
+    - taxonomy
     - paragraphs
     - search_api
     - ldbase_handlers
@@ -467,6 +467,14 @@ field_settings:
     label: 'Publishing Names'
     datasource_id: 'entity:node'
     property_path: field_publishing_names
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_publishing_names
+  field_publishing_names_fulltext:
+    label: 'Publishing Names'
+    datasource_id: 'entity:node'
+    property_path: field_publishing_names
     type: text
     boost: 0.5
     dependencies:
@@ -749,6 +757,8 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
+    indexed_locked: true
+    type_locked: true
     dependencies:
       module:
         - node
@@ -757,8 +767,6 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: uid
     type: integer
-    indexed_locked: true
-    type_locked: true
     dependencies:
       module:
         - node
@@ -838,6 +846,7 @@ processor_settings:
       - field_professional_titles_fulltext
       - field_project_type_fulltext
       - field_publishing_names
+      - field_publishing_names_fulltext
       - field_related_organizations_fulltext
       - field_related_persons_1_fulltext
       - field_schooling_fulltext
@@ -886,6 +895,7 @@ processor_settings:
       - field_participant_type_fulltext
       - field_professional_titles_fulltext
       - field_project_type_fulltext
+      - field_publishing_names_fulltext
       - field_related_organizations_fulltext
       - field_related_persons_1_fulltext
       - field_schooling_fulltext
@@ -953,13 +963,13 @@ processor_settings:
     fields:
       - rendered_item
       - title
+    ignored: ._-
     spaces: ''
     overlap_cjk: 1
     minimum_word_size: '3'
     weights:
       preprocess_index: -2
       preprocess_query: -5
-    ignored: ._-
   transliteration:
     all_fields: false
     fields:
