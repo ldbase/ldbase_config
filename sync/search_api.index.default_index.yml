@@ -637,6 +637,10 @@ field_settings:
     label: 'LDbase Participant Age Range'
     property_path: ldbase_age_range
     type: integer
+  ldbase_root_project:
+    label: 'LDbase Root Project'
+    property_path: ldbase_root_project
+    type: string
   locality_fulltext:
     label: 'Location » The locality (i.e. city).'
     datasource_id: 'entity:node'
@@ -788,6 +792,7 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
+  add_ldbase_root_project: {  }
   add_url:
     weights:
       preprocess_index: -30
@@ -861,6 +866,7 @@ processor_settings:
       - field_web_presence
       - field_website
       - langcode
+      - ldbase_root_project
       - locality_fulltext
       - person_name_fields_united
       - rendered_item
