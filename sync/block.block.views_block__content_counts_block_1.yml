@@ -1,6 +1,6 @@
 uuid: ef4fe936-8967-48d0-8296-d9020f3ac202
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.content_counts

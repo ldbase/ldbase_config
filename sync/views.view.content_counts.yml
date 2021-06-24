@@ -9,6 +9,8 @@ dependencies:
     - node.type.project
   module:
     - node
+    - rest
+    - serialization
     - user
 id: content_counts
 label: 'Content Counts'
@@ -305,6 +307,46 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  rest_export_1:
+    display_plugin: rest_export
+    id: rest_export_1
+    display_title: 'Content Counts REST export'
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      display_description: ''
+      path: content-counts-api
+      style:
+        type: serializer
+        options:
+          uses_fields: false
+          formats:
+            json: json
+      row:
+        type: data_field
+        options:
+          field_options:
+            type:
+              alias: name
+              raw_output: false
+            title:
+              alias: value
+              raw_output: false
+      pager:
+        type: some
+        options:
+          items_per_page: 0
+          offset: 0
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
