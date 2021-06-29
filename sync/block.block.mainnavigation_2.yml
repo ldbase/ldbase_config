@@ -1,0 +1,34 @@
+uuid: a149cdf3-6b9e-48b1-bb39-d0bd6e6a862b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - collapsiblock
+    - system
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
+id: mainnavigation_2
+theme: portcullis
+region: content
+weight: -24
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Landing Page Navigation Level 3'
+  provider: system
+  label_display: '0'
+  level: 3
+  depth: 0
+  expand_all_items: true
+visibility:
+  request_path:
+    id: request_path
+    pages: "/resources/user-agreements\r\n/resources/faqs\r\n/resources/best-practices\r\n/resources/templates\r\n\r\n\r\n\r\n"
+    negate: false
+    context_mapping: {  }

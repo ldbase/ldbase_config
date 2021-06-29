@@ -11,7 +11,7 @@ _core:
 id: portcullis_help
 theme: portcullis
 region: content
-weight: -28
+weight: -29
 provider: null
 plugin: help_block
 settings:

@@ -1,0 +1,34 @@
+uuid: 6407f6ba-4450-479b-9781-8f445ee2eab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - collapsiblock
+    - system
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
+id: mainnavigation_3
+theme: portcullis
+region: content
+weight: -25
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Landing Page Navigation Level 2'
+  provider: system
+  label_display: '0'
+  level: 2
+  depth: 1
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: "/about\r\n/resources\r\n/community"
+    negate: false
+    context_mapping: {  }

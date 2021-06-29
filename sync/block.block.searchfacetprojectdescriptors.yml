@@ -17,7 +17,7 @@ third_party_settings:
 id: searchfacetprojectdescriptors
 theme: portcullis
 region: content
-weight: -18
+weight: -17
 provider: null
 plugin: 'facet_block:search_facet_project_type'
 settings:

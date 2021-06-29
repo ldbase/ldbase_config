@@ -15,7 +15,7 @@ third_party_settings:
 id: activefacetpillsblock
 theme: portcullis
 region: content
-weight: -29
+weight: -30
 provider: null
 plugin: active_facet_pills
 settings:
