@@ -235,6 +235,11 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      link_url: /projects
+      link_display: custom_url
+      use_more: true
+      use_more_always: true
+      use_more_text: 'Show more'
     cache_metadata:
       max-age: -1
       contexts:
@@ -249,7 +254,8 @@ display:
     display_title: Block
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
     cache_metadata:
       max-age: -1
       contexts:
