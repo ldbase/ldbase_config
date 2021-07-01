@@ -5,6 +5,7 @@ dependencies: {  }
 id: project_group
 label: 'Project Group'
 description: 'Group type for LDbase projects'
+new_revision: true
 creator_membership: true
 creator_wizard: false
 creator_roles:

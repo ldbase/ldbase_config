@@ -29,8 +29,8 @@ settings:
   ajax_effect: fade
   ajax_speed: 1500
   page: true
-  page_submit_path: /forms/organization
-  page_confirm_path: /forms/organization/success
+  page_submit_path: ''
+  page_confirm_path: ''
   page_admin_theme: false
   form_title: source_entity_webform
   form_submit_once: true
@@ -105,7 +105,7 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
+  confirmation_type: none
   confirmation_title: ''
   confirmation_message: ''
   confirmation_url: ''
@@ -136,6 +136,22 @@ settings:
   wizard_progress_states: false
   token_view: false
   results_customize: false
+  page_theme_name: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  token_delete: false
+  serial_disabled: false
 access:
   create:
     roles:

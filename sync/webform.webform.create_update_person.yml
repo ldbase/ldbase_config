@@ -29,8 +29,8 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /forms/person
-  page_confirm_path: /forms/person/success
+  page_submit_path: ''
+  page_confirm_path: ''
   page_admin_theme: false
   form_title: source_entity_webform
   form_submit_once: true
@@ -106,7 +106,7 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
+  confirmation_type: none
   confirmation_title: ''
   confirmation_message: ''
   confirmation_url: ''
@@ -151,6 +151,7 @@ settings:
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
   serial_disabled: false
+  token_delete: false
 access:
   create:
     roles:

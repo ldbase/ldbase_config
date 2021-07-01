@@ -101,7 +101,7 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
+  confirmation_type: none
   confirmation_title: ''
   confirmation_message: ''
   confirmation_url: ''
@@ -194,6 +194,15 @@ access:
     users: {  }
     permissions: {  }
 handlers:
+  ldbase_project:
+    id: project_from_webform
+    label: 'LDbase Project'
+    notes: ''
+    handler_id: ldbase_project
+    status: true
+    conditions: {  }
+    weight: 0
+    settings: {  }
   debug:
     id: debug
     label: Debug
@@ -205,13 +214,4 @@ handlers:
     settings:
       format: yaml
       submission: false
-  ldbase_project:
-    id: project_from_webform
-    label: 'LDbase Project'
-    notes: ''
-    handler_id: ldbase_project
-    status: true
-    conditions: {  }
-    weight: 0
-    settings: {  }
 variants: {  }
