@@ -55,10 +55,26 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: some
+        type: full
         options:
           items_per_page: 10
           offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          quantity: 9
       style:
         type: table
       row:
@@ -236,6 +252,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -255,6 +272,8 @@ display:
         relationships: false
         filters: false
         filter_groups: false
+        pager: false
+        footer: false
       sorts:
         title:
           id: title
@@ -406,11 +425,44 @@ display:
         operator: AND
         groups:
           1: AND
+      pager:
+        type: full
+        options:
+          items_per_page: 15
+          offset: 0
+          id: 1
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          content: 'Displaying page @current_page of @page_count'
+          plugin_id: result
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -565,6 +617,11 @@ display:
           inline: {  }
           separator: ''
           hide_empty: false
+      pager:
+        type: some
+        options:
+          items_per_page: 0
+          offset: 0
     cache_metadata:
       max-age: -1
       contexts:
@@ -580,13 +637,50 @@ display:
     display_title: Page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
       path: persons
+      pager:
+        type: full
+        options:
+          items_per_page: 10
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      defaults:
+        pager: false
+        footer: false
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          content: 'Displaying page @current_page of @page_count'
+          plugin_id: result
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -614,6 +708,8 @@ display:
         fields: false
         sorts: false
         title: false
+        pager: false
+        footer: false
       fields:
         title:
           id: title
@@ -721,11 +817,44 @@ display:
             label: ''
           granularity: second
       title: Users
+      pager:
+        type: full
+        options:
+          items_per_page: 15
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          content: 'Displaying page @current_page of @page_count'
+          plugin_id: result
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

@@ -46,12 +46,17 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: mini
+        type: full
         options:
-          items_per_page: 10
+          items_per_page: 20
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -60,9 +65,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
+          quantity: 9
       style:
         type: table
         options:
@@ -95,20 +98,20 @@ display:
               empty_column: false
               responsive: ''
             name:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
             type:
-              sortable: false
+              sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-          default: '-1'
+          default: name
           empty_table: false
       row:
         type: fields
@@ -256,7 +259,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
+          label: Term
           exclude: false
           alter:
             alter_text: false
@@ -322,7 +325,7 @@ display:
           relationship: nid
           group_type: count
           admin_label: ''
-          label: Uses
+          label: 'Number of Uses'
           exclude: false
           alter:
             alter_text: false
@@ -411,9 +414,19 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          content: "<h1 class=\"title page-title\">Taxonomy: {{ arguments.vid }}</h1>\r\n<p>Click on a term to see LDbase content that uses it.</p>"
+          content: "<h1 class=\"title page-title\">Taxonomy: {{ arguments.vid }}</h1>\r\n<p>Click on a term to see LDbase content that uses it.  Click the column headers to sort.</p>"
           plugin_id: text_custom
-      footer: {  }
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          content: 'Displaying page @current_page of @page_count'
+          plugin_id: result
       empty: {  }
       relationships:
         nid:

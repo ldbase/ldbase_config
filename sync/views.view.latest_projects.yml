@@ -236,8 +236,8 @@ display:
       arguments: {  }
       display_extenders: {  }
       link_url: /projects
-      link_display: custom_url
-      use_more: true
+      link_display: '0'
+      use_more: false
       use_more_always: true
       use_more_text: 'Show more'
     cache_metadata:
