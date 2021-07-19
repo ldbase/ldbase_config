@@ -414,7 +414,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: true
-          content: "<h1 class=\"title page-title\">Taxonomy: {{ arguments.vid }}</h1>\r\n<p>Click on a term to see LDbase content that uses it.  Click the column headers to sort.</p>"
+          content: "<h2>{{ arguments.vid }}</h2>\r\n<p>Click on a term to see LDbase content that uses it.  Click the column headers to sort.</p>"
           plugin_id: text_custom
       footer:
         result:
@@ -481,7 +481,7 @@ display:
           entity_field: vid
           plugin_id: vocabulary_vid
       display_extenders: {  }
-      title: ''
+      title: 'Taxonomy:'
       group_by: true
     cache_metadata:
       max-age: -1
