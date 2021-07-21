@@ -214,7 +214,7 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: 'Displaying page @current_page of @page_count'
+          content: '<div class="ldbase-view-current-page">Displaying page @current_page of @page_count</div>'
           plugin_id: result
     cache_metadata:
       max-age: -1
@@ -243,7 +243,7 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: 'Displaying page @current_page of @page_count'
+          content: '<div class="ldbase-view-current-page">Displaying page @current_page of @page_count</div>'
           plugin_id: result
       defaults:
         footer: false
