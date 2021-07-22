@@ -221,7 +221,9 @@ features:
   favicon: true
 logo:
   use_default: false
-  path: modules/custom/ldbase_content/images/ldbase_logo_horizontal_color.png
+  path: modules/custom/ldbase_content/images/ldbase_tagline_horizontal_color_200_61.png
 favicon:
-  use_default: true
+  use_default: false
+  path: modules/custom/ldbase_content/images/favicon.ico
+  mimetype: image/vnd.microsoft.icon
 font_title: ''
