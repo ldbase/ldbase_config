@@ -1,0 +1,30 @@
+uuid: eb0853f2-d901-4834-b59f-c59094a7cdd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - collapsiblock
+    - ldbase_content
+    - system
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: '0'
+id: ldbasefooterblock
+theme: portcullis
+region: footer_bottom
+weight: 0
+provider: null
+plugin: ldbase_footer_block
+settings:
+  id: ldbase_footer_block
+  label: 'LDbase Footer Block'
+  provider: ldbase_content
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
