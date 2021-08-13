@@ -394,58 +394,6 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
-          label: 'Datasets Section'
-        components:
-          9787cba4-89f7-46a7-aa3e-f7683a6b44fb:
-            uuid: 9787cba4-89f7-46a7-aa3e-f7683a6b44fb
-            region: content
-            configuration:
-              id: 'extra_field_block:node:project:project_latest_datasets_entity_view_1'
-              label: 'EVA: Project Latest Datasets - EVA'
-              provider: layout_builder
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 1
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: 'Documents Section'
-        components:
-          18a253e4-4efb-4764-a1d4-87e261352e12:
-            uuid: 18a253e4-4efb-4764-a1d4-87e261352e12
-            region: content
-            configuration:
-              id: 'extra_field_block:node:project:project_latest_documents_entity_view_1'
-              label: 'EVA: Project Latest Documents - EVA'
-              provider: layout_builder
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: 'Code Section'
-        components:
-          914e72a0-c8a1-4cf4-8b2d-ec2389b1c048:
-            uuid: 914e72a0-c8a1-4cf4-8b2d-ec2389b1c048
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:project:project_latest_code_entity_view_1'
-            additional: {  }
-            weight: 0
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
           label: 'Citations Section'
         components: {  }
         third_party_settings: {  }

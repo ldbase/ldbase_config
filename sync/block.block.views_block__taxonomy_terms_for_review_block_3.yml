@@ -17,7 +17,7 @@ third_party_settings:
 id: views_block__taxonomy_terms_for_review_block_3
 theme: portcullis
 region: content
-weight: -11
+weight: -12
 provider: null
 plugin: 'views_block:taxonomy_terms_for_review-block_3'
 settings:

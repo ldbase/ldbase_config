@@ -15,7 +15,7 @@ third_party_settings:
 id: mainnavigation_2
 theme: portcullis
 region: content
-weight: -24
+weight: -25
 provider: null
 plugin: 'system_menu_block:main'
 settings:
