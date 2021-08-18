@@ -1,0 +1,13 @@
+skip_roles:
+  administrator: administrator
+  fcrr_admin: fcrr_admin
+validate_interval: 31536000
+num_reminders: 3
+mail_subject: '[site:name]: Email verification'
+mail_body: 'Verify your Email by following the link: [user:verify-email]'
+extended_enable: false
+extended_validate_interval: 1209600
+extended_mail_subject: '[site:name]: Account blocked, please verify Email address'
+extended_mail_body: 'Your account is blocked. Your Email may still be verified by following the link: [user:verify-email-extended]'
+_core:
+  default_config_hash: jMF3rV51ujHssuZyYCHEBAat_VlUArx0IGmGOZzOV8Y
