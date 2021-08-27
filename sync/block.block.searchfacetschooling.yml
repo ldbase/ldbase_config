@@ -16,7 +16,7 @@ third_party_settings:
 id: searchfacetschooling
 theme: portcullis
 region: sidebar_first
-weight: -13
+weight: -25
 provider: null
 plugin: 'facet_block:search_facet_schooling'
 settings:

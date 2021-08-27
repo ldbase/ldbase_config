@@ -1,0 +1,23 @@
+uuid: da676049-ca39-46d3-9de2-33c71a43f29f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_status
+    - message.template.ldbase_contact_form
+  module:
+    - options
+id: message.ldbase_contact_form.field_message_status
+field_name: field_message_status
+entity_type: message
+bundle: ldbase_contact_form
+label: 'Message Status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: Unread
+default_value_callback: ''
+settings: {  }
+field_type: list_string

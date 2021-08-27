@@ -6,6 +6,7 @@ dependencies:
     - system.menu.project-tasks
   module:
     - collapsiblock
+    - context
     - ctools
     - node
     - system
@@ -38,7 +39,7 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm"
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/contact-ldbase-*"
     negate: true
     context_mapping: {  }
   node_type:
@@ -48,3 +49,24 @@ visibility:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+  context_all:
+    id: context_all
+    values: ''
+    negate: null
+    context_mapping: {  }
+  context:
+    id: context
+    values: ''
+    negate: null
+    context_mapping: {  }
+  user_status:
+    id: user_status
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

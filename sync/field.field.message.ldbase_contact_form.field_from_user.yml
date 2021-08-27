@@ -1,0 +1,28 @@
+uuid: adda1d76-0b6b-431a-8c71-a5a671fbd612
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_from_user
+    - message.template.ldbase_contact_form
+id: message.ldbase_contact_form.field_from_user
+field_name: field_from_user
+entity_type: message
+bundle: ldbase_contact_form
+label: 'From User'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

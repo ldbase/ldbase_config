@@ -16,7 +16,7 @@ third_party_settings:
 id: nodeanalyticsblock
 theme: portcullis
 region: sidebar_first
-weight: -21
+weight: -33
 provider: null
 plugin: node_analytics_block
 settings:
@@ -39,16 +39,37 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/persons/*/change-password\r\n/*/*/request-access\r\n/access-request/*"
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/persons/*/change-password\r\n/*/*/request-access\r\n/access-request/*\r\n/*/*/contact-ldbase-*"
     negate: true
     context_mapping: {  }
   request_path_exclusion:
     id: request_path_exclusion
     pages: ''
-    negate: null
+    negate: true
     context_mapping: {  }
   view_inclusion:
     id: view_inclusion
-    negate: null
+    negate: false
     view_inclusion: {  }
     context_mapping: {  }
+  context_all:
+    id: context_all
+    values: ''
+    negate: null
+    context_mapping: {  }
+  context:
+    id: context
+    values: ''
+    negate: null
+    context_mapping: {  }
+  user_status:
+    id: user_status
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

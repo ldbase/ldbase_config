@@ -1,0 +1,41 @@
+uuid: af9dc197-6edd-4683-8ee4-df5a57c274af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.ldbase_contact_form.field_from_user
+    - field.field.message.ldbase_contact_form.field_message_status
+    - field.field.message.ldbase_contact_form.field_to_users
+    - message.template.ldbase_contact_form
+id: message.ldbase_contact_form.default
+targetEntityType: message
+bundle: ldbase_contact_form
+mode: default
+content:
+  field_from_user:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_message_status:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_to_users:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

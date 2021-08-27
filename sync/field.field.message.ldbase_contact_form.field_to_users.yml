@@ -1,0 +1,28 @@
+uuid: 3f34e4de-407d-401d-be70-96a53bc55adf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_to_users
+    - message.template.ldbase_contact_form
+id: message.ldbase_contact_form.field_to_users
+field_name: field_to_users
+entity_type: message
+bundle: ldbase_contact_form
+label: 'To Users'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

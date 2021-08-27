@@ -26,6 +26,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  user_email_verification_verified:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  user_email_verification_verified_date:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   member_for: true
   search_api_excerpt: true
