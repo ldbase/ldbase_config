@@ -15,7 +15,7 @@ third_party_settings:
 id: browsebyvocabularyblock
 theme: portcullis
 region: sidebar_first
-weight: -22
+weight: -23
 provider: null
 plugin: browse_by_vocabulary_block
 settings:

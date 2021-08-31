@@ -16,7 +16,7 @@ third_party_settings:
 id: searchfacettimemethod
 theme: portcullis
 region: sidebar_first
-weight: -26
+weight: -27
 provider: null
 plugin: 'facet_block:search_facet_time_method'
 settings:

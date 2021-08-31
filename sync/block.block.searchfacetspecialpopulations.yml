@@ -16,7 +16,7 @@ third_party_settings:
 id: searchfacetspecialpopulations
 theme: portcullis
 region: sidebar_first
-weight: -28
+weight: -29
 provider: null
 plugin: 'facet_block:search_facet_special_populations'
 settings:
