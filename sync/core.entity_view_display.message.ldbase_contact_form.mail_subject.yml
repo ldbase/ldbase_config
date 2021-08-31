@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.message.mail_subject
     - field.field.message.ldbase_contact_form.field_from_user
     - field.field.message.ldbase_contact_form.field_message_status
+    - field.field.message.ldbase_contact_form.field_to_user
     - field.field.message.ldbase_contact_form.field_to_users
     - message.template.ldbase_contact_form
   module:
@@ -27,6 +28,7 @@ content:
 hidden:
   field_from_user: true
   field_message_status: true
+  field_to_user: true
   field_to_users: true
   partial_1: true
   partial_2: true

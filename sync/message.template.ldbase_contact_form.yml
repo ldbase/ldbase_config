@@ -9,13 +9,13 @@ label: 'LDbase - Contact Form'
 description: 'Message sent from Contact Person or Contact Project forms'
 text:
   -
+    value: "<p>A message was sent from an LDbase user to your email.</p>\r\n"
+    format: basic_html
+  -
     value: "<p>LDbase Message: @subject</p>\r\n"
     format: basic_html
   -
     value: "<p>Message: @message</p>\r\n"
-    format: basic_html
-  -
-    value: "<p>A message was sent from an LDbase user to your email.</p>\r\n"
     format: basic_html
 settings:
   'token options':

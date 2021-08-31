@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.message.ldbase_contact_form.field_from_user
     - field.field.message.ldbase_contact_form.field_message_status
+    - field.field.message.ldbase_contact_form.field_to_user
     - field.field.message.ldbase_contact_form.field_to_users
     - message.template.ldbase_contact_form
 id: message.ldbase_contact_form.default
@@ -27,6 +28,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_to_user:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_to_users:
     weight: 0
