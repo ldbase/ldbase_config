@@ -1,0 +1,18 @@
+uuid: af45187d-5dba-4499-b56e-62f7ac8889ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_do_not_contact
+field_name: field_do_not_contact
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

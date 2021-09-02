@@ -1,0 +1,23 @@
+uuid: 3251fa7f-355f-42ac-84f2-d482d9f5aa7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_not_contact
+    - node.type.project
+id: node.project.field_do_not_contact
+field_name: field_do_not_contact
+entity_type: node
+bundle: project
+label: 'Do Not Contact'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'True'
+  off_label: 'False'
+field_type: boolean
