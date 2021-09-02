@@ -11,6 +11,7 @@ dependencies:
     - layout_discovery
     - ldbase_content
     - user
+    - user_email_verification
     - views
 third_party_settings:
   layout_builder:
@@ -124,7 +125,7 @@ third_party_settings:
               items_per_page: none
               context_mapping: {  }
             additional: {  }
-            weight: 6
+            weight: 7
           94b12631-091a-4fcb-8275-224fab18362e:
             uuid: 94b12631-091a-4fcb-8275-224fab18362e
             region: content
@@ -138,26 +139,20 @@ third_party_settings:
               context_mapping: {  }
             additional: {  }
             weight: 3
-          0a816d2e-7ec3-474c-a0c5-5d79dfb8748a:
-            uuid: 0a816d2e-7ec3-474c-a0c5-5d79dfb8748a
+          0bf85b2e-6f6e-40a7-b7ce-2cb695d81648:
+            uuid: 0bf85b2e-6f6e-40a7-b7ce-2cb695d81648
             region: content
             configuration:
+              id: user_email_verification_notification
+              label: 'User Email verification notification'
+              provider: user_email_verification
               label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:user:user:user_email_verification_verified'
+              notification:
+                value: "<p>You have not yet verified your email address.&nbsp; <a href=\"/user/user-email-verification\">Resend verification email</a></p>\r\n"
+                format: basic_html
+              context_mapping: {  }
             additional: {  }
-            weight: 4
-          0a6134c6-5fe9-4931-a496-5e58737abf20:
-            uuid: 0a6134c6-5fe9-4931-a496-5e58737abf20
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:user:user:user_email_verification_verified_date'
-            additional: {  }
-            weight: 5
+            weight: 6
         third_party_settings: {  }
 id: user.user.default
 targetEntityType: user
