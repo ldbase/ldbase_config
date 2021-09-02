@@ -12,11 +12,11 @@ text:
     value: "<p>LDbase Notification: Added to Project Group</p>\r\n"
     format: basic_html
   -
-    value: "<p>You have been added to the <strong>@link_to_object</strong>&nbsp;in the role&nbsp;<strong>@group_role</strong>.</p>\r\n"
+    value: "<p>You have been added to @object_text @link_to_object&nbsp;in the role&nbsp;<strong>@group_role</strong>.</p>\r\n"
     format: basic_html
 settings:
   'token options':
-    clear: false
+    clear: true
     'token replace': true
   purge_override: false
   purge_methods: {  }

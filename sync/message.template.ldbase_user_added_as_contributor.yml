@@ -12,11 +12,11 @@ text:
     value: "<p>LDBase Notification: Added as Contributor</p>\r\n"
     format: basic_html
   -
-    value: "<p>You were added to <strong>@link_to_object</strong>&nbsp;by @user</p>\r\n"
+    value: "<p>You were added to @object_text @link_to_object&nbsp;by @user</p>\r\n"
     format: basic_html
 settings:
   'token options':
-    clear: false
+    clear: true
     'token replace': true
   purge_override: false
   purge_methods: {  }

@@ -12,11 +12,11 @@ text:
     value: "<p>LDbase Notification: Content Unpublished for 30 Days</p>\r\n"
     format: basic_html
   -
-    value: "<p>The metadata for <strong>@link_to_object</strong>&nbsp;has been unpublished for 30 or more days.</p>\r\n\r\n<p>Your unpublished metadata is not available to the public for searching.</p>\r\n\r\n<p>Please consider editing the item and checking the \"Publish on LDbase\" box above the save button to share your metadata with the public.&nbsp;&nbsp;</p>\r\n"
+    value: "<p>The metadata for @object_text @link_to_object&nbsp;has been unpublished for 30 or more days.</p>\r\n\r\n<p>Your unpublished metadata is not available to the public for searching.</p>\r\n\r\n<p>Please consider editing the item and checking the \"Publish on LDbase\" box above the save button to share your metadata with the public.&nbsp;&nbsp;</p>\r\n"
     format: basic_html
 settings:
   'token options':
-    clear: false
+    clear: true
     'token replace': true
   purge_override: false
   purge_methods: {  }
