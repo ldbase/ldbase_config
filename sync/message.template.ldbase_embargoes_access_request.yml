@@ -12,14 +12,14 @@ text:
     value: "<p>LDbase Notification: Request for access to an embargoed file</p>\r\n"
     format: basic_html
   -
-    value: "<p>The user <strong>@user_name</strong> (@user_email) has requested access to the embargoed file for <strong>@object_type: @object_title</strong>.</p>\r\n\r\n<p>Reasons for requesting access:</p>\r\n\r\n<p>@reasons_for_access</p>\r\n\r\n<p>You may @confirm_link .&nbsp; This will add the user to the exempt users for that @object_type.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+    value: "<p>The user <strong>@user_name</strong> (@user_email) has requested access to the embargoed file for <strong>@object_type: @object_title</strong>.</p>\r\n\r\n<p>Reasons for requesting access:</p>\r\n\r\n<p>@reasons_for_access</p>\r\n\r\n<p>You may confirm at @confirm_link .&nbsp; This will add the user to the exempt users for that @object_type.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
     format: basic_html
   -
     value: "<p>You must be logged in to LDbase to grant access to the user.</p>\r\n"
     format: basic_html
 settings:
   'token options':
-    clear: false
+    clear: true
     'token replace': true
   purge_override: false
   purge_methods: {  }

@@ -9,7 +9,7 @@ label: 'LDbase Embargoes Access Granted'
 description: 'Message sent when a user is granted an access exemption to an embargo'
 text:
   -
-    value: "<p>You have been granted access to the embargoed file for <strong>@link_to_object</strong>.</p>\r\n"
+    value: "<p>You have been granted access to the embargoed file for @ldbase_object @link_to_object.</p>\r\n"
     format: basic_html
   -
     value: "<p>LDbase Notification: Access to embargoed file granted</p>\r\n"
@@ -19,7 +19,7 @@ text:
     format: basic_html
 settings:
   'token options':
-    clear: false
+    clear: true
     'token replace': true
   purge_override: false
   purge_methods: {  }
