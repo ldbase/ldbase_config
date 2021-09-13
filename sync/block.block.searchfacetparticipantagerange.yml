@@ -17,7 +17,7 @@ third_party_settings:
 id: searchfacetparticipantagerange
 theme: portcullis
 region: sidebar_first
-weight: -30
+weight: -29
 provider: null
 plugin: 'facet_block:search_facet_participant_age_range'
 settings:

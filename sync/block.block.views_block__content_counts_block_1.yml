@@ -17,7 +17,7 @@ third_party_settings:
 id: views_block__content_counts_block_1
 theme: portcullis
 region: sidebar_first
-weight: -20
+weight: -19
 provider: null
 plugin: 'views_block:content_counts-block_1'
 settings:

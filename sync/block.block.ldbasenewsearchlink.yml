@@ -1,40 +1,33 @@
-uuid: b08931dd-c66d-4d8b-a8c4-60fb487c77c3
+uuid: ad6c3bfa-b677-40ea-ae0f-6a0a7f89a173
 langcode: en
 status: true
 dependencies:
   module:
     - collapsiblock
     - context
-    - ldbase_handlers
+    - ldbase_content
     - system
   theme:
     - portcullis
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: ldbasecontactlink
+id: ldbasenewsearchlink
 theme: portcullis
 region: sidebar_first
-weight: -21
+weight: -33
 provider: null
-plugin: ldbase_contact_link
+plugin: new_search_link
 settings:
-  id: ldbase_contact_link
-  label: 'LDbase Contact Link'
-  provider: ldbase_handlers
+  id: new_search_link
+  label: 'LDbase New Search Link'
+  provider: ldbase_content
   label_display: '0'
-  context_mapping:
-    node: '@node.node_route_context:node'
 visibility:
   context_all:
     id: context_all
     values: ''
     negate: null
-    context_mapping: {  }
-  request_path_exclusion:
-    id: request_path_exclusion
-    negate: true
-    pages: "/projects/*/*\r\n/persons/*/*"
     context_mapping: {  }
   context:
     id: context
@@ -54,6 +47,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: "/projects/*\r\n/persons/*"
+    pages: /search
     negate: false
     context_mapping: {  }

@@ -16,7 +16,7 @@ third_party_settings:
 id: searchfacetprojecttype
 theme: portcullis
 region: sidebar_first
-weight: -28
+weight: -27
 provider: null
 plugin: 'facet_block:search_facet_project_type'
 settings:
