@@ -259,11 +259,16 @@ display:
         filter_groups: false
         pager: false
         footer: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
       sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        random:
+          id: random
+          table: views
+          field: random
           relationship: none
           group_type: group
           admin_label: ''
@@ -271,9 +276,7 @@ display:
           exposed: false
           expose:
             label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
+          plugin_id: random
       fields:
         title:
           id: title
@@ -411,26 +414,10 @@ display:
         groups:
           1: AND
       pager:
-        type: full
+        type: some
         options:
           items_per_page: 15
           offset: 0
-          id: 1
-          total_pages: null
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
       footer:
         result:
           id: result
@@ -440,14 +427,18 @@ display:
           group_type: group
           admin_label: ''
           empty: false
-          content: '<div class="ldbase-view-current-page">Displaying page @current_page of @page_count</div>'
+          content: '<div class="ldbase-view-current-page">Displaying @current_record_count of @total</div>'
           plugin_id: result
+      use_more: true
+      use_more_always: true
+      use_more_text: 'Browse All Investigators'
+      link_display: page_1
+      link_url: ''
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
