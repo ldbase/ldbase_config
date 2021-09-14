@@ -65,3 +65,9 @@ definitions:
     parent: ''
     expanded: false
     enabled: true
+  ldbase__search:
+    menu_name: main
+    parent: ''
+    weight: 50
+    expanded: false
+    enabled: true
