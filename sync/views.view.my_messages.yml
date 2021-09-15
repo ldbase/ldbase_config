@@ -969,7 +969,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: "<h4>My Unread Messages</h4>\r\n\r\n<a href=\"/user/{{ uid }}/messages\" class=\"ldbase-button\">Manage Messages</a>"
+            value: "<h4>My Messages</h4>\r\n\r\n<a href=\"/user/{{ uid }}/messages\" class=\"ldbase-button\">Manage Messages</a>"
             format: full_html
           plugin_id: text
       filters:
