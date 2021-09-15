@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.person.body
     - field.field.node.person.field_accepted_terms_of_use
     - field.field.node.person.field_areas_of_expertise
+    - field.field.node.person.field_do_not_contact
     - field.field.node.person.field_drupal_account_id
     - field.field.node.person.field_email
     - field.field.node.person.field_first_name
@@ -51,6 +52,7 @@ content:
 hidden:
   field_accepted_terms_of_use: true
   field_areas_of_expertise: true
+  field_do_not_contact: true
   field_drupal_account_id: true
   field_email: true
   field_first_name: true

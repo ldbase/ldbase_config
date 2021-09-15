@@ -1,0 +1,23 @@
+uuid: ec245170-d0eb-4059-9aa3-97a73dcde475
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_do_not_contact
+    - node.type.person
+id: node.person.field_do_not_contact
+field_name: field_do_not_contact
+entity_type: node
+bundle: person
+label: 'Do Not Contact'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
