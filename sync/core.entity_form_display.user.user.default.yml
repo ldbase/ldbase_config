@@ -2,6 +2,8 @@ uuid: c8b6cde7-f8fb-4800-a334-2d0f0f032410
 langcode: en
 status: true
 dependencies:
+  config:
+    - field.field.user.user.mass_contact_opt_out
   module:
     - path
     - user
@@ -18,6 +20,12 @@ content:
     region: content
   language:
     weight: 0
+    region: content
+  mass_contact_opt_out:
+    type: options_buttons
+    settings: {  }
+    weight: 31
+    third_party_settings: {  }
     region: content
   matomo:
     weight: 3

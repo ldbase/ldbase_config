@@ -1,0 +1,23 @@
+uuid: b0f0b7a9-6ed8-49a1-b29a-a774688ff374
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+_core:
+  default_config_hash: Oxe6Bhf8K94_-TRnuussZZ40zsNXIrSR459IUfkgrgE
+id: user.mass_contact_opt_out
+field_name: mass_contact_opt_out
+entity_type: user
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: mass_contact_opt_out_allowed_values_callback
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

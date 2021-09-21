@@ -1,0 +1,12 @@
+uuid: 3268b70b-c571-487c-aaeb-c74140305236
+langcode: en
+status: true
+dependencies: {  }
+id: ldbase_message_to_all_users
+label: 'LDbase Message to All Users'
+recipients:
+  role:
+    categories:
+      - authenticated
+    conjunction: AND
+selected: true
