@@ -552,6 +552,7 @@ display:
         filters: false
         filter_groups: false
         use_ajax: false
+        empty: false
       row:
         type: fields
       pager:
@@ -957,7 +958,7 @@ display:
           delta: 0
           entity_type: message
           plugin_id: get_text
-      title: ''
+      title: 'My Messages'
       header:
         area:
           id: area
@@ -969,7 +970,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: "<h4>My Messages</h4>\r\n\r\n<a href=\"/user/{{ uid }}/messages\" class=\"ldbase-button\">Manage Messages</a>"
+            value: "<h4>My Messages</h4>\r\n\r\n<a href=\"/user/{{ raw_arguments.field_to_user_target_id }}/messages\" class=\"ldbase-button\">Manage Messages</a>"
             format: full_html
           plugin_id: text
       filters:
@@ -1020,6 +1021,20 @@ display:
         groups:
           1: AND
       use_ajax: false
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'There are no messages for you to view.'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
