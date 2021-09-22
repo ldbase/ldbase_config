@@ -149,7 +149,7 @@ third_party_settings:
               provider: user_email_verification
               label_display: '0'
               notification:
-                value: "<p>You have not yet verified your email address.&nbsp; <a href=\"/user/user-email-verification\">Resend verification email</a></p>\r\n"
+                value: "<p>You have not yet verified your email address.&nbsp; <a href=\"/user/user-email-verification\">Verify&nbsp;email</a></p>\r\n"
                 format: basic_html
               context_mapping: {  }
             additional: {  }
