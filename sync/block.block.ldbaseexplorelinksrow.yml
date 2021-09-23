@@ -15,7 +15,7 @@ third_party_settings:
 id: ldbaseexplorelinksrow
 theme: portcullis
 region: content
-weight: -19
+weight: -21
 provider: null
 plugin: ldbase_explore_row
 settings:

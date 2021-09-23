@@ -14,7 +14,7 @@ third_party_settings:
 id: ldbasecontributionsd3visualization
 theme: portcullis
 region: content
-weight: -22
+weight: -24
 provider: null
 plugin: ldbase_d3_contributions_block
 settings:

@@ -12,32 +12,20 @@ targetEntityType: user
 bundle: user
 mode: compact
 content:
-  masquerade:
-    weight: 50
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   person_information_for_user_profile_entity_view_1:
-    weight: 10
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   person_information_for_user_profile_entity_view_2:
-    weight: 10
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-  user_email_verification_verified:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  user_email_verification_verified_date:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
+  masquerade: true
   mass_contact_opt_out: true
   member_for: true
   search_api_excerpt: true
+  user_email_verification_verified: true
+  user_email_verification_verified_date: true

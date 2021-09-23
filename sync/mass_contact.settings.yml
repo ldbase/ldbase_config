@@ -7,7 +7,7 @@ hourly_threshold: 3
 character_set: UTF-8
 default_sender_name: ''
 default_sender_email: ''
-category_display: select
+category_display: checkboxes
 include_from_name: false
 include_to_name: false
 use_bcc: true
