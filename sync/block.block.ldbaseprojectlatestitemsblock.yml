@@ -15,7 +15,7 @@ third_party_settings:
 id: ldbaseprojectlatestitemsblock
 theme: portcullis
 region: content
-weight: -1
+weight: 0
 provider: null
 plugin: project_latest_items
 settings:

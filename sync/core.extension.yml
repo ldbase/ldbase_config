@@ -1,5 +1,4 @@
 module:
-  active_facet_pills: 0
   address: 0
   anonymizer: 0
   asset_injector: 0
@@ -37,6 +36,7 @@ module:
   eva: 0
   facets: 0
   facets_range_widget: 0
+  facets_summary: 0
   field: 0
   field_ui: 0
   file: 0

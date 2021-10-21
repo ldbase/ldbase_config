@@ -14,7 +14,7 @@ third_party_settings:
 id: ldbasecontentcountd3visualization
 theme: portcullis
 region: content
-weight: -25
+weight: -24
 provider: null
 plugin: ldbase_d3_content_count_block
 settings:
