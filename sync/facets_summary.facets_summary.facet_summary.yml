@@ -1,0 +1,87 @@
+uuid: bd4bda73-eba5-4680-98e1-bda2547bb26a
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.default_index
+    - views.view.search
+  module:
+    - search_api
+id: facet_summary
+name: 'Facet Summary'
+facets:
+  search_facet_content_type:
+    checked: true
+    label: 'Search Facet: Content Type'
+    separator: ', '
+    weight: -10
+    show_count: false
+  search_facet_constructs:
+    checked: true
+    label: 'Search Facet: Constructs'
+    separator: ', '
+    weight: -9
+    show_count: false
+  search_facet_participant_type:
+    checked: true
+    label: 'Search Facet: Participant Type'
+    separator: ', '
+    weight: -8
+    show_count: false
+  search_facet_participant_age_range:
+    checked: true
+    label: 'Search Facet: Participant Age Range'
+    separator: ', '
+    weight: -7
+    show_count: false
+  search_facet_special_populations:
+    checked: true
+    label: 'Search Facet: Special Populations'
+    separator: ', '
+    weight: -6
+    show_count: false
+  search_facet_project_type:
+    checked: true
+    label: 'Search Facet: Project Descriptors'
+    separator: ', '
+    weight: -5
+    show_count: false
+  search_facet_time_method:
+    checked: true
+    label: 'Search Facet: Developmental Designs'
+    separator: ', '
+    weight: -4
+    show_count: false
+  search_facet_schooling:
+    checked: true
+    label: 'Search Facet: Educational Environments'
+    separator: ', '
+    weight: -3
+    show_count: false
+  search_facet_persons:
+    checked: true
+    label: 'Search Facet: Persons'
+    separator: ', '
+    weight: -2
+    show_count: false
+  search_facet_host_organizations:
+    checked: true
+    label: 'Search Facet: Host Organizations'
+    separator: ', '
+    weight: -1
+    show_count: false
+facet_source_id: 'search_api:views_page__search__page_1'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+  show_text_when_empty:
+    processor_id: show_text_when_empty
+    weights:
+      build: '10'
+    settings:
+      text:
+        value: 'No results found.'
+        format: plain_text
