@@ -1,32 +1,30 @@
-uuid: ffbeffc8-b0cc-408f-a0cc-fab85b2c4ecb
+uuid: 6849f997-1cc9-4cc4-93d2-baf1ae4996cb
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.ldbase_news
+    - facets_summary.facets_summary.facet_summary
   module:
     - collapsiblock
     - context
+    - facets_summary
     - system
-    - views
   theme:
     - portcullis
 third_party_settings:
   collapsiblock:
     collapse_action: '0'
-id: views_block__ldbase_news_block_1
+id: facetsummary
 theme: portcullis
 region: content
-weight: 0
+weight: -33
 provider: null
-plugin: 'views_block:ldbase_news-block_1'
+plugin: 'facets_summary_block:facet_summary'
 settings:
-  id: 'views_block:ldbase_news-block_1'
-  label: ''
-  provider: views
+  id: 'facets_summary_block:facet_summary'
+  label: 'Facet Summary'
+  provider: facets_summary
   label_display: '0'
-  views_label: ''
-  items_per_page: none
 visibility:
   context_all:
     id: context_all
@@ -51,6 +49,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: '/search*'
     negate: false
     context_mapping: {  }
