@@ -3,15 +3,11 @@ langcode: en
 status: true
 dependencies:
   module:
-    - collapsiblock
     - context
     - ldbase_content
     - system
   theme:
     - portcullis
-third_party_settings:
-  collapsiblock:
-    collapse_action: '0'
 id: ldbaseexplorelinksrow
 theme: portcullis
 region: content

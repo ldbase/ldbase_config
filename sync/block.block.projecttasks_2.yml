@@ -5,16 +5,12 @@ dependencies:
   config:
     - system.menu.project-tasks
   module:
-    - collapsiblock
     - context
     - ctools
     - node
     - system
   theme:
     - portcullis
-third_party_settings:
-  collapsiblock:
-    collapse_action: '0'
 id: projecttasks_2
 theme: portcullis
 region: content

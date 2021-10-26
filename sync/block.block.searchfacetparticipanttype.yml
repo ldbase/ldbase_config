@@ -5,14 +5,10 @@ dependencies:
   config:
     - facets.facet.search_facet_participant_type
   module:
-    - collapsiblock
     - facets
     - system
   theme:
     - portcullis
-third_party_settings:
-  collapsiblock:
-    collapse_action: '0'
 id: searchfacetparticipanttype
 theme: portcullis
 region: sidebar_first

@@ -23,13 +23,13 @@ elements: "initial_message:\n  '#type': webform_markup\n  '#markup': 'Let&#39;s 
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   ajax_progress_type: ''
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: create-new-account
+  page_submit_path: /create-new-account
   page_confirm_path: ''
   page_admin_theme: false
   form_title: source_entity_webform
@@ -152,6 +152,7 @@ settings:
   wizard_toggle_hide_label: ''
   serial_disabled: false
   token_delete: false
+  form_disable_remote_addr: false
 access:
   create:
     roles:

@@ -5,15 +5,11 @@ dependencies:
   config:
     - views.view.persons
   module:
-    - collapsiblock
     - context
     - system
     - views
   theme:
     - portcullis
-third_party_settings:
-  collapsiblock:
-    collapse_action: '0'
 id: views_block__persons_block_1
 theme: portcullis
 region: content

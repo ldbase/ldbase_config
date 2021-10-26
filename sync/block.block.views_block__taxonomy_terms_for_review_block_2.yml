@@ -5,15 +5,11 @@ dependencies:
   config:
     - views.view.taxonomy_terms_for_review
   module:
-    - collapsiblock
     - system
     - user
     - views
   theme:
     - portcullis
-third_party_settings:
-  collapsiblock:
-    collapse_action: '0'
 id: views_block__taxonomy_terms_for_review_block_2
 theme: portcullis
 region: content
