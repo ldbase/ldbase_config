@@ -23,7 +23,7 @@ elements: "initial_message:\n  '#type': webform_markup\n  '#markup': 'Let&#39;s 
 css: ''
 javascript: ''
 settings:
-  ajax: true
+  ajax: false
   ajax_scroll_top: form
   ajax_progress_type: ''
   ajax_effect: ''
