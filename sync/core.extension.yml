@@ -61,7 +61,6 @@ module:
   mass_contact: 0
   matomo: 0
   media: 0
-  menu_token: 0
   menu_ui: 0
   message: 0
   message_notify: 0
