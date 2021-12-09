@@ -12,18 +12,18 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: message.ldbase_taxonomy_term_added.mail_body
 targetEntityType: message
 bundle: ldbase_taxonomy_term_added
 mode: mail_body
 content:
   partial_1:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_from_user: true
   field_message_status: true

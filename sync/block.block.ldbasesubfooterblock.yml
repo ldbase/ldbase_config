@@ -16,16 +16,16 @@ plugin: ldbase_subfooter_block
 settings:
   id: ldbase_subfooter_block
   label: 'LDbase Subfooter Block'
-  provider: ldbase_content
   label_display: '0'
+  provider: ldbase_content
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
     context_mapping: {  }
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null
-    view_inclusion: {  }
     context_mapping: {  }
+    view_inclusion: {  }

@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_handlers
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -14,7 +14,200 @@ id: create_update_codebook
 title: 'Create/Update Codebook'
 description: 'A form for creating or updating LDbase Codebook objects.'
 category: 'LDbase Create/Update Forms'
-elements: "codebook_header_text:\n  '#type': webform_markup\n  '#markup': 'In this form, you can provide the metadata for your codebook. All information entered here will be searchable within LDbase and on the web, even if you decide not to share the actual codebook. Not all fields are required, but it will help other users find your codebook if you fill out everything. Codebooks can be a helpful tool for other users to better understand your data.'\npassed_id:\n  '#type': select\n  '#title': 'Attach Codebook to'\n  '#options': project_tree_content\n  '#required': true\n  '#states':\n    disabled:\n      ':input[name=\"node_id\"]':\n        empty: true\n    invisible:\n      ':input[name=\"node_id\"]':\n        empty: true\n  '#states_clear': false\ndocument_uploaded_or_externally_linked:\n  '#type': radios\n  '#title': '<strong>Upload Codebook or Link to an external source</strong>'\n  '#description': 'If you are storing your codebook on LDbase, select upload and follow the steps. If your codebook is already stored online, select URL and provide the online location information.'\n  '#description_display': before\n  '#options':\n    upload: 'I will upload the Codebook'\n    external: 'I have a URL that links to where my Codebook is already stored online elsewhere'\n  '#required': true\nexternal_resource:\n  '#type': textfield\n  '#title': 'External URL for this Codebook'\n  '#description': 'Add the URL for this codebook. Please include the protocol for the URL (e.g., https://)'\n  '#description_display': before\n  '#placeholder': 'For Example: https://www.nlsinfo.org/investigator/pages/search'\n  '#pattern': '^(http:\\/\\/|https:\\/\\/)(www\\.)?[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*\\.[a-z]{2,5}(:[0-9]{1,5})?(\\/.*)?$'\n  '#pattern_error': 'You must enter a valid URL beginning with \"http://\" or \"https://\"'\n  '#states':\n    visible:\n      ':input[name=\"document_uploaded_or_externally_linked\"]':\n        value: external\n    required:\n      ':input[name=\"document_uploaded_or_externally_linked\"]':\n        value: external\n  '#attributes':\n    class:\n      - codebook-url-text-input\ndocument_file:\n  '#type': managed_file\n  '#title': File\n  '#states':\n    visible:\n      ':input[name=\"document_uploaded_or_externally_linked\"]':\n        value: upload\n    required:\n      ':input[name=\"document_uploaded_or_externally_linked\"]':\n        value: upload\n  '#file_placeholder': 'Upload your file here. You can only upload 1 file per form.'\n  '#file_extensions': 'gif jpg png bmp eps tif pict psd txt rtf html odf pdf doc docx ppt pptx csv xls xlsx xml avi mov mp3 ogg wav bz2 dmg gz jar rar rmd sit svg tar zip'\n  '#sanitize': true\ncodebook_embargo:\n  '#type': label\n  '#title': 'Codebook Embargo'\n  '#states':\n    visible:\n      ':input[name=\"document_uploaded_or_externally_linked\"]':\n        value: upload\nembargoed:\n  '#type': checkbox\n  '#title': 'Restrict public access to file?'\n  '#description': 'Checking this box will make the submitted files unavailable to anyone who is not a Project Administrator or Project Editor of your project, but the codebook metadata will still be public.'\n  '#states':\n    visible:\n      ':input[name=\"document_uploaded_or_externally_linked\"]':\n        value: upload\n  '#states_clear': false\nembargo_expiry:\n  '#type': date\n  '#title': 'Access restriction expiration date'\n  '#description': 'Schedule a date for when the submitted file for this codebook should be made available to the public, or leave blank to restrict access to files indefinitely.'\n  '#description_display': before\n  '#states':\n    visible:\n      ':input[name=\"embargoed\"]':\n        checked: true\n  '#states_clear': false\n  '#date_date_min': '[webform_submission:created:html_date]'\n  '#datepicker': true\n  '#datepicker_button': true\nembargo_exempt_users:\n  '#type': entity_autocomplete\n  '#title': 'Access restriction exempt users'\n  '#multiple': true\n  '#description': 'When you restrict public access to your data, the Project Administrators and Project Editors, managed from the Project page, are the only people who can view those files. You can, however, allow certain individuals, such as a collaborator or a data requester whom you approve of, to override the restriction to view/download the data. Simply enter their LDbase name below. They will then gain access to this data, but they will not be able to to perform any actions that your Project Administrators and Project Editors can do.'\n  '#description_display': before\n  '#states':\n    visible:\n      ':input[name=\"embargoed\"]':\n        checked: true\n  '#states_clear': false\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another exempt user'\n  '#attributes':\n    class:\n      - input-comma-check\n  '#target_type': user\n  '#selection_handler': views\n  '#selection_settings':\n    view:\n      view_name: user_reference_autocomplete\n      display_name: entity_reference_1\n      arguments: {  }\ntitle:\n  '#type': textfield\n  '#title': 'Codebook Name'\n  '#description': 'Enter the name you want this codebook to be identified as. It is helpful to name it similar to the data set it refers to.'\n  '#description_display': before\n  '#placeholder': 'For Example: Wave 1 Student Achievement Codebook for Motivate Project'\n  '#required': true\ndescription:\n  '#type': textarea\n  '#title': 'Codebook Description'\n  '#description': 'Provide a brief description this codebook. Include the data set it accompanies and any other specifics.'\n  '#description_display': before\n  '#placeholder': 'For Example: This is the codebook accompanying the full data set of Wave 1 Student Achievement. It includes descriptions of variables, transformations, and levels.'\n  '#required': true\nauthors:\n  '#type': entity_autocomplete\n  '#title': 'Codebook Author(s)'\n  '#multiple': true\n  '#description': 'Enter the full names of the people who should get credit for this codebook and be part of the citation. This may or may not include named personnel on funded grants, but likely includes those who put the codebook together.'\n  '#help': 'Personnel that might receive credit are postdocs, undergraduate or graduate students, data management staff, or your methodologist.'\n  '#description_display': before\n  '#placeholder': 'For Example: Cody Codes'\n  '#required': true\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Codebook Author'\n  '#attributes':\n    class:\n      - input-comma-check\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      person: person\n    auto_create: 1\n    auto_create_bundle: person\nlicense:\n  '#type': webform_select_other\n  '#title': License\n  '#description': 'Choose the license type for your Codebook. There are many levels of Creative Commons (CC) licenses you can choose from. For full information about CC licenses, read about it in the Best Practices <a href=\"/resources/best-practices/license-types\" target=\"_blank\">License Types page</a>. If you opt to make your material public without a license, other users may use and reuse it without citing you and your team. If you have a license in mind that is not on the list, select the &quot;Other&quot; option and enter the type in the box.'\n  '#help': 'Select the license you would like for this codebook.'\n  '#description_display': before\n  '#options': document_licenses\ndoi:\n  '#type': textfield\n  '#title': 'Codebook DOI'\n  '#multiple': true\n  '#description': 'A digital object identifier provides a persistent link to a specific research output and makes it a citable product. A different DOI can be assigned to each of your research outputs, such as a project, dataset, published manuscript, survey, or conference presentation. Other researchers will be able to easily find your specific output through its DOI. If you already have a DOI for your codebook, enter it here.'\n  '#description_display': before\n  '#placeholder': 'For Example: 10.1037/a0028240'\n  '#pattern': '\\b(10[.][0-9]{4,}(?:[.][0-9]+)*\\/(?:(?![\"&\\''<>])[[:graph:]])+)\\b'\n  '#pattern_error': 'Enter the DOI only.  It will begin with \"10.\"'\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Codebook DOI'\nnode_id:\n  '#type': hidden\n  '#title': node_id\nparent_is_published:\n  '#type': hidden\n  '#title': parent_is_published\npublished_flag:\n  '#type': checkbox\n  '#title': 'Publish on LDbase'\n  '#help': 'By checking this box, you are making the above metadata and data available to the public. If you have chosen to embargo your codebook, the codebook will not be publicly available but your metadata will be. If you cannot check this box, you need to first publish the item above this in the project hierarchy.'\n  '#states':\n    disabled:\n      ':input[name=\"parent_is_published\"]':\n        value: '0'\ndisabled_publish_message:\n  '#type': webform_message\n  '#states':\n    visible:\n      ':input[name=\"parent_is_published\"]':\n        value: '0'\n  '#message_type': info\n  '#message_message': 'You cannot publish this item because its parent is unpublished.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Save"
+elements: |-
+  codebook_header_text:
+    '#type': webform_markup
+    '#markup': 'In this form, you can provide the metadata for your codebook. All information entered here will be searchable within LDbase and on the web, even if you decide not to share the actual codebook. Not all fields are required, but it will help other users find your codebook if you fill out everything. Codebooks can be a helpful tool for other users to better understand your data.'
+  passed_id:
+    '#type': select
+    '#title': 'Attach Codebook to'
+    '#options': project_tree_content
+    '#required': true
+    '#states':
+      disabled:
+        ':input[name="node_id"]':
+          empty: true
+      invisible:
+        ':input[name="node_id"]':
+          empty: true
+    '#states_clear': false
+  document_uploaded_or_externally_linked:
+    '#type': radios
+    '#title': '<strong>Upload Codebook or Link to an external source</strong>'
+    '#description': 'If you are storing your codebook on LDbase, select upload and follow the steps. If your codebook is already stored online, select URL and provide the online location information.'
+    '#description_display': before
+    '#options':
+      upload: 'I will upload the Codebook'
+      external: 'I have a URL that links to where my Codebook is already stored online elsewhere'
+    '#required': true
+  external_resource:
+    '#type': textfield
+    '#title': 'External URL for this Codebook'
+    '#description': 'Add the URL for this codebook. Please include the protocol for the URL (e.g., https://)'
+    '#description_display': before
+    '#placeholder': 'For Example: https://www.nlsinfo.org/investigator/pages/search'
+    '#pattern': '^(http:\/\/|https:\/\/)(www\.)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+    '#pattern_error': 'You must enter a valid URL beginning with "http://" or "https://"'
+    '#states':
+      visible:
+        ':input[name="document_uploaded_or_externally_linked"]':
+          value: external
+      required:
+        ':input[name="document_uploaded_or_externally_linked"]':
+          value: external
+    '#attributes':
+      class:
+        - codebook-url-text-input
+  document_file:
+    '#type': managed_file
+    '#title': File
+    '#states':
+      visible:
+        ':input[name="document_uploaded_or_externally_linked"]':
+          value: upload
+      required:
+        ':input[name="document_uploaded_or_externally_linked"]':
+          value: upload
+    '#file_placeholder': 'Upload your file here. You can only upload 1 file per form.'
+    '#file_extensions': 'gif jpg png bmp eps tif pict psd txt rtf html odf pdf doc docx ppt pptx csv xls xlsx xml avi mov mp3 ogg wav bz2 dmg gz jar rar rmd sit svg tar zip'
+    '#sanitize': true
+  codebook_embargo:
+    '#type': label
+    '#title': 'Codebook Embargo'
+    '#states':
+      visible:
+        ':input[name="document_uploaded_or_externally_linked"]':
+          value: upload
+  embargoed:
+    '#type': checkbox
+    '#title': 'Restrict public access to file?'
+    '#description': 'Checking this box will make the submitted files unavailable to anyone who is not a Project Administrator or Project Editor of your project, but the codebook metadata will still be public.'
+    '#states':
+      visible:
+        ':input[name="document_uploaded_or_externally_linked"]':
+          value: upload
+    '#states_clear': false
+  embargo_expiry:
+    '#type': date
+    '#title': 'Access restriction expiration date'
+    '#description': 'Schedule a date for when the submitted file for this codebook should be made available to the public, or leave blank to restrict access to files indefinitely.'
+    '#description_display': before
+    '#states':
+      visible:
+        ':input[name="embargoed"]':
+          checked: true
+    '#states_clear': false
+    '#date_date_min': '[webform_submission:created:html_date]'
+    '#datepicker': true
+    '#datepicker_button': true
+  embargo_exempt_users:
+    '#type': entity_autocomplete
+    '#title': 'Access restriction exempt users'
+    '#multiple': true
+    '#description': 'When you restrict public access to your data, the Project Administrators and Project Editors, managed from the Project page, are the only people who can view those files. You can, however, allow certain individuals, such as a collaborator or a data requester whom you approve of, to override the restriction to view/download the data. Simply enter their LDbase name below. They will then gain access to this data, but they will not be able to to perform any actions that your Project Administrators and Project Editors can do.'
+    '#description_display': before
+    '#states':
+      visible:
+        ':input[name="embargoed"]':
+          checked: true
+    '#states_clear': false
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another exempt user'
+    '#attributes':
+      class:
+        - input-comma-check
+    '#target_type': user
+    '#selection_handler': views
+    '#selection_settings':
+      view:
+        view_name: user_reference_autocomplete
+        display_name: entity_reference_1
+        arguments: {  }
+  title:
+    '#type': textfield
+    '#title': 'Codebook Name'
+    '#description': 'Enter the name you want this codebook to be identified as. It is helpful to name it similar to the data set it refers to.'
+    '#description_display': before
+    '#placeholder': 'For Example: Wave 1 Student Achievement Codebook for Motivate Project'
+    '#required': true
+  description:
+    '#type': textarea
+    '#title': 'Codebook Description'
+    '#description': 'Provide a brief description this codebook. Include the data set it accompanies and any other specifics.'
+    '#description_display': before
+    '#placeholder': 'For Example: This is the codebook accompanying the full data set of Wave 1 Student Achievement. It includes descriptions of variables, transformations, and levels.'
+    '#required': true
+  authors:
+    '#type': entity_autocomplete
+    '#title': 'Codebook Author(s)'
+    '#multiple': true
+    '#description': 'Enter the full names of the people who should get credit for this codebook and be part of the citation. This may or may not include named personnel on funded grants, but likely includes those who put the codebook together.'
+    '#help': 'Personnel that might receive credit are postdocs, undergraduate or graduate students, data management staff, or your methodologist.'
+    '#description_display': before
+    '#placeholder': 'For Example: Cody Codes'
+    '#required': true
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Codebook Author'
+    '#attributes':
+      class:
+        - input-comma-check
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        person: person
+      auto_create: 1
+      auto_create_bundle: person
+  license:
+    '#type': webform_select_other
+    '#title': License
+    '#description': 'Choose the license type for your Codebook. There are many levels of Creative Commons (CC) licenses you can choose from. For full information about CC licenses, read about it in the Best Practices <a href="/resources/best-practices/license-types" target="_blank">License Types page</a>. If you opt to make your material public without a license, other users may use and reuse it without citing you and your team. If you have a license in mind that is not on the list, select the &quot;Other&quot; option and enter the type in the box.'
+    '#help': 'Select the license you would like for this codebook.'
+    '#description_display': before
+    '#options': document_licenses
+  doi:
+    '#type': textfield
+    '#title': 'Codebook DOI'
+    '#multiple': true
+    '#description': 'A digital object identifier provides a persistent link to a specific research output and makes it a citable product. A different DOI can be assigned to each of your research outputs, such as a project, dataset, published manuscript, survey, or conference presentation. Other researchers will be able to easily find your specific output through its DOI. If you already have a DOI for your codebook, enter it here.'
+    '#description_display': before
+    '#placeholder': 'For Example: 10.1037/a0028240'
+    '#pattern': '\b(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?!["&\''<>])[[:graph:]])+)\b'
+    '#pattern_error': 'Enter the DOI only.  It will begin with "10."'
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Codebook DOI'
+  node_id:
+    '#type': hidden
+    '#title': node_id
+  parent_is_published:
+    '#type': hidden
+    '#title': parent_is_published
+  published_flag:
+    '#type': checkbox
+    '#title': 'Publish on LDbase'
+    '#help': 'By checking this box, you are making the above metadata and data available to the public. If you have chosen to embargo your codebook, the codebook will not be publicly available but your metadata will be. If you cannot check this box, you need to first publish the item above this in the project hierarchy.'
+    '#states':
+      disabled:
+        ':input[name="parent_is_published"]':
+          value: '0'
+  disabled_publish_message:
+    '#type': webform_message
+    '#states':
+      visible:
+        ':input[name="parent_is_published"]':
+          value: '0'
+    '#message_type': info
+    '#message_message': 'You cannot publish this item because its parent is unpublished.'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Save
 css: "html {\r\n  scroll-padding-top: 180px; \r\n}"
 javascript: "(function($, Drupal, drupalSettings){\r\n  'use strict';\r\n  \r\n  Drupal.behaviors.ldbaseCodebook = {\r\n    attach: function (context, settings) {\r\n      $(context).find('.input-comma-check').on('keyup', function(e) {\r\n        if (e.which == 188) {\r\n          alert('You added a comma. Please only enter one item per line.  \\nAdd additional lines if needed.');\r\n        }\r\n      });\r\n    }\r\n  }\r\n\r\n})(jQuery, Drupal, drupalSettings);"
 settings:
@@ -26,38 +219,47 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: source_entity_webform
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: true
   form_disable_inline_errors: false
   form_required: true
-  form_unsaved: true
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -66,11 +268,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -85,7 +282,15 @@ settings:
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -102,9 +307,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: none
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -128,25 +333,13 @@ settings:
   purge_days: null
   results_disabled: true
   results_disabled_ignore: true
-  token_update: false
-  token_view: false
   results_customize: false
-  page_theme_name: ''
-  share: false
-  share_node: false
-  share_theme_name: ''
-  share_title: true
-  share_page_body_attributes: {  }
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
-  wizard_prev_button_label: ''
-  wizard_next_button_label: ''
-  wizard_toggle: true
-  wizard_toggle_show_label: ''
-  wizard_toggle_hide_label: ''
-  serial_disabled: false
+  token_view: false
+  token_update: false
   token_delete: false
+  serial_disabled: false
+  page_admin_theme: false
+  form_remote_addr: true
 access:
   create:
     roles:
@@ -197,9 +390,9 @@ access:
 handlers:
   debug:
     id: debug
+    handler_id: debug
     label: Debug
     notes: ''
-    handler_id: debug
     status: false
     conditions: {  }
     weight: 0
@@ -208,9 +401,9 @@ handlers:
       submission: false
   ldbase_document:
     id: document_from_webform
+    handler_id: ldbase_document
     label: 'LDbase Document'
     notes: ''
-    handler_id: ldbase_document
     status: true
     conditions: {  }
     weight: 0

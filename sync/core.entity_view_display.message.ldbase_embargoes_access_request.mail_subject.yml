@@ -14,18 +14,18 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: message.ldbase_embargoes_access_request.mail_subject
 targetEntityType: message
 bundle: ldbase_embargoes_access_request
 mode: mail_subject
 content:
   partial_0:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_embargo: true
   field_from_user: true

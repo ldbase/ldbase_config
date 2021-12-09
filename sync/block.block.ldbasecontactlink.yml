@@ -17,39 +17,39 @@ plugin: ldbase_contact_link
 settings:
   id: ldbase_contact_link
   label: 'LDbase Contact Link'
-  provider: ldbase_handlers
   label_display: '0'
+  provider: ldbase_handlers
   context_mapping:
     node: '@node.node_route_context:node'
 visibility:
   context_all:
     id: context_all
-    values: ''
     negate: null
     context_mapping: {  }
+    values: ''
   request_path_exclusion:
     id: request_path_exclusion
     negate: true
-    pages: "/projects/*/*\r\n/persons/*/*"
     context_mapping: {  }
+    pages: "/projects/*/*\r\n/persons/*/*"
   context:
     id: context
-    values: ''
     negate: null
     context_mapping: {  }
+    values: ''
   user_status:
     id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
     user_status:
       viewing_profile: '0'
       logged_viewing_profile: '0'
       own_page_true: '0'
       field_value: '0'
     user_fields: uid
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: "/projects/*\r\n/persons/*"
     negate: false
     context_mapping: {  }
+    pages: "/projects/*\r\n/persons/*"

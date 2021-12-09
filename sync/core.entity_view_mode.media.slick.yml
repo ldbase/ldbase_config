@@ -2,11 +2,11 @@ uuid: 4934167d-fbb9-449a-bbf4-e8368893da48
 langcode: en
 status: true
 dependencies:
+  module:
+    - media
   enforced:
     module:
       - slick
-  module:
-    - media
 _core:
   default_config_hash: RL7TDfa_Yx84vUNQlHVRJw-7YNeB3ZB0xhSd7RU9qYY
 id: media.slick

@@ -48,13 +48,14 @@ dependencies:
     - views
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'DOI Section'
+          context_mapping: {  }
         components:
           68b243cc-f484-4ae6-a2d3-08a00c03a314:
             uuid: 68b243cc-f484-4ae6-a2d3-08a00c03a314
@@ -62,24 +63,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_doi'
               label: DOI
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: string
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Local Tasks Section'
+          context_mapping: {  }
         components:
           1cc5773c-1cca-4537-95af-0d462422c120:
             uuid: 1cc5773c-1cca-4537-95af-0d462422c120
@@ -87,28 +89,29 @@ third_party_settings:
             configuration:
               id: ldbase_citation_link_block
               label: 'Ldbase citation link block'
-              provider: ldbase_citations
               label_display: '0'
+              provider: ldbase_citations
               context_mapping: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
           5ec04bd9-0eb9-4175-9a84-b06d7df0fe86:
             uuid: 5ec04bd9-0eb9-4175-9a84-b06d7df0fe86
             region: content
             configuration:
               id: dataset_subscription_link
               label: 'LDbase Dataset Subscription Link'
-              provider: ldbase_handlers
               label_display: '0'
+              provider: ldbase_handlers
               context_mapping:
                 node: layout_builder.entity
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'File Section'
+          context_mapping: {  }
         components:
           4fab1b82-d764-49e4-8ceb-1a210ce2c26f:
             uuid: 4fab1b82-d764-49e4-8ceb-1a210ce2c26f
@@ -116,48 +119,49 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_dataset_upload_or_external'
               label: 'Dataset Upload or External Link'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: list_default
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: list_default
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
           37adea87-24db-41cc-a3c6-fe87ba6a99b1:
             uuid: 37adea87-24db-41cc-a3c6-fe87ba6a99b1
             region: content
             configuration:
               id: dataset_versions_view_link
               label: 'LDbase Dataset Versions View Link'
-              provider: ldbase_handlers
               label_display: '0'
+              provider: ldbase_handlers
               context_mapping:
                 node: layout_builder.entity
-            additional: {  }
             weight: 4
+            additional: {  }
           deabb4cf-23eb-41b5-a4a6-6e6cd1ed96fb:
             uuid: deabb4cf-23eb-41b5-a4a6-6e6cd1ed96fb
             region: content
             configuration:
               id: 'views_block:dataset_versions-block_1'
               label: ''
-              provider: views
               label_display: '0'
+              provider: views
+              context_mapping: {  }
               views_label: ''
               items_per_page: none
-              context_mapping: {  }
-            additional: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'External Resource Section'
+          context_mapping: {  }
         components:
           e7ca936c-c794-4dad-8fb0-7050966f2870:
             uuid: e7ca936c-c794-4dad-8fb0-7050966f2870
@@ -165,11 +169,14 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_external_resource'
               label: 'External Resource'
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
-                label: inline
                 type: link
+                label: inline
                 settings:
                   trim_length: 80
                   url_only: false
@@ -177,16 +184,14 @@ third_party_settings:
                   rel: '0'
                   target: '0'
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Description Section'
+          context_mapping: {  }
         components:
           a3fd8003-def3-44dc-82f1-8c5028ccbe60:
             uuid: a3fd8003-def3-44dc-82f1-8c5028ccbe60
@@ -194,23 +199,24 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:body'
               label: Description
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Unique or Derived Section'
+          context_mapping: {  }
         components:
           d9571eac-520d-479e-ace9-07c430c69bb4:
             uuid: d9571eac-520d-479e-ace9-07c430c69bb4
@@ -218,27 +224,28 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_data_unique_or_derived'
               label: 'Are these data unique or dervived?'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: list_default
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: list_default
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
             weight: 1
+            additional: {  }
           4d3caac5-c1bb-4d2e-ae54-c2f7dd97a6c6:
             uuid: 4d3caac5-c1bb-4d2e-ae54-c2f7dd97a6c6
             region: content
             configuration:
+              id: 'field_block:node:dataset:field_derivation_source'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_derivation_source'
               formatter:
+                type: link
                 label: above
                 settings:
                   trim_length: 80
@@ -247,14 +254,14 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-                type: link
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Contributors Section'
+          context_mapping: {  }
         components:
           40124aad-8cd8-4bf2-a60c-24b975ac58ac:
             uuid: 40124aad-8cd8-4bf2-a60c-24b975ac58ac
@@ -262,24 +269,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_related_persons'
               label: Contributors
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Publication Information Section'
+          context_mapping: {  }
         components:
           18eccbbd-5fed-4150-b741-686a8af25851:
             uuid: 18eccbbd-5fed-4150-b741-686a8af25851
@@ -287,24 +295,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_publication_info'
               label: 'Publication Information'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_revisions_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: inline
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Host Organizations Section'
+          context_mapping: {  }
         components:
           d21b8a6a-3450-4cb9-87c4-0563e72ebe1f:
             uuid: d21b8a6a-3450-4cb9-87c4-0563e72ebe1f
@@ -312,24 +321,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_related_organizations'
               label: 'Host Organizations'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Constructs Section'
+          context_mapping: {  }
         components:
           b8115b49-91c9-4182-ac47-f896699535fa:
             uuid: b8115b49-91c9-4182-ac47-f896699535fa
@@ -337,24 +347,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_component_skills'
               label: Constructs
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Assessment Name Section'
+          context_mapping: {  }
         components:
           cbe024cb-76ce-4ee2-a247-d36584afa707:
             uuid: cbe024cb-76ce-4ee2-a247-d36584afa707
@@ -362,24 +373,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_assessment_name'
               label: 'Assessment Name'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Location Section'
+          context_mapping: {  }
         components:
           c165db02-0037-4fd1-a517-c3ce2783084a:
             uuid: c165db02-0037-4fd1-a517-c3ce2783084a
@@ -387,23 +399,24 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_location'
               label: Location
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: address_plain
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: address_plain
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
             weight: 4
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Participants Section'
+          context_mapping: {  }
         components:
           51ab0e11-8c14-46cc-8da7-96b8d81e4305:
             uuid: 51ab0e11-8c14-46cc-8da7-96b8d81e4305
@@ -411,24 +424,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_demographics_information'
               label: Participants
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_revisions_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: inline
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Special Populations Section'
+          context_mapping: {  }
         components:
           6952618c-fba3-45bc-bf4d-13f2b23f70e8:
             uuid: 6952618c-fba3-45bc-bf4d-13f2b23f70e8
@@ -436,24 +450,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_special_populations'
               label: 'Special Populations'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Variable Types Section'
+          context_mapping: {  }
         components:
           74d7ed4e-8b39-4439-a616-ab382cde8144:
             uuid: 74d7ed4e-8b39-4439-a616-ab382cde8144
@@ -461,24 +476,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_variable_types_in_dataset'
               label: 'Variable Types in Dataset'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Time Points Section'
+          context_mapping: {  }
         components:
           79bfe39c-eec9-40ce-9522-2bdbf54bff64:
             uuid: 79bfe39c-eec9-40ce-9522-2bdbf54bff64
@@ -486,23 +502,24 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_time_points'
               label: 'Time Points'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: list_default
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: list_default
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Data Collection Locations Section'
+          context_mapping: {  }
         components:
           95b290ae-1f15-4941-885a-1e4393311d9c:
             uuid: 95b290ae-1f15-4941-885a-1e4393311d9c
@@ -510,24 +527,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_data_collection_locations'
               label: 'Data Collection Locations'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Data Collection Period Section'
+          context_mapping: {  }
         components:
           fff73b88-27c5-42dd-94cc-aedb5a99751a:
             uuid: fff73b88-27c5-42dd-94cc-aedb5a99751a
@@ -535,24 +553,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_data_collection_range'
               label: 'Data Collection Period'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_revisions_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: inline
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'License Section'
+          context_mapping: {  }
         components:
           3d065fbd-76e4-4518-a714-a85b17544e7d:
             uuid: 3d065fbd-76e4-4518-a714-a85b17544e7d
@@ -560,40 +579,41 @@ third_party_settings:
             configuration:
               id: 'field_block:node:dataset:field_license'
               label: License
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 3
+            additional: {  }
           404235f2-2c88-421c-b1dc-74ea65cecc9b:
             uuid: 404235f2-2c88-421c-b1dc-74ea65cecc9b
             region: content
             configuration:
+              id: 'field_block:node:dataset:field_license_other'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:dataset:field_license_other'
               formatter:
+                type: string
                 label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-                type: string
-            additional: {  }
             weight: 4
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Second Dataset Tasks'
+          context_mapping: {  }
         components:
           b7d90cc1-af68-4119-9e97-662844c32ea7:
             uuid: b7d90cc1-af68-4119-9e97-662844c32ea7
@@ -601,19 +621,20 @@ third_party_settings:
             configuration:
               id: 'system_menu_block:second-dataset-tasks'
               label: 'Second Dataset Tasks'
-              provider: system
               label_display: '0'
+              provider: system
+              context_mapping: {  }
               level: 1
               depth: 0
               expand_all_items: false
-              context_mapping: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Dataset Sub-Tree'
+          context_mapping: {  }
         components:
           623c80c4-02b3-43f4-89b9-c0f15cb91990:
             uuid: 623c80c4-02b3-43f4-89b9-c0f15cb91990
@@ -621,16 +642,17 @@ third_party_settings:
             configuration:
               id: sub_tree_block
               label: 'LDbase Dataset Sub-tree Block'
-              provider: ldbase_content
               label_display: '0'
+              provider: ldbase_content
               context_mapping: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Citations Section'
+          context_mapping: {  }
         components:
           544f05ed-8460-4bca-b71c-2b42a7a1f45c:
             uuid: 544f05ed-8460-4bca-b71c-2b42a7a1f45c
@@ -638,11 +660,11 @@ third_party_settings:
             configuration:
               id: ldbase_citation_display_block
               label: 'Ldbase citation display block'
-              provider: ldbase_citations
               label_display: '0'
+              provider: ldbase_citations
               context_mapping: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: node.dataset.default
 targetEntityType: node
@@ -650,87 +672,87 @@ bundle: dataset
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_affiliated_parents:
-    weight: 29
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 29
     region: content
   field_assessment_name:
-    weight: 14
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 14
     region: content
   field_component_skills:
-    weight: 11
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 11
     region: content
   field_data_collection_locations:
-    weight: 7
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 7
     region: content
   field_data_collection_range:
     type: entity_reference_revisions_entity_view
-    weight: 33
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 33
     region: content
   field_data_unique_or_derived:
-    weight: 35
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 35
     region: content
   field_dataset_upload_or_external:
-    weight: 31
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 31
     region: content
   field_dataset_version:
     type: entity_reference_revisions_entity_view
-    weight: 32
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 32
     region: content
   field_demographics_information:
     type: entity_reference_revisions_entity_view
-    weight: 9
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 9
     region: content
   field_derivation_source:
-    weight: 36
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -739,18 +761,18 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 36
     region: content
   field_doi:
-    weight: 1
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_external_resource:
-    weight: 19
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -759,134 +781,134 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 19
     region: content
   field_harmonized_dataset:
-    weight: 38
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 38
     region: content
   field_license:
-    weight: 15
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 15
     region: content
   field_license_other:
-    weight: 34
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 34
     region: content
   field_location:
-    weight: 5
+    type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    weight: 5
     region: content
   field_publication_info:
-    weight: 24
+    type: entity_reference_revisions_entity_view
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    weight: 24
     region: content
   field_related_organizations:
-    weight: 4
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 4
     region: content
   field_related_persons:
-    weight: 3
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 3
     region: content
   field_special_populations:
-    weight: 10
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 10
     region: content
   field_subscribed_users:
-    weight: 39
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 39
     region: content
   field_time_points:
-    weight: 13
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 13
     region: content
   field_unaffiliated_parents:
-    weight: 30
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 30
     region: content
   field_user_agreement:
-    weight: 37
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 37
     region: content
   field_variable_types_in_dataset:
-    weight: 12
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 12
     region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
   project_latest_code_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   project_latest_datasets_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   project_latest_documents_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
 hidden:
   search_api_excerpt: true

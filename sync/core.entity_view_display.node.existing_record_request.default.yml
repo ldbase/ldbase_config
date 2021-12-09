@@ -18,48 +18,48 @@ bundle: existing_record_request
 mode: default
 content:
   field_node_owner:
-    weight: 106
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 106
     region: content
   field_previous_person:
-    weight: 103
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 103
     region: content
   field_request_status:
-    weight: 107
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 107
     region: content
   field_requested_node_link:
-    weight: 102
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 102
     region: content
   field_requesting_person:
-    weight: 105
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 105
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   search_api_excerpt: true

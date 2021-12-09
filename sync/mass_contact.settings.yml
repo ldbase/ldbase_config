@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: nA0k5DYGKRFck4CBIvP8JrNVSTQcRonb-RUT0r25Mg0
 form_information: 'Send email messages using the following form.'
 recipient_limit: 0
 send_with_cron: false
@@ -22,5 +24,3 @@ message_suffix:
   value: ''
   format: plain_text
 wait_time: 0
-_core:
-  default_config_hash: nA0k5DYGKRFck4CBIvP8JrNVSTQcRonb-RUT0r25Mg0

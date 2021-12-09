@@ -20,13 +20,13 @@ default_value_callback: ''
 settings:
   min: null
   max: null
+  field:
+    prefix: ''
+    suffix: ''
   from:
     prefix: ''
     suffix: ''
   to:
-    prefix: ''
-    suffix: ''
-  field:
     prefix: ''
     suffix: ''
   combined:

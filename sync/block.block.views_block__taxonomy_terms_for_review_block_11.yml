@@ -19,21 +19,21 @@ plugin: 'views_block:taxonomy_terms_for_review-block_11'
 settings:
   id: 'views_block:taxonomy_terms_for_review-block_11'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /taxonomy-terms-for-review
     negate: false
     context_mapping: {  }
+    pages: /taxonomy-terms-for-review
   user_role:
     id: user_role
-    roles:
-      administrator: administrator
-      fcrr_admin: fcrr_admin
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      fcrr_admin: fcrr_admin

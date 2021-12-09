@@ -2,11 +2,11 @@ uuid: 9f9100b8-cb55-4e2e-adf1-fd73a170a767
 langcode: en
 status: true
 dependencies:
+  module:
+    - pathauto
   enforced:
     module:
       - user
-  module:
-    - pathauto
 id: pathauto_update_alias_user
 label: 'Update URL alias'
 type: user

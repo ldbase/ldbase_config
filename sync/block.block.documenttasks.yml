@@ -19,31 +19,31 @@ plugin: 'system_menu_block:document-tasks'
 settings:
   id: 'system_menu_block:document-tasks'
   label: 'Document Tasks'
-  provider: system
   label_display: visible
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
-    bundles:
-      document: document
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      document: document
   request_path:
     id: request_path
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/access-request/*"
     negate: true
     context_mapping: {  }
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/access-request/*"
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
     context_mapping: {  }
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null
-    view_inclusion: {  }
     context_mapping: {  }
+    view_inclusion: {  }

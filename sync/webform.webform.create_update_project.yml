@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_handlers
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -14,7 +14,260 @@ id: create_update_project
 title: 'Create/Update Project'
 description: 'A form for creating or updating LDbase Project objects'
 category: 'LDbase Create/Update Forms'
-elements: "project_heading_text:\n  '#type': webform_markup\n  '#markup': 'In this form, you can provide the metadata for your project. All information entered here will be searchable within LDbase and on the web. Not all fields are required, but it will help other users find your project if you fill out everything. The more details your project has, the better it adheres to the <a href=\"https://www.go-fair.org/fair-principles/\" target=\"_blank\">FAIR principles</a> of data management and stewardship.'\ntitle:\n  '#type': textfield\n  '#title': 'Project Name'\n  '#help': 'Enter the name you want your project to be identified as'\n  '#placeholder': 'For Example: Connecticut Longitudinal Study '\n  '#required': true\ndescription:\n  '#type': textarea\n  '#title': 'Project Description'\n  '#description': 'Provide a brief description of your study, including project goals, methods, general participant information, and design.'\n  '#description_display': before\n  '#required': true\n  '#placeholder': \"For Example:\\_We will identify the first nationally-representative US twin sample through the proposed National Project on Achievement in Twins (NatPAT). The NatPAT sample will comprise 7,668 pairs of twins located across the US, and will be uniquely situated to address the overall goal of the proposed research through four specific aims (SA). First, we will utilize a large national database of reading and math performance from schools across the country to ascertain the NatPAT twin sample. Using a cohort-sequential design starting in kindergarten, we will examine reading and math performance across elementary school in order to model genetic and environmental influences on reading and math (co-)development (Specific Aim 1). Second, we will model the genetic and environmental influences on the co-occurrence of reading and math difficulties, while also testing for sex differences (Specific Aim 2). Third, we will capitalize on publically available data to characterize the environmental contexts related to the (co-)development of reading and math performance (Specific Aim 3). Finally, we will capture important attitudinal individual differences dimensions and examine how they are associated with the (co-)development of reading and math performance (Specific Aim 4).\\_\"\nrelated_persons:\n  '#type': entity_autocomplete\n  '#title': 'Project Investigator(s)'\n  '#multiple': true\n  '#description': 'Enter the full names of the investigators who should get credit for this project and be part of the citation. This may or may not include named personnel on funded grants, but likely includes those who contributed significantly to the project.'\n  '#help': 'Personnel that might receive credit are postdocs, advanced graduate students, data management staff, etc.'\n  '#description_display': before\n  '#placeholder': 'For Example: Dr. Sally Shares'\n  '#required': true\n  '#multiple__empty_items': 2\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Project Investigator'\n  '#attributes':\n    class:\n      - input-comma-check\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      person: person\n    auto_create: 1\n    auto_create_bundle: person\nrelated_organizations:\n  '#type': entity_autocomplete\n  '#title': 'Project Organization(s)'\n  '#multiple': true\n  '#description': 'Please list the unabbreviated name of each organization/institution affiliated with this project.'\n  '#description_display': before\n  '#placeholder': 'For Example: Spiny Bluff University'\n  '#multiple__empty_items': 2\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Organization'\n  '#attributes':\n    class:\n      - input-comma-check\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      organization: organization\n    auto_create: 1\n    auto_create_bundle: organization\nactivity_range:\n  '#type': webform_custom_composite\n  '#title': 'Project Dates'\n  '#description': 'Select the period during which the project was active. You can add multiple ranges if the project had a hiatus.'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Date Range'\n  '#element':\n    from_month:\n      '#type': select\n      '#options': months\n      '#title': 'Start Date Month'\n    from_year:\n      '#type': select\n      '#options': years\n      '#title': 'Start Date Year'\n    to_month:\n      '#type': select\n      '#options': months\n      '#title': 'End Date Month'\n      '#description': 'Leave as -None- if ongoing'\n    to_year:\n      '#type': select\n      '#options': years\n      '#title': 'End Date Year'\n      '#description': 'Leave as -None- if ongoing'\n    activity_range_target_id:\n      '#type': hidden\n    activity_range_target_revision_id:\n      '#type': hidden\nproject_type:\n  '#type': webform_entity_select\n  '#title': 'Project Descriptor(s)'\n  '#multiple': true\n  '#description': 'Enter descriptors that apply to the methodologies used in the project. You can add terms by typing directly in the field, if the term is not listed yet.&nbsp;<a href=\"/taxonomy/project_types\" target=\"_blank\">View all Project Descriptors</a>'\n  '#help': 'If you used multiple methodological approaches in your study, enter all that apply.'\n  '#description_display': before\n  '#placeholder': 'Click here to select or enter items'\n  '#select2': true\n  '#required': true\n  '#target_type': taxonomy_term\n  '#selection_handler': 'default:taxonomy_term'\n  '#selection_settings':\n    target_bundles:\n      project_types: project_types\n    sort:\n      field: name\n      direction: ASC\nschooling:\n  '#type': webform_entity_select\n  '#title': 'Educational Environment'\n  '#multiple': true\n  '#description': 'Select descriptors of the education environment that apply to the project. You can add terms by typing directly in the field, if the term is not listed yet.&nbsp;<a href=\"/taxonomy/schooling\" target=\"_blank\">View all Educational Environments</a>'\n  '#help': 'If you used multiple environments in your study, enter all that apply.'\n  '#description_display': before\n  '#placeholder': 'Click here to select or enter items'\n  '#select2': true\n  '#target_type': taxonomy_term\n  '#selection_handler': 'default:taxonomy_term'\n  '#selection_settings':\n    target_bundles:\n      schooling: schooling\n    sort:\n      field: name\n      direction: ASC\ncurricula:\n  '#type': webform_entity_select\n  '#title': 'Educational Curricula'\n  '#multiple': true\n  '#description': 'Select the educational curricula that were used in the project. You can add curricula by typing directly in the field, if it is not listed yet.&nbsp;<a href=\"/taxonomy/curricula\" target=\"_blank\">View all Educational Curricula</a>'\n  '#help': 'If you used multiple curricula in your study, enter all that apply.'\n  '#description_display': before\n  '#placeholder': 'Click here to select or enter items'\n  '#select2': true\n  '#target_type': taxonomy_term\n  '#selection_handler': 'default:taxonomy_term'\n  '#selection_settings':\n    target_bundles:\n      curricula: curricula\n    sort:\n      field: name\n      direction: ASC\ntime_method:\n  '#type': webform_entity_select\n  '#title': 'Developmental Design'\n  '#multiple': true\n  '#description': 'Select the data collection method(s) that most closely matches your design. You can add terms by typing directly in the field, if the term is not listed yet.&nbsp;<a href=\"/taxonomy/time_methods\" target=\"_blank\">View all Developmental Designs</a>'\n  '#help': 'If you used multiple data collection methods in your study, enter all that apply.'\n  '#description_display': before\n  '#placeholder': 'Click here to select or enter items'\n  '#select2': true\n  '#target_type': taxonomy_term\n  '#selection_handler': 'default:taxonomy_term'\n  '#selection_settings':\n    target_bundles:\n      time_methods: time_methods\n    sort:\n      field: name\n      direction: ASC\nwebsite:\n  '#type': textfield\n  '#title': 'Project Website'\n  '#multiple': true\n  '#description': 'Enter a URL that links to a website for your project. Make sure to include the protocol for the URL, (i.e., https://)'\n  '#description_display': before\n  '#placeholder': 'For Example: https://www.ldbase.org'\n  '#pattern': '^(http:\\/\\/|https:\\/\\/)(www\\.)?[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*\\.[a-z]{2,5}(:[0-9]{1,5})?(\\/.*)?$'\n  '#pattern_error': 'You must enter a valid URL beginning with \"http://\" or \"https://\"'\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Website'\n  '#attributes':\n    class:\n      - project-website-text-input\nproject_logo:\n  '#type': webform_image_file\n  '#title': 'Project Logo'\n  '#description': 'Upload your project logo here.'\n  '#help': 'Maximum resolution is 200 pixels by 200 pixels.&nbsp; Larger images will be automatically resized to fit within those dimensions.'\n  '#max_resolution': 200x200\ngrant_information:\n  '#type': webform_custom_composite\n  '#title': 'Funding Agency & Grant Number'\n  '#description': 'Enter the name of the agency that funded the project and add the grant number, if applicable.'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Funding Agency & Grant Number'\n  '#element':\n    funding_agency:\n      '#type': entity_autocomplete\n      '#title': 'Funding Agency'\n      '#description': '<a href=''/taxonomy/funding_agencies'' target=''_blank''>View all Funding Agencies</a>'\n      '#placeholder': 'For Example: National Institutes of Health'\n      '#target_type': taxonomy_term\n      '#selection_handler': 'default:taxonomy_term'\n      '#selection_settings':\n        target_bundles:\n          funding_agencies: funding_agencies\n        sort:\n          field: name\n          direction: ASC\n        auto_create: 1\n        auto_create_bundle: funding_agencies\n    grant_number:\n      '#type': textfield\n      '#title': 'Grant Number'\n      '#placeholder': 'For Example: R01-HD095193-01A1'\n    grant_target_id:\n      '#type': hidden\n    grant_target_revision_id:\n      '#type': hidden\ndoi:\n  '#type': textfield\n  '#title': 'Project DOI'\n  '#multiple': true\n  '#description': 'A digital object identifier provides a persistent link to a specific research output and makes it a citable product. A different DOI can be assigned to each of your research outputs, such as a project, dataset, published manuscript, survey, or conference presentation. Other researchers will be able to easily find your specific output through its DOI. If you already have a DOI for your project, enter it here. If you don&rsquo;t have a DOI yet, you will be provided the option to generate one when submitting this form.'\n  '#description_display': before\n  '#placeholder': 'For Example: 10.1037/a0028240'\n  '#pattern': '\\b(10[.][0-9]{4,}(?:[.][0-9]+)*\\/(?:(?![\"&\\''<>])[[:graph:]])+)\\b'\n  '#pattern_error': 'Enter the DOI only.  It will begin with \"10.\"'\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another DOI'\ngenerate_a_doi:\n  '#type': checkbox\n  '#title': 'Generate a DOI for this Project'\n  '#states':\n    visible:\n      ':input[name=\"node_id\"]':\n        filled: true\nnode_id:\n  '#type': hidden\n  '#title': node_id\npublished_flag:\n  '#type': checkbox\n  '#title': 'Publish on LDbase'\n  '#help': 'By checking this box, you are making the above information available to the public for searching. As you progress through LDbase and enter the rest of your project (datasets, codebooks, presentations, etc), you will have the capacity to choose, for each piece of data, whether to publish that metadata and data or to temporarily save it as a draft while you complete/gather those specific research details.'\ndo_not_contact_flag:\n  '#type': checkbox\n  '#title': 'Check here if you do not wish to be contacted about this project'\n  '#help': 'By checking this box, the link to contact members of this project will not be displayed to LDbase users.&nbsp;&nbsp;'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Save"
+elements: |-
+  project_heading_text:
+    '#type': webform_markup
+    '#markup': 'In this form, you can provide the metadata for your project. All information entered here will be searchable within LDbase and on the web. Not all fields are required, but it will help other users find your project if you fill out everything. The more details your project has, the better it adheres to the <a href="https://www.go-fair.org/fair-principles/" target="_blank">FAIR principles</a> of data management and stewardship.'
+  title:
+    '#type': textfield
+    '#title': 'Project Name'
+    '#help': 'Enter the name you want your project to be identified as'
+    '#placeholder': 'For Example: Connecticut Longitudinal Study '
+    '#required': true
+  description:
+    '#type': textarea
+    '#title': 'Project Description'
+    '#description': 'Provide a brief description of your study, including project goals, methods, general participant information, and design.'
+    '#description_display': before
+    '#required': true
+    '#placeholder': "For Example:\_We will identify the first nationally-representative US twin sample through the proposed National Project on Achievement in Twins (NatPAT). The NatPAT sample will comprise 7,668 pairs of twins located across the US, and will be uniquely situated to address the overall goal of the proposed research through four specific aims (SA). First, we will utilize a large national database of reading and math performance from schools across the country to ascertain the NatPAT twin sample. Using a cohort-sequential design starting in kindergarten, we will examine reading and math performance across elementary school in order to model genetic and environmental influences on reading and math (co-)development (Specific Aim 1). Second, we will model the genetic and environmental influences on the co-occurrence of reading and math difficulties, while also testing for sex differences (Specific Aim 2). Third, we will capitalize on publically available data to characterize the environmental contexts related to the (co-)development of reading and math performance (Specific Aim 3). Finally, we will capture important attitudinal individual differences dimensions and examine how they are associated with the (co-)development of reading and math performance (Specific Aim 4).\_"
+  related_persons:
+    '#type': entity_autocomplete
+    '#title': 'Project Investigator(s)'
+    '#multiple': true
+    '#description': 'Enter the full names of the investigators who should get credit for this project and be part of the citation. This may or may not include named personnel on funded grants, but likely includes those who contributed significantly to the project.'
+    '#help': 'Personnel that might receive credit are postdocs, advanced graduate students, data management staff, etc.'
+    '#description_display': before
+    '#placeholder': 'For Example: Dr. Sally Shares'
+    '#required': true
+    '#multiple__empty_items': 2
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Project Investigator'
+    '#attributes':
+      class:
+        - input-comma-check
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        person: person
+      auto_create: 1
+      auto_create_bundle: person
+  related_organizations:
+    '#type': entity_autocomplete
+    '#title': 'Project Organization(s)'
+    '#multiple': true
+    '#description': 'Please list the unabbreviated name of each organization/institution affiliated with this project.'
+    '#description_display': before
+    '#placeholder': 'For Example: Spiny Bluff University'
+    '#multiple__empty_items': 2
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Organization'
+    '#attributes':
+      class:
+        - input-comma-check
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        organization: organization
+      auto_create: 1
+      auto_create_bundle: organization
+  activity_range:
+    '#type': webform_custom_composite
+    '#title': 'Project Dates'
+    '#description': 'Select the period during which the project was active. You can add multiple ranges if the project had a hiatus.'
+    '#description_display': before
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Date Range'
+    '#element':
+      from_month:
+        '#type': select
+        '#options': months
+        '#title': 'Start Date Month'
+      from_year:
+        '#type': select
+        '#options': years
+        '#title': 'Start Date Year'
+      to_month:
+        '#type': select
+        '#options': months
+        '#title': 'End Date Month'
+        '#description': 'Leave as -None- if ongoing'
+      to_year:
+        '#type': select
+        '#options': years
+        '#title': 'End Date Year'
+        '#description': 'Leave as -None- if ongoing'
+      activity_range_target_id:
+        '#type': hidden
+      activity_range_target_revision_id:
+        '#type': hidden
+  project_type:
+    '#type': webform_entity_select
+    '#title': 'Project Descriptor(s)'
+    '#multiple': true
+    '#description': 'Enter descriptors that apply to the methodologies used in the project. You can add terms by typing directly in the field, if the term is not listed yet.&nbsp;<a href="/taxonomy/project_types" target="_blank">View all Project Descriptors</a>'
+    '#help': 'If you used multiple methodological approaches in your study, enter all that apply.'
+    '#description_display': before
+    '#placeholder': 'Click here to select or enter items'
+    '#select2': true
+    '#required': true
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        project_types: project_types
+      sort:
+        field: name
+        direction: ASC
+  schooling:
+    '#type': webform_entity_select
+    '#title': 'Educational Environment'
+    '#multiple': true
+    '#description': 'Select descriptors of the education environment that apply to the project. You can add terms by typing directly in the field, if the term is not listed yet.&nbsp;<a href="/taxonomy/schooling" target="_blank">View all Educational Environments</a>'
+    '#help': 'If you used multiple environments in your study, enter all that apply.'
+    '#description_display': before
+    '#placeholder': 'Click here to select or enter items'
+    '#select2': true
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        schooling: schooling
+      sort:
+        field: name
+        direction: ASC
+  curricula:
+    '#type': webform_entity_select
+    '#title': 'Educational Curricula'
+    '#multiple': true
+    '#description': 'Select the educational curricula that were used in the project. You can add curricula by typing directly in the field, if it is not listed yet.&nbsp;<a href="/taxonomy/curricula" target="_blank">View all Educational Curricula</a>'
+    '#help': 'If you used multiple curricula in your study, enter all that apply.'
+    '#description_display': before
+    '#placeholder': 'Click here to select or enter items'
+    '#select2': true
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        curricula: curricula
+      sort:
+        field: name
+        direction: ASC
+  time_method:
+    '#type': webform_entity_select
+    '#title': 'Developmental Design'
+    '#multiple': true
+    '#description': 'Select the data collection method(s) that most closely matches your design. You can add terms by typing directly in the field, if the term is not listed yet.&nbsp;<a href="/taxonomy/time_methods" target="_blank">View all Developmental Designs</a>'
+    '#help': 'If you used multiple data collection methods in your study, enter all that apply.'
+    '#description_display': before
+    '#placeholder': 'Click here to select or enter items'
+    '#select2': true
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        time_methods: time_methods
+      sort:
+        field: name
+        direction: ASC
+  website:
+    '#type': textfield
+    '#title': 'Project Website'
+    '#multiple': true
+    '#description': 'Enter a URL that links to a website for your project. Make sure to include the protocol for the URL, (i.e., https://)'
+    '#description_display': before
+    '#placeholder': 'For Example: https://www.ldbase.org'
+    '#pattern': '^(http:\/\/|https:\/\/)(www\.)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+    '#pattern_error': 'You must enter a valid URL beginning with "http://" or "https://"'
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Website'
+    '#attributes':
+      class:
+        - project-website-text-input
+  project_logo:
+    '#type': webform_image_file
+    '#title': 'Project Logo'
+    '#description': 'Upload your project logo here.'
+    '#help': 'Maximum resolution is 200 pixels by 200 pixels.&nbsp; Larger images will be automatically resized to fit within those dimensions.'
+    '#max_resolution': 200x200
+  grant_information:
+    '#type': webform_custom_composite
+    '#title': 'Funding Agency & Grant Number'
+    '#description': 'Enter the name of the agency that funded the project and add the grant number, if applicable.'
+    '#description_display': before
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Funding Agency & Grant Number'
+    '#element':
+      funding_agency:
+        '#type': entity_autocomplete
+        '#title': 'Funding Agency'
+        '#description': '<a href=''/taxonomy/funding_agencies'' target=''_blank''>View all Funding Agencies</a>'
+        '#placeholder': 'For Example: National Institutes of Health'
+        '#target_type': taxonomy_term
+        '#selection_handler': 'default:taxonomy_term'
+        '#selection_settings':
+          target_bundles:
+            funding_agencies: funding_agencies
+          sort:
+            field: name
+            direction: ASC
+          auto_create: 1
+          auto_create_bundle: funding_agencies
+      grant_number:
+        '#type': textfield
+        '#title': 'Grant Number'
+        '#placeholder': 'For Example: R01-HD095193-01A1'
+      grant_target_id:
+        '#type': hidden
+      grant_target_revision_id:
+        '#type': hidden
+  doi:
+    '#type': textfield
+    '#title': 'Project DOI'
+    '#multiple': true
+    '#description': 'A digital object identifier provides a persistent link to a specific research output and makes it a citable product. A different DOI can be assigned to each of your research outputs, such as a project, dataset, published manuscript, survey, or conference presentation. Other researchers will be able to easily find your specific output through its DOI. If you already have a DOI for your project, enter it here. If you don&rsquo;t have a DOI yet, you will be provided the option to generate one when submitting this form.'
+    '#description_display': before
+    '#placeholder': 'For Example: 10.1037/a0028240'
+    '#pattern': '\b(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?!["&\''<>])[[:graph:]])+)\b'
+    '#pattern_error': 'Enter the DOI only.  It will begin with "10."'
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another DOI'
+  generate_a_doi:
+    '#type': checkbox
+    '#title': 'Generate a DOI for this Project'
+    '#states':
+      visible:
+        ':input[name="node_id"]':
+          filled: true
+  node_id:
+    '#type': hidden
+    '#title': node_id
+  published_flag:
+    '#type': checkbox
+    '#title': 'Publish on LDbase'
+    '#help': 'By checking this box, you are making the above information available to the public for searching. As you progress through LDbase and enter the rest of your project (datasets, codebooks, presentations, etc), you will have the capacity to choose, for each piece of data, whether to publish that metadata and data or to temporarily save it as a draft while you complete/gather those specific research details.'
+  do_not_contact_flag:
+    '#type': checkbox
+    '#title': 'Check here if you do not wish to be contacted about this project'
+    '#help': 'By checking this box, the link to contact members of this project will not be displayed to LDbase users.&nbsp;&nbsp;'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Save
 css: "div.form-item--error > span.select2-container {\r\n    border: 2px solid red !important;\r\n}\r\n\r\nhtml {\r\n  scroll-padding-top: 180px; \r\n}\r\n"
 javascript: "(function($, Drupal, drupalSettings){\r\n  'use strict';\r\n  \r\n  // @see https://select2.github.io/options.html\r\n  Drupal.webform = Drupal.webform || {};\r\n  Drupal.webform.select2 = Drupal.webform.select2 || {};\r\n  Drupal.webform.select2.options = Drupal.webform.select2.options || {};\r\n  Drupal.webform.select2.options.tags = 'true';\r\n  Drupal.webform.select2.options.width = Drupal.webform.select2.options.width || '100%';\r\n  Drupal.webform.select2.options.widthInline = Drupal.webform.select2.options.widthInline || '50%';\r\n  \r\n  Drupal.behaviors.ldbaseProject = {\r\n    attach: function (context, settings) {\r\n      $(context).find('.input-comma-check').on('keyup', function(e) {\r\n        if (e.which == 188) {\r\n          alert('You added a comma. Please only enter one item per line.  \\nAdd additional lines if needed.');\r\n        }\r\n      });\r\n    }\r\n  }\r\n  \r\n})(jQuery, Drupal, drupalSettings);"
 settings:
@@ -26,38 +279,47 @@ settings:
   page: true
   page_submit_path: /add-project
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: source_entity_webform
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: true
   form_disable_inline_errors: false
   form_required: true
-  form_unsaved: true
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: login
   form_access_denied_title: ''
   form_access_denied_message: 'Please login or create a new account to access this form.'
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -66,11 +328,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -85,7 +342,15 @@ settings:
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -102,9 +367,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: none
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -128,25 +393,13 @@ settings:
   purge_days: null
   results_disabled: true
   results_disabled_ignore: true
+  results_customize: false
   token_view: false
   token_update: false
-  results_customize: false
-  share: false
-  share_node: false
-  share_theme_name: ''
-  share_title: true
-  share_page_body_attributes: {  }
-  page_theme_name: ''
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
-  wizard_prev_button_label: ''
-  wizard_next_button_label: ''
-  wizard_toggle: true
-  wizard_toggle_show_label: ''
-  wizard_toggle_hide_label: ''
-  serial_disabled: false
   token_delete: false
+  serial_disabled: false
+  page_admin_theme: false
+  form_remote_addr: true
 access:
   create:
     roles:
@@ -196,18 +449,18 @@ access:
 handlers:
   ldbase_project:
     id: project_from_webform
+    handler_id: ldbase_project
     label: 'LDbase Project'
     notes: ''
-    handler_id: ldbase_project
     status: true
     conditions: {  }
     weight: 0
     settings: {  }
   debug:
     id: debug
+    handler_id: debug
     label: Debug
     notes: ''
-    handler_id: debug
     status: false
     conditions: {  }
     weight: 0

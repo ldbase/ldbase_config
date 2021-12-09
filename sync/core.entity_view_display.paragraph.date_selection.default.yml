@@ -12,22 +12,22 @@ bundle: date_selection
 mode: default
 content:
   field_month:
-    weight: 0
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 0
     region: content
   field_year:
-    weight: 1
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 1
     region: content
 hidden:
   search_api_excerpt: true

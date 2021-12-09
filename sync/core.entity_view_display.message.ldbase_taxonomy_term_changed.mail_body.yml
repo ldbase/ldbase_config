@@ -12,8 +12,8 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: message.ldbase_taxonomy_term_changed.mail_body
 targetEntityType: message
 bundle: ldbase_taxonomy_term_changed

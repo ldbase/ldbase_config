@@ -21,13 +21,13 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       date_range_selection: date_range_selection
+    negate: 0
     target_bundles_drag_drop:
       date_range_selection:
-        enabled: true
         weight: 8
+        enabled: true
       date_selection:
         weight: 9
         enabled: false

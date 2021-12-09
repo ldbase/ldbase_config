@@ -15,6 +15,6 @@ plugin: ldbase_minimal_object_search_link_block
 settings:
   id: ldbase_minimal_object_search_link_block
   label: 'LDbase Minimal Object Search Link Block'
-  provider: ldbase_content
   label_display: '0'
+  provider: ldbase_content
 visibility: {  }

@@ -104,7 +104,6 @@ module:
   taxonomy: 0
   text: 0
   token: 0
-  tokenuuid: 0
   tombstones: 0
   toolbar: 0
   tour: 0

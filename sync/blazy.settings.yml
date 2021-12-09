@@ -1,12 +1,13 @@
+_core:
+  default_config_hash: t2LzrClibyhtJD_yHiWZ6AyD-EYKhe94rOo3dUGLLUU
 admin_css: true
-fx: ''
 decode: false
+fx: ''
 noscript: false
-responsive_image: false
 one_pixel: true
 placeholder: ''
 unstyled_extensions: ''
-extras: {  }
+responsive_image: false
 blazy:
   loadInvisible: false
   offset: 100
@@ -19,5 +20,4 @@ io:
   rootMargin: 0px
   threshold: '0'
   disconnect: false
-_core:
-  default_config_hash: t2LzrClibyhtJD_yHiWZ6AyD-EYKhe94rOo3dUGLLUU
+extras: {  }

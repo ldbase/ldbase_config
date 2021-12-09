@@ -18,12 +18,12 @@ plugin: 'facet_block:search_facet_time_method'
 settings:
   id: 'facet_block:search_facet_time_method'
   label: 'Developmental Designs'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: searchfacettimemethod
 visibility:
   request_path:
     id: request_path
-    pages: /search
     negate: false
     context_mapping: {  }
+    pages: /search

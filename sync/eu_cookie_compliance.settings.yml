@@ -1,30 +1,14 @@
-uuid: c9380545-3797-4014-b8bc-3631ca8e9d8c
-cookie_lifetime: 100
-containing_element: body
-domain: ''
-domains_option: 1
-domains_list: ''
-eu_only: null
-eu_only_js: null
-exclude_paths: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
-exclude_admin_theme: false
+_core:
+  default_config_hash: Wph0IY6FThC4QuHAGcSQDx6S8gysoclVsF2tkm4Lu8o
 langcode: en
-popup_agreed:
-  value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
-  format: basic_html
-popup_agree_button_message: 'Allow All Cookies'
-popup_agreed_enabled: false
-popup_bg_hex: '222222'
+uuid: c9380545-3797-4014-b8bc-3631ca8e9d8c
+popup_enabled: true
 popup_clicking_confirmation: false
 popup_scrolling_confirmation: false
-popup_delay: 1000
-show_more_info: false
-popup_more_info_button_message: 'More info'
-popup_enabled: true
-popup_find_more_button_message: 'More info'
-popup_height: null
-popup_hide_agreed: false
-popup_hide_button_message: Hide
+eu_only: null
+eu_only_js: null
+popup_position: false
+fixed_top_position: true
 popup_info:
   value: "<p><span>To enhance your experience, we use cookies on this site.</span><br />\r\nOur usage cookies do not store any personally identifiable information (IP addresses are anonymized) however, you may still choose to opt-out. For more information, please refer to our <a href=\"/terms-of-use\">Terms of Use.</a></p>\r\n"
   format: basic_html
@@ -32,22 +16,43 @@ mobile_popup_info:
   value: ''
   format: basic_html
 popup_info_template: new
+popup_agree_button_message: 'Allow All Cookies'
+popup_more_info_button_message: 'More info'
 mobile_breakpoint: 768
+popup_agreed_enabled: false
+popup_hide_agreed: false
+disagree_button_label: 'Use Necessary Cookies Only'
+popup_agreed:
+  value: "<h2>Thank you for accepting cookies</h2>\r\n\r\n<p>You can now hide this message or find out more about cookies.</p>\r\n"
+  format: basic_html
+popup_find_more_button_message: 'More info'
+popup_hide_button_message: Hide
 popup_link: /privacy-policy
 popup_link_new_window: true
-popup_position: false
-fixed_top_position: true
-popup_text_hex: ffffff
+popup_height: null
 popup_width: 100%
+popup_delay: 1000
+show_more_info: false
+popup_bg_hex: '222222'
+popup_text_hex: ffffff
+domain: ''
+domains_option: 1
+domains_list: ''
+exclude_paths: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
+exclude_admin_theme: false
+cookie_session: 0
+set_cookie_session_zero_on_disagree: 0
+cookie_lifetime: 100
+use_mobile_message: false
 use_bare_css: false
 disagree_do_not_show_popup: false
 reload_page: false
+reload_options: 0
+reload_routes_list: ''
 cookie_name: ''
 exclude_uid_1: false
 better_support_for_screen_readers: false
-use_mobile_message: false
 method: opt_out
-disagree_button_label: 'Use Necessary Cookies Only'
 disabled_javascripts: ''
 automatic_cookies_removal: false
 allowed_cookies: ''
@@ -55,19 +60,14 @@ consent_storage_method: basic
 withdraw_message:
   value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
   format: basic_html
-withdraw_action_button_label: 'Withdraw consent'
 withdraw_tab_button_label: 'Privacy settings'
+withdraw_action_button_label: 'Withdraw consent'
 withdraw_enabled: false
-enable_save_preferences_button: true
+withdraw_button_on_info_popup: false
 save_preferences_button_label: 'Save preferences'
 accept_all_categories_button_label: 'Accept all cookies'
-withdraw_button_on_info_popup: false
+enable_save_preferences_button: true
 domain_all_sites: false
 settings_tab_enabled: false
-reload_options: 0
-reload_routes_list: ''
+containing_element: body
 cookie_policy_version: 1.0.0
-_core:
-  default_config_hash: Wph0IY6FThC4QuHAGcSQDx6S8gysoclVsF2tkm4Lu8o
-cookie_session: 0
-set_cookie_session_zero_on_disagree: 0

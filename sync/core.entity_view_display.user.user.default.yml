@@ -16,40 +16,42 @@ dependencies:
     - views
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Title Section'
+          context_mapping: {  }
         components:
           34d25607-3589-48c9-8e12-cb08f7c0aa58:
             uuid: 34d25607-3589-48c9-8e12-cb08f7c0aa58
             region: content
             configuration:
+              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_2'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_2'
-            additional: {  }
             weight: 2
+            additional: {  }
           155e9484-9d12-4790-9748-26307770d814:
             uuid: 155e9484-9d12-4790-9748-26307770d814
             region: content
             configuration:
               id: my_dashboard_title
               label: 'My Dashboard Title'
-              provider: ldbase_content
               label_display: '0'
+              provider: ldbase_content
               context_mapping: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'User Tasks'
+          context_mapping: {  }
         components:
           0909bd87-208b-4e12-9dc0-20672713ff85:
             uuid: 0909bd87-208b-4e12-9dc0-20672713ff85
@@ -57,33 +59,35 @@ third_party_settings:
             configuration:
               id: add_project_button
               label: 'Add Project Button'
-              provider: ldbase_content
               label_display: '0'
+              provider: ldbase_content
               context_mapping: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
           f3afc04c-94cd-433a-9eca-b554b333c26b:
             uuid: f3afc04c-94cd-433a-9eca-b554b333c26b
             region: content
             configuration:
               id: contributions_link
               label: 'Link to Contributions (Person) Page'
-              provider: ldbase_content
               label_display: '0'
+              provider: ldbase_content
               context_mapping: {  }
-            additional: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Tasks Section'
+          context_mapping: {  }
         components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'My Projects'
+          context_mapping: {  }
         components:
           c2fa62b5-0b68-4e7d-be4f-ed0f0fe98df0:
             uuid: c2fa62b5-0b68-4e7d-be4f-ed0f0fe98df0
@@ -91,69 +95,70 @@ third_party_settings:
             configuration:
               id: 'views_block:projects_in_my_groups-block_1'
               label: ''
-              provider: views
               label_display: visible
+              provider: views
+              context_mapping: {  }
               views_label: ''
               items_per_page: none
-              context_mapping: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'My Profile Section'
+          context_mapping: {  }
         components:
           01a22848-0ec5-44ed-9c53-44c6f093bcd2:
             uuid: 01a22848-0ec5-44ed-9c53-44c6f093bcd2
             region: content
             configuration:
+              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_1'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_1'
-            additional: {  }
             weight: 1
+            additional: {  }
           b7e28b10-b5ab-4ee6-9600-8eaa1b52bf69:
             uuid: b7e28b10-b5ab-4ee6-9600-8eaa1b52bf69
             region: content
             configuration:
               id: 'views_block:my_messages-block_1'
               label: ''
-              provider: views
               label_display: '0'
+              provider: views
+              context_mapping: {  }
               views_label: ''
               items_per_page: none
-              context_mapping: {  }
-            additional: {  }
             weight: 7
+            additional: {  }
           94b12631-091a-4fcb-8275-224fab18362e:
             uuid: 94b12631-091a-4fcb-8275-224fab18362e
             region: content
             configuration:
               id: 'views_block:user_embargo_exemptions-block_1'
               label: ''
-              provider: views
               label_display: '0'
+              provider: views
+              context_mapping: {  }
               views_label: ''
               items_per_page: none
-              context_mapping: {  }
-            additional: {  }
             weight: 3
+            additional: {  }
           0bf85b2e-6f6e-40a7-b7ce-2cb695d81648:
             uuid: 0bf85b2e-6f6e-40a7-b7ce-2cb695d81648
             region: content
             configuration:
               id: user_email_verification_notification
               label: 'User Email verification notification'
-              provider: user_email_verification
               label_display: '0'
+              provider: user_email_verification
+              context_mapping: {  }
               notification:
                 value: "<p>You have not yet verified your email address.&nbsp; <a href=\"/user/user-email-verification\">Verify&nbsp;email</a></p>\r\n"
                 format: basic_html
-              context_mapping: {  }
-            additional: {  }
             weight: 6
+            additional: {  }
         third_party_settings: {  }
 id: user.user.default
 targetEntityType: user
@@ -161,34 +166,34 @@ bundle: user
 mode: default
 content:
   masquerade:
-    weight: 50
     settings: {  }
     third_party_settings: {  }
+    weight: 50
     region: content
   member_for:
+    settings: {  }
+    third_party_settings: {  }
     weight: 5
     region: content
-    settings: {  }
-    third_party_settings: {  }
   person_information_for_user_profile_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   person_information_for_user_profile_entity_view_2:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   user_email_verification_verified:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   user_email_verification_verified_date:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   mass_contact_opt_out: true

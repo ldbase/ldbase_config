@@ -1,7 +1,18 @@
 uuid: b3b954e7-cd83-45f1-a732-6e3856e97a6d
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.restricted_html
+  module:
+    - eu_cookie_compliance
+    - filter
+    - matomo
+    - media
+    - search_api_autocomplete
+    - shortcut
+    - system
 id: authenticated
 label: 'Authenticated user'
 weight: -9
@@ -11,7 +22,6 @@ permissions:
   - 'access shortcuts'
   - 'display eu cookie compliance popup'
   - 'opt-in or out of matomo tracking'
-  - 'search content'
   - 'use search_api_autocomplete for search'
   - 'use text format basic_html'
   - 'use text format restricted_html'

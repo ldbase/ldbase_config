@@ -13,21 +13,21 @@ bundle: schooling
 mode: default
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 1
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_needs_review:
-    weight: 0
+    type: boolean
     label: above
     settings:
       format: default
-      format_custom_true: ''
       format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 0
     region: content
 hidden:
   search_api_excerpt: true

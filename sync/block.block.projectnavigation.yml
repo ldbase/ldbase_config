@@ -19,34 +19,24 @@ plugin: 'system_menu_block:project-navigation'
 settings:
   id: 'system_menu_block:project-navigation'
   label: 'Project Navigation'
-  provider: system
   label_display: visible
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm"
     negate: false
     context_mapping: {  }
-  node_type:
-    id: node_type
-    bundles:
-      code: code
-      dataset: dataset
-      document: document
-      project: project
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm"
   'entity_bundle:node':
     id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
     bundles:
       code: code
       dataset: dataset
       document: document
       project: project
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'

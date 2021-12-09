@@ -19,20 +19,20 @@ plugin: 'facet_block:search_facet_project_type'
 settings:
   id: 'facet_block:search_facet_project_type'
   label: 'Search Facet: Project Descriptors'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: searchfacetprojectdescriptors
 visibility:
   request_path:
     id: request_path
-    pages: /taxonomy-terms-for-review
     negate: false
     context_mapping: {  }
+    pages: /taxonomy-terms-for-review
   user_role:
     id: user_role
-    roles:
-      administrator: administrator
-      fcrr_admin: fcrr_admin
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      fcrr_admin: fcrr_admin

@@ -1,7 +1,43 @@
 uuid: 36481dcd-0ac7-4e9b-b885-6e6deca050cc
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.article
+    - node.type.code
+    - node.type.dataset
+    - node.type.document
+    - node.type.organization
+    - node.type.page
+    - node.type.person
+    - node.type.project
+    - node.type.webform
+    - taxonomy.vocabulary.areas_of_expertise
+    - taxonomy.vocabulary.assessments
+    - taxonomy.vocabulary.code_or_data_format
+    - taxonomy.vocabulary.code_type
+    - taxonomy.vocabulary.constructs
+    - taxonomy.vocabulary.curricula
+    - taxonomy.vocabulary.data_collection_locations
+    - taxonomy.vocabulary.dataset_variables
+    - taxonomy.vocabulary.document_type
+    - taxonomy.vocabulary.funding_agencies
+    - taxonomy.vocabulary.licenses
+    - taxonomy.vocabulary.participants
+    - taxonomy.vocabulary.project_types
+    - taxonomy.vocabulary.schooling
+    - taxonomy.vocabulary.special_populations
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.time_methods
+  module:
+    - eu_cookie_compliance
+    - file
+    - filter
+    - ldbase_embargoes
+    - node
+    - taxonomy
+    - toolbar
 id: content_administrator
 label: 'Content Administrator'
 weight: -8

@@ -17,14 +17,14 @@ plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
   label: 'Landing Page Navigation Level 3'
-  provider: system
   label_display: '0'
+  provider: system
   level: 3
   depth: 0
   expand_all_items: true
 visibility:
   request_path:
     id: request_path
-    pages: "/resources/user-agreements\r\n/resources/faqs\r\n/resources/best-practices\r\n/resources/templates\r\n\r\n\r\n\r\n"
     negate: false
     context_mapping: {  }
+    pages: "/resources/user-agreements\r\n/resources/faqs\r\n/resources/best-practices\r\n/resources/templates\r\n\r\n\r\n\r\n"

@@ -14,33 +14,33 @@ bundle: date_range_selection
 mode: default
 content:
   field_from_month:
+    type: number
     weight: 0
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_from_year:
+    type: number
     weight: 1
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_to_month:
+    type: number
     weight: 2
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_to_year:
+    type: number
     weight: 3
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
 hidden:
   created: true
   status: true

@@ -1,7 +1,15 @@
 uuid: 7ab07ed1-e15d-463f-8060-672dfb85622c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - eu_cookie_compliance
+    - filter
+    - media
+    - search_api_autocomplete
+    - system
 id: anonymous
 label: 'Anonymous user'
 weight: -10
@@ -9,7 +17,6 @@ is_admin: false
 permissions:
   - 'access content'
   - 'display eu cookie compliance popup'
-  - 'search content'
   - 'use search_api_autocomplete for search'
   - 'use text format restricted_html'
   - 'view media'

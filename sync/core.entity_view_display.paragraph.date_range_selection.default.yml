@@ -14,40 +14,40 @@ bundle: date_range_selection
 mode: default
 content:
   field_from_month:
-    weight: 0
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 0
     region: content
   field_from_year:
-    weight: 1
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 1
     region: content
   field_to_month:
-    weight: 2
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 2
     region: content
   field_to_year:
-    weight: 3
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 3
     region: content
 hidden:
   search_api_excerpt: true

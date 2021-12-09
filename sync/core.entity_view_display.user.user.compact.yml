@@ -13,15 +13,15 @@ bundle: user
 mode: compact
 content:
   person_information_for_user_profile_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
+  person_information_for_user_profile_entity_view_2:
     settings: {  }
     third_party_settings: {  }
-  person_information_for_user_profile_entity_view_2:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   masquerade: true
   mass_contact_opt_out: true

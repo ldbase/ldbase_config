@@ -17,40 +17,40 @@ bundle: possible_user_match
 mode: default
 content:
   field_content_id:
-    weight: 104
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 104
     region: content
   field_possible_match_person_id:
-    weight: 102
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 102
     region: content
   field_real_person_id:
-    weight: 101
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 101
     region: content
   field_user_match_status:
-    weight: 103
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 103
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   search_api_excerpt: true

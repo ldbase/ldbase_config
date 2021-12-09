@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: YGueb7ImKHSG1RRmIB1iqPHVGXTmI2yvCcB-RX7FPeY
 site_id: '1'
 url_http: 'http://localhost/matomo/'
 url_https: ''
@@ -22,30 +24,30 @@ privacy:
 custom:
   variable:
     1:
-      name: ''
-      value: ''
-      scope: visit
       slot: 1
+      name: ''
+      value: ''
+      scope: visit
     2:
-      name: ''
-      value: ''
-      scope: visit
       slot: 2
+      name: ''
+      value: ''
+      scope: visit
     3:
-      name: ''
-      value: ''
-      scope: visit
       slot: 3
+      name: ''
+      value: ''
+      scope: visit
     4:
-      name: ''
-      value: ''
-      scope: visit
       slot: 4
-    5:
       name: ''
       value: ''
       scope: visit
+    5:
       slot: 5
+      name: ''
+      value: ''
+      scope: visit
 codesnippet:
   before: "document.addEventListener('DOMContentLoaded', function(){ \r\n  \r\n  var consentGiven = 0;\r\n  var cookieArray = document.cookie.split(\";\"); \r\n  \r\n  for(var i=0; i < cookieArray.length; i++) {\r\n    var cookiePair = cookieArray[i].split(\"=\");\r\n    \r\n    if('cookie-agreed' == cookiePair[0].trim()) {\r\n    \r\n      if(cookiePair[1].trim() == 2) {\r\n        consentGiven = 1;\r\n      }\r\n    }\r\n  }   \r\n \r\n  if (!consentGiven) {\r\n      _paq.push(['requireConsent']);\r\n      _paq.push(['disableCookies']);\r\n    }\r\n \r\n    if (consentGiven) {\r\n      _paq.push(['setConsentGiven']);\r\n    }\r\n\r\n}, false);"
   after: ''
@@ -53,5 +55,3 @@ translation_set: false
 cache: true
 page_title_hierarchy: false
 page_title_hierarchy_exclude_home: true
-_core:
-  default_config_hash: YGueb7ImKHSG1RRmIB1iqPHVGXTmI2yvCcB-RX7FPeY

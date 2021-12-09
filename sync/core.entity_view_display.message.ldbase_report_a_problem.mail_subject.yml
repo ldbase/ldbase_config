@@ -12,18 +12,18 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: message.ldbase_report_a_problem.mail_subject
 targetEntityType: message
 bundle: ldbase_report_a_problem
 mode: mail_subject
 content:
   partial_0:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_from_user: true
   field_message_status: true

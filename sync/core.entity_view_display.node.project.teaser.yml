@@ -27,32 +27,32 @@ bundle: project
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 101
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   project_latest_code_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   project_latest_datasets_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
   project_latest_documents_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: content
 hidden:
   field_activity_range_select: true

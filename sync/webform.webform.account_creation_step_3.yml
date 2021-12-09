@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_new_account
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -14,7 +14,52 @@ id: account_creation_step_3
 title: 'Account Creation: Step 3'
 description: 'A form to gather final input from user and create account.'
 category: 'LDbase Create/Update Forms'
-elements: "initial_message:\n  '#type': webform_markup\n  '#markup': 'Now that we have checked for existing records, let&#39;s create your account. Please give us a little more information:'\npreferred_display_name:\n  '#type': textfield\n  '#title': 'Preferred Display Name'\n  '#description': 'Please enter your name as you would like it to be displayed throughout the site:'\n  '#description_display': before\n  '#placeholder': 'For Example: Dr. Sally Shares'\n  '#required': true\nldbase_primary_name:\n  '#type': webform_custom_composite\n  '#title': 'Publishing Name'\n  '#multiple': false\n  '#description': 'Please verify your name was entered as it is most likely to have been used in publications and other research related documents'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#multiple__operations': false\n  '#multiple__add_more': false\n  '#element':\n    primary_first_name:\n      '#type': textfield\n      '#title': 'First Name'\n    primary_middle_name:\n      '#type': textfield\n      '#title': 'Middle Name'\n    primary_last_name:\n      '#type': textfield\n      '#title': 'Last name'\n  '#required': true\nprimary_email:\n  '#type': email\n  '#title': 'Email Address'\n  '#description_display': before\n  '#required': true\nldbase_password:\n  '#type': password_confirm\n  '#title': 'LDbase Password'\n  '#description': 'Please enter a password twice. Make sure they match and contain more than 8 characters.'\n  '#description_display': before\n  '#required': true\n  '#required_error': 'You did not enter a valid password'\n  '#format_items': ul\n  '#format_items_html': ''\n  '#format_items_text': ''"
+elements: |-
+  initial_message:
+    '#type': webform_markup
+    '#markup': 'Now that we have checked for existing records, let&#39;s create your account. Please give us a little more information:'
+  preferred_display_name:
+    '#type': textfield
+    '#title': 'Preferred Display Name'
+    '#description': 'Please enter your name as you would like it to be displayed throughout the site:'
+    '#description_display': before
+    '#placeholder': 'For Example: Dr. Sally Shares'
+    '#required': true
+  ldbase_primary_name:
+    '#type': webform_custom_composite
+    '#title': 'Publishing Name'
+    '#multiple': false
+    '#description': 'Please verify your name was entered as it is most likely to have been used in publications and other research related documents'
+    '#description_display': before
+    '#multiple__sorting': false
+    '#multiple__operations': false
+    '#multiple__add_more': false
+    '#element':
+      primary_first_name:
+        '#type': textfield
+        '#title': 'First Name'
+      primary_middle_name:
+        '#type': textfield
+        '#title': 'Middle Name'
+      primary_last_name:
+        '#type': textfield
+        '#title': 'Last name'
+    '#required': true
+  primary_email:
+    '#type': email
+    '#title': 'Email Address'
+    '#description_display': before
+    '#required': true
+  ldbase_password:
+    '#type': password_confirm
+    '#title': 'LDbase Password'
+    '#description': 'Please enter a password twice. Make sure they match and contain more than 8 characters.'
+    '#description_display': before
+    '#required': true
+    '#required_error': 'You did not enter a valid password'
+    '#format_items': ul
+    '#format_items_html': ''
+    '#format_items_text': ''
 css: ''
 javascript: ''
 settings:
@@ -26,31 +71,29 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
   form_title: source_entity_webform
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: true
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
@@ -62,7 +105,12 @@ settings:
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -71,11 +119,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -107,9 +150,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: page
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -136,6 +179,8 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  page_admin_theme: false
+  form_remote_addr: true
 access:
   create:
     roles:
@@ -185,9 +230,9 @@ access:
 handlers:
   ldbase_new_account_step_three:
     id: new_account_step_three_webform
+    handler_id: ldbase_new_account_step_three
     label: 'LDbase New Account Step Three'
     notes: ''
-    handler_id: ldbase_new_account_step_three
     status: true
     conditions: {  }
     weight: 0

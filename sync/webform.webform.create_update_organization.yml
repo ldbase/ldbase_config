@@ -9,9 +9,9 @@ third_party_settings:
   honeypot:
     honeypot: true
     time_restriction: true
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -19,7 +19,72 @@ id: create_update_organization
 title: 'Create/Update Organization'
 description: 'A form for creating or updating LDbase Organization objects.'
 category: 'LDbase Create/Update Forms'
-elements: "name:\n  '#type': textfield\n  '#title': 'Name of Organization'\n  '#description': 'Enter the name of your organization, department, research center (or anything else!) here.'\n  '#help': 'Enter the name of the organization'\n  '#placeholder': 'For Example: Spiny Bluff University'\n  '#required': true\n  '#required_error': 'You forgot to enter a name for this organization!'\ndescription:\n  '#type': textarea\n  '#title': 'Description of the Organization'\n  '#description': 'Enter a brief but helpful description of the organization here.'\n  '#help': 'Provide a brief description of organization'\n  '#placeholder': 'For Example: It’s a university; This is a NIH-funded research center focused on learning disabilities in childhood;'\nwebsite:\n  '#type': textfield\n  '#title': Website\n  '#multiple': true\n  '#description': 'Please include the protocol for the URL. (i.e, https://...)'\n  '#help': 'Enter a URL for the organization here.'\n  '#description_display': before\n  '#required': true\n  '#required_error': 'You forgot to enter a website for this organization!'\n  '#pattern': '^(http:\\/\\/|https:\\/\\/)(www\\.)?[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*\\.[a-z]{2,5}(:[0-9]{1,5})?(\\/.*)?$'\n  '#pattern_error': 'You must enter a valid URL beginning with \"http://\" or \"https://\"'\n  '#multiple__sorting': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Website'\n  '#attributes':\n    class:\n      - organization-url-text-input\nlocation_label:\n  '#type': label\n  '#title': Location\nlocation:\n  '#type': address\n  '#title': Location\n  '#multiple': true\n  '#description': 'Please tell us where this organization is.'\n  '#required': true\n  '#multiple__sorting': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Location'\n  '#field_overrides':\n    givenName: hidden\n    additionalName: hidden\n    familyName: hidden\n    organization: hidden\n    addressLine1: hidden\n    addressLine2: hidden\n    postalCode: hidden\n    sortingCode: hidden\n    dependentLocality: hidden\n    locality: optional\n    administrativeArea: optional\nimage:\n  '#type': webform_image_file\n  '#title': Image\nnode_id:\n  '#type': hidden\n  '#title': 'Node ID'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Save"
+elements: |-
+  name:
+    '#type': textfield
+    '#title': 'Name of Organization'
+    '#description': 'Enter the name of your organization, department, research center (or anything else!) here.'
+    '#help': 'Enter the name of the organization'
+    '#placeholder': 'For Example: Spiny Bluff University'
+    '#required': true
+    '#required_error': 'You forgot to enter a name for this organization!'
+  description:
+    '#type': textarea
+    '#title': 'Description of the Organization'
+    '#description': 'Enter a brief but helpful description of the organization here.'
+    '#help': 'Provide a brief description of organization'
+    '#placeholder': 'For Example: It’s a university; This is a NIH-funded research center focused on learning disabilities in childhood;'
+  website:
+    '#type': textfield
+    '#title': Website
+    '#multiple': true
+    '#description': 'Please include the protocol for the URL. (i.e, https://...)'
+    '#help': 'Enter a URL for the organization here.'
+    '#description_display': before
+    '#required': true
+    '#required_error': 'You forgot to enter a website for this organization!'
+    '#pattern': '^(http:\/\/|https:\/\/)(www\.)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+    '#pattern_error': 'You must enter a valid URL beginning with "http://" or "https://"'
+    '#multiple__sorting': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Website'
+    '#attributes':
+      class:
+        - organization-url-text-input
+  location_label:
+    '#type': label
+    '#title': Location
+  location:
+    '#type': address
+    '#title': Location
+    '#multiple': true
+    '#description': 'Please tell us where this organization is.'
+    '#required': true
+    '#multiple__sorting': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Location'
+    '#field_overrides':
+      givenName: hidden
+      additionalName: hidden
+      familyName: hidden
+      organization: hidden
+      addressLine1: hidden
+      addressLine2: hidden
+      postalCode: hidden
+      sortingCode: hidden
+      dependentLocality: hidden
+      locality: optional
+      administrativeArea: optional
+  image:
+    '#type': webform_image_file
+    '#title': Image
+  node_id:
+    '#type': hidden
+    '#title': 'Node ID'
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Save
 css: "html {\r\n  scroll-padding-top: 180px; \r\n}\r\n"
 javascript: ''
 settings:
@@ -31,38 +96,47 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: source_entity_webform
   form_submit_once: true
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: true
-  form_unsaved: true
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -71,11 +145,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -85,11 +154,20 @@ settings:
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
+  wizard_progress_states: false
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -106,9 +184,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: none
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -132,26 +210,13 @@ settings:
   purge_days: null
   results_disabled: true
   results_disabled_ignore: true
-  token_update: false
-  wizard_progress_states: false
-  token_view: false
   results_customize: false
-  page_theme_name: ''
-  share: false
-  share_node: false
-  share_theme_name: ''
-  share_title: true
-  share_page_body_attributes: {  }
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
-  wizard_prev_button_label: ''
-  wizard_next_button_label: ''
-  wizard_toggle: false
-  wizard_toggle_show_label: ''
-  wizard_toggle_hide_label: ''
+  token_view: false
+  token_update: false
   token_delete: false
   serial_disabled: false
+  page_admin_theme: false
+  form_remote_addr: true
 access:
   create:
     roles:
@@ -202,9 +267,9 @@ access:
 handlers:
   debug:
     id: debug
+    handler_id: debug
     label: Debug
     notes: ''
-    handler_id: debug
     status: false
     conditions: {  }
     weight: 0
@@ -213,9 +278,9 @@ handlers:
       submission: false
   ldbase_organization:
     id: org_from_webform
+    handler_id: ldbase_organization
     label: 'LDbase Organization'
     notes: ''
-    handler_id: ldbase_organization
     status: true
     conditions: {  }
     weight: 0

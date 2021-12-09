@@ -11,12 +11,12 @@ pattern: '/documents/[node:uuid]'
 selection_criteria:
   758db44a-7a73-4bf7-88e1-9673b52b3470:
     id: node_type
-    bundles:
-      document: document
     negate: false
+    uuid: 758db44a-7a73-4bf7-88e1-9673b52b3470
     context_mapping:
       node: node
-    uuid: 758db44a-7a73-4bf7-88e1-9673b52b3470
+    bundles:
+      document: document
 selection_logic: and
 weight: -5
 relationships: {  }

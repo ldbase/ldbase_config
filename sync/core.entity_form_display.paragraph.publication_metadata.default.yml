@@ -15,27 +15,27 @@ bundle: publication_metadata
 mode: default
 content:
   field_publication_month:
+    type: number
     weight: 0
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_publication_source:
+    type: link_default
     weight: 3
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   field_publication_year:
+    type: number
     weight: 1
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
 hidden:
   created: true
   status: true

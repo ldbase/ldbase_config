@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_handlers
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -14,7 +14,53 @@ id: edit_dataset_version
 title: 'Edit Dataset Version'
 description: 'A form only for editing a singleDataset Version paragraph'
 category: 'LDbase Create/Update Forms'
-elements: "dataset_version:\n  '#type': webform_custom_composite\n  '#title': 'Dataset Version'\n  '#states_clear': false\n  '#multiple': false\n  '#multiple__sorting': false\n  '#multiple__operations': false\n  '#multiple__add_more': false\n  '#element':\n    dataset_version_format:\n      '#type': webform_entity_select\n      '#title': 'Dataset Version Format'\n      '#help': 'Delimited file formats include csv and tsv files.'\n      '#description': 'Indicate in what file format the dataset is stored.'\n      '#target_type': taxonomy_term\n      '#selection_handler': 'default:taxonomy_term'\n      '#selection_settings':\n        target_bundles:\n          code_or_data_format: code_or_data_format\n        sort:\n          field: name\n          direction: ASC\n    dataset_version_upload:\n      '#type': managed_file\n      '#title': 'Dataset Version Upload'\n      '#file_help': none\n      '#description': 'Edit the Dataset to upload a different file'\n      '#disabled': true\n    dataset_version_label:\n      '#type': textfield\n      '#description': 'Add a label to your dataset. Especially when uploading an updated version, these labels will help you and other users keep track.'\n      '#placeholder': 'For Example: v1.0'\n      '#title': 'Dataset Version Label'\n    dataset_version_description:\n      '#type': textfield\n      '#description': 'Provide a brief description of this version of the dataset. This is especially important when uploading updated versions.'\n      '#placeholder': 'For Example: Original'\n      '#title': 'Dataset Version Description'\n    dataset_version_target_id:\n      '#type': hidden\n    dataset_version_target_revision_id:\n      '#type': hidden\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Save"
+elements: |-
+  dataset_version:
+    '#type': webform_custom_composite
+    '#title': 'Dataset Version'
+    '#states_clear': false
+    '#multiple': false
+    '#multiple__sorting': false
+    '#multiple__operations': false
+    '#multiple__add_more': false
+    '#element':
+      dataset_version_format:
+        '#type': webform_entity_select
+        '#title': 'Dataset Version Format'
+        '#help': 'Delimited file formats include csv and tsv files.'
+        '#description': 'Indicate in what file format the dataset is stored.'
+        '#target_type': taxonomy_term
+        '#selection_handler': 'default:taxonomy_term'
+        '#selection_settings':
+          target_bundles:
+            code_or_data_format: code_or_data_format
+          sort:
+            field: name
+            direction: ASC
+      dataset_version_upload:
+        '#type': managed_file
+        '#title': 'Dataset Version Upload'
+        '#file_help': none
+        '#description': 'Edit the Dataset to upload a different file'
+        '#disabled': true
+      dataset_version_label:
+        '#type': textfield
+        '#description': 'Add a label to your dataset. Especially when uploading an updated version, these labels will help you and other users keep track.'
+        '#placeholder': 'For Example: v1.0'
+        '#title': 'Dataset Version Label'
+      dataset_version_description:
+        '#type': textfield
+        '#description': 'Provide a brief description of this version of the dataset. This is especially important when uploading updated versions.'
+        '#placeholder': 'For Example: Original'
+        '#title': 'Dataset Version Description'
+      dataset_version_target_id:
+        '#type': hidden
+      dataset_version_target_revision_id:
+        '#type': hidden
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Save
 css: '.webform-submission-form .is-disabled {display: none}'
 javascript: ''
 settings:
@@ -26,31 +72,30 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: source_entity_webform
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: true
   form_disable_inline_errors: false
   form_required: true
-  form_unsaved: true
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
@@ -62,7 +107,12 @@ settings:
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -71,11 +121,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -90,7 +135,15 @@ settings:
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -107,9 +160,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: none
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -136,17 +189,10 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
-  page_theme_name: ''
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
-  wizard_prev_button_label: ''
-  wizard_next_button_label: ''
-  wizard_toggle: true
-  wizard_toggle_show_label: ''
-  wizard_toggle_hide_label: ''
-  serial_disabled: false
   token_delete: false
+  serial_disabled: false
+  page_admin_theme: false
+  form_remote_addr: true
 access:
   create:
     roles:
@@ -197,9 +243,9 @@ access:
 handlers:
   ldbase_edit_dataset_version:
     id: edit_dataset_version_handler
+    handler_id: ldbase_edit_dataset_version
     label: 'LDbase Edit Dataset Version'
     notes: ''
-    handler_id: ldbase_edit_dataset_version
     status: true
     conditions: {  }
     weight: 0

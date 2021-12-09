@@ -19,22 +19,22 @@ plugin: 'facet_block:search_facet_participant_age_range'
 settings:
   id: 'facet_block:search_facet_participant_age_range'
   label: 'Participant Age Range'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: searchfacetparticipantagerange
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: null
     context_mapping: {  }
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: null
-    view_inclusion: {  }
     context_mapping: {  }
+    view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /search
     negate: false
     context_mapping: {  }
+    pages: /search

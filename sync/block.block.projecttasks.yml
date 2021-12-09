@@ -19,28 +19,28 @@ plugin: 'system_menu_block:project-tasks'
 settings:
   id: 'system_menu_block:project-tasks'
   label: 'Project Tasks'
-  provider: system
   label_display: visible
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   user_role:
     id: user_role
-    roles:
-      authenticated: authenticated
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
   'entity_bundle:node':
     id: 'entity_bundle:node'
-    bundles:
-      project: project
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      project: project
   request_path:
     id: request_path
-    pages: '/forms/*'
     negate: true
     context_mapping: {  }
+    pages: '/forms/*'

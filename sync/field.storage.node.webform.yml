@@ -2,12 +2,12 @@ uuid: 07fa3574-bb07-4aeb-a95b-bd25711595aa
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - webform_node
   module:
     - node
     - webform
+  enforced:
+    module:
+      - webform_node
 id: node.webform
 field_name: webform
 entity_type: node

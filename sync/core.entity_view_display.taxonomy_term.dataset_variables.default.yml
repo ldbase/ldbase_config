@@ -13,21 +13,21 @@ bundle: dataset_variables
 mode: default
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 0
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_needs_review:
     type: boolean
-    weight: 1
-    region: content
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   search_api_excerpt: true

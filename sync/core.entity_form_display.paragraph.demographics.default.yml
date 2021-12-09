@@ -15,28 +15,28 @@ bundle: demographics
 mode: default
 content:
   field_age_range:
+    type: range
     weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: range
-    region: content
   field_number_of_participants:
+    type: number
     weight: 5
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: number
-    region: content
   field_participant_type:
+    type: entity_reference_autocomplete
     weight: 4
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
 hidden:
   created: true
   status: true

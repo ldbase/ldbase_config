@@ -13,8 +13,8 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: message.ldbase_existing_record_request.mail_subject
 targetEntityType: message
 bundle: ldbase_existing_record_request

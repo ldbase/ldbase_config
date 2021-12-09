@@ -33,75 +33,77 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: layout_twocol_section
         layout_settings:
           label: 'Person Layout'
+          context_mapping: {  }
           column_widths: 50-50
         components:
           0bf732c8-08cd-4358-96e8-4297e91e3e15:
             uuid: 0bf732c8-08cd-4358-96e8-4297e91e3e15
             region: first
             configuration:
+              id: 'field_block:node:person:field_professional_titles'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:person:field_professional_titles'
               formatter:
+                type: string
                 label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-                type: string
-            additional: {  }
             weight: 9
+            additional: {  }
           bdc00efa-cfcf-4dff-af78-70b60583a18d:
             uuid: bdc00efa-cfcf-4dff-af78-70b60583a18d
             region: first
             configuration:
+              id: 'field_block:node:person:field_orcid'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:person:field_orcid'
               formatter:
+                type: string
                 label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-                type: string
-            additional: {  }
             weight: 11
+            additional: {  }
           22ec4a78-c6ac-4e6d-a262-870e5869e11d:
             uuid: 22ec4a78-c6ac-4e6d-a262-870e5869e11d
             region: first
             configuration:
               id: 'field_block:node:person:field_related_organizations'
               label: 'Organizational Affiliations'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 13
+            additional: {  }
           1b052651-116a-4282-9718-37d198ba014f:
             uuid: 1b052651-116a-4282-9718-37d198ba014f
             region: first
             configuration:
+              id: 'field_block:node:person:field_web_presence'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:person:field_web_presence'
               formatter:
+                type: link
                 label: above
                 settings:
                   trim_length: 80
@@ -110,18 +112,18 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-                type: link
-            additional: {  }
             weight: 14
+            additional: {  }
           5165931f-fce5-466f-bd58-f6f32797bc7b:
             uuid: 5165931f-fce5-466f-bd58-f6f32797bc7b
             region: first
             configuration:
+              id: 'field_block:node:person:field_website'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:person:field_website'
               formatter:
+                type: link
                 label: above
                 settings:
                   trim_length: 80
@@ -130,124 +132,125 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-                type: link
-            additional: {  }
             weight: 15
+            additional: {  }
           47e491c3-6c1b-43e2-b7f9-cc23f77f2ba0:
             uuid: 47e491c3-6c1b-43e2-b7f9-cc23f77f2ba0
             region: first
             configuration:
+              id: 'field_block:node:person:field_areas_of_expertise'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:person:field_areas_of_expertise'
               formatter:
+                type: entity_reference_label
                 label: above
                 settings:
                   link: true
                 third_party_settings: {  }
-                type: entity_reference_label
-            additional: {  }
             weight: 16
+            additional: {  }
           6893b50f-0f0f-44cb-8e6b-6aa923c8d941:
             uuid: 6893b50f-0f0f-44cb-8e6b-6aa923c8d941
             region: first
             configuration:
+              id: 'field_block:node:person:body'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:person:body'
               formatter:
-                label: hidden
                 type: text_default
+                label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 17
+            additional: {  }
           78e4d85b-105a-4f22-a2a7-99b9b69221a8:
             uuid: 78e4d85b-105a-4f22-a2a7-99b9b69221a8
             region: second
             configuration:
               id: 'field_block:node:person:field_thumbnail'
               label: Thumbnail
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: image
-                settings:
-                  image_style: thumbnail
-                  image_link: ''
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: thumbnail
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
           5f8f2390-561a-4bdc-8a05-872e56088aae:
             uuid: 5f8f2390-561a-4bdc-8a05-872e56088aae
             region: first
             configuration:
+              id: 'field_block:node:person:field_publishing_names'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:person:field_publishing_names'
               formatter:
+                type: string
                 label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-                type: string
-            additional: {  }
             weight: 18
+            additional: {  }
           4622c012-7e42-40cb-b3d9-99fdf22859b5:
             uuid: 4622c012-7e42-40cb-b3d9-99fdf22859b5
             region: first
             configuration:
+              id: 'field_block:node:person:field_google_scholar_id'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:person:field_google_scholar_id'
               formatter:
+                type: string
                 label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-                type: string
-            additional: {  }
             weight: 12
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Contributions Section'
+          context_mapping: {  }
         components:
           3563b447-c695-46ed-af1f-85aff05f9cd6:
             uuid: 3563b447-c695-46ed-af1f-85aff05f9cd6
             region: content
             configuration:
+              id: 'extra_field_block:node:person:person_project_contributions_entity_view_1'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:person:person_project_contributions_entity_view_1'
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
           1d65931b-e554-474d-81e5-6d1472be368b:
             uuid: 1d65931b-e554-474d-81e5-6d1472be368b
             region: content
             configuration:
+              id: 'extra_field_block:node:person:links'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:person:links'
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: node.person.default
 targetEntityType: node
@@ -255,136 +258,136 @@ bundle: person
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_accepted_terms_of_use:
-    weight: 18
+    type: datetime_default
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: datetime_default
+    weight: 18
     region: first
   field_areas_of_expertise:
-    weight: 12
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 12
     region: content
   field_do_not_contact:
-    weight: 19
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 19
     region: first
   field_drupal_account_id:
-    weight: 14
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 14
     region: first
   field_email:
-    weight: 17
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 17
     region: first
   field_first_name:
-    weight: 4
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 4
     region: content
   field_google_scholar_id:
-    weight: 16
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 16
     region: first
   field_last_name:
-    weight: 6
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 6
     region: content
   field_location:
-    weight: 9
+    type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    weight: 9
     region: content
   field_middle_name:
-    weight: 5
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 5
     region: content
   field_orcid:
-    weight: 1
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_professional_titles:
-    weight: 10
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 10
     region: content
   field_publishing_names:
-    weight: 15
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 15
     region: first
   field_related_organizations:
-    weight: 11
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 11
     region: content
   field_thumbnail:
-    weight: 13
+    type: image
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: image
+    weight: 13
     region: content
   field_web_presence:
-    weight: 8
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -393,10 +396,10 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 8
     region: content
   field_website:
-    weight: 7
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -405,17 +408,17 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 7
     region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
   person_project_contributions_entity_view_1:
-    weight: 10
     settings: {  }
     third_party_settings: {  }
+    weight: 10
     region: first
 hidden:
   search_api_excerpt: true

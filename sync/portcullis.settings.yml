@@ -1,3 +1,17 @@
+_core:
+  default_config_hash: PzbkH8dqEftgq7J_GYij7dTOuMOVet7wORQAqjVs_7s
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: modules/custom/ldbase_content/images/favicon.ico
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: modules/custom/ldbase_content/images/ldbase_tagline_horizontal_color_200_61.png
+  use_default: false
 affix_side: 1
 animations_state: 1
 banner_background_color: 'region--dark-typography region--white-background'
@@ -212,18 +226,4 @@ transparent_header_opacity: '0'
 transparent_header_state: 0
 purechat_key: ''
 purechat_display: false
-_core:
-  default_config_hash: PzbkH8dqEftgq7J_GYij7dTOuMOVet7wORQAqjVs_7s
-features:
-  node_user_picture: true
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-logo:
-  use_default: false
-  path: modules/custom/ldbase_content/images/ldbase_tagline_horizontal_color_200_61.png
-favicon:
-  use_default: false
-  path: modules/custom/ldbase_content/images/favicon.ico
-  mimetype: image/vnd.microsoft.icon
 font_title: ''

@@ -9,9 +9,9 @@ third_party_settings:
   honeypot:
     honeypot: true
     time_restriction: true
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -19,7 +19,90 @@ id: account_creation_step_1
 title: 'Create New Account'
 description: 'A form to gather information regarding the new user and ascertain if there are existing records.'
 category: 'LDbase Create/Update Forms'
-elements: "initial_message:\n  '#type': webform_markup\n  '#markup': 'Let&#39;s get started! Please fill out the following fields:'\npreferred_display_name:\n  '#type': textfield\n  '#title': 'Preferred Display Name'\n  '#description': 'Please enter your name as you would like it to be displayed as an author or contributor throughout LDbase:'\n  '#help': 'We recommend you enter your name as it is most likely to have been used in publications and other research related documents.'\n  '#description_display': before\n  '#placeholder': 'For Example: Jess Shares'\n  '#required': true\nldbase_primary_name:\n  '#type': webform_custom_composite\n  '#title': 'Full Name'\n  '#multiple': false\n  '#description': '<span style=\"font-size:10.5pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span style=\"color:#24292e\"><span style=\"background-color:#ffffff\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Please enter your full name you publish with</span></span></span></span></span></span></span>'\n  '#help': '<span style=\"font-size:10.5pt; font-variant:normal; white-space:pre-wrap\"><span style=\"font-family:Arial\"><span style=\"color:#24292e\"><span style=\"background-color:#ffffff\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">This will make it easier for others to search for your work. We will use this name to create a citation</span></span></span></span></span></span></span>'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#multiple__operations': false\n  '#multiple__add_more': false\n  '#element':\n    primary_first_name:\n      '#type': textfield\n      '#required': true\n      '#title': 'First Name'\n      '#placeholder': 'For Example: Jessica'\n    primary_middle_name:\n      '#type': textfield\n      '#title': 'Middle Name'\n      '#placeholder': 'For Example: Ann'\n    primary_last_name:\n      '#type': textfield\n      '#required': true\n      '#title': 'Last name'\n      '#placeholder': 'For Example: Shares'\nldbase_additional_names:\n  '#type': webform_custom_composite\n  '#title': 'Additional Publishing Names'\n  '#description': 'If you have used other names to publish or distribute research related documents, please enter them in this field. Add as many lines as needed:'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Publishing Name'\n  '#element':\n    additional_first_name:\n      '#type': textfield\n      '#title': 'First Name'\n    additional_middle_name:\n      '#type': textfield\n      '#title': 'Middle Name'\n    additional_last_name:\n      '#type': textfield\n      '#title': 'Last Name'\nprimary_email:\n  '#type': email\n  '#title': 'Email Address'\n  '#description_display': before\n  '#required': true\nmass_contact_opt_in:\n  '#type': checkbox\n  '#title': 'Check here to receive emails from the LDbase team about pertinent information, like LDbase workshops and events.'\n  '#help': 'We can deliver a message about once a month to your inbox to help keep you in the LDbase loop.&nbsp; We will never give your email address to anyone else.'\nperson_contact_opt_in:\n  '#type': checkbox\n  '#title': 'Check here to allow other users to contact you in LDbase'\n  '#help': 'This will enable other registered LDbase users who may have questions to send you a message through LDbase.'\nldbase_password:\n  '#type': password_confirm\n  '#title': 'LDbase Password'\n  '#required': true\n  '#format_items': ul\n  '#format_items_html': ''\n  '#format_items_text': ''\naccepted_terms_of_use:\n  '#type': checkbox\n  '#title': 'By checking this box, you certify that you have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">LDbase Terms of Use</a>'\n  '#required': true\n  '#required_error': 'You must agree to the LDbase Terms of Use to create an account'\ncaptcha:\n  '#type': captcha\n  '#captcha_type': captcha/Math"
+elements: |-
+  initial_message:
+    '#type': webform_markup
+    '#markup': 'Let&#39;s get started! Please fill out the following fields:'
+  preferred_display_name:
+    '#type': textfield
+    '#title': 'Preferred Display Name'
+    '#description': 'Please enter your name as you would like it to be displayed as an author or contributor throughout LDbase:'
+    '#help': 'We recommend you enter your name as it is most likely to have been used in publications and other research related documents.'
+    '#description_display': before
+    '#placeholder': 'For Example: Jess Shares'
+    '#required': true
+  ldbase_primary_name:
+    '#type': webform_custom_composite
+    '#title': 'Full Name'
+    '#multiple': false
+    '#description': '<span style="font-size:10.5pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span style="color:#24292e"><span style="background-color:#ffffff"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">Please enter your full name you publish with</span></span></span></span></span></span></span>'
+    '#help': '<span style="font-size:10.5pt; font-variant:normal; white-space:pre-wrap"><span style="font-family:Arial"><span style="color:#24292e"><span style="background-color:#ffffff"><span style="font-weight:400"><span style="font-style:normal"><span style="text-decoration:none">This will make it easier for others to search for your work. We will use this name to create a citation</span></span></span></span></span></span></span>'
+    '#description_display': before
+    '#multiple__sorting': false
+    '#multiple__operations': false
+    '#multiple__add_more': false
+    '#element':
+      primary_first_name:
+        '#type': textfield
+        '#required': true
+        '#title': 'First Name'
+        '#placeholder': 'For Example: Jessica'
+      primary_middle_name:
+        '#type': textfield
+        '#title': 'Middle Name'
+        '#placeholder': 'For Example: Ann'
+      primary_last_name:
+        '#type': textfield
+        '#required': true
+        '#title': 'Last name'
+        '#placeholder': 'For Example: Shares'
+  ldbase_additional_names:
+    '#type': webform_custom_composite
+    '#title': 'Additional Publishing Names'
+    '#description': 'If you have used other names to publish or distribute research related documents, please enter them in this field. Add as many lines as needed:'
+    '#description_display': before
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Publishing Name'
+    '#element':
+      additional_first_name:
+        '#type': textfield
+        '#title': 'First Name'
+      additional_middle_name:
+        '#type': textfield
+        '#title': 'Middle Name'
+      additional_last_name:
+        '#type': textfield
+        '#title': 'Last Name'
+  primary_email:
+    '#type': email
+    '#title': 'Email Address'
+    '#description_display': before
+    '#required': true
+  mass_contact_opt_in:
+    '#type': checkbox
+    '#title': 'Check here to receive emails from the LDbase team about pertinent information, like LDbase workshops and events.'
+    '#help': 'We can deliver a message about once a month to your inbox to help keep you in the LDbase loop.&nbsp; We will never give your email address to anyone else.'
+  person_contact_opt_in:
+    '#type': checkbox
+    '#title': 'Check here to allow other users to contact you in LDbase'
+    '#help': 'This will enable other registered LDbase users who may have questions to send you a message through LDbase.'
+  ldbase_password:
+    '#type': password_confirm
+    '#title': 'LDbase Password'
+    '#required': true
+    '#format_items': ul
+    '#format_items_html': ''
+    '#format_items_text': ''
+  accepted_terms_of_use:
+    '#type': checkbox
+    '#title': 'By checking this box, you certify that you have read and agree to the <a href="/terms-of-use" target="_blank">LDbase Terms of Use</a>'
+    '#required': true
+    '#required_error': 'You must agree to the LDbase Terms of Use to create an account'
+  captcha:
+    '#type': captcha
+    '#captcha_type': captcha/Math
 css: ''
 javascript: ''
 settings:
@@ -31,31 +114,31 @@ settings:
   page: true
   page_submit_path: /create-new-account
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: source_entity_webform
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: true
   form_disable_inline_errors: false
   form_required: true
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
@@ -67,7 +150,12 @@ settings:
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -76,11 +164,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -95,7 +178,15 @@ settings:
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -112,9 +203,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: none
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -141,18 +232,10 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
-  page_theme_name: ''
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
-  wizard_prev_button_label: ''
-  wizard_next_button_label: ''
-  wizard_toggle: true
-  wizard_toggle_show_label: ''
-  wizard_toggle_hide_label: ''
-  serial_disabled: false
   token_delete: false
-  form_disable_remote_addr: false
+  serial_disabled: false
+  page_admin_theme: false
+  form_remote_addr: true
 access:
   create:
     roles:
@@ -202,9 +285,9 @@ access:
 handlers:
   ldbase_new_account_step_one:
     id: new_account_step_one_webform
+    handler_id: ldbase_new_account_step_one
     label: 'LDbase New Account Step One'
     notes: ''
-    handler_id: ldbase_new_account_step_one
     status: true
     conditions: {  }
     weight: 0

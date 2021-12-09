@@ -15,13 +15,13 @@ plugin: project_tasks_menu
 settings:
   id: project_tasks_menu
   label: 'LDbase Project Tasks Menu'
-  provider: ldbase_handlers
   label_display: visible
+  provider: ldbase_handlers
   context_mapping:
     node: '@node.node_route_context:node'
 visibility:
   request_path:
     id: request_path
-    pages: '/forms/*'
     negate: false
     context_mapping: {  }
+    pages: '/forms/*'

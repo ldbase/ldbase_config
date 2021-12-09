@@ -12,8 +12,8 @@ dependencies:
     - layout_builder
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
 id: message.ldbase_embargoes_access_granted.mail_body
 targetEntityType: message
 bundle: ldbase_embargoes_access_granted
@@ -23,9 +23,9 @@ content:
     weight: 0
     region: content
   partial_2:
-    weight: 0
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_from_user: true

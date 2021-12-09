@@ -6,63 +6,63 @@ definitions:
     expanded: false
     enabled: true
   ldbase_handlers__add_dataset_to_project_2:
+    menu_name: second-project-tasks
+    parent: ''
     weight: -50
-    menu_name: second-project-tasks
-    parent: ''
-    enabled: true
     expanded: false
+    enabled: true
   ldbase_handlers__add_document_to_project_2:
-    weight: -48
     menu_name: second-project-tasks
     parent: ''
+    weight: -48
     expanded: false
     enabled: true
   ldbase_handlers__add_code_to_project_2:
-    weight: -49
     menu_name: second-project-tasks
     parent: ''
+    weight: -49
     expanded: false
     enabled: true
   ldbase_handlers__add_code_to_project:
+    menu_name: project-tasks
+    parent: ldbase_handlers.add_file_to_project
     weight: -49
-    menu_name: project-tasks
-    parent: ldbase_handlers.add_file_to_project
-    enabled: true
     expanded: false
+    enabled: true
   ldbase_handlers__add_dataset_to_project:
-    weight: -50
     menu_name: project-tasks
     parent: ldbase_handlers.add_file_to_project
+    weight: -50
     expanded: false
     enabled: true
   ldbase_handlers__add_document_to_project:
-    weight: -48
     menu_name: project-tasks
     parent: ldbase_handlers.add_file_to_project
+    weight: -48
     expanded: false
     enabled: true
   ldbase_handlers__add_codebook_to_dataset_2:
+    menu_name: second-dataset-tasks
+    parent: ''
     weight: -49
-    menu_name: second-dataset-tasks
-    parent: ''
-    enabled: true
     expanded: false
+    enabled: true
   ldbase_handlers__add_document_to_dataset_2:
+    menu_name: second-dataset-tasks
+    parent: ''
     weight: -47
-    menu_name: second-dataset-tasks
-    parent: ''
-    enabled: true
     expanded: false
+    enabled: true
   ldbase_handlers__add_code_to_dataset_2:
-    weight: -50
     menu_name: second-dataset-tasks
     parent: ''
+    weight: -50
     expanded: false
     enabled: true
   ldbase_handlers__add_dataset_to_dataset_2:
-    weight: -48
     menu_name: second-dataset-tasks
     parent: ''
+    weight: -48
     expanded: false
     enabled: true
   ldbase__search:

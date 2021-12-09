@@ -19,34 +19,34 @@ plugin: 'views_block:ldbase_news-block_1'
 settings:
   id: 'views_block:ldbase_news-block_1'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   context_all:
     id: context_all
-    values: ''
     negate: null
     context_mapping: {  }
+    values: ''
   context:
     id: context
-    values: ''
     negate: null
     context_mapping: {  }
+    values: ''
   user_status:
     id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
     user_status:
       viewing_profile: '0'
       logged_viewing_profile: '0'
       own_page_true: '0'
       field_value: '0'
     user_fields: uid
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

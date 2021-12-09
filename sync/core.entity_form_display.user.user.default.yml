@@ -23,15 +23,15 @@ content:
     region: content
   mass_contact_opt_out:
     type: options_buttons
-    settings: {  }
     weight: 31
-    third_party_settings: {  }
     region: content
+    settings: {  }
+    third_party_settings: {  }
   matomo:
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   path:
     type: path
     weight: 30

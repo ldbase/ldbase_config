@@ -21,9 +21,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       publication_metadata: publication_metadata
+    negate: 0
     target_bundles_drag_drop:
       demographics:
         weight: 6
@@ -38,6 +38,6 @@ settings:
         weight: 9
         enabled: false
       publication_metadata:
-        enabled: true
         weight: 10
+        enabled: true
 field_type: entity_reference_revisions

@@ -20,14 +20,14 @@ bundle: tombstone
 mode: default
 content:
   field_tombstone_citation:
-    weight: 105
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 105
     region: content
   field_tombstone_links:
-    weight: 104
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -36,27 +36,27 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 104
     region: content
   field_tombstone_path:
-    weight: 101
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 101
     region: content
   field_tombstone_reason:
-    weight: 103
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 103
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   search_api_excerpt: true

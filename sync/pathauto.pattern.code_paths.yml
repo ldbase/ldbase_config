@@ -11,12 +11,12 @@ pattern: '/code/[node:uuid]'
 selection_criteria:
   e9c3cd12-d4c9-4af0-b3eb-d06571532140:
     id: node_type
-    bundles:
-      code: code
     negate: false
+    uuid: e9c3cd12-d4c9-4af0-b3eb-d06571532140
     context_mapping:
       node: node
-    uuid: e9c3cd12-d4c9-4af0-b3eb-d06571532140
+    bundles:
+      code: code
 selection_logic: and
 weight: -5
 relationships: {  }

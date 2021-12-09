@@ -9,9 +9,9 @@ third_party_settings:
   honeypot:
     honeypot: true
     time_restriction: true
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -19,7 +19,209 @@ id: create_update_person
 title: 'Create/Update Person'
 description: 'A form for creating or updating LDbase Person objects'
 category: 'LDbase Create/Update Forms'
-elements: "preferred_name:\n  '#type': textfield\n  '#title': 'Display Name'\n  '#description': 'Please enter your name as you would like it to be displayed throughout the site.&nbsp;'\n  '#description_display': before\n  '#placeholder': 'For Example: Dr. Sally Shares'\n  '#required': true\ndescription:\n  '#type': textarea\n  '#title': Bio\n  '#help': 'Provide a brief bio'\n  '#placeholder': 'For Example: Dr. Sally Shares is an Assistant Professor of Teacher Education at Spiny Bluff University. Her research focuses on how children learn to read. She supports open science practices.'\nlocation_label:\n  '#type': label\n  '#title': 'Work Address'\n  '#description': 'Enter your work address, if you wish.'\nlocation:\n  '#type': address\n  '#title': Location\n  '#multiple': true\n  '#description': 'Location where person works or resides'\n  '#help': 'Enter your work address, if you wish.'\n  '#title_display': after\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Work Address'\n  '#field_overrides':\n    givenName: hidden\n    additionalName: hidden\n    familyName: hidden\n    organization: hidden\n    addressLine1: hidden\n    addressLine2: hidden\n    postalCode: hidden\n    sortingCode: hidden\n    dependentLocality: hidden\n    locality: optional\n    administrativeArea: optional\nwebsite:\n  '#type': textfield\n  '#title': 'Your Website'\n  '#multiple': true\n  '#description': 'Please include the protocol for the URL. (i.e, https://...)'\n  '#help': 'Enter a url that links to your professional or lab website.'\n  '#description_display': before\n  '#placeholder': 'For Example: https://www.SallySharesLab.edu'\n  '#pattern': '^(http:\\/\\/|https:\\/\\/)(www\\.)?[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*\\.[a-z]{2,5}(:[0-9]{1,5})?(\\/.*)?$'\n  '#pattern_error': 'You must enter a valid URL beginning with \"http://\" or \"https://\"'\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Website'\n  '#attributes':\n    class:\n      - person-url-text-input\nfirst_name:\n  '#type': textfield\n  '#title': 'First Name'\n  '#help': 'Enter your actual first name.'\n  '#placeholder': 'For Example: Sally'\n  '#required': true\nmiddle_name:\n  '#type': textfield\n  '#title': 'Middle Name'\n  '#placeholder': 'For Example: Diane'\nlast_name:\n  '#type': textfield\n  '#title': 'Last Name'\n  '#help': 'Enter your actual last name.'\n  '#placeholder': 'For Example: Shares'\n  '#required': true\nadditional_publishing_names:\n  '#type': textfield\n  '#title': 'Additional Publishing Names'\n  '#multiple': true\n  '#description': 'If you have used other names to publish or distribute research related documents, please enter them in this field. Add as many lines as needed.'\n  '#description_display': before\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Publishing Name'\nemail:\n  '#type': email\n  '#title': 'Email Address/Username'\n  '#description': 'Changing your email address will also change your login email for LDbase.'\n  '#help': 'Enter your preferred email address (i.e., the one you actually check).'\n  '#description_display': before\n  '#placeholder': 'For Example: sshares@spinybluff.edu '\n  '#multiple__sorting': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Email'\n  '#required': true\nmass_contact_opt_in:\n  '#type': checkbox\n  '#title': 'Check here to receive emails from the LDbase team about pertinent information, like LDbase workshops and events.'\n  '#help': 'We can deliver a message about once a month to your inbox to help keep you in the LDbase loop.&nbsp; We will never give your email address to anyone else.'\nperson_contact_opt_in:\n  '#type': checkbox\n  '#title': 'Check here to allow other users to contact you in LDbase'\n  '#help': 'This will enable other registered LDbase users who may have questions to send you a message through LDbase.'\norcid:\n  '#type': textfield\n  '#title': ORCID\n  '#help': 'Enter your ORCID, if you have one.'\n  '#placeholder': 'For Example: 0000-0001-2345-6789'\ngoogle_scholar_id:\n  '#type': textfield\n  '#title': 'Google Scholar ID'\n  '#help': 'Enter your Google Scholar ID, if you have one.'\n  '#placeholder': 'For Example: AbcdEFGhiJK'\nweb_presence:\n  '#type': textfield\n  '#title': 'Social Media'\n  '#multiple': true\n  '#description': 'URL of social media accounts'\n  '#help': 'Enter any social media accounts you want to share.'\n  '#description_display': before\n  '#placeholder': 'For Example: https://twitter.com/DrJaneDoePhD'\n  '#pattern': '^(http:\\/\\/|https:\\/\\/)(www\\.)?[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*\\.[a-z]{2,5}(:[0-9]{1,5})?(\\/.*)?$'\n  '#pattern_error': 'You must enter a valid URL beginning with \"http://\" or \"https://\"'\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Social Media Account'\n  '#attributes':\n    class:\n      - person-url-text-input\nprofessional_titles:\n  '#type': textfield\n  '#title': 'Job Title'\n  '#multiple': true\n  '#help': 'Enter your job/professional title.'\n  '#placeholder': 'For Example: Assistant Professor'\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Title'\nrelated_organizations:\n  '#type': entity_autocomplete\n  '#title': 'Organizational Affiliations'\n  '#multiple': true\n  '#description': 'Please enter the unabbreviated name of each organization'\n  '#help': 'Search for the organization(s) that you are affiliated with'\n  '#description_display': before\n  '#placeholder': 'For Example: Spiny Bluff University'\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Organization'\n  '#attributes':\n    class:\n      - input-comma-check\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      organization: organization\n    auto_create: 1\n    auto_create_bundle: organization\nareas_of_expertise:\n  '#type': entity_autocomplete\n  '#title': 'Areas of Expertise'\n  '#multiple': true\n  '#description': 'Enter keywords related to your research interests. Choose from existing options or enter as many as you would like, each on its own line.&nbsp;<a href=\"/taxonomy/areas_of_expertise\" target=\"_blank\">View all Areas of Expertise</a>'\n  '#description_display': before\n  '#placeholder': 'For Example: Statistical Methods'\n  '#multiple__sorting': false\n  '#multiple__add': false\n  '#multiple__add_more_input': false\n  '#multiple__add_more_button_label': 'Add another Area'\n  '#attributes':\n    class:\n      - input-comma-check\n  '#target_type': taxonomy_term\n  '#selection_handler': 'default:taxonomy_term'\n  '#selection_settings':\n    target_bundles:\n      areas_of_expertise: areas_of_expertise\n    sort:\n      field: name\n      direction: ASC\n    auto_create: true\n    auto_create_bundle: areas_of_expertise\nthumbnail:\n  '#type': webform_image_file\n  '#title': 'Profile Picture'\n  '#description': 'Image representing this person'\n  '#max_resolution': 200x200\nldbase_password:\n  '#type': password_confirm\n  '#title': 'Change Password'\n  '#format_items': ul\n  '#format_items_html': ''\n  '#format_items_text': ''\nnode_id:\n  '#type': hidden\n  '#title': node_id\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Save"
+elements: |-
+  preferred_name:
+    '#type': textfield
+    '#title': 'Display Name'
+    '#description': 'Please enter your name as you would like it to be displayed throughout the site.&nbsp;'
+    '#description_display': before
+    '#placeholder': 'For Example: Dr. Sally Shares'
+    '#required': true
+  description:
+    '#type': textarea
+    '#title': Bio
+    '#help': 'Provide a brief bio'
+    '#placeholder': 'For Example: Dr. Sally Shares is an Assistant Professor of Teacher Education at Spiny Bluff University. Her research focuses on how children learn to read. She supports open science practices.'
+  location_label:
+    '#type': label
+    '#title': 'Work Address'
+    '#description': 'Enter your work address, if you wish.'
+  location:
+    '#type': address
+    '#title': Location
+    '#multiple': true
+    '#description': 'Location where person works or resides'
+    '#help': 'Enter your work address, if you wish.'
+    '#title_display': after
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Work Address'
+    '#field_overrides':
+      givenName: hidden
+      additionalName: hidden
+      familyName: hidden
+      organization: hidden
+      addressLine1: hidden
+      addressLine2: hidden
+      postalCode: hidden
+      sortingCode: hidden
+      dependentLocality: hidden
+      locality: optional
+      administrativeArea: optional
+  website:
+    '#type': textfield
+    '#title': 'Your Website'
+    '#multiple': true
+    '#description': 'Please include the protocol for the URL. (i.e, https://...)'
+    '#help': 'Enter a url that links to your professional or lab website.'
+    '#description_display': before
+    '#placeholder': 'For Example: https://www.SallySharesLab.edu'
+    '#pattern': '^(http:\/\/|https:\/\/)(www\.)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+    '#pattern_error': 'You must enter a valid URL beginning with "http://" or "https://"'
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Website'
+    '#attributes':
+      class:
+        - person-url-text-input
+  first_name:
+    '#type': textfield
+    '#title': 'First Name'
+    '#help': 'Enter your actual first name.'
+    '#placeholder': 'For Example: Sally'
+    '#required': true
+  middle_name:
+    '#type': textfield
+    '#title': 'Middle Name'
+    '#placeholder': 'For Example: Diane'
+  last_name:
+    '#type': textfield
+    '#title': 'Last Name'
+    '#help': 'Enter your actual last name.'
+    '#placeholder': 'For Example: Shares'
+    '#required': true
+  additional_publishing_names:
+    '#type': textfield
+    '#title': 'Additional Publishing Names'
+    '#multiple': true
+    '#description': 'If you have used other names to publish or distribute research related documents, please enter them in this field. Add as many lines as needed.'
+    '#description_display': before
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Publishing Name'
+  email:
+    '#type': email
+    '#title': 'Email Address/Username'
+    '#description': 'Changing your email address will also change your login email for LDbase.'
+    '#help': 'Enter your preferred email address (i.e., the one you actually check).'
+    '#description_display': before
+    '#placeholder': 'For Example: sshares@spinybluff.edu '
+    '#multiple__sorting': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Email'
+    '#required': true
+  mass_contact_opt_in:
+    '#type': checkbox
+    '#title': 'Check here to receive emails from the LDbase team about pertinent information, like LDbase workshops and events.'
+    '#help': 'We can deliver a message about once a month to your inbox to help keep you in the LDbase loop.&nbsp; We will never give your email address to anyone else.'
+  person_contact_opt_in:
+    '#type': checkbox
+    '#title': 'Check here to allow other users to contact you in LDbase'
+    '#help': 'This will enable other registered LDbase users who may have questions to send you a message through LDbase.'
+  orcid:
+    '#type': textfield
+    '#title': ORCID
+    '#help': 'Enter your ORCID, if you have one.'
+    '#placeholder': 'For Example: 0000-0001-2345-6789'
+  google_scholar_id:
+    '#type': textfield
+    '#title': 'Google Scholar ID'
+    '#help': 'Enter your Google Scholar ID, if you have one.'
+    '#placeholder': 'For Example: AbcdEFGhiJK'
+  web_presence:
+    '#type': textfield
+    '#title': 'Social Media'
+    '#multiple': true
+    '#description': 'URL of social media accounts'
+    '#help': 'Enter any social media accounts you want to share.'
+    '#description_display': before
+    '#placeholder': 'For Example: https://twitter.com/DrJaneDoePhD'
+    '#pattern': '^(http:\/\/|https:\/\/)(www\.)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$'
+    '#pattern_error': 'You must enter a valid URL beginning with "http://" or "https://"'
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Social Media Account'
+    '#attributes':
+      class:
+        - person-url-text-input
+  professional_titles:
+    '#type': textfield
+    '#title': 'Job Title'
+    '#multiple': true
+    '#help': 'Enter your job/professional title.'
+    '#placeholder': 'For Example: Assistant Professor'
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Title'
+  related_organizations:
+    '#type': entity_autocomplete
+    '#title': 'Organizational Affiliations'
+    '#multiple': true
+    '#description': 'Please enter the unabbreviated name of each organization'
+    '#help': 'Search for the organization(s) that you are affiliated with'
+    '#description_display': before
+    '#placeholder': 'For Example: Spiny Bluff University'
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Organization'
+    '#attributes':
+      class:
+        - input-comma-check
+    '#target_type': node
+    '#selection_handler': 'default:node'
+    '#selection_settings':
+      target_bundles:
+        organization: organization
+      auto_create: 1
+      auto_create_bundle: organization
+  areas_of_expertise:
+    '#type': entity_autocomplete
+    '#title': 'Areas of Expertise'
+    '#multiple': true
+    '#description': 'Enter keywords related to your research interests. Choose from existing options or enter as many as you would like, each on its own line.&nbsp;<a href="/taxonomy/areas_of_expertise" target="_blank">View all Areas of Expertise</a>'
+    '#description_display': before
+    '#placeholder': 'For Example: Statistical Methods'
+    '#multiple__sorting': false
+    '#multiple__add': false
+    '#multiple__add_more_input': false
+    '#multiple__add_more_button_label': 'Add another Area'
+    '#attributes':
+      class:
+        - input-comma-check
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        areas_of_expertise: areas_of_expertise
+      sort:
+        field: name
+        direction: ASC
+      auto_create: true
+      auto_create_bundle: areas_of_expertise
+  thumbnail:
+    '#type': webform_image_file
+    '#title': 'Profile Picture'
+    '#description': 'Image representing this person'
+    '#max_resolution': 200x200
+  ldbase_password:
+    '#type': password_confirm
+    '#title': 'Change Password'
+    '#format_items': ul
+    '#format_items_html': ''
+    '#format_items_text': ''
+  node_id:
+    '#type': hidden
+    '#title': node_id
+  actions:
+    '#type': webform_actions
+    '#title': 'Submit button(s)'
+    '#submit__label': Save
 css: "html {\r\n  scroll-padding-top: 180px; \r\n}"
 javascript: "(function($, Drupal, drupalSettings){\r\n  'use strict';\r\n  \r\n  Drupal.behaviors.ldbasePerson = {\r\n    attach: function (context, settings) {\r\n      $(context).find('.input-comma-check').on('keyup', function(e) {\r\n        if (e.which == 188) {\r\n          alert('You added a comma. Please only enter one item per line.  \\nAdd additional lines if needed.');\r\n        }\r\n      });\r\n    }\r\n  }\r\n\r\n})(jQuery, Drupal, drupalSettings);"
 settings:
@@ -31,38 +233,47 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: source_entity_webform
   form_submit_once: true
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: true
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: true
   form_disable_inline_errors: false
   form_required: true
-  form_unsaved: true
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -71,11 +282,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -90,7 +296,15 @@ settings:
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -107,9 +321,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: none
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -133,25 +347,13 @@ settings:
   purge_days: null
   results_disabled: true
   results_disabled_ignore: true
-  token_update: false
-  token_view: false
   results_customize: false
-  page_theme_name: ''
-  share: false
-  share_node: false
-  share_theme_name: ''
-  share_title: true
-  share_page_body_attributes: {  }
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
-  wizard_prev_button_label: ''
-  wizard_next_button_label: ''
-  wizard_toggle: true
-  wizard_toggle_show_label: ''
-  wizard_toggle_hide_label: ''
-  serial_disabled: false
+  token_view: false
+  token_update: false
   token_delete: false
+  serial_disabled: false
+  page_admin_theme: false
+  form_remote_addr: true
 access:
   create:
     roles:
@@ -202,9 +404,9 @@ access:
 handlers:
   debug:
     id: debug
+    handler_id: debug
     label: Debug
     notes: ''
-    handler_id: debug
     status: false
     conditions: {  }
     weight: 0
@@ -213,9 +415,9 @@ handlers:
       submission: false
   ldbase_person:
     id: person_from_webform
+    handler_id: ldbase_person
     label: 'LDbase Person'
     notes: ''
-    handler_id: ldbase_person
     status: true
     conditions: {  }
     weight: 0

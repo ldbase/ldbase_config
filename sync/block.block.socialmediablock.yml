@@ -18,11 +18,14 @@ plugin: social_media_block
 settings:
   id: social_media_block
   label: 'Social Media Block'
-  provider: ldbase_content
   label_display: '0'
+  provider: ldbase_content
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
     bundles:
       code: code
       dataset: dataset
@@ -30,42 +33,39 @@ visibility:
       organization: organization
       person: person
       project: project
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/persons/*/change-password\r\n/access-request/*\r\n/*/*/request-access\r\n/*/*/contact-ldbase-*"
     negate: true
     context_mapping: {  }
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/persons/*/change-password\r\n/access-request/*\r\n/*/*/request-access\r\n/*/*/contact-ldbase-*"
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
     negate: true
     context_mapping: {  }
+    pages: ''
   view_inclusion:
     id: view_inclusion
     negate: false
-    view_inclusion: {  }
     context_mapping: {  }
+    view_inclusion: {  }
   context_all:
     id: context_all
-    values: ''
     negate: null
     context_mapping: {  }
+    values: ''
   context:
     id: context
-    values: ''
     negate: null
     context_mapping: {  }
+    values: ''
   user_status:
     id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
     user_status:
       viewing_profile: '0'
       logged_viewing_profile: '0'
       own_page_true: '0'
       field_value: '0'
     user_fields: uid
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'

@@ -28,13 +28,14 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'APA Citation'
+          context_mapping: {  }
         components:
           e1e62707-488a-4d91-947e-b505c157ece8:
             uuid: e1e62707-488a-4d91-947e-b505c157ece8
@@ -42,16 +43,17 @@ third_party_settings:
             configuration:
               id: ldbase_citation_display_block
               label: 'Ldbase citation display block'
-              provider: ldbase_citations
               label_display: visible
+              provider: ldbase_citations
               context_mapping: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'DOI Section'
+          context_mapping: {  }
         components:
           5184d550-42b4-4dbc-b3e2-f279cfb6b688:
             uuid: 5184d550-42b4-4dbc-b3e2-f279cfb6b688
@@ -59,35 +61,36 @@ third_party_settings:
             configuration:
               id: 'field_block:node:document:field_doi'
               label: DOI
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: string
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
           9e52e055-eb09-4079-a289-0b3af517809a:
             uuid: 9e52e055-eb09-4079-a289-0b3af517809a
             region: content
             configuration:
               id: ldbase_citation_link_block
               label: 'Ldbase citation link block'
-              provider: ldbase_citations
               label_display: '0'
+              provider: ldbase_citations
               context_mapping: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'File Section'
+          context_mapping: {  }
         components:
           9847de09-84cd-44d7-b1a6-47cf45bd4e58:
             uuid: 9847de09-84cd-44d7-b1a6-47cf45bd4e58
@@ -95,48 +98,50 @@ third_party_settings:
             configuration:
               id: 'field_block:node:document:field_document_file'
               label: File
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: file_default
-                settings:
-                  use_description_as_link_text: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: file_default
+                label: inline
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
             weight: 2
+            additional: {  }
           94f41e85-9835-4185-ad14-696ac7080993:
             uuid: 94f41e85-9835-4185-ad14-696ac7080993
             region: content
             configuration:
               id: 'field_block:node:document:field_doc_upload_or_external'
               label: 'Document Upload or External Link'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: list_default
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: list_default
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'File Section'
+          context_mapping: {  }
         components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'External Resource Section'
+          context_mapping: {  }
         components:
           440627d5-b623-45b8-8a6e-c9776684e9c5:
             uuid: 440627d5-b623-45b8-8a6e-c9776684e9c5
@@ -144,11 +149,14 @@ third_party_settings:
             configuration:
               id: 'field_block:node:document:field_external_resource'
               label: 'External Resource'
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
-                label: above
                 type: link
+                label: above
                 settings:
                   trim_length: 80
                   url_only: false
@@ -156,16 +164,14 @@ third_party_settings:
                   rel: '0'
                   target: '0'
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Description Section'
+          context_mapping: {  }
         components:
           98b593d9-b8d9-4273-a633-c92a6e3164f1:
             uuid: 98b593d9-b8d9-4273-a633-c92a6e3164f1
@@ -173,23 +179,24 @@ third_party_settings:
             configuration:
               id: 'field_block:node:document:body'
               label: Description
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Authors Section'
+          context_mapping: {  }
         components:
           e05043b5-0d3e-4770-903b-30b69ce3edd2:
             uuid: e05043b5-0d3e-4770-903b-30b69ce3edd2
@@ -197,24 +204,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:document:field_related_persons'
               label: Authors
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Publication Section'
+          context_mapping: {  }
         components:
           91061fe3-ff78-40dc-be06-b2992067b6c3:
             uuid: 91061fe3-ff78-40dc-be06-b2992067b6c3
@@ -222,24 +230,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:document:field_publication_info'
               label: 'Publication Information'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_revisions_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: inline
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'Document Type Section'
+          context_mapping: {  }
         components:
           b1a6c7ff-f8f4-43e3-b252-d25719b65a75:
             uuid: b1a6c7ff-f8f4-43e3-b252-d25719b65a75
@@ -247,24 +256,25 @@ third_party_settings:
             configuration:
               id: 'field_block:node:document:field_document_type'
               label: 'Document Type'
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
         layout_settings:
           label: 'License Section'
+          context_mapping: {  }
         components:
           46f8accf-086b-4b76-8923-78c5023b9c06:
             uuid: 46f8accf-086b-4b76-8923-78c5023b9c06
@@ -272,35 +282,35 @@ third_party_settings:
             configuration:
               id: 'field_block:node:document:field_license'
               label: License
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: inline
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
-            additional: {  }
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
           df8c784d-4a0d-4a35-be74-70522b288f80:
             uuid: df8c784d-4a0d-4a35-be74-70522b288f80
             region: content
             configuration:
+              id: 'field_block:node:document:field_license_other'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:document:field_license_other'
               formatter:
+                type: string
                 label: above
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-                type: string
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
 id: node.document.default
 targetEntityType: node
@@ -308,53 +318,53 @@ bundle: document
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_affiliated_parents:
-    weight: 19
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 19
     region: content
   field_doc_upload_or_external:
-    weight: 23
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 23
     region: content
   field_document_file:
-    weight: 21
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 21
     region: content
   field_document_type:
-    weight: 15
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 15
     region: content
   field_doi:
-    weight: 2
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_external_resource:
-    weight: 10
+    type: link
     label: above
     settings:
       trim_length: 80
@@ -363,53 +373,53 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 10
     region: content
   field_license:
-    weight: 7
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 7
     region: content
   field_license_other:
-    weight: 24
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 24
     region: content
   field_publication_info:
     type: entity_reference_revisions_entity_view
-    weight: 16
     label: above
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 16
     region: content
   field_related_persons:
-    weight: 4
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 4
     region: content
   field_unaffiliated_parents:
-    weight: 20
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 20
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   search_api_excerpt: true

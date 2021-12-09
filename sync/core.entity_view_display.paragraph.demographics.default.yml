@@ -15,7 +15,7 @@ bundle: demographics
 mode: default
 content:
   field_age_range:
-    weight: 6
+    type: range_integer
     label: above
     settings:
       range_separator: '-'
@@ -24,24 +24,24 @@ content:
       from_prefix_suffix: false
       to_prefix_suffix: false
     third_party_settings: {  }
-    type: range_integer
+    weight: 6
     region: content
   field_number_of_participants:
-    weight: 5
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 5
     region: content
   field_participant_type:
-    weight: 4
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 4
     region: content
 hidden:
   search_api_excerpt: true

@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_embargoes
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -14,7 +14,20 @@ id: request_file_access
 title: 'Request File Access'
 description: 'A form to manage requests to embargoed files.'
 category: 'LDbase Create/Update Forms'
-elements: "reason_for_access_request:\n  '#type': textarea\n  '#title': 'Reason for Access Reqeust'\n  '#description': 'Why do you need access to this restricted file, and what do you plan to do with it?'\n  '#description_display': before\n  '#required': true\n  '#required_error': 'You must describe your reason for requesting access to this material'\nnode_id:\n  '#type': hidden\n  '#title': node_id\nembargo_id:\n  '#type': hidden\n  '#title': embargo_id"
+elements: |-
+  reason_for_access_request:
+    '#type': textarea
+    '#title': 'Reason for Access Reqeust'
+    '#description': 'Why do you need access to this restricted file, and what do you plan to do with it?'
+    '#description_display': before
+    '#required': true
+    '#required_error': 'You must describe your reason for requesting access to this material'
+  node_id:
+    '#type': hidden
+    '#title': node_id
+  embargo_id:
+    '#type': hidden
+    '#title': embargo_id
 css: ''
 javascript: ''
 settings:
@@ -26,31 +39,30 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  page_admin_theme: false
+  page_theme_name: ''
   form_title: both
   form_submit_once: false
-  form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
+  form_exception_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
   form_prepopulate_source_entity_required: false
   form_prepopulate_source_entity_type: ''
-  form_reset: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
   form_disable_autocomplete: false
   form_novalidate: false
   form_disable_inline_errors: false
   form_required: false
-  form_unsaved: false
-  form_disable_back: false
-  form_submit_back: false
   form_autofocus: false
   form_details_toggle: false
+  form_reset: false
   form_access_denied: default
   form_access_denied_title: ''
   form_access_denied_message: ''
@@ -62,7 +74,12 @@ settings:
   share_title: true
   share_page_body_attributes: {  }
   submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
   submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
   submission_views: {  }
   submission_views_replace: {  }
   submission_user_columns: {  }
@@ -71,11 +88,6 @@ settings:
   submission_access_denied_title: ''
   submission_access_denied_message: ''
   submission_access_denied_attributes: {  }
-  submission_exception_message: ''
-  submission_locked_message: ''
-  submission_excluded_elements: {  }
-  submission_exclude_empty: false
-  submission_exclude_empty_checkbox: false
   previous_submission_message: ''
   previous_submissions_message: ''
   autofill: false
@@ -90,7 +102,15 @@ settings:
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -107,9 +127,9 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: none
+  confirmation_url: ''
   confirmation_title: ''
   confirmation_message: ''
-  confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''
@@ -136,17 +156,10 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
-  page_theme_name: ''
-  wizard_auto_forward: true
-  wizard_auto_forward_hide_next_button: false
-  wizard_keyboard: true
-  wizard_prev_button_label: ''
-  wizard_next_button_label: ''
-  wizard_toggle: false
-  wizard_toggle_show_label: ''
-  wizard_toggle_hide_label: ''
   token_delete: false
   serial_disabled: false
+  page_admin_theme: false
+  form_remote_addr: true
 access:
   create:
     roles:
@@ -197,9 +210,9 @@ access:
 handlers:
   ldbase_embargo_request_file_access:
     id: request_file_access
+    handler_id: ldbase_embargo_request_file_access
     label: 'LDbase Request File Access'
     notes: ''
-    handler_id: ldbase_embargo_request_file_access
     status: true
     conditions: {  }
     weight: 0

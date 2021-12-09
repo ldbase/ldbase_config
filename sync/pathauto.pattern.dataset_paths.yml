@@ -11,12 +11,12 @@ pattern: '/datasets/[node:uuid]'
 selection_criteria:
   077180a5-b8f0-4ea2-b48d-693d7c9666bf:
     id: node_type
-    bundles:
-      dataset: dataset
     negate: false
+    uuid: 077180a5-b8f0-4ea2-b48d-693d7c9666bf
     context_mapping:
       node: node
-    uuid: 077180a5-b8f0-4ea2-b48d-693d7c9666bf
+    bundles:
+      dataset: dataset
 selection_logic: and
 weight: -5
 relationships: {  }
