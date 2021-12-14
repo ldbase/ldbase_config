@@ -1187,7 +1187,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -1231,8 +1230,7 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings:
-            link_to_entity: false
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1243,6 +1241,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: true
+          plugin_id: field
         field_file_format:
           id: field_file_format
           table: paragraph__field_file_format
@@ -1250,7 +1249,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -1306,6 +1304,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: true
+          plugin_id: field
         field_file_upload:
           id: field_file_upload
           table: paragraph__field_file_upload
@@ -1313,7 +1312,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -1369,6 +1367,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: true
+          plugin_id: field
         field_file_version_label:
           id: field_file_version_label
           table: paragraph__field_file_version_label
@@ -1376,7 +1375,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -1420,8 +1418,7 @@ display:
           hide_alter_empty: true
           click_sort_column: value
           type: string
-          settings:
-            link_to_entity: false
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1432,6 +1429,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: true
+          plugin_id: field
       pager:
         type: some
         options:
