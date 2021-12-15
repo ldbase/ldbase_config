@@ -9,18 +9,12 @@ dependencies:
     - search_api
 id: search_facet_participant_age_range
 name: 'Search Facet: Participant Age Range'
+url_alias: search_facet_participant_age_range
 weight: 0
 min_count: 1
-url_alias: search_facet_participant_age_range
-facet_source_id: 'search_api:views_page__search__page_1'
+show_only_one_result: true
 field_identifier: ldbase_age_range
-query_operator: or
-hard_limit: 0
-exclude: false
-use_hierarchy: false
-keep_hierarchy_parents_active: false
-expand_hierarchy: false
-enable_parent_when_child_gets_disabled: true
+facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: range_slider
   config:
@@ -32,11 +26,14 @@ widget:
     max_type: search_result
     max_value: !!float 10
     step: !!float 1
-empty_behavior:
-  behavior: none
+query_operator: or
+use_hierarchy: false
+keep_hierarchy_parents_active: false
+expand_hierarchy: false
+enable_parent_when_child_gets_disabled: true
+hard_limit: 0
+exclude: false
 only_visible_when_facet_source_is_visible: true
-show_only_one_result: true
-show_title: false
 processor_configs:
   active_widget_order:
     processor_id: active_widget_order
@@ -76,3 +73,6 @@ processor_configs:
       pre_query: 50
       build: 15
     settings: {  }
+empty_behavior:
+  behavior: none
+show_title: false

@@ -18,8 +18,8 @@ plugin: 'facet_block:search_facet_time_method'
 settings:
   id: 'facet_block:search_facet_time_method'
   label: 'Developmental Designs'
-  label_display: visible
   provider: facets
+  label_display: visible
   block_id: searchfacettimemethod
 visibility:
   request_path:

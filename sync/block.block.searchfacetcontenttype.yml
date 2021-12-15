@@ -18,8 +18,8 @@ plugin: 'facet_block:search_facet_content_type'
 settings:
   id: 'facet_block:search_facet_content_type'
   label: 'Content Type'
-  label_display: visible
   provider: facets
+  label_display: visible
   block_id: searchfacetcontenttype
 visibility:
   request_path:

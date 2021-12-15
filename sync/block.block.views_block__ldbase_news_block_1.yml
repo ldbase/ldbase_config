@@ -19,8 +19,8 @@ plugin: 'views_block:ldbase_news-block_1'
 settings:
   id: 'views_block:ldbase_news-block_1'
   label: ''
-  label_display: '0'
   provider: views
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:

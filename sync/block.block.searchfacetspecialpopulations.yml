@@ -18,8 +18,8 @@ plugin: 'facet_block:search_facet_special_populations'
 settings:
   id: 'facet_block:search_facet_special_populations'
   label: 'Special Populations'
-  label_display: visible
   provider: facets
+  label_display: visible
   block_id: searchfacetspecialpopulations
 visibility:
   request_path:

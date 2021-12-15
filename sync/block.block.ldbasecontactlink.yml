@@ -17,8 +17,8 @@ plugin: ldbase_contact_link
 settings:
   id: ldbase_contact_link
   label: 'LDbase Contact Link'
-  label_display: '0'
   provider: ldbase_handlers
+  label_display: '0'
   context_mapping:
     node: '@node.node_route_context:node'
 visibility:

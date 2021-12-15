@@ -49,8 +49,8 @@ third_party_settings:
               label_display: visible
               provider: ldbase_citations
               context_mapping: {  }
-            weight: 1
             additional: {  }
+            weight: 1
           9610d39f-35a7-4ef9-b770-180f1bd1533e:
             uuid: 9610d39f-35a7-4ef9-b770-180f1bd1533e
             region: content
@@ -69,8 +69,8 @@ third_party_settings:
                   image_link: ''
                   image_style: medium
                 third_party_settings: {  }
-            weight: 0
             additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -95,8 +95,8 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            weight: 2
             additional: {  }
+            weight: 2
           de4cf69d-ed3e-458f-b40d-fea4366e4d82:
             uuid: de4cf69d-ed3e-458f-b40d-fea4366e4d82
             region: content
@@ -106,8 +106,8 @@ third_party_settings:
               label_display: '0'
               provider: ldbase_citations
               context_mapping: {  }
-            weight: 3
             additional: {  }
+            weight: 3
           383740c8-38ad-41c2-b822-f6cd50dbe39a:
             uuid: 383740c8-38ad-41c2-b822-f6cd50dbe39a
             region: content
@@ -118,8 +118,8 @@ third_party_settings:
               provider: ldbase_handlers
               context_mapping:
                 node: layout_builder.entity
-            weight: 4
             additional: {  }
+            weight: 4
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -143,8 +143,8 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 1
             additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -169,8 +169,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 0
             additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -195,8 +195,8 @@ third_party_settings:
                 settings:
                   view_mode: default
                 third_party_settings: {  }
-            weight: 1
             additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -221,8 +221,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 0
             additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -251,8 +251,8 @@ third_party_settings:
                   rel: '0'
                   target: '0'
                 third_party_settings: {  }
-            weight: 0
             additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -277,8 +277,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 1
             additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -303,8 +303,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 0
             additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -329,8 +329,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 0
             additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -355,8 +355,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 0
             additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -381,8 +381,8 @@ third_party_settings:
                 settings:
                   view_mode: default
                 third_party_settings: {  }
-            weight: 1
             additional: {  }
+            weight: 1
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -402,8 +402,8 @@ third_party_settings:
               level: 1
               depth: 0
               expand_all_items: false
-            weight: 0
             additional: {  }
+            weight: 0
         third_party_settings: {  }
       -
         layout_id: layout_onecol

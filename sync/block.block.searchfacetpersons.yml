@@ -18,8 +18,8 @@ plugin: 'facet_block:search_facet_persons'
 settings:
   id: 'facet_block:search_facet_persons'
   label: Persons
-  label_display: visible
   provider: facets
+  label_display: visible
   block_id: searchfacetpersons
 visibility:
   request_path:

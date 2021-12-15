@@ -18,8 +18,8 @@ plugin: 'facet_block:search_facet_constructs'
 settings:
   id: 'facet_block:search_facet_constructs'
   label: Constructs
-  label_display: visible
   provider: facets
+  label_display: visible
   block_id: searchfacetconstructs
 visibility:
   request_path:

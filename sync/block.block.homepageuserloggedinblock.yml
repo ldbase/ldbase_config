@@ -16,8 +16,8 @@ plugin: home_page_user_block
 settings:
   id: home_page_user_block
   label: 'Home Page User Logged In Block'
-  label_display: '0'
   provider: ldbase_content
+  label_display: '0'
 visibility:
   request_path:
     id: request_path

@@ -18,8 +18,8 @@ plugin: 'views_block:latest_datasets-block_1'
 settings:
   id: 'views_block:latest_datasets-block_1'
   label: ''
-  label_display: visible
   provider: views
+  label_display: visible
   views_label: ''
   items_per_page: none
 visibility:

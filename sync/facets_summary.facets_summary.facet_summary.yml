@@ -9,21 +9,6 @@ dependencies:
     - search_api
 id: facet_summary
 name: 'Facet Summary'
-facet_source_id: 'search_api:views_page__search__page_1'
-processor_configs:
-  hide_when_not_rendered:
-    processor_id: hide_when_not_rendered
-    weights:
-      build: '45'
-    settings: {  }
-  show_text_when_empty:
-    processor_id: show_text_when_empty
-    weights:
-      build: '10'
-    settings:
-      text:
-        value: 'No results found.'
-        format: plain_text
 facets:
   search_facet_content_type:
     checked: true
@@ -85,3 +70,18 @@ facets:
     separator: ', '
     show_count: false
     weight: -1
+facet_source_id: 'search_api:views_page__search__page_1'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+  show_text_when_empty:
+    processor_id: show_text_when_empty
+    weights:
+      build: '10'
+    settings:
+      text:
+        value: 'No results found.'
+        format: plain_text

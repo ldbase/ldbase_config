@@ -17,8 +17,8 @@ plugin: project_latest_items
 settings:
   id: project_latest_items
   label: 'LDbase Project Latest Items Block'
-  label_display: '0'
   provider: ldbase_content
+  label_display: '0'
 visibility:
   context_all:
     id: context_all

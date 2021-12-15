@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_handlers
-weight: 0
 open: null
 close: null
+weight: 0
 uid: 1
 template: false
 archive: false
@@ -229,9 +229,9 @@ access:
 handlers:
   ldbase_report_a_problem:
     id: report_a_problem
-    handler_id: ldbase_report_a_problem
     label: 'LDbase Report a Problem'
     notes: ''
+    handler_id: ldbase_report_a_problem
     status: true
     conditions: {  }
     weight: 0

@@ -16,8 +16,8 @@ plugin: ldbase_subfooter_two_block
 settings:
   id: ldbase_subfooter_two_block
   label: 'LDbase Subfooter Two Block'
-  label_display: '0'
   provider: ldbase_content
+  label_display: '0'
 visibility:
   request_path_exclusion:
     id: request_path_exclusion

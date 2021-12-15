@@ -18,8 +18,8 @@ plugin: 'facet_block:search_facet_host_organizations'
 settings:
   id: 'facet_block:search_facet_host_organizations'
   label: Organizations
-  label_display: visible
   provider: facets
+  label_display: visible
   block_id: searchfacethostorganizations
 visibility:
   request_path:

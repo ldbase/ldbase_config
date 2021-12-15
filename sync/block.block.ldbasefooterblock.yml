@@ -16,8 +16,8 @@ plugin: ldbase_footer_block
 settings:
   id: ldbase_footer_block
   label: 'LDbase Footer Block'
-  label_display: '0'
   provider: ldbase_content
+  label_display: '0'
 visibility:
   request_path:
     id: request_path

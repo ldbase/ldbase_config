@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_embargoes
-weight: 0
 open: null
 close: null
+weight: 0
 uid: 1
 template: false
 archive: false
@@ -210,9 +210,9 @@ access:
 handlers:
   ldbase_embargo_request_file_access:
     id: request_file_access
-    handler_id: ldbase_embargo_request_file_access
     label: 'LDbase Request File Access'
     notes: ''
+    handler_id: ldbase_embargo_request_file_access
     status: true
     conditions: {  }
     weight: 0

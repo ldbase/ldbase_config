@@ -18,8 +18,8 @@ plugin: node_analytics_block
 settings:
   id: node_analytics_block
   label: 'Usage Metrics'
-  label_display: visible
   provider: ldbase_content
+  label_display: visible
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'

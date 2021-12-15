@@ -18,8 +18,8 @@ plugin: social_media_block
 settings:
   id: social_media_block
   label: 'Social Media Block'
-  label_display: '0'
   provider: ldbase_content
+  label_display: '0'
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'

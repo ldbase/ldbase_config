@@ -19,8 +19,8 @@ plugin: 'facets_summary_block:facet_summary'
 settings:
   id: 'facets_summary_block:facet_summary'
   label: 'Facet Summary'
-  label_display: '0'
   provider: facets_summary
+  label_display: '0'
 visibility:
   context_all:
     id: context_all

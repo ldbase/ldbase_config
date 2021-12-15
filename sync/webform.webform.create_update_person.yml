@@ -9,9 +9,9 @@ third_party_settings:
   honeypot:
     honeypot: true
     time_restriction: true
-weight: 0
 open: null
 close: null
+weight: 0
 uid: 1
 template: false
 archive: false
@@ -404,9 +404,9 @@ access:
 handlers:
   debug:
     id: debug
-    handler_id: debug
     label: Debug
     notes: ''
+    handler_id: debug
     status: false
     conditions: {  }
     weight: 0
@@ -415,9 +415,9 @@ handlers:
       submission: false
   ldbase_person:
     id: person_from_webform
-    handler_id: ldbase_person
     label: 'LDbase Person'
     notes: ''
+    handler_id: ldbase_person
     status: true
     conditions: {  }
     weight: 0

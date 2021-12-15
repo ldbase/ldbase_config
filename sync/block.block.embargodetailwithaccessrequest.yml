@@ -18,8 +18,8 @@ plugin: ldbase_embargoes_embargo_notification_block
 settings:
   id: ldbase_embargoes_embargo_notification_block
   label: 'Embargo Details'
-  label_display: visible
   provider: ldbase_embargoes
+  label_display: visible
 visibility:
   request_path_exclusion:
     id: request_path_exclusion

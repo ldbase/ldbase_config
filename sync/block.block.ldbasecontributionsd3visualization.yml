@@ -16,8 +16,8 @@ plugin: ldbase_d3_contributions_block
 settings:
   id: ldbase_d3_contributions_block
   label: 'LDbase Contributions'
-  label_display: visible
   provider: ldbase_content
+  label_display: visible
 visibility:
   request_path:
     id: request_path

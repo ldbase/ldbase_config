@@ -19,8 +19,8 @@ plugin: 'views_block:persons-block_1'
 settings:
   id: 'views_block:persons-block_1'
   label: 'Browse Investigators'
-  label_display: visible
   provider: views
+  label_display: visible
   views_label: 'Browse Investigators'
   items_per_page: none
 visibility:

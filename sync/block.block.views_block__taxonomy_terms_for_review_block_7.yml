@@ -20,11 +20,11 @@ plugin: 'views_block:taxonomy_terms_for_review-block_7'
 settings:
   id: 'views_block:taxonomy_terms_for_review-block_7'
   label: ''
-  label_display: visible
   provider: views
-  context_mapping: {  }
+  label_display: visible
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   request_path_exclusion:
     id: request_path_exclusion

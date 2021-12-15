@@ -19,8 +19,8 @@ plugin: 'facet_block:search_facet_project_type'
 settings:
   id: 'facet_block:search_facet_project_type'
   label: 'Search Facet: Project Descriptors'
-  label_display: visible
   provider: facets
+  label_display: visible
   block_id: searchfacetprojectdescriptors
 visibility:
   request_path:

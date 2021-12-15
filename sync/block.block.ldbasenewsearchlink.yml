@@ -17,8 +17,8 @@ plugin: new_search_link
 settings:
   id: new_search_link
   label: 'LDbase New Search Link'
-  label_display: '0'
   provider: ldbase_content
+  label_display: '0'
 visibility:
   context_all:
     id: context_all

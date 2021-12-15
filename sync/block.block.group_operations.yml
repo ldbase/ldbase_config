@@ -17,8 +17,8 @@ plugin: group_operations
 settings:
   id: group_operations
   label: 'Group operations'
-  label_display: visible
   provider: group
+  label_display: visible
   context_mapping:
     group: '@group.group_route_context:group'
 visibility: {  }
