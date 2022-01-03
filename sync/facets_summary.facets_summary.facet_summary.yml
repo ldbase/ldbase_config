@@ -14,62 +14,62 @@ facets:
     checked: true
     label: 'Search Facet: Content Type'
     separator: ', '
+    weight: 0
     show_count: false
-    weight: -10
   search_facet_constructs:
     checked: true
     label: 'Search Facet: Constructs'
     separator: ', '
+    weight: 0
     show_count: false
-    weight: -9
   search_facet_participant_type:
     checked: true
     label: 'Search Facet: Participant Type'
     separator: ', '
+    weight: 0
     show_count: false
-    weight: -8
   search_facet_participant_age_range:
     checked: true
     label: 'Search Facet: Participant Age Range'
     separator: ', '
+    weight: 0
     show_count: false
-    weight: -7
   search_facet_special_populations:
     checked: true
     label: 'Search Facet: Special Populations'
     separator: ', '
+    weight: 0
     show_count: false
-    weight: -6
   search_facet_project_type:
     checked: true
     label: 'Search Facet: Project Descriptors'
     separator: ', '
+    weight: 0
     show_count: false
-    weight: -5
   search_facet_time_method:
     checked: true
     label: 'Search Facet: Developmental Designs'
     separator: ', '
+    weight: 0
     show_count: false
-    weight: -4
   search_facet_schooling:
     checked: true
     label: 'Search Facet: Educational Environments'
     separator: ', '
+    weight: 0
     show_count: false
-    weight: -3
   search_facet_persons:
     checked: true
     label: 'Search Facet: Persons'
     separator: ', '
+    weight: 0
     show_count: false
-    weight: -2
   search_facet_host_organizations:
     checked: true
     label: 'Search Facet: Host Organizations'
     separator: ', '
+    weight: 0
     show_count: false
-    weight: -1
 facet_source_id: 'search_api:views_page__search__page_1'
 processor_configs:
   hide_when_not_rendered:
@@ -77,11 +77,3 @@ processor_configs:
     weights:
       build: '45'
     settings: {  }
-  show_text_when_empty:
-    processor_id: show_text_when_empty
-    weights:
-      build: '10'
-    settings:
-      text:
-        value: 'No results found.'
-        format: plain_text
