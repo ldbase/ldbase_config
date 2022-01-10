@@ -6,11 +6,27 @@ unprotected_forms:
   - views_exposed_form
   - honeypot_settings_form
 log: false
-element_name: url
+element_name: webform-url-link
 time_limit: 5
 expire: 300
 form_settings:
   user_register_form: false
   user_pass: false
-  feedback_contact_message_form: false
-  _contact_message_form: false
+  contact_message_feedback_form: false
+  contact_message_personal_form: false
+  node_article_form: false
+  node_code_form: false
+  node_dataset_form: false
+  node_document_form: false
+  node_embargo_form: false
+  node_existing_record_request_form: false
+  node_forum_form: false
+  node_organization_form: false
+  node_page_form: false
+  node_person_form: false
+  node_possible_user_match_form: false
+  node_project_form: false
+  node_tombstone_form: false
+  node_webform_form: false
+  comment_comment_form: false
+  comment_comment_forum_form: false
