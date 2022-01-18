@@ -18,8 +18,8 @@ plugin: 'facet_block:search_facet_participant_type'
 settings:
   id: 'facet_block:search_facet_participant_type'
   label: 'Participant Type'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: searchfacetparticipanttype
 visibility:
   request_path:

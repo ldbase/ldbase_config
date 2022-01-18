@@ -18,8 +18,8 @@ plugin: 'facet_block:search_facet_schooling'
 settings:
   id: 'facet_block:search_facet_schooling'
   label: 'Educational Environments'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: searchfacetschooling
 visibility:
   request_path:

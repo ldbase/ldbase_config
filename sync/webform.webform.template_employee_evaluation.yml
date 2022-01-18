@@ -5,9 +5,9 @@ dependencies:
   enforced:
     module:
       - webform_templates
+weight: 0
 open: null
 close: null
-weight: 0
 uid: null
 template: true
 archive: false

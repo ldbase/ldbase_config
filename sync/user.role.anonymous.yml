@@ -5,6 +5,7 @@ dependencies:
   config:
     - filter.format.restricted_html
   module:
+    - antibot
     - eu_cookie_compliance
     - filter
     - media
@@ -16,6 +17,7 @@ weight: -10
 is_admin: false
 permissions:
   - 'access content'
+  - 'administer antibot configuration'
   - 'display eu cookie compliance popup'
   - 'use search_api_autocomplete for search'
   - 'use text format restricted_html'

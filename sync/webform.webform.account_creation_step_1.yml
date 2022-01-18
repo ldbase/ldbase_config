@@ -9,9 +9,9 @@ third_party_settings:
   honeypot:
     honeypot: true
     time_restriction: true
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -285,9 +285,9 @@ access:
 handlers:
   ldbase_new_account_step_one:
     id: new_account_step_one_webform
+    handler_id: ldbase_new_account_step_one
     label: 'LDbase New Account Step One'
     notes: ''
-    handler_id: ldbase_new_account_step_one
     status: true
     conditions: {  }
     weight: 0

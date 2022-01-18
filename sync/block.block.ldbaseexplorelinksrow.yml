@@ -17,8 +17,8 @@ plugin: ldbase_explore_row
 settings:
   id: ldbase_explore_row
   label: 'LDbase Explore Links Row'
-  provider: ldbase_content
   label_display: '0'
+  provider: ldbase_content
 visibility:
   request_path_exclusion:
     id: request_path_exclusion

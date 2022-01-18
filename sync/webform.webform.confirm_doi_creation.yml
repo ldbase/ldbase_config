@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_handlers
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -213,9 +213,9 @@ access:
 handlers:
   ldbase_doi_confirmation:
     id: attach_doi
+    handler_id: ldbase_doi_confirmation
     label: 'LDbase DOI Confirmation'
     notes: ''
-    handler_id: ldbase_doi_confirmation
     status: true
     conditions: {  }
     weight: 0

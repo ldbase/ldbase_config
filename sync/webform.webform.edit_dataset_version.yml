@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_handlers
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -243,9 +243,9 @@ access:
 handlers:
   ldbase_edit_dataset_version:
     id: edit_dataset_version_handler
+    handler_id: ldbase_edit_dataset_version
     label: 'LDbase Edit Dataset Version'
     notes: ''
-    handler_id: ldbase_edit_dataset_version
     status: true
     conditions: {  }
     weight: 0

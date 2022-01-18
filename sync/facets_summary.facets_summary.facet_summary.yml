@@ -9,67 +9,6 @@ dependencies:
     - search_api
 id: facet_summary
 name: 'Facet Summary'
-facets:
-  search_facet_content_type:
-    checked: true
-    label: 'Search Facet: Content Type'
-    separator: ', '
-    weight: 0
-    show_count: false
-  search_facet_constructs:
-    checked: true
-    label: 'Search Facet: Constructs'
-    separator: ', '
-    weight: 0
-    show_count: false
-  search_facet_participant_type:
-    checked: true
-    label: 'Search Facet: Participant Type'
-    separator: ', '
-    weight: 0
-    show_count: false
-  search_facet_participant_age_range:
-    checked: true
-    label: 'Search Facet: Participant Age Range'
-    separator: ', '
-    weight: 0
-    show_count: false
-  search_facet_special_populations:
-    checked: true
-    label: 'Search Facet: Special Populations'
-    separator: ', '
-    weight: 0
-    show_count: false
-  search_facet_project_type:
-    checked: true
-    label: 'Search Facet: Project Descriptors'
-    separator: ', '
-    weight: 0
-    show_count: false
-  search_facet_time_method:
-    checked: true
-    label: 'Search Facet: Developmental Designs'
-    separator: ', '
-    weight: 0
-    show_count: false
-  search_facet_schooling:
-    checked: true
-    label: 'Search Facet: Educational Environments'
-    separator: ', '
-    weight: 0
-    show_count: false
-  search_facet_persons:
-    checked: true
-    label: 'Search Facet: Persons'
-    separator: ', '
-    weight: 0
-    show_count: false
-  search_facet_host_organizations:
-    checked: true
-    label: 'Search Facet: Host Organizations'
-    separator: ', '
-    weight: 0
-    show_count: false
 facet_source_id: 'search_api:views_page__search__page_1'
 processor_configs:
   hide_when_not_rendered:
@@ -77,3 +16,64 @@ processor_configs:
     weights:
       build: '45'
     settings: {  }
+facets:
+  search_facet_content_type:
+    checked: true
+    label: 'Search Facet: Content Type'
+    separator: ', '
+    show_count: false
+    weight: 0
+  search_facet_constructs:
+    checked: true
+    label: 'Search Facet: Constructs'
+    separator: ', '
+    show_count: false
+    weight: 0
+  search_facet_participant_type:
+    checked: true
+    label: 'Search Facet: Participant Type'
+    separator: ', '
+    show_count: false
+    weight: 0
+  search_facet_participant_age_range:
+    checked: true
+    label: 'Search Facet: Participant Age Range'
+    separator: ', '
+    show_count: false
+    weight: 0
+  search_facet_special_populations:
+    checked: true
+    label: 'Search Facet: Special Populations'
+    separator: ', '
+    show_count: false
+    weight: 0
+  search_facet_project_type:
+    checked: true
+    label: 'Search Facet: Project Descriptors'
+    separator: ', '
+    show_count: false
+    weight: 0
+  search_facet_time_method:
+    checked: true
+    label: 'Search Facet: Developmental Designs'
+    separator: ', '
+    show_count: false
+    weight: 0
+  search_facet_schooling:
+    checked: true
+    label: 'Search Facet: Educational Environments'
+    separator: ', '
+    show_count: false
+    weight: 0
+  search_facet_persons:
+    checked: true
+    label: 'Search Facet: Persons'
+    separator: ', '
+    show_count: false
+    weight: 0
+  search_facet_host_organizations:
+    checked: true
+    label: 'Search Facet: Host Organizations'
+    separator: ', '
+    show_count: false
+    weight: 0

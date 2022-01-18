@@ -18,8 +18,8 @@ plugin: project_tree_block
 settings:
   id: project_tree_block
   label: 'Project Hierarchy'
-  provider: ldbase_content
   label_display: visible
+  provider: ldbase_content
 visibility:
   request_path:
     id: request_path

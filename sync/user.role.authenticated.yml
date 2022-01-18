@@ -6,6 +6,7 @@ dependencies:
     - filter.format.basic_html
     - filter.format.restricted_html
   module:
+    - antibot
     - eu_cookie_compliance
     - filter
     - matomo
@@ -20,6 +21,7 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access shortcuts'
+  - 'administer antibot configuration'
   - 'display eu cookie compliance popup'
   - 'opt-in or out of matomo tracking'
   - 'use search_api_autocomplete for search'

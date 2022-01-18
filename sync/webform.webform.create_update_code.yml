@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_handlers
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -404,18 +404,18 @@ access:
 handlers:
   ldbase_code:
     id: code_from_webform
+    handler_id: ldbase_code
     label: 'LDbase Code'
     notes: ''
-    handler_id: ldbase_code
     status: true
     conditions: {  }
     weight: -49
     settings: {  }
   debug:
     id: debug
+    handler_id: debug
     label: Debug
     notes: ''
-    handler_id: debug
     status: false
     conditions: {  }
     weight: -50

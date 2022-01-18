@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 id: ldbase_frontpage_news
 name: ldbase_frontpage_news
-label: 'LDbase Frontpage News'
 weight: 0
+label: 'LDbase Frontpage News'
 group: ''
 skin: classic
 breakpoints: 0

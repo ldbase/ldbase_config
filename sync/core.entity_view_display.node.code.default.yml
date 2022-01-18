@@ -46,8 +46,8 @@ third_party_settings:
               label_display: visible
               provider: ldbase_citations
               context_mapping: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -79,8 +79,8 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
           9d26231e-6458-408a-8dd0-a5d2165fc8ba:
             uuid: 9d26231e-6458-408a-8dd0-a5d2165fc8ba
             region: content
@@ -90,8 +90,8 @@ third_party_settings:
               label_display: '0'
               provider: ldbase_citations
               context_mapping: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -116,8 +116,8 @@ third_party_settings:
                 settings:
                   use_description_as_link_text: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
           59450c93-9e84-4478-9989-6b2f05f3e9e6:
             uuid: 59450c93-9e84-4478-9989-6b2f05f3e9e6
             region: content
@@ -134,8 +134,8 @@ third_party_settings:
                 label: inline
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -159,8 +159,8 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -185,8 +185,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -211,8 +211,8 @@ third_party_settings:
                 settings:
                   view_mode: default
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -241,8 +241,8 @@ third_party_settings:
                   rel: '0'
                   target: '0'
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -267,8 +267,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -293,8 +293,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
           ac882e8f-bb73-482b-af5f-9f8c72cea74c:
             uuid: ac882e8f-bb73-482b-af5f-9f8c72cea74c
             region: content
@@ -309,8 +309,8 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
 id: node.code.default
 targetEntityType: node

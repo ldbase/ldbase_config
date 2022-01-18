@@ -19,8 +19,8 @@ plugin: 'views_block:projects-block_1'
 settings:
   id: 'views_block:projects-block_1'
   label: 'Browse Projects'
-  provider: views
   label_display: visible
+  provider: views
   views_label: 'Browse Projects'
   items_per_page: '10'
 visibility:

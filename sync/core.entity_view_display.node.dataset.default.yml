@@ -74,8 +74,8 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -92,8 +92,8 @@ third_party_settings:
               label_display: '0'
               provider: ldbase_citations
               context_mapping: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
           5ec04bd9-0eb9-4175-9a84-b06d7df0fe86:
             uuid: 5ec04bd9-0eb9-4175-9a84-b06d7df0fe86
             region: content
@@ -104,8 +104,8 @@ third_party_settings:
               provider: ldbase_handlers
               context_mapping:
                 node: layout_builder.entity
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -129,8 +129,8 @@ third_party_settings:
                 label: inline
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
           37adea87-24db-41cc-a3c6-fe87ba6a99b1:
             uuid: 37adea87-24db-41cc-a3c6-fe87ba6a99b1
             region: content
@@ -141,8 +141,8 @@ third_party_settings:
               provider: ldbase_handlers
               context_mapping:
                 node: layout_builder.entity
-            additional: {  }
             weight: 4
+            additional: {  }
           deabb4cf-23eb-41b5-a4a6-6e6cd1ed96fb:
             uuid: deabb4cf-23eb-41b5-a4a6-6e6cd1ed96fb
             region: content
@@ -154,8 +154,8 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            additional: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -184,8 +184,8 @@ third_party_settings:
                   rel: '0'
                   target: '0'
                 third_party_settings: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -209,8 +209,8 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -234,8 +234,8 @@ third_party_settings:
                 label: inline
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
           4d3caac5-c1bb-4d2e-ae54-c2f7dd97a6c6:
             uuid: 4d3caac5-c1bb-4d2e-ae54-c2f7dd97a6c6
             region: content
@@ -254,8 +254,8 @@ third_party_settings:
                   rel: ''
                   target: ''
                 third_party_settings: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -280,8 +280,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -306,8 +306,8 @@ third_party_settings:
                 settings:
                   view_mode: default
                 third_party_settings: {  }
-            additional: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -332,8 +332,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -358,8 +358,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -384,8 +384,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -409,8 +409,8 @@ third_party_settings:
                 label: inline
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 4
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -435,8 +435,8 @@ third_party_settings:
                 settings:
                   view_mode: default
                 third_party_settings: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -461,8 +461,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -487,8 +487,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -512,8 +512,8 @@ third_party_settings:
                 label: inline
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -538,8 +538,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -564,8 +564,8 @@ third_party_settings:
                 settings:
                   view_mode: default
                 third_party_settings: {  }
-            additional: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -590,8 +590,8 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            additional: {  }
             weight: 3
+            additional: {  }
           404235f2-2c88-421c-b1dc-74ea65cecc9b:
             uuid: 404235f2-2c88-421c-b1dc-74ea65cecc9b
             region: content
@@ -606,8 +606,8 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            additional: {  }
             weight: 4
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -627,8 +627,8 @@ third_party_settings:
               level: 1
               depth: 0
               expand_all_items: false
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -645,8 +645,8 @@ third_party_settings:
               label_display: '0'
               provider: ldbase_content
               context_mapping: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -663,8 +663,8 @@ third_party_settings:
               label_display: '0'
               provider: ldbase_citations
               context_mapping: {  }
-            additional: {  }
             weight: 0
+            additional: {  }
         third_party_settings: {  }
 id: node.dataset.default
 targetEntityType: node

@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_handlers
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -211,9 +211,9 @@ access:
 handlers:
   ldbase_contact_form_handler:
     id: ldbase_contact_handler
+    handler_id: ldbase_contact_form_handler
     label: 'LDbase Contact Form Handler'
     notes: ''
-    handler_id: ldbase_contact_form_handler
     status: true
     conditions: {  }
     weight: 0

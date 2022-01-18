@@ -19,8 +19,8 @@ plugin: 'facet_block:search_facet_participant_age_range'
 settings:
   id: 'facet_block:search_facet_participant_age_range'
   label: 'Participant Age Range'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: searchfacetparticipantagerange
 visibility:
   request_path_exclusion:

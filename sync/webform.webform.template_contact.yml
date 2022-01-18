@@ -5,9 +5,9 @@ dependencies:
   enforced:
     module:
       - webform_templates
+weight: 0
 open: null
 close: null
-weight: 0
 uid: null
 template: true
 archive: false
@@ -199,9 +199,9 @@ access:
 handlers:
   email_confirmation:
     id: email
+    handler_id: email_confirmation
     label: 'Email confirmation'
     notes: ''
-    handler_id: email_confirmation
     status: true
     conditions: {  }
     weight: 1
@@ -236,9 +236,9 @@ handlers:
       debug: false
   email_notification:
     id: email
+    handler_id: email_notification
     label: 'Email notification'
     notes: ''
-    handler_id: email_notification
     status: true
     conditions: {  }
     weight: 1

@@ -17,8 +17,8 @@ plugin: browse_by_vocabulary_block
 settings:
   id: browse_by_vocabulary_block
   label: 'Browse by Vocabularies'
-  provider: ldbase_content
   label_display: visible
+  provider: ldbase_content
 visibility:
   request_path_exclusion:
     id: request_path_exclusion

@@ -9,9 +9,9 @@ third_party_settings:
   honeypot:
     honeypot: true
     time_restriction: true
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -53,6 +53,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -73,6 +74,9 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
   share: false
   share_node: false
   share_theme_name: ''
@@ -165,10 +169,6 @@ settings:
   serial_disabled: false
   page_admin_theme: false
   form_remote_addr: true
-  form_disable_remote_addr: false
-  form_method: ''
-  form_action: ''
-  form_attributes: {  }
 access:
   create:
     roles:
@@ -219,9 +219,9 @@ access:
 handlers:
   ldbase_embargo_request_file_access:
     id: request_file_access
+    handler_id: ldbase_embargo_request_file_access
     label: 'LDbase Request File Access'
     notes: ''
-    handler_id: ldbase_embargo_request_file_access
     status: true
     conditions: {  }
     weight: 0

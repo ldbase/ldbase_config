@@ -4,9 +4,9 @@ status: open
 dependencies:
   module:
     - ldbase_handlers
+weight: 0
 open: null
 close: null
-weight: 0
 uid: 1
 template: false
 archive: false
@@ -449,18 +449,18 @@ access:
 handlers:
   ldbase_project:
     id: project_from_webform
+    handler_id: ldbase_project
     label: 'LDbase Project'
     notes: ''
-    handler_id: ldbase_project
     status: true
     conditions: {  }
     weight: 0
     settings: {  }
   debug:
     id: debug
+    handler_id: debug
     label: Debug
     notes: ''
-    handler_id: debug
     status: false
     conditions: {  }
     weight: 0

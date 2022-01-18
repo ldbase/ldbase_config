@@ -19,8 +19,8 @@ plugin: 'views_block:content_counts-block_1'
 settings:
   id: 'views_block:content_counts-block_1'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: '10'
 visibility:

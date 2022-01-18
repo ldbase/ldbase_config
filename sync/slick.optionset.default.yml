@@ -9,8 +9,8 @@ _core:
   default_config_hash: R44sHtkxxZrBiHA2kQiOrgfOwXDce6s8fpQCTUoDhf0
 id: default
 name: default
-label: Default
 weight: -10
+label: Default
 group: ''
 skin: default
 breakpoints: 0
