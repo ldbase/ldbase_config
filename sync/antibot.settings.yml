@@ -7,4 +7,4 @@ form_ids:
   - user_register_form
   - 'contact_*'
   - 'webform_submission_*'
-show_form_ids: true
+show_form_ids: false
