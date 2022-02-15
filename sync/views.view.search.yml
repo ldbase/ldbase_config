@@ -4,9 +4,19 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - field.storage.node.field_assessment_name
+    - field.storage.node.field_code_type
+    - field.storage.node.field_component_skills
+    - field.storage.node.field_curricula
+    - field.storage.node.field_data_collection_locations
+    - field.storage.node.field_document_type
     - field.storage.node.field_publishing_names
     - field.storage.node.field_related_organizations
     - field.storage.node.field_related_persons
+    - field.storage.node.field_schooling
+    - field.storage.node.field_special_populations
+    - field.storage.node.field_time_method
+    - field.storage.node.field_variable_types_in_dataset
     - search_api.index.default_index
   module:
     - search_api
@@ -180,7 +190,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: search_api
-          label: Project
+          label: 'Part of Project'
           exclude: false
           alter:
             alter_text: false
@@ -377,7 +387,7 @@ display:
           entity_type: node
           plugin_id: search_api_field
           label: Author(s)
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -451,6 +461,9 @@ display:
               document:
                 display_method: label
                 view_mode: default
+              embargo:
+                display_method: label
+                view_mode: default
               existing_record_request:
                 display_method: label
                 view_mode: default
@@ -461,6 +474,9 @@ display:
                 display_method: label
                 view_mode: default
               person:
+                display_method: label
+                view_mode: default
+              possible_user_match:
                 display_method: label
                 view_mode: default
               project:
@@ -482,7 +498,7 @@ display:
           entity_type: node
           plugin_id: search_api_field
           label: Organization(s)
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -556,6 +572,9 @@ display:
               document:
                 display_method: label
                 view_mode: default
+              embargo:
+                display_method: label
+                view_mode: default
               existing_record_request:
                 display_method: label
                 view_mode: default
@@ -568,6 +587,9 @@ display:
               person:
                 display_method: label
                 view_mode: default
+              possible_user_match:
+                display_method: label
+                view_mode: default
               project:
                 display_method: label
                 view_mode: default
@@ -575,6 +597,1161 @@ display:
                 display_method: label
                 view_mode: default
               webform:
+                display_method: label
+                view_mode: default
+        field_schooling:
+          id: field_schooling
+          table: search_api_index_default_index
+          field: field_schooling
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: 'Educational Environment'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              areas_of_expertise:
+                display_method: label
+              assessments:
+                display_method: label
+                view_mode: default
+              code_or_data_format:
+                display_method: label
+              code_type:
+                display_method: label
+              constructs:
+                display_method: label
+                view_mode: default
+              curricula:
+                display_method: label
+                view_mode: default
+              data_collection_locations:
+                display_method: label
+                view_mode: default
+              dataset_variables:
+                display_method: label
+                view_mode: default
+              document_type:
+                display_method: label
+              funding_agencies:
+                display_method: label
+              licenses:
+                display_method: label
+                view_mode: default
+              participants:
+                display_method: label
+              project_types:
+                display_method: label
+                view_mode: default
+              schooling:
+                display_method: label
+                view_mode: default
+              special_populations:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              time_methods:
+                display_method: label
+                view_mode: default
+        field_curricula:
+          id: field_curricula
+          table: search_api_index_default_index
+          field: field_curricula
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: 'Educational Curricula'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              areas_of_expertise:
+                display_method: label
+              assessments:
+                display_method: label
+                view_mode: default
+              code_or_data_format:
+                display_method: label
+              code_type:
+                display_method: label
+              constructs:
+                display_method: label
+                view_mode: default
+              curricula:
+                display_method: label
+                view_mode: default
+              data_collection_locations:
+                display_method: label
+                view_mode: default
+              dataset_variables:
+                display_method: label
+                view_mode: default
+              document_type:
+                display_method: label
+              funding_agencies:
+                display_method: label
+              licenses:
+                display_method: label
+                view_mode: default
+              participants:
+                display_method: label
+              project_types:
+                display_method: label
+                view_mode: default
+              schooling:
+                display_method: label
+                view_mode: default
+              special_populations:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              time_methods:
+                display_method: label
+                view_mode: default
+        field_time_method:
+          id: field_time_method
+          table: search_api_index_default_index
+          field: field_time_method
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: 'Developmental Design'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              areas_of_expertise:
+                display_method: label
+              assessments:
+                display_method: label
+                view_mode: default
+              code_or_data_format:
+                display_method: label
+              code_type:
+                display_method: label
+              constructs:
+                display_method: label
+                view_mode: default
+              curricula:
+                display_method: label
+                view_mode: default
+              data_collection_locations:
+                display_method: label
+                view_mode: default
+              dataset_variables:
+                display_method: label
+                view_mode: default
+              document_type:
+                display_method: label
+              funding_agencies:
+                display_method: label
+              licenses:
+                display_method: label
+                view_mode: default
+              participants:
+                display_method: label
+              project_types:
+                display_method: label
+                view_mode: default
+              schooling:
+                display_method: label
+                view_mode: default
+              special_populations:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              time_methods:
+                display_method: label
+                view_mode: default
+        field_special_populations:
+          id: field_special_populations
+          table: search_api_index_default_index
+          field: field_special_populations
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: 'Special Populations'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              areas_of_expertise:
+                display_method: label
+              assessments:
+                display_method: label
+                view_mode: default
+              code_or_data_format:
+                display_method: label
+              code_type:
+                display_method: label
+              constructs:
+                display_method: label
+                view_mode: default
+              curricula:
+                display_method: label
+                view_mode: default
+              data_collection_locations:
+                display_method: label
+                view_mode: default
+              dataset_variables:
+                display_method: label
+                view_mode: default
+              document_type:
+                display_method: label
+              funding_agencies:
+                display_method: label
+              licenses:
+                display_method: label
+                view_mode: default
+              participants:
+                display_method: label
+              project_types:
+                display_method: label
+                view_mode: default
+              schooling:
+                display_method: label
+                view_mode: default
+              special_populations:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              time_methods:
+                display_method: label
+                view_mode: default
+        field_component_skills:
+          id: field_component_skills
+          table: search_api_index_default_index
+          field: field_component_skills
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: Constructs
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              areas_of_expertise:
+                display_method: label
+              assessments:
+                display_method: label
+                view_mode: default
+              code_or_data_format:
+                display_method: label
+              code_type:
+                display_method: label
+              constructs:
+                display_method: label
+                view_mode: default
+              curricula:
+                display_method: label
+                view_mode: default
+              data_collection_locations:
+                display_method: label
+                view_mode: default
+              dataset_variables:
+                display_method: label
+                view_mode: default
+              document_type:
+                display_method: label
+              funding_agencies:
+                display_method: label
+              licenses:
+                display_method: label
+                view_mode: default
+              participants:
+                display_method: label
+              project_types:
+                display_method: label
+                view_mode: default
+              schooling:
+                display_method: label
+                view_mode: default
+              special_populations:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              time_methods:
+                display_method: label
+                view_mode: default
+        field_assessment_name:
+          id: field_assessment_name
+          table: search_api_datasource_default_index_entity_node
+          field: field_assessment_name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: 'Assessment(s) Used'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              areas_of_expertise:
+                display_method: label
+              assessments:
+                display_method: label
+                view_mode: default
+              code_or_data_format:
+                display_method: label
+              code_type:
+                display_method: label
+              constructs:
+                display_method: label
+                view_mode: default
+              curricula:
+                display_method: label
+                view_mode: default
+              data_collection_locations:
+                display_method: label
+                view_mode: default
+              dataset_variables:
+                display_method: label
+                view_mode: default
+              document_type:
+                display_method: label
+              funding_agencies:
+                display_method: label
+              licenses:
+                display_method: label
+                view_mode: default
+              participants:
+                display_method: label
+              project_types:
+                display_method: label
+                view_mode: default
+              schooling:
+                display_method: label
+                view_mode: default
+              special_populations:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              time_methods:
+                display_method: label
+                view_mode: default
+        field_data_collection_locations:
+          id: field_data_collection_locations
+          table: search_api_datasource_default_index_entity_node
+          field: field_data_collection_locations
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: 'Data Collection Location(s)'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              areas_of_expertise:
+                display_method: label
+              assessments:
+                display_method: label
+                view_mode: default
+              code_or_data_format:
+                display_method: label
+              code_type:
+                display_method: label
+              constructs:
+                display_method: label
+                view_mode: default
+              curricula:
+                display_method: label
+                view_mode: default
+              data_collection_locations:
+                display_method: label
+                view_mode: default
+              dataset_variables:
+                display_method: label
+                view_mode: default
+              document_type:
+                display_method: label
+              funding_agencies:
+                display_method: label
+              licenses:
+                display_method: label
+                view_mode: default
+              participants:
+                display_method: label
+              project_types:
+                display_method: label
+                view_mode: default
+              schooling:
+                display_method: label
+                view_mode: default
+              special_populations:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              time_methods:
+                display_method: label
+                view_mode: default
+        field_variable_types_in_dataset:
+          id: field_variable_types_in_dataset
+          table: search_api_datasource_default_index_entity_node
+          field: field_variable_types_in_dataset
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: 'Variable Types'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              areas_of_expertise:
+                display_method: label
+              assessments:
+                display_method: label
+                view_mode: default
+              code_or_data_format:
+                display_method: label
+              code_type:
+                display_method: label
+              constructs:
+                display_method: label
+                view_mode: default
+              curricula:
+                display_method: label
+                view_mode: default
+              data_collection_locations:
+                display_method: label
+                view_mode: default
+              dataset_variables:
+                display_method: label
+                view_mode: default
+              document_type:
+                display_method: label
+              funding_agencies:
+                display_method: label
+              licenses:
+                display_method: label
+                view_mode: default
+              participants:
+                display_method: label
+              project_types:
+                display_method: label
+                view_mode: default
+              schooling:
+                display_method: label
+                view_mode: default
+              special_populations:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              time_methods:
+                display_method: label
+                view_mode: default
+        field_code_type:
+          id: field_code_type
+          table: search_api_datasource_default_index_entity_node
+          field: field_code_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: 'Code Type'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              areas_of_expertise:
+                display_method: label
+              assessments:
+                display_method: label
+                view_mode: default
+              code_or_data_format:
+                display_method: label
+              code_type:
+                display_method: label
+              constructs:
+                display_method: label
+                view_mode: default
+              curricula:
+                display_method: label
+                view_mode: default
+              data_collection_locations:
+                display_method: label
+                view_mode: default
+              dataset_variables:
+                display_method: label
+                view_mode: default
+              document_type:
+                display_method: label
+              funding_agencies:
+                display_method: label
+              licenses:
+                display_method: label
+                view_mode: default
+              participants:
+                display_method: label
+              project_types:
+                display_method: label
+                view_mode: default
+              schooling:
+                display_method: label
+                view_mode: default
+              special_populations:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              time_methods:
+                display_method: label
+                view_mode: default
+        field_document_type:
+          id: field_document_type
+          table: search_api_datasource_default_index_entity_node
+          field: field_document_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: search_api_field
+          label: 'Document Type'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              areas_of_expertise:
+                display_method: label
+              assessments:
+                display_method: label
+                view_mode: default
+              code_or_data_format:
+                display_method: label
+              code_type:
+                display_method: label
+              constructs:
+                display_method: label
+                view_mode: default
+              curricula:
+                display_method: label
+                view_mode: default
+              data_collection_locations:
+                display_method: label
+                view_mode: default
+              dataset_variables:
+                display_method: label
+                view_mode: default
+              document_type:
+                display_method: label
+              funding_agencies:
+                display_method: label
+              licenses:
+                display_method: label
+                view_mode: default
+              participants:
+                display_method: label
+              project_types:
+                display_method: label
+                view_mode: default
+              schooling:
+                display_method: label
+                view_mode: default
+              special_populations:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+              time_methods:
                 display_method: label
                 view_mode: default
       pager:
@@ -719,9 +1896,19 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_assessment_name'
+        - 'config:field.storage.node.field_code_type'
+        - 'config:field.storage.node.field_component_skills'
+        - 'config:field.storage.node.field_curricula'
+        - 'config:field.storage.node.field_data_collection_locations'
+        - 'config:field.storage.node.field_document_type'
         - 'config:field.storage.node.field_publishing_names'
         - 'config:field.storage.node.field_related_organizations'
         - 'config:field.storage.node.field_related_persons'
+        - 'config:field.storage.node.field_schooling'
+        - 'config:field.storage.node.field_special_populations'
+        - 'config:field.storage.node.field_time_method'
+        - 'config:field.storage.node.field_variable_types_in_dataset'
         - 'config:search_api.index.default_index'
       cacheable: false
   block_1:
@@ -748,9 +1935,19 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_assessment_name'
+        - 'config:field.storage.node.field_code_type'
+        - 'config:field.storage.node.field_component_skills'
+        - 'config:field.storage.node.field_curricula'
+        - 'config:field.storage.node.field_data_collection_locations'
+        - 'config:field.storage.node.field_document_type'
         - 'config:field.storage.node.field_publishing_names'
         - 'config:field.storage.node.field_related_organizations'
         - 'config:field.storage.node.field_related_persons'
+        - 'config:field.storage.node.field_schooling'
+        - 'config:field.storage.node.field_special_populations'
+        - 'config:field.storage.node.field_time_method'
+        - 'config:field.storage.node.field_variable_types_in_dataset'
         - 'config:search_api.index.default_index'
   page_1:
     id: page_1
@@ -942,8 +2139,18 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_assessment_name'
+        - 'config:field.storage.node.field_code_type'
+        - 'config:field.storage.node.field_component_skills'
+        - 'config:field.storage.node.field_curricula'
+        - 'config:field.storage.node.field_data_collection_locations'
+        - 'config:field.storage.node.field_document_type'
         - 'config:field.storage.node.field_publishing_names'
         - 'config:field.storage.node.field_related_organizations'
         - 'config:field.storage.node.field_related_persons'
+        - 'config:field.storage.node.field_schooling'
+        - 'config:field.storage.node.field_special_populations'
+        - 'config:field.storage.node.field_time_method'
+        - 'config:field.storage.node.field_variable_types_in_dataset'
         - 'config:search_api.index.default_index'
       cacheable: false
