@@ -6,7 +6,7 @@ dependencies:
     - system.menu.dataset-tasks
   module:
     - context
-    - ctools
+    - node
     - system
   theme:
     - portcullis

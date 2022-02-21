@@ -4,15 +4,15 @@ status: true
 dependencies:
   module:
     - context
-    - ctools
     - ldbase_content
+    - node
     - system
   theme:
     - portcullis
 id: socialmediablock
 theme: portcullis
 region: sidebar_first
-weight: -20
+weight: -21
 provider: null
 plugin: social_media_block
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: searchfacethostorganizations
 theme: portcullis
 region: sidebar_first
-weight: -23
+weight: -24
 provider: null
 plugin: 'facet_block:search_facet_host_organizations'
 settings:

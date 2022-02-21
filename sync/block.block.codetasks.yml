@@ -6,7 +6,7 @@ dependencies:
     - system.menu.code-tasks
   module:
     - context
-    - ctools
+    - node
     - system
   theme:
     - portcullis

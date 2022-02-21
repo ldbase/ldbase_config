@@ -5,7 +5,6 @@ dependencies:
   config:
     - system.menu.project-navigation
   module:
-    - ctools
     - node
     - system
   theme:
@@ -13,7 +12,7 @@ dependencies:
 id: projectnavigation
 theme: portcullis
 region: sidebar_first
-weight: -18
+weight: -19
 provider: null
 plugin: 'system_menu_block:project-navigation'
 settings:

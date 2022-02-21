@@ -6,7 +6,6 @@ dependencies:
     - system.menu.project-tasks
   module:
     - context
-    - ctools
     - node
     - system
   theme:

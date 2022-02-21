@@ -12,7 +12,7 @@ dependencies:
 id: searchfacetschooling
 theme: portcullis
 region: sidebar_first
-weight: -25
+weight: -26
 provider: null
 plugin: 'facet_block:search_facet_schooling'
 settings:

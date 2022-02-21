@@ -13,7 +13,7 @@ dependencies:
 id: searchfacetparticipantagerange
 theme: portcullis
 region: sidebar_first
-weight: -29
+weight: -30
 provider: null
 plugin: 'facet_block:search_facet_participant_age_range'
 settings:

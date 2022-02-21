@@ -13,7 +13,7 @@ dependencies:
 id: views_block__content_counts_block_1
 theme: portcullis
 region: sidebar_first
-weight: -19
+weight: -20
 provider: null
 plugin: 'views_block:content_counts-block_1'
 settings:

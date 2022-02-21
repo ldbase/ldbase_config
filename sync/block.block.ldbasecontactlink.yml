@@ -11,7 +11,7 @@ dependencies:
 id: ldbasecontactlink
 theme: portcullis
 region: sidebar_first
-weight: -21
+weight: -22
 provider: null
 plugin: ldbase_contact_link
 settings:

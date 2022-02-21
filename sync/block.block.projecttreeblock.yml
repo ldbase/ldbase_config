@@ -4,15 +4,15 @@ status: true
 dependencies:
   module:
     - context
-    - ctools
     - ldbase_content
+    - node
     - system
   theme:
     - portcullis
 id: projecttreeblock
 theme: portcullis
 region: sidebar_first
-weight: -36
+weight: -37
 provider: null
 plugin: project_tree_block
 settings:

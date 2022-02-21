@@ -13,7 +13,7 @@ dependencies:
 id: views_block__projects_block_1
 theme: portcullis
 region: content
-weight: -23
+weight: -22
 provider: null
 plugin: 'views_block:projects-block_1'
 settings:
