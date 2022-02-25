@@ -167,17 +167,15 @@ display:
             multi_type: separator
             multi_separator: ', '
       pager:
-        type: full
+        type: mini
         options:
           offset: 0
-          items_per_page: 20
+          items_per_page: 5
           total_pages: null
           id: 0
           tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
+            next: ›
+            previous: ‹
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -186,7 +184,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -281,7 +278,17 @@ display:
           preserve_facet_query_args: false
       relationships: {  }
       header: {  }
-      footer: {  }
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: 'Displaying @start - @end of @total'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
