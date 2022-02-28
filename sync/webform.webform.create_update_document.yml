@@ -203,13 +203,20 @@ elements: |-
     '#type': hidden
     '#title': parent_is_published
   published_flag:
-    '#type': checkbox
-    '#title': 'Publish on LDbase'
-    '#help': 'By checking this box, you are making the above metadata and data available to the public. If you have chosen to embargo your document, the document will not be publicly available but your metadata will be. If you cannot check this box, you need to first publish the item above this in the project hierarchy.'
+    '#type': radios
+    '#title': 'Publish on LDbase?'
+    '#help': 'Publishing on LDbase means that you are making the above metadata and data available to the public. If you have chosen to embargo your document, the document will not be publicly available but your metadata will be. If you cannot publish, you need to first publish the item above this in the project hierarchy.'
+    '#options':
+      1: 'Yes'
+      0: 'No'
+    '#options_display': side_by_side
+    '#required': true
     '#states':
       disabled:
         ':input[name="parent_is_published"]':
           value: '0'
+    '#default_value': '0'
+    '#wrapper_type': form_element
   disabled_publish_message:
     '#type': webform_message
     '#states':

@@ -257,13 +257,29 @@ elements: |-
     '#type': hidden
     '#title': node_id
   published_flag:
-    '#type': checkbox
-    '#title': 'Publish on LDbase'
-    '#help': 'By checking this box, you are making the above information available to the public for searching. As you progress through LDbase and enter the rest of your project (datasets, codebooks, presentations, etc), you will have the capacity to choose, for each piece of data, whether to publish that metadata and data or to temporarily save it as a draft while you complete/gather those specific research details.'
+    '#type': radios
+    '#title': 'Publish on LDbase?'
+    '#help': 'Publishing on LDbase means that you are making the above metadata and data available to the public.'
+    '#options':
+      1: 'Yes'
+      0: 'No'
+    '#options_display': side_by_side
+    '#required': true
+    '#wrapper_type': form_element
   do_not_contact_flag:
-    '#type': checkbox
-    '#title': 'Check here if you do not wish to be contacted about this project'
-    '#help': 'By checking this box, the link to contact members of this project will not be displayed to LDbase users.&nbsp;&nbsp;'
+    '#type': radios
+    '#title': 'Let others contact you about this project?'
+    '#help': 'Gives LDbase users a link to send a message to administrators of this project.'
+    '#options':
+      - 'Yes'
+      - 'No'
+    '#states':
+      visible-slide:
+        ':input[name="published_flag"]':
+          value: '1'
+    '#states_clear': false
+    '#default_value': '1'
+    '#wrapper_type': form_element
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
