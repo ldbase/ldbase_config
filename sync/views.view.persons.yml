@@ -418,7 +418,7 @@ display:
           plugin_id: standard
           required: false
       use_more: true
-      use_more_always: true
+      use_more_always: false
       use_more_text: 'Browse All Investigators'
       link_display: page_1
       link_url: ''
@@ -434,7 +434,9 @@ display:
           empty: false
           content: '<div class="ldbase-view-current-page">Displaying @current_record_count of @total</div>'
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: 0
       contexts:

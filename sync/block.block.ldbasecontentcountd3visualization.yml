@@ -10,7 +10,7 @@ dependencies:
 id: ldbasecontentcountd3visualization
 theme: portcullis
 region: content
-weight: -24
+weight: -25
 provider: null
 plugin: ldbase_d3_content_count_block
 settings:

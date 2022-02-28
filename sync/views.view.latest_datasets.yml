@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Latest Datasets'
+      title: 'Latest Datasets Added to LDbase'
       fields:
         title:
           id: title
@@ -233,13 +233,23 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      use_more: false
-      use_more_always: true
-      use_more_text: 'Show more'
-      link_display: '0'
+      use_more: true
+      use_more_always: false
+      use_more_text: 'Browse All Datasets'
+      link_display: custom_url
       link_url: /datasets
       header: {  }
-      footer: {  }
+      footer:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: true
+          content: '<div class="ldbase-view-current-page">Displaying @current_record_count of @total</div>'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -256,7 +266,9 @@ display:
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:
