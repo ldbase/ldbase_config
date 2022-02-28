@@ -11,7 +11,7 @@ dependencies:
     - portcullis
 id: nodeanalyticsblock
 theme: portcullis
-region: sidebar_first
+region: sidebar_second
 weight: -35
 provider: null
 plugin: node_analytics_block

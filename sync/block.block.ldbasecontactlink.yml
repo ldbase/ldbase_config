@@ -10,8 +10,8 @@ dependencies:
     - portcullis
 id: ldbasecontactlink
 theme: portcullis
-region: sidebar_first
-weight: -22
+region: sidebar_second
+weight: -34
 provider: null
 plugin: ldbase_contact_link
 settings:

@@ -11,8 +11,8 @@ dependencies:
     - portcullis
 id: socialmediablock
 theme: portcullis
-region: sidebar_first
-weight: -21
+region: sidebar_second
+weight: -33
 provider: null
 plugin: social_media_block
 settings:
