@@ -1,32 +1,28 @@
-uuid: 6cca9a84-e431-40f1-bc23-acd1f846393c
+uuid: cef026fa-3123-4315-b67e-c3e759f6b498
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.search_ldbase_resources
   module:
     - collapsiblock
     - context
+    - ldbase_content
     - system
-    - views
   theme:
     - portcullis
 third_party_settings:
   collapsiblock:
     collapse_action: 0
-id: views_block__search_ldbase_resources_block_1
+id: ldbasesearchresourcesblock
 theme: portcullis
-region: content
-weight: 1
+region: sidebar_second
+weight: 0
 provider: null
-plugin: 'views_block:search_ldbase_resources-block_1'
+plugin: ldbase_search_resources_block
 settings:
-  id: 'views_block:search_ldbase_resources-block_1'
-  label: ''
+  id: ldbase_search_resources_block
+  label: 'LDbase Search Resources Block'
   label_display: '0'
-  provider: views
-  views_label: ''
-  items_per_page: none
+  provider: ldbase_content
 visibility:
   context:
     id: context
