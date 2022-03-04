@@ -404,6 +404,18 @@ third_party_settings:
               expand_all_items: false
             weight: 0
             additional: {  }
+          8b7b7cb3-3dbd-448d-b193-ec1482d7b910:
+            uuid: 8b7b7cb3-3dbd-448d-b193-ec1482d7b910
+            region: content
+            configuration:
+              id: ldbase_contact_link
+              label: 'LDbase Contact Link'
+              label_display: '0'
+              provider: ldbase_handlers
+              context_mapping:
+                node: layout_builder.entity
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol

@@ -309,6 +309,76 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      filters:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_ldbase_pages_and_articles
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_fulltext
+          operator: or
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: 'Search LDbase Resources'
+            description: 'Find helpful information about LDbase and Open Science'
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search_api_fulltext
+            required: true
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_administrator: '0'
+              administrator: '0'
+              fcrr_admin: '0'
+            expose_fields: false
+            placeholder: 'Search resources and help ...'
+            searched_fields_id: search_api_fulltext_searched_fields
+          is_grouped: false
+          group_info:
+            label: 'Fulltext search'
+            description: ''
+            identifier: search_api_fulltext
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: ''
+                operator: or
+                value: ''
+              2:
+                title: ''
+                operator: or
+                value: ''
+              3:
+                title: ''
+                operator: or
+                value: ''
+          parse_mode: terms
+          min_length: null
+          fields:
+            - body
+            - title
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        filters: false
+        filter_groups: false
       display_extenders:
         metatag_display_extender:
           metatags: {  }

@@ -43,11 +43,6 @@ elements: |-
         '#file_help': none
         '#description': 'Edit the Dataset to upload a different file'
         '#disabled': true
-      dataset_version_label:
-        '#type': textfield
-        '#description': 'Add a label to your dataset. Especially when uploading an updated version, these labels will help you and other users keep track.'
-        '#placeholder': 'For Example: v1.0'
-        '#title': 'Dataset Version Label'
       dataset_version_description:
         '#type': textfield
         '#description': 'Provide a brief description of this version of the dataset. This is especially important when uploading updated versions.'

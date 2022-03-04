@@ -96,11 +96,6 @@ elements: |-
         '#file_extensions': 'dat csv xls xlsx xlsm sav sas7bdat json dta jmp rdata rda mtw mtj txt pzf pzfx mat fmp12 bak adp adn accdb laccdb accdw accdc accda accdr accdt mdb mda mdw mdf mde accde mam mad maq mar mat maf'
       dataset_version_id:
         '#type': hidden
-      dataset_version_label:
-        '#type': textfield
-        '#description': 'Add a label to your dataset. Especially when uploading an updated version, these labels will help you and other users keep track.'
-        '#placeholder': 'For Example: v1.0'
-        '#title': 'Dataset Version Label'
       dataset_version_description:
         '#type': textfield
         '#description': 'Provide a brief description of this version of the dataset. This is especially important when uploading updated versions.'
