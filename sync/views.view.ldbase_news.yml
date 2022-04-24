@@ -373,11 +373,11 @@ display:
           vanilla: false
           layout: ''
           cache: 0
-          current_view_mode: block_1
           skin: default
           grid: null
           grid_medium: null
           grid_small: null
+          current_view_mode: block_1
           overridables:
             arrows: '0'
             autoplay: '0'
