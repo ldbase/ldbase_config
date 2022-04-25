@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.code.field_related_persons
     - field.field.node.code.field_unaffiliated_parents
     - node.type.code
+    - system.menu.second-code-tasks
   module:
     - entity_reference_revisions
     - file
@@ -24,6 +25,7 @@ dependencies:
     - ldbase_citations
     - link
     - options
+    - system
     - text
     - user
 third_party_settings:
@@ -310,6 +312,27 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Second Code Tasks'
+          context_mapping: {  }
+        components:
+          3935280b-d0f3-42b2-8488-6b761cbcdc28:
+            uuid: 3935280b-d0f3-42b2-8488-6b761cbcdc28
+            region: content
+            configuration:
+              id: 'system_menu_block:second-code-tasks'
+              label: 'Second Code Tasks'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 0
             additional: {  }
         third_party_settings: {  }
 id: node.code.default

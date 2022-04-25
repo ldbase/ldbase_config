@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.document.field_related_persons
     - field.field.node.document.field_unaffiliated_parents
     - node.type.document
+    - system.menu.second-document-tasks
   module:
     - entity_reference_revisions
     - file
@@ -24,6 +25,7 @@ dependencies:
     - ldbase_citations
     - link
     - options
+    - system
     - text
     - user
 third_party_settings:
@@ -310,6 +312,27 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Second Document Tasks'
+          context_mapping: {  }
+        components:
+          8cc10970-e6ae-4448-a8bd-79918f382602:
+            uuid: 8cc10970-e6ae-4448-a8bd-79918f382602
+            region: content
+            configuration:
+              id: 'system_menu_block:second-document-tasks'
+              label: 'Second Document Tasks'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 0
             additional: {  }
         third_party_settings: {  }
 id: node.document.default

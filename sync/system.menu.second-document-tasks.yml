@@ -1,0 +1,8 @@
+uuid: 0a8048d3-0189-4731-b3d4-63bf5c8ec808
+langcode: en
+status: true
+dependencies: {  }
+id: second-document-tasks
+label: 'Second Document Tasks'
+description: 'A second Document tasks menu'
+locked: false
