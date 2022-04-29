@@ -72,20 +72,20 @@ definitions:
     expanded: false
     enabled: true
   ldbase_handlers__add_code_to_code_2:
-    enabled: true
     menu_name: second-code-tasks
     parent: ''
-    expanded: false
     weight: 0
+    expanded: false
+    enabled: true
   ldbase_handlers__add_document_to_code_2:
-    enabled: true
     menu_name: second-code-tasks
     parent: ''
     weight: 0
     expanded: false
+    enabled: true
   ldbase_handlers__confirm_code_deletion_2:
-    enabled: true
     menu_name: second-code-tasks
     parent: ''
     weight: 0
     expanded: false
+    enabled: true
