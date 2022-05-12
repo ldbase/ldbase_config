@@ -10,7 +10,7 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: modules/custom/ldbase_content/images/ldbase_tagline_horizontal_color_200_61.png
+  path: modules/custom/ldbase_content/images/ldbase_logo_tagline_horizontal_color.png
   use_default: false
 affix_side: 1
 animations_state: 1
