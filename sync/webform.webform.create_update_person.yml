@@ -79,7 +79,7 @@ elements: |-
   first_name:
     '#type': textfield
     '#title': 'First Name'
-    '#help': 'Enter your actual first name.'
+    '#help': 'Enter your professional or legal first name.'
     '#placeholder': 'For Example: Sally'
     '#required': true
   middle_name:
@@ -89,7 +89,7 @@ elements: |-
   last_name:
     '#type': textfield
     '#title': 'Last Name'
-    '#help': 'Enter your actual last name.'
+    '#help': 'Enter your legal or professional last name.'
     '#placeholder': 'For Example: Shares'
     '#required': true
   additional_publishing_names:

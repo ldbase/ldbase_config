@@ -35,7 +35,7 @@ elements: |-
     '#type': entity_autocomplete
     '#title': 'Project Investigator(s)'
     '#multiple': true
-    '#description': 'Enter the full names of the investigators who should get credit for this project and be part of the citation. This may or may not include named personnel on funded grants, but likely includes those who contributed significantly to the project.'
+    '#description': 'Enter the full names of the investigators who should get credit for this project and be part of the citation. This may or may not include named personnel on funded grants, but likely includes those who contributed significantly to the project.  Add investigators in the order appropriate for citing this project.'
     '#help': 'Personnel that might receive credit are postdocs, advanced graduate students, data management staff, etc.'
     '#description_display': before
     '#placeholder': 'For Example: Dr. Sally Shares'
