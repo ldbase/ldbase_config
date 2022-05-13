@@ -1,0 +1,38 @@
+uuid: 1294d559-31c8-403e-bb1e-c87349740260
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.ldbase_pages_and_articles
+    - views.view.search_ldbase_resources
+  module:
+    - views
+    - search_api_autocomplete
+id: search_ldbase_resources
+label: 'Search LDbase Resources'
+index_id: ldbase_pages_and_articles
+suggester_settings:
+  live_results:
+    fields: {  }
+    highlight:
+      enabled: false
+      field: ''
+    view_modes:
+      'entity:node':
+        article: ''
+        page: ''
+suggester_weights:
+  live_results: 0
+suggester_limits: {  }
+search_settings:
+  'views:search_ldbase_resources':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 5
+  min_length: 2
+  show_count: true
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

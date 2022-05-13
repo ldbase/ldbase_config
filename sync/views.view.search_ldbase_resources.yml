@@ -3,11 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
     - search_api.index.ldbase_pages_and_articles
   module:
     - search_api
-    - text
 id: search_ldbase_resources
 label: 'Search LDbase Resources'
 module: views
@@ -24,13 +22,14 @@ display:
     display_options:
       title: 'Search LDbase Resources'
       fields:
-        title:
-          id: title
-          table: search_api_index_ldbase_pages_and_articles
+        title_1:
+          id: title_1
+          table: search_api_datasource_ldbase_pages_and_articles_entity_node
           field: title
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
           plugin_id: search_api_field
           label: ''
           exclude: false
@@ -66,7 +65,7 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
+          element_wrapper_type: h3
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
@@ -94,16 +93,14 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-        body:
-          id: body
+        search_api_excerpt:
+          id: search_api_excerpt
           table: search_api_index_ldbase_pages_and_articles
-          field: body
+          field: search_api_excerpt
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: null
-          entity_field: null
-          plugin_id: search_api_field
+          plugin_id: search_api
           label: ''
           exclude: false
           alter:
@@ -145,27 +142,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: text_trimmed
-          settings:
-            trim_length: 600
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
+          link_to_item: false
+          use_highlighting: false
           multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
+          multi_separator: ', '
       pager:
         type: mini
         options:
@@ -270,8 +250,17 @@ display:
             - title
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
+        options:
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -279,6 +268,7 @@ display:
           skip_access: false
           preserve_facet_query_args: false
       relationships: {  }
+      use_ajax: true
       header: {  }
       footer:
         result:
@@ -301,7 +291,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
-        - 'config:field.storage.node.body'
         - 'config:search_api.index.ldbase_pages_and_articles'
   block_1:
     id: block_1
@@ -392,7 +381,6 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
-        - 'config:field.storage.node.body'
         - 'config:search_api.index.ldbase_pages_and_articles'
   page_1:
     id: page_1
@@ -414,5 +402,4 @@ display:
         - url.query_args
         - 'user.node_grants:view'
       tags:
-        - 'config:field.storage.node.body'
         - 'config:search_api.index.ldbase_pages_and_articles'

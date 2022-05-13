@@ -23,6 +23,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: default
+          page: default
   title:
     label: Title
     datasource_id: 'entity:node'
@@ -54,7 +65,7 @@ processor_settings:
     suffix: '</strong>'
     excerpt: true
     excerpt_always: false
-    excerpt_length: 256
+    excerpt_length: 250
     exclude_fields: {  }
     highlight: always
     highlight_partial: true
@@ -62,20 +73,19 @@ processor_settings:
     weights:
       preprocess_index: -49
       preprocess_query: -47
-    all_fields: false
+    all_fields: true
     fields:
       - body
+      - rendered_item
       - title
     title: true
     alt: true
     tags:
       b: 2
-      em: 1
       h1: 5
       h2: 3
       h3: 2
       strong: 2
-      u: 1
   ignorecase:
     weights:
       preprocess_index: -50
@@ -83,6 +93,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - rendered_item
       - title
   language_with_fallback: {  }
   ldbase_add_age_range: {  }
@@ -91,8 +102,11 @@ processor_settings:
     weights:
       preprocess_index: -43
       preprocess_query: -42
-    all_fields: false
-    fields: {  }
+    all_fields: true
+    fields:
+      - body
+      - rendered_item
+      - title
     exceptions:
       mexican: mexic
       texan: texa
@@ -100,8 +114,11 @@ processor_settings:
     weights:
       preprocess_index: -46
       preprocess_query: -43
-    all_fields: false
-    fields: {  }
+    all_fields: true
+    fields:
+      - body
+      - rendered_item
+      - title
     stopwords:
       - a
       - an
@@ -145,6 +162,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - rendered_item
       - title
     spaces: ''
     ignored: ._-
@@ -157,6 +175,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - rendered_item
       - title
 tracker_settings:
   default:
