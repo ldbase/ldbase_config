@@ -217,6 +217,16 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 12
             additional: {  }
+          ed1f9086-c706-4605-82f2-3349af69457c:
+            uuid: ed1f9086-c706-4605-82f2-3349af69457c
+            region: first
+            configuration:
+              id: 'extra_field_block:node:person:persons_entity_view_1'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 19
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -416,6 +426,11 @@ content:
     weight: 0
     region: content
   person_project_contributions_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: first
+  persons_entity_view_1:
     settings: {  }
     third_party_settings: {  }
     weight: 10
