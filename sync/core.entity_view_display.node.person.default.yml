@@ -199,7 +199,7 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            weight: 18
+            weight: 19
             additional: {  }
           4622c012-7e42-40cb-b3d9-99fdf22859b5:
             uuid: 4622c012-7e42-40cb-b3d9-99fdf22859b5
@@ -225,7 +225,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-            weight: 19
+            weight: 18
             additional: {  }
         third_party_settings: {  }
       -
