@@ -2106,7 +2106,20 @@ display:
         row: false
         fields: false
         arguments: false
+        header: false
       display_description: 'Page that lists all versions in descending version order without operations links'
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: '<p><a href="/datasets/{{ raw_arguments.null }}">Return to Dataset</a></p>'
+          tokenize: true
       display_extenders:
         metatag_display_extender: {  }
       path: datasets/%uuid/%node/view-only-dataset-versions

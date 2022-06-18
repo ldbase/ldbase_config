@@ -45,6 +45,25 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          97377a8b-6e33-47b8-a1f4-3ffe29e2e8a6:
+            uuid: 97377a8b-6e33-47b8-a1f4-3ffe29e2e8a6
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:organization:field_thumbnail'
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -184,6 +203,8 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 4
     region: content
