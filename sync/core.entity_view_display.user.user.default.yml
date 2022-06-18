@@ -46,24 +46,6 @@ third_party_settings:
               context_mapping: {  }
             weight: 1
             additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: 'User Tasks'
-          context_mapping: {  }
-        components:
-          0909bd87-208b-4e12-9dc0-20672713ff85:
-            uuid: 0909bd87-208b-4e12-9dc0-20672713ff85
-            region: content
-            configuration:
-              id: add_project_button
-              label: 'Add Project Button'
-              label_display: '0'
-              provider: ldbase_content
-              context_mapping: {  }
-            weight: 1
-            additional: {  }
           f3afc04c-94cd-433a-9eca-b554b333c26b:
             uuid: f3afc04c-94cd-433a-9eca-b554b333c26b
             region: content
@@ -73,8 +55,15 @@ third_party_settings:
               label_display: '0'
               provider: ldbase_content
               context_mapping: {  }
-            weight: 2
+            weight: 3
             additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'User Tasks'
+          context_mapping: {  }
+        components: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol

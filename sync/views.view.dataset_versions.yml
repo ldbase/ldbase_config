@@ -1087,7 +1087,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<p><a href="/datasets/{{ raw_arguments.null }}" class="ldbase-button">Return to Dataset</a></p>'
+            value: '<p><a href="/datasets/{{ raw_arguments.null }}">Return to Dataset</a></p>'
             format: full_html
           tokenize: true
       display_extenders:
