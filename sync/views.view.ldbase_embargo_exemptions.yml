@@ -751,9 +751,9 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: 'There are no embargo exemptions for this project.'
+            value: "<a href=\"/projects/{{ raw_arguments.null }}/{{ raw_arguments.gid }}/view-members\">Return to Project Members</a>\r\n\r\n<p>There are no embargo exemptions for this project.</p>"
             format: basic_html
-          tokenize: false
+          tokenize: true
       sorts: {  }
       arguments:
         'null':
@@ -952,9 +952,9 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<p>These users have been granted access to the embargoed materials listed.</p>'
+            value: "<a href=\"/projects/{{ raw_arguments.null }}/{{ raw_arguments.gid }}/view-members\">Return to Project Members</a>\r\n\r\n<p>These users have been granted access to the embargoed materials listed.</p>"
             format: basic_html
-          tokenize: false
+          tokenize: true
       footer:
         area:
           id: area
