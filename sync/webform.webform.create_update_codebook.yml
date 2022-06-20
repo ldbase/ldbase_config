@@ -114,7 +114,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another exempt user'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - input-comma-check
@@ -151,7 +151,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Codebook Author'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - input-comma-check
@@ -181,7 +181,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Codebook DOI'
+    '#multiple__add_more_button_label': 'Add another'
   node_id:
     '#type': hidden
     '#title': node_id

@@ -44,7 +44,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Project Investigator'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - input-comma-check
@@ -66,7 +66,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Organization'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - input-comma-check
@@ -85,7 +85,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Date Range'
+    '#multiple__add_more_button_label': 'Add another'
     '#element':
       from_month:
         '#type': select
@@ -190,7 +190,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Website'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - project-website-text-input
@@ -208,7 +208,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Funding Agency & Grant Number'
+    '#multiple__add_more_button_label': 'Add another'
     '#element':
       funding_agency:
         '#type': entity_autocomplete
@@ -245,7 +245,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another DOI'
+    '#multiple__add_more_button_label': 'Add another'
   generate_a_doi:
     '#type': checkbox
     '#title': 'Generate a DOI for this Project'

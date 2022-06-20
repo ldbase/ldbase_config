@@ -23,7 +23,8 @@ elements: |-
   preferred_name:
     '#type': textfield
     '#title': 'Display Name'
-    '#description': 'Please enter your name as you would like it to be displayed throughout the site.&nbsp;'
+    '#description': 'Please enter your name as you would like it to be displayed as an author or contributor throughout LDbase.'
+    '#help': 'We recommend you enter your name as it is most likely to have been used in publications and other research related documents.'
     '#description_display': before
     '#placeholder': 'For Example: Dr. Sally Shares'
     '#required': true
@@ -46,7 +47,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Work Address'
+    '#multiple__add_more_button_label': 'Add another'
     '#field_overrides':
       givenName: hidden
       additionalName: hidden
@@ -72,7 +73,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Website'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - person-url-text-input
@@ -101,7 +102,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Publishing Name'
+    '#multiple__add_more_button_label': 'Add another'
   email:
     '#type': email
     '#title': 'Email Address/Username'
@@ -111,7 +112,7 @@ elements: |-
     '#placeholder': 'For Example: sshares@spinybluff.edu '
     '#multiple__sorting': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Email'
+    '#multiple__add_more_button_label': 'Add another'
     '#required': true
   mass_contact_opt_in:
     '#type': checkbox
@@ -144,7 +145,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Social Media Account'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - person-url-text-input
@@ -157,7 +158,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Title'
+    '#multiple__add_more_button_label': 'Add another'
   related_organizations:
     '#type': entity_autocomplete
     '#title': 'Organizational Affiliations'
@@ -169,7 +170,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Organization'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - input-comma-check
@@ -190,7 +191,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Area'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - input-comma-check

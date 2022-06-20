@@ -158,7 +158,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another exempt user'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - input-comma-check
@@ -195,7 +195,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Dataset Contributor'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - input-comma-check
@@ -216,7 +216,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Host Organization'
+    '#multiple__add_more_button_label': 'Add another'
     '#attributes':
       class:
         - input-comma-check
@@ -247,7 +247,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Location'
+    '#multiple__add_more_button_label': 'Add another'
     '#field_overrides':
       givenName: hidden
       additionalName: hidden
@@ -266,7 +266,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Participant Type'
+    '#multiple__add_more_button_label': 'Add another'
     '#help': 'Participants types are children, adults, parents, teachers, etc.'
     '#description': 'Please describe the participants contributing data to this dataset. Each participant type can be added separately. <a href=''/taxonomy/participants'' target=''_blank''>View all Participant Types</a>. School systems across the globe differ in grade designations. To ensure compatibility between data from different nations, we ask you to provide the age range of your participants instead of their grade.'
     '#description_display': before
@@ -398,7 +398,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Data Collection Period'
+    '#multiple__add_more_button_label': 'Add another'
     '#element':
       start_month:
         '#type': select
@@ -447,7 +447,7 @@ elements: |-
     '#states_clear': false
     '#multiple__sorting': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add Another Derivation Source'
+    '#multiple__add_more_button_label': 'Add Another'
     '#attributes':
       class:
         - dataset-url-text-input
@@ -475,7 +475,7 @@ elements: |-
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
-    '#multiple__add_more_button_label': 'Add another Dataset DOI'
+    '#multiple__add_more_button_label': 'Add another'
   generate_a_doi:
     '#type': checkbox
     '#title': 'Generate a DOI for this Dataset'
