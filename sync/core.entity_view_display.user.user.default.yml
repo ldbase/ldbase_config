@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.mass_contact_opt_out
+    - views.view.my_favorites
     - views.view.my_messages
     - views.view.projects_in_my_groups
     - views.view.user_embargo_exemptions
@@ -136,6 +137,19 @@ third_party_settings:
                 value: "<p>You have not yet verified your email address.&nbsp; <a href=\"/user/user-email-verification\">Verify&nbsp;email</a></p>\r\n"
                 format: basic_html
             weight: 6
+            additional: {  }
+          ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5:
+            uuid: ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5
+            region: content
+            configuration:
+              id: 'views_block:my_favorites-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 8
             additional: {  }
         third_party_settings: {  }
 id: user.user.default

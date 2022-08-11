@@ -8,6 +8,7 @@ dependencies:
   module:
     - eu_cookie_compliance
     - filter
+    - flag
     - matomo
     - media
     - search_api_autocomplete
@@ -21,7 +22,9 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'display eu cookie compliance popup'
+  - 'flag ldbase_favorites'
   - 'opt-in or out of matomo tracking'
+  - 'unflag ldbase_favorites'
   - 'use search_api_autocomplete for search'
   - 'use text format basic_html'
   - 'use text format restricted_html'

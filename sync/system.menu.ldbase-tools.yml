@@ -1,0 +1,8 @@
+uuid: 15b3f666-d10c-4334-9ac3-c5de28de46d4
+langcode: en
+status: true
+dependencies: {  }
+id: ldbase-tools
+label: 'LDbase Tools'
+description: 'A menu of collected LDbase actions'
+locked: false

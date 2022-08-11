@@ -50,6 +50,16 @@ third_party_settings:
               context_mapping: {  }
             weight: 0
             additional: {  }
+          60ae5df0-68fc-48b5-b48e-8816e1513e34:
+            uuid: 60ae5df0-68fc-48b5-b48e-8816e1513e34
+            region: content
+            configuration:
+              id: 'extra_field_block:node:code:flag_ldbase_favorites'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -82,17 +92,6 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             weight: 0
-            additional: {  }
-          9d26231e-6458-408a-8dd0-a5d2165fc8ba:
-            uuid: 9d26231e-6458-408a-8dd0-a5d2165fc8ba
-            region: content
-            configuration:
-              id: ldbase_citation_link_block
-              label: 'Ldbase citation link block'
-              label_display: '0'
-              provider: ldbase_citations
-              context_mapping: {  }
-            weight: 1
             additional: {  }
         third_party_settings: {  }
       -
@@ -438,6 +437,11 @@ content:
       link: true
     third_party_settings: {  }
     weight: 19
+    region: content
+  flag_ldbase_favorites:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
   links:
     settings: {  }

@@ -1,0 +1,15 @@
+uuid: 51e5fbc6-baab-4111-9681-13d7e4055f0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.ldbase_favorites
+  module:
+    - flag
+id: flag_action.ldbase_favorites_unflag
+label: 'Unsave this'
+type: node
+plugin: 'flag_action:ldbase_favorites_unflag'
+configuration:
+  flag_id: ldbase_favorites
+  flag_action: unflag

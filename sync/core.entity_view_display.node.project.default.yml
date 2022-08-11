@@ -24,7 +24,6 @@ dependencies:
     - layout_builder
     - layout_discovery
     - ldbase_citations
-    - ldbase_handlers
     - link
     - system
     - text
@@ -71,6 +70,16 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          99da4254-cae1-423a-afa2-c37e71d2f142:
+            uuid: 99da4254-cae1-423a-afa2-c37e71d2f142
+            region: content
+            configuration:
+              id: 'extra_field_block:node:project:flag_ldbase_favorites'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -96,29 +105,6 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             weight: 2
-            additional: {  }
-          de4cf69d-ed3e-458f-b40d-fea4366e4d82:
-            uuid: de4cf69d-ed3e-458f-b40d-fea4366e4d82
-            region: content
-            configuration:
-              id: ldbase_citation_link_block
-              label: 'Ldbase citation link block'
-              label_display: '0'
-              provider: ldbase_citations
-              context_mapping: {  }
-            weight: 3
-            additional: {  }
-          383740c8-38ad-41c2-b822-f6cd50dbe39a:
-            uuid: 383740c8-38ad-41c2-b822-f6cd50dbe39a
-            region: content
-            configuration:
-              id: download_all_files_link
-              label: 'LDbase Download All Files Link'
-              label_display: '0'
-              provider: ldbase_handlers
-              context_mapping:
-                node: layout_builder.entity
-            weight: 4
             additional: {  }
         third_party_settings: {  }
       -
@@ -404,18 +390,6 @@ third_party_settings:
               expand_all_items: false
             weight: 0
             additional: {  }
-          e46d60b2-b6dd-48ba-a29a-9c321203f15e:
-            uuid: e46d60b2-b6dd-48ba-a29a-9c321203f15e
-            region: content
-            configuration:
-              id: ldbase_contact_link
-              label: 'LDbase Contact Link'
-              label_display: '0'
-              provider: ldbase_handlers
-              context_mapping:
-                node: layout_builder.entity
-            weight: 1
-            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -542,6 +516,11 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 5
+    region: content
+  flag_ldbase_favorites:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
   links:
     settings: {  }

@@ -1,0 +1,15 @@
+uuid: 026c474f-5e50-4d23-925e-4cb87ca1638c
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.ldbase_favorites
+  module:
+    - flag
+id: flag_action.ldbase_favorites_flag
+label: 'Save this'
+type: node
+plugin: 'flag_action:ldbase_favorites_flag'
+configuration:
+  flag_id: ldbase_favorites
+  flag_action: flag

@@ -1,0 +1,37 @@
+uuid: acb21394-2980-49a0-9913-31ca391c34c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: ldbase_favorites
+label: 'LDbase Favorites'
+bundles:
+  - code
+  - dataset
+  - document
+  - project
+entity_type: node
+global: false
+flag_short: 'Save Favorite'
+flag_long: 'Save this item to your Favorites'
+flag_message: 'Item saved to Favorites'
+unflag_short: 'Remove Favorite'
+unflag_long: 'Remove this item from your Favorites'
+unflag_message: 'Item removed from Favorites'
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+    search_index: search_index
+    search_result: search_result
+    teaser: teaser
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }
