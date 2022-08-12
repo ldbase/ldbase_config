@@ -266,7 +266,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: 'Content that you save as favorites will display here.'
+            value: "<h4>My Favorites</h4>\r\nContent that you save as favorites will display here."
             format: basic_html
           tokenize: false
       sorts:
@@ -408,7 +408,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: text
-          empty: true
+          empty: false
           content:
             value: "<h4>My Favorites</h4>\r\n\r\n<p>Click the column headers to sort the items.</p>"
             format: basic_html
