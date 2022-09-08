@@ -263,7 +263,6 @@ elements: |-
     '#options':
       1: 'Yes'
       0: 'No'
-    '#options_display': side_by_side
     '#required': true
     '#wrapper_type': form_element
   do_not_contact_flag:
