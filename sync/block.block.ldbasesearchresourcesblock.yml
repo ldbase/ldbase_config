@@ -46,4 +46,8 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /resources
+    pages: "/resources\r\n/resources/*"
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: true
+    pages: '/resources/search*'
