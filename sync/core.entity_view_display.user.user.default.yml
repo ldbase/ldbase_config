@@ -109,7 +109,7 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            weight: 7
+            weight: 8
             additional: {  }
           94b12631-091a-4fcb-8275-224fab18362e:
             uuid: 94b12631-091a-4fcb-8275-224fab18362e
@@ -149,7 +149,7 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            weight: 8
+            weight: 7
             additional: {  }
         third_party_settings: {  }
 id: user.user.default

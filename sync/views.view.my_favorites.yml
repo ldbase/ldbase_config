@@ -224,7 +224,7 @@ display:
         type: mini
         options:
           offset: 0
-          items_per_page: 0
+          items_per_page: 15
           total_pages: null
           id: 0
           tags:
@@ -434,9 +434,21 @@ display:
     display_options:
       display_description: ''
       display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
         metatag_display_extender:
           metatags: {  }
           tokenize: false
+        simple_sitemap_display_extender: {  }
       block_description: 'My Favorites Block'
     cache_metadata:
       max-age: -1
