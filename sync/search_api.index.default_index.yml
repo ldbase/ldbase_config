@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_location
     - field.storage.node.body
-    - field.storage.node.field_areas_of_expertise
     - field.storage.node.field_assessment_name
     - field.storage.node.field_code_type
     - field.storage.node.field_component_skills
@@ -14,22 +13,14 @@ dependencies:
     - field.storage.node.field_demographics_information
     - field.storage.node.field_document_type
     - field.storage.node.field_doi
-    - field.storage.node.field_email
     - field.storage.node.field_external_resource
-    - field.storage.node.field_first_name
     - field.storage.node.field_grant_information
     - field.storage.paragraph.field_funding_agency
     - field.storage.paragraph.field_grant_number
-    - field.storage.node.field_last_name
     - field.storage.node.field_license
-    - field.storage.node.field_middle_name
-    - field.storage.node.field_orcid
-    - field.storage.node.field_parent_organization
     - field.storage.paragraph.field_participant_type
-    - field.storage.node.field_professional_titles
     - field.storage.node.field_project_type
     - field.storage.node.field_publication_info
-    - field.storage.node.field_publishing_names
     - field.storage.node.field_related_organizations
     - field.storage.node.field_related_persons
     - field.storage.node.field_schooling
@@ -37,7 +28,6 @@ dependencies:
     - field.storage.node.field_time_method
     - field.storage.node.field_time_points
     - field.storage.node.field_variable_types_in_dataset
-    - field.storage.node.field_web_presence
     - field.storage.node.field_website
     - field.storage.paragraph.field_age_range
     - search_api.server.default_server
@@ -47,6 +37,7 @@ dependencies:
     - taxonomy
     - paragraphs
     - search_api
+    - flag_search_api
     - ldbase_handlers
 id: default_index
 name: 'Default content index'
@@ -112,25 +103,6 @@ field_settings:
     dependencies:
       module:
         - node
-  field_areas_of_expertise:
-    label: 'Areas of Expertise'
-    datasource_id: 'entity:node'
-    property_path: field_areas_of_expertise
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_areas_of_expertise
-  field_areas_of_expertise_fulltext:
-    label: 'Areas of Expertise » Taxonomy term » Name'
-    datasource_id: 'entity:node'
-    property_path: 'field_areas_of_expertise:entity:name'
-    type: text
-    boost: 0.5
-    dependencies:
-      config:
-        - field.storage.node.field_areas_of_expertise
-      module:
-        - taxonomy
   field_assessment_name:
     label: 'Assessment Name'
     datasource_id: 'entity:node'
@@ -261,14 +233,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_doi
-  field_email:
-    label: Email
-    datasource_id: 'entity:node'
-    property_path: field_email
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_email
   field_external_resource:
     label: 'External Resource'
     datasource_id: 'entity:node'
@@ -277,22 +241,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_external_resource
-  field_first_name:
-    label: 'First Name'
-    datasource_id: 'entity:node'
-    property_path: field_first_name
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_first_name
-  field_first_name_fulltext:
-    label: 'First Name'
-    datasource_id: 'entity:node'
-    property_path: field_first_name
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_first_name
   field_grant_information:
     label: 'Funding Agency & Grant Number'
     datasource_id: 'entity:node'
@@ -326,22 +274,6 @@ field_settings:
         - field.storage.paragraph.field_grant_number
       module:
         - paragraphs
-  field_last_name:
-    label: 'Last Name'
-    datasource_id: 'entity:node'
-    property_path: field_last_name
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_last_name
-  field_last_name_fulltext:
-    label: 'Last Name'
-    datasource_id: 'entity:node'
-    property_path: field_last_name
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_last_name
   field_license:
     label: License
     datasource_id: 'entity:node'
@@ -361,39 +293,6 @@ field_settings:
         - field.storage.node.field_license
       module:
         - taxonomy
-  field_middle_name:
-    label: 'Middle Name'
-    datasource_id: 'entity:node'
-    property_path: field_middle_name
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_middle_name
-  field_middle_name_fulltext:
-    label: 'Middle Name'
-    datasource_id: 'entity:node'
-    property_path: field_middle_name
-    type: text
-    boost: 0.5
-    dependencies:
-      config:
-        - field.storage.node.field_middle_name
-  field_orcid:
-    label: ORCID
-    datasource_id: 'entity:node'
-    property_path: field_orcid
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_orcid
-  field_parent_organization:
-    label: 'Parent Organization'
-    datasource_id: 'entity:node'
-    property_path: field_parent_organization
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_parent_organization
   field_participant_type:
     label: 'Participants » Paragraph » Participant Type'
     datasource_id: 'entity:node'
@@ -418,23 +317,6 @@ field_settings:
       module:
         - paragraphs
         - taxonomy
-  field_professional_titles:
-    label: 'Professional Titles'
-    datasource_id: 'entity:node'
-    property_path: field_professional_titles
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_professional_titles
-  field_professional_titles_fulltext:
-    label: 'Professional Titles'
-    datasource_id: 'entity:node'
-    property_path: field_professional_titles
-    type: text
-    boost: 0.5
-    dependencies:
-      config:
-        - field.storage.node.field_professional_titles
   field_project_type:
     label: 'Project Descriptors'
     datasource_id: 'entity:node'
@@ -462,23 +344,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_publication_info
-  field_publishing_names:
-    label: 'Publishing Names'
-    datasource_id: 'entity:node'
-    property_path: field_publishing_names
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_publishing_names
-  field_publishing_names_fulltext:
-    label: 'Publishing Names'
-    datasource_id: 'entity:node'
-    property_path: field_publishing_names
-    type: text
-    boost: 0.5
-    dependencies:
-      config:
-        - field.storage.node.field_publishing_names
   field_related_organizations:
     label: 'Host Organizations'
     datasource_id: 'entity:node'
@@ -609,14 +474,6 @@ field_settings:
         - field.storage.node.field_variable_types_in_dataset
       module:
         - taxonomy
-  field_web_presence:
-    label: 'Web Presence'
-    datasource_id: 'entity:node'
-    property_path: field_web_presence
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_web_presence
   field_website:
     label: Website
     datasource_id: 'entity:node'
@@ -625,6 +482,12 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_website
+  flag_ldbase_favorites:
+    label: 'LDbase Favorites'
+    property_path: flag_ldbase_favorites
+    type: integer
+    indexed_locked: true
+    type_locked: true
   langcode:
     label: Language
     datasource_id: 'entity:node'
@@ -807,6 +670,9 @@ processor_settings:
     weights:
       preprocess_index: -10
   entity_type: {  }
+  flag_indexer:
+    flag_index:
+      - ldbase_favorites
   highlight:
     weights:
       postprocess_query: 0
@@ -833,7 +699,6 @@ processor_settings:
       - body
       - country_code
       - country_code_fulltext
-      - field_areas_of_expertise_fulltext
       - field_assessment_name_fulltext
       - field_code_type_fulltext
       - field_component_skills_fulltext
@@ -841,24 +706,12 @@ processor_settings:
       - field_data_collection_locations_fulltext
       - field_document_type_fulltext
       - field_doi
-      - field_email
       - field_external_resource
-      - field_first_name
-      - field_first_name_fulltext
       - field_grant_information_funder_fulltext
       - field_grant_information_grantnum_fulltext
-      - field_last_name
-      - field_last_name_fulltext
       - field_license_fulltext
-      - field_middle_name
-      - field_middle_name_fulltext
-      - field_orcid
       - field_participant_type_fulltext
-      - field_professional_titles
-      - field_professional_titles_fulltext
       - field_project_type_fulltext
-      - field_publishing_names
-      - field_publishing_names_fulltext
       - field_related_organizations_fulltext
       - field_related_persons_1_fulltext
       - field_schooling_fulltext
@@ -867,7 +720,6 @@ processor_settings:
       - field_time_points
       - field_time_points_fulltext
       - field_variable_types_in_dataset_fulltext
-      - field_web_presence
       - field_website
       - langcode
       - ldbase_root_project
@@ -896,7 +748,6 @@ processor_settings:
       - body
       - country_code
       - country_code_fulltext
-      - field_areas_of_expertise_fulltext
       - field_assessment_name_fulltext
       - field_code_type_fulltext
       - field_component_skills_fulltext
@@ -904,24 +755,12 @@ processor_settings:
       - field_data_collection_locations_fulltext
       - field_document_type_fulltext
       - field_doi
-      - field_email
       - field_external_resource
-      - field_first_name
-      - field_first_name_fulltext
       - field_grant_information_funder_fulltext
       - field_grant_information_grantnum_fulltext
-      - field_last_name
-      - field_last_name_fulltext
       - field_license_fulltext
-      - field_middle_name
-      - field_middle_name_fulltext
-      - field_orcid
       - field_participant_type_fulltext
-      - field_professional_titles
-      - field_professional_titles_fulltext
       - field_project_type_fulltext
-      - field_publishing_names
-      - field_publishing_names_fulltext
       - field_related_organizations_fulltext
       - field_related_persons_1_fulltext
       - field_schooling_fulltext
@@ -930,7 +769,6 @@ processor_settings:
       - field_time_points
       - field_time_points_fulltext
       - field_variable_types_in_dataset_fulltext
-      - field_web_presence
       - field_website
       - langcode
       - ldbase_root_project
@@ -946,6 +784,7 @@ processor_settings:
     weights:
       add_properties: 0
       pre_index_save: -10
+  reverse_entity_references: {  }
   stemmer:
     weights:
       preprocess_index: -42
@@ -955,23 +794,17 @@ processor_settings:
       - administrative_area_fulltext
       - body
       - country_code_fulltext
-      - field_areas_of_expertise_fulltext
       - field_assessment_name_fulltext
       - field_code_type_fulltext
       - field_component_skills_fulltext
       - field_curricula_fulltext
       - field_data_collection_locations_fulltext
       - field_document_type_fulltext
-      - field_first_name_fulltext
       - field_grant_information_funder_fulltext
       - field_grant_information_grantnum_fulltext
-      - field_last_name_fulltext
       - field_license_fulltext
-      - field_middle_name_fulltext
       - field_participant_type_fulltext
-      - field_professional_titles_fulltext
       - field_project_type_fulltext
-      - field_publishing_names_fulltext
       - field_related_organizations_fulltext
       - field_related_persons_1_fulltext
       - field_schooling_fulltext
@@ -996,23 +829,17 @@ processor_settings:
       - administrative_area_fulltext
       - body
       - country_code_fulltext
-      - field_areas_of_expertise_fulltext
       - field_assessment_name_fulltext
       - field_code_type_fulltext
       - field_component_skills_fulltext
       - field_curricula_fulltext
       - field_data_collection_locations_fulltext
       - field_document_type_fulltext
-      - field_first_name_fulltext
       - field_grant_information_funder_fulltext
       - field_grant_information_grantnum_fulltext
-      - field_last_name_fulltext
       - field_license_fulltext
-      - field_middle_name_fulltext
       - field_participant_type_fulltext
-      - field_professional_titles_fulltext
       - field_project_type_fulltext
-      - field_publishing_names_fulltext
       - field_related_organizations_fulltext
       - field_related_persons_1_fulltext
       - field_schooling_fulltext
@@ -1070,23 +897,17 @@ processor_settings:
       - administrative_area_fulltext
       - body
       - country_code_fulltext
-      - field_areas_of_expertise_fulltext
       - field_assessment_name_fulltext
       - field_code_type_fulltext
       - field_component_skills_fulltext
       - field_curricula_fulltext
       - field_data_collection_locations_fulltext
       - field_document_type_fulltext
-      - field_first_name_fulltext
       - field_grant_information_funder_fulltext
       - field_grant_information_grantnum_fulltext
-      - field_last_name_fulltext
       - field_license_fulltext
-      - field_middle_name_fulltext
       - field_participant_type_fulltext
-      - field_professional_titles_fulltext
       - field_project_type_fulltext
-      - field_publishing_names_fulltext
       - field_related_organizations_fulltext
       - field_related_persons_1_fulltext
       - field_schooling_fulltext
@@ -1114,7 +935,6 @@ processor_settings:
       - body
       - country_code
       - country_code_fulltext
-      - field_areas_of_expertise_fulltext
       - field_assessment_name_fulltext
       - field_code_type_fulltext
       - field_component_skills_fulltext
@@ -1122,24 +942,12 @@ processor_settings:
       - field_data_collection_locations_fulltext
       - field_document_type_fulltext
       - field_doi
-      - field_email
       - field_external_resource
-      - field_first_name
-      - field_first_name_fulltext
       - field_grant_information_funder_fulltext
       - field_grant_information_grantnum_fulltext
-      - field_last_name
-      - field_last_name_fulltext
       - field_license_fulltext
-      - field_middle_name
-      - field_middle_name_fulltext
-      - field_orcid
       - field_participant_type_fulltext
-      - field_professional_titles
-      - field_professional_titles_fulltext
       - field_project_type_fulltext
-      - field_publishing_names
-      - field_publishing_names_fulltext
       - field_related_organizations_fulltext
       - field_related_persons_1_fulltext
       - field_schooling_fulltext
@@ -1148,7 +956,6 @@ processor_settings:
       - field_time_points
       - field_time_points_fulltext
       - field_variable_types_in_dataset_fulltext
-      - field_web_presence
       - field_website
       - langcode
       - ldbase_root_project

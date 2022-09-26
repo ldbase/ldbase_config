@@ -22,6 +22,8 @@ bundles:
   - code
   - dataset
   - document
+  - organization
+  - person
   - project
 entity_type: node
 global: false
