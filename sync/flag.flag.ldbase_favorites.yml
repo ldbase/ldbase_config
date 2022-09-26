@@ -3,7 +3,19 @@ langcode: en
 status: true
 dependencies:
   module:
+    - flag_anon
     - node
+third_party_settings:
+  flag_anon:
+    enabled: 1
+    label_display: original
+    popin_title: Attention
+    message: '@login or @register to use this flag.'
+    login_label: Login
+    register_label: Register
+    popup: 0
+    popup_login: '{"width": "auto"}'
+    popup_register: '{"width": "auto"}'
 id: ldbase_favorites
 label: 'LDbase Favorites'
 bundles:
