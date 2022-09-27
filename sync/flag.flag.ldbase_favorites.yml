@@ -10,7 +10,7 @@ third_party_settings:
     enabled: 1
     label_display: original
     popin_title: Attention
-    message: '@login or @register to use this flag.'
+    message: '@login or @register to use this feature.'
     login_label: Login
     register_label: Register
     popup: 0

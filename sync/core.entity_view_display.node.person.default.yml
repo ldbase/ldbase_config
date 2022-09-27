@@ -246,6 +246,16 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          8672ff3e-bbca-474d-9dfd-ada703ada355:
+            uuid: 8672ff3e-bbca-474d-9dfd-ada703ada355
+            region: first
+            configuration:
+              id: 'extra_field_block:node:person:flag_ldbase_favorites'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 20
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -441,6 +451,11 @@ content:
     third_party_settings: {  }
     weight: 7
     region: content
+  flag_ldbase_favorites:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: first
   links:
     settings: {  }
     third_party_settings: {  }

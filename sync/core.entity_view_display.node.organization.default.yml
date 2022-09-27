@@ -45,6 +45,16 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          5ef41b40-d30b-417a-b4ed-069b03f0a274:
+            uuid: 5ef41b40-d30b-417a-b4ed-069b03f0a274
+            region: content
+            configuration:
+              id: 'extra_field_block:node:organization:flag_ldbase_favorites'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -200,6 +210,11 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 2
+    region: content
+  flag_ldbase_favorites:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
   links:
     settings: {  }

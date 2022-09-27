@@ -1879,7 +1879,7 @@ display:
             offset_label: Offset
           quantity: 9
       exposed_form:
-        type: input_required
+        type: basic
         options:
           submit_button: Search
           reset_button: false
@@ -1888,8 +1888,6 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: ''
-          text_input_required_format: basic_html
       access:
         type: none
         options: {  }
@@ -2040,7 +2038,21 @@ display:
         use_ajax: false
       use_ajax: true
       display_extenders:
-        metatag_display_extender: {  }
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender: {  }
     cache_metadata:
       max-age: -1
       contexts:
