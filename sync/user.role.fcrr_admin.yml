@@ -63,6 +63,7 @@ permissions:
   - 'administer embargoes settings'
   - 'administer matomo'
   - 'administer messages'
+  - 'administer nodes'
   - 'administer taxonomy'
   - 'administer taxonomy_term fields'
   - 'administer taxonomy_term form display'
