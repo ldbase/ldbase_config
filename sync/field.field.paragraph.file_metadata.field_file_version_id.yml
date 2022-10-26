@@ -9,7 +9,7 @@ id: paragraph.file_metadata.field_file_version_id
 field_name: field_file_version_id
 entity_type: paragraph
 bundle: file_metadata
-label: 'File Version ID'
+label: 'Version Number'
 description: ''
 required: false
 translatable: false
