@@ -12,7 +12,6 @@ module:
   captcha: 0
   ckeditor: 0
   collapsiblock: 0
-  color: 0
   comment: 0
   config: 0
   contact: 0
@@ -44,7 +43,6 @@ module:
   flag_search_api: 0
   gnode: 0
   group: 0
-  hal: 0
   help: 0
   history: 0
   honeypot: 0
