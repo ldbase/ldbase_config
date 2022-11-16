@@ -37,7 +37,6 @@ dependencies:
     - entity_reference_revisions
     - layout_builder
     - layout_discovery
-    - ldbase_citations
     - ldbase_content
     - ldbase_handlers
     - link
@@ -631,24 +630,6 @@ third_party_settings:
               label: 'LDbase Dataset Sub-tree Block'
               label_display: '0'
               provider: ldbase_content
-              context_mapping: {  }
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: 'Citations Section'
-          context_mapping: {  }
-        components:
-          544f05ed-8460-4bca-b71c-2b42a7a1f45c:
-            uuid: 544f05ed-8460-4bca-b71c-2b42a7a1f45c
-            region: content
-            configuration:
-              id: ldbase_citation_display_block
-              label: 'Ldbase citation display block'
-              label_display: '0'
-              provider: ldbase_citations
               context_mapping: {  }
             weight: 0
             additional: {  }

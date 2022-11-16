@@ -22,7 +22,6 @@ dependencies:
     - file
     - layout_builder
     - layout_discovery
-    - ldbase_citations
     - link
     - options
     - system
@@ -39,17 +38,6 @@ third_party_settings:
           label: 'APA Citation'
           context_mapping: {  }
         components:
-          453d7b9a-fe10-40d4-bd55-a1945202ddb3:
-            uuid: 453d7b9a-fe10-40d4-bd55-a1945202ddb3
-            region: content
-            configuration:
-              id: ldbase_citation_display_block
-              label: 'Ldbase citation display block'
-              label_display: visible
-              provider: ldbase_citations
-              context_mapping: {  }
-            weight: 0
-            additional: {  }
           60ae5df0-68fc-48b5-b48e-8816e1513e34:
             uuid: 60ae5df0-68fc-48b5-b48e-8816e1513e34
             region: content

@@ -23,7 +23,6 @@ dependencies:
     - image
     - layout_builder
     - layout_discovery
-    - ldbase_citations
     - link
     - system
     - text
@@ -39,17 +38,6 @@ third_party_settings:
           label: 'APA Citation'
           context_mapping: {  }
         components:
-          72dec790-d03a-4e72-831f-63bdd0ed89a7:
-            uuid: 72dec790-d03a-4e72-831f-63bdd0ed89a7
-            region: content
-            configuration:
-              id: ldbase_citation_display_block
-              label: 'Ldbase citation display block'
-              label_display: visible
-              provider: ldbase_citations
-              context_mapping: {  }
-            weight: 1
-            additional: {  }
           9610d39f-35a7-4ef9-b770-180f1bd1533e:
             uuid: 9610d39f-35a7-4ef9-b770-180f1bd1533e
             region: content
