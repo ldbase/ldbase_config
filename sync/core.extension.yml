@@ -43,6 +43,7 @@ module:
   flag_search_api: 0
   gnode: 0
   group: 0
+  health_check: 0
   help: 0
   history: 0
   honeypot: 0
