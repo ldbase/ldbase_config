@@ -58,7 +58,6 @@ module:
   ldbase_handlers: 0
   ldbase_new_account: 0
   link: 0
-  login_destination: 0
   masquerade: 0
   mass_contact: 0
   matomo: 0
@@ -116,6 +115,7 @@ module:
   upgrade_status: 0
   user: 0
   user_email_verification: 0
+  user_redirect: 0
   variationcache: 0
   views_ui: 0
   webform: 0
