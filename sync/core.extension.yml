@@ -112,7 +112,6 @@ module:
   tombstones: 0
   toolbar: 0
   tour: 0
-  twig_xdebug: 0
   typed_data: 0
   update: 0
   upgrade_status: 0
