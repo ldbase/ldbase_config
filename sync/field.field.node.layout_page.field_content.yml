@@ -1,0 +1,54 @@
+uuid: 33e80f01-679a-4592-ae54-a9f45e063895
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.layout_page
+    - paragraphs.paragraphs_type.section_using_layout_paragraphs
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.layout_page.field_content
+field_name: field_content
+entity_type: node
+bundle: layout_page
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      section_using_layout_paragraphs: section_using_layout_paragraphs
+      text: text
+    negate: 0
+    target_bundles_drag_drop:
+      date_range_selection:
+        weight: 9
+        enabled: false
+      date_selection:
+        weight: 10
+        enabled: false
+      demographics:
+        weight: 11
+        enabled: false
+      file_metadata:
+        weight: 12
+        enabled: false
+      grant_information:
+        weight: 13
+        enabled: false
+      publication_metadata:
+        weight: 14
+        enabled: false
+      section_using_layout_paragraphs:
+        weight: 15
+        enabled: true
+      text:
+        weight: 16
+        enabled: true
+field_type: entity_reference_revisions

@@ -51,6 +51,8 @@ module:
   inline_form_errors: 0
   layout_builder: 0
   layout_discovery: 0
+  layout_paragraphs: 0
+  layout_paragraphs_permissions: 0
   ldbase_admin: 0
   ldbase_citations: 0
   ldbase_content: 0
@@ -110,6 +112,7 @@ module:
   tombstones: 0
   toolbar: 0
   tour: 0
+  twig_xdebug: 0
   typed_data: 0
   update: 0
   upgrade_status: 0

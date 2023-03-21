@@ -1,0 +1,23 @@
+uuid: e527628c-5e3a-443f-9c4a-35e1871ff7cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: section_using_layout_paragraphs
+label: Section
+icon_uuid: null
+icon_default: null
+description: 'A way to place components within a Layout Paragraph'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecol: 'One column'
+      layout_twocol_section: 'Two column'
+      layout_twocol: 'Two column'
+      layout_twocol_bricks: 'Two column bricks'
+      layout_threecol_section: 'Three column'
+      layout_threecol_25_50_25: 'Three column 25/50/25'
+      layout_threecol_33_34_33: 'Three column 33/34/33'
+      layout_fourcol_section: 'Four column'

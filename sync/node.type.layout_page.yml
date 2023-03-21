@@ -1,0 +1,17 @@
+uuid: a133f3dd-f339-4267-8cc6-5e66db81bb19
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Layout Page'
+type: layout_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

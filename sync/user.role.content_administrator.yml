@@ -8,6 +8,7 @@ dependencies:
     - node.type.code
     - node.type.dataset
     - node.type.document
+    - node.type.layout_page
     - node.type.organization
     - node.type.page
     - node.type.person
@@ -179,3 +180,11 @@ permissions:
   - 'view page revisions'
   - 'view person revisions'
   - 'view project revisions'
+  - 'create layout_page content'
+  - 'delete any layout_page content'
+  - 'delete own layout_page content'
+  - 'delete layout_page revisions'
+  - 'edit any layout_page content'
+  - 'edit own layout_page content'
+  - 'revert layout_page revisions'
+  - 'view layout_page revisions'

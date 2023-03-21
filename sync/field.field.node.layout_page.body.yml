@@ -1,0 +1,23 @@
+uuid: 48174d80-1c3d-4306-a7ee-327818b47feb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.layout_page
+  module:
+    - text
+id: node.layout_page.body
+field_name: body
+entity_type: node
+bundle: layout_page
+label: Teaser/Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

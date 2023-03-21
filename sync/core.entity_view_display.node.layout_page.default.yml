@@ -1,0 +1,29 @@
+uuid: 928d3fa4-deeb-4cbe-93ff-b81a4582fea1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.layout_page.body
+    - field.field.node.layout_page.field_content
+    - node.type.layout_page
+  module:
+    - layout_paragraphs
+    - user
+id: node.layout_page.default
+targetEntityType: node
+bundle: layout_page
+mode: default
+content:
+  field_content:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  links: true
+  search_api_excerpt: true
