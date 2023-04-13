@@ -1,0 +1,62 @@
+uuid: 78a5f692-9959-49e8-8338-a98ad1a12b02
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.data-exports
+  module:
+    - collapsiblock
+    - context
+    - system
+    - user
+  theme:
+    - portcullis
+third_party_settings:
+  collapsiblock:
+    collapse_action: 0
+id: dataexports
+theme: portcullis
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:data-exports'
+settings:
+  id: 'system_menu_block:data-exports'
+  label: 'Data Exports'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  request_path:
+    id: request_path
+    negate: false
+    pages: /data-exports
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      fcrr_admin: fcrr_admin
