@@ -2,6 +2,9 @@ uuid: fd8b6aef-c404-4a20-92c7-a5538c7c3e5f
 langcode: en
 status: true
 dependencies:
+  config:
+    - user.role.administrator
+    - user.role.fcrr_admin
   module:
     - csv_serialization
     - node
@@ -326,9 +329,11 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            administrator: administrator
+            fcrr_admin: fcrr_admin
       cache:
         type: tag
         options: {  }
@@ -494,7 +499,7 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.permissions
+        - user.roles
       tags: {  }
   data_export_1:
     id: data_export_1
@@ -881,10 +886,11 @@ display:
         simple_sitemap_display_extender:
           variants: {  }
       path: data-exports/taxonomies/all-terms-by-taxonomy
-      filename: ''
-      automatic_download: false
+      filename: 'all-terms-by-taxonomy-[date:html_datetime]'
+      automatic_download: true
+      redirect_path: /data-exports
       store_in_public_file_directory: false
-      custom_redirect_path: false
+      custom_redirect_path: true
       redirect_to_display: none
       include_query_params: false
     cache_metadata:
@@ -893,7 +899,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
-        - user.permissions
+        - user.roles
       tags: {  }
   page_1:
     id: page_1
@@ -911,5 +917,5 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.permissions
+        - user.roles
       tags: {  }
