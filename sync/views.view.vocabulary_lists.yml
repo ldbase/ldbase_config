@@ -886,7 +886,7 @@ display:
         simple_sitemap_display_extender:
           variants: {  }
       path: data-exports/taxonomies/all-terms-by-taxonomy
-      filename: 'all-terms-by-taxonomy-[date:html_datetime]'
+      filename: 'all-terms-by-taxonomy-[date:html_datetime].csv'
       automatic_download: true
       redirect_path: /data-exports
       store_in_public_file_directory: false

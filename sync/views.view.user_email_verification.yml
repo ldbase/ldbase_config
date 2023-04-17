@@ -617,7 +617,7 @@ display:
           variants: {  }
       path: data-exports/users/email-verification
       auth: {  }
-      filename: 'user-email-verification-[date:html_datetime]'
+      filename: 'user-email-verification-[date:html_datetime].csv'
       automatic_download: true
       redirect_path: /data-exports
       export_method: standard
