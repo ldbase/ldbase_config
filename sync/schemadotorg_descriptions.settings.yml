@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: FgGBzvYroAT4Ig-RlSqogvmKAIPCUHoTb-DK04eoNdw
+custom_descriptions:
+  itemListElement: null
+  mainEntity: null
+  mainEntityOfPage: null
+  subtype: 'A more specific subtype for the item. This is used to allow more specificity without having to create dedicated Schema.org entity types.'
+  layoutParagraphs: 'A layout built using paragraphs. Layout paragraphs allows site builders to construct a multi-column landing page using Schema.org related paragraphs types.'
+  CollectionPage: 'A collection page.'
+  ImageGallery: 'An image gallery page.'
+  ItemList: 'A list of items of any sort.'
+  Statement: 'A statement about something.'
+  MediaGallery: 'A mixed-media page that can contain media such as images, videos, and other multimedia.'
+  VideoGallery: 'A video gallery page.'
+  MenuItem--offers: 'The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.'
+trim_descriptions: true
+help_descriptions: true

@@ -1,0 +1,20 @@
+_core:
+  default_config_hash: b5-cBDKuTCxJj4DU4huFwDsz_0SyCb_ijDNsL2N4Bts
+default_field_suffix: _subtype
+default_field_label: Subtype
+default_field_description: 'A more specific subtype for the item. This is used to allow more specificity without having to create dedicated Schema.org entity types.'
+default_subtypes:
+  - AdministrativeArea
+  - Article
+  - CivicStructure
+  - EducationalOrganization
+  - Event
+  - FoodEstablishment
+  - LocalBusiness
+  - MedicalBusiness
+  - WebPage
+default_allowed_values:
+  WebPage:
+    AboutPage: 'About Page'
+    ContactPage: 'Contact Page'
+    MedicalWebPage: 'Medical Web Page'

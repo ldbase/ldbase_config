@@ -1,0 +1,19 @@
+_core:
+  default_config_hash: otcIhNzjWkOwjkJ6Lu4YUk3E6c2vOORYKYKgq7Etd9Q
+paragraphs_library:
+  - ContactPoint
+  - MedicalAudience
+  - MedicalContraindication
+  - MedicalIndication
+  - MedicalCause
+  - MedicalProcedure
+  - MedicalRiskFactor
+  - MedicalTherapy
+  - MedicalSignOrSymptom
+  - Statement
+  - Quotation
+  - CollectionPage
+  - ItemList
+  - MediaGallery
+  - ImageGallery
+  - VideoGallery

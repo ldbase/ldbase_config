@@ -1,0 +1,75 @@
+uuid: e5fcb66b-cb51-48f3-8ce2-e61cc987c511
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: wk7fYso70eTQAuFAo6o4o2QWuGltvMn5UXSp7xIZrdw
+id: paragraph
+target_entity_type_id: paragraph
+multiple: false
+recommended_schema_types:
+  quick_start:
+    label: 'Quick Start'
+    types:
+      - NutritionInformation
+      - Offer
+      - Question
+  common:
+    label: Common
+    types:
+      - ContactPoint
+      - PostalAddress
+      - Language
+      - Occupation
+  web:
+    label: Web
+    types:
+      - DefinedTerm
+      - ItemList
+  content:
+    label: Content
+    types:
+      - Question
+      - HowToSupply
+      - HowToTool
+      - HowToDirection
+      - HowToTip
+      - HowToStep
+      - HowToSection
+  organization:
+    label: Organization
+    types:
+      - OpeningHoursSpecification
+      - ServiceChannel
+      - ProgramMembership
+  food:
+    label: Food
+    types:
+      - NutritionInformation
+      - MenuSection
+      - MenuItem
+  education:
+    label: Education
+    types:
+      - EducationalOccupationalProgram
+  medical:
+    label: Medical
+    types:
+      - MedicalAudience
+      - MedicalContraindication
+      - MedicalIndication
+      - MedicalCause
+      - MedicalProcedure
+      - MedicalRiskFactor
+      - MedicalTest
+      - MedicalTherapy
+      - MedicalSignOrSymptom
+default_schema_types: {  }
+default_schema_type_properties: {  }
+default_base_fields:
+  uuid: {  }
+  created: {  }
+  langcode:
+    - inLanguage
+default_component_weights:
+  langcode: 200

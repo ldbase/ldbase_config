@@ -1,0 +1,130 @@
+_core:
+  default_config_hash: YH2bPSi4CUITnkPdDu1_L11xp_yOrbdj0krRKc5PKd0
+sets:
+  required:
+    label: Required
+    types:
+      - 'media:AudioObject'
+      - 'media:DataDownload'
+      - 'media:ImageObject'
+      - 'media:VideoObject'
+      - 'taxonomy_term:DefinedTerm'
+      - 'node:Person'
+  common:
+    label: Common
+    types:
+      - 'node:Place'
+      - 'node:Organization'
+      - 'node:Person'
+      - 'node:Event'
+      - 'node:Article'
+      - 'node:WebPage'
+  web_site:
+    label: 'Web site'
+    types:
+      - 'node:WebPage'
+      - 'node:WebSite'
+  media:
+    label: Media
+    types:
+      - 'node:MediaGallery'
+      - 'node:ImageGallery'
+      - 'node:VideoGallery'
+  faq:
+    label: FAQ
+    types:
+      - 'paragraph:Question'
+      - 'node:FAQPage'
+  howto:
+    label: 'How to'
+    types:
+      - 'paragraph:HowToSupply'
+      - 'paragraph:HowToTool'
+      - 'paragraph:HowToDirection'
+      - 'paragraph:HowToTip'
+      - 'paragraph:HowToStep'
+      - 'paragraph:HowToSection'
+      - 'node:HowTo'
+  food_establishment:
+    label: 'Food establishment'
+    types:
+      - 'paragraph:NutritionInformation'
+      - 'paragraph:MenuItem'
+      - 'paragraph:MenuSection'
+      - 'node:Menu'
+      - 'node:FoodEstablishment'
+  recipe:
+    label: Recipe
+    types:
+      - 'paragraph:NutritionInformation'
+      - 'node:Recipe'
+  movie:
+    label: Movie
+    types:
+      - 'node:Movie'
+  podcast:
+    label: Podcast
+    types:
+      - 'node:PodcastEpisode'
+      - 'node:PodcastSeason'
+      - 'node:PodcastSeries'
+  tv:
+    label: TV
+    types:
+      - 'node:TVEpisode'
+      - 'node:TVSeason'
+      - 'node:TVSeries'
+  education_organization:
+    label: 'Education organization'
+    types:
+      - 'node:CourseInstance'
+      - 'node:Course'
+      - 'node:EducationalOrganization'
+  local_business:
+    label: 'Local business'
+    types:
+      - 'paragraph:ServiceChannel'
+      - 'node:Service'
+      - 'node:JobPosting'
+      - 'node:LocalBusiness'
+  medical_doctor:
+    label: 'Medical doctor'
+    types:
+      - 'node:Physician'
+  medical_research:
+    label: 'Medical research'
+    types:
+      - 'node:ResearchOrganization'
+      - 'node:ResearchProject'
+  medical_organization:
+    label: 'Medical organization'
+    types:
+      - 'paragraph:MedicalAudience'
+      - 'node:MedicalTest'
+      - 'node:Hospital'
+      - 'node:MedicalBusiness'
+      - 'node:MedicalClinic'
+      - 'node:DiagnosticLab'
+  medical_content:
+    label: 'Medical content'
+    types:
+      - 'node:MedicalWebPage'
+      - 'node:HealthTopicContent'
+  medical_information:
+    label: 'Medical information'
+    types:
+      - 'paragraph:MedicalAudience'
+      - 'paragraph:MedicalDevice'
+      - 'paragraph:MedicalContraindication'
+      - 'paragraph:MedicalIndication'
+      - 'paragraph:MedicalCause'
+      - 'paragraph:MedicalRiskFactor'
+      - 'paragraph:MedicalSignOrSymptom'
+      - 'paragraph:MedicalProcedure'
+      - 'paragraph:MedicalTherapy'
+      - 'paragraph:MedicalTest'
+      - 'node:Drug'
+      - 'node:DietarySupplement'
+      - 'node:MedicalStudy'
+      - 'node:MedicalTrial'
+      - 'node:MedicalCondition'

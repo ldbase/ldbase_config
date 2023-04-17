@@ -1,0 +1,27 @@
+uuid: ffe7ee06-f01c-4743-b3ae-d4f15aee0ec2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kUZrkfWn89OcQOoILJ3h-OPeMt-j-xCGUdctYviE8IU
+id: user
+target_entity_type_id: user
+multiple: false
+recommended_schema_types: {  }
+default_schema_types:
+  user: Person
+default_schema_type_properties: {  }
+default_base_fields:
+  uuid: {  }
+  langcode:
+    - inLanguage
+  name:
+    - name
+  mail:
+    - email
+  user_picture:
+    - image
+default_component_weights:
+  user_picture: 0
+  langcode: 200
+  member_for: 200

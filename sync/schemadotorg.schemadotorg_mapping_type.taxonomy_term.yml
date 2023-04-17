@@ -1,0 +1,40 @@
+uuid: 743da1e3-d95b-4abb-9d19-718dd39c3e9d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-g6af5OJGWPr1slvDYqUNMeoZM0hNgNPo8f_JfdnHQQ'
+id: taxonomy_term
+target_entity_type_id: taxonomy_term
+multiple: true
+recommended_schema_types:
+  term:
+    label: Term
+    types:
+      - DefinedTerm
+      - CategoryCode
+  menu:
+    label: Menu
+    types:
+      - MenuItem
+      - MenuSection
+      - Menu
+default_schema_types:
+  tags: DefinedTerm
+default_schema_type_properties: {  }
+default_base_fields:
+  status: {  }
+  uuid:
+    - termCode
+  changed:
+    - dateModified
+  langcode:
+    - inLanguage
+  name:
+    - name
+  description:
+    - description
+default_component_weights:
+  langcode: 200
+  published: 200
+  path: 210

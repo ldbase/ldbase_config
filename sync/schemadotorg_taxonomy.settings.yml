@@ -1,0 +1,13 @@
+_core:
+  default_config_hash: QDe_uFCawAfS1C9kifA44W3ymtPkR-usBhPB-2V-p7k
+default_vocabularies_group_label: 'Tags / Categories'
+default_vocabularies:
+  tags:
+    id: tags
+    label: Tags
+    description: 'Use tags to group articles on similar topics into categories.'
+    auto_create: true
+property_vocabularies:
+  recipeCategory:
+    id: recipe_category
+    label: 'Recipe category'
