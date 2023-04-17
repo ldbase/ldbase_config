@@ -1,0 +1,27 @@
+uuid: d60dbb97-4631-454c-9ffb-710a42a60390
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dataset.body
+    - field.field.node.dataset.field_affiliated_parents
+    - field.field.node.dataset.field_component_skills
+    - field.field.node.dataset.field_dataset_version
+    - field.field.node.dataset.field_license
+    - field.field.node.dataset.field_related_persons
+    - node.type.dataset
+id: node.dataset
+target_entity_type_id: node
+target_bundle: dataset
+schema_type: Dataset
+schema_properties:
+  field_related_persons: creator
+  created: dateCreated
+  changed: dateModified
+  body: description
+  field_dataset_version: distribution
+  field_affiliated_parents: includedInDataCatalog
+  langcode: inLanguage
+  field_component_skills: keywords
+  field_license: license
+  title: name

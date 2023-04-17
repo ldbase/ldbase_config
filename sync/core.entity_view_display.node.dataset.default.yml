@@ -644,7 +644,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 9
     region: content
   field_affiliated_parents:
     type: entity_reference_label
@@ -652,7 +652,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 29
+    weight: 109
     region: content
   field_assessment_name:
     type: entity_reference_label
@@ -664,11 +664,11 @@ content:
     region: content
   field_component_skills:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
-    weight: 11
+    weight: 109
     region: content
   field_data_collection_locations:
     type: entity_reference_label
@@ -708,7 +708,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 32
+    weight: 109
     region: content
   field_demographics_information:
     type: entity_reference_revisions_entity_view
@@ -763,11 +763,11 @@ content:
     region: content
   field_license:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
-    weight: 15
+    weight: 109
     region: content
   field_license_other:
     type: string
@@ -803,11 +803,11 @@ content:
     region: content
   field_related_persons:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 13
     region: content
   field_special_populations:
     type: entity_reference_label

@@ -43,7 +43,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 9
     region: content
     settings:
       rows: 9
@@ -53,13 +53,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 200
     region: content
     settings: {  }
     third_party_settings: {  }
   field_affiliated_parents:
     type: entity_reference_autocomplete
-    weight: 25
+    weight: 109
     region: content
     settings:
       match_operator: CONTAINS
@@ -79,7 +79,7 @@ content:
     third_party_settings: {  }
   field_component_skills:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 109
     region: content
     settings:
       match_operator: CONTAINS
@@ -123,7 +123,7 @@ content:
     third_party_settings: {  }
   field_dataset_version:
     type: entity_reference_paragraphs
-    weight: 28
+    weight: 109
     region: content
     settings:
       title: Paragraph
@@ -178,7 +178,7 @@ content:
     third_party_settings: {  }
   field_license:
     type: entity_reference_autocomplete
-    weight: 20
+    weight: 109
     region: content
     settings:
       match_operator: CONTAINS
@@ -224,7 +224,7 @@ content:
     third_party_settings: {  }
   field_related_persons:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 13
     region: content
     settings:
       match_operator: CONTAINS
@@ -287,34 +287,34 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 220
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 3
+    weight: 210
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 6
+    weight: 220
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 4
+    weight: 210
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 2
     region: content
     settings:
       size: 60
@@ -322,7 +322,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 200
     region: content
     settings:
       match_operator: CONTAINS
