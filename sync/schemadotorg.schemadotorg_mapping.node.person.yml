@@ -1,0 +1,30 @@
+uuid: d0a2081f-150a-4b68-bd68-0fbfbca4d74f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.person.body
+    - field.field.node.person.field_email
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_last_name
+    - field.field.node.person.field_orcid
+    - field.field.node.person.field_publishing_names
+    - field.field.node.person.field_related_organizations
+    - field.field.node.person.field_thumbnail
+    - field.field.node.person.field_web_presence
+    - node.type.person
+id: node.person
+target_entity_type_id: node
+target_bundle: person
+schema_type: Person
+schema_properties:
+  field_publishing_names: additionalName
+  body: description
+  field_orcid: disambiguatingDescription
+  field_email: email
+  field_last_name: familyName
+  field_first_name: givenName
+  field_thumbnail: image
+  title: name
+  field_web_presence: sameAs
+  field_related_organizations: worksFor

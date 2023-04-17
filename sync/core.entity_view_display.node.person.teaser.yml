@@ -37,7 +37,7 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 9
     region: content
   flag_ldbase_favorites:
     settings: {  }
@@ -50,6 +50,11 @@ content:
     weight: 100
     region: content
   person_project_contributions_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  persons_entity_view_1:
     settings: {  }
     third_party_settings: {  }
     weight: 10

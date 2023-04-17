@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.person.field_thumbnail
     - field.field.node.person.field_web_presence
     - field.field.node.person.field_website
+    - image.style.thumbnail
     - node.type.person
   module:
     - address
@@ -256,6 +257,38 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 20
             additional: {  }
+          0168762c-73ca-4062-8ea8-5eb84f8ae4c9:
+            uuid: 0168762c-73ca-4062-8ea8-5eb84f8ae4c9
+            region: content
+            configuration:
+              id: 'field_block:node:person:field_last_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          3374a5a7-5598-4c1e-b28c-623fd79fbf4a:
+            uuid: 3374a5a7-5598-4c1e-b28c-623fd79fbf4a
+            region: content
+            configuration:
+              id: 'field_block:node:person:field_first_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -301,8 +334,8 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
-    region: content
+    weight: 9
+    region: first
   field_accepted_terms_of_use:
     type: datetime_default
     label: above
@@ -343,7 +376,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 17
+    weight: 16
     region: first
   field_first_name:
     type: string
@@ -351,7 +384,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 4
+    weight: 109
     region: content
   field_google_scholar_id:
     type: string
@@ -367,7 +400,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 6
+    weight: 109
     region: content
   field_location:
     type: address_default
@@ -390,8 +423,8 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
-    region: content
+    weight: 109
+    region: first
   field_professional_titles:
     type: string
     label: above
@@ -406,7 +439,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 15
+    weight: 109
     region: first
   field_related_organizations:
     type: entity_reference_label
@@ -418,15 +451,15 @@ content:
     region: content
   field_thumbnail:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: thumbnail
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 13
-    region: content
+    weight: 5
+    region: first
   field_web_presence:
     type: link
     label: above
@@ -437,8 +470,8 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 8
-    region: content
+    weight: 109
+    region: first
   field_website:
     type: link
     label: above
