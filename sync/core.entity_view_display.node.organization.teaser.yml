@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.organization.body
+    - field.field.node.organization.field_location
+    - field.field.node.organization.field_parent_organization
+    - field.field.node.organization.field_thumbnail
+    - field.field.node.organization.field_website
     - node.type.organization
   module:
     - text
@@ -20,7 +24,7 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 9
     region: content
   flag_ldbase_favorites:
     settings: {  }
@@ -31,6 +35,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 100
+    region: content
+  organizations_affiliated_persons_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
     region: content
 hidden:
   field_location: true

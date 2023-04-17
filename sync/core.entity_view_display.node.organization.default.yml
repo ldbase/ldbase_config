@@ -171,14 +171,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 9
     region: content
   field_location:
     type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 109
     region: content
   field_parent_organization:
     type: entity_reference_label
@@ -186,7 +186,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 5
+    weight: 109
     region: content
   field_thumbnail:
     type: image
@@ -197,7 +197,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_website:
     type: link
@@ -209,7 +209,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 109
     region: content
   flag_ldbase_favorites:
     settings: {  }

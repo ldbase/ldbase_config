@@ -1,0 +1,22 @@
+uuid: c07dcc1f-9083-4a77-8bbc-fc3bed6c23ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.organization.body
+    - field.field.node.organization.field_location
+    - field.field.node.organization.field_parent_organization
+    - field.field.node.organization.field_thumbnail
+    - field.field.node.organization.field_website
+    - node.type.organization
+id: node.organization
+target_entity_type_id: node
+target_bundle: organization
+schema_type: Organization
+schema_properties:
+  field_location: address
+  body: description
+  field_thumbnail: image
+  title: name
+  field_parent_organization: parentOrganization
+  field_website: sameAs
