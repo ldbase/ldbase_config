@@ -31,7 +31,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 109
     region: content
     settings:
       rows: 9
@@ -41,7 +41,7 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 200
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -104,7 +104,7 @@ content:
     third_party_settings: {  }
   field_project_type:
     type: entity_reference_autocomplete
-    weight: 16
+    weight: 109
     region: content
     settings:
       match_operator: CONTAINS
@@ -114,7 +114,7 @@ content:
     third_party_settings: {  }
   field_related_organizations:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 109
     region: content
     settings:
       match_operator: CONTAINS
@@ -124,7 +124,7 @@ content:
     third_party_settings: {  }
   field_related_persons:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 13
     region: content
     settings:
       match_operator: CONTAINS
@@ -162,34 +162,34 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 220
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 3
+    weight: 210
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 7
+    weight: 220
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 4
+    weight: 210
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 2
     region: content
     settings:
       size: 60
@@ -197,7 +197,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 200
     region: content
     settings:
       match_operator: CONTAINS

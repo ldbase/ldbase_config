@@ -396,7 +396,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 109
     region: content
   field_activity_range_select:
     type: entity_reference_revisions_entity_view
@@ -455,27 +455,27 @@ content:
     region: content
   field_project_type:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 109
     region: content
   field_related_organizations:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
-    weight: 4
+    weight: 109
     region: content
   field_related_persons:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 13
     region: content
   field_schooling:
     type: entity_reference_label

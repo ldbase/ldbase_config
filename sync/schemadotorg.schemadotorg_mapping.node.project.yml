@@ -1,0 +1,23 @@
+uuid: c86f4a60-5641-48fc-a118-3d810cd48164
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.body
+    - field.field.node.project.field_project_type
+    - field.field.node.project.field_related_organizations
+    - field.field.node.project.field_related_persons
+    - node.type.project
+id: node.project
+target_entity_type_id: node
+target_bundle: project
+schema_type: DataCatalog
+schema_properties:
+  body: abstract
+  field_related_persons: creator
+  created: dateCreated
+  changed: dateModified
+  langcode: inLanguage
+  field_project_type: keywords
+  title: name
+  field_related_organizations: sourceOrganization

@@ -1,0 +1,18 @@
+uuid: 733e71e9-be31-42f5-b29c-688a8862432d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.file_metadata.field_file_upload
+    - field.field.paragraph.file_metadata.field_file_version_description
+    - field.field.paragraph.file_metadata.field_file_version_id
+    - paragraphs.paragraphs_type.file_metadata
+id: paragraph.file_metadata
+target_entity_type_id: paragraph
+target_bundle: file_metadata
+schema_type: DataDownload
+schema_properties:
+  field_file_upload: contentUrl
+  field_file_version_description: description
+  langcode: inLanguage
+  field_file_version_id: version

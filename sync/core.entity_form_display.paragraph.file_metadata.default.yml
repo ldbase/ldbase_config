@@ -28,14 +28,14 @@ content:
     third_party_settings: {  }
   field_file_upload:
     type: file_generic
-    weight: 1
+    weight: 109
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_file_version_description:
     type: string_textfield
-    weight: 4
+    weight: 9
     region: content
     settings:
       size: 60
@@ -43,7 +43,7 @@ content:
     third_party_settings: {  }
   field_file_version_id:
     type: number
-    weight: 6
+    weight: 109
     region: content
     settings:
       placeholder: ''

@@ -30,7 +30,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 3
+    weight: 109
     region: content
   field_file_version_description:
     type: string
@@ -38,7 +38,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 9
     region: content
   field_file_version_id:
     type: number_integer
@@ -47,7 +47,7 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 5
+    weight: 109
     region: content
   field_file_version_label:
     type: string
