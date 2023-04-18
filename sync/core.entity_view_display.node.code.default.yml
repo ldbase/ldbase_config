@@ -332,7 +332,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 10
     region: content
   field_affiliated_parents:
     type: entity_reference_label
@@ -340,15 +340,15 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 18
+    weight: 109
     region: content
   field_code_file:
     type: file_default
-    label: above
+    label: inline
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 23
+    weight: 108
     region: content
   field_code_type:
     type: entity_reference_label
@@ -367,23 +367,23 @@ content:
     region: content
   field_doi:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 15
+    weight: 109
     region: content
   field_external_resource:
     type: link
-    label: above
+    label: inline
     settings:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
+      rel: '0'
+      target: '0'
     third_party_settings: {  }
-    weight: 9
+    weight: 109
     region: content
   field_license:
     type: entity_reference_label
@@ -412,11 +412,11 @@ content:
     region: content
   field_related_persons:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 12
     region: content
   field_unaffiliated_parents:
     type: entity_reference_label

@@ -1,0 +1,27 @@
+uuid: 05123578-993b-4a1e-8cfd-46a814678105
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.code.body
+    - field.field.node.code.field_affiliated_parents
+    - field.field.node.code.field_code_file
+    - field.field.node.code.field_doi
+    - field.field.node.code.field_external_resource
+    - field.field.node.code.field_related_persons
+    - node.type.code
+id: node.code
+target_entity_type_id: node
+target_bundle: code
+schema_type: Code
+schema_properties:
+  field_related_persons: author
+  created: dateCreated
+  changed: dateModified
+  body: text
+  langcode: inLanguage
+  field_affiliated_parents: isPartOf
+  field_code_file: mainEntity
+  title: name
+  field_doi: sameAs
+  field_external_resource: url

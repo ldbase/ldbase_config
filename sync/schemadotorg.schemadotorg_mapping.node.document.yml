@@ -1,0 +1,27 @@
+uuid: 85c80434-d5bc-49dd-b36b-8331971c0334
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.document.body
+    - field.field.node.document.field_affiliated_parents
+    - field.field.node.document.field_document_file
+    - field.field.node.document.field_external_resource
+    - field.field.node.document.field_license
+    - field.field.node.document.field_related_persons
+    - node.type.document
+id: node.document
+target_entity_type_id: node
+target_bundle: document
+schema_type: DigitalDocument
+schema_properties:
+  field_related_persons: author
+  created: dateCreated
+  changed: dateModified
+  body: description
+  langcode: inLanguage
+  field_affiliated_parents: isPartOf
+  field_license: license
+  field_document_file: mainEntity
+  title: name
+  field_external_resource: url

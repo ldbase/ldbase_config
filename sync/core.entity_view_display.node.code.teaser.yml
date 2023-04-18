@@ -31,7 +31,7 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 10
     region: content
   flag_ldbase_favorites:
     settings: {  }

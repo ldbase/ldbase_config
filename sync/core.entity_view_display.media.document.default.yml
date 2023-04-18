@@ -15,10 +15,9 @@ bundle: document
 mode: default
 content:
   field_media_document:
-    type: file_default
+    type: file_url_plain
     label: visually_hidden
-    settings:
-      use_description_as_link_text: true
+    settings: {  }
     third_party_settings: {  }
     weight: 109
     region: content
