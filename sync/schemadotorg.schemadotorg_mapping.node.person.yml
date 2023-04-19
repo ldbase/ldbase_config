@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.person.field_publishing_names
     - field.field.node.person.field_related_organizations
     - field.field.node.person.field_thumbnail
-    - field.field.node.person.field_web_presence
     - node.type.person
 id: node.person
 target_entity_type_id: node
@@ -20,11 +19,10 @@ schema_type: Person
 schema_properties:
   field_publishing_names: additionalName
   body: description
-  field_orcid: disambiguatingDescription
   field_email: email
   field_last_name: familyName
   field_first_name: givenName
   field_thumbnail: image
   title: name
-  field_web_presence: sameAs
+  field_orcid: sameAs
   field_related_organizations: worksFor

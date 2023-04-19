@@ -1,0 +1,15 @@
+uuid: 6a0a6d69-7098-4329-a380-3a4885aebdbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grant_information.field_funding_agency
+    - field.field.paragraph.grant_information.field_grant_number
+    - paragraphs.paragraphs_type.grant_information
+id: paragraph.grant_information
+target_entity_type_id: paragraph
+target_bundle: grant_information
+schema_type: FundingAgency
+schema_properties:
+  field_grant_number: description
+  field_funding_agency: name

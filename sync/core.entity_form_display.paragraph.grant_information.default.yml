@@ -13,7 +13,7 @@ mode: default
 content:
   field_funding_agency:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 2
     region: content
     settings:
       match_operator: CONTAINS
@@ -23,7 +23,7 @@ content:
     third_party_settings: {  }
   field_grant_number:
     type: string_textfield
-    weight: 0
+    weight: 9
     region: content
     settings:
       size: 60

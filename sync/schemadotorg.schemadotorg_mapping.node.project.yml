@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.project.body
+    - field.field.node.project.field_doi
     - field.field.node.project.field_project_type
     - field.field.node.project.field_related_organizations
     - field.field.node.project.field_related_persons
@@ -20,4 +21,5 @@ schema_properties:
   langcode: inLanguage
   field_project_type: keywords
   title: name
+  field_doi: sameAs
   field_related_organizations: sourceOrganization
