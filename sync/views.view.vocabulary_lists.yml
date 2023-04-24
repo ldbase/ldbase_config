@@ -329,11 +329,8 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: role
-        options:
-          role:
-            administrator: administrator
-            fcrr_admin: fcrr_admin
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -499,7 +496,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.roles
       tags: {  }
   data_export_1:
     id: data_export_1
@@ -839,6 +835,12 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+      access:
+        type: role
+        options:
+          role:
+            administrator: administrator
+            fcrr_admin: fcrr_admin
       arguments: {  }
       filters: {  }
       filter_groups:
@@ -860,6 +862,7 @@ display:
             utf8_bom: '0'
             use_serializer_encode_only: false
       defaults:
+        access: false
         group_by: false
         relationships: false
         fields: false
@@ -908,7 +911,22 @@ display:
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender:
+          variants: {  }
       path: taxonomy/%vocabulary
     cache_metadata:
       max-age: -1
@@ -917,5 +935,4 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.roles
       tags: {  }
