@@ -96,7 +96,6 @@ module:
   schemadotorg: 0
   schemadotorg_jsonld: 0
   schemadotorg_jsonld_breadcrumb: 0
-  schemadotorg_jsonld_endpoint: 0
   schemadotorg_mapping_set: 0
   schemadotorg_media: 0
   schemadotorg_paragraphs: 0
