@@ -1050,8 +1050,8 @@ schema_properties:
     increasesRiskOf:
       unlimited: true
     itemListElement:
-      label: Items
       type: text_long
+      label: Items
       unlimited: true
     jobBenefits:
       type: text_long
