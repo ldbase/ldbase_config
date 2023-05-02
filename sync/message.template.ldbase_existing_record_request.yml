@@ -12,7 +12,7 @@ text:
     value: "<p>LDbase Notification: Request to Review Contributor Account Duplication</p>\r\n"
     format: basic_html
   -
-    value: "<p>The user <strong>@user</strong>&nbsp;has indicated that they believe they were entered as a contributor on @object_text @link_to_object</p>\r\n\r\n<p>As an administrator for this project, you may approve and connect the user to the item or reject it and leave things as they are.</p>\r\n\r\n<p>Go to @existing_records_requests_link&nbsp;to view the Existing Record Requests for this Project.</p>\r\n"
+    value: "<p>The user <strong>@user</strong>&nbsp;has indicated that they believe they were entered as a contributor on @object_text <a href=\"@link_to_object\">@link_to_object</a></p>\r\n\r\n<p>As an administrator for this project, you may approve and connect the user to the item or reject it and leave things as they are.</p>\r\n\r\n<p>Go to <a href=\"@existing_records_requests_link\">@existing_records_requests_link</a>&nbsp;to view the Existing Record Requests for this Project.</p>\r\n"
     format: basic_html
 settings:
   'token options':

@@ -1,9 +1,7 @@
 uuid: 199654bf-5d08-454e-8063-fe5a79f8a839
 langcode: en
 status: open
-dependencies:
-  module:
-    - ldbase_new_account
+dependencies: {  }
 weight: 0
 open: null
 close: null
@@ -227,14 +225,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  ldbase_new_account_step_three:
-    id: new_account_step_three_webform
-    handler_id: ldbase_new_account_step_three
-    label: 'LDbase New Account Step Three'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 0
-    settings: {  }
+handlers: {  }
 variants: {  }

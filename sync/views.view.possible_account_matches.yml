@@ -74,7 +74,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Action
+          action_title: 'Take the following action on this:'
           include_exclude: include
           selected_actions:
             - claim_possible_account_match
@@ -627,7 +627,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: "<h1>Possible Account Matches for {{ title_3 }}</h1>\r\n\r\n<p>Please review the records below and check any existing records where you have been identified as a contributor.</p>"
+          content: "<h1>Did you, {{ title_3 }}, contribute to the below data added to LDbase?</h1>\r\n\r\n<p>Please review the records below and let us know by checking the appropriate box, selecting from the dropdown whether to accept or reject this connection to you, and then clicking Apply. If you are unsure, click on the link to review the content.</p>"
           tokenize: true
       footer:
         result:
