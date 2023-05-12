@@ -4,7 +4,6 @@ status: open
 dependencies:
   module:
     - honeypot
-    - ldbase_new_account
 third_party_settings:
   honeypot:
     honeypot: true
@@ -282,14 +281,5 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers:
-  ldbase_new_account_step_one:
-    id: new_account_step_one_webform
-    handler_id: ldbase_new_account_step_one
-    label: 'LDbase New Account Step One'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 0
-    settings: {  }
+handlers: {  }
 variants: {  }
