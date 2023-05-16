@@ -627,7 +627,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: "<h1>Did you, {{ title_3 }}, contribute to the below data added to LDbase?</h1>\r\n\r\n<p>Please review the records below and let us know by checking the appropriate box, selecting from the dropdown whether to accept or reject this connection to you, and then clicking Apply. If you are unsure, click on the link to review the content.</p>"
+          content: "<h1>Did you, {{ title_3 }}, contribute to the following content added to LDbase</h1>\r\n\r\n<p>Please review the records below and let us know by checking the appropriate box, selecting from the dropdown whether to accept or reject this connection to you, and then clicking Apply. If you are unsure, click on the link to review the content.</p>"
           tokenize: true
       footer:
         result:

@@ -1,13 +1,13 @@
-uuid: bf28715f-1c54-48fa-8872-b6197137fbf4
+uuid: 3a359322-9cf8-4e35-8942-b5ec18133557
 langcode: en
 status: true
 dependencies:
   module:
     - ldbase_new_account
 _core:
-  default_config_hash: ghdNpFzjE5vuEbBUngsuGHEI2C3yAsz-vpLECXXSVEQ
+  default_config_hash: Me9SVSIT7NRMxHObW_shVp6ub703qWzd6ipET0_gGu0
 id: claim_possible_account_match
-label: 'LDbase - Accept. Yes, I contributed to this data'
+label: 'LDbase - Accept. Yes, I contributed to this content'
 type: node
 plugin: claim_possible_account_match
 configuration: {  }

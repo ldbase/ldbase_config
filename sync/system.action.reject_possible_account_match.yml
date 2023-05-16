@@ -1,13 +1,13 @@
-uuid: df51ec67-8129-4df5-a278-fc6d98a91cee
+uuid: ae289e25-d133-41f1-b3ac-efe7d0e43110
 langcode: en
 status: true
 dependencies:
   module:
     - ldbase_new_account
 _core:
-  default_config_hash: Kxg3piOWwZCJTKk60TBiIgzk0xcbD8zxefBgQgSy1Xc
+  default_config_hash: XMqG81U4jdQDG51kiIMT3nKx4ZUBofcOa4sp22wcBnI
 id: reject_possible_account_match
-label: 'LDbase - Reject. I did not contribute to this project'
+label: 'LDbase - Reject. I did not contribute to this content'
 type: node
 plugin: reject_possible_account_match
 configuration: {  }
