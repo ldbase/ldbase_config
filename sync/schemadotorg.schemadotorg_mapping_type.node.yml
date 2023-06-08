@@ -102,6 +102,7 @@ default_schema_type_properties:
   Article:
     - '-text'
     - articleBody
+default_schema_type_view_displays: {  }
 default_base_fields:
   uuid: {  }
   revision_uid: {  }

@@ -25,6 +25,7 @@ default_schema_type_properties:
   MediaObject:
     - dateCreated
     - dateModified
+default_schema_type_view_displays: {  }
 default_base_fields:
   path: {  }
   revision_created: {  }

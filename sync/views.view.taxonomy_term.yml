@@ -4,8 +4,25 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - taxonomy.vocabulary.areas_of_expertise
+    - taxonomy.vocabulary.assessments
+    - taxonomy.vocabulary.code_or_data_format
+    - taxonomy.vocabulary.code_type
+    - taxonomy.vocabulary.constructs
+    - taxonomy.vocabulary.curricula
+    - taxonomy.vocabulary.data_collection_locations
+    - taxonomy.vocabulary.dataset_variables
+    - taxonomy.vocabulary.document_type
+    - taxonomy.vocabulary.funding_agencies
+    - taxonomy.vocabulary.licenses
+    - taxonomy.vocabulary.participants
+    - taxonomy.vocabulary.project_types
+    - taxonomy.vocabulary.schooling
+    - taxonomy.vocabulary.special_populations
+    - taxonomy.vocabulary.time_methods
   module:
     - node
+    - paragraphs
     - taxonomy
     - user
 id: taxonomy_term
@@ -22,6 +39,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
+      title: 'Term:'
       fields:
         type:
           id: type
@@ -244,6 +262,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      group_by: true
       link_display: page_1
       link_url: ''
       header:
@@ -318,12 +337,101 @@ display:
     position: 1
     display_options:
       empty: {  }
+      arguments:
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          default_action: 'not found'
+          exception:
+            value: ''
+            title_enable: false
+            title: All
+          title_enable: true
+          title: '{{ arguments.tid }}'
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: 'entity:taxonomy_term'
+            fail: 'not found'
+          validate_options:
+            bundles:
+              areas_of_expertise: areas_of_expertise
+              assessments: assessments
+              code_or_data_format: code_or_data_format
+              code_type: code_type
+              constructs: constructs
+              curricula: curricula
+              dataset_variables: dataset_variables
+              data_collection_locations: data_collection_locations
+              document_type: document_type
+              licenses: licenses
+              participants: participants
+              project_types: project_types
+              schooling: schooling
+              special_populations: special_populations
+              time_methods: time_methods
+            access: true
+            operation: view
+            multiple: 0
+          break_phrase: false
+          add_table: false
+          require_value: false
+          reduce_duplicates: false
       query:
         type: views_query
         options: {  }
       defaults:
         empty: false
-      display_extenders: {  }
+        arguments: false
+        header: false
+      header:
+        entity_taxonomy_term:
+          id: entity_taxonomy_term
+          table: views
+          field: entity_taxonomy_term
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity
+          empty: true
+          target: '{{ arguments.tid }}'
+          view_mode: full
+          tokenize: true
+          bypass_access: false
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender:
+          variants: {  }
       path: taxonomy/term/%
     cache_metadata:
       max-age: -1
@@ -335,3 +443,315 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+  page_2:
+    id: page_2
+    display_title: 'Page 2'
+    display_plugin: page
+    position: 3
+    display_options:
+      fields:
+        rendered_entity:
+          id: rendered_entity
+          table: node
+          field: rendered_entity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: rendered_entity
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: teaser
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: field_funding_agency
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          convert_spaces: false
+      arguments:
+        field_funding_agency_target_id:
+          id: field_funding_agency_target_id
+          table: paragraph__field_funding_agency
+          field: field_funding_agency_target_id
+          relationship: field_grant_information
+          group_type: group
+          admin_label: ''
+          plugin_id: numeric
+          default_action: empty
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: true
+          title: '{{ arguments.tid }}'
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: 'entity:taxonomy_term'
+            fail: 'not found'
+          validate_options:
+            bundles:
+              funding_agencies: funding_agencies
+            access: false
+            operation: view
+            multiple: 0
+          break_phrase: false
+          not: false
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        arguments: false
+        header: false
+      relationships:
+        field_grant_information:
+          id: field_grant_information
+          table: node__field_grant_information
+          field: field_grant_information
+          relationship: none
+          group_type: group
+          admin_label: 'field_grant_information: Paragraph'
+          plugin_id: standard
+          required: false
+        field_funding_agency:
+          id: field_funding_agency
+          table: paragraph__field_funding_agency
+          field: field_funding_agency
+          relationship: field_grant_information
+          group_type: group
+          admin_label: 'field_funding_agency: Taxonomy term'
+          plugin_id: standard
+          required: false
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<h1 class="title page-title">{{ name }}</h1>'
+            format: full_html
+          tokenize: true
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender:
+          variants: {  }
+      path: taxonomy/term/%/paragraphs
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:core.entity_view_display.node.article.default'
+        - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.search_index'
+        - 'config:core.entity_view_display.node.article.search_result'
+        - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.code.default'
+        - 'config:core.entity_view_display.node.code.teaser'
+        - 'config:core.entity_view_display.node.dataset.default'
+        - 'config:core.entity_view_display.node.dataset.teaser'
+        - 'config:core.entity_view_display.node.document.default'
+        - 'config:core.entity_view_display.node.document.teaser'
+        - 'config:core.entity_view_display.node.embargo.default'
+        - 'config:core.entity_view_display.node.embargo.teaser'
+        - 'config:core.entity_view_display.node.existing_record_request.default'
+        - 'config:core.entity_view_display.node.existing_record_request.teaser'
+        - 'config:core.entity_view_display.node.layout_page.default'
+        - 'config:core.entity_view_display.node.layout_page.teaser'
+        - 'config:core.entity_view_display.node.organization.default'
+        - 'config:core.entity_view_display.node.organization.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.search_index'
+        - 'config:core.entity_view_display.node.page.search_result'
+        - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.person.default'
+        - 'config:core.entity_view_display.node.person.teaser'
+        - 'config:core.entity_view_display.node.possible_user_match.default'
+        - 'config:core.entity_view_display.node.possible_user_match.teaser'
+        - 'config:core.entity_view_display.node.project.default'
+        - 'config:core.entity_view_display.node.project.teaser'
+        - 'config:core.entity_view_display.node.tombstone.default'
+        - 'config:core.entity_view_display.node.tombstone.teaser'
+        - 'config:core.entity_view_display.node.webform.default'
+        - 'config:core.entity_view_display.node.webform.teaser'
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings
+        - schemadotorg_descriptions.settings

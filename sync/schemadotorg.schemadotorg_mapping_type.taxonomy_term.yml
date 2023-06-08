@@ -22,6 +22,7 @@ recommended_schema_types:
 default_schema_types:
   tags: DefinedTerm
 default_schema_type_properties: {  }
+default_schema_type_view_displays: {  }
 default_base_fields:
   status: {  }
   uuid:
