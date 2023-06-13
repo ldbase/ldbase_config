@@ -455,6 +455,7 @@ display:
     display_plugin: page
     position: 3
     display_options:
+      title: ''
       fields:
         rendered_entity:
           id: rendered_entity
@@ -708,6 +709,7 @@ display:
           hide_empty: false
       defaults:
         empty: false
+        title: false
         style: false
         row: false
         relationships: false

@@ -403,7 +403,7 @@ display:
             vid: vid
             tid: tid
             name: name
-            type: type
+            field_funding_agency: field_funding_agency
           default: name
           info:
             vid:
@@ -427,7 +427,7 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            type:
+            field_funding_agency:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -917,8 +917,54 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      title: ''
+      arguments:
+        vid:
+          id: vid
+          table: taxonomy_term_field_data
+          field: vid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: vid
+          plugin_id: vocabulary_vid
+          default_action: empty
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: true
+          title: '{{ arguments.vid }}'
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: 'entity:taxonomy_vocabulary'
+            fail: 'not found'
+          validate_options:
+            bundles: {  }
+            access: false
+            operation: view
+            multiple: 0
+          break_phrase: false
+          not: false
       defaults:
+        title: false
         relationships: false
+        arguments: false
+        header: false
       relationships:
         nid:
           id: nid
@@ -929,6 +975,18 @@ display:
           admin_label: node
           plugin_id: standard
           required: false
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: "\r\n<p>Click on a term to see LDbase content that uses it.  Click the column headers to sort.</p>"
+          tokenize: true
       display_extenders:
         matomo:
           enabled: false
@@ -961,6 +1019,7 @@ display:
     display_plugin: page
     position: 3
     display_options:
+      title: ''
       fields:
         vid:
           id: vid
@@ -1167,7 +1226,7 @@ display:
           group_type: count
           admin_label: ''
           plugin_id: field
-          label: 'Funding Agency'
+          label: 'Number of Uses'
           exclude: false
           alter:
             alter_text: false
@@ -1228,9 +1287,54 @@ display:
           format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
+      arguments:
+        vid:
+          id: vid
+          table: taxonomy_term_field_data
+          field: vid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: vid
+          plugin_id: vocabulary_vid
+          default_action: empty
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: true
+          title: '{{ arguments.vid }}'
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: 'entity:taxonomy_vocabulary'
+            fail: 'not found'
+          validate_options:
+            bundles: {  }
+            access: false
+            operation: view
+            multiple: 0
+          break_phrase: false
+          not: false
       defaults:
+        title: false
         relationships: false
         fields: false
+        arguments: false
+        header: false
       relationships:
         reverse__paragraph__field_funding_agency:
           id: reverse__paragraph__field_funding_agency
@@ -1242,6 +1346,18 @@ display:
           entity_type: taxonomy_term
           plugin_id: entity_reverse
           required: false
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: "\r\n<p>Click on a term to see LDbase content that uses it.  Click the column headers to sort.</p>"
+          tokenize: true
       display_extenders:
         matomo:
           enabled: false
