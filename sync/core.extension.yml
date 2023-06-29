@@ -100,6 +100,7 @@ module:
   schemadotorg_media: 0
   schemadotorg_paragraphs: 0
   schemadotorg_report: 0
+  schemadotorg_simple_sitemap: 0
   schemadotorg_subtype: 0
   schemadotorg_taxonomy: 0
   schemadotorg_ui: 0
