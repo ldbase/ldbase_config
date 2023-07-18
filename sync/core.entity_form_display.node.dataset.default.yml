@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.dataset.body
+    - field.field.node.dataset.field_added_to_integrated_data
     - field.field.node.dataset.field_affiliated_parents
     - field.field.node.dataset.field_assessment_name
     - field.field.node.dataset.field_component_skills
@@ -56,6 +57,13 @@ content:
     weight: 200
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_added_to_integrated_data:
+    type: boolean_checkbox
+    weight: 221
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   field_affiliated_parents:
     type: entity_reference_autocomplete
@@ -297,6 +305,11 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox

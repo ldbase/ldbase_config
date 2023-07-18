@@ -1,0 +1,23 @@
+uuid: 5d191493-3df0-4bfb-b68a-8fe7c08f7545
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_added_to_integrated_data
+    - node.type.dataset
+id: node.dataset.field_added_to_integrated_data
+field_name: field_added_to_integrated_data
+entity_type: node
+bundle: dataset
+label: 'Added to Integrated Dataset'
+description: 'This data has been added to the LDbase Integrated Dataset'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
