@@ -1,0 +1,10 @@
+uuid: 469c1cc4-2028-41d1-9afc-1c49e36eb7fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.dataset_minimum_info
+label: 'Dataset Minimum Info'
+targetEntityType: paragraph
+cache: true

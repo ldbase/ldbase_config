@@ -11,7 +11,7 @@ entity_type: node
 bundle: dataset
 label: 'Added to Integrated Dataset'
 description: 'This data has been added to the LDbase Integrated Dataset'
-required: true
+required: false
 translatable: false
 default_value:
   -

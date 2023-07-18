@@ -1,8 +1,9 @@
-uuid: 2590bfa1-20eb-4c47-9882-6d795851f278
+uuid: c76752d3-3ddf-4cbf-8091-0500637f2cd4
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.dataset_minimum_info
     - field.field.paragraph.file_metadata.field_file_format
     - field.field.paragraph.file_metadata.field_file_upload
     - field.field.paragraph.file_metadata.field_file_version_description
@@ -11,51 +12,35 @@ dependencies:
     - paragraphs.paragraphs_type.file_metadata
   module:
     - file
-id: paragraph.file_metadata.default
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.file_metadata.dataset_minimum_info
 targetEntityType: paragraph
 bundle: file_metadata
-mode: default
+mode: dataset_minimum_info
 content:
-  field_file_format:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_file_upload:
     type: file_default
-    label: above
+    label: inline
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 3
-    region: content
-  field_file_version_description:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
   field_file_version_id:
     type: number_integer
-    label: above
+    label: inline
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    weight: 4
-    region: content
-  field_file_version_label:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
     weight: 1
     region: content
 hidden:
+  field_file_format: true
+  field_file_version_description: true
+  field_file_version_label: true
   search_api_excerpt: true
