@@ -1,0 +1,11 @@
+uuid: 30b5f139-0093-4d73-9757-5ca929a23d5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - ldbase_handlers
+id: dataset_negate_included
+label: 'Not Included in Integrated Dataset'
+type: node
+plugin: dataset_negate_included
+configuration: {  }

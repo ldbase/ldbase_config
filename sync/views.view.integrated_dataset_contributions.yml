@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.group_content.group_roles
-    - field.storage.node.field_data_has_been_added
+    - field.storage.node.field_added_to_integrated_data
     - field.storage.node.field_dataset_version
     - group.content_type.project_group-group_node-dataset
   module:
@@ -78,18 +78,20 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Action
-          include_exclude: exclude
-          selected_actions: {  }
-        field_data_has_been_added:
-          id: field_data_has_been_added
-          table: node__field_data_has_been_added
-          field: field_data_has_been_added
+          action_title: 'Change Status of Selected Items'
+          include_exclude: include
+          selected_actions:
+            - dataset_indicate_included
+            - dataset_negate_included
+        field_added_to_integrated_data:
+          id: field_added_to_integrated_data
+          table: node__field_added_to_integrated_data
+          field: field_added_to_integrated_data
           relationship: gc__node
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Added to Integrated Dataset?'
+          label: 'Added to Integrated Dataset'
           exclude: false
           alter:
             alter_text: false
@@ -126,7 +128,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: 'No'
+          empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -401,6 +403,71 @@ display:
           multi_type: ul
           separator: ', '
           field_api_classes: false
+        uuid:
+          id: uuid
+          table: node
+          field: uuid
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: uuid
+          plugin_id: field
+          label: 'Dataset UUID'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
       pager:
         type: none
         options:
@@ -651,7 +718,7 @@ display:
         - 'languages:language_interface'
       tags:
         - 'config:field.storage.group_content.group_roles'
-        - 'config:field.storage.node.field_data_has_been_added'
+        - 'config:field.storage.node.field_added_to_integrated_data'
         - 'config:field.storage.node.field_dataset_version'
         - schemadotorg_descriptions.settings
   page_1:
@@ -685,6 +752,6 @@ display:
         - 'languages:language_interface'
       tags:
         - 'config:field.storage.group_content.group_roles'
-        - 'config:field.storage.node.field_data_has_been_added'
+        - 'config:field.storage.node.field_added_to_integrated_data'
         - 'config:field.storage.node.field_dataset_version'
         - schemadotorg_descriptions.settings

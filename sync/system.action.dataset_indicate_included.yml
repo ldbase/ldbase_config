@@ -1,0 +1,11 @@
+uuid: 77b827e4-56da-4113-8d12-7103cbcf47a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - ldbase_handlers
+id: dataset_indicate_included
+label: 'Included in Integrated Dataset'
+type: node
+plugin: dataset_indicate_included
+configuration: {  }
