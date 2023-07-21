@@ -7,6 +7,8 @@ dependencies:
     - field.storage.node.field_added_to_integrated_data
     - field.storage.node.field_dataset_version
     - group.content_type.project_group-group_node-dataset
+    - user.role.administrator
+    - user.role.fcrr_admin
   module:
     - entity_reference_revisions
     - group
@@ -484,8 +486,11 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            administrator: administrator
+            fcrr_admin: fcrr_admin
       cache:
         type: tag
         options: {  }
@@ -716,6 +721,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user.roles
       tags:
         - 'config:field.storage.group_content.group_roles'
         - 'config:field.storage.node.field_added_to_integrated_data'
@@ -750,6 +756,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user.roles
       tags:
         - 'config:field.storage.group_content.group_roles'
         - 'config:field.storage.node.field_added_to_integrated_data'
