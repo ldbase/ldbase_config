@@ -587,6 +587,48 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        field_added_to_integrated_data_value:
+          id: field_added_to_integrated_data_value
+          table: node__field_added_to_integrated_data
+          field: field_added_to_integrated_data_value
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: All
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: 'Display by Status'
+            description: 'For example, select "False" to display datasets that have NOT been added to the integrated dataset.'
+            use_operator: false
+            operator: field_added_to_integrated_data_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_added_to_integrated_data_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_administrator: '0'
+              administrator: '0'
+              fcrr_admin: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: table
         options:
@@ -594,21 +636,35 @@ display:
           row_class: ''
           default_row_class: false
           columns:
-            label: label
-            type: type
+            node_bulk_form: node_bulk_form
+            field_added_to_integrated_data: field_added_to_integrated_data
+            title: title
+            field_dataset_version: field_dataset_version
             mail: mail
-          default: '-1'
+            group_roles: group_roles
+            uuid: uuid
+          default: field_added_to_integrated_data
           info:
-            label:
-              sortable: false
-              default_sort_order: asc
+            node_bulk_form:
               align: ''
-              separator: ' '
+              separator: ''
               empty_column: false
               responsive: ''
-            type:
-              sortable: false
+            field_added_to_integrated_data:
+              sortable: true
+              default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            title:
+              sortable: true
               default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_dataset_version:
               align: ''
               separator: ''
               empty_column: false
@@ -616,6 +672,16 @@ display:
             mail:
               sortable: false
               default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            group_roles:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            uuid:
               align: ''
               separator: ''
               empty_column: false
@@ -721,6 +787,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
+        - url.query_args
         - user.roles
       tags:
         - 'config:field.storage.group_content.group_roles'
@@ -756,6 +824,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
+        - url.query_args
         - user.roles
       tags:
         - 'config:field.storage.group_content.group_roles'
