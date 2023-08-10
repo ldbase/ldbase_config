@@ -1,0 +1,8 @@
+uuid: aaeb0c6b-5578-4e4f-a36e-e3204647f09e
+langcode: en
+status: true
+dependencies: {  }
+id: fcrr-admin-tasks
+label: 'FCRR Admin Tasks'
+description: 'Menu limited to FCRR Administrator tasks'
+locked: false

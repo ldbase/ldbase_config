@@ -7,6 +7,7 @@ dependencies:
     - field.storage.node.field_added_to_integrated_data
     - field.storage.node.field_dataset_version
     - group.content_type.project_group-group_node-dataset
+    - system.menu.fcrr-admin-tasks
     - user.role.administrator
     - user.role.fcrr_admin
   module:
@@ -93,7 +94,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Added to Integrated Dataset'
+          label: Included
           exclude: false
           alter:
             alter_text: false
@@ -275,8 +276,8 @@ display:
           delta_offset: 0
           delta_reversed: true
           delta_first_last: false
-          multi_type: ul
-          separator: ', '
+          multi_type: separator
+          separator: '---'
           field_api_classes: false
         mail:
           id: mail
@@ -351,7 +352,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: 'Project Roles'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -416,7 +417,7 @@ display:
           entity_field: uuid
           plugin_id: field
           label: 'Dataset UUID'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -649,7 +650,7 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-low
             field_added_to_integrated_data:
               sortable: true
               default_sort_order: desc
@@ -819,6 +820,15 @@ display:
         simple_sitemap_display_extender:
           variants: {  }
       path: integrated-dataset-contributions
+      menu:
+        type: normal
+        title: 'Manage Integrated Dataset Contributions'
+        description: ''
+        weight: 2
+        expanded: false
+        menu_name: fcrr-admin-tasks
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: 0
       contexts:
