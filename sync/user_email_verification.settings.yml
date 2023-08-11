@@ -3,11 +3,14 @@ _core:
 skip_roles:
   administrator: administrator
   fcrr_admin: fcrr_admin
+no_creation_auto_verify: false
+no_unblock_auto_verify: false
 validate_interval: 31536000
 num_reminders: 3
 mail_subject: '[site:name]: Email verification'
-mail_body: 'Verify your Email by following the link: [user:verify-email]'
+mail_body: "This is an automatic email from the LDbase Repository reminding you to verify the email address that you used to create your user account.  \r\n\r\nVerifying your email address allows you to contact members of other projects and to request permission to access embargoed data, so please verify your email by clicking on the link below or by copying it into your browser.\r\n\r\n[user:verify-email]\r\n\r\nBest wishes from the LDbase Team!"
 extended_enable: false
 extended_validate_interval: 1209600
 extended_mail_subject: '[site:name]: Account blocked, please verify Email address'
 extended_mail_body: 'Your account is blocked. Your Email may still be verified by following the link: [user:verify-email-extended]'
+extended_end_delete_account: false
