@@ -85,7 +85,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: 'Change Status of Selected Items'
+          action_title: 'Use this box to CHANGE the status of the datasets that are selected below.'
           include_exclude: include
           selected_actions:
             - dataset_indicate_included
@@ -1000,24 +1000,24 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        uuid:
+          id: uuid
+          table: node
+          field: uuid
           relationship: gc__node
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: title
+          entity_field: uuid
           plugin_id: field
-          label: 'Dataset Title'
-          exclude: false
+          label: 'Dataset UUID'
+          exclude: true
           alter:
             alter_text: false
             text: ''
             make_link: false
-            path: ''
-            absolute: false
+            path: '/datasets/{{ uuid }}'
+            absolute: true
             external: false
             replace_spaces: false
             path_case: none
@@ -1065,24 +1065,24 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        uuid:
-          id: uuid
-          table: node
-          field: uuid
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: gc__node
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: uuid
+          entity_field: title
           plugin_id: field
-          label: 'Dataset UUID'
+          label: 'Dataset Title'
           exclude: false
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
-            absolute: false
+            make_link: true
+            path: '/datasets/{{ uuid }}'
+            absolute: true
             external: false
             replace_spaces: false
             path_case: none
@@ -1331,7 +1331,7 @@ display:
             delimiter: '|'
             enclosure: '"'
             escape_char: \
-            strip_tags: true
+            strip_tags: false
             trim: true
             encoding: utf8
             utf8_bom: '0'
@@ -1488,10 +1488,201 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      filters:
+        type:
+          id: type
+          table: group_content_field_data
+          field: type
+          entity_type: group_content
+          entity_field: type
+          plugin_id: bundle
+          value:
+            project_group-group_node-dataset: project_group-group_node-dataset
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        group_roles_target_id:
+          id: group_roles_target_id
+          table: group_content__group_roles
+          field: group_roles_target_id
+          relationship: group_content_id
+          group_type: group
+          admin_label: ''
+          plugin_id: string
+          operator: '='
+          value: project_group-administrator
+          group: 1
+          exposed: false
+          expose:
+            operator_id: group_roles_target_id_op
+            label: 'Roles (group_roles)'
+            description: null
+            use_operator: false
+            operator: group_roles_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: group_roles_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: null
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_harmonized_dataset_value:
+          id: field_harmonized_dataset_value
+          table: node__field_harmonized_dataset
+          field: field_harmonized_dataset_value
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        field_added_to_integrated_data_value:
+          id: field_added_to_integrated_data_value
+          table: node__field_added_to_integrated_data
+          field: field_added_to_integrated_data_value
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: All
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: 'Display by Status'
+            description: 'True displays datasets that have been added to an Integrated Dataset. False displays datasets that have not yet been added.'
+            use_operator: false
+            operator: field_added_to_integrated_data_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_added_to_integrated_data_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_administrator: '0'
+              administrator: '0'
+              fcrr_admin: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          relationship: gc__node
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       defaults:
+        filters: false
+        filter_groups: false
         header: false
         footer: false
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: 'These datasets said they would like to be included in an Integrated Dataset.'
+            format: basic_html
+          tokenize: false
       footer:
         area:
           id: area
