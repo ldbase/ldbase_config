@@ -1011,10 +1011,10 @@ display:
           entity_field: uuid
           plugin_id: field
           label: 'Dataset UUID'
-          exclude: true
+          exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: 'https://ldbase.org/datasets/{{ uuid }}'
             make_link: false
             path: '/datasets/{{ uuid }}'
             absolute: true
@@ -1080,7 +1080,7 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: true
+            make_link: false
             path: '/datasets/{{ uuid }}'
             absolute: true
             external: false
@@ -1328,7 +1328,7 @@ display:
           formats:
             csv: csv
           csv_settings:
-            delimiter: '|'
+            delimiter: ','
             enclosure: '"'
             escape_char: \
             strip_tags: false
@@ -1341,19 +1341,19 @@ display:
         options:
           field_options:
             field_added_to_integrated_data:
-              alias: added_to_integrated_data
-              raw_output: false
-            title:
-              alias: dataset_title
-              raw_output: false
-            title_1:
-              alias: name
-              raw_output: false
-            mail:
-              alias: email
+              alias: ADDED_TO_INTEGRATED_DATASET
               raw_output: false
             uuid:
-              alias: dataset_uuid
+              alias: DATASET_URL
+              raw_output: false
+            title:
+              alias: DATASET_TITLE
+              raw_output: false
+            title_1:
+              alias: PROJECT_ADMIN
+              raw_output: false
+            mail:
+              alias: ADMIN_EMAIL
               raw_output: false
       defaults:
         relationships: false
