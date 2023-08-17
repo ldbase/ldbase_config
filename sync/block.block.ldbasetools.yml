@@ -22,8 +22,8 @@ provider: null
 plugin: 'system_menu_block:ldbase-tools'
 settings:
   id: 'system_menu_block:ldbase-tools'
-  label: 'Action Links'
-  label_display: '0'
+  label: 'Data Use Functions'
+  label_display: visible
   provider: system
   level: 1
   depth: 0
