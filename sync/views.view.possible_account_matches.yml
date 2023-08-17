@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.possible_user_match
+    - user.role.authenticated
   module:
     - node
     - options
@@ -436,9 +437,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -452,7 +454,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: "<h1>Possible Account Matches</h1>\r\n\r\n<p>There are no matches at this time.</p>"
+          content: "<h1>Possible Account Matches</h1>\r\n\r\n<p>There are no matches for you to review at this time. </p>\r\n\r\n<p><a href=\"/user\">Go to Dashboard</a></p>"
           tokenize: false
       sorts:
         created:
@@ -650,7 +652,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }
   page_1:
     id: page_1
@@ -659,7 +661,22 @@ display:
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender:
+          variants: {  }
       path: user/possible-account-matches
     cache_metadata:
       max-age: 0
@@ -670,5 +687,5 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }

@@ -4,8 +4,8 @@ name: LDbase
 mail: admin@ldbase.org
 slogan: 'A Repository for Sharing Learning Disabilities Data'
 page:
-  403: /access-denied
-  404: /not-found
+  403: /user/login
+  404: ''
   front: /home
 admin_compact_mode: false
 weight_select_max: 100
