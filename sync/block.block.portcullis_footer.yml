@@ -13,7 +13,7 @@ _core:
 id: portcullis_footer
 theme: portcullis
 region: sub_footer_first
-weight: -20
+weight: -39
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

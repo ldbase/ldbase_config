@@ -1,0 +1,8 @@
+uuid: 9688ec53-693e-4fb9-a211-0f74aafc6aba
+langcode: en
+status: true
+dependencies: {  }
+id: bottom-row-footer-links
+label: 'Bottom Row Footer Links'
+description: ''
+locked: false

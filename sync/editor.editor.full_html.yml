@@ -37,6 +37,7 @@ settings:
           items:
             - Source
             - ShowBlocks
+            - HorizontalRule
   plugins: {  }
 image_upload:
   status: true

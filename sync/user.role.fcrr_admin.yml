@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.full_html
     - node.type.article
     - node.type.code
     - node.type.dataset
@@ -40,6 +41,7 @@ dependencies:
     - eu_cookie_compliance
     - field_ui
     - file
+    - filter
     - group
     - ldbase_embargoes
     - masquerade
@@ -197,6 +199,7 @@ permissions:
   - 'revert article revisions'
   - 'revert layout_page revisions'
   - 'revert page revisions'
+  - 'use text format full_html'
   - 'view article revisions'
   - 'view layout_page revisions'
   - 'view own unpublished content'

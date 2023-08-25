@@ -16,8 +16,8 @@ uid: 1
 template: false
 archive: false
 id: report_a_problem
-title: 'Report a Problem'
-description: 'Form for reporting a problem to LDbase Admins'
+title: 'Contact LDbase'
+description: 'Form for reporting a problemor contacting LDbase Admins'
 category: 'LDbase Create/Update Forms'
 elements: |-
   name:
@@ -62,7 +62,7 @@ settings:
   ajax_effect: ''
   ajax_speed: null
   page: true
-  page_submit_path: /report-a-problem
+  page_submit_path: /contact-us
   page_confirm_path: ''
   page_theme_name: ''
   form_title: source_entity_webform
@@ -140,6 +140,8 @@ settings:
   wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''

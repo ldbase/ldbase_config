@@ -11,7 +11,7 @@ dependencies:
 id: development
 theme: portcullis
 region: sub_footer_first
-weight: -19
+weight: -38
 provider: null
 plugin: 'system_menu_block:devel'
 settings:

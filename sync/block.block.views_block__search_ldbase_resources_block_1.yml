@@ -1,28 +1,32 @@
-uuid: 887aae65-4edb-4849-b984-317f08dc228c
+uuid: cbb6f70c-bc12-4506-8506-b941c1069f28
 langcode: en
-status: false
+status: true
 dependencies:
+  config:
+    - views.view.search_ldbase_resources
   module:
     - collapsiblock
     - context
-    - ldbase_content
     - system
+    - views
   theme:
     - portcullis
 third_party_settings:
   collapsiblock:
     collapse_action: 0
-id: ldbasesearchresourcesblock
+id: views_block__search_ldbase_resources_block_1
 theme: portcullis
 region: sidebar_second
-weight: -32
+weight: 0
 provider: null
-plugin: ldbase_search_resources_block
+plugin: 'views_block:search_ldbase_resources-block_1'
 settings:
-  id: ldbase_search_resources_block
-  label: 'LDbase Search Resources Block'
+  id: 'views_block:search_ldbase_resources-block_1'
+  label: ''
   label_display: '0'
-  provider: ldbase_content
+  provider: views
+  views_label: ''
+  items_per_page: none
 visibility:
   context:
     id: context
@@ -46,8 +50,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/data-sharing-resources\r\n/data-sharing-resources/*\r\n/help"
-  request_path_exclusion:
-    id: request_path_exclusion
-    negate: true
-    pages: '/resources/search*'
+    pages: "/data-sharing-resources\r\n/data-sharing-resources/*"

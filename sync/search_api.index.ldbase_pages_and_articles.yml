@@ -48,6 +48,7 @@ datasource_settings:
       default: false
       selected:
         - article
+        - layout_page
         - page
     languages:
       default: true

@@ -10,7 +10,7 @@ dependencies:
 id: ldbasesubfooterblock
 theme: portcullis
 region: sub_footer_first
-weight: -18
+weight: -37
 provider: null
 plugin: ldbase_subfooter_block
 settings:

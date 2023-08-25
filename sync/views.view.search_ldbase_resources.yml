@@ -20,7 +20,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Search LDbase Resources'
+      title: 'Search Articles and Documentation'
       fields:
         title_1:
           id: title_1
@@ -167,14 +167,14 @@ display:
       exposed_form:
         type: input_required
         options:
-          submit_button: 'Search Resources'
+          submit_button: Search
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
-          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required: ''
           text_input_required_format: basic_html
       access:
         type: none
@@ -213,8 +213,8 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Search LDbase Resources'
-            description: 'Find helpful information about LDbase and Open Science'
+            label: 'Search Articles and Documentation'
+            description: ''
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
@@ -260,6 +260,7 @@ display:
           min_length: null
           fields:
             - body
+            - rendered_item
             - title
       style:
         type: default
@@ -305,11 +306,50 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.ldbase_pages_and_articles'
+        - 'search_api_list:ldbase_pages_and_articles'
   block_1:
     id: block_1
     display_title: Block
     display_plugin: block
     position: 1
+    display_options:
+      defaults:
+        use_ajax: false
+        filters: true
+        filter_groups: true
+      use_ajax: false
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.ldbase_pages_and_articles'
+        - 'search_api_list:ldbase_pages_and_articles'
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 2
     display_options:
       filters:
         search_api_fulltext:
@@ -326,8 +366,8 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Search LDbase Resources'
-            description: 'Find helpful information about LDbase and Open Science'
+            label: ''
+            description: ''
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
@@ -343,7 +383,7 @@ display:
               administrator: '0'
               fcrr_admin: '0'
             expose_fields: false
-            placeholder: 'Search resources and help ...'
+            placeholder: ''
             searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
           group_info:
@@ -373,6 +413,7 @@ display:
           min_length: null
           fields:
             - body
+            - rendered_item
             - title
       filter_groups:
         operator: AND
@@ -382,29 +423,22 @@ display:
         filters: false
         filter_groups: false
       display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
         metatag_display_extender:
           metatags: {  }
           tokenize: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - url.query_args
-        - 'user.node_grants:view'
-      tags:
-        - 'config:search_api.index.ldbase_pages_and_articles'
-  page_1:
-    id: page_1
-    display_title: Page
-    display_plugin: page
-    position: 2
-    display_options:
-      display_extenders:
-        metatag_display_extender:
-          metatags: {  }
-          tokenize: false
+        simple_sitemap_display_extender:
+          variants: {  }
       path: resources/search
     cache_metadata:
       max-age: -1
@@ -416,3 +450,4 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.ldbase_pages_and_articles'
+        - 'search_api_list:ldbase_pages_and_articles'

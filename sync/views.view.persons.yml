@@ -614,6 +614,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_email'
+        - schemadotorg_descriptions.settings
   entity_view_1:
     id: entity_view_1
     display_title: EVA
@@ -892,6 +893,7 @@ display:
         - 'config:field.storage.node.field_first_name'
         - 'config:field.storage.node.field_last_name'
         - 'config:field.storage.node.field_middle_name'
+        - schemadotorg_descriptions.settings
   page_1:
     id: page_1
     display_title: Page
@@ -1193,8 +1195,23 @@ display:
           empty: false
           content: '<div class="ldbase-view-current-page">Displaying page @current_page of @page_count</div>'
       display_extenders:
-        metatag_display_extender: {  }
-      path: community/users
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender:
+          variants: {  }
+      path: about/users
     cache_metadata:
       max-age: -1
       contexts:
@@ -1954,3 +1971,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_related_persons'
+        - schemadotorg_descriptions.settings
