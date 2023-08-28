@@ -182,7 +182,20 @@ display:
       cache:
         type: none
         options: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: '<p><strong>No results found.</strong> <a href="/data-sharing-resources">Go to the directory of Data Sharing Resources</a>.</p>'
+            format: basic_html
+          tokenize: false
       sorts:
         search_api_relevance:
           id: search_api_relevance
