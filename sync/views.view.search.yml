@@ -48,7 +48,7 @@ display:
           entity_type: node
           plugin_id: search_api_field
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -77,13 +77,13 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
-          element_label_type: strong
+          element_class: ldbase-search-result-row-type
+          element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -173,7 +173,7 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: true
+            alter_text: false
             text: '{{ type }}: {{ title }}'
             make_link: false
             path: ''
@@ -199,14 +199,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h3
-          element_class: ''
+          element_type: span
+          element_class: ldbase-search-result-row-title
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -1985,8 +1985,8 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
+          row_class: ldbase-search-result-row
+          default_row_class: false
       row:
         type: fields
         options:
@@ -2276,9 +2276,22 @@ display:
         filters: false
         filter_groups: false
       display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
         metatag_display_extender:
           metatags: {  }
           tokenize: false
+        simple_sitemap_display_extender:
+          variants: {  }
       path: search
     cache_metadata:
       max-age: -1
