@@ -20,7 +20,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Search Articles and Documentation'
+      title: 'Search Articles and Help'
       fields:
         title_1:
           id: title_1
@@ -226,7 +226,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Search Articles and Documentation'
+            label: 'Search Articles and Help'
             description: ''
             use_operator: false
             operator: search_api_fulltext_op

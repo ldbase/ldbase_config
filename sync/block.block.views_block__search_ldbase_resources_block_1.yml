@@ -50,4 +50,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/data-sharing-resources\r\n/data-sharing-resources/*"
+    pages: "/data-sharing-resources\r\n/data-sharing-resources/*\r\n/help"

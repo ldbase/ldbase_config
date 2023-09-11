@@ -27,10 +27,10 @@ bundles:
   - project
 entity_type: node
 global: false
-flag_short: 'Save Favorite'
+flag_short: Favorite
 flag_long: 'Save this item to your Favorites'
 flag_message: 'Item saved to Favorites'
-unflag_short: 'Remove Favorite'
+unflag_short: Unfavorite
 unflag_long: 'Remove this item from your Favorites'
 unflag_message: 'Item removed from Favorites'
 unflag_denied_text: ''
