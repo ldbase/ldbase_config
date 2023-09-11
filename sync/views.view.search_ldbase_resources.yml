@@ -273,6 +273,7 @@ display:
           min_length: null
           fields:
             - body
+            - layout_page_text
             - rendered_item
             - title
       style:
@@ -426,6 +427,7 @@ display:
           min_length: null
           fields:
             - body
+            - layout_page_text
             - rendered_item
             - title
       filter_groups:

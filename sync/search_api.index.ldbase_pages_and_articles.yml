@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - field.storage.node.field_content
+    - field.storage.paragraph.field_text
     - search_api.server.default_server
   module:
+    - paragraphs
     - node
     - search_api
     - ldbase_handlers
@@ -23,6 +26,17 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  layout_page_text:
+    label: 'Layout Page Text'
+    datasource_id: 'entity:node'
+    property_path: 'field_content:entity:field_text:processed'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_content
+        - field.storage.paragraph.field_text
+      module:
+        - paragraphs
   rendered_item:
     label: 'Rendered HTML output'
     property_path: rendered_item
@@ -65,7 +79,7 @@ processor_settings:
     prefix: '<strong>'
     suffix: '</strong>'
     excerpt: true
-    excerpt_always: false
+    excerpt_always: true
     excerpt_length: 250
     exclude_fields: {  }
     highlight: always
@@ -77,6 +91,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - layout_page_text
       - rendered_item
       - title
     title: true
@@ -94,6 +109,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - layout_page_text
       - rendered_item
       - title
   language_with_fallback: {  }
@@ -106,6 +122,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - layout_page_text
       - rendered_item
       - title
     exceptions:
@@ -118,6 +135,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - layout_page_text
       - rendered_item
       - title
     stopwords:
@@ -163,6 +181,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - layout_page_text
       - rendered_item
       - title
     spaces: ''
@@ -176,6 +195,7 @@ processor_settings:
     all_fields: true
     fields:
       - body
+      - layout_page_text
       - rendered_item
       - title
 tracker_settings:
