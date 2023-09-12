@@ -2,7 +2,7 @@ langcode: en
 uuid: 6d3939a8-a52f-4862-a77a-176786dcad2a
 name: LDbase
 mail: admin@ldbase.org
-slogan: 'A Repository for Sharing Learning Disabilities Data'
+slogan: 'A Learning & Development Data Repository'
 page:
   403: /user/login
   404: ''

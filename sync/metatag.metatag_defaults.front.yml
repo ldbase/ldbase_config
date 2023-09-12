@@ -6,4 +6,6 @@ id: front
 label: 'Front page'
 tags:
   canonical_url: '[site:url]'
+  description: 'LDbase is an open science resource for the educational and developmental science scientific communities, providing a secure place to store and access data, as well access materials about aspects of data management and analyses. LDbase is unique in that it is project oriented, rather than dataset oriented, meeting the needs of how our field thinks about data.'
   shortlink: '[site:url]'
+  title: '[site:name]: [site:slogan]'
