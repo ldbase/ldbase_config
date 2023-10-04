@@ -496,6 +496,10 @@ field_settings:
     dependencies:
       module:
         - node
+  ldbase_add_bundle_sort_order:
+    label: 'LDbase Bundle Sort Order'
+    property_path: ldbase_add_bundle_sort_order
+    type: integer
   ldbase_age_range:
     label: 'LDbase Participant Age Range'
     property_path: ldbase_age_range
@@ -780,6 +784,7 @@ processor_settings:
       - type_fulltext
   language_with_fallback: {  }
   ldbase_add_age_range: {  }
+  ldbase_add_bundle_sort_order: {  }
   rendered_item:
     weights:
       add_properties: 0

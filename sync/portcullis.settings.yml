@@ -200,7 +200,7 @@ slideout_blocks_paddings: 0
 slideout_region_paddings: 0
 slideout_side: right
 slideout_touch_swipe: 0
-slogan_font_family: slff-51
+slogan_font_family: slff-23
 sub_featured_animation_effect: no-animation
 sub_featured_background_color: 'region--dark-typography region--white-background'
 sub_featured_blocks_paddings: 0

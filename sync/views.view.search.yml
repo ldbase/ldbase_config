@@ -480,6 +480,119 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
+        field_related_persons_1:
+          id: field_related_persons_1
+          table: search_api_index_default_index
+          field: field_related_persons_1
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: Investigators
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: strong
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              article:
+                display_method: label
+                view_mode: default
+              code:
+                display_method: label
+                view_mode: default
+              dataset:
+                display_method: label
+                view_mode: default
+              document:
+                display_method: label
+                view_mode: default
+              embargo:
+                display_method: label
+                view_mode: default
+              existing_record_request:
+                display_method: label
+                view_mode: default
+              layout_page:
+                display_method: label
+                view_mode: default
+              organization:
+                display_method: label
+                view_mode: default
+              page:
+                display_method: label
+                view_mode: default
+              person:
+                display_method: label
+                view_mode: default
+              possible_user_match:
+                display_method: label
+                view_mode: default
+              project:
+                display_method: label
+                view_mode: default
+              tombstone:
+                display_method: label
+                view_mode: default
+              webform:
+                display_method: label
+                view_mode: default
         field_related_persons:
           id: field_related_persons
           table: search_api_datasource_default_index_entity_node
@@ -711,7 +824,7 @@ display:
           admin_label: ''
           plugin_id: search_api_field
           label: 'Educational Environment'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -826,7 +939,7 @@ display:
           admin_label: ''
           plugin_id: search_api_field
           label: 'Educational Curricula'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -941,7 +1054,7 @@ display:
           admin_label: ''
           plugin_id: search_api_field
           label: 'Developmental Design'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1056,7 +1169,7 @@ display:
           admin_label: ''
           plugin_id: search_api_field
           label: 'Special Populations'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1171,7 +1284,7 @@ display:
           admin_label: ''
           plugin_id: search_api_field
           label: Constructs
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1287,7 +1400,7 @@ display:
           entity_type: node
           plugin_id: search_api_field
           label: 'Assessment(s) Used'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1403,7 +1516,7 @@ display:
           entity_type: node
           plugin_id: search_api_field
           label: 'Data Collection Location(s)'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1519,7 +1632,7 @@ display:
           entity_type: node
           plugin_id: search_api_field
           label: 'Variable Types'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1857,6 +1970,121 @@ display:
               time_methods:
                 display_method: label
                 view_mode: default
+        ldbase_add_bundle_sort_order:
+          id: ldbase_add_bundle_sort_order
+          table: search_api_index_default_index
+          field: ldbase_add_bundle_sort_order
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_numeric
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: 'no idea'
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ','
+          format_plural: false
+          format_plural_string: !!binary Aw==
+          prefix: ''
+          suffix: ''
+          link_to_item: false
+          use_highlighting: false
+          multi_type: separator
+          multi_separator: ', '
+          format_plural_values: {  }
+        search_api_url:
+          id: search_api_url
+          table: search_api_index_default_index
+          field: search_api_url
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: 'View Full Item'
+            make_link: true
+            path: '{{ search_api_url }}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: 'View Item'
+            rel: ''
+            link_class: search-view-full-item
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: search-view-full-item
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: false
+          use_highlighting: false
+          multi_type: separator
+          multi_separator: ', '
       pager:
         type: full
         options:
@@ -1905,7 +2133,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: '<p><strong>No results found.</strong> <a href="#" class="display-advanced-search">Go to Advanced Search</a>.</p>'
+            value: "<p><strong>No results found.</strong></p> \r\n<p>Try a preset search:</p>\r\n<ul>\r\n<li><a href=\"/search?search_api_fulltext=&f%5B0%5D=search_facet_content_type%3Aproject\">Show all Projects</a></li>\r\n<li><a href=\"/search?search_api_fulltext=&f%5B0%5D=search_facet_content_type%3Adataset\">Show all Datasets</a></li>\r\n</ul>\r\n<p> - or - </p>\r\n<p><a href=\"#\" class=\"display-advanced-search\">Go to Advanced Search</a></p>"
             format: full_html
           tokenize: false
       sorts:
@@ -2106,6 +2334,33 @@ display:
     display_options:
       cache:
         type: none
+      sorts:
+        search_api_relevance:
+          id: search_api_relevance
+          table: search_api_index_default_index
+          field: search_api_relevance
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: 'Relevance to Search Terms'
+            field_identifier: search_api_relevance
+          exposed: true
+        changed:
+          id: changed
+          table: search_api_index_default_index
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: DESC
+          expose:
+            label: 'Last Updated'
+            field_identifier: changed
+          exposed: true
       filters:
         search_api_fulltext:
           id: search_api_fulltext
@@ -2273,6 +2528,7 @@ display:
           1: AND
       defaults:
         cache: false
+        sorts: false
         filters: false
         filter_groups: false
       display_extenders:
