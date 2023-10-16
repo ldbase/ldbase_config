@@ -1,0 +1,42 @@
+uuid: 9d53046c-d7c9-4cc8-b1a0-f0e52662bae5
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - node
+    - user
+id: anchor_target_offset_
+label: 'Non-Admin Anchor Target Offset'
+code: |-
+  :target{
+        scroll-margin: 150px;
+        }
+media: screen
+preprocess: true
+conditions:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+contexts: {  }
+conditions_require_all: true

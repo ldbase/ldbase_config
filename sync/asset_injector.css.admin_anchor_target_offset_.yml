@@ -1,0 +1,43 @@
+uuid: 56479535-57ed-44e8-9530-14f8a931f84a
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - node
+    - user
+id: admin_anchor_target_offset_
+label: 'Admin Anchor Target Offset'
+code: |-
+  :target{
+        scroll-margin: 225px;
+        }
+media: screen
+preprocess: true
+conditions:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  node_type:
+    id: node_type
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      content_administrator: content_administrator
+      administrator: administrator
+      fcrr_admin: fcrr_admin
+contexts: {  }
+conditions_require_all: true
