@@ -1936,6 +1936,63 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        delta:
+          id: delta
+          table: node__field_dataset_version
+          field: delta
+          relationship: none
+          group_type: count_distinct
+          admin_label: ''
+          plugin_id: numeric
+          label: 'Dataset Versions with this Format'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ','
+          format_plural: false
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
         type:
           id: type
           table: node_field_data
@@ -2133,11 +2190,19 @@ display:
           default_row_class: true
           columns:
             title: title
+            delta: delta
             type: type
             changed: changed
           default: changed
           info:
             title:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            delta:
               sortable: true
               default_sort_order: asc
               align: ''
@@ -2211,9 +2276,9 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: 'Click the column headers to change the sort order.'
+            value: "<p>Click the column headers to change the sort order.</p>\r\n\r\n<p>Each dataset listed may have multiple versions with the format {{ arguments.tid }}.</p>"
             format: basic_html
-          tokenize: false
+          tokenize: true
       display_extenders:
         matomo:
           enabled: false

@@ -884,6 +884,46 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        status_2:
+          id: status_2
+          table: node_field_data
+          field: status
+          relationship: reverse__node__field_dataset_version
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -962,6 +1002,16 @@ display:
           group_type: group
           admin_label: field_file_format
           entity_type: taxonomy_term
+          plugin_id: entity_reverse
+          required: false
+        reverse__node__field_dataset_version:
+          id: reverse__node__field_dataset_version
+          table: paragraphs_item_field_data
+          field: reverse__node__field_dataset_version
+          relationship: reverse__paragraph__field_file_format
+          group_type: group
+          admin_label: field_dataset_version
+          entity_type: paragraph
           plugin_id: entity_reverse
           required: false
       display_description: 'View for Browse Data page where term is related to the node through a paragraph, showing location and counts of term uses'
@@ -1790,6 +1840,46 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        status_2:
+          id: status_2
+          table: node_field_data
+          field: status
+          relationship: reverse__node__field_grant_information
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -1868,6 +1958,16 @@ display:
           group_type: group
           admin_label: field_funding_agency
           entity_type: taxonomy_term
+          plugin_id: entity_reverse
+          required: false
+        reverse__node__field_grant_information:
+          id: reverse__node__field_grant_information
+          table: paragraphs_item_field_data
+          field: reverse__node__field_grant_information
+          relationship: reverse__paragraph__field_funding_agency
+          group_type: group
+          admin_label: field_grant_information
+          entity_type: paragraph
           plugin_id: entity_reverse
           required: false
       display_description: 'View for Browse Data page where term is related to the node through a paragraph, showing location and counts of term uses'
@@ -3216,6 +3316,46 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        status_2:
+          id: status_2
+          table: node_field_data
+          field: status
+          relationship: reverse__node__field_demographics_information
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -3294,6 +3434,16 @@ display:
           group_type: group
           admin_label: field_participant_type
           entity_type: taxonomy_term
+          plugin_id: entity_reverse
+          required: false
+        reverse__node__field_demographics_information:
+          id: reverse__node__field_demographics_information
+          table: paragraphs_item_field_data
+          field: reverse__node__field_demographics_information
+          relationship: reverse__paragraph__field_participant_type
+          group_type: group
+          admin_label: field_demographics_information
+          entity_type: paragraph
           plugin_id: entity_reverse
           required: false
       display_description: 'View for Browse Data page where term is related to the node through a paragraph, showing location and counts of term uses'
