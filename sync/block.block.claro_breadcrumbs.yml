@@ -1,13 +1,15 @@
-uuid: d8fa027c-f90c-449d-822a-0ade668e9361
+uuid: 2c9d3461-c83b-4fd0-968c-8c328bec5004
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_breadcrumbs
-theme: bartik
+    - claro
+_core:
+  default_config_hash: NjcxOBrPOiK5-38t56DwFBDVY4yer7YSlbRWXFuHe7A
+id: claro_breadcrumbs
+theme: claro
 region: breadcrumb
 weight: 0
 provider: null

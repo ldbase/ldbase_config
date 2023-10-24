@@ -34,7 +34,7 @@ filters:
     status: false
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid> <hr>'
+      allowed_html: ''
       filter_html_help: true
       filter_html_nofollow: false
   slick_filter:
@@ -43,16 +43,26 @@ filters:
     status: false
     weight: 4
     settings:
+      caption:
+        alt: '0'
+        title: '0'
       optionset: default
       layout: ''
-      skin: ''
       background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
       loading: ''
-      preload: false
+      box_style: ''
       image_style: ''
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+      skin: ''
       overridables:
         arrows: '0'
         autoplay: '0'
@@ -68,6 +78,8 @@ filters:
       thumbnail_effect: ''
       thumbnail_position: ''
       override: false
+      preserve_keys: false
+      visible_items: null
   blazy_filter:
     id: blazy_filter
     provider: blazy
@@ -77,6 +89,7 @@ filters:
       media_switch: ''
       hybrid_style: ''
       box_style: ''
+      box_media_style: ''
       box_caption: ''
       filter_tags:
         img: img

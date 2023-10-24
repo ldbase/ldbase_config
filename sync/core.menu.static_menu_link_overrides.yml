@@ -66,11 +66,11 @@ definitions:
     expanded: false
     enabled: true
   ldbase__search:
-    enabled: false
     menu_name: main
     parent: ''
-    expanded: false
     weight: 50
+    expanded: false
+    enabled: false
   ldbase_handlers__add_code_to_code_2:
     menu_name: second-code-tasks
     parent: ''
@@ -90,8 +90,8 @@ definitions:
     expanded: false
     enabled: true
   ldbase__browse:
-    enabled: true
     menu_name: main
     parent: ''
-    expanded: false
     weight: 5
+    expanded: false
+    enabled: true
