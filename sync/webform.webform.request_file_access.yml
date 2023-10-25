@@ -18,7 +18,8 @@ archive: false
 id: request_file_access
 title: 'Request File Access'
 description: 'A form to manage requests to embargoed files.'
-category: 'LDbase Create/Update Forms'
+categories:
+  - 'LDbase Create/Update Forms'
 elements: |-
   reason_for_access_request:
     '#type': textarea
@@ -120,6 +121,8 @@ settings:
   wizard_toggle: false
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -167,8 +170,6 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
-  page_admin_theme: false
-  form_remote_addr: true
 access:
   create:
     roles:

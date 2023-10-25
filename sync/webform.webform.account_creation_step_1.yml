@@ -18,7 +18,8 @@ archive: false
 id: account_creation_step_1
 title: 'Create New Account'
 description: 'A form to gather information regarding the new user and ascertain if there are existing records.'
-category: 'LDbase Create/Update Forms'
+categories:
+  - 'LDbase Create/Update Forms'
 elements: |-
   initial_message:
     '#type': webform_markup
@@ -144,6 +145,9 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
   share: false
   share_node: false
   share_theme_name: ''
@@ -187,6 +191,8 @@ settings:
   wizard_toggle: true
   wizard_toggle_show_label: ''
   wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -234,8 +240,6 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
-  page_admin_theme: false
-  form_remote_addr: true
 access:
   create:
     roles:

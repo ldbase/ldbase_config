@@ -7,6 +7,8 @@ _core:
 id: block_content
 target_entity_type_id: block_content
 multiple: false
+label_prefix: null
+id_prefix: null
 recommended_schema_types:
   components:
     label: Common

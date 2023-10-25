@@ -367,7 +367,6 @@ display:
             created: created
           optionset: ldbase_frontpage_news
           class: ''
-          id: ''
           image: ''
           link: ''
           overlay: ''
@@ -375,11 +374,12 @@ display:
           vanilla: false
           layout: ''
           cache: 0
-          skin: default
           grid: null
           grid_medium: null
           grid_small: null
           current_view_mode: block_1
+          id: ''
+          skin: default
           overridables:
             arrows: '0'
             autoplay: '0'

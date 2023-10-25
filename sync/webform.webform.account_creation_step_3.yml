@@ -13,7 +13,8 @@ archive: false
 id: account_creation_step_3
 title: 'Account Creation: Step 3'
 description: 'A form to gather final input from user and create account.'
-category: 'LDbase Create/Update Forms'
+categories:
+  - 'LDbase Create/Update Forms'
 elements: |-
   initial_message:
     '#type': webform_markup
@@ -71,6 +72,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
+  page_theme_name: ''
   form_title: source_entity_webform
   form_submit_once: false
   form_open_message: ''
@@ -79,6 +81,7 @@ settings:
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -99,6 +102,9 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
   share: false
   share_node: false
   share_theme_name: ''
@@ -133,7 +139,17 @@ settings:
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -179,8 +195,8 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
-  page_admin_theme: false
-  form_remote_addr: true
+  token_delete: false
+  serial_disabled: false
 access:
   create:
     roles:

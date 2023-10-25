@@ -1,6 +1,8 @@
 langcode: en
 settings:
   default_status: open
+  default_categories: {  }
+  default_page: true
   default_page_base_path: form
   default_ajax: false
   default_ajax_progress_type: throbber
@@ -8,12 +10,14 @@ settings:
   default_ajax_speed: 500
   default_submit_button_label: Submit
   default_reset_button_label: Reset
+  default_delete_button_label: Delete
   default_form_submit_once: false
   default_form_open_message: 'This form has not yet been opened to submissions.'
   default_form_close_message: 'Sorry…This form is closed to new submissions.'
   default_form_exception_message: 'Unable to display this webform. Please contact the site administrator.'
   default_form_confidential_message: 'This form is confidential. You must <a href="[site:login-url]/logout?destination=[current-page:url:relative]">Log out</a> to submit it.'
   default_form_access_denied_message: 'Please login to access this form.'
+  default_form_disable_remote_addr: false
   default_form_novalidate: false
   default_form_disable_inline_errors: false
   default_form_required: false
@@ -27,6 +31,8 @@ settings:
   default_wizard_next_button_label: 'Next Page >'
   default_wizard_start_label: Start
   default_wizard_confirmation_label: Complete
+  default_wizard_toggle_show_label: 'Show all'
+  default_wizard_toggle_hide_label: 'Hide all'
   default_preview_next_button_label: Preview
   default_preview_prev_button_label: '< Previous'
   default_preview_label: Preview
@@ -39,6 +45,7 @@ settings:
   default_draft_pending_multiple_message: 'You have pending drafts for this webform. <a href="#">View your pending drafts</a>.'
   default_confirmation_message: 'New submission added to [webform:title].'
   default_confirmation_back_label: 'Back to form'
+  default_confirmation_noindex: true
   default_limit_total_message: 'No more submissions are permitted.'
   default_limit_user_message: 'No more submissions are permitted.'
   default_submission_label: '[webform_submission:submitted-to]: Submission #[webform_submission:serial]'
@@ -56,6 +63,7 @@ settings:
       - entity.node.webform.results_submissions
       - entity.node.webform.user.drafts
       - entity.node.webform.user.submissions
+  default_results_customize: false
   default_submission_access_denied_message: 'Please login to access this submission.'
   default_submission_exception_message: 'Unable to process this submission. Please contact the site administrator.'
   default_submission_locked_message: 'This submission has been locked.'
@@ -79,6 +87,23 @@ settings:
     messages messages--status
   confirmation_back_classes: |
     button
+  default_share: false
+  default_share_node: false
+  default_share_theme_name: ''
+  webform_bulk_form: true
+  webform_bulk_form_actions:
+    - webform_open_action
+    - webform_close_action
+    - webform_archive_action
+    - webform_unarchive_action
+    - webform_delete_action
+  webform_submission_bulk_form: true
+  webform_submission_bulk_form_actions:
+    - webform_submission_make_sticky_action
+    - webform_submission_make_unsticky_action
+    - webform_submission_make_lock_action
+    - webform_submission_make_unlock_action
+    - webform_submission_delete_action
   dialog: false
   dialog_options:
     narrow:
@@ -93,6 +118,10 @@ settings:
 assets:
   css: ''
   javascript: ''
+form:
+  limit: 50
+  filter_category: ''
+  filter_state: ''
 element:
   machine_name_pattern: a-z0-9_
   empty_message: '{Empty}'
@@ -106,14 +135,12 @@ element:
   default_empty_option: true
   default_empty_option_required: ''
   default_empty_option_optional: ''
-  default_algolia_places_app_id: ''
-  default_algolia_places_api_key: ''
   excluded_elements:
     password: password
 html_editor:
   disabled: false
-  element_format: ''
-  mail_format: ''
+  element_format: webform_default
+  mail_format: webform_default
   tidy: true
   make_unused_managed_files_temporary: true
 file:
@@ -156,6 +183,7 @@ export:
   delimiter: ','
   multiple_delimiter: ;
   excel: false
+  archive_type: tar
   header_format: label
   header_prefix: true
   header_prefix_key_delimiter: __
@@ -173,6 +201,8 @@ export:
   excluded_exporters: {  }
 handler:
   excluded_handlers: {  }
+variant:
+  excluded_variants: {  }
 batch:
   default_batch_export_size: 500
   default_batch_import_size: 100
@@ -267,8 +297,10 @@ ui:
   dialog_disabled: false
   offcanvas_disabled: false
   promotions_disabled: false
+  support_disabled: false
   details_save: true
   description_help: true
+  toolbar_item: false
 libraries:
   excluded_libraries:
     - jquery.chosen
@@ -276,6 +308,7 @@ libraries:
     - jquery.toggles
 requirements:
   cdn: true
+  clientside_validation: true
   bootstrap: true
   spam: true
 third_party_settings:

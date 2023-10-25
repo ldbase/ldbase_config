@@ -18,7 +18,8 @@ archive: false
 id: report_a_problem
 title: 'Contact LDbase'
 description: 'Form for reporting a problemor contacting LDbase Admins'
-category: 'LDbase Create/Update Forms'
+categories:
+  - 'LDbase Create/Update Forms'
 elements: |-
   name:
     '#type': textfield
@@ -189,7 +190,6 @@ settings:
   token_update: false
   token_delete: false
   serial_disabled: false
-  form_remote_addr: true
 access:
   create:
     roles:
