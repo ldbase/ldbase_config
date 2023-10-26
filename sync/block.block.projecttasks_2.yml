@@ -6,7 +6,6 @@ dependencies:
     - system.menu.project-tasks
   module:
     - collapsiblock
-    - context
     - node
     - system
   theme:
@@ -41,24 +40,3 @@ visibility:
     negate: true
     context_mapping: {  }
     pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/contact-ldbase-*\r\n/*/*/publish-all-items"
-  context_all:
-    id: context_all
-    negate: null
-    context_mapping: {  }
-    values: ''
-  context:
-    id: context
-    negate: null
-    context_mapping: {  }
-    values: ''
-  user_status:
-    id: user_status
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
-    user_status:
-      viewing_profile: '0'
-      logged_viewing_profile: '0'
-      own_page_true: '0'
-      field_value: '0'
-    user_fields: uid

@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - context
     - ldbase_content
     - system
   theme:
@@ -25,13 +24,3 @@ visibility:
     negate: false
     context_mapping: {  }
     pages: /browse-data
-  request_path_exclusion:
-    id: request_path_exclusion
-    negate: null
-    context_mapping: {  }
-    pages: ''
-  view_inclusion:
-    id: view_inclusion
-    negate: null
-    context_mapping: {  }
-    view_inclusion: {  }

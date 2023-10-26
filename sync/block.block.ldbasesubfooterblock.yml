@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   module:
-    - context
     - ldbase_content
   theme:
     - portcullis
@@ -18,14 +17,4 @@ settings:
   label: 'LDbase Subfooter Block'
   label_display: '0'
   provider: ldbase_content
-visibility:
-  request_path_exclusion:
-    id: request_path_exclusion
-    negate: null
-    context_mapping: {  }
-    pages: ''
-  view_inclusion:
-    id: view_inclusion
-    negate: null
-    context_mapping: {  }
-    view_inclusion: {  }
+visibility: {  }

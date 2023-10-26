@@ -7,4 +7,6 @@ form_ids:
   - user_register_form
   - 'contact_*'
   - 'webform_submission_*'
+  - account_creation_step_1
+  - 'create_update_*'
 show_form_ids: false

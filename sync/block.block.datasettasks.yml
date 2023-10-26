@@ -5,7 +5,6 @@ dependencies:
   config:
     - system.menu.dataset-tasks
   module:
-    - context
     - node
     - system
   theme:
@@ -37,13 +36,3 @@ visibility:
     negate: true
     context_mapping: {  }
     pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/*/view-dataset-versions\r\n/*/*/*/dataset-subscription\r\n/*/*/*/*/*-version\r\n/access-request/*"
-  request_path_exclusion:
-    id: request_path_exclusion
-    negate: null
-    context_mapping: {  }
-    pages: ''
-  view_inclusion:
-    id: view_inclusion
-    negate: null
-    context_mapping: {  }
-    view_inclusion: {  }
