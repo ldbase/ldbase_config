@@ -1,0 +1,27 @@
+uuid: cf841eb5-0293-48af-8574-76e9eadbf3c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: ckeditor_minimum_height
+label: 'ckeditor minimum height'
+code: |-
+  .ck.ck-editor__editable {
+  	min-height: 300px;
+  }
+
+  .ck-source-editing-area {
+      overflow: auto;
+      position: relative;
+      min-height: 300px;
+  }
+media: all
+preprocess: true
+conditions:
+  current_theme:
+    id: current_theme
+    negate: false
+    theme: claro
+contexts: {  }
+conditions_require_all: true
