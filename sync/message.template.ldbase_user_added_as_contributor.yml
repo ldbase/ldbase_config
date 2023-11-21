@@ -6,7 +6,7 @@ dependencies:
     - filter.format.basic_html
 template: ldbase_user_added_as_contributor
 label: 'LDbase - User Added as Contributor'
-description: 'Message sent when a user''s associated Person node is selected as a contributor'
+description: "Message sent when a user's associated Person node is selected as a contributor"
 text:
   -
     value: "<p>LDBase Notification: Added as Contributor</p>\r\n"

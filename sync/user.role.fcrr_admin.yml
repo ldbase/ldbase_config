@@ -37,6 +37,7 @@ dependencies:
     - user.role.fcrr_admin
   module:
     - block
+    - block_content
     - entity_usage
     - eu_cookie_compliance
     - field_ui
@@ -58,12 +59,15 @@ weight: -6
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access block library'
   - 'access content overview'
   - 'access entity usage statistics'
   - 'access files overview'
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'
+  - 'administer block content'
+  - 'administer block types'
   - 'administer blocks'
   - 'administer embargoes settings'
   - 'administer matomo'
@@ -123,6 +127,7 @@ permissions:
   - 'delete own document content'
   - 'delete own embargo content'
   - 'delete own existing_record_request content'
+  - 'delete own files'
   - 'delete own layout_page content'
   - 'delete own organization content'
   - 'delete own page content'

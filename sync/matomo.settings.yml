@@ -1,8 +1,8 @@
 _core:
   default_config_hash: YGueb7ImKHSG1RRmIB1iqPHVGXTmI2yvCcB-RX7FPeY
 site_id: '1'
-url_http: 'http://localhost:9999/'
-url_https: 'https://localhost:9999/'
+url_http: 'http://localhost:9999/matomo/'
+url_https: ''
 domain_mode: 0
 visibility:
   request_path_mode: 0
@@ -53,7 +53,7 @@ codesnippet:
   after: ''
 translation_set: false
 disable_tracking: false
-cache: true
+cache: false
 page_title_hierarchy: false
 page_title_hierarchy_exclude_home: true
 status_codes_disabled: {  }

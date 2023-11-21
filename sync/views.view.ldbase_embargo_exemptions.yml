@@ -426,7 +426,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<a href="/{{ type != ''Code'' ? type|lower ~ ''s'' : type|lower }}/{{ uuid }}">View Item</a>'
+            text: "<a href=\"/{{ type != 'Code' ? type|lower ~ 's' : type|lower }}/{{ uuid }}\">View Item</a>"
             make_link: false
             path: ''
             absolute: false

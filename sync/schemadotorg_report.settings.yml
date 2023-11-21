@@ -164,7 +164,7 @@ types:
       uri: 'https://www.youtube.com/watch?v=xLEzdjMd-2w'
   Menu:
     -
-      title: 'Schema.org Just Released New Restaurant Menu Markup — Here''s How to Get Started'
+      title: "Schema.org Just Released New Restaurant Menu Markup — Here's How to Get Started"
       uri: 'https://moz.com/blog/schema-new-restaurant-menu-markup'
   MusicEvent:
     -

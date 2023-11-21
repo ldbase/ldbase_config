@@ -12,7 +12,7 @@ dependencies:
 id: my_favorites
 label: 'My Favorites'
 module: views
-description: 'A view of an LDbase user''s saved favorites'
+description: "A view of an LDbase user's saved favorites"
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -210,6 +210,15 @@ display:
             date_format: medium
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
           group_column: value
           group_columns: {  }
           group_rows: true
