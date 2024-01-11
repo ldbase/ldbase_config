@@ -41,8 +41,8 @@ third_party_settings:
         layout_id: layout_twocol_section
         layout_settings:
           label: 'Person Layout'
-          column_widths: 50-50
           context_mapping: {  }
+          column_widths: 50-50
         components:
           0bf732c8-08cd-4358-96e8-4297e91e3e15:
             uuid: 0bf732c8-08cd-4358-96e8-4297e91e3e15

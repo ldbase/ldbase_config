@@ -27,28 +27,10 @@ settings:
       text: text
     negate: 0
     target_bundles_drag_drop:
-      date_range_selection:
-        weight: 9
-        enabled: false
-      date_selection:
-        weight: 10
-        enabled: false
-      demographics:
-        weight: 11
-        enabled: false
-      file_metadata:
-        weight: 12
-        enabled: false
-      grant_information:
-        weight: 13
-        enabled: false
-      publication_metadata:
-        weight: 14
-        enabled: false
       section_using_layout_paragraphs:
-        weight: 15
+        weight: 0
         enabled: true
       text:
-        weight: 16
+        weight: 1
         enabled: true
 field_type: entity_reference_revisions

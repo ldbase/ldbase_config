@@ -25,16 +25,7 @@ settings:
       grant_information: grant_information
     negate: 0
     target_bundles_drag_drop:
-      code_or_data_format:
-        weight: 5
-        enabled: false
-      demographics:
-        weight: 6
-        enabled: false
-      file_access_restrictions:
-        weight: 7
-        enabled: false
       grant_information:
-        weight: 2
+        weight: 0
         enabled: true
 field_type: entity_reference_revisions

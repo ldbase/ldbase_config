@@ -15,14 +15,6 @@ code: |-
 media: screen
 preprocess: true
 conditions:
-  context_all:
-    id: context_all
-    negate: null
-    values: ''
-  context:
-    id: context
-    negate: null
-    values: ''
   node_type:
     id: 'entity_bundle:node'
     negate: false

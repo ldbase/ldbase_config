@@ -25,19 +25,7 @@ settings:
       publication_metadata: publication_metadata
     negate: 0
     target_bundles_drag_drop:
-      demographics:
-        weight: 6
-        enabled: false
-      file_access_restrictions:
-        weight: 7
-        enabled: false
-      file_metadata:
-        weight: 8
-        enabled: false
-      grant_information:
-        weight: 9
-        enabled: false
       publication_metadata:
-        weight: 10
+        weight: 0
         enabled: true
 field_type: entity_reference_revisions
