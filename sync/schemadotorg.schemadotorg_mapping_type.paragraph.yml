@@ -1,14 +1,16 @@
-uuid: e5fcb66b-cb51-48f3-8ce2-e61cc987c511
+uuid: a45e0265-2006-4629-8cf2-3fcde45ec251
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - paragraphs
 _core:
-  default_config_hash: wk7fYso70eTQAuFAo6o4o2QWuGltvMn5UXSp7xIZrdw
+  default_config_hash: Re5t6M_p5w91_qT92ltybMSUVEGJ_hAPhThkPk96xjs
 id: paragraph
 target_entity_type_id: paragraph
 multiple: false
-label_prefix: null
-id_prefix: null
+label_prefix: ''
+id_prefix: ''
 recommended_schema_types:
   quick_start:
     label: 'Quick Start'
@@ -67,7 +69,17 @@ recommended_schema_types:
       - MedicalTherapy
       - MedicalSignOrSymptom
 default_schema_types: {  }
-default_schema_type_properties: {  }
+default_schema_type_properties:
+  MedicalProcedure:
+    - '-bodyLocation'
+    - '-followup'
+    - '-howPerformed'
+    - '-preparation'
+  MedicalRiskFactor:
+    - '-increasesRiskOf'
+  MedicalTest:
+    - '-usedToDiagnose'
+    - '-usesDevice'
 default_schema_type_view_displays: {  }
 default_base_fields:
   uuid: {  }

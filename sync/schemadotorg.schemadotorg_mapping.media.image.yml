@@ -1,0 +1,20 @@
+uuid: 1402b6c0-8dbc-4e54-9c18-c1872aeaecd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_media_image
+    - media.type.image
+  module:
+    - media
+id: media.image
+target_entity_type_id: media
+target_bundle: image
+schema_type: ImageObject
+schema_properties:
+  created: dateCreated
+  changed: dateModified
+  field_media_image: image
+  langcode: inLanguage
+  name: name
+  thumbnail: thumbnail

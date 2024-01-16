@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: otcIhNzjWkOwjkJ6Lu4YUk3E6c2vOORYKYKgq7Etd9Q
+  default_config_hash: QboURfwbKzS6Q3kLb1ydmpqj31z_-2vc-dKvsP99Gig
 paragraphs_library:
   - ContactPoint
   - MedicalAudience
@@ -17,3 +17,7 @@ paragraphs_library:
   - MediaGallery
   - ImageGallery
   - VideoGallery
+schema_property_access:
+  Person--ContactPoint:
+    - contactType
+    - telephone

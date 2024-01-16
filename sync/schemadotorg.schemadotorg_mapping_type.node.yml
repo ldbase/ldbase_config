@@ -1,14 +1,16 @@
-uuid: 682ef4af-1c85-469d-babe-5c1d37a30b8c
+uuid: 6841d6b2-97b4-4cea-b6c0-3d362b59d0b4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - node
 _core:
-  default_config_hash: 8WYTxfwgKaphY9vy7aTF7iGDeLll531vJQV0TNiiyqc
+  default_config_hash: fgYGcWOHi2BsEegif-HInZdyhsDKWO6oqtPa3OYgjDw
 id: node
 target_entity_type_id: node
 multiple: false
-label_prefix: null
-id_prefix: null
+label_prefix: ''
+id_prefix: ''
 recommended_schema_types:
   quick_start:
     label: 'Quick Start'
@@ -102,9 +104,41 @@ default_schema_type_properties:
     - dateCreated
     - dateModified
   Article:
+    - '-name'
     - '-text'
     - articleBody
-default_schema_type_view_displays: {  }
+default_schema_type_view_displays:
+  teaser:
+    Thing:
+      - description
+    Event:
+      - eventSchedule
+      - startDate
+      - endDate
+    Person:
+      - image
+    Place:
+      - image
+      - address
+    LocalBusiness:
+      - openingHours
+    Episode:
+      - duration
+      - episodeNumber
+    Hospital:
+      - availableService
+    MedicalOrganization:
+      - medicalSpecialty
+    MedicalClinic:
+      - availableService
+    Physician:
+      - availableService
+      - medicalSpecialty
+    JobPosting:
+      - datePosted
+    Recipe:
+      - image
+      - cookTime
 default_base_fields:
   uuid: {  }
   revision_uid: {  }
@@ -115,12 +149,12 @@ default_base_fields:
   langcode:
     - inLanguage
   title:
-    - name
     - headline
     - title
+    - name
   body:
-    - description
     - articleBody
+    - description
     - text
   created:
     - dateCreated

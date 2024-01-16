@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: TUjpfSDaVqSXhkDETuvhj64pjZrsYrUvROLUFBkzjEo
+  default_config_hash: eXtfqO7osSAGC9lKySNfxZO8H0lGr9Yf7zTChUt5R48
 about:
   -
     title: 'Schema.org Documentation'
@@ -7,6 +7,9 @@ about:
   -
     title: 'Understand How Structured Data Works'
     uri: 'https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data'
+  -
+    title: 'Schema.org: Evolution of Structured Data on the Web'
+    uri: 'https://queue.acm.org/detail.cfm?id=2857276'
   -
     title: 'Steal Our JSON-LD'
     uri: 'https://jsonld.com/'
@@ -16,6 +19,12 @@ about:
   -
     title: 'Unlocking Hidden Gems Within Schema.org'
     uri: 'https://moz.com/blog/schema-hidden-gems'
+  -
+    title: 'Semantic SEO explained: Why connected schema is the missing piece in your SEO strategy'
+    uri: 'https://www.danielkcheung.com.au/how-to-implement-semantic-seo/'
+  -
+    title: 'Yoast SEO features: Schema.org markup'
+    uri: 'https://developer.yoast.com/features/schema/'
   -
     title: 'Schema.org - What, How, Why? [VIDEO]'
     uri: 'https://www.youtube.com/watch?v=hcahQfN5u9Y'
@@ -63,6 +72,9 @@ types:
     -
       title: Dataset
       uri: 'https://developers.google.com/search/docs/advanced/structured-data/dataset'
+    -
+      title: 'How to Add isPartOf Property to Dataset Schema'
+      uri: 'https://rankmath.com/kb/ispartof-property-dataset-schema/'
   EducationOrganization:
     -
       title: 'How to Use Schema Markup for Colleges and Universities'
@@ -102,6 +114,10 @@ types:
     -
       title: 'Creating “FAQPage” Schema Markup'
       uri: 'https://www.schemaapp.com/schema-markup/creating-faqpage-schema-markup-using-the-schema-app-editor/'
+  HealthTopicContent:
+    -
+      title: 'Add HealthTopicContent, subtype of WebContent, plus an enumeration indicating topical aspects #2374'
+      uri: 'https://github.com/schemaorg/schemaorg/issues/2374'
   Hotel:
     -
       title: 'Markup for Hotels'
@@ -148,6 +164,15 @@ types:
     -
       title: 'Local Business'
       uri: 'https://jsonld.com/local-business/'
+    -
+      title: 'How to Create Local Business Schema for Multiple Locations'
+      uri: 'https://postelniak.com/blog/local-business-schema-for-multiple-locations/'
+    -
+      title: '2 Awesome JSON-LD Schema Hacks For Multiple Locations'
+      uri: 'https://intuitivedigital.com/blog/json-ld-for-multiple-locations/'
+    -
+      title: 'Local SEO: Schema Markup For Multiple Locations'
+      uri: 'https://m.youtube.com/watch?v=IQMvO_o3dRc'
   MathSolver:
     -
       title: 'Math Solvers Structured Data'
@@ -162,6 +187,15 @@ types:
     -
       title: 'Schema Markup for the Healthcare Industry'
       uri: 'https://www.youtube.com/watch?v=xLEzdjMd-2w'
+    -
+      title: 'Science On Schema.Org (SOSO) Guidance Documents'
+      uri: 'https://github.com/ESIPFed/science-on-schema.org'
+    -
+      title: Bioschemas
+      uri: 'https://bioschemas.org'
+    -
+      title: 'Healthcare Schema Vocabulary Community Group'
+      uri: 'https://www.w3.org/community/schemed/'
   Menu:
     -
       title: "Schema.org Just Released New Restaurant Menu Markup — Here's How to Get Started"
@@ -194,6 +228,9 @@ types:
     -
       title: 'Social Network Profiles'
       uri: 'https://jsonld.com/social-network-profiles/'
+    -
+      title: 'Hierarchical organization'
+      uri: 'https://en.wikipedia.org/wiki/Hierarchical_organization'
   Person:
     -
       title: 'JSON-LD Person Example'
@@ -205,6 +242,13 @@ types:
     -
       title: 'Medical Professionals'
       uri: 'https://jsonld.com/person/medical-professionals/'
+  PodcastSeries:
+    -
+      title: 'Proposal: Podcast and PodcastEpisode #373'
+      uri: 'https://github.com/schemaorg/schemaorg/issues/373'
+    -
+      title: "A Podcaster's Guide to RSS"
+      uri: 'https://help.apple.com/itc/podcasts_connect/'
   Product:
     -
       title: 'How To Add Product Structured Data'
@@ -230,6 +274,12 @@ types:
     -
       title: Recipe
       uri: 'https://jsonld.com/recipe/'
+    -
+      title: 'Schema piece - Recipe'
+      uri: 'https://developer.yoast.com/features/schema/pieces/recipe/'
+    -
+      title: 'Baking a Recipe using the Schema.org Blueprints module for Drupal'
+      uri: 'https://www.jrockowitz.com/blog/schemadotorg-recipe'
   Review:
     -
       title: 'Review Snippet'
@@ -247,6 +297,16 @@ types:
     -
       title: 'Restaurants Schema and Structured Data Markup'
       uri: 'https://onlineownership.com/restaurants-schema-structured-data-markup/'
+  Role:
+    -
+      title: "Introducing 'Role'"
+      uri: 'http://blog.schema.org/2014/06/introducing-role.html'
+    -
+      title: 'The role of Role in Schema.org'
+      uri: 'https://www.dataliberate.com/2015/04/15/the-role-of-role-in-schema-org/'
+    -
+      title: 'Roles in Schema.org - final draft'
+      uri: 'https://www.w3.org/wiki/images/c/c8/RolesinSchema.orgMay8.pdf'
   SoftwareApplication:
     -
       title: 'Software Application Schema'
@@ -260,18 +320,28 @@ types:
       uri: 'https://jsonld.com/speakable-json-ld/'
   SpecialAnnouncement:
     -
-      title: 'COVID-19 Announcements Structured Data'
+      title: 'COVID-19 Announcements (SpecialAnnouncement) Structured Data | Google Search Central'
       uri: 'https://developers.google.com/search/docs/advanced/structured-data/special-announcements'
+    -
+      title: 'Special Announcement specifications - Bing Webmaster Tools'
+      uri: 'https://www.bing.com/webmasters/help/special-announcement-specifications-5cbd6249'
     -
       title: 'Fact Check Markup for Search'
       uri: 'https://developers.google.com/search/docs/advanced/structured-data/factcheck'
     -
       title: 'COVID-19 Announcement JSON-LD'
       uri: 'https://jsonld.com/covid-19-announcement-json-ld/'
+    -
+      title: 'Experimenting with SpecialAnnouncement Markup – Digital.gov'
+      uri: 'https://digital.gov/2020/05/11/experimenting-with-specialannouncement-markup/'
   Table:
     -
       title: Table
       uri: 'https://jsonld.com/table/'
+  Thing:
+    -
+      title: 'How to use additionalType and sameAs to link to Wikipedia'
+      uri: 'https://support.schemaapp.com/support/solutions/articles/33000277321-how-to-use-additionaltype-and-sameas-to-link-to-wikipedia'
   Vehicle:
     -
       title: 'Markup for Autos'

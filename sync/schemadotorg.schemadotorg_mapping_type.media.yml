@@ -1,14 +1,16 @@
-uuid: 039b0186-8d85-422e-b968-222282936d3d
+uuid: f14a71b1-142a-4d1e-9c4e-a105a4291e54
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - media
 _core:
-  default_config_hash: EQecxwH7wfvK1iUjKcCEaOJSR91RDKfIVCHu8Yz-uLE
+  default_config_hash: OcWRCfFaUJqMIYVNHRLIrvy6phHMba2rbVJaXu2bWOI
 id: media
 target_entity_type_id: media
 multiple: false
-label_prefix: null
-id_prefix: null
+label_prefix: ''
+id_prefix: ''
 recommended_schema_types:
   media_objects:
     label: Common

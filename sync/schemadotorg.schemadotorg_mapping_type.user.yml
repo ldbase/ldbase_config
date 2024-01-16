@@ -1,14 +1,16 @@
-uuid: ffe7ee06-f01c-4743-b3ae-d4f15aee0ec2
+uuid: 0b70ec88-20ed-42bd-a252-1c74b9b3014a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - user
 _core:
-  default_config_hash: kUZrkfWn89OcQOoILJ3h-OPeMt-j-xCGUdctYviE8IU
+  default_config_hash: EhhQrmacrDOIe0MFdOmkZhMHKo3m790ob-BxKWPmc48
 id: user
 target_entity_type_id: user
 multiple: false
-label_prefix: null
-id_prefix: null
+label_prefix: ''
+id_prefix: ''
 recommended_schema_types: {  }
 default_schema_types:
   user: Person

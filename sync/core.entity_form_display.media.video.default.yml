@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.video.field_media_oembed_video
     - field.field.media.video.field_media_video_file
     - media.type.video
   module:
     - file
+    - media
     - path
 _core:
   default_config_hash: QcsaoQN46kJyeffkXCqa7aX7pPtpqJjITEqeBse33D0
@@ -17,9 +19,17 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 200
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_media_oembed_video:
+    type: oembed_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_media_video_file:
     type: file_generic
@@ -30,20 +40,20 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 210
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 100
+    weight: 200
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 200
     region: content
     settings:
       match_operator: CONTAINS

@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.video.field_media_oembed_video
     - field.field.media.video.field_media_video_file
     - media.type.video
   module:
     - file
+    - media
 _core:
   default_config_hash: dQR0mYK5NNg27OigHrxZrHSsnwewnNZcPJKjKIO0cpA
 id: media.video.default
@@ -14,6 +16,17 @@ targetEntityType: media
 bundle: video
 mode: default
 content:
+  field_media_oembed_video:
+    type: oembed
+    label: hidden
+    settings:
+      max_width: 0
+      max_height: 0
+      loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_media_video_file:
     type: file_video
     label: visually_hidden

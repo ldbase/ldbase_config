@@ -1,14 +1,16 @@
-uuid: 743da1e3-d95b-4abb-9d19-718dd39c3e9d
+uuid: 55460818-c2aa-43fa-aa35-5e844e555235
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - taxonomy
 _core:
-  default_config_hash: '-g6af5OJGWPr1slvDYqUNMeoZM0hNgNPo8f_JfdnHQQ'
+  default_config_hash: QR8YSv_99cGvH9yqLOTzMRiTU1Bd-jdQpR0faH6EMF4
 id: taxonomy_term
 target_entity_type_id: taxonomy_term
 multiple: true
-label_prefix: null
-id_prefix: null
+label_prefix: ''
+id_prefix: ''
 recommended_schema_types:
   term:
     label: Term
@@ -38,6 +40,8 @@ default_base_fields:
   description:
     - description
 default_component_weights:
-  langcode: 200
-  published: 200
-  path: 210
+  langcode: 90
+  path: 90
+  published: 100
+  simple_sitemap: 90
+  scheduler_settings: 90

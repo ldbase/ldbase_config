@@ -1,36 +1,38 @@
 _core:
-  default_config_hash: 5SMBGBiUvj1s8yP7JParV2WNQ6WRNZ-n3Yg_PbrOkjM
+  default_config_hash: Z2C2lXW6ep7EyyU7TIra4WfNYYokDyNLmDakOEqExPs
 custom_words:
   Nonprofit501: 'Nonprofit 501'
   gtin: GTIN
   rxcui: RxCUI
 custom_names:
+  agent_interaction_statistic: agent_interaction_stat
   applies_to_delivery_method: applies_to_delivery_meth
   checkout_page_url_template: checkout_pg_url_template
-  customer_remorse_return_shipping_fees_amount: cust_rem_ret_ship_fee_amt
-  customer_remorse_return_label_source: cust_rem_ret_label_src
   currency_conversion_service: currency_conv_service
+  customer_remorse_return_label_source: cust_rem_ret_label_src
+  customer_remorse_return_shipping_fees_amount: cust_rem_ret_ship_fee_amt
   delivery_charge_specification: delivery_charge_spec
+  health_plan_cost_sharing_specification: hth_plan_cost_shr_spec
   is_accessory_or_spare_part_for: is_access_or_part_for
   is_located_in_subcellular_location: is_located_in_subcell_loc
-  news_updates_and_guidelines: news_updates_guidelines
-  number_of_available_accommodation_units: num_of_accom_units
   mission_coverage_priorities_policy: mis_cover_priorities_pol
   monoisotopic_molecular_weight: mono_molecular_weight
+  news_updates_and_guidelines: news_updates_guidelines
+  number_of_available_accommodation_units: num_of_accom_units
   offers_prescription_by_mail: offers_prescript_by_mail
+  opening_hours_specification: opening_hours_spec
   primary_image_of_page: primary_image
   provides_broadcast_service: provides_broadcast_serv
   public_transport_closures_info: pub_trans_closures_info
   vehicle_identification_number: vin
-  opening_hours_specification: opening_hours_spec
 prefixes:
   actionable: action
   approved: appr
   associated: assoc
   benefits: bene
   currency: cur
-  customer_remorse_return: cust_rem_ret
   customer: cust
+  customer_remorse_return: cust_rem_ret
   cvd_num: cvd
   digital_document: digit_doc
   discussion: disc
@@ -41,9 +43,7 @@ prefixes:
   includes: inc
   item_defect_return: itm_def_ret
   maximum: max
-  medical_guideline: medical_guide
   merchant_return_policy: mer_ret_pol
-  merchant: mer
   number: num
   original: orig
   performing: perf
@@ -79,8 +79,6 @@ abbreviations:
   experience: exp
   frequency: freq
   guideline: guide
-  health: hth
-  health_plan: hth_plan
   historical: hist
   hours: hrs
   identification: id
@@ -105,6 +103,7 @@ suffixes:
   amount: amt
   application: app
   aspect: asp
+  article: art
   audience: aud
   buildings: bld
   business: biz
@@ -119,6 +118,7 @@ suffixes:
   credential: cred
   description: desc
   distribution: dist
+  document: doc
   duration: dur
   education: ed
   entity: ent

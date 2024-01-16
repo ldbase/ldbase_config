@@ -1,13 +1,44 @@
 _core:
-  default_config_hash: QDe_uFCawAfS1C9kifA44W3ymtPkR-usBhPB-2V-p7k
-default_vocabularies_group_label: 'Tags / Categories'
+  default_config_hash: kGVRJtnfTLO9qQfarhBFg_V_GoaDn7e1D4ePtQAAh2c
+default_field_groups:
+  taxonomy: 'Categories and Services'
 default_vocabularies:
   tags:
     id: tags
     label: Tags
     description: 'Use tags to group articles on similar topics into categories.'
     auto_create: true
-property_vocabularies:
+schema_property_vocabularies:
+  alumniOf:
+    id: alumni
+    label: Alumni
+  amenityFeature:
+    id: amenity
+    label: Amenity
+  availableService:
+    id: medical_service
+    label: 'Medical service'
+  epidemiology:
+    id: epidemiology
+    label: Epidemiology
+  cookingMethod:
+    id: cooking_method
+    label: 'Cooking method'
+  keywords:
+    id: keywords
+    label: Keywords
+  medicalAudience:
+    id: medical_audience
+    label: 'Medical audience'
+  medicalSpecialty:
+    id: medical_specialty
+    label: 'Medical specialty'
   recipeCategory:
     id: recipe_category
     label: 'Recipe category'
+  recipeCuisine:
+    id: recipe_cuisine
+    label: 'Recipe cuisine'
+  targetPopulation:
+    id: target_population
+    label: 'Target population'

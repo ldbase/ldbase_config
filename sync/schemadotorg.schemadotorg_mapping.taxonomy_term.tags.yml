@@ -1,0 +1,16 @@
+uuid: 25e1b9f2-181b-4011-b797-322a95073b99
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - taxonomy
+id: taxonomy_term.tags
+target_entity_type_id: taxonomy_term
+target_bundle: tags
+schema_type: DefinedTerm
+schema_properties:
+  description: description
+  name: name
+  uuid: termCode

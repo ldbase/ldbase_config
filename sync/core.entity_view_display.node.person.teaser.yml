@@ -47,7 +47,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 200
     region: content
   person_project_contributions_entity_view_1:
     settings: {  }

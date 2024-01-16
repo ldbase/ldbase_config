@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: YH2bPSi4CUITnkPdDu1_L11xp_yOrbdj0krRKc5PKd0
+  default_config_hash: aA_WVBvjUREWRdJO1aC_T2Jk2HRQ2_MpQ7VIv_DMiMk
 sets:
   required:
     label: Required
@@ -30,11 +30,6 @@ sets:
       - 'node:MediaGallery'
       - 'node:ImageGallery'
       - 'node:VideoGallery'
-  faq:
-    label: FAQ
-    types:
-      - 'paragraph:Question'
-      - 'node:FAQPage'
   howto:
     label: 'How to'
     types:
@@ -48,16 +43,11 @@ sets:
   food_establishment:
     label: 'Food establishment'
     types:
-      - 'paragraph:NutritionInformation'
       - 'paragraph:MenuItem'
       - 'paragraph:MenuSection'
       - 'node:Menu'
-      - 'node:FoodEstablishment'
-  recipe:
-    label: Recipe
-    types:
-      - 'paragraph:NutritionInformation'
       - 'node:Recipe'
+      - 'node:FoodEstablishment'
   movie:
     label: Movie
     types:
