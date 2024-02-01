@@ -128,7 +128,6 @@ module:
   tour: 0
   typed_data: 0
   update: 0
-  upgrade_status: 0
   user: 0
   user_email_verification: 0
   user_redirect: 0
