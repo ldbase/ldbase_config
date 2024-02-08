@@ -44,6 +44,7 @@ dependencies:
     - file
     - filter
     - group
+    - help
     - ldbase_embargoes
     - masquerade
     - mass_contact
@@ -63,6 +64,7 @@ permissions:
   - 'access content overview'
   - 'access entity usage statistics'
   - 'access files overview'
+  - 'access help pages'
   - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'

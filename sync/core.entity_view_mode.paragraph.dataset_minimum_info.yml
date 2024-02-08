@@ -6,5 +6,6 @@ dependencies:
     - paragraphs
 id: paragraph.dataset_minimum_info
 label: 'Dataset Minimum Info'
+description: ''
 targetEntityType: paragraph
 cache: true
