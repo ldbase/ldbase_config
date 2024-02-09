@@ -103,7 +103,7 @@ elements: |-
     '#required_error': 'You must agree to the LDbase Terms of Use to create an account'
   captcha:
     '#type': captcha
-    '#captcha_type': captcha/Math
+    '#captcha_type': image_captcha/Image
 css: ''
 javascript: ''
 settings:

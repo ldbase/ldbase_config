@@ -1,0 +1,8 @@
+uuid: 9dfd0967-f08d-4e4b-b0b7-8671cd78ad22
+langcode: en
+status: true
+dependencies: {  }
+id: submit_webforms
+label: 'Submit Webforms'
+threshold: 0.6
+challenge: captcha/Math

@@ -29,6 +29,7 @@ elements: |-
     '#required': true
   captcha:
     '#type': captcha
+    '#captcha_type': recaptcha_v3/submit_webforms
   node_id:
     '#type': hidden
     '#title': node_id
