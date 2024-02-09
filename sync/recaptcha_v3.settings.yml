@@ -3,7 +3,7 @@ _core:
 site_key: 6Lekq20pAAAAAH-Gj7PdImnUMgzXCi4i9tHYNU9d
 secret_key: 6Lekq20pAAAAAGyzPNfK7HPkiMP1wEqGe-d2WO-N
 hide_badge: false
-verify_hostname: false
+verify_hostname: true
 default_challenge: image_captcha/Image
 error_message: 'Antibot verification failed.'
 cacheable: false

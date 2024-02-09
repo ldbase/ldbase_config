@@ -53,7 +53,7 @@ elements: |-
     '#description_display': before
   captcha:
     '#type': captcha
-    '#captcha_type': image_captcha/Image
+    '#captcha_type': recaptcha_v3/submit_webforms
 css: ''
 javascript: ''
 settings:

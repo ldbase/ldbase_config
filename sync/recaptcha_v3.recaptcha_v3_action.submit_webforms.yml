@@ -5,4 +5,4 @@ dependencies: {  }
 id: submit_webforms
 label: 'Submit Webforms'
 threshold: 0.6
-challenge: captcha/Math
+challenge: recaptcha/reCAPTCHA
