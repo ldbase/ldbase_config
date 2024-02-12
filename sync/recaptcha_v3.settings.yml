@@ -1,7 +1,7 @@
 _core:
   default_config_hash: ae8AQLsAFXvfcLPmE4YUBcxThAqf7psqRTHzhccslls
-site_key: 6Lekq20pAAAAAH-Gj7PdImnUMgzXCi4i9tHYNU9d
-secret_key: 6Lekq20pAAAAAGyzPNfK7HPkiMP1wEqGe-d2WO-N
+site_key: ''
+secret_key: ''
 hide_badge: false
 verify_hostname: true
 default_challenge: image_captcha/Image
