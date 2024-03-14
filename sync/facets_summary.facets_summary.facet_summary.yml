@@ -77,3 +77,9 @@ facets:
     separator: ', '
     show_count: false
     weight: 0
+  search_facet_assessment:
+    checked: true
+    label: 'Search Facet: Assessment'
+    separator: ', '
+    show_count: false
+    weight: 0

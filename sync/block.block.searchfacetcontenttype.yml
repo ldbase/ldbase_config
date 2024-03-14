@@ -12,7 +12,7 @@ dependencies:
 id: searchfacetcontenttype
 theme: portcullis
 region: sidebar_first
-weight: -33
+weight: -39
 provider: null
 plugin: 'facet_block:search_facet_content_type'
 settings:

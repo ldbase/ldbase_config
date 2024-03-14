@@ -10,7 +10,7 @@ dependencies:
 id: browsebyvocabularyblock
 theme: portcullis
 region: sidebar_first
-weight: -23
+weight: -29
 provider: null
 plugin: browse_by_vocabulary_block
 settings:

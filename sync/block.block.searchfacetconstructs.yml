@@ -12,7 +12,7 @@ dependencies:
 id: searchfacetconstructs
 theme: portcullis
 region: sidebar_first
-weight: -32
+weight: -38
 provider: null
 plugin: 'facet_block:search_facet_constructs'
 settings:

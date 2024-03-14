@@ -12,7 +12,7 @@ dependencies:
 id: searchfacetspecialpopulations
 theme: portcullis
 region: sidebar_first
-weight: -29
+weight: -35
 provider: null
 plugin: 'facet_block:search_facet_special_populations'
 settings:
