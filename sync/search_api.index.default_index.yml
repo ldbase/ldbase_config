@@ -318,7 +318,7 @@ field_settings:
         - paragraphs
         - taxonomy
   field_project_type:
-    label: 'Project Descriptors'
+    label: 'Project Methods'
     datasource_id: 'entity:node'
     property_path: field_project_type
     type: integer
@@ -326,7 +326,7 @@ field_settings:
       config:
         - field.storage.node.field_project_type
   field_project_type_fulltext:
-    label: 'Project Descriptors » Taxonomy term » Name'
+    label: 'Project Methods » Taxonomy term » Name'
     datasource_id: 'entity:node'
     property_path: 'field_project_type:entity:name'
     type: text
@@ -670,6 +670,7 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -48
+  custom_value: {  }
   entity_status:
     weights:
       preprocess_index: -10

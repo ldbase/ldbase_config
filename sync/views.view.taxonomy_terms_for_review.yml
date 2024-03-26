@@ -8736,11 +8736,11 @@ display:
       tags: {  }
   block_8:
     id: block_8
-    display_title: 'Project Descriptors'
+    display_title: 'Project Methods'
     display_plugin: block
     position: 2
     display_options:
-      title: 'Project Descriptors Terms for Review'
+      title: 'Project Methods Terms for Review'
       fields:
         tid:
           id: tid
@@ -8818,7 +8818,7 @@ display:
           entity_type: taxonomy_term
           entity_field: name
           plugin_id: term_name
-          label: 'Project Descriptors'
+          label: 'Project Methods'
           exclude: false
           alter:
             alter_text: false
@@ -9114,7 +9114,21 @@ display:
       relationships: {  }
       display_description: ''
       display_extenders:
-        metatag_display_extender: {  }
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender: {  }
       block_hide_empty: true
     cache_metadata:
       max-age: -1

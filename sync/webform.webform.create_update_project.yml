@@ -112,9 +112,9 @@ elements: |-
         '#type': hidden
   project_type:
     '#type': webform_entity_select
-    '#title': 'Project Descriptor(s)'
+    '#title': 'Project Method(s)'
     '#multiple': true
-    '#description': 'Enter descriptors that apply to the methodologies used in the project. You can add terms by typing directly in the field, if the term is not listed yet.&nbsp;<a href="/taxonomy/project_types" target="_blank">View all Project Descriptors</a>'
+    '#description': 'Enter descriptors that apply to the research methodologies used in the project. You can add terms by typing directly in the field, if the term is not listed yet..&nbsp;<a href="/taxonomy/project_types" target="_blank">View all Project Methods</a>'
     '#help': 'If you used multiple methodological approaches in your study, enter all that apply.'
     '#description_display': before
     '#placeholder': 'Click here to select or enter items'
@@ -214,7 +214,7 @@ elements: |-
       funding_agency:
         '#type': entity_autocomplete
         '#title': 'Funding Agency'
-        '#description': '<a href=''/taxonomy/funding_agencies'' target=''_blank''>View all Funding Agencies</a>'
+        '#description': "<a href='/taxonomy/funding_agencies' target='_blank'>View all Funding Agencies</a>"
         '#placeholder': 'For Example: National Institutes of Health'
         '#target_type': taxonomy_term
         '#selection_handler': 'default:taxonomy_term'
