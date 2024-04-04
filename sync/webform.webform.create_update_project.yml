@@ -110,24 +110,6 @@ elements: |-
         '#type': hidden
       activity_range_target_revision_id:
         '#type': hidden
-  project_type:
-    '#type': webform_entity_select
-    '#title': 'Project Method(s)'
-    '#multiple': true
-    '#description': 'Enter descriptors that apply to the research methodologies used in the project. You can add terms by typing directly in the field, if the term is not listed yet..&nbsp;<a href="/taxonomy/project_types" target="_blank">View all Project Methods</a>'
-    '#help': 'If you used multiple methodological approaches in your study, enter all that apply.'
-    '#description_display': before
-    '#placeholder': 'Click here to select or enter items'
-    '#select2': true
-    '#required': true
-    '#target_type': taxonomy_term
-    '#selection_handler': 'default:taxonomy_term'
-    '#selection_settings':
-      target_bundles:
-        project_types: project_types
-      sort:
-        field: name
-        direction: ASC
   schooling:
     '#type': webform_entity_select
     '#title': 'Educational Environment'
@@ -159,6 +141,23 @@ elements: |-
     '#selection_settings':
       target_bundles:
         curricula: curricula
+      sort:
+        field: name
+        direction: ASC
+  project_type:
+    '#type': webform_entity_select
+    '#title': 'Project Method(s)'
+    '#multiple': true
+    '#description': '<p>Enter descriptors that apply to the research methodologies used in the project. You can add terms by typing directly in the field, if the term is not listed yet..&nbsp;<a href="/taxonomy/project_types" target="_blank">View all Project Methods</a></p>'
+    '#help': '<p>If you used multiple methodological approaches in your study, enter all that apply.</p>'
+    '#description_display': before
+    '#placeholder': 'Click here to select or enter items'
+    '#select2': true
+    '#target_type': taxonomy_term
+    '#selection_handler': 'default:taxonomy_term'
+    '#selection_settings':
+      target_bundles:
+        project_types: project_types
       sort:
         field: name
         direction: ASC

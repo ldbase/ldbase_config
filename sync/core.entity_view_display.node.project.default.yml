@@ -241,32 +241,6 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
-          label: 'Project Type'
-          context_mapping: {  }
-        components:
-          30275b1a-7224-42d0-95bf-eec8fe214db2:
-            uuid: 30275b1a-7224-42d0-95bf-eec8fe214db2
-            region: content
-            configuration:
-              id: 'field_block:node:project:field_project_type'
-              label: 'Project Type'
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_label
-                label: inline
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
           label: 'Time Method Section'
           context_mapping: {  }
         components:
@@ -328,6 +302,32 @@ third_party_settings:
             configuration:
               id: 'field_block:node:project:field_curricula'
               label: Curricula
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Project Methods'
+          context_mapping: {  }
+        components:
+          30275b1a-7224-42d0-95bf-eec8fe214db2:
+            uuid: 30275b1a-7224-42d0-95bf-eec8fe214db2
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_project_type'
+              label: 'Project Type'
               label_display: '0'
               provider: layout_builder
               context_mapping:
