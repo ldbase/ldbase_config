@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: aA_WVBvjUREWRdJO1aC_T2Jk2HRQ2_MpQ7VIv_DMiMk
+  default_config_hash: qWKiOPeVoY3XJa42qRrMqnp-ktXiEkrFHGdIHTXNVtE
 sets:
   required:
     label: Required
@@ -77,6 +77,15 @@ sets:
       - 'node:Service'
       - 'node:JobPosting'
       - 'node:LocalBusiness'
+  hotel:
+    label: Hotel
+    types:
+      - 'paragraph:BedDetails'
+      - 'paragraph:ContactPoint'
+      - 'node:Person'
+      - 'node:Organization'
+      - 'node:HotelRoom'
+      - 'node:Hotel'
   medical_doctor:
     label: 'Medical doctor'
     types:

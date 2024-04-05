@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: Z2C2lXW6ep7EyyU7TIra4WfNYYokDyNLmDakOEqExPs
+  default_config_hash: kgC8PpW5bN0WOln4OBxR0arF5y1UqxibcC5yprx6cLc
 custom_words:
   Nonprofit501: 'Nonprofit 501'
   gtin: GTIN
@@ -30,6 +30,7 @@ prefixes:
   approved: appr
   associated: assoc
   benefits: bene
+  certification: cert
   currency: cur
   customer: cust
   customer_remorse_return: cust_rem_ret
@@ -102,8 +103,8 @@ suffixes:
   affiliation: affl
   amount: amt
   application: app
-  aspect: asp
   article: art
+  aspect: asp
   audience: aud
   buildings: bld
   business: biz

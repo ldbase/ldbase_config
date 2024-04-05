@@ -1,5 +1,9 @@
 _core:
-  default_config_hash: 6lja2jE1Tp7r4dLP_NiSi3fLU_jPI1RpY8VXhCft-9M
+  default_config_hash: z4F98vCHxfYDuZWgFVfFFIDOODJXbr3DlLXRkrE_2is
+requirements:
+  recommended_modules: true
+schema_data:
+  file: 'data/[VERSION]/schemaorg-current-https-[TABLE].csv'
 schema_types:
   default_types:
     WebPage:
@@ -60,6 +64,8 @@ schema_types:
       - name
       - seasonNumber
       - startDate
+    TVSeason:
+      - partOfSeries
     CreativeWorkSeries:
       - description
       - image
@@ -90,8 +96,6 @@ schema_types:
     PodcastEpisode:
       - actor
       - sameAs
-    TVSeason:
-      - partOfSeries
     TVEpisode:
       - actor
       - director
@@ -408,6 +412,16 @@ schema_types:
       - unitText
       - value
       - valueReference
+    LocationFeatureSpecification:
+      - '-unitCode'
+      - '-unitText'
+      - '-value'
+      - '-valueReference'
+      - description
+      - image
+      - hoursAvailable
+      - validFrom
+      - validThrough
     QuantitativeValue:
       - name
       - unitCode
@@ -539,8 +553,12 @@ schema_types:
       - servesCuisine
     LodgingBusiness:
       - amenityFeature
+      - availableLanguage
+      - contactPoint
       - checkinTime
       - checkoutTime
+      - hasMap
+      - faxNumber
       - numberOfRooms
       - petsAllowed
       - priceRange
@@ -588,6 +606,26 @@ schema_types:
       - longitude
       - name
       - telephone
+    Accommodation:
+      - '-openingHours'
+      - '-openingHoursSpecification'
+      - '-telephone'
+      - amenityFeature
+    Room:
+      - '-address'
+      - '-latitude'
+      - '-longitude'
+      - '-geo'
+    HotelRoom:
+      - amenityFeature
+      - bed
+      - occupancy
+      - permittedUsage
+      - petsAllowed
+      - smokingAllowed
+    BedDetails:
+      - numberOfBeds
+      - typeOfBed
     CivicStructure:
       - openingHours
     TouristAttraction:
@@ -734,8 +772,10 @@ schema_properties:
       - TVSeason
     VideoGallery--hasPart:
       - VideoObject
-    worksFor:
-      - LocalBusiness
+    LodgingBusiness--containsPlace:
+      - Accommodation
+    Accommodation--containedInPlace:
+      - LodgingBusiness
     employee:
       - Person
     itemListElement:
@@ -744,6 +784,11 @@ schema_properties:
       - Person
     studyLocation:
       - Place
+    value:
+      - Text
+      - StructuredValue
+    worksFor:
+      - LocalBusiness
   ignored_properties:
     - accessMode
     - accessModeSufficient
@@ -852,7 +897,6 @@ schema_properties:
     Question--name:
       label: Question
     SpecialAnnouncement--category:
-      type: string
       label: Category
       unlimited: false
     VideoGallery--hasPart:
@@ -931,6 +975,8 @@ schema_properties:
       unlimited: true
     bodyLocation:
       type: text_long
+    carbohydrateContent:
+      label: Carbohydrates
     category:
       label: Categories
       unlimited: true
@@ -941,6 +987,8 @@ schema_properties:
       unlimited: true
     children:
       unlimited: true
+    cholesterolContent:
+      label: Cholesterol
     citation:
       label: Citations
       unlimited: true
@@ -948,8 +996,6 @@ schema_properties:
       type: text_long
     colleague:
       label: Colleagues
-      unlimited: true
-    cookingMethod:
       unlimited: true
     comment:
       label: Comments
@@ -965,6 +1011,8 @@ schema_properties:
       unlimited: true
     contributor:
       label: Contributors
+      unlimited: true
+    cookingMethod:
       unlimited: true
     courseMode:
       type: string
@@ -1016,8 +1064,12 @@ schema_properties:
       type: text_long
     experienceRequirements:
       unlimited: true
+    fatContent:
+      label: Fat
     faxNumber:
       type: telephone
+    fiberContent:
+      label: Fiber
     followup:
       type: text_long
     foodWarning:
@@ -1145,16 +1197,17 @@ schema_properties:
       type: text_long
     parentOrganization:
       unlimited: true
-    pathophysiology:
-      type: text_long
     partOfSeason:
       required: true
     partOfSeries:
       required: true
+    pathophysiology:
+      type: text_long
     performer:
       label: Performers
       unlimited: true
     photo:
+      label: Photos
       unlimited: true
     physiologicalBenefits:
       unlimited: true
@@ -1165,19 +1218,21 @@ schema_properties:
     possibleTreatment:
       label: 'Possible treatments'
       unlimited: true
+    preparation:
+      type: text_long
     primaryImageOfPage:
       name: image
     primaryPrevention:
       label: 'Primary preventions'
       unlimited: true
-    preparation:
-      type: text_long
     productionCompany:
       label: 'Production companies'
       unlimited: true
     programPrerequisites:
       type: string
       unlimited: true
+    proteinContent:
+      label: Protein
     publication:
       label: Publications
       unlimited: true
@@ -1187,14 +1242,17 @@ schema_properties:
       label: 'Recipe categories'
       unlimited: true
     recipeCuisine:
-      label: 'Recipe cuisines'
+      label: Cuisines
       unlimited: true
     recipeIngredient:
-      label: 'Recipe ingredients'
+      label: Ingredients
       unlimited: true
     recipeInstructions:
+      label: Instructions
       type: string_long
       unlimited: true
+    recipeYield:
+      label: Yield
     recommendedIntake:
       unlimited: true
     relatedDrug:
@@ -1217,6 +1275,8 @@ schema_properties:
       type: text_long
     sameAs:
       unlimited: true
+    saturatedFatContent:
+      label: 'Saturated Fat'
     secondaryPrevention:
       label: 'Secondary preventions'
       unlimited: true
@@ -1228,6 +1288,8 @@ schema_properties:
       unlimited: true
     skills:
       unlimited: true
+    sodiumContent:
+      label: Sodium
     spoken_by_character:
       label: 'Spoken by'
     sponsor:
@@ -1239,10 +1301,12 @@ schema_properties:
     studySubject:
       label: 'Study subjects'
       unlimited: true
-    subjectOf:
-      unlimited: true
     subOrganization:
       unlimited: true
+    subjectOf:
+      unlimited: true
+    sugarContent:
+      label: Sugar
     suitableForDiet:
       label: 'Suitable for diets'
       unlimited: true
@@ -1259,9 +1323,13 @@ schema_properties:
     trailer:
       label: Trailers
       unlimited: true
+    transFatContent:
+      label: 'Trans fat'
     typicalTest:
       label: 'Typical tests'
       unlimited: true
+    unsaturatedFatContent:
+      label: 'Unsaturated fat'
     usedToDiagnose:
       type: text_long
     usesDevice:
@@ -1275,6 +1343,10 @@ schema_properties:
     address:
       label: hidden
     image:
+      label: hidden
+    logo:
+      label: hidden
+    photo:
       label: hidden
     primaryImageOfPage:
       label: hidden

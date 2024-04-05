@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: Ot4pEuzVAMe0ZpSf3H6_kWEcGCtybc2TB_-hEXx4hr8
+  default_config_hash: XS8oszqTKqu2_TekYaF--R52OeUnwayumJ0lRBmMxbQ
 schema_property_order:
   - url
   - identifier
@@ -44,12 +44,16 @@ schema_property_image_styles:
   thumbnail: thumbnail
 schema_type_entity_references_display:
   block_content: entity
-  paragraph--layout: none
   paragraph: entity
+  paragraph--layout: none
   media: entity
-  Intangible: entity
+  media--image: '[media:field_media_image:entity:url]'
   node--Thing: url
+  node--Intangible: entity
+  taxonomy_term: entity
+  Intangible: entity
 entity_types_exclude_url:
   - block_content
   - media
   - paragraph
+  - taxonomy_term
