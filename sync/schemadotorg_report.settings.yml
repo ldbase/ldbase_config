@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: eXtfqO7osSAGC9lKySNfxZO8H0lGr9Yf7zTChUt5R48
+  default_config_hash: 9-oml_uFA8uV-C-ovIjGzdo5lAO7kuu4VSNvtKS0Orw
 about:
   -
     title: 'Schema.org Documentation'
@@ -242,6 +242,9 @@ types:
     -
       title: 'Medical Professionals'
       uri: 'https://jsonld.com/person/medical-professionals/'
+    -
+      title: 'Schema.org V24.0 Release: Changes to Physician Schema Markup'
+      uri: 'https://www.schemaapp.com/schema-app-news/schema-org-v24-0-release-changes-to-physician-schema-markup/'
   PodcastSeries:
     -
       title: 'Proposal: Podcast and PodcastEpisode #373'
@@ -342,6 +345,9 @@ types:
     -
       title: 'How to use additionalType and sameAs to link to Wikipedia'
       uri: 'https://support.schemaapp.com/support/solutions/articles/33000277321-how-to-use-additionaltype-and-sameas-to-link-to-wikipedia'
+    -
+      title: 'WikiData Lookup by Name (for http://schema.org/about and http://schema.org/additionalType)'
+      uri: 'https://www.schemaapp.com/wikidata-lookup-by-name/'
   Vehicle:
     -
       title: 'Markup for Autos'
