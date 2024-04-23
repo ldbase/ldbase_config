@@ -241,32 +241,6 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
-          label: 'Time Method Section'
-          context_mapping: {  }
-        components:
-          eb0c2278-5e34-46c4-9849-1b37fd04b496:
-            uuid: eb0c2278-5e34-46c4-9849-1b37fd04b496
-            region: content
-            configuration:
-              id: 'field_block:node:project:field_time_method'
-              label: 'Time Method'
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_label
-                label: inline
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
           label: 'Schooling Section'
           context_mapping: {  }
         components:
@@ -328,6 +302,32 @@ third_party_settings:
             configuration:
               id: 'field_block:node:project:field_project_type'
               label: 'Project Type'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Developmental Design'
+          context_mapping: {  }
+        components:
+          eb0c2278-5e34-46c4-9849-1b37fd04b496:
+            uuid: eb0c2278-5e34-46c4-9849-1b37fd04b496
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_time_method'
+              label: 'Time Method'
               label_display: '0'
               provider: layout_builder
               context_mapping:
