@@ -9,10 +9,10 @@ label: 'LDbase - User Added as Contributor'
 description: "Message sent when a user's associated Person node is selected as a contributor"
 text:
   -
-    value: "<p>LDBase Notification: Added as Contributor</p>\r\n"
+    value: '<p>LDBase Notification: <span>You’ve been added as a Contributor</span></p>'
     format: basic_html
   -
-    value: "<p>You were added to @object_text @link_to_object&nbsp;by @user</p>\r\n"
+    value: '<p>You were added to @object_text @link_to_object&nbsp;by @user</p><p dir="ltr"><span>Please use the link above to review this content. If you did not contribute to this research, reach out to us at&nbsp;</span><a href="mailto:LDbase@fcrr.org"><span>LDbase@fcrr.org</span></a><span> so that we can remove you.</span></p><p dir="ltr"><span>This data will be linked to you and will show up on your LDbase contributions page.&nbsp;</span></p><p dir="ltr"><span>Remember, you can control how your name is cited throughout LDbase. Please go to your Profile Edit page to update this information to ensure correct citation of your name.&nbsp;</span></p><p dir="ltr"><span>This is an automated message from the LDbase repository. Feel free to email us at&nbsp;</span><a href="mailto:LDbase@fcrr.org"><span>LDbase@fcrr.org</span></a><span> with any questions. Thank you for being a part of the LDbase community!&nbsp;</span></p><p dir="ltr">&nbsp;</p>'
     format: basic_html
 settings:
   'token options':

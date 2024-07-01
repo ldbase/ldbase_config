@@ -9,13 +9,10 @@ label: 'LDbase - Contact Form'
 description: 'Message sent from Contact Person or Contact Project forms'
 text:
   -
-    value: "<p><strong>A message was sent from an LDbase user to your email. Responding via your email will give this person your email address so you can communicate through email.</strong></p>\r\n"
+    value: '<p>Subject: @subject</p>'
     format: basic_html
   -
-    value: "<p>Subject: @subject</p>\r\n"
-    format: basic_html
-  -
-    value: "<p>Message from LDbase User: @message</p>\r\n"
+    value: '<p><strong>Message from:</strong> @from_name</p><p><strong>Message sent to:</strong> @to_names</p><p><strong>Message: </strong>@message</p><p>@additional_text</p><p>This is an automated message from the LDbase repository. Feel free to email us at LDbase@fcrr.org with any questions.<br>Thank you for being a part of the LDbase community!</p>'
     format: basic_html
 settings:
   'token options':

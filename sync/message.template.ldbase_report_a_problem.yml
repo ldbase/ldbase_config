@@ -12,7 +12,7 @@ text:
     value: "<p>LDbase Notification: Problem Reported</p>\r\n"
     format: basic_html
   -
-    value: "<p>From the Report a Problem form:</p>\r\n\r\n<ul>\r\n\t<li><strong>Name</strong>: @name</li>\r\n\t<li><strong>Email</strong>: @email</li>\r\n\t<li><strong>Reply Requested</strong>: @reply_requested</li>\r\n\t<li><strong>Issue Reported</strong>: @issue</li>\r\n\t<li><strong>URL</strong>: @url</li>\r\n</ul>\r\n"
+    value: '<p>From the Report a Problem form:</p><p>This message was sent to @email_sent_to</p><ul><li><strong>Name</strong>: @name</li><li><strong>Email</strong>: @email</li><li><strong>Reply Requested</strong>: @reply_requested</li><li><strong>Issue Reported</strong>: @issue</li><li><strong>URL</strong>: @url</li></ul>'
     format: basic_html
 settings:
   'token options':

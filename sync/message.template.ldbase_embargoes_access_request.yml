@@ -12,10 +12,7 @@ text:
     value: "<p>LDbase Notification: Request for access to an embargoed file</p>\r\n"
     format: basic_html
   -
-    value: "<p>The user <strong>@user_name</strong> (@user_email) has requested access to the embargoed file for <strong>@object_type: @object_title</strong>.</p>\r\n\r\n<p>Reasons for requesting access:</p>\r\n\r\n<p>@reasons_for_access</p>\r\n\r\n<p>You may confirm at @confirm_link .&nbsp; This will add the user to the exempt users for that @object_type.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
-    format: basic_html
-  -
-    value: "<p>You must be logged in to LDbase to grant access to the user.</p>\r\n"
+    value: '<p>This message was sent to @email_sent_to</p><p>The user <strong>@user_name</strong> (@user_email) has requested access to the embargoed file for <strong>@object_type: @object_title</strong>.</p><p>Reasons for requesting access:</p><p>@reasons_for_access</p><p>You may confirm <span>or deny this request </span>at @confirm_link .&nbsp; <span>Confirming&nbsp;will add the user to the exempt users list&nbsp;and give them the ability to view and download the embargoed file. You must be logged in to LDbase to grant access to the user.&nbsp;</span></p><p><span>As a reminder, when you restrict public access to your data, your Project Administrators and Project Editors are the only people who can view those embargoed files. You can, however, allow certain individuals, such as a collaborator or a data requester whom you approve of, to override the restriction to view/download the data.&nbsp;</span></p><p dir="ltr"><span>If you’d like to know more about this functionality, please refer to the Embargoed Data section of our </span><a href="/data-sharing-resources/faq/general"><span>FAQs</span></a><span> page.&nbsp;</span></p><p><span>This is an automated message from the LDbase repository. Feel free to email us at&nbsp;</span><a href="mailto:LDbase@fcrr.org"><span>LDbase@fcrr.org</span></a><span> with any questions. Thank you for being a part of the LDbase community!&nbsp;</span></p>'
     format: basic_html
 settings:
   'token options':

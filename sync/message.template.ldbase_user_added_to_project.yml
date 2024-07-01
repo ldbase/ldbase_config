@@ -9,10 +9,10 @@ label: 'LDbase - User Added to Project Group'
 description: 'Message sent when a user is added to a project group'
 text:
   -
-    value: "<p>LDbase Notification: Added to Project Group</p>\r\n"
+    value: '<p>LDbase Notification: Added to Project Group</p>'
     format: basic_html
   -
-    value: "<p>You have been added to @object_text @link_to_object&nbsp;in the role&nbsp;<strong>@group_role</strong>.</p>\r\n"
+    value: '<p>You have been added to @object_text @link_to_object&nbsp;in the role of&nbsp;<strong>@group_role</strong>.</p><p>If you are a <em>Project Editor</em>, you may&nbsp;</p><ul><li>Add/Edit all project metadata</li><li>Upload data to the project (datasets, codebooks, code, and documents)</li><li>Approve exempt access to certain users for any data you have embargoed</li><li>Access/Edit embargoed data</li></ul><p>If you are a <em>Project Administrator</em>, in addition to the responsibilities listed above, you may also</p><ul><li>Add/Remove Project Editors and other Project Administrators</li><li>Delete the project completely from LDbase</li></ul><p><span>This is an automated message from the LDbase repository. Feel free to email us at&nbsp;</span><a href="mailto:LDbase@fcrr.org"><span>LDbase@fcrr.org</span></a><span> with any questions. Thank you for being a part of the LDbase community!&nbsp;</span></p>'
     format: basic_html
 settings:
   'token options':

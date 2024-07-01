@@ -9,10 +9,10 @@ label: 'LDbase - Existing Record Request'
 description: 'Message sent to Group Admin when a user indicates a possible match between their account and another contributor record'
 text:
   -
-    value: "<p>LDbase Notification: Request to Review Contributor Account Duplication</p>\r\n"
+    value: '<p>LDbase Notification: Request to Connect a Contributor to your Project</p>'
     format: basic_html
   -
-    value: "<p>The user <strong>@user</strong>&nbsp;has indicated that they believe they were entered as a contributor on @object_text <a href=\"@link_to_object\">@link_to_object</a></p>\r\n\r\n<p>As an administrator for this project, you may approve and connect the user to the item or reject it and leave things as they are.</p>\r\n\r\n<p>Go to <a href=\"@existing_records_requests_link\">@existing_records_requests_link</a>&nbsp;to view the Existing Record Requests for this Project.</p>\r\n"
+    value: '<p>This message was sent to @email_sent_to</p><p>The user <strong>@user</strong>&nbsp;<span>believes they are currently listed as a contributor on</span> @object_text <a href="@link_to_object">@link_to_object</a></p><p><span>As an administrator for this project, you&nbsp;can APPROVE this request and connect the user to the item,&nbsp;or you can REJECT it and leave things as they are. Linking people to your project allows the public to learn more about the users who have contributed to your research.&nbsp;&nbsp;</span></p><p><span>Please go to</span> <a href="@existing_records_requests_link">@existing_records_requests_link</a>&nbsp;<span> to view and respond to existing requests. You must be logged into your LDbase account to approve or reject requests.</span></p><p><span>This is an automated message from the LDbase repository. Feel free to email us at&nbsp;</span><a href="mailto:LDbase@fcrr.org"><span>LDbase@fcrr.org</span></a><span> with any questions. Thank you for being a part of the LDbase community!&nbsp;&nbsp;</span></p>'
     format: basic_html
 settings:
   'token options':
