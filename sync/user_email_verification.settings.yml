@@ -1,5 +1,6 @@
 _core:
   default_config_hash: jMF3rV51ujHssuZyYCHEBAat_VlUArx0IGmGOZzOV8Y
+langcode: en
 skip_roles:
   administrator: administrator
   fcrr_admin: fcrr_admin

@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Existing Record Request'
 type: existing_record_request
 description: 'This content type store data when a new user requests a record to be affiliated with his user account '
-help: ''
+help: null
 new_revision: false
 preview_mode: 0
 display_submitted: false

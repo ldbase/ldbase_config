@@ -1,9 +1,6 @@
 _core:
-  default_config_hash: r-bd_415NlN2gVTTWz3JIb9p60xdbhuPhNKcxG7TKWo
-default_field_suffix: _subtype
-default_field_label: Subtype
-default_field_description: 'A more specific subtype for the item. This is used to allow more specificity without having to create dedicated Schema.org entity types.'
-default_subtypes:
+  default_config_hash: LFl_1Pm8sg-yXCOSEYO6a6nzfLkMoh2lfw88CbhBR6M
+default_types:
   - AdministrativeArea
   - Article
   - CivicStructure

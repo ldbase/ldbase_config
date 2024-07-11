@@ -1,5 +1,6 @@
 _core:
   default_config_hash: kGVRJtnfTLO9qQfarhBFg_V_GoaDn7e1D4ePtQAAh2c
+langcode: en
 default_field_groups:
   taxonomy: 'Categories and Services'
 default_vocabularies:

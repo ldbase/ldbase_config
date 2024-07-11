@@ -6,3 +6,4 @@ name: 'Project Methods'
 vid: project_types
 description: 'previously called Project Types, then Project Descriptors'
 weight: 0
+new_revision: false

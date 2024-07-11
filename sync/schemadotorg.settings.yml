@@ -1,5 +1,6 @@
 _core:
   default_config_hash: z4F98vCHxfYDuZWgFVfFFIDOODJXbr3DlLXRkrE_2is
+langcode: en
 requirements:
   recommended_modules: true
 schema_data:
@@ -1248,8 +1249,8 @@ schema_properties:
       label: Ingredients
       unlimited: true
     recipeInstructions:
-      label: Instructions
       type: string_long
+      label: Instructions
       unlimited: true
     recipeYield:
       label: Yield
@@ -1352,7 +1353,7 @@ schema_properties:
       label: hidden
   default_field_types: {  }
   default_field_weights:
-    - subtype
+    - additionalType
     - name
     - title
     - alternateName

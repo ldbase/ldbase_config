@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Data Collection Locations'
 vid: data_collection_locations
-description: ''
+description: null
 weight: 0
+new_revision: false

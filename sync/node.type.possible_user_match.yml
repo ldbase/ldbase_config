@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Possible User Match'
 type: possible_user_match
 description: 'LDbase content that stores possible matches between Persons'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

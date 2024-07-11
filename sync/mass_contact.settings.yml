@@ -1,5 +1,6 @@
 _core:
   default_config_hash: nA0k5DYGKRFck4CBIvP8JrNVSTQcRonb-RUT0r25Mg0
+langcode: en
 form_information: 'Send email messages using the following form.'
 recipient_limit: 0
 send_with_cron: false
