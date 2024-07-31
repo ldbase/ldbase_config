@@ -13,3 +13,4 @@ schema_type: FundingAgency
 schema_properties:
   field_grant_number: description
   field_funding_agency: name
+additional_mappings: {  }

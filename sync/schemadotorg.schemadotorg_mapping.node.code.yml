@@ -25,3 +25,4 @@ schema_properties:
   title: name
   field_doi: sameAs
   field_external_resource: url
+additional_mappings: {  }

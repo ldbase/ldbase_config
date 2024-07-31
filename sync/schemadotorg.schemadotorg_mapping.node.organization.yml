@@ -20,3 +20,4 @@ schema_properties:
   title: name
   field_parent_organization: parentOrganization
   field_website: sameAs
+additional_mappings: {  }

@@ -25,3 +25,4 @@ schema_properties:
   field_document_file: mainEntity
   title: name
   field_external_resource: url
+additional_mappings: {  }

@@ -18,3 +18,4 @@ schema_properties:
   langcode: inLanguage
   name: name
   thumbnail: thumbnail
+additional_mappings: {  }

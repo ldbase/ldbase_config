@@ -15,3 +15,4 @@ schema_properties:
   changed: dateModified
   langcode: inLanguage
   name: name
+additional_mappings: {  }

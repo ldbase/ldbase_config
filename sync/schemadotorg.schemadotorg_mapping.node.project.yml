@@ -23,3 +23,4 @@ schema_properties:
   title: name
   field_doi: sameAs
   field_related_organizations: sourceOrganization
+additional_mappings: {  }

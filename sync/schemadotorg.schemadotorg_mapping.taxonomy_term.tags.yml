@@ -14,3 +14,4 @@ schema_properties:
   description: description
   name: name
   uuid: termCode
+additional_mappings: {  }

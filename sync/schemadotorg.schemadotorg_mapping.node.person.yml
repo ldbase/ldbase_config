@@ -26,3 +26,4 @@ schema_properties:
   title: name
   field_orcid: sameAs
   field_related_organizations: worksFor
+additional_mappings: {  }

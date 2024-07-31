@@ -25,3 +25,4 @@ schema_properties:
   field_component_skills: keywords
   field_license: license
   title: name
+additional_mappings: {  }

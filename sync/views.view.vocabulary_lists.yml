@@ -302,6 +302,7 @@ display:
         type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 50
           total_pages: null
           id: 0
@@ -319,7 +320,6 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -337,7 +337,22 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts: {  }
+      sorts:
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments:
         vid:
           id: vid
@@ -1414,6 +1429,37 @@ display:
           role:
             administrator: administrator
             fcrr_admin: fcrr_admin
+      sorts:
+        vid:
+          id: vid
+          table: taxonomy_term_field_data
+          field: vid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: vid
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+        name:
+          id: name
+          table: taxonomy_term_field_data
+          field: name
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments: {  }
       filters: {  }
       filter_groups:
@@ -1439,6 +1485,7 @@ display:
         group_by: false
         relationships: false
         fields: false
+        sorts: false
         arguments: false
         filters: false
         filter_groups: false
@@ -2247,7 +2294,7 @@ display:
             title_enable: false
             title: All
           title_enable: true
-          title: '{{ arguments.vid }}'
+          title: '{{ vid }}'
           default_argument_type: fixed
           default_argument_options:
             argument: ''
@@ -2617,7 +2664,7 @@ display:
             title_enable: false
             title: All
           title_enable: true
-          title: '{{ arguments.vid }}'
+          title: '{{ vid }}'
           default_argument_type: fixed
           default_argument_options:
             argument: ''
@@ -2754,7 +2801,7 @@ display:
             title_enable: false
             title: All
           title_enable: true
-          title: '{{ arguments.vid }}'
+          title: '{{ vid }}'
           default_argument_type: fixed
           default_argument_options:
             argument: ''

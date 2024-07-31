@@ -16,3 +16,4 @@ schema_properties:
   field_file_version_description: description
   langcode: inLanguage
   field_file_version_id: version
+additional_mappings: {  }
