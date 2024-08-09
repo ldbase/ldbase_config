@@ -298,7 +298,7 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
           pagination_heading_level: h4
@@ -306,8 +306,10 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: ››
-            previous: ‹‹
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -316,6 +318,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -508,6 +511,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
+        - schemadotorg_descriptions.settings
   entity_view_1:
     id: entity_view_1
     display_title: EVA
@@ -516,7 +520,21 @@ display:
     display_options:
       title: ''
       display_extenders:
-        metatag_display_extender: {  }
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender: {  }
       entity_type: node
       bundles:
         - person
@@ -531,3 +549,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
+        - schemadotorg_descriptions.settings
