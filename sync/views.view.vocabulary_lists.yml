@@ -2968,7 +2968,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: "\r\n<p>Click on a term to see LDbase content that uses it.  Click the column headers to sort.</p>"
+          content: "<h1 class=\"title page-title\">{{ arguments.vid }}</h1>\r\n\r\n<p>Click on a term to see LDbase content that uses it.  Click the column headers to sort.</p>"
           tokenize: true
       display_extenders:
         matomo:
