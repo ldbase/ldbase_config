@@ -2228,7 +2228,7 @@ display:
         options: {  }
       relationships: {  }
       css_class: ''
-      use_ajax: true
+      use_ajax: false
       header:
         result:
           id: result
