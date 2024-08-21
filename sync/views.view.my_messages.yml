@@ -1067,7 +1067,6 @@ display:
       tags:
         - 'config:field.storage.message.field_from_user'
         - 'config:field.storage.message.field_message_status'
-        - schemadotorg_descriptions.settings
   page_1:
     id: page_1
     display_title: Page
@@ -1397,9 +1396,7 @@ display:
           admin_label: ''
           plugin_id: list_field
           operator: or
-          value:
-            Unread: Unread
-            Read: Read
+          value: {  }
           group: 1
           exposed: true
           expose:
@@ -1419,7 +1416,6 @@ display:
               anonymous: '0'
               content_administrator: '0'
               administrator: '0'
-              fcrr_admin: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -1470,7 +1466,6 @@ display:
         - user
       tags:
         - 'config:field.storage.message.field_from_user'
-        - schemadotorg_descriptions.settings
   page_2:
     id: page_2
     display_title: Page
@@ -1930,4 +1925,3 @@ display:
       tags:
         - 'config:field.storage.message.field_from_user'
         - 'config:field.storage.message.field_message_status'
-        - schemadotorg_descriptions.settings
