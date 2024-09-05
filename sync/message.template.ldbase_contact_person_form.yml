@@ -1,0 +1,22 @@
+uuid: e0e0555b-c4ce-46fb-a98e-bd3b8cc29f3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+template: ldbase_contact_person_form
+label: 'LDbase - Contact Person Form'
+description: 'Message sent from Contact Person form'
+text:
+  -
+    value: '<p><strong>Subject: </strong>@subject</p>'
+    format: basic_html
+  -
+    value: '<p><strong>LDbase System Message: A message was sent from an LDbase user to your email. Responding via your email will give this person your email address so you can communicate through email.</strong></p><p><strong>Message from LDbase user:&nbsp;</strong></p><p>@message</p><p>&nbsp;</p><p>The above message is from a registered LDbase user who used the “Contact this person” form on your LDbase profile. You can respond to their message by sending them a separate email, but please note that this will give this LDbase user your email address. If you do not wish to respond, you can simply delete this email. If you no longer wish to receive messages from other LDbase users, you can edit your user profile and change the settings.</p>'
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

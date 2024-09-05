@@ -1,0 +1,30 @@
+uuid: 4ede720b-d7c7-44f4-94bf-51cbb69d1377
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.message.mail_body
+    - field.field.message.ldbase_contact_person_form.field_from_user
+    - field.field.message.ldbase_contact_person_form.field_message_status
+    - field.field.message.ldbase_contact_person_form.field_to_user
+    - message.template.ldbase_contact_person_form
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: message.ldbase_contact_person_form.mail_body
+targetEntityType: message
+bundle: ldbase_contact_person_form
+mode: mail_body
+content:
+  partial_1:
+    weight: 0
+    region: content
+hidden:
+  field_from_user: true
+  field_message_status: true
+  field_to_user: true
+  partial_0: true
+  search_api_excerpt: true

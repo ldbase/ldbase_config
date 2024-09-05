@@ -1067,6 +1067,7 @@ display:
       tags:
         - 'config:field.storage.message.field_from_user'
         - 'config:field.storage.message.field_message_status'
+        - schemadotorg_descriptions.settings
   page_1:
     id: page_1
     display_title: Page
@@ -1466,6 +1467,7 @@ display:
         - user
       tags:
         - 'config:field.storage.message.field_from_user'
+        - schemadotorg_descriptions.settings
   page_2:
     id: page_2
     display_title: Page
@@ -1750,7 +1752,7 @@ display:
           admin_label: ''
           entity_type: message
           plugin_id: get_text
-          label: 'LDbase System Message'
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -1783,7 +1785,7 @@ display:
           element_class: ''
           element_label_type: strong
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: div
           element_wrapper_class: ''
           element_default_classes: true
@@ -1925,3 +1927,4 @@ display:
       tags:
         - 'config:field.storage.message.field_from_user'
         - 'config:field.storage.message.field_message_status'
+        - schemadotorg_descriptions.settings

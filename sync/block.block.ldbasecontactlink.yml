@@ -1,6 +1,6 @@
 uuid: b08931dd-c66d-4d8b-a8c4-60fb487c77c3
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - context
@@ -11,7 +11,7 @@ dependencies:
 id: ldbasecontactlink
 theme: portcullis
 region: sidebar_second
-weight: -31
+weight: -37
 provider: null
 plugin: ldbase_contact_link
 settings:

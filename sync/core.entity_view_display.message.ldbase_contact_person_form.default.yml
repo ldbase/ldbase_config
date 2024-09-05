@@ -1,0 +1,43 @@
+uuid: ae5148ff-ede1-4186-8397-8ac6629c1577
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.message.ldbase_contact_person_form.field_from_user
+    - field.field.message.ldbase_contact_person_form.field_message_status
+    - field.field.message.ldbase_contact_person_form.field_to_user
+    - message.template.ldbase_contact_person_form
+  module:
+    - options
+id: message.ldbase_contact_person_form.default
+targetEntityType: message
+bundle: ldbase_contact_person_form
+mode: default
+content:
+  field_from_user:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_message_status:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_to_user:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  partial_0: true
+  partial_1: true
+  search_api_excerpt: true

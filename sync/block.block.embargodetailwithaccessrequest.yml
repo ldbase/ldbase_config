@@ -11,7 +11,7 @@ dependencies:
 id: embargodetailwithaccessrequest
 theme: portcullis
 region: sidebar_second
-weight: -35
+weight: -38
 provider: null
 plugin: ldbase_embargoes_embargo_notification_block
 settings:
