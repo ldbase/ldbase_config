@@ -442,7 +442,38 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: "<h4>My Favorites</h4>\r\n<hr />\r\nContent that you save as favorites will display here."
+            format: full_html
+          tokenize: false
+      defaults:
+        empty: false
+        header: false
       display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<h4>My Favorites</h4>\r\n<hr />\r\n<p>Click the column headers to sort the items.</p>"
+            format: full_html
+          tokenize: false
       display_extenders:
         matomo:
           enabled: false

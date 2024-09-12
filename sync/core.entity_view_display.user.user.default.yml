@@ -47,34 +47,79 @@ third_party_settings:
               context_mapping: {  }
             weight: 1
             additional: {  }
+          0bf85b2e-6f6e-40a7-b7ce-2cb695d81648:
+            uuid: 0bf85b2e-6f6e-40a7-b7ce-2cb695d81648
+            region: content
+            configuration:
+              id: user_email_verification_notification
+              label: 'User Email verification notification'
+              label_display: '0'
+              provider: user_email_verification
+              context_mapping: {  }
+              notification:
+                value: "<p>You have not yet verified your email address.&nbsp; <a href=\"/user/user-email-verification\">Verify&nbsp;email</a></p>\r\n"
+                format: basic_html
+            weight: 3
+            additional: {  }
         third_party_settings: {  }
       -
-        layout_id: layout_onecol
+        layout_id: layout_twocol_section
         layout_settings:
-          label: 'User Tasks'
+          label: 'Account and Favorites'
           context_mapping: {  }
-        components: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: 'Tasks Section'
-          context_mapping: {  }
-        components: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: 'My Projects'
-          context_mapping: {  }
+          column_widths: 50-50
         components:
+          01a22848-0ec5-44ed-9c53-44c6f093bcd2:
+            uuid: 01a22848-0ec5-44ed-9c53-44c6f093bcd2
+            region: first
+            configuration:
+              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_1'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
           c2fa62b5-0b68-4e7d-be4f-ed0f0fe98df0:
             uuid: c2fa62b5-0b68-4e7d-be4f-ed0f0fe98df0
-            region: content
+            region: second
             configuration:
               id: 'views_block:projects_in_my_groups-block_1'
               label: ''
               label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          94b12631-091a-4fcb-8275-224fab18362e:
+            uuid: 94b12631-091a-4fcb-8275-224fab18362e
+            region: second
+            configuration:
+              id: 'views_block:user_embargo_exemptions-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5:
+            uuid: ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5
+            region: first
+            configuration:
+              id: 'views_block:my_favorites-block_1'
+              label: ''
+              label_display: '0'
               provider: views
               context_mapping: {  }
               views_label: ''
@@ -88,16 +133,6 @@ third_party_settings:
           label: 'My Profile Section'
           context_mapping: {  }
         components:
-          01a22848-0ec5-44ed-9c53-44c6f093bcd2:
-            uuid: 01a22848-0ec5-44ed-9c53-44c6f093bcd2
-            region: content
-            configuration:
-              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_1'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 1
-            additional: {  }
           b7e28b10-b5ab-4ee6-9600-8eaa1b52bf69:
             uuid: b7e28b10-b5ab-4ee6-9600-8eaa1b52bf69
             region: content
@@ -109,47 +144,7 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            weight: 8
-            additional: {  }
-          94b12631-091a-4fcb-8275-224fab18362e:
-            uuid: 94b12631-091a-4fcb-8275-224fab18362e
-            region: content
-            configuration:
-              id: 'views_block:user_embargo_exemptions-block_1'
-              label: ''
-              label_display: '0'
-              provider: views
-              context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 3
-            additional: {  }
-          0bf85b2e-6f6e-40a7-b7ce-2cb695d81648:
-            uuid: 0bf85b2e-6f6e-40a7-b7ce-2cb695d81648
-            region: content
-            configuration:
-              id: user_email_verification_notification
-              label: 'User Email verification notification'
-              label_display: '0'
-              provider: user_email_verification
-              context_mapping: {  }
-              notification:
-                value: "<p>You have not yet verified your email address.&nbsp; <a href=\"/user/user-email-verification\">Verify&nbsp;email</a></p>\r\n"
-                format: basic_html
             weight: 6
-            additional: {  }
-          ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5:
-            uuid: ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5
-            region: content
-            configuration:
-              id: 'views_block:my_favorites-block_1'
-              label: ''
-              label_display: '0'
-              provider: views
-              context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 7
             additional: {  }
         third_party_settings: {  }
 id: user.user.default

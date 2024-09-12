@@ -1051,7 +1051,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<h4>My Messages</h4>\r\n\r\n<a href=\"/user/{{ raw_arguments.field_to_user_target_id }}/messages\">Manage Messages</a>"
+            value: "<h4>My Messages</h4>\r\n<hr />\r\n<a href=\"/user/{{ raw_arguments.field_to_user_target_id }}/messages\">Manage Messages</a>"
             format: full_html
           tokenize: true
       display_extenders:
