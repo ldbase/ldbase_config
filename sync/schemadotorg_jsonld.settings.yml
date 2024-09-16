@@ -1,5 +1,24 @@
 _core:
   default_config_hash: XS8oszqTKqu2_TekYaF--R52OeUnwayumJ0lRBmMxbQ
+schema_type_default_values:
+  MonetaryAmount:
+    currency: USD
+  Offer:
+    priceCurrency: USD
+schema_type_main_properties:
+  AudioObject: null
+  Clip: null
+  Comment: text
+  Duration: null
+  Energy: null
+  ImageObject: null
+  Mass: null
+  Offer: price
+  ProgramMembership: programName
+  QuantitativeValue: value
+  Rating: ratingValue
+  Role: roleName
+  VideoObject: null
 schema_property_order:
   - url
   - identifier
@@ -52,7 +71,7 @@ schema_type_entity_references_display:
   node--Intangible: entity
   taxonomy_term: entity
   Intangible: entity
-entity_types_exclude_url:
+exclude_url:
   - block_content
   - media
   - paragraph

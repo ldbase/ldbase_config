@@ -12,6 +12,9 @@ default_types:
   - MedicalBusiness
   - Organization
   - WebPage
+required_types:
+  - Event
+use_snake_case: true
 default_allowed_values:
   WebPage:
     AboutPage: 'About Page'

@@ -25,20 +25,6 @@ schema_types:
     MedicalWebPage:
       name: med_page
       label: 'Medical Page'
-  main_properties:
-    AudioObject: null
-    Clip: null
-    Comment: text
-    Duration: null
-    Energy: null
-    ImageObject: null
-    Mass: null
-    Offer: price
-    ProgramMembership: programName
-    QuantitativeValue: value
-    Rating: ratingValue
-    Role: roleName
-    VideoObject: null
   default_properties:
     CreativeWork:
       - inLanguage
@@ -656,11 +642,6 @@ schema_types:
       - vehicleEngine
       - vehicleModelDate
       - vehicleSeatingCapacity
-  default_property_values:
-    MonetaryAmount:
-      currency: USD
-    Offer:
-      priceCurrency: USD
   default_field_types:
     DefinedTerm:
       - string
@@ -729,6 +710,81 @@ schema_types:
       - text
       - text_long
       - text_with_summary
+  categories:
+    people:
+      label: People
+      color: '#eddcd2'
+      types:
+        - Person
+        - IndividualPhysician
+    page:
+      label: Page
+      color: '#fff1e6'
+      types:
+        - WebPage
+        - WebSite
+        - FAQPage
+        - CollectionPage
+    content:
+      label: Content
+      color: '#fde2e4'
+      types:
+        - Article
+        - Event
+        - HowTo
+        - SpecialAnnouncement
+        - ItemList
+    organization:
+      label: Organization
+      color: '#fad2e1'
+      types:
+        - Organization
+        - Service
+        - JobPosting
+    education:
+      label: Education
+      color: '#dbe7e4'
+      types:
+        - EducationalOrganization
+        - CourseInstance
+        - Course
+    hospitality:
+      label: Hospitality
+      color: '#c5dedd'
+      types:
+        - LodgingBusiness
+        - Accommodation
+    food:
+      label: Food
+      color: '#f0efeb'
+      types:
+        - FoodEstablishment
+        - Menu
+        - Recipe
+        - Diet
+    media:
+      label: Media
+      color: '#d6e2e9'
+      types:
+        - PodcastSeries
+        - PodcastSeason
+        - PodcastEpisode
+        - TVSeries
+        - TVSeason
+        - TVEpisode
+    medical_organization:
+      label: 'Medical organization'
+      color: '#bcd4e6'
+      types:
+        - MedicalOrganization
+        - MedicalBusiness
+    medical_information:
+      label: 'Medical information'
+      color: '#99c1de'
+      types:
+        - HealthTopicContent
+        - MedicalWebPage
+        - MedicalEntity
 schema_properties:
   range_includes:
     CollectionPage--hasPart:

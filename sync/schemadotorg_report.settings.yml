@@ -1,5 +1,10 @@
 _core:
   default_config_hash: 9-oml_uFA8uV-C-ovIjGzdo5lAO7kuu4VSNvtKS0Orw
+diagram_excluded_schema_properties:
+  - about
+  - subjectOf
+  - relatedLink
+  - significantLink
 about:
   -
     title: 'Schema.org Documentation'
