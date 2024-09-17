@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.mass_contact_opt_out
+    - views.view.contributions_on_dashboard
     - views.view.my_favorites
     - views.view.my_messages
     - views.view.projects_in_my_groups
@@ -100,11 +101,11 @@ third_party_settings:
           context_mapping: {  }
           column_widths: 50-50
         components:
-          94b12631-091a-4fcb-8275-224fab18362e:
-            uuid: 94b12631-091a-4fcb-8275-224fab18362e
-            region: second
+          ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5:
+            uuid: ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5
+            region: first
             configuration:
-              id: 'views_block:user_embargo_exemptions-block_1'
+              id: 'views_block:my_favorites-block_1'
               label: ''
               label_display: '0'
               provider: views
@@ -113,11 +114,24 @@ third_party_settings:
               items_per_page: none
             weight: 0
             additional: {  }
-          ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5:
-            uuid: ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5
+          94b12631-091a-4fcb-8275-224fab18362e:
+            uuid: 94b12631-091a-4fcb-8275-224fab18362e
             region: first
             configuration:
-              id: 'views_block:my_favorites-block_1'
+              id: 'views_block:user_embargo_exemptions-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          e4a25c40-327f-43ce-b15d-89074b3659d4:
+            uuid: e4a25c40-327f-43ce-b15d-89074b3659d4
+            region: second
+            configuration:
+              id: 'views_block:contributions_on_dashboard-block_1'
               label: ''
               label_display: '0'
               provider: views
