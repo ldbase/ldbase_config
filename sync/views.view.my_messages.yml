@@ -1397,7 +1397,9 @@ display:
           admin_label: ''
           plugin_id: list_field
           operator: or
-          value: {  }
+          value:
+            Unread: Unread
+            Read: Read
           group: 1
           exposed: true
           expose:
@@ -1417,6 +1419,7 @@ display:
               anonymous: '0'
               content_administrator: '0'
               administrator: '0'
+              fcrr_admin: '0'
             reduce: false
           is_grouped: false
           group_info:
