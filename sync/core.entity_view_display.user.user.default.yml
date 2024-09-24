@@ -27,16 +27,6 @@ third_party_settings:
           label: 'Title Section'
           context_mapping: {  }
         components:
-          34d25607-3589-48c9-8e12-cb08f7c0aa58:
-            uuid: 34d25607-3589-48c9-8e12-cb08f7c0aa58
-            region: content
-            configuration:
-              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_2'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 2
-            additional: {  }
           155e9484-9d12-4790-9748-26307770d814:
             uuid: 155e9484-9d12-4790-9748-26307770d814
             region: content
@@ -46,6 +36,16 @@ third_party_settings:
               label_display: '0'
               provider: ldbase_content
               context_mapping: {  }
+            weight: 0
+            additional: {  }
+          34d25607-3589-48c9-8e12-cb08f7c0aa58:
+            uuid: 34d25607-3589-48c9-8e12-cb08f7c0aa58
+            region: content
+            configuration:
+              id: 'extra_field_block:user:user:person_information_for_user_profile_entity_view_2'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
             weight: 1
             additional: {  }
           0bf85b2e-6f6e-40a7-b7ce-2cb695d81648:
@@ -60,13 +60,13 @@ third_party_settings:
               notification:
                 value: "<p>You have not yet verified your email address.&nbsp; <a href=\"/user/user-email-verification\">Verify&nbsp;email</a></p>\r\n"
                 format: basic_html
-            weight: 3
+            weight: 2
             additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_twocol_section
         layout_settings:
-          label: 'Account and Favorites'
+          label: 'Profile Section'
           context_mapping: {  }
           column_widths: 50-50
         components:
@@ -78,7 +78,7 @@ third_party_settings:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-            weight: 1
+            weight: 0
             additional: {  }
           c2fa62b5-0b68-4e7d-be4f-ed0f0fe98df0:
             uuid: c2fa62b5-0b68-4e7d-be4f-ed0f0fe98df0
@@ -97,10 +97,23 @@ third_party_settings:
       -
         layout_id: layout_twocol_section
         layout_settings:
-          label: ''
+          label: 'Account and Favorites'
           context_mapping: {  }
           column_widths: 50-50
         components:
+          e4a25c40-327f-43ce-b15d-89074b3659d4:
+            uuid: e4a25c40-327f-43ce-b15d-89074b3659d4
+            region: second
+            configuration:
+              id: 'views_block:contributions_on_dashboard-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
           ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5:
             uuid: ac3746f2-ce1d-43aa-9cd9-b042d3e8b2a5
             region: first
@@ -126,19 +139,6 @@ third_party_settings:
               views_label: ''
               items_per_page: none
             weight: 1
-            additional: {  }
-          e4a25c40-327f-43ce-b15d-89074b3659d4:
-            uuid: e4a25c40-327f-43ce-b15d-89074b3659d4
-            region: second
-            configuration:
-              id: 'views_block:contributions_on_dashboard-block_1'
-              label: ''
-              label_display: '0'
-              provider: views
-              context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 0
             additional: {  }
         third_party_settings: {  }
       -
