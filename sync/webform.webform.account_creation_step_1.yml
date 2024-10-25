@@ -23,7 +23,7 @@ categories:
 elements: |-
   initial_message:
     '#type': webform_markup
-    '#markup': 'Let&#39;s get started! Please fill out the following fields:'
+    '#markup': '<p>Let''s get started! Please fill out the following fields.</p><p>This form for is for <strong>new accounts</strong> only. If you are having trouble accessing your existing account, you can <a href="/user/password">reset your password</a> or <a href="/contact-us">contact LDbase</a> for assistance.</p>'
   preferred_display_name:
     '#type': textfield
     '#title': 'Preferred Display Name'

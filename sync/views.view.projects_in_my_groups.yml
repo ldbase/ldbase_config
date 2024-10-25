@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.group_content.group_roles
     - field.storage.node.body
     - node.type.project
   module:
@@ -91,6 +92,135 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        id:
+          id: id
+          table: groups_field_data
+          field: id
+          relationship: gid
+          group_type: group
+          admin_label: ''
+          entity_type: group
+          entity_field: id
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        group_roles:
+          id: group_roles
+          table: group_content__group_roles
+          field: group_roles
+          relationship: group_content_id
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ','
+          field_api_classes: false
         title:
           id: title
           table: node_field_data
@@ -103,7 +233,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<span class="font-awesome-icon"><span class="fas fa-folder"></span></span><div class="ldbase-profile-project-link">{{title}}</div>'
+            text: "<span class=\"font-awesome-icon\"><span class=\"fas fa-folder\"></span></span><div class=\"ldbase-profile-project-link\">{{title}}</div>\r\n{% set these_roles = group_roles|split(',') %}\r\n<ul class=\"ldbase-profile-project-roles\">\r\n{% for role in these_roles %}\r\n\r\n{% if role == 'Project Administrator' %}\r\n  <li><a href=\"/projects/{{ uuid }}/{{ id }}/view-members\">Project Administrator</a></li>\r\n{% elseif role == 'Project Editor' %}\r\n  <li>Project Editor</li>\r\n{% endif %}\r\n{% endfor %}\r\n</ul>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -181,7 +311,7 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 400
+            max_length: 200
             word_boundary: true
             ellipsis: true
             more_link: true
@@ -441,6 +571,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.group_content.group_roles'
         - 'config:field.storage.node.body'
         - schemadotorg_descriptions.settings
   block_1:
@@ -476,5 +607,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.group_content.group_roles'
         - 'config:field.storage.node.body'
         - schemadotorg_descriptions.settings

@@ -133,11 +133,11 @@ third_party_settings:
           label: 'Affiliated Persons Section'
           context_mapping: {  }
         components:
-          ef05e9f0-462a-4660-bd2a-02168be2be99:
-            uuid: ef05e9f0-462a-4660-bd2a-02168be2be99
+          c0c304c5-ff94-406f-ba7a-6cf81a9d0761:
+            uuid: c0c304c5-ff94-406f-ba7a-6cf81a9d0761
             region: content
             configuration:
-              id: 'extra_field_block:node:organization:organizations_affiliated_persons_entity_view_1'
+              id: 'extra_field_block:node:organization:persons_entity_view_2'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
@@ -226,5 +226,10 @@ content:
     third_party_settings: {  }
     weight: 10
     region: first
+  persons_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
 hidden:
   search_api_excerpt: true
