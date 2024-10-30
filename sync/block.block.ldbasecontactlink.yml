@@ -31,4 +31,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: "/projects/*\r\n/persons/*"
+    pages: '/persons/*'
