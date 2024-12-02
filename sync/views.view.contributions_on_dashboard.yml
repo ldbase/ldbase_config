@@ -517,7 +517,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<h4>My Contributions</h4>\r\n<hr />"
+            value: "<h4>All My Contributions</h4>\r\n<hr />"
             format: full_html
           tokenize: false
       footer: {  }

@@ -735,6 +735,7 @@ display:
         - user.group_permissions
       tags:
         - 'config:field.storage.group_content.group_roles'
+        - schemadotorg_descriptions.settings
   ldbase_project:
     id: ldbase_project
     display_title: 'LDbase Group Members'
@@ -1415,7 +1416,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div id=\"view-existing-records-link\">\r\n<span id=\"view-existing-records-icon\">\r\n<a href=\"/group/{{ raw_arguments.gid }}/existing-records-requests\">View Existing Record Requests</a>\r\n</span>\r\n</div>\r\n\r\n<div id=\"view-granted-embargoes-link\">\r\n<span id=\"view-granted-embargoes-icon\">\r\n<a href=\"/projects/{{ raw_arguments.null }}/{{ raw_arguments.gid }}/view-embargo-exemptions\">View Granted Embargo Exemptions</a>\r\n</span>\r\n</div>\r\n\r\n<p>This is where you can add/remove LDbase users who have the ability to edit your project's pages and data. There are two roles available.</p>"
+            value: "<div id=\"view-existing-records-link\">\r\n<span id=\"view-existing-records-icon\">\r\n<a href=\"/group/{{ raw_arguments.gid }}/existing-records-requests\">View Existing Record Requests</a>\r\n</span>\r\n</div>\r\n\r\n<div id=\"view-granted-embargoes-link\">\r\n<span id=\"view-granted-embargoes-icon\">\r\n<a href=\"/projects/{{ raw_arguments.null }}/{{ raw_arguments.gid }}/view-embargo-exemptions\">View Granted Embargo Exemptions</a>\r\n</span>\r\n</div>\r\n\r\n<p>This is where you can add or remove LDbase users who have the ability to edit this Project’s pages, metadata and data. It is a best practice to have more than one project administrator on each project so that project management can be handled effectively in case one person is unavailable. You can add and/or remove users at any time. There are two types of project management roles available.</p>"
             format: full_html
           tokenize: true
       footer:
@@ -1455,6 +1456,7 @@ display:
         - user.group_permissions
       tags:
         - 'config:field.storage.group_content.group_roles'
+        - schemadotorg_descriptions.settings
   page_1:
     id: page_1
     display_title: Page
@@ -1485,3 +1487,4 @@ display:
         - user.group_permissions
       tags:
         - 'config:field.storage.group_content.group_roles'
+        - schemadotorg_descriptions.settings

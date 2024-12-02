@@ -36,10 +36,10 @@ elements: |-
     '#type': entity_autocomplete
     '#title': 'Project Investigator(s)'
     '#multiple': true
-    '#description': 'Enter the full names of the investigators who should get credit for this project and be part of the citation. This may or may not include named personnel on funded grants, but likely includes those who contributed significantly to the project.  Add investigators in the order appropriate for citing this project.'
-    '#help': 'Personnel that might receive credit are postdocs, advanced graduate students, data management staff, etc.'
+    '#description': '<p>Enter the first and last names of the investigators who should get credit for this project and be part of the citation. Do not add titles or degrees to the names. Investigators may or may not include named personnel on funded grants, but likely include those who contributed significantly to the project. Add investigators in the order appropriate for citing this project.</p><p>Note: None of the investigators listed here will be given <a href="https://ldbase.org/data-sharing-resources/faq/general#administrative-rights" target="_blank">administrative rights</a> to this project. Giving administrative rights, which allows others to manage this project’s metadata and data, is a separate step that happens after the project is saved.</p>'
+    '#help': '<p>Personnel that might receive credit are postdocs, advanced graduate students, data management staff, etc.</p>'
     '#description_display': before
-    '#placeholder': 'For Example: Dr. Sally Shares'
+    '#placeholder': 'For Example: Sally Shares'
     '#required': true
     '#multiple__empty_items': 2
     '#multiple__sorting': false

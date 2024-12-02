@@ -80,7 +80,7 @@ elements: |-
         '#type': webform_entity_select
         '#title': 'Dataset Version Format'
         '#help': 'Delimited file formats include csv and tsv files.'
-        '#description': 'Indicate in what file format the dataset is stored. <a href=''/taxonomy/code_or_data_format'' target=''_blank''>View all File Formats</a>'
+        '#description': "Indicate in what file format the dataset is stored. <a href='/taxonomy/code_or_data_format' target='_blank'>View all File Formats</a>"
         '#target_type': taxonomy_term
         '#selection_handler': 'default:taxonomy_term'
         '#selection_settings':
@@ -188,10 +188,10 @@ elements: |-
     '#type': entity_autocomplete
     '#title': 'Dataset Contributor(s)'
     '#multiple': true
-    '#description': 'Enter the full names of the people who should get credit for this dataset and be part of the citation. This may or may not include named personnel on funded grants, but likely includes those who contributed significantly to the data set. Dataset contributors can be different from project investigators.'
+    '#description': 'Enter the first and last names of the people who should get credit for this dataset and be part of the citation. Do not add titles or degrees to the names. Contributors may or may not include named personnel on funded grants, but likely include those who contributed significantly to the dataset. Dataset contributors can be different from Project Investigators. Add contributors in the order appropriate for citing this dataset.'
     '#help': 'Personnel that might receive credit are postdocs, undergraduate and graduate students that helped collect data, data management staff responsible for cleaning and deidentifying, etc.'
     '#description_display': before
-    '#placeholder': 'For Example: Dr. Sally Shares '
+    '#placeholder': 'For Example: Sally Shares '
     '#required': true
     '#multiple__sorting': false
     '#multiple__add': false
@@ -269,7 +269,7 @@ elements: |-
     '#multiple__add_more_input': false
     '#multiple__add_more_button_label': 'Add another'
     '#help': 'Participants types are children, adults, parents, teachers, etc.'
-    '#description': 'Please describe the participants contributing data to this dataset. Each participant type can be added separately. <a href=''/taxonomy/participants'' target=''_blank''>View all Participant Types</a>. School systems across the globe differ in grade designations. To ensure compatibility between data from different nations, we ask you to provide the age range of your participants instead of their grade.'
+    '#description': "Please describe the participants contributing data to this dataset. Each participant type can be added separately. <a href='/taxonomy/participants' target='_blank'>View all Participant Types</a>. School systems across the globe differ in grade designations. To ensure compatibility between data from different nations, we ask you to provide the age range of your participants instead of their grade."
     '#description_display': before
     '#element':
       participant_type:
@@ -304,7 +304,7 @@ elements: |-
     '#title': 'Special Populations'
     '#multiple': true
     '#help': 'Use this field if all participants in your dataset are from a special population. If only some of the participants have special characteristics, you don’t have to add those here.'
-    '#description': 'Indicate if the participants who contributed to the data you are uploading here were sampled specifically because they have special characteristics. You can add a term by typing directly in the field, if it is not listed yet. <a href=''/taxonomy/special_populations'' target=''_blank''>View all Special Populations</a>'
+    '#description': "Indicate if the participants who contributed to the data you are uploading here were sampled specifically because they have special characteristics. You can add a term by typing directly in the field, if it is not listed yet. <a href='/taxonomy/special_populations' target='_blank'>View all Special Populations</a>"
     '#description_display': before
     '#placeholder': 'Click here to select or enter items'
     '#select2': true
@@ -320,7 +320,7 @@ elements: |-
     '#type': webform_entity_select
     '#title': 'Constructs In Your Data'
     '#multiple': true
-    '#description': 'What are the main constructs available in your data? This field will be very helpful to data users, so please be as inclusive as you can! You can select as many constructs as you wish and add terms by typing directly in the field, if the term is not listed yet. <a href=''/taxonomy/constructs'' target=''_blank''>View all Constructs</a>'
+    '#description': "What are the main constructs available in your data? This field will be very helpful to data users, so please be as inclusive as you can! You can select as many constructs as you wish and add terms by typing directly in the field, if the term is not listed yet. <a href='/taxonomy/constructs' target='_blank'>View all Constructs</a>"
     '#description_display': before
     '#placeholder': 'Click here to select or enter items'
     '#select2': true
@@ -337,7 +337,7 @@ elements: |-
     '#title': 'Assessment(s) Used'
     '#multiple': true
     '#help': 'If you used multiple assessments in your study, enter all that apply.'
-    '#description': 'Please select all the assessments you used in this project. You can add an assessment by typing directly in the field, if it is not listed yet. <a href=''/taxonomy/assessments'' target=''_blank''>View all Assessments</a>'
+    '#description': "Please select all the assessments you used in this project. You can add an assessment by typing directly in the field, if it is not listed yet. <a href='/taxonomy/assessments' target='_blank'>View all Assessments</a>"
     '#description_display': before
     '#placeholder': 'Click here to select or enter items'
     '#select2': true
@@ -353,7 +353,7 @@ elements: |-
     '#type': webform_entity_select
     '#title': 'Variable Types'
     '#multiple': true
-    '#description': 'Please select the types of variables in your data set.  You can add a variable type by typing directly in the field, if it is not listed yet. <a href=''/taxonomy/dataset_variables'' target=''_blank''>View all Variable Types</a>'
+    '#description': "Please select the types of variables in your data set.  You can add a variable type by typing directly in the field, if it is not listed yet. <a href='/taxonomy/dataset_variables' target='_blank'>View all Variable Types</a>"
     '#help': 'What are your variables like? Are there special features of the variables that are in these data?&nbsp;&nbsp;'
     '#description_display': before
     '#placeholder': 'Click here to select or enter items'
@@ -370,7 +370,7 @@ elements: |-
     '#type': webform_entity_select
     '#title': 'Data Collection Location(s)'
     '#multiple': true
-    '#description': 'Please indicate in what way these data were collected. You can add a location by typing directly in the field, if the method is not listed yet. <a href=''/taxonomy/data_collection_locations'' target=''_blank''>View all Data Collection Locations</a>'
+    '#description': "Please indicate in what way these data were collected. You can add a location by typing directly in the field, if the method is not listed yet. <a href='/taxonomy/data_collection_locations' target='_blank'>View all Data Collection Locations</a>"
     '#description_display': before
     '#placeholder': 'Click here to select or enter items'
     '#select2': true
@@ -454,7 +454,7 @@ elements: |-
         - dataset-url-text-input
   harmonized_dataset:
     '#type': checkbox
-    '#title': 'Would you like to add this data to LDbase''s Integrated Dataset?'
+    '#title': "Would you like to add this data to LDbase's Integrated Dataset?"
     '#description': 'If you wish to contribute your data to <a href="https://ldbase.org/projects/09609d82-c45f-4442-8c0c-d136191bdc50" target="_blank">LDbase&#39;s Integrated Dataset</a>, check this box and you will be contacted by an administrator on how to proceed.'
     '#description_display': after
   license:

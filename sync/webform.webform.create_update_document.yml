@@ -158,10 +158,10 @@ elements: |-
     '#type': entity_autocomplete
     '#title': 'Document Author(s)'
     '#multiple': true
-    '#description': 'Enter the full names of the people who should get credit for these materials and be part of the citation. This may or may not include named personnel on funded grants, but likely includes those who put the materials together.'
+    '#description': 'Enter the first and last names of the people who should get credit for these materials and be part of the citation. Do not add titles or degrees to the names. Authors may or may not include named personnel on funded grants, but likely include those who put the materials together. Add authors in the order appropriate for citing this material.'
     '#help': 'Personnel that might receive credit are postdocs, undergraduate or graduate students, data management staff, or your methodologist.'
     '#description_display': before
-    '#placeholder': 'For example, Dr. Sally Shares '
+    '#placeholder': 'For example, Sally Shares '
     '#required': true
     '#multiple__sorting': false
     '#multiple__add': false

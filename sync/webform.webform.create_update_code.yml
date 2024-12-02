@@ -158,7 +158,7 @@ elements: |-
     '#type': entity_autocomplete
     '#title': 'Code Contributor(s)'
     '#multiple': true
-    '#description': 'Enter the full names of the people who should get credit for this code and be part of the citation. This may or may not include named personnel on funded grants, but likely includes those who put the code together. Code contributors can be different from project investigators and dataset investigators.'
+    '#description': 'Enter the first and last names of the people who should get credit for this code and be part of the citation. Do not add titles or degrees to the names. Contributors may or may not include named personnel on funded grants, but likely include those who put the code together. Code contributors can be different from project investigators and dataset contributors. Add contributors in the order appropriate for citing this code.'
     '#help': 'Personnel that might receive credit are postdocs, undergraduate or graduate students, data management staff responsible for cleaning and deidentifying, or your methodologist.'
     '#description_display': before
     '#placeholder': 'For Example: Cody Codes'

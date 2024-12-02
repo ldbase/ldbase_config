@@ -537,7 +537,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "<h4>My Projects</h4>\r\n<hr />\r\n<a class=\"ldbase-button\" href=\"/add-project\">Add Project</a>"
+            value: "<h4>My Managed Projects</h4>\r\n<hr />\r\n<a class=\"ldbase-button\" href=\"/add-project\">Add Project</a>"
             format: full_html
           tokenize: false
       footer: {  }
