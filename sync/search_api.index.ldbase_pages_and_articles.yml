@@ -8,10 +8,9 @@ dependencies:
     - field.storage.paragraph.field_text
     - search_api.server.default_server
   module:
-    - paragraphs
-    - node
-    - search_api
     - ldbase_handlers
+    - node
+    - paragraphs
 id: ldbase_pages_and_articles
 name: 'LDbase Pages and Articles'
 description: ''
