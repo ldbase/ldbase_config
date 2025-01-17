@@ -13,7 +13,7 @@ dependencies:
 id: searchfacetprojectdescriptors
 theme: portcullis
 region: content
-weight: -20
+weight: -24
 provider: null
 plugin: 'facet_block:search_facet_project_type'
 settings:

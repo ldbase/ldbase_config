@@ -11,7 +11,7 @@ dependencies:
 id: mainnavigation_3
 theme: portcullis
 region: content
-weight: -28
+weight: -32
 provider: null
 plugin: 'system_menu_block:main'
 settings:

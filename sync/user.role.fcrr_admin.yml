@@ -14,6 +14,7 @@ dependencies:
     - node.type.organization
     - node.type.page
     - node.type.person
+    - node.type.possible_user_match
     - node.type.project
     - node.type.tombstone
     - taxonomy.vocabulary.areas_of_expertise
@@ -164,6 +165,7 @@ permissions:
   - 'edit any organization content'
   - 'edit any page content'
   - 'edit any person content'
+  - 'edit any possible_user_match content'
   - 'edit any project content'
   - 'edit any tombstone content'
   - 'edit own article content'
@@ -206,9 +208,11 @@ permissions:
   - 'revert article revisions'
   - 'revert layout_page revisions'
   - 'revert page revisions'
+  - 'revert possible_user_match revisions'
   - 'use text format full_html'
   - 'view article revisions'
   - 'view layout_page revisions'
   - 'view own unpublished content'
   - 'view page revisions'
+  - 'view possible_user_match revisions'
   - 'view the administration theme'

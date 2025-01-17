@@ -16,7 +16,7 @@ third_party_settings:
 id: dataexports
 theme: portcullis
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: 'system_menu_block:data-exports'
 settings:

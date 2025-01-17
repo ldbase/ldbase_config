@@ -14,7 +14,7 @@ dependencies:
 id: views_block__taxonomy_terms_for_review_block_19
 theme: portcullis
 region: content
-weight: -5
+weight: -8
 provider: null
 plugin: 'views_block:taxonomy_terms_for_review-block_19'
 settings:

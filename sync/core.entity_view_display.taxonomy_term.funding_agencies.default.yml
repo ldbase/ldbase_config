@@ -1,0 +1,33 @@
+uuid: dd956ec6-c303-4ad3-ac55-5814c8ee61a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.funding_agencies.field_needs_review
+    - taxonomy.vocabulary.funding_agencies
+  module:
+    - text
+id: taxonomy_term.funding_agencies.default
+targetEntityType: taxonomy_term
+bundle: funding_agencies
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_needs_review:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true
