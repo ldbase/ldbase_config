@@ -13,7 +13,7 @@ dependencies:
 id: views_block__taxonomy_terms_for_review_block_3
 theme: portcullis
 region: content
-weight: -18
+weight: -19
 provider: null
 plugin: 'views_block:taxonomy_terms_for_review-block_3'
 settings:

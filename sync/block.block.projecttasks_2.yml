@@ -16,7 +16,7 @@ third_party_settings:
 id: projecttasks_2
 theme: portcullis
 region: content
-weight: -38
+weight: -39
 provider: null
 plugin: 'system_menu_block:project-tasks'
 settings:

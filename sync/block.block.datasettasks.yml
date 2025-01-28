@@ -12,7 +12,7 @@ dependencies:
 id: datasettasks
 theme: portcullis
 region: content
-weight: -39
+weight: -40
 provider: null
 plugin: 'system_menu_block:dataset-tasks'
 settings:

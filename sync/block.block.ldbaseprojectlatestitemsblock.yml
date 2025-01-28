@@ -11,7 +11,7 @@ dependencies:
 id: ldbaseprojectlatestitemsblock
 theme: portcullis
 region: content
-weight: -3
+weight: -2
 provider: null
 plugin: project_latest_items
 settings:

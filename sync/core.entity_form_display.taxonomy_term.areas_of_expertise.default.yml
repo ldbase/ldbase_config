@@ -1,0 +1,57 @@
+uuid: a73cf919-255d-4229-8fbb-a97b02851e0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.areas_of_expertise.field_needs_review
+    - taxonomy.vocabulary.areas_of_expertise
+  module:
+    - path
+    - text
+id: taxonomy_term.areas_of_expertise.default
+targetEntityType: taxonomy_term
+bundle: areas_of_expertise
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_needs_review:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

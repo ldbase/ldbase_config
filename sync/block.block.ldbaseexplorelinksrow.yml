@@ -10,7 +10,7 @@ dependencies:
 id: ldbaseexplorelinksrow
 theme: portcullis
 region: content
-weight: -25
+weight: -26
 provider: null
 plugin: ldbase_explore_row
 settings:

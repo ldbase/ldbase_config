@@ -1,0 +1,23 @@
+uuid: d2a9b6b3-f09c-466e-9fc8-60cb83205229
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_needs_review
+    - taxonomy.vocabulary.areas_of_expertise
+id: taxonomy_term.areas_of_expertise.field_needs_review
+field_name: field_needs_review
+entity_type: taxonomy_term
+bundle: areas_of_expertise
+label: 'Needs Review'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean
