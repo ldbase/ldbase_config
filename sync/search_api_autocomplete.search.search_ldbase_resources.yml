@@ -7,7 +7,6 @@ dependencies:
     - views.view.search_ldbase_resources
   module:
     - views
-    - search_api_autocomplete
 id: search_ldbase_resources
 label: 'Search LDbase Resources'
 index_id: ldbase_pages_and_articles
@@ -21,6 +20,7 @@ suggester_settings:
       'entity:node':
         article: ''
         page: ''
+    suggest_keys: false
 suggester_weights:
   live_results: 0
 suggester_limits: {  }

@@ -1,5 +1,6 @@
 _core:
   default_config_hash: XS8oszqTKqu2_TekYaF--R52OeUnwayumJ0lRBmMxbQ
+langcode: en
 schema_type_default_values:
   MonetaryAmount:
     currency: USD

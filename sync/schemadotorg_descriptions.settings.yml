@@ -1,5 +1,6 @@
 _core:
   default_config_hash: knAPX0DU-M-aVwMHvpTpPaXGxuIsKk7KaJTv_wxOEZU
+langcode: en
 custom_descriptions:
   itemListElement: null
   mainEntity: null
