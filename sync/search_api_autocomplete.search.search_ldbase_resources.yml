@@ -16,11 +16,11 @@ suggester_settings:
     highlight:
       enabled: false
       field: ''
+    suggest_keys: false
     view_modes:
       'entity:node':
         article: ''
         page: ''
-    suggest_keys: false
 suggester_weights:
   live_results: 0
 suggester_limits: {  }

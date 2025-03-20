@@ -562,6 +562,7 @@ display:
             type: type
             name: name
             status: status
+            created: created
             changed: changed
             operations: operations
           default: changed
@@ -593,6 +594,13 @@ display:
               empty_column: false
               responsive: priority-low
             status:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            created:
               sortable: true
               default_sort_order: asc
               align: ''
