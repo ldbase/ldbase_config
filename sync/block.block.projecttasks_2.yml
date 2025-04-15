@@ -5,14 +5,10 @@ dependencies:
   config:
     - system.menu.project-tasks
   module:
-    - collapsiblock
     - node
     - system
   theme:
     - portcullis
-third_party_settings:
-  collapsiblock:
-    collapse_action: 0
 id: projecttasks_2
 theme: portcullis
 region: content
@@ -39,4 +35,4 @@ visibility:
     id: request_path
     negate: true
     context_mapping: {  }
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/contact-ldbase-*\r\n/*/*/publish-all-items"
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/contact-ldbase-*\r\n/*/*/publish-all-items\r\n/*/*/sort-hierarchy"

@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
     - field.field.node.dataset.field_harmonized_dataset
+    - field.field.node.dataset.field_hierarchy_weight
     - field.field.node.dataset.field_license
     - field.field.node.dataset.field_license_other
     - field.field.node.dataset.field_location
@@ -183,6 +184,13 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  field_hierarchy_weight:
+    type: number
+    weight: 221
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   field_license:
     type: entity_reference_autocomplete

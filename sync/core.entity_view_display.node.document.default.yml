@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.document.field_document_type
     - field.field.node.document.field_doi
     - field.field.node.document.field_external_resource
+    - field.field.node.document.field_hierarchy_weight
     - field.field.node.document.field_license
     - field.field.node.document.field_license_other
     - field.field.node.document.field_publication_info
@@ -57,6 +58,23 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             weight: 2
+            additional: {  }
+          8757efa9-3951-412c-97fa-12075e63d11e:
+            uuid: 8757efa9-3951-412c-97fa-12075e63d11e
+            region: content
+            configuration:
+              id: 'field_block:node:document:field_hierarchy_weight'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 3
             additional: {  }
         third_party_settings: {  }
       -
@@ -394,6 +412,15 @@ content:
       target: '0'
     third_party_settings: {  }
     weight: 109
+    region: content
+  field_hierarchy_weight:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 201
     region: content
   field_license:
     type: entity_reference_label

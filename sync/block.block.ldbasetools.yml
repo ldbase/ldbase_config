@@ -5,14 +5,10 @@ dependencies:
   config:
     - system.menu.ldbase-tools
   module:
-    - collapsiblock
     - node
     - system
   theme:
     - portcullis
-third_party_settings:
-  collapsiblock:
-    collapse_action: 0
 id: ldbasetools
 theme: portcullis
 region: sidebar_second
@@ -31,7 +27,7 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/request-access"
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/request-access\r\n/*/*/sort-hierarchy"
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false

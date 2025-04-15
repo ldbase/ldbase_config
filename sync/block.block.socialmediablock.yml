@@ -36,4 +36,4 @@ visibility:
     id: request_path
     negate: true
     context_mapping: {  }
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/persons/*/change-password\r\n/access-request/*\r\n/*/*/request-access\r\n/*/*/contact-ldbase-*"
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/persons/*/change-password\r\n/access-request/*\r\n/*/*/request-access\r\n/*/*/contact-ldbase-*\r\n/*/*/sort-hierarchy"

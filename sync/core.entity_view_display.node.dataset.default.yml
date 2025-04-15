@@ -18,6 +18,7 @@ dependencies:
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
     - field.field.node.dataset.field_harmonized_dataset
+    - field.field.node.dataset.field_hierarchy_weight
     - field.field.node.dataset.field_license
     - field.field.node.dataset.field_license_other
     - field.field.node.dataset.field_location
@@ -95,6 +96,23 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             weight: 2
+            additional: {  }
+          b03c4e5e-0ccb-4ce9-b47e-84587bae6289:
+            uuid: b03c4e5e-0ccb-4ce9-b47e-84587bae6289
+            region: content
+            configuration:
+              id: 'field_block:node:dataset:field_hierarchy_weight'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 3
             additional: {  }
         third_party_settings: {  }
       -
@@ -781,6 +799,15 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     weight: 38
+    region: content
+  field_hierarchy_weight:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 201
     region: content
   field_license:
     type: entity_reference_label

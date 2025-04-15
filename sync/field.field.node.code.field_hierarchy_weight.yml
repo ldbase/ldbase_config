@@ -1,0 +1,23 @@
+uuid: 0b27034d-d78b-4683-8635-fb1fd12bde53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hierarchy_weight
+    - node.type.code
+id: node.code.field_hierarchy_weight
+field_name: field_hierarchy_weight
+entity_type: node
+bundle: code
+label: 'Hierarchy Weight'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

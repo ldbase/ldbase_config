@@ -24,7 +24,7 @@ visibility:
     id: request_path
     negate: true
     context_mapping: {  }
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/request-access"
+    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/request-access\r\n/*/*/sort-hierarchy"
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false

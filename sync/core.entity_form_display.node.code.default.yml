@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.code.field_code_upload_or_external
     - field.field.node.code.field_doi
     - field.field.node.code.field_external_resource
+    - field.field.node.code.field_hierarchy_weight
     - field.field.node.code.field_license
     - field.field.node.code.field_license_other
     - field.field.node.code.field_publication_info
@@ -91,6 +92,13 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  field_hierarchy_weight:
+    type: number
+    weight: 221
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   field_license:
     type: entity_reference_autocomplete

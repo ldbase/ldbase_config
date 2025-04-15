@@ -1,0 +1,20 @@
+uuid: 4e5e506c-f456-4a7f-9f92-07fe7b8e793f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_hierarchy_weight
+field_name: field_hierarchy_weight
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

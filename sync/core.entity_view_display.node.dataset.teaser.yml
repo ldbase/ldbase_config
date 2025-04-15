@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.dataset.field_doi
     - field.field.node.dataset.field_external_resource
     - field.field.node.dataset.field_harmonized_dataset
+    - field.field.node.dataset.field_hierarchy_weight
     - field.field.node.dataset.field_license
     - field.field.node.dataset.field_license_other
     - field.field.node.dataset.field_location
@@ -89,6 +90,7 @@ hidden:
   field_external_resource: true
   field_format_information: true
   field_harmonized_dataset: true
+  field_hierarchy_weight: true
   field_license: true
   field_license_other: true
   field_location: true
