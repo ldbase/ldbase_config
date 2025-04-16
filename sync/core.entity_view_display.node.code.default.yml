@@ -59,23 +59,6 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 2
             additional: {  }
-          5f3da986-9093-467f-b120-c1e4603b3dae:
-            uuid: 5f3da986-9093-467f-b120-c1e4603b3dae
-            region: content
-            configuration:
-              id: 'field_block:node:code:field_hierarchy_weight'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: number_integer
-                label: above
-                settings:
-                  thousand_separator: ''
-                  prefix_suffix: true
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
