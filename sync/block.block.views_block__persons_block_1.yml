@@ -17,10 +17,10 @@ provider: null
 plugin: 'views_block:persons-block_1'
 settings:
   id: 'views_block:persons-block_1'
-  label: 'Browse Investigators'
+  label: ''
   label_display: visible
   provider: views
-  views_label: 'Browse Investigators'
+  views_label: ''
   items_per_page: none
 visibility:
   request_path:

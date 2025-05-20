@@ -243,10 +243,10 @@ display:
           query_tags: {  }
       relationships: {  }
       use_more: true
-      use_more_always: false
+      use_more_always: true
       use_more_text: 'Browse All Projects'
       link_display: custom_url
-      link_url: /projects
+      link_url: '/search?search_api_fulltext=&f%5B0%5D=search_facet_content_type%3Aproject'
       header: {  }
       footer:
         result:
@@ -275,9 +275,21 @@ display:
     position: 1
     display_options:
       display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
         metatag_display_extender:
           metatags: {  }
           tokenize: false
+        simple_sitemap_display_extender: {  }
     cache_metadata:
       max-age: -1
       contexts:
