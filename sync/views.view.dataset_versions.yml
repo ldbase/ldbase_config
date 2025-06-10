@@ -416,8 +416,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: 'code_or_data_format/term/{{ field_file_format__target_id }}/paragraphs'
             absolute: false
             external: false
             replace_spaces: false
@@ -455,7 +455,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -1658,8 +1658,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '/code_or_data_format/term/{{ field_file_format__target_id }}/paragraphs'
             absolute: false
             external: false
             replace_spaces: false
