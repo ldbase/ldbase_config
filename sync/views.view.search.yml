@@ -2616,8 +2616,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: "{% if  type is 'person' and NOT field_drupal_account_id %}\r\n<a href=\"persons/{{ uuid }}\" class=\"contributor-is-not-a-user\">{{ type }}: {{ title }}</a>\r\n{% else %}\r\n{{ type }}: {{ title }}\r\n{% endif %}"
+            alter_text: true
+            text: "{% if type == 'Person' and not field_drupal_account_id %}\r\n <a href=\"/persons/{{ uuid }}\" title=\"{{ title }} (No user profile)\" class=\"contributor-is-not-a-user\">{{ title }}</a>\r\n{% else %}\r\n  {{ title }}\r\n{% endif %}\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -2986,10 +2986,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          field_rendering: true
+          field_rendering: false
           fallback_handler: search_api_entity
           fallback_options:
-            link_to_item: false
+            link_to_item: true
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '

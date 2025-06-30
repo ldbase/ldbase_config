@@ -55,6 +55,16 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 1
             additional: {  }
+          076558fe-51b4-4cf1-ab65-24652993ce75:
+            uuid: 076558fe-51b4-4cf1-ab65-24652993ce75
+            region: content
+            configuration:
+              id: 'extra_field_block:node:organization:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -219,8 +229,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 0
-    region: content
+    weight: 200
   organizations_affiliated_persons_entity_view_1:
     settings: {  }
     third_party_settings: {  }

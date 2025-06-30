@@ -289,6 +289,16 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
+          77a68048-4161-44e7-b158-57eaf3440a3e:
+            uuid: 77a68048-4161-44e7-b158-57eaf3440a3e
+            region: first
+            configuration:
+              id: 'extra_field_block:node:person:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 21
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol
@@ -492,8 +502,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 0
-    region: content
+    weight: 200
   person_project_contributions_entity_view_1:
     settings: {  }
     third_party_settings: {  }

@@ -1346,7 +1346,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if field_drupal_account_id %}\r\n<a href=\"persons/{{ uuid }}\">{{ title_1__value }}</a>\r\n{% else %}\r\n<a href=\"persons/{{ uuid }}\" class=\"contributor-is-not-a-user\">{{ title_1__value }}</a>\r\n{% endif %}"
+            text: "{% if field_drupal_account_id %}\r\n<a href=\"persons/{{ uuid }}\">{{ title_1__value }}</a>\r\n{% else %}\r\n<a href=\"persons/{{ uuid }}\" class=\"contributor-is-not-a-user\" title=\"{{ title_1__value }} (No user profile)\">{{ title_1__value }}</a>\r\n{% endif %}"
             make_link: false
             path: ''
             absolute: false
@@ -1450,7 +1450,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: 'Names displayed in black italics are listed in LDbase as contributors but do not have LDbase user accounts.'
+            value: 'Names displayed in black italics are listed in LDbase as contributors but do not have LDbase user profiles.'
             format: basic_html
           tokenize: false
       footer:
