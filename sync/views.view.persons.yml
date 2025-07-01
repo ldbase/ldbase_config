@@ -1450,7 +1450,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: 'Names displayed in black italics are listed in LDbase as contributors but do not have LDbase user profiles.'
+            value: 'Names displayed in black italics are listed in LDbase as contributors but do not have LDbase profiles.'
             format: basic_html
           tokenize: false
       footer:

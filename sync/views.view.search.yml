@@ -2617,7 +2617,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{% if type == 'Person' and not field_drupal_account_id %}\r\n <a href=\"/persons/{{ uuid }}\" title=\"{{ title }} (No user profile)\" class=\"contributor-is-not-a-user\">{{ title }}</a>\r\n{% else %}\r\n  {{ title }}\r\n{% endif %}\r\n"
+            text: "{% if type == 'Person' and not field_drupal_account_id %}\r\n <a href=\"/persons/{{ uuid }}\" title=\"{{ title }} (No LDbase profile)\" class=\"contributor-is-not-a-user\">{{ title }}</a>\r\n{% else %}\r\n  {{ title }}\r\n{% endif %}\r\n"
             make_link: false
             path: ''
             absolute: false
