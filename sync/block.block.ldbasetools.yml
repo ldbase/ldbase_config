@@ -27,7 +27,7 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/*/*/edit\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/request-access\r\n/*/*/sort-hierarchy"
+    pages: "/*/*/edit\r\n/*/*/clone-dataset\r\n/*/*/delete-content\r\n/*/*/add-*\r\n/doi/*/confirm\r\n/*/*/request-access\r\n/*/*/sort-hierarchy"
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false
