@@ -2226,7 +2226,11 @@ display:
           hide_empty: true
       query:
         type: search_api_query
-        options: {  }
+        options:
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: true
+          query_tags: {  }
       relationships: {  }
       css_class: ''
       use_ajax: false
