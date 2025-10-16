@@ -9,8 +9,6 @@ dependencies:
     - gnode
     - node
 id: project_group-group_node-dataset
-label: 'Project Group: Group node (Dataset)'
-description: 'Adds <em class="placeholder">Dataset</em> content to groups both publicly and privately.'
 group_type: project_group
 content_plugin: 'group_node:dataset'
 plugin_config:

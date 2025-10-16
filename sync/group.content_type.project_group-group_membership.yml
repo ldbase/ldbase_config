@@ -7,8 +7,6 @@ dependencies:
   module:
     - user
 id: project_group-group_membership
-label: 'Project Group: Group membership'
-description: 'Adds users to groups as members.'
 group_type: project_group
 content_plugin: group_membership
 plugin_config:

@@ -9,8 +9,6 @@ dependencies:
     - gnode
     - node
 id: group_content_type_dc5733ee6c278
-label: 'Project Group: Group node (Organization)'
-description: 'Adds <em class="placeholder">Organization</em> content to groups both publicly and privately.'
 group_type: project_group
 content_plugin: 'group_node:organization'
 plugin_config:

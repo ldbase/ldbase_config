@@ -9,8 +9,6 @@ dependencies:
     - gnode
     - node
 id: group_content_type_f81bcc2347c11
-label: 'Project Group: Group node (Document)'
-description: 'Adds <em class="placeholder">Document</em> content to groups both publicly and privately.'
 group_type: project_group
 content_plugin: 'group_node:document'
 plugin_config:

@@ -41,6 +41,7 @@ module:
   flag: 0
   flag_anon: 0
   flag_search_api: 0
+  flexible_permissions: 0
   flood_control: 0
   gnode: 0
   group: 0

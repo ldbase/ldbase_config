@@ -6,7 +6,6 @@ dependencies:
     - field.storage.group_content.group_roles
     - field.storage.node.field_added_to_integrated_data
     - field.storage.node.field_dataset_version
-    - group.content_type.project_group-group_node-dataset
     - system.menu.fcrr-admin-tasks
     - user.role.administrator
     - user.role.fcrr_admin
@@ -24,7 +23,7 @@ label: 'Integrated Dataset Contributions'
 module: views
 description: ''
 tag: ''
-base_table: group_content_field_data
+base_table: group_relationship_field_data
 base_field: id
 display:
   default:
@@ -570,7 +569,7 @@ display:
       filters:
         type:
           id: type
-          table: group_content_field_data
+          table: group_relationship_field_data
           field: type
           entity_type: group_content
           entity_field: type
@@ -823,7 +822,7 @@ display:
       relationships:
         gid:
           id: gid
-          table: group_content_field_data
+          table: group_relationship_field_data
           field: gid
           relationship: none
           group_type: group
@@ -861,7 +860,7 @@ display:
             'group_node:webform': '0'
         gc__user:
           id: gc__user
-          table: group_content_field_data
+          table: group_relationship_field_data
           field: gc__user
           relationship: group_content_id
           group_type: group
@@ -873,7 +872,7 @@ display:
             group_membership: group_membership
         gc__node:
           id: gc__node
-          table: group_content_field_data
+          table: group_relationship_field_data
           field: gc__node
           relationship: none
           group_type: group
@@ -1361,7 +1360,7 @@ display:
       relationships:
         gid:
           id: gid
-          table: group_content_field_data
+          table: group_relationship_field_data
           field: gid
           relationship: none
           group_type: group
@@ -1399,7 +1398,7 @@ display:
             'group_node:webform': '0'
         gc__user:
           id: gc__user
-          table: group_content_field_data
+          table: group_relationship_field_data
           field: gc__user
           relationship: group_content_id
           group_type: group
@@ -1411,7 +1410,7 @@ display:
             group_membership: group_membership
         gc__node:
           id: gc__node
-          table: group_content_field_data
+          table: group_relationship_field_data
           field: gc__node
           relationship: none
           group_type: group
@@ -1491,7 +1490,7 @@ display:
       filters:
         type:
           id: type
-          table: group_content_field_data
+          table: group_relationship_field_data
           field: type
           entity_type: group_content
           entity_field: type

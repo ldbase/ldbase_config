@@ -9,8 +9,6 @@ dependencies:
     - gnode
     - node
 id: project_group-group_node-code
-label: 'Project Group: Group node (Code)'
-description: 'Adds <em class="placeholder">Code</em> content to groups both publicly and privately.'
 group_type: project_group
 content_plugin: 'group_node:code'
 plugin_config:

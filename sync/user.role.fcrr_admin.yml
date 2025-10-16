@@ -81,7 +81,6 @@ permissions:
   - 'administer taxonomy_term form display'
   - 'administer users'
   - 'bypass embargoes restrictions'
-  - 'bypass group access'
   - 'create article content'
   - 'create code content'
   - 'create dataset content'
