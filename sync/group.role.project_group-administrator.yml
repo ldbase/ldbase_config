@@ -7,6 +7,9 @@ dependencies:
 id: project_group-administrator
 label: 'Project Administrator'
 weight: -6
+admin: false
+scope: individual
+global_role: null
 group_type: project_group
 permissions:
   - 'administer members'
@@ -30,5 +33,3 @@ permissions:
   - 'view unpublished group_node:organization entity'
   - 'view unpublished group_node:person entity'
   - 'view unpublished group_node:project entity'
-admin: false
-scope: individual
