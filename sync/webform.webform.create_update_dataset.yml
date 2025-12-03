@@ -291,10 +291,12 @@ elements: |-
         '#type': number
         '#title': 'Age Range in Years From'
         '#min': 0
+        '#max': 150
       age_range_to:
         '#type': number
         '#title': 'Age Range in Years To'
         '#min': 0
+        '#max': 150
       participants_target_id:
         '#type': hidden
       participants_target_revision_id:

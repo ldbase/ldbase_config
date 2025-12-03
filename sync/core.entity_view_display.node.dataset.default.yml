@@ -127,6 +127,16 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 5
             additional: {  }
+          93c21a8b-7016-4de5-aabf-60d572081fd1:
+            uuid: 93c21a8b-7016-4de5-aabf-60d572081fd1
+            region: content
+            configuration:
+              id: 'extra_field_block:node:dataset:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 6
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol

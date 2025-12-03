@@ -95,3 +95,21 @@ definitions:
     weight: 5
     expanded: false
     enabled: true
+  ldbase_handlers__confirm_document_deletion_2:
+    menu_name: second-document-tasks
+    parent: ''
+    weight: -48
+    expanded: false
+    enabled: true
+  ldbase_handlers__edit_document_2:
+    weight: -50
+    menu_name: second-document-tasks
+    parent: ''
+    expanded: false
+    enabled: true
+  ldbase_handlers__add_document_to_document_2:
+    menu_name: second-document-tasks
+    parent: ''
+    weight: -49
+    expanded: false
+    enabled: true

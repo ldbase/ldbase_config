@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - group.type.project_group
+    - user.role.anonymous
 id: project_group-anonymous
 label: Anonymous
 weight: -102

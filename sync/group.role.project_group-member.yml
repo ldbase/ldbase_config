@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - group.type.project_group
+    - user.role.authenticated
 id: project_group-member
 label: Member
 weight: -100

@@ -14,6 +14,11 @@ default_types:
   - WebPage
 required_types:
   - Event
+ignored_types:
+  - Default
+  - default
+  - Other
+  - other
 use_snake_case: true
 default_allowed_values:
   WebPage:
