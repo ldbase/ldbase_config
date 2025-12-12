@@ -51,7 +51,7 @@ options:
     rows: 1
     slidesPerRow: 1
     slide: ''
-    slidesToShow: 1
+    slidesToShow: 1.0
     slidesToScroll: 1
     speed: 500
     swipe: true
