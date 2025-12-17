@@ -1,0 +1,15 @@
+uuid: 7fcf6961-3a23-4d62-8b7d-1842bcc209fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.project_group
+    - user.role.fcrr_admin
+id: project_group-fcrr_administrator
+label: 'FCRR Administrator'
+weight: -4
+admin: true
+scope: outsider
+global_role: fcrr_admin
+group_type: project_group
+permissions: {  }

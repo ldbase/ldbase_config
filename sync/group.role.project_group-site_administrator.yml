@@ -1,0 +1,15 @@
+uuid: 32c27004-9cc5-48ba-a649-d29dd2b89cc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.project_group
+    - user.role.administrator
+id: project_group-site_administrator
+label: 'Site Administrator'
+weight: -3
+admin: true
+scope: outsider
+global_role: administrator
+group_type: project_group
+permissions: {  }
