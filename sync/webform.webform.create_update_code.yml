@@ -67,7 +67,7 @@ elements: |-
         ':input[name="code_upload_or_external"]':
           value: upload
     '#file_placeholder': 'Upload your file here. You can only upload 1 file per form.'
-    '#file_extensions': 'rmd do inp r sas txt sps py m out sql'
+    '#file_extensions': 'qmd rmd do inp r sas txt sps py m out sql'
     '#sanitize': true
   code_embargo:
     '#type': label
