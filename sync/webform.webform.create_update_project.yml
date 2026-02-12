@@ -268,14 +268,10 @@ elements: |-
   do_not_contact_flag:
     '#type': radios
     '#title': 'Let others contact you about this project?'
-    '#help': 'Gives LDbase users a link to send a message to administrators of this project.'
+    '#help': '<p>Gives LDbase users a link to send a message to administrators of this project.</p>'
     '#options':
       - 'Yes'
       - 'No'
-    '#states':
-      visible-slide:
-        ':input[name="published_flag"]':
-          value: '1'
     '#states_clear': false
     '#default_value': '1'
     '#wrapper_type': form_element
