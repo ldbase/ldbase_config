@@ -2283,7 +2283,8 @@ display:
     position: 2
     display_options:
       cache:
-        type: search_api_none
+        type: search_api_tag
+        options: {  }
       defaults:
         cache: false
         use_ajax: false
@@ -4533,7 +4534,8 @@ display:
           multi_type: separator
           multi_separator: ', '
       cache:
-        type: search_api_none
+        type: search_api_tag
+        options: {  }
       sorts:
         search_api_relevance:
           id: search_api_relevance
@@ -4761,6 +4763,16 @@ display:
         - 'url.query_args:sort_order'
         - 'user.node_grants:view'
       tags:
+        - 'config:facets.facet.search_facet_assessment'
+        - 'config:facets.facet.search_facet_constructs'
+        - 'config:facets.facet.search_facet_content_type'
+        - 'config:facets.facet.search_facet_host_organizations'
+        - 'config:facets.facet.search_facet_participant_type'
+        - 'config:facets.facet.search_facet_persons'
+        - 'config:facets.facet.search_facet_project_type'
+        - 'config:facets.facet.search_facet_schooling'
+        - 'config:facets.facet.search_facet_special_populations'
+        - 'config:facets.facet.search_facet_time_method'
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_assessment_name'
         - 'config:field.storage.node.field_code_type'
