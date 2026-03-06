@@ -20,6 +20,7 @@ dependencies:
     - taxonomy.vocabulary.project_types
     - taxonomy.vocabulary.schooling
     - taxonomy.vocabulary.special_populations
+    - taxonomy.vocabulary.tags
     - taxonomy.vocabulary.time_methods
   module:
     - node
@@ -670,6 +671,7 @@ display:
               project_types: project_types
               schooling: schooling
               special_populations: special_populations
+              tags: tags
               time_methods: time_methods
             access: true
             operation: view
@@ -1089,39 +1091,6 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:core.entity_view_display.node.article.default'
-        - 'config:core.entity_view_display.node.article.rss'
-        - 'config:core.entity_view_display.node.article.search_index'
-        - 'config:core.entity_view_display.node.article.search_result'
-        - 'config:core.entity_view_display.node.article.teaser'
-        - 'config:core.entity_view_display.node.code.default'
-        - 'config:core.entity_view_display.node.code.teaser'
-        - 'config:core.entity_view_display.node.dataset.default'
-        - 'config:core.entity_view_display.node.dataset.teaser'
-        - 'config:core.entity_view_display.node.document.default'
-        - 'config:core.entity_view_display.node.document.teaser'
-        - 'config:core.entity_view_display.node.embargo.default'
-        - 'config:core.entity_view_display.node.embargo.teaser'
-        - 'config:core.entity_view_display.node.existing_record_request.default'
-        - 'config:core.entity_view_display.node.existing_record_request.teaser'
-        - 'config:core.entity_view_display.node.layout_page.default'
-        - 'config:core.entity_view_display.node.layout_page.teaser'
-        - 'config:core.entity_view_display.node.organization.default'
-        - 'config:core.entity_view_display.node.organization.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.search_index'
-        - 'config:core.entity_view_display.node.page.search_result'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:core.entity_view_display.node.person.default'
-        - 'config:core.entity_view_display.node.person.teaser'
-        - 'config:core.entity_view_display.node.possible_user_match.default'
-        - 'config:core.entity_view_display.node.possible_user_match.teaser'
-        - 'config:core.entity_view_display.node.project.default'
-        - 'config:core.entity_view_display.node.project.teaser'
-        - 'config:core.entity_view_display.node.tombstone.default'
-        - 'config:core.entity_view_display.node.tombstone.teaser'
-        - 'config:core.entity_view_display.node.webform.default'
-        - 'config:core.entity_view_display.node.webform.teaser'
         - 'config:field.storage.paragraph.field_funding_agency'
         - schemadotorg_descriptions.settings
   page_3:
