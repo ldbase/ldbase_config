@@ -2078,7 +2078,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      title: ''
+      title: 'View Vocabulary List'
       fields:
         vid:
           id: vid
@@ -2769,7 +2769,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      title: ''
+      title: 'Browse by Vocabulary'
       empty:
         area:
           id: area

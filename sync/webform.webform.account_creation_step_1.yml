@@ -60,12 +60,13 @@ elements: |-
   ldbase_additional_names:
     '#type': webform_custom_composite
     '#title': 'Additional Publishing Names'
-    '#description': 'If you have used other names to publish or distribute research related documents, please enter them in this field. Add as many lines as needed:'
+    '#description': '<p>If you have used other names to publish or distribute research related documents, please enter them in this field. Add as many lines as needed:</p>'
     '#description_display': before
     '#multiple__sorting': false
     '#multiple__add': false
     '#multiple__add_more_input': false
     '#multiple__add_more_button_label': 'Add another Publishing Name'
+    '#wrapper_type': form_element
     '#element':
       additional_first_name:
         '#type': textfield

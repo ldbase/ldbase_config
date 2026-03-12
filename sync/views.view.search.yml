@@ -37,7 +37,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: ''
+      title: 'Search LDbase'
       fields:
         type:
           id: type
