@@ -44,7 +44,6 @@ dependencies:
     - field_ui
     - file
     - filter
-    - group
     - help
     - ldbase_embargoes
     - masquerade

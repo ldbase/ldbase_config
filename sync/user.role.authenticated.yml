@@ -17,6 +17,7 @@ dependencies:
     - search_api_autocomplete
     - shortcut
     - system
+    - taxonomy
 id: authenticated
 label: 'Authenticated user'
 weight: -9
@@ -34,3 +35,4 @@ permissions:
   - 'use text format restricted_html'
   - 'use text format webform_default'
   - 'view media'
+  - 'view vocabulary labels'
