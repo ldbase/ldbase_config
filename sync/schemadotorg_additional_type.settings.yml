@@ -25,3 +25,6 @@ default_allowed_values:
     AboutPage: 'About Page'
     ContactPage: 'Contact Page'
     MedicalWebPage: 'Medical Web Page'
+default_field_values: {  }
+field_access: {  }
+jsonld_values: {  }
