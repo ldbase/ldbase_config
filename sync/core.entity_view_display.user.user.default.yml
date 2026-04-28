@@ -7,6 +7,7 @@ dependencies:
     - views.view.contributions_on_dashboard
     - views.view.my_favorites
     - views.view.my_messages
+    - views.view.possible_account_matches
     - views.view.projects_in_my_groups
     - views.view.user_embargo_exemptions
   module:
@@ -61,6 +62,19 @@ third_party_settings:
                 value: "<p>You have not yet verified your email address.&nbsp; <a href=\"/user/user-email-verification\">Verify&nbsp;email</a></p>\r\n"
                 format: basic_html
             weight: 2
+            additional: {  }
+          9f85ff10-8f26-4453-b0c7-466f8ba4ec4f:
+            uuid: 9f85ff10-8f26-4453-b0c7-466f8ba4ec4f
+            region: content
+            configuration:
+              id: 'views_block:possible_account_matches-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 3
             additional: {  }
         third_party_settings: {  }
       -
