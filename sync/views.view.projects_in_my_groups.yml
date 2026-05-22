@@ -9,6 +9,7 @@ dependencies:
   module:
     - group
     - node
+    - options
     - text
     - user
 id: projects_in_my_groups
@@ -590,3 +591,395 @@ display:
         - 'config:field.storage.group_content.group_roles'
         - 'config:field.storage.node.body'
         - schemadotorg_descriptions.settings
+  block_2:
+    id: block_2
+    display_title: 'Block 2'
+    display_plugin: block
+    position: 2
+    display_options:
+      title: 'Available Existing Records Requests'
+      fields:
+        id:
+          id: id
+          table: groups_field_data
+          field: id
+          relationship: gid
+          group_type: group
+          admin_label: ''
+          entity_type: group
+          entity_field: id
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
+          settings:
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: entity_id
+          group_columns:
+            value: value
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        label:
+          id: label
+          table: groups_field_data
+          field: label
+          relationship: gid
+          group_type: group
+          admin_label: ''
+          entity_type: group
+          entity_field: label
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: true
+            path: '/group/{{ id }}/existing-records-requests'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: dashboard-possible-match-notification
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: none
+        options:
+          offset: 0
+      empty: {  }
+      sorts: {  }
+      filters:
+        field_request_status_value:
+          id: field_request_status_value
+          table: node__field_request_status
+          field: field_request_status_value
+          relationship: reverse__node__field_requested_node_link
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value:
+            new: new
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+        group_roles_target_id:
+          id: group_roles_target_id
+          table: group_content__group_roles
+          field: group_roles_target_id
+          relationship: group_content_id
+          group_type: group
+          admin_label: ''
+          plugin_id: string
+          operator: word
+          value: Administrator
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list-match-requests
+          class: ''
+      row:
+        type: fields
+        options: {  }
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_tags: {  }
+      defaults:
+        empty: false
+        query: false
+        title: false
+        pager: false
+        group_by: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        filters: false
+        filter_groups: false
+        header: false
+        footer: false
+      relationships:
+        group_content:
+          id: group_content
+          table: node_field_data
+          field: group_content
+          relationship: none
+          group_type: group
+          admin_label: 'Content group content'
+          entity_type: node
+          plugin_id: group_content_to_entity_reverse
+          required: false
+          group_content_plugins:
+            'group_node:dataset': 'group_node:dataset'
+            'group_node:project': 'group_node:project'
+            'group_node:article': '0'
+            'group_node:code': '0'
+            'group_node:document': '0'
+            'group_node:embargo': '0'
+            'group_node:existing_record_request': '0'
+            'group_node:layout_page': '0'
+            'group_node:organization': '0'
+            'group_node:page': '0'
+            'group_node:person': '0'
+            'group_node:possible_user_match': '0'
+            'group_node:tombstone': '0'
+            'group_node:webform': '0'
+        gid:
+          id: gid
+          table: group_relationship_field_data
+          field: gid
+          relationship: group_content
+          group_type: group
+          admin_label: Group
+          entity_type: group_content
+          entity_field: gid
+          plugin_id: standard
+          required: false
+        group_content_id:
+          id: group_content_id
+          table: groups_field_data
+          field: group_content_id
+          relationship: gid
+          group_type: group
+          admin_label: 'Group content'
+          entity_type: group
+          plugin_id: group_to_group_content
+          required: false
+          group_content_plugins:
+            group_membership: group_membership
+            'group_node:article': '0'
+            'group_node:code': '0'
+            'group_node:dataset': '0'
+            'group_node:document': '0'
+            'group_node:embargo': '0'
+            'group_node:existing_record_request': '0'
+            'group_node:layout_page': '0'
+            'group_node:organization': '0'
+            'group_node:page': '0'
+            'group_node:person': '0'
+            'group_node:possible_user_match': '0'
+            'group_node:project': '0'
+            'group_node:tombstone': '0'
+            'group_node:webform': '0'
+        gc__user:
+          id: gc__user
+          table: group_relationship_field_data
+          field: gc__user
+          relationship: group_content_id
+          group_type: group
+          admin_label: 'Group content User'
+          entity_type: group_content
+          plugin_id: group_content_to_entity
+          required: false
+          group_content_plugins:
+            group_membership: group_membership
+        reverse__node__field_requested_node_link:
+          id: reverse__node__field_requested_node_link
+          table: node_field_data
+          field: reverse__node__field_requested_node_link
+          relationship: none
+          group_type: group
+          admin_label: field_requested_node_link
+          entity_type: node
+          plugin_id: entity_reverse
+          required: false
+      group_by: true
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: false
+          content: "Users want to link their accounts as contributors to material in projects that you manage.  Click the projects listed below to review their requests.\r\n\r\n"
+          tokenize: false
+      footer: {  }
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender: {  }
+      block_description: 'Notice of Available Existing Records Requests'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

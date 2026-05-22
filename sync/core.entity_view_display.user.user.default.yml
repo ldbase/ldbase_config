@@ -105,6 +105,19 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
+            weight: 1
+            additional: {  }
+          4e3aeda0-a6c4-4232-9aa1-436bfdf1709c:
+            uuid: 4e3aeda0-a6c4-4232-9aa1-436bfdf1709c
+            region: second
+            configuration:
+              id: 'views_block:projects_in_my_groups-block_2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
             weight: 0
             additional: {  }
         third_party_settings: {  }
