@@ -14,6 +14,7 @@ dependencies:
     - layout_builder
     - layout_discovery
     - ldbase_content
+    - ldbase_new_account
     - user
     - user_email_verification
     - views
@@ -105,20 +106,18 @@ third_party_settings:
               context_mapping: {  }
               views_label: ''
               items_per_page: none
-            weight: 1
+            weight: 2
             additional: {  }
-          4e3aeda0-a6c4-4232-9aa1-436bfdf1709c:
-            uuid: 4e3aeda0-a6c4-4232-9aa1-436bfdf1709c
+          2b353dda-7235-4cdf-809c-61c6e1f4164d:
+            uuid: 2b353dda-7235-4cdf-809c-61c6e1f4164d
             region: second
             configuration:
-              id: 'views_block:projects_in_my_groups-block_2'
-              label: ''
+              id: pending_existing_records_requests
+              label: 'Custom Pending Existing Records Requests'
               label_display: '0'
-              provider: views
+              provider: ldbase_new_account
               context_mapping: {  }
-              views_label: ''
-              items_per_page: none
-            weight: 0
+            weight: 1
             additional: {  }
         third_party_settings: {  }
       -

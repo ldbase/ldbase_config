@@ -153,7 +153,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Requesting Person ...'
+          label: 'Requesting User ...'
           exclude: false
           alter:
             alter_text: false
@@ -511,7 +511,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: '<p>There are no requests to review at this time.</p>'
+          content: "<p>There are no requests to review at this time.</p>\r\n\r\n<p><a href=\"/user\">Return to Dashboard</a></p>"
           tokenize: false
       sorts:
         created:
@@ -750,7 +750,20 @@ display:
             'group_node:project': '0'
             'group_node:tombstone': '0'
             'group_node:webform': '0'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<p>The user(s) listed in the left column are requesting to replace the person(s) listed in the middle column on the content of this project listed in the right column.<p>\r\n<ul>\r\n<li>Approving the requests will connect the content to the requesting user's existing account. For example, do this if you agree that the requesting user was added to the content with a different form or spelling of their name.</li>\r\n<li>Rejecting the requests will leave the contributors as they are and close the request.  Do this if you do not agree that the requesting user is the same person as the contributor listed on the content.\r\n</ul>"
+            format: basic_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -769,6 +782,7 @@ display:
         - 'config:field.storage.node.field_request_status'
         - 'config:field.storage.node.field_requested_node_link'
         - 'config:field.storage.node.field_requesting_person'
+        - schemadotorg_descriptions.settings
   page_1:
     id: page_1
     display_title: Page
@@ -794,3 +808,4 @@ display:
         - 'config:field.storage.node.field_request_status'
         - 'config:field.storage.node.field_requested_node_link'
         - 'config:field.storage.node.field_requesting_person'
+        - schemadotorg_descriptions.settings
