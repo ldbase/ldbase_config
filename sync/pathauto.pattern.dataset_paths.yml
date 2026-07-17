@@ -2,6 +2,8 @@ uuid: 9ab9f7de-31da-4e2c-84e3-bc9ba009bcb3
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.dataset
   module:
     - node
 id: dataset_paths
@@ -12,7 +14,6 @@ selection_criteria:
   077180a5-b8f0-4ea2-b48d-693d7c9666bf:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 077180a5-b8f0-4ea2-b48d-693d7c9666bf
     context_mapping:
       node: node
     bundles:

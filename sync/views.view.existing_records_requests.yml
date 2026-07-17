@@ -12,6 +12,7 @@ dependencies:
     - group
     - node
     - options
+    - user
 id: existing_records_requests
 label: 'Existing Records Requests'
 module: views
@@ -145,6 +146,70 @@ display:
           selected_actions:
             - approve_existing_record_request
             - reject_existing_record_request
+        mail:
+          id: mail
+          table: users_field_data
+          field: mail
+          relationship: field_drupal_account_id
+          group_type: group
+          admin_label: ''
+          entity_type: user
+          entity_field: mail
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         field_requesting_person:
           id: field_requesting_person
           table: node__field_requesting_person
@@ -153,11 +218,11 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Requesting User ...'
+          label: 'This LDbase User ...'
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "{{ field_requesting_person }}<br/>\r\n{{ mail }} "
             make_link: false
             path: ''
             absolute: false
@@ -216,7 +281,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'Would Replace this Person ...'
+          label: 'would replace this name currently listed ...'
           exclude: false
           alter:
             alter_text: false
@@ -344,7 +409,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'On This Content'
+          label: 'on this content'
           exclude: false
           alter:
             alter_text: false
@@ -750,6 +815,24 @@ display:
             'group_node:project': '0'
             'group_node:tombstone': '0'
             'group_node:webform': '0'
+        field_requesting_person:
+          id: field_requesting_person
+          table: node__field_requesting_person
+          field: field_requesting_person
+          relationship: none
+          group_type: group
+          admin_label: 'field_requesting_person: Content'
+          plugin_id: standard
+          required: false
+        field_drupal_account_id:
+          id: field_drupal_account_id
+          table: node__field_drupal_account_id
+          field: field_drupal_account_id
+          relationship: field_requesting_person
+          group_type: group
+          admin_label: 'field_drupal_account_id: User'
+          plugin_id: standard
+          required: false
       header:
         area:
           id: area
@@ -761,7 +844,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<p>The user(s) listed in the left column are requesting to replace the person(s) listed in the middle column on the content of this project listed in the right column.<p>\r\n<ul>\r\n<li>Approving the requests will connect the content to the requesting user's existing account. For example, do this if you agree that the requesting user was added to the content with a different form or spelling of their name.</li>\r\n<li>Rejecting the requests will leave the contributors as they are and close the request.  Do this if you do not agree that the requesting user is the same person as the contributor listed on the content.\r\n</ul>"
+            value: "<p>The LDbase user in the first column is requesting to replace the name you listed on your project that is shown in the second column. Doing so, helps people stayed linked to their data on LDbase and control how their name will be included in the citation for this data. Otherwise, their name will just be text on your project and will not link the public to their LDbase user page or other research they have been a part of..<p>\r\n<ul>\r\n<li>Approving the request will connect your content to the requesting user's existing account. Click Approve if you agree that the requesting user was added to the content with a different form or spelling of their name.</li>\r\n<li>Rejecting the requests will leave the contributors as they are and close the request.  Do this if you do not agree that the requesting user is the same person as the contributor listed on the content.\r\n</ul>\r\n<p>If you would like to see further information on the person or your content, please click the links below.</p>"
             format: basic_html
           tokenize: false
       footer: {  }

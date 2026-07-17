@@ -2,6 +2,8 @@ uuid: 329a300d-0532-4f40-b533-af130f211742
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.organization
   module:
     - node
 id: organization_paths
@@ -12,7 +14,6 @@ selection_criteria:
   371dd905-4610-4504-b6b8-b97f7b285f8e:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 371dd905-4610-4504-b6b8-b97f7b285f8e
     context_mapping:
       node: node
     bundles:

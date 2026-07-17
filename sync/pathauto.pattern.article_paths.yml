@@ -2,6 +2,8 @@ uuid: 1428886f-390e-4eee-a241-3673e0c53959
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.article
   module:
     - node
 id: article_paths
@@ -12,7 +14,6 @@ selection_criteria:
   52f32e90-91b8-4b90-b973-073767b35575:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 52f32e90-91b8-4b90-b973-073767b35575
     context_mapping:
       node: node
     bundles:
