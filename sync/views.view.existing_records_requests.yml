@@ -27,7 +27,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Existing Records Requests'
+      title: 'User Connection Requests'
       fields:
         field_request_status:
           id: field_request_status
@@ -873,7 +873,22 @@ display:
     position: 1
     display_options:
       display_extenders:
-        metatag_display_extender: {  }
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+        simple_sitemap_display_extender:
+          variants: {  }
       path: group/%group/existing-records-requests
     cache_metadata:
       max-age: 0

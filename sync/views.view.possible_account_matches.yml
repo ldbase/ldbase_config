@@ -1154,7 +1154,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: "<h1>Did you, {{ title_3 }}, contribute to the following content added to LDbase?</h1>\r\n\r\n<p>Please review the records below and let us know by checking the appropriate box, selecting from the dropdown whether to accept or reject this connection to you, and then clicking Apply. If you are unsure, click on the link to review the content.</p>\r\n\r\n<p>If you accept any of the connections below, an automated message will be sent to the owner of this project on LDbase. As soon as they also click “Accept”, you will then be linked to the above content.</p>\r\n"
+          content: "<h1>Did you, {{ title_3 }}, contribute to the following content added to LDbase?</h1>\r\n\r\n<p>Please review the records below and let us know by checking the appropriate box, selecting from the dropdown whether to accept or reject this connection to you, and then clicking Apply. If you are unsure, click on the link to review the content.</p>\r\n\r\n<p>If you accept any of the connections below, an automated message will be sent to the owner of this project on LDbase. As soon as they also click “Accept”, you will then be linked to the content below.</p>\r\n"
           tokenize: true
       footer:
         result:
