@@ -209,6 +209,16 @@ third_party_settings:
                 entity: layout_builder.entity
             weight: 17
             additional: {  }
+          1952437e-606f-48e4-9895-6f53ba5d27af:
+            uuid: 1952437e-606f-48e4-9895-6f53ba5d27af
+            region: content
+            configuration:
+              id: 'extra_field_block:node:document:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 18
+            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_onecol

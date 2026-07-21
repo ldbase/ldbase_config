@@ -19,6 +19,7 @@ ignored_types:
   - default
   - Other
   - other
+create_base_fields: {  }
 use_snake_case: true
 default_allowed_values:
   WebPage:
