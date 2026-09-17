@@ -4747,7 +4747,8 @@ display:
           category_facets: {  }
           category_facets_concat_separator: ', '
         metatag_display_extender:
-          metatags: {  }
+          metatags:
+            robots: 'noindex, nofollow'
           tokenize: false
         simple_sitemap_display_extender:
           variants: {  }
