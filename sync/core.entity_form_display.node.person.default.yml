@@ -120,7 +120,8 @@ content:
     type: address_default
     weight: 9
     region: content
-    settings: {  }
+    settings:
+      wrapper_type: details
     third_party_settings: {  }
   field_middle_name:
     type: string_textfield

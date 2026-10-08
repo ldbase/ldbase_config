@@ -42,8 +42,8 @@ elements: |-
     '#type': address
     '#title': Location
     '#multiple': true
-    '#description': 'Location where person works or resides'
-    '#help': 'Enter your work address, if you wish.'
+    '#description': '<p>Location where person works or resides</p>'
+    '#help': '<p>Enter your work address, if you wish.</p>'
     '#title_display': after
     '#multiple__sorting': false
     '#multiple__add': false
@@ -56,6 +56,7 @@ elements: |-
       organization: hidden
       addressLine1: hidden
       addressLine2: hidden
+      addressLine3: hidden
       postalCode: hidden
       sortingCode: hidden
       dependentLocality: hidden

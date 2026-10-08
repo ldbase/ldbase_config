@@ -214,7 +214,8 @@ content:
     type: address_default
     weight: 11
     region: content
-    settings: {  }
+    settings:
+      wrapper_type: details
     third_party_settings: {  }
   field_publication_info:
     type: entity_reference_paragraphs
